@@ -1,0 +1,17 @@
+{
+  "icon": "palette",
+  "displayName": {
+    "en": "Diagram Design",
+    "zh-CN": "Diagram Design",
+    "ko": "Diagram Design",
+    "ja": "Diagram Design",
+    "es": "Diagram Design"
+  },
+  "shortDescription": {
+    "en": "Third-party skill: branded presentation diagrams (44 types) for posters and slides",
+    "zh-CN": "第三方技能：面向海报与slides的品牌化演示图表（44 类）",
+    "ko": "서드파티 스킬: 포스터와 슬라이드용 브랜드 프레젠테이션 다이어그램 (44종)",
+    "ja": "サードパーティスキル: ポスター・スライド用のブランド化プレゼンテーション図 (44種)",
+    "es": "Habilidad de terceros: diagramas de presentación con marca (44 tipos) para pósters y diapositivas"
+  }
+}
