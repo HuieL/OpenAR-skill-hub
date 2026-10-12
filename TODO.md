@@ -85,3 +85,14 @@
   - [ ] fixture 测试（空索引、坏哈希、未知字段、路径穿越、超限）+ 对两真仓的只读探测。
 - **HUB-04 skill 加载/编辑**：标准 SKILL.md 及必要 scripts/references/assets；按 revision 管理第三方 skill；只暴露当前 scope 已选 skill 的 metadata，正文按需读取；本地修改产生新本地 revision，升级前展示差异。
 - 不碰：Hub UI（G+D）、ExtensionDefinition 契约（G）、扩展安装（Y）。
+
+## 6. HUB-11 Community, Credits & Discovery（后续里程碑 SX-M3/M4；规格 OpenRA `docs/hub-community-discovery.md`）
+
+**SX-00 起就预留署名字段**（避免以后迁移）：entry.json 公共核心加 `authors[]`{name,github}、`maintainers[]`、`contributors[]`、`adapters[]`（OpenRA 适配者）、`registrySubmitter`、`categories[]`；Y 仓同名同义。
+- **SX-M3（HUB-M1 通过后，HUB-11 M2 部分）**
+  - [ ] 署名校验（CI）：Original Author 必须能在 `source` 仓库的提交/许可/README 中核对；提交者默认只记 `registrySubmitter`，不可自填为 author；纠错走 PR + 原作者或维护者确认。
+  - [ ] `community/creators.json`（作者公开资料：名称、GitHub、代表作品 `kind:id`，只放公开信息）、`community/featured.json`（条目、理由、日期、精选者）、`community/collections.json`（标题、说明、策展者、`kind:id` 列表、推荐理由）——两仓的社区数据**只在本仓**，用 `kind:id` 引用 Y 仓条目。
+  - [ ] PR 模板与 CONTRIBUTING：新增条目、修正署名、提交合集。
+- **SX-M4（HUB-11 M3 部分）**
+  - [ ] GitHub Actions 定时生成 `community/discovery.json`：New（首次收录日期）、Recently Updated（可核查 release/commit）、Trending（公开 GitHub 信号，写明指标与窗口，标注 "Trending on GitHub"，不冒充安装量）；给新/小众项目保留曝光位；失败保留上一版；只读公开元数据，固定 action SHA，无写权限外泄。
+- 不做：社区服务器、账号、评论库、点赞积分、等级、付费位；不收集私人使用历史/安装记录。
