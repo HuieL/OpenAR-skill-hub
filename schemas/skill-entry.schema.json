@@ -1,0 +1,149 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/HuieL/OpenAR-skill-hub/schemas/skill-entry.schema.json",
+  "title": "OpenAR Skill Hub entry",
+  "description": "One directory record per skill under entries/skills/<id>/entry.json. scripts/validate.py is the authoritative checker for CI; this schema documents the same contract.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "kind",
+    "name",
+    "summary",
+    "source",
+    "version",
+    "license",
+    "review",
+    "compat",
+    "delivery",
+    "files",
+    "totalBytes"
+  ],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
+      "description": "Namespaced identity, e.g. openra.diagram-design. Separate from the display name; globally unique; never reused."
+    },
+    "kind": { "const": "skill" },
+    "name": {
+      "type": "string",
+      "maxLength": 64,
+      "description": "One short English name, identical in every language."
+    },
+    "summary": {
+      "type": "string",
+      "maxLength": 1000,
+      "description": "English one-to-few-line description."
+    },
+    "summaryI18n": {
+      "type": "object",
+      "additionalProperties": false,
+      "propertyNames": { "enum": ["en", "zh-CN", "ja", "ko", "es"] },
+      "description": "Optional translations of the summary only.",
+      "properties": {
+        "en": { "type": "string", "maxLength": 1000 },
+        "zh-CN": { "type": "string", "maxLength": 1000 },
+        "ja": { "type": "string", "maxLength": 1000 },
+        "ko": { "type": "string", "maxLength": 1000 },
+        "es": { "type": "string", "maxLength": 1000 }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repo", "path", "revision"],
+      "properties": {
+        "repo": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$",
+          "description": "owner/name on github.com."
+        },
+        "path": {
+          "type": "string",
+          "description": "Subdirectory of the skill inside the repo. Use \".\" for the repo root. A URL never installs a whole repository by itself."
+        },
+        "revision": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$",
+          "description": "Exact 40-hex commit SHA. main/latest/mutable tags are discovery hints only, never a pin."
+        }
+      }
+    },
+    "version": {
+      "type": "string",
+      "maxLength": 128,
+      "description": "Upstream-reported version; the pinned revision when upstream reports none."
+    },
+    "license": {
+      "type": "string",
+      "description": "SPDX identifier of the entry's license, e.g. MIT."
+    },
+    "licenseFile": {
+      "type": "string",
+      "description": "Path of the license text inside the entry directory, e.g. LICENSE. Required when the license is not machine-readable from upstream."
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status"],
+      "properties": {
+        "status": { "enum": ["unreviewed", "reviewed", "deprecated", "high-risk"] },
+        "reviewedRevision": {
+          "type": ["string", "null"],
+          "pattern": "^[0-9a-f]{40}$",
+          "description": "The exact revision the review covered. Reviewing one revision never vouches for later ones."
+        },
+        "reviewer": { "type": ["string", "null"] }
+      }
+    },
+    "compat": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "minHost": { "type": "string", "description": "Minimum OpenRA version." },
+        "harnesses": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Harnesses the skill is known to work with. Empty means unspecified, not all."
+        }
+      }
+    },
+    "delivery": {
+      "enum": ["bundled", "hub"],
+      "description": "bundled: ships with the app, listed read-only. hub: installable at the pinned revision."
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "sha256", "bytes", "executable"],
+        "properties": {
+          "path": { "type": "string", "description": "Relative to the skill root (source.path). No '..', no absolute paths." },
+          "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+          "bytes": { "type": "integer", "minimum": 1 },
+          "executable": { "type": "boolean" }
+        }
+      },
+      "description": "Complete manifest of the skill's necessary files with pinned hashes. Only the skill's own scripts/references/assets; directories that do not exist are not listed."
+    },
+    "totalBytes": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 2097152,
+      "description": "Sum of files[].bytes. Per-entry cap: 2 MiB."
+    },
+    "requires": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Ids of extensions/CLI/MCP this skill depends on. Declared only; installing them is never automatic."
+    },
+    "permissionsNote": {
+      "type": "string",
+      "description": "Note that allowed-tools or similar declarations inside SKILL.md are claims, not host approvals."
+    }
+  }
+}

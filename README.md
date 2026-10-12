@@ -16,7 +16,8 @@ an account, or a Hub server — this repository is plain static data on GitHub.
 - `scripts/` — index generation and validation
 - `.github/workflows/` — read-only validation CI
 
-The structure above is being established; see the OpenRA repository's
+The catalog starts empty; entries land through PRs validated by CI. See
+`CONTRIBUTING.md` for the entry contract, and the OpenRA repository's
 `docs/skill-extension-hub-design.md` for the design.
 
 ## License

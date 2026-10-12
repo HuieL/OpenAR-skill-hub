@@ -1,0 +1,258 @@
+#!/usr/bin/env python3
+"""Validate the registry: entry.json contract, in-repo content hashes, and
+skills.json consistency. Zero dependencies beyond the Python standard library;
+CI runs exactly this script with no secrets and no install step.
+"""
+
+import hashlib
+import json
+import pathlib
+import re
+import sys
+
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+ENTRIES = ROOT / "entries" / "skills"
+MAX_TOTAL_BYTES = 2 * 1024 * 1024
+I18N_LANGS = {"en", "zh-CN", "ja", "ko", "es"}
+REVIEW_STATUSES = {"unreviewed", "reviewed", "deprecated", "high-risk"}
+DELIVERIES = {"bundled", "hub"}
+ENTRY_FIELDS = {
+    "schemaVersion", "id", "kind", "name", "summary", "summaryI18n", "source",
+    "version", "license", "licenseFile", "review", "compat", "delivery",
+    "files", "totalBytes", "requires", "permissionsNote",
+}
+HEX40 = re.compile(r"^[0-9a-f]{40}$")
+HEX64 = re.compile(r"^[0-9a-f]{64}$")
+ID = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$")
+REPO = re.compile(r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")
+
+errors: list[str] = []
+
+
+def fail(entry_id: str, message: str) -> None:
+    errors.append(f"{entry_id}: {message}")
+
+
+def safe_rel_path(raw: str) -> bool:
+    if not raw or raw.startswith("/") or "\\" in raw:
+        return False
+    parts = raw.split("/")
+    return all(part not in ("", ".", "..") for part in parts)
+
+
+def check_common(entry: dict, entry_id: str):
+    unknown = set(entry) - ENTRY_FIELDS
+    if unknown:
+        fail(entry_id, f"unknown fields: {sorted(unknown)}")
+    missing = {
+        "schemaVersion", "id", "kind", "name", "summary", "source", "version",
+        "license", "review", "compat", "delivery", "files", "totalBytes",
+    } - set(entry)
+    if missing:
+        fail(entry_id, f"missing fields: {sorted(missing)}")
+        return None
+    if entry["schemaVersion"] != 1:
+        fail(entry_id, "schemaVersion must be 1")
+    if entry["kind"] != "skill":
+        fail(entry_id, "kind must be 'skill'")
+    if not isinstance(entry["name"], str) or not entry["name"] or len(entry["name"]) > 64:
+        fail(entry_id, "name must be a non-empty string of at most 64 chars")
+    if not isinstance(entry["summary"], str) or not entry["summary"].strip() or len(entry["summary"]) > 1000:
+        fail(entry_id, "summary must be a non-empty string of at most 1000 chars")
+    if "summaryI18n" in entry:
+        i18n = entry["summaryI18n"]
+        if not isinstance(i18n, dict) or set(i18n) - I18N_LANGS:
+            fail(entry_id, "summaryI18n keys must be a subset of " + ", ".join(sorted(I18N_LANGS)))
+        elif any(not isinstance(v, str) or not v.strip() or len(v) > 1000 for v in i18n.values()):
+            fail(entry_id, "summaryI18n values must be non-empty strings of at most 1000 chars")
+    if not isinstance(entry["version"], str) or not entry["version"] or len(entry["version"]) > 128:
+        fail(entry_id, "version must be a non-empty string of at most 128 chars")
+    if not isinstance(entry["license"], str) or not entry["license"]:
+        fail(entry_id, "license (SPDX) is required")
+    return entry
+
+
+def check_source(entry: dict, entry_id: str) -> None:
+    source = entry["source"]
+    if not isinstance(source, dict) or set(source) != {"repo", "path", "revision"}:
+        fail(entry_id, "source must have exactly repo, path, revision")
+        return
+    if not isinstance(source["repo"], str) or not REPO.match(source["repo"]):
+        fail(entry_id, "source.repo must be owner/name")
+    if source["path"] != "." and not (isinstance(source["path"], str) and safe_rel_path(source["path"])):
+        fail(entry_id, "source.path must be '.' or a safe relative path")
+    if not isinstance(source["revision"], str) or not HEX40.match(source["revision"]):
+        fail(entry_id, "source.revision must be a 40-hex commit SHA (no main/latest/tags)")
+
+
+def check_review(entry: dict, entry_id: str) -> None:
+    review = entry["review"]
+    if not isinstance(review, dict) or set(review) - {"status", "reviewedRevision", "reviewer"}:
+        fail(entry_id, "review may only have status, reviewedRevision, reviewer")
+        return
+    if review.get("status") not in REVIEW_STATUSES:
+        fail(entry_id, "review.status must be one of " + ", ".join(sorted(REVIEW_STATUSES)))
+    if review.get("status") == "reviewed":
+        revision = review.get("reviewedRevision")
+        if not isinstance(revision, str) or not HEX40.match(revision):
+            fail(entry_id, "review.status 'reviewed' requires a 40-hex reviewedRevision")
+    reviewer = review.get("reviewer")
+    if reviewer is not None and not isinstance(reviewer, str):
+        fail(entry_id, "review.reviewer must be a string or null")
+
+
+def check_compat(entry: dict, entry_id: str) -> None:
+    compat = entry["compat"]
+    if not isinstance(compat, dict) or set(compat) - {"minHost", "harnesses"}:
+        fail(entry_id, "compat may only have minHost, harnesses")
+        return
+    if "minHost" in compat and (not isinstance(compat["minHost"], str) or not compat["minHost"]):
+        fail(entry_id, "compat.minHost must be a non-empty string")
+    harnesses = compat.get("harnesses", [])
+    if not isinstance(harnesses, list) or any(not isinstance(h, str) or not h for h in harnesses):
+        fail(entry_id, "compat.harnesses must be a list of strings")
+
+
+def check_files(entry: dict, entry_id: str, entry_dir: pathlib.Path) -> None:
+    files = entry["files"]
+    if not isinstance(files, list):
+        fail(entry_id, "files must be a list")
+        return
+    if entry["delivery"] == "hub" and not files:
+        fail(entry_id, "delivery 'hub' requires a non-empty files manifest")
+    if entry["delivery"] not in DELIVERIES:
+        fail(entry_id, "delivery must be 'bundled' or 'hub'")
+    seen: set[str] = set()
+    total = 0
+    for item in files:
+        if not isinstance(item, dict) or set(item) != {"path", "sha256", "bytes", "executable"}:
+            fail(entry_id, "each file needs exactly path, sha256, bytes, executable")
+            continue
+        path = item["path"]
+        if not isinstance(path, str) or not safe_rel_path(path):
+            fail(entry_id, f"file path {path!r} is not a safe relative path")
+            continue
+        if path in seen:
+            fail(entry_id, f"duplicate file path {path!r}")
+        seen.add(path)
+        if not isinstance(item["sha256"], str) or not HEX64.match(item["sha256"]):
+            fail(entry_id, f"file {path!r} sha256 must be 64-hex")
+        if not isinstance(item["bytes"], int) or item["bytes"] < 1:
+            fail(entry_id, f"file {path!r} bytes must be a positive integer")
+        if not isinstance(item["executable"], bool):
+            fail(entry_id, f"file {path!r} executable must be a boolean")
+        total += item["bytes"] if isinstance(item["bytes"], int) else 0
+    if entry["totalBytes"] != total:
+        fail(entry_id, f"totalBytes {entry['totalBytes']} != sum of files bytes {total}")
+    if total > MAX_TOTAL_BYTES:
+        fail(entry_id, f"entry exceeds the {MAX_TOTAL_BYTES} byte cap")
+    if "licenseFile" in entry:
+        license_file = entry["licenseFile"]
+        if not isinstance(license_file, str) or not safe_rel_path(license_file):
+            fail(entry_id, "licenseFile must be a safe relative path")
+        elif not (entry_dir / license_file).is_file():
+            fail(entry_id, f"licenseFile {license_file!r} not found in the entry directory")
+    requires = entry.get("requires", [])
+    if not isinstance(requires, list) or any(not isinstance(r, str) or not r for r in requires):
+        fail(entry_id, "requires must be a list of ids")
+    if "permissionsNote" in entry and not isinstance(entry["permissionsNote"], str):
+        fail(entry_id, "permissionsNote must be a string")
+    skill_dir = entry_dir / "skill"
+    if skill_dir.is_dir():
+        hosted: set[pathlib.Path] = {
+            p for p in skill_dir.rglob("*") if p.is_file() or p.is_symlink()
+        }
+        listed: set[str] = {item["path"] for item in files if isinstance(item, dict) and isinstance(item.get("path"), str)}
+        for real in sorted(hosted):
+            rel = real.relative_to(skill_dir).as_posix()
+            if real.is_symlink():
+                fail(entry_id, f"symlinks are not allowed in hosted content: {rel}")
+                continue
+            if rel not in listed:
+                fail(entry_id, f"hosted file {rel!r} is not listed in files")
+                continue
+            digest = hashlib.sha256(real.read_bytes()).hexdigest()
+            listed_item = next(i for i in files if i.get("path") == rel)
+            if digest != listed_item["sha256"] or real.stat().st_size != listed_item["bytes"]:
+                fail(entry_id, f"hosted file {rel!r} hash or size does not match files")
+        for rel in sorted(listed):
+            if not (skill_dir / rel).is_file():
+                fail(entry_id, f"files lists {rel!r} but it is not under skill/")
+
+
+def validate_entries() -> dict[str, pathlib.Path]:
+    by_id: dict[str, pathlib.Path] = {}
+    if not ENTRIES.is_dir():
+        return by_id
+    for entry_dir in sorted(ENTRIES.iterdir()):
+        if not entry_dir.is_dir():
+            fail(entry_dir.name, "entries/skills must contain directories only")
+            continue
+        entry_path = entry_dir / "entry.json"
+        if not entry_path.is_file():
+            fail(entry_dir.name, "missing entry.json")
+            continue
+        for real in entry_dir.rglob("*"):
+            if real.is_symlink():
+                fail(entry_dir.name, f"symlinks are not allowed: {real.relative_to(ROOT)}")
+        try:
+            entry = json.loads(entry_path.read_text())
+        except json.JSONDecodeError as error:
+            fail(entry_dir.name, f"entry.json is not valid JSON: {error}")
+            continue
+        if not isinstance(entry, dict):
+            fail(entry_dir.name, "entry.json must be an object")
+            continue
+        entry_id = entry.get("id", entry_dir.name)
+        if not isinstance(entry_id, str) or not ID.match(entry_id):
+            fail(entry_dir.name, f"id {entry_id!r} does not match {ID.pattern}")
+            continue
+        if entry_dir.name != entry_id:
+            fail(entry_id, f"directory name {entry_dir.name!r} must equal id")
+        if entry_id in by_id:
+            fail(entry_id, "duplicate id")
+            continue
+        by_id[entry_id] = entry_dir
+        if check_common(entry, entry_id) is None:
+            continue
+        check_source(entry, entry_id)
+        check_review(entry, entry_id)
+        check_compat(entry, entry_id)
+        check_files(entry, entry_id, entry_dir)
+    return by_id
+
+
+def validate_index() -> None:
+    path = ROOT / "skills.json"
+    if not path.is_file():
+        errors.append("skills.json is missing; run scripts/build-index.py")
+        return
+    try:
+        index = json.loads(path.read_text())
+    except json.JSONDecodeError as error:
+        errors.append(f"skills.json is not valid JSON: {error}")
+        return
+    if index.get("schemaVersion") != 1 or not isinstance(index.get("entries"), list):
+        errors.append("skills.json must have schemaVersion 1 and an entries array")
+        return
+    ids = [row.get("id") for row in index["entries"] if isinstance(row, dict)]
+    if len(ids) != len(index["entries"]):
+        errors.append("skills.json has non-object rows")
+    if ids != sorted(ids):
+        errors.append("skills.json entries are not sorted by id")
+    if len(set(ids)) != len(ids):
+        errors.append("skills.json has duplicate ids")
+
+
+def main() -> None:
+    validate_entries()
+    validate_index()
+    if errors:
+        for error in errors:
+            print(f"ERROR {error}", file=sys.stderr)
+        sys.exit(1)
+    print("registry valid")
+
+
+if __name__ == "__main__":
+    main()
