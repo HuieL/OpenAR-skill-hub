@@ -116,6 +116,32 @@
         }
       }
     },
+    "upstream": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repo", "revision", "license"],
+      "properties": {
+        "repo": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$",
+          "description": "owner/name of the repo this entry's content derives from."
+        },
+        "revision": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$",
+          "description": "Exact 40-hex upstream commit the adaptation started from."
+        },
+        "path": {
+          "type": "string",
+          "description": "Subdirectory of the skill inside the upstream repo, when not the root."
+        },
+        "license": {
+          "type": "string",
+          "description": "SPDX id of the upstream license."
+        }
+      },
+      "description": "Structured provenance of an adaptation. Required when adapters is non-empty or source.repo is this hub (hosted adaptation); entries whose source already points at the upstream do not need it. Summaries are display text; provenance lives here, not in the prose."
+    },
     "version": {
       "type": "string",
       "maxLength": 128,

@@ -19,7 +19,7 @@ DELIVERIES = {"bundled", "hub"}
 ENTRY_FIELDS = {
     "schemaVersion", "id", "kind", "name", "summary", "summaryI18n", "authors",
     "maintainers", "contributors", "adapters", "registrySubmitter", "categories",
-    "source", "version", "license", "licenseFile", "review", "compat",
+    "source", "upstream", "version", "license", "licenseFile", "review", "compat",
     "delivery", "files", "totalBytes", "requires", "permissionsNote",
 }
 HEX40 = re.compile(r"^[0-9a-f]{40}$")
@@ -115,6 +115,32 @@ def check_source(entry: dict, entry_id: str) -> None:
         fail(entry_id, "source.path must be '.' or a safe relative path")
     if not isinstance(source["revision"], str) or not HEX40.match(source["revision"]):
         fail(entry_id, "source.revision must be a 40-hex commit SHA (no main/latest/tags)")
+
+
+def check_upstream(entry: dict, entry_id: str) -> None:
+    source = entry.get("source")
+    hosted_on_hub = isinstance(source, dict) and source.get("repo") == "HuieL/OpenAR-skill-hub"
+    adapted = bool(entry.get("adapters")) or hosted_on_hub
+    upstream = entry.get("upstream")
+    if upstream is None:
+        if adapted:
+            fail(entry_id, "adapted entries (adapters set, or content hosted on this hub) must record upstream provenance")
+        return
+    if not isinstance(upstream, dict) or set(upstream) - {"repo", "revision", "path", "license"}:
+        fail(entry_id, "upstream may only have repo, revision, path, license")
+        return
+    missing = {"repo", "revision", "license"} - set(upstream)
+    if missing:
+        fail(entry_id, f"upstream is missing: {sorted(missing)}")
+        return
+    if not REPO.match(upstream["repo"]):
+        fail(entry_id, "upstream.repo must be owner/name")
+    if not HEX40.match(upstream["revision"]):
+        fail(entry_id, "upstream.revision must be a 40-hex commit SHA")
+    if "path" in upstream and upstream["path"] != "." and not safe_rel_path(upstream["path"]):
+        fail(entry_id, "upstream.path must be '.' or a safe relative path")
+    if not upstream["license"]:
+        fail(entry_id, "upstream.license (SPDX) is required")
 
 
 def check_review(entry: dict, entry_id: str) -> None:
@@ -249,6 +275,7 @@ def validate_entries() -> dict[str, pathlib.Path]:
             continue
         check_attribution(entry, entry_id)
         check_source(entry, entry_id)
+        check_upstream(entry, entry_id)
         check_review(entry, entry_id)
         check_compat(entry, entry_id)
         check_files(entry, entry_id, entry_dir)
