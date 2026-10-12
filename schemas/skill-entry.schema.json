@@ -182,8 +182,8 @@
       }
     },
     "delivery": {
-      "enum": ["bundled", "hub"],
-      "description": "bundled: ships with the app, listed read-only. hub: installable at the pinned revision."
+      "enum": ["hub"],
+      "description": "hub: installable at the pinned revision. Built-in OpenRA skills are never listed on this hub."
     },
     "files": {
       "type": "array",

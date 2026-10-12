@@ -15,7 +15,7 @@ ENTRIES = ROOT / "entries" / "skills"
 MAX_TOTAL_BYTES = 2 * 1024 * 1024
 I18N_LANGS = {"en", "zh-CN", "ja", "ko", "es"}
 REVIEW_STATUSES = {"unreviewed", "reviewed", "deprecated", "high-risk"}
-DELIVERIES = {"bundled", "hub"}
+DELIVERIES = {"hub"}
 ENTRY_FIELDS = {
     "schemaVersion", "id", "kind", "name", "summary", "summaryI18n", "authors",
     "maintainers", "contributors", "adapters", "registrySubmitter", "categories",
@@ -179,7 +179,7 @@ def check_files(entry: dict, entry_id: str, entry_dir: pathlib.Path) -> None:
     if entry["delivery"] == "hub" and not files:
         fail(entry_id, "delivery 'hub' requires a non-empty files manifest")
     if entry["delivery"] not in DELIVERIES:
-        fail(entry_id, "delivery must be 'bundled' or 'hub'")
+        fail(entry_id, "delivery must be 'hub' (built-in OpenRA skills are not listed on this hub)")
     seen: set[str] = set()
     total = 0
     for item in files:
