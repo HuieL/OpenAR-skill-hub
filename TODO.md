@@ -74,3 +74,14 @@
 - 每个分支：`scripts/validate` 输出、条目数、是否改 schema（改了需写 schemaVersion 与对 C/Y 的影响）。
 - 回报写在 OpenRA 主仓 TODO 的 X 行（只写分支@SHA + 一句结论），不要在本仓 main 写回执。
 - 规模：每分支新增手写文件 ≤5、修改 ≤10（条目数据文件除外，但每分支 ≤3 个新条目）。
+
+## 5. OpenRA 主仓上的底座工作（用户 10-12：X/Y 在 OpenRA 分支写入底座以无缝集成）
+
+- 在 OpenRA 只推 `agent-x/<topic>` 分支；Review 审查，Rust 改动进 Mac 门禁 train 后合入。派工以 OpenRA `TODO.md` 的 X 行为准。
+- **HUB-01 registry 客户端（X 负责，两个 hub 共用一份实现）**：
+  - [ ] 按 commit SHA 读取 `skills.json` 与 Y 仓的 `extensions.json`；逐条校验 entry sha256；拒绝 main/latest/可变 tag 当锁定。
+  - [ ] 缓存 last-good 索引与刷新时间，断网不影响已安装能力；条件请求/ETag、限流退避、大小与条目数上限。
+  - [ ] 只读：不安装、不执行；安装走 C 的 `acquire::*` + ChangeSet（改 `acquire/*`、`changesets.rs` 需 C 共审）。
+  - [ ] fixture 测试（空索引、坏哈希、未知字段、路径穿越、超限）+ 对两真仓的只读探测。
+- **HUB-04 skill 加载/编辑**：标准 SKILL.md 及必要 scripts/references/assets；按 revision 管理第三方 skill；只暴露当前 scope 已选 skill 的 metadata，正文按需读取；本地修改产生新本地 revision，升级前展示差异。
+- 不碰：Hub UI（G+D）、ExtensionDefinition 契约（G）、扩展安装（Y）。
