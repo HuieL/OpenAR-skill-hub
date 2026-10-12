@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "openra.human-writing",
+  "kind": "skill",
+  "name": "Human Writing",
+  "summary": "Write prose that reads as human: style control for fiction, forum posts and factual writing, with a check_prose.py revision pass. Carried verbatim from KKKKhazix/human-writing at the pinned commit; the carried file set only excludes VERSION, another runtime's agent config, and a generated distribution file.",
+  "summaryI18n": {
+    "zh-CN": "让文字读起来像人写的：小说、论坛帖与纪实文体的风格控制，附 check_prose.py 修订检查。自 KKKKhazix/human-writing 钉住 commit 逐字携带；仅排除 VERSION、另一运行时的 agent 配置与一个生成分发文件。"
+  },
+  "authors": [
+    {
+      "name": "Khazix",
+      "github": "KKKKhazix"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "writing"
+  ],
+  "source": {
+    "repo": "KKKKhazix/human-writing",
+    "path": "human-writing",
+    "revision": "4fda173f3fef7fb808f3eba991eeb2528ea4b189"
+  },
+  "version": "1.1.0",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "70a6e8c92ce74ac157e2ed11d022579aa67027610c47435a187296456008bcf3",
+      "bytes": 15547,
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "32ca81a9ae10dda7d18963c9eae733477073906b15ee498d02033c8966dbdcaa",
+      "bytes": 1089,
+      "executable": false
+    },
+    {
+      "path": "references/fiction.md",
+      "sha256": "6efea0c16f28b7ae2d3531a7e2413577e2f6e3c1945912b087c28a0da6d0ad83",
+      "bytes": 4797,
+      "executable": false
+    },
+    {
+      "path": "references/formats.md",
+      "sha256": "dd63704550574cd562b55f24307815e9172a63320dcfcc6006b3eab0ccc406bb",
+      "bytes": 4574,
+      "executable": false
+    },
+    {
+      "path": "references/forum-prose.md",
+      "sha256": "20c22ad9c5c5c3f43ebae6bb7d258cfc42916413a82c2f95a0de9239541641dd",
+      "bytes": 23623,
+      "executable": false
+    },
+    {
+      "path": "references/reality.md",
+      "sha256": "02004e1fd4dba40d8d50260982ecead81ce3788c7269922b8311514fe8edd0e6",
+      "bytes": 5911,
+      "executable": false
+    },
+    {
+      "path": "references/revision.md",
+      "sha256": "2e7d8f74ace9d90e4805b6061b8015c91e6088166e5d224be185aba5a94e6592",
+      "bytes": 12785,
+      "executable": false
+    },
+    {
+      "path": "scripts/check_prose.py",
+      "sha256": "13110461036c25477963e19ce35c4a34df2a2d24a7132c909394370803822eea",
+      "bytes": 21598,
+      "executable": false
+    }
+  ],
+  "totalBytes": 89924,
+  "requires": [],
+  "permissionsNote": "allowed-tools declarations inside SKILL.md are upstream claims, not host approvals; OpenRA enforces its own permission gates."
+}
