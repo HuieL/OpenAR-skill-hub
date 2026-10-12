@@ -16,9 +16,7 @@ account, and no install script to run here.
    - `source` — `owner/name`, the skill's subdirectory, and an exact 40-hex
      commit SHA. `main`/`latest`/mutable tags are never accepted as a pin;
    - `files` — the complete manifest of the skill's files at that revision,
-     each with sha256 and size (cap: 2 MiB per entry). Required for
-     `delivery: hub` entries; `delivery: bundled` entries ship with the app
-     and carry no files manifest;
+     each with sha256 and size (cap: 2 MiB per entry);
    - `license` — SPDX id; the entry must state the license its content
      actually carries.
 3. Run `python3 scripts/build-index.py` and commit the regenerated

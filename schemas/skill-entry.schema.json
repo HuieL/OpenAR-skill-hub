@@ -17,17 +17,9 @@
     "license",
     "review",
     "compat",
-    "delivery"
-  ],
-  "allOf": [
-    {
-      "if": { "properties": { "delivery": { "const": "hub" } } },
-      "then": { "required": ["files", "totalBytes"] }
-    },
-    {
-      "if": { "properties": { "delivery": { "const": "bundled" } } },
-      "then": { "properties": { "files": false, "totalBytes": false } }
-    }
+    "delivery",
+    "files",
+    "totalBytes"
   ],
   "properties": {
     "schemaVersion": { "const": 1 },
@@ -165,7 +157,7 @@
     },
     "delivery": {
       "enum": ["bundled", "hub"],
-      "description": "bundled: ships with the app, listed read-only, no files manifest; updates follow app releases. hub: installable at the pinned revision."
+      "description": "bundled: ships with the app, listed read-only. hub: installable at the pinned revision."
     },
     "files": {
       "type": "array",
@@ -180,7 +172,7 @@
           "executable": { "type": "boolean" }
         }
       },
-      "description": "Complete manifest of the skill's necessary files with pinned hashes; required when delivery is hub, forbidden when bundled. Only the skill's own scripts/references/assets; directories that do not exist are not listed."
+      "description": "Complete manifest of the skill's necessary files with pinned hashes. Only the skill's own scripts/references/assets; directories that do not exist are not listed."
     },
     "totalBytes": {
       "type": "integer",
