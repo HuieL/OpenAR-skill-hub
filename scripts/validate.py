@@ -17,14 +17,16 @@ I18N_LANGS = {"en", "zh-CN", "ja", "ko", "es"}
 REVIEW_STATUSES = {"unreviewed", "reviewed", "deprecated", "high-risk"}
 DELIVERIES = {"bundled", "hub"}
 ENTRY_FIELDS = {
-    "schemaVersion", "id", "kind", "name", "summary", "summaryI18n", "source",
-    "version", "license", "licenseFile", "review", "compat", "delivery",
-    "files", "totalBytes", "requires", "permissionsNote",
+    "schemaVersion", "id", "kind", "name", "summary", "summaryI18n", "authors",
+    "maintainers", "contributors", "adapters", "registrySubmitter", "categories",
+    "source", "version", "license", "licenseFile", "review", "compat",
+    "delivery", "files", "totalBytes", "requires", "permissionsNote",
 }
 HEX40 = re.compile(r"^[0-9a-f]{40}$")
 HEX64 = re.compile(r"^[0-9a-f]{64}$")
 ID = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$")
 REPO = re.compile(r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")
+HANDLE = re.compile(r"^[A-Za-z0-9-]{1,39}$")
 
 errors: list[str] = []
 
@@ -45,8 +47,8 @@ def check_common(entry: dict, entry_id: str):
     if unknown:
         fail(entry_id, f"unknown fields: {sorted(unknown)}")
     missing = {
-        "schemaVersion", "id", "kind", "name", "summary", "source", "version",
-        "license", "review", "compat", "delivery", "files", "totalBytes",
+        "schemaVersion", "id", "kind", "name", "summary", "authors", "source",
+        "version", "license", "review", "compat", "delivery", "files", "totalBytes",
     } - set(entry)
     if missing:
         fail(entry_id, f"missing fields: {sorted(missing)}")
@@ -70,6 +72,36 @@ def check_common(entry: dict, entry_id: str):
     if not isinstance(entry["license"], str) or not entry["license"]:
         fail(entry_id, "license (SPDX) is required")
     return entry
+
+
+def check_attribution(entry: dict, entry_id: str) -> None:
+    authors = entry.get("authors")
+    if not isinstance(authors, list) or not authors:
+        fail(entry_id, "authors must be a non-empty list of original creators")
+    else:
+        for author in authors:
+            if not isinstance(author, dict) or set(author) - {"name", "github"} or not author.get("name"):
+                fail(entry_id, "each author needs a name (and at most a github login)")
+                continue
+            if not isinstance(author["name"], str) or len(author["name"]) > 64:
+                fail(entry_id, "author name must be a string of at most 64 chars")
+            github = author.get("github")
+            if github is not None and (not isinstance(github, str) or not HANDLE.match(github)):
+                fail(entry_id, f"author github {github!r} must be a login without '@'")
+    for field in ("maintainers", "contributors", "adapters"):
+        logins = entry.get(field, [])
+        if not isinstance(logins, list) or any(
+            not isinstance(login, str) or not HANDLE.match(login) for login in logins
+        ):
+            fail(entry_id, f"{field} must be a list of GitHub logins")
+    submitter = entry.get("registrySubmitter")
+    if submitter is not None and (not isinstance(submitter, str) or not HANDLE.match(submitter)):
+        fail(entry_id, "registrySubmitter must be a GitHub login")
+    categories = entry.get("categories", [])
+    if not isinstance(categories, list) or any(
+        not isinstance(category, str) or not category or len(category) > 32 for category in categories
+    ):
+        fail(entry_id, "categories must be a list of non-empty strings of at most 32 chars")
 
 
 def check_source(entry: dict, entry_id: str) -> None:
@@ -215,6 +247,7 @@ def validate_entries() -> dict[str, pathlib.Path]:
         by_id[entry_id] = entry_dir
         if check_common(entry, entry_id) is None:
             continue
+        check_attribution(entry, entry_id)
         check_source(entry, entry_id)
         check_review(entry, entry_id)
         check_compat(entry, entry_id)

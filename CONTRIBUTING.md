@@ -28,6 +28,15 @@ Maintainer-owned small skills may host their content directly under
 `entries/skills/<id>/skill/`; every hosted file must then be listed in `files`
 with a matching hash. Symlinks are rejected everywhere.
 
+## Attribution
+
+Original author, OpenRA adapter, and registry submitter are three different
+roles and are recorded separately: `authors` (the original creators, with
+names and optional GitHub logins), `adapters` (who adapted it for OpenRA),
+and `registrySubmitter` (who filed the entry). Submitting a manifest does
+not make you an author; authorship is checked against the source repository's
+commits, license, or README during review, and corrections go through a PR.
+
 ## What review means
 
 `review.status` records what a human looked at, and `reviewedRevision` pins
