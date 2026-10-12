@@ -2,6 +2,16 @@
   "schemaVersion": 1,
   "entries": [
     {
+      "id": "openra.diagram-design",
+      "name": "Diagram Design",
+      "summary": "Branded presentation diagrams (architecture, flowchart, sequence, ER, timeline, Sankey and 40+ more types) as HTML/SVG/PNG, with draw.io, Mermaid and Excalidraw import. OpenRA-adapted carry of the upstream skill; the recorded differences are in PROVENANCE.md inside the skill.",
+      "delivery": "hub",
+      "version": "2.6",
+      "revision": "7a469f8a7fd9498fa5963310a694eb4a40e40235",
+      "entryPath": "entries/skills/openra.diagram-design/entry.json",
+      "entrySha256": "087996f5cbabc24aa4f86344bf03e0e89f67276c8c607c838955f6015c5ef1f4"
+    },
+    {
       "id": "openra.human-writing",
       "name": "Human Writing",
       "summary": "Write prose that reads as human: style control for fiction, forum posts and factual writing, with a check_prose.py revision pass. Carried verbatim from KKKKhazix/human-writing at the pinned commit; the carried file set only excludes VERSION, another runtime's agent config, and a generated distribution file.",

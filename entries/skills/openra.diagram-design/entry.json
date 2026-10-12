@@ -1,0 +1,523 @@
+{
+  "schemaVersion": 1,
+  "id": "openra.diagram-design",
+  "kind": "skill",
+  "name": "Diagram Design",
+  "summary": "Branded presentation diagrams (architecture, flowchart, sequence, ER, timeline, Sankey and 40+ more types) as HTML/SVG/PNG, with draw.io, Mermaid and Excalidraw import. OpenRA-adapted carry of the upstream skill; the recorded differences are in PROVENANCE.md inside the skill.",
+  "summaryI18n": {
+    "zh-CN": "品牌化演示图表（架构图、流程图、时序图、ER、时间线、桑基图等 40 余类），输出 HTML/SVG/PNG，支持 draw.io、Mermaid、Excalidraw 导入。OpenRA 适配版，相对上游的改写记录见技能内 PROVENANCE.md。"
+  },
+  "authors": [
+    {
+      "name": "Cathryn Lavery",
+      "github": "cathrynlavery"
+    }
+  ],
+  "adapters": [
+    "HuieL"
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "diagrams"
+  ],
+  "source": {
+    "repo": "HuieL/OpenAR-skill-hub",
+    "path": "entries/skills/openra.diagram-design/skill",
+    "revision": "7a469f8a7fd9498fa5963310a694eb4a40e40235"
+  },
+  "version": "2.6",
+  "license": "MIT",
+  "licenseFile": "skill/LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "bb7e12e91fecef43024111123ff784cec6c485585561d8b552557c0173b3ed29",
+      "bytes": 1071,
+      "executable": false
+    },
+    {
+      "path": "PROVENANCE.md",
+      "sha256": "28125cdf52e0f37fdffe0ed43436970b2ad3294569bd75efe926db15b4fdf1d1",
+      "bytes": 3247,
+      "executable": false
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "e2891a7c27af01a42eb6506daaf16cd84e10dab9d66b60c9e7c628b828e49340",
+      "bytes": 30748,
+      "executable": false
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES.md",
+      "sha256": "ad931154e2f91bf545fc9c442666a2159aa56c0af3cca0b7246e02c6efeab6ba",
+      "bytes": 3143,
+      "executable": false
+    },
+    {
+      "path": "assets/icons.html",
+      "sha256": "8301219558a40abce2d739def01feda6a8b72adce00f8d60154c989dfb581090",
+      "bytes": 108545,
+      "executable": false
+    },
+    {
+      "path": "assets/index.html",
+      "sha256": "1844e33adb867a83a850f6ef92c5ad00b91f935a4889ee12db574866e350da10",
+      "bytes": 20317,
+      "executable": false
+    },
+    {
+      "path": "assets/template-dark.html",
+      "sha256": "98428c8de2c4fe8e799d7110606421effb876e2e788f8639140854c1033d82d5",
+      "bytes": 4080,
+      "executable": false
+    },
+    {
+      "path": "assets/template-full.html",
+      "sha256": "bfe0aa003eb264f4a2b6f10c540d9d7a53950574ed0f5dba2af3cac61fc2f52a",
+      "bytes": 23154,
+      "executable": false
+    },
+    {
+      "path": "assets/template-motion.html",
+      "sha256": "0dc228e58e5810fe99d80b0895515bb9a7f129ced1de2960d343f1e9539d5359",
+      "bytes": 20935,
+      "executable": false
+    },
+    {
+      "path": "assets/template-terminal.html",
+      "sha256": "d449b50f439214cef9025b91f7ad4d8f786c0f329496aa95b5ea864c1586708d",
+      "bytes": 5481,
+      "executable": false
+    },
+    {
+      "path": "assets/template.html",
+      "sha256": "f6978a9d50dd286f32ab149bcf505261b9fc331df7320071f87509a285dee7f4",
+      "bytes": 4202,
+      "executable": false
+    },
+    {
+      "path": "display.json",
+      "sha256": "82e68ba0ac51e6399a1bef6d107beb9a8762363850c395e66f5aea5a7bd2d9d4",
+      "bytes": 767,
+      "executable": false
+    },
+    {
+      "path": "references/animation.md",
+      "sha256": "f68388e400f8e11968c7f69ea4c980fe8c01df384b17bddc9e5bf47e6e5eff67",
+      "bytes": 12437,
+      "executable": false
+    },
+    {
+      "path": "references/doctor.md",
+      "sha256": "d74e347616bfb2bf8d2057316029bb1da829ccb021f3bda5c66ffdff2b88abd9",
+      "bytes": 5861,
+      "executable": false
+    },
+    {
+      "path": "references/export-registry.md",
+      "sha256": "6d35bdccf32e7a2f28ebafac75d099451881a3ad9e268798c86acea2c2c66410",
+      "bytes": 6319,
+      "executable": false
+    },
+    {
+      "path": "references/export.md",
+      "sha256": "1b3e6540cb30121301a912b3c3daeb078f90023a2c14577a80e420ae8dcf5e5c",
+      "bytes": 17817,
+      "executable": false
+    },
+    {
+      "path": "references/import-drawio.md",
+      "sha256": "44ab851f7f01f070e76779ee7e301f7573924f4199467309eb36aac13a4c393c",
+      "bytes": 14077,
+      "executable": false
+    },
+    {
+      "path": "references/import-excalidraw.md",
+      "sha256": "757e6a8900022a9c73da3e0238ebcc1424c3a17a8d1f5449c3d291223fef15ad",
+      "bytes": 11110,
+      "executable": false
+    },
+    {
+      "path": "references/import-mermaid.md",
+      "sha256": "484ad136f0e23adcc45035c79ad2e0b173a0314e5b8f2e5d1bc45f825254cbda",
+      "bytes": 9804,
+      "executable": false
+    },
+    {
+      "path": "references/layout-budget.md",
+      "sha256": "453eb5d31ec5377ddd028f0d7e3a28ba7943948524fc60d9b00c2959216a9211",
+      "bytes": 4214,
+      "executable": false
+    },
+    {
+      "path": "references/onboarding.md",
+      "sha256": "c22b75040dd50178753660610c9e116948ca28b24b132ea1e66058a7ea891b67",
+      "bytes": 15107,
+      "executable": false
+    },
+    {
+      "path": "references/output-spec.md",
+      "sha256": "12dc0eed3514e387328651652604ef4fba1a76bce1823a79f4da2993336d1e69",
+      "bytes": 19200,
+      "executable": false
+    },
+    {
+      "path": "references/primitive-annotation.md",
+      "sha256": "c4cab11c4660375856a8bea668922b07932199dc26a695ebcf95c5a23ba03ec5",
+      "bytes": 1661,
+      "executable": false
+    },
+    {
+      "path": "references/primitive-icons.md",
+      "sha256": "ea768a2b2f169ff3cd98ed41da9ad3a30ed92374bc2da44a8ba83f1f3d453c43",
+      "bytes": 105941,
+      "executable": false
+    },
+    {
+      "path": "references/primitive-sketchy.md",
+      "sha256": "8859f0d70c10f46f59817cb348346e7fb9e1609b70a4a513d297b8c850c866a4",
+      "bytes": 1700,
+      "executable": false
+    },
+    {
+      "path": "references/primitive-terminal.md",
+      "sha256": "7b52c2fb229c822a60b0061caa64ae6a68aacd4f1c22a1a98d1d0eaaa2333b55",
+      "bytes": 3915,
+      "executable": false
+    },
+    {
+      "path": "references/primitives-core.md",
+      "sha256": "c56c028914c6aa6e0f37dfe4725f761b9ff723562db2796941cbea5897317072",
+      "bytes": 12544,
+      "executable": false
+    },
+    {
+      "path": "references/profiles.md",
+      "sha256": "8afea09015a456b218287f08a2e9ac44bb50f6a9ebd2a7c1487bd774e89f9016",
+      "bytes": 14434,
+      "executable": false
+    },
+    {
+      "path": "references/semantic-patterns.md",
+      "sha256": "8bdd863696c415bef08d5f9390d95c4d660c70c22a1deef483b18cf58f48e60b",
+      "bytes": 16679,
+      "executable": false
+    },
+    {
+      "path": "references/style-guide.md",
+      "sha256": "4716fa1a4f4d31cf836e0b4363886aa7242657fb48c624e0b34c433179dc6673",
+      "bytes": 20915,
+      "executable": false
+    },
+    {
+      "path": "references/type-architecture-delta.md",
+      "sha256": "e5813f26e1fb924863efe70db36f112e1b9570e47335d7f6fa6e46473136e4e5",
+      "bytes": 14595,
+      "executable": false
+    },
+    {
+      "path": "references/type-architecture.md",
+      "sha256": "ce3f913d255058bca2e50484f60993e0a9aca8af83b1e52d0b5b759dfc1a8fb1",
+      "bytes": 5917,
+      "executable": false
+    },
+    {
+      "path": "references/type-axonometric-plan.md",
+      "sha256": "be8ead6d582df5c19fdf611f7540c058f166929293155ab40ddc3ef524232ba6",
+      "bytes": 7184,
+      "executable": false
+    },
+    {
+      "path": "references/type-bar.md",
+      "sha256": "d0505f88ba830db50ea215b9a3d4da7679577b07d76c1164efc29d82b988446d",
+      "bytes": 13812,
+      "executable": false
+    },
+    {
+      "path": "references/type-data-flow.md",
+      "sha256": "ad1cd8358c9360663200f5100a199e57e43a4e6702982752220ad423127941e8",
+      "bytes": 20858,
+      "executable": false
+    },
+    {
+      "path": "references/type-db-schema.md",
+      "sha256": "91f017b8813cfc63d775809d18659971d0aa5982967af94d47def31690713083",
+      "bytes": 4954,
+      "executable": false
+    },
+    {
+      "path": "references/type-dependency.md",
+      "sha256": "dd76bc521408b1cf0a3f86ee7c9ea93e4ad0650e4855c8f2be2358db7b721a43",
+      "bytes": 4309,
+      "executable": false
+    },
+    {
+      "path": "references/type-deployment.md",
+      "sha256": "296adfee79069e8fd8f9a19012cca731c5cc237990a0274ca1a8a807173c9fec",
+      "bytes": 4295,
+      "executable": false
+    },
+    {
+      "path": "references/type-dp-integration.md",
+      "sha256": "6bf9b678d37e9f01f61ac8203e4ad5c29024ecd7a9f3ae0b42e71851522774f7",
+      "bytes": 22057,
+      "executable": false
+    },
+    {
+      "path": "references/type-dp-security-matrix.md",
+      "sha256": "209f4870ec19d90eff1ab80ecfe0062f3a5075c3b666b1a3a900a27260ba8832",
+      "bytes": 19086,
+      "executable": false
+    },
+    {
+      "path": "references/type-er.md",
+      "sha256": "d1495abeb6f5004bd89fface17d3767ebab71c8450dca195b055e18bf3132c57",
+      "bytes": 1531,
+      "executable": false
+    },
+    {
+      "path": "references/type-exploded.md",
+      "sha256": "785b904ce1a1be806824c97a5719578a2c32c931fb424d0a1a69c4480a527152",
+      "bytes": 11157,
+      "executable": false
+    },
+    {
+      "path": "references/type-fishbone.md",
+      "sha256": "3441d3c73334813bf55cf1d0d96ea1aa4f9e46a60001ba83dfe9442be1745f8b",
+      "bytes": 5796,
+      "executable": false
+    },
+    {
+      "path": "references/type-flowchart.md",
+      "sha256": "c2af5e2b849255ae4859125db7b101b74bfb9b201204725c1e83fac51a98ebab",
+      "bytes": 1079,
+      "executable": false
+    },
+    {
+      "path": "references/type-gantt.md",
+      "sha256": "d7d6b199fd804b417200f2b878f36042cb5d6b025af711c06d3d3e429b0ae6b0",
+      "bytes": 2433,
+      "executable": false
+    },
+    {
+      "path": "references/type-heatmap.md",
+      "sha256": "eba9f8c06eaf12d346f4dae89fb20d7cd884c9e37b42164d505c594d46e51bb1",
+      "bytes": 7538,
+      "executable": false
+    },
+    {
+      "path": "references/type-high-level.md",
+      "sha256": "f9629c9b3dd4b85da3a19c762d0f5fd58213b5e3994ad783b2033f4e83260264",
+      "bytes": 28325,
+      "executable": false
+    },
+    {
+      "path": "references/type-it-state.md",
+      "sha256": "b5c35f1703a53e3ca4196352912898e5ea5f1fce054a40d4a3568629535cd7ec",
+      "bytes": 29677,
+      "executable": false
+    },
+    {
+      "path": "references/type-journey.md",
+      "sha256": "9a84eb80c416957907b2d0e242e74f4610000b7862490278eadb7b6647c5635a",
+      "bytes": 5123,
+      "executable": false
+    },
+    {
+      "path": "references/type-kanban.md",
+      "sha256": "447a8a231d5bb1e822945a02e8bd4adc219b0791bb0182cab48680fbbd88d045",
+      "bytes": 4531,
+      "executable": false
+    },
+    {
+      "path": "references/type-layers.md",
+      "sha256": "a822afe4e06ffaf9793f5466810e2504c020e6ae3abd0b9e53c6f7b1368f2609",
+      "bytes": 1570,
+      "executable": false
+    },
+    {
+      "path": "references/type-line.md",
+      "sha256": "f7fa213f2398da9e6bf30402bc2c430e778e57d95e60174bf082ba67d629b831",
+      "bytes": 43194,
+      "executable": false
+    },
+    {
+      "path": "references/type-loop.md",
+      "sha256": "c7e98b8eda1e6d6904920f4d96310745deb0651920e9d531c8f40e54304ab60d",
+      "bytes": 12609,
+      "executable": false
+    },
+    {
+      "path": "references/type-medallion.md",
+      "sha256": "a1af03521adb53431766a559e05c984ee07871fd3cf495cf63146999f56f6f42",
+      "bytes": 22226,
+      "executable": false
+    },
+    {
+      "path": "references/type-nested.md",
+      "sha256": "c16da375df52f047748c65276f564a1b0d7d2dd420170b92dbf7cdac68981516",
+      "bytes": 1363,
+      "executable": false
+    },
+    {
+      "path": "references/type-org-chart.md",
+      "sha256": "fd64716f3f419f41785c40fbabb96b36cfddcdfd0cc7ee444585f3e2b528f9c9",
+      "bytes": 3101,
+      "executable": false
+    },
+    {
+      "path": "references/type-polar.md",
+      "sha256": "11237fa0be82c3c6e963bc1aaed20283d839c7570dadfd0805e202ea129edba0",
+      "bytes": 7998,
+      "executable": false
+    },
+    {
+      "path": "references/type-process.md",
+      "sha256": "7e929246f3191bb62529b4485668c1fa1738b93472dd42388960f2ade9205a77",
+      "bytes": 28062,
+      "executable": false
+    },
+    {
+      "path": "references/type-pyramid.md",
+      "sha256": "c21ef0c6f3832eb30f0cd1aef0e0ec72b6758abbb1b8128acf36e81384679714",
+      "bytes": 1805,
+      "executable": false
+    },
+    {
+      "path": "references/type-quadrant.md",
+      "sha256": "eb7d542ddac72e2e1a75cb7ca64ddb67901283859413a133a332137e7fb9e5b1",
+      "bytes": 6256,
+      "executable": false
+    },
+    {
+      "path": "references/type-radar.md",
+      "sha256": "49c66e7921e1fd7575cf879852c41aa86e0db7f98b0c8105e3103202af49f563",
+      "bytes": 5626,
+      "executable": false
+    },
+    {
+      "path": "references/type-sankey.md",
+      "sha256": "9c70bb6fc3d77d278ae39af69fa705cd7cdb6e61f6ec88acbd8faede033ebb00",
+      "bytes": 8975,
+      "executable": false
+    },
+    {
+      "path": "references/type-scatter.md",
+      "sha256": "2f0770c4aaea747d14788805e45b13aee44350796ab4035bdfc2ab3d8c0c787f",
+      "bytes": 20433,
+      "executable": false
+    },
+    {
+      "path": "references/type-sequence.md",
+      "sha256": "e3a109d4983a951ff670346c352529e48619c1e81db1774edfa6f05d3e93f778",
+      "bytes": 6798,
+      "executable": false
+    },
+    {
+      "path": "references/type-state.md",
+      "sha256": "9c8ed85762d5bbb3672907bc1664ebf94bcc72850efbacf33d5ee12731053122",
+      "bytes": 1958,
+      "executable": false
+    },
+    {
+      "path": "references/type-story-map.md",
+      "sha256": "0ab4fae3de1f9909e20f27ca30414c5574fd8af583c28e1f55ba2af1b50f51fc",
+      "bytes": 4882,
+      "executable": false
+    },
+    {
+      "path": "references/type-swimlane.md",
+      "sha256": "8fb19f58dd532ed7246de2dd3a603b1c48687d556be43a6eef465386f5afc98e",
+      "bytes": 994,
+      "executable": false
+    },
+    {
+      "path": "references/type-timeline.md",
+      "sha256": "a6b4ad26c05957835705229579f8c733b32791de9d01f9f268fea8a70228f501",
+      "bytes": 1091,
+      "executable": false
+    },
+    {
+      "path": "references/type-tree.md",
+      "sha256": "60194950ef4e46725d7670d93e405a7d4b9af44bf775c549b8f3ce63ca6ce15c",
+      "bytes": 1517,
+      "executable": false
+    },
+    {
+      "path": "references/type-treemap.md",
+      "sha256": "72e2e864486e96df7afeeb1b4522e770ca850645f1d1ea1954106a80366214f1",
+      "bytes": 17843,
+      "executable": false
+    },
+    {
+      "path": "references/type-uml-class.md",
+      "sha256": "2940353d4c0afeb25b8d5e830e3408d5fdec3c4c89504739f5d847e064ad12c2",
+      "bytes": 4902,
+      "executable": false
+    },
+    {
+      "path": "references/type-venn.md",
+      "sha256": "7ead49ed70f1b2506beb83e9c84862d7dbc63f1225f0e50ecc6e2b1b4a632b38",
+      "bytes": 1659,
+      "executable": false
+    },
+    {
+      "path": "references/type-wardley.md",
+      "sha256": "4060402f648fa2ec858850f532675f52ac5d5df0b209c9c9450cc3df332114fb",
+      "bytes": 5778,
+      "executable": false
+    },
+    {
+      "path": "references/type-waterfall.md",
+      "sha256": "07db1d30ce52356884b9c7005ad473434c6104257eee0252e3487209e59d0da9",
+      "bytes": 8987,
+      "executable": false
+    },
+    {
+      "path": "scripts/drawio_extract.py",
+      "sha256": "2a9e52ca9565046735e6231f293d245b5811b25f235a1325d1997174cadcd073",
+      "bytes": 33747,
+      "executable": false
+    },
+    {
+      "path": "scripts/excalidraw_extract.py",
+      "sha256": "649d4faf0c370f594f9d1e05a6baa1de6fcaf8354e52608d24b64f51c2e44fc0",
+      "bytes": 26139,
+      "executable": false
+    },
+    {
+      "path": "scripts/export_svg.py",
+      "sha256": "ddf5ab8ccad8210eb0c4eee55ef96eca2d7249b894ff07d03b61ffad324d397d",
+      "bytes": 25784,
+      "executable": true
+    },
+    {
+      "path": "scripts/mermaid_extract.py",
+      "sha256": "14224bc9f6dba8bccddff8ea5e10cf2a933838644aa25be7e3f27431c992ed41",
+      "bytes": 52838,
+      "executable": false
+    },
+    {
+      "path": "scripts/self_check.py",
+      "sha256": "68625ad793f69565300da22b983da310549bebd6cd7e820f0ff22ddc99e54ed0",
+      "bytes": 19721,
+      "executable": false
+    }
+  ],
+  "totalBytes": 1111538,
+  "requires": [],
+  "permissionsNote": "allowed-tools declarations inside SKILL.md are upstream claims, not host approvals; OpenRA enforces its own permission gates.",
+  "upstream": {
+    "repo": "cathrynlavery/diagram-design",
+    "revision": "7a2e22170ee838e859d8142ba825d83f8b6375e6",
+    "path": "skills/diagram-design",
+    "license": "MIT"
+  }
+}
