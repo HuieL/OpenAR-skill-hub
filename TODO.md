@@ -20,8 +20,8 @@
 ## 1. 当前事实（2026-10-12）
 
 - 本仓库为空（无任何分支）。GitHub 默认分支在 `main` 建立后由用户设为 `main`。
-- OpenRA 内置 skill（随 App 发布，`agent-skills/`）：17 个 ora-* 核心 + `diagram-design`（cathrynlavery/diagram-design@7a2e2217，**MIT**，已 vendored）。
-- OpenRA curated（编译期内置，`src/local/curated_skills_data/`）：`officecli-academic-paper`、`officecli-data-dashboard`（iOfficeAI/AionCore@4a707fc）、`human-writing`（KKKKhazix/human-writing@4fda173f，MIT）。
+- OpenRA 内置 skill（随 App 发布）：17 个 ora-* 核心 + `diagram-design`（cathrynlavery/diagram-design@7a2e2217，**MIT**，已 vendored）。
+- OpenRA curated（随 App 内置）：`officecli-academic-paper`、`officecli-data-dashboard`（iOfficeAI/AionCore@4a707fc）、`human-writing`（KKKKhazix/human-writing@4fda173f，MIT）。
 - H 已准备 `ora-craft-suite` skill（OpenRA 分支 `agent-h/craft-suite-skill`，等本仓 main 建好后转为条目）。
 - C 的 registry 客户端（HUB-01）尚未实现；它将按 commit SHA 固定读取本仓 `skills.json` 并逐条校验 sha256。
 
@@ -57,9 +57,9 @@
 - 交付：分支 `agent-x/skeleton` → Review 合入成为 `main`。
 
 ### SX-01 首批条目（NEXT，SX-00 合入后）
-- [ ] `diagram-design`：上游 `cathrynlavery/diagram-design@7a2e2217`，MIT；`files[]` 与 OpenRA `agent-skills/diagram-design/` 逐文件 sha256 一致（以 OpenRA main 实际字节为准）。
+- [ ] `diagram-design`：上游 `cathrynlavery/diagram-design@7a2e2217`，MIT；`files[]` 与 OpenRA 发布版内置副本逐文件 sha256 一致。
 - [ ] `human-writing`（MIT，上游 SHA 见 OpenRA curated 数据）、`officecli-academic-paper` / `officecli-data-dashboard`（核对上游许可；安装段落是 OpenRA 的"固定发布版安装"改写形式，条目需说明是改写版并给出原文来源）。
-- [ ] `ora-craft-suite`：从 OpenRA `agent-h/craft-suite-skill` 接收（H 提供内容，X 建条目）；displayName 已统一为 "Craft Suite"。
+- [ ] `ora-craft-suite`：从 H 的交接 接收（H 提供内容，X 建条目）；displayName 已统一为 "Craft Suite"。
 - [ ] 17 个 ora-* 核心：`delivery: bundled`，只登记 id/name/summary/当前 OpenRA 发布 revision，不提供安装文件（随 App 更新）。
 - [ ] 每条：许可文件、上游 revision、全部文件哈希；没有确认存在的 URL/版本不得上架。
 - 交付：每 1–3 个条目一个分支 `agent-x/seed-<name>`。
@@ -81,7 +81,7 @@
 - **HUB-01 registry 客户端（X 负责，两个 hub 共用一份实现）**：
   - [ ] 按 commit SHA 读取 `skills.json` 与 Y 仓的 `extensions.json`；逐条校验 entry sha256；拒绝 main/latest/可变 tag 当锁定。
   - [ ] 缓存 last-good 索引与刷新时间，断网不影响已安装能力；条件请求/ETag、限流退避、大小与条目数上限。
-  - [ ] 只读：不安装、不执行；安装走 C 的 `acquire::*` + ChangeSet（改 `acquire/*`、`changesets.rs` 需 C 共审）。
+  - [ ] 只读：不安装、不执行；安装走 C 的安装内核 + ChangeSet（改 OpenRA 安装内核需 C 共审）。
   - [ ] fixture 测试（空索引、坏哈希、未知字段、路径穿越、超限）+ 对两真仓的只读探测。
 - **HUB-04 skill 加载/编辑**：标准 SKILL.md 及必要 scripts/references/assets；按 revision 管理第三方 skill；只暴露当前 scope 已选 skill 的 metadata，正文按需读取；本地修改产生新本地 revision，升级前展示差异。
 - 不碰：Hub UI（G+D）、ExtensionDefinition 契约（G）、扩展安装（Y）。
@@ -96,3 +96,11 @@
 - **SX-M4（HUB-11 M3 部分）**
   - [ ] GitHub Actions 定时生成 `community/discovery.json`：New（首次收录日期）、Recently Updated（可核查 release/commit）、Trending（公开 GitHub 信号，写明指标与窗口，标注 "Trending on GitHub"，不冒充安装量）；给新/小众项目保留曝光位；失败保留上一版；只读公开元数据，固定 action SHA，无写权限外泄。
 - 不做：社区服务器、账号、评论库、点赞积分、等级、付费位；不收集私人使用历史/安装记录。
+
+
+## 7. Public Release Gate（用户 10-12，硬规则）
+
+- 本仓库**只放 OpenRA Public Contract 之上的可下载/适配资产**（条目元数据、schema、第三方或社区 skill/扩展的公开内容与发行包索引、校验脚本、CI）。**不得包含 OpenRA 核心逻辑**：不复制 OpenRA 源码、内部模块路径、内部 HTTP 路由、宿主 token 名、未公开的数据结构。
+- 条目与 schema 只能引用 OpenRA `docs/public-contract.md` 中列出的稳定字段与接口（由 G+A 维护，尽量小）；需要新接口时向 OpenRA 提最小公共契约变更，不在本仓自定义宿主行为。
+- 每个合入 main 的分支都要过 Review 的 Public Release Gate：路径白名单、与 OpenRA 源文件逐字节比对、内部标识/密钥扫描、无符号链接/大文件、CI 只读且 action 固定 SHA、无 `pull_request_target`。不通过不合入。
+- 本 `todo` 分支同样公开可见：不要写 OpenRA 内部文件路径或实现细节，只引用公共文档名。
