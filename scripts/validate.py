@@ -48,8 +48,10 @@ def check_common(entry: dict, entry_id: str):
         fail(entry_id, f"unknown fields: {sorted(unknown)}")
     missing = {
         "schemaVersion", "id", "kind", "name", "summary", "authors", "source",
-        "version", "license", "review", "compat", "delivery", "files", "totalBytes",
+        "version", "license", "review", "compat", "delivery",
     } - set(entry)
+    if entry.get("delivery") == "hub":
+        missing |= {"files", "totalBytes"} - set(entry)
     if missing:
         fail(entry_id, f"missing fields: {sorted(missing)}")
         return None
@@ -146,14 +148,21 @@ def check_compat(entry: dict, entry_id: str) -> None:
 
 
 def check_files(entry: dict, entry_id: str, entry_dir: pathlib.Path) -> None:
-    files = entry["files"]
-    if not isinstance(files, list):
-        fail(entry_id, "files must be a list")
-        return
-    if entry["delivery"] == "hub" and not files:
-        fail(entry_id, "delivery 'hub' requires a non-empty files manifest")
     if entry["delivery"] not in DELIVERIES:
         fail(entry_id, "delivery must be 'bundled' or 'hub'")
+        return
+    if entry["delivery"] == "bundled":
+        # Bundled skills ship with the app; there is nothing to fetch or hash.
+        if "files" in entry or "totalBytes" in entry:
+            fail(entry_id, "delivery 'bundled' carries no files manifest")
+        files: list = []
+    else:
+        files = entry["files"]
+        if not isinstance(files, list):
+            fail(entry_id, "files must be a list")
+            return
+        if not files:
+            fail(entry_id, "delivery 'hub' requires a non-empty files manifest")
     seen: set[str] = set()
     total = 0
     for item in files:
@@ -174,10 +183,11 @@ def check_files(entry: dict, entry_id: str, entry_dir: pathlib.Path) -> None:
         if not isinstance(item["executable"], bool):
             fail(entry_id, f"file {path!r} executable must be a boolean")
         total += item["bytes"] if isinstance(item["bytes"], int) else 0
-    if entry["totalBytes"] != total:
-        fail(entry_id, f"totalBytes {entry['totalBytes']} != sum of files bytes {total}")
-    if total > MAX_TOTAL_BYTES:
-        fail(entry_id, f"entry exceeds the {MAX_TOTAL_BYTES} byte cap")
+    if entry["delivery"] == "hub":
+        if entry["totalBytes"] != total:
+            fail(entry_id, f"totalBytes {entry['totalBytes']} != sum of files bytes {total}")
+        if total > MAX_TOTAL_BYTES:
+            fail(entry_id, f"entry exceeds the {MAX_TOTAL_BYTES} byte cap")
     if "licenseFile" in entry:
         license_file = entry["licenseFile"]
         if not isinstance(license_file, str) or not safe_rel_path(license_file):
