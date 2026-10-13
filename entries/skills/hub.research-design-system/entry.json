@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "id": "hub.research-design-system",
+  "kind": "skill",
+  "name": "Research Design System",
+  "summary": "Design-reference selector for research outputs: a pinned, hash-verified index of 84 design-system analyses (DESIGN.md files) from VoltAgent/awesome-design-md, categorized as reference material - not skills, not brand themes, not brand assets. The user picks one material; the workflow fetches only that file at the pinned revision, verifies its sha256, caches it for offline use, distills the prose into a reviewable token candidate, and binds it to an output revision only after confirmation. Original OpenAR workflow; the analyses stay upstream and read-only.",
+  "summaryI18n": {
+    "zh-CN": "科研产出的设计参考选择器：钉版并逐文件哈希校验的 84 份设计系统分析（DESIGN.md，来自 VoltAgent/awesome-design-md）索引，归类为参考资料——不是技能、不是品牌主题、不含品牌资产。用户挑选一份后，才按钉住版本取回该文件、校验 sha256、本地缓存供离线使用，把分析提炼为可审阅的 token 候选，确认后才绑定到产出版本。工作流为 OpenAR 原创编写；分析原文留在上游、只读。"
+  },
+  "authors": [
+    {
+      "name": "VoltAgent",
+      "github": "VoltAgent"
+    }
+  ],
+  "adapters": [
+    "HuieL"
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "design",
+    "reference"
+  ],
+  "source": {
+    "repo": "HuieL/OpenAR-skill-hub",
+    "path": "entries/skills/hub.research-design-system/skill",
+    "revision": "b105f383542105b92cfcce7aa9235788c415a619"
+  },
+  "upstream": {
+    "repo": "VoltAgent/awesome-design-md",
+    "revision": "c7c1bada4eda972236d124e06ee58df129a9266b",
+    "license": "MIT",
+    "path": "design-md"
+  },
+  "version": "1.0.0",
+  "license": "MIT",
+  "licenseFile": "skill/LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "18e4616136521794d10b66850621e8a4db832462352b107b5286279b9c9c949a",
+      "bytes": 1086,
+      "executable": false
+    },
+    {
+      "path": "PROVENANCE.md",
+      "sha256": "1bd8a8b7b83aeed5d1387ea988257792a2286ac5aaf19d5ad1a43b2ac280a45c",
+      "bytes": 867,
+      "executable": false
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "b6de127706b8c1ab44b31d1df80cb178f32e2e4ea83046aa572e5dca30f6e036",
+      "bytes": 3777,
+      "executable": false
+    },
+    {
+      "path": "references/design-md-index.md",
+      "sha256": "b57d64f6ae814d67c936938c096d21bc834d882d8f45e1699833cd9d0da3393c",
+      "bytes": 24412,
+      "executable": false
+    }
+  ],
+  "totalBytes": 30142,
+  "requires": [],
+  "permissionsNote": "The workflow fetches exactly one upstream DESIGN.md, only after the user picks it, from the pinned revision recorded in the index; OpenAR enforces its own permission gates on any network access."
+}

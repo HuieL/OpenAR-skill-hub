@@ -12,6 +12,16 @@
       "entrySha256": "113b8e4f0d4c28cf34b723de4177173e81dc7508a1745dcbee658913bb7da602"
     },
     {
+      "id": "hub.hallmark",
+      "name": "Hallmark",
+      "summary": "Anti-AI-slop design skill for greenfield pages: a default design flow plus three in-skill verbs the model performs when the user asks - audit (read the target, score it against the anti-pattern list, report only, never edit), redesign (re-visualize inside the existing implementation boundaries, preserving routes, copy intent and information architecture), and study (extract the design DNA from a screenshot or a URL the user supplies). These verbs are skill behaviors, not installed CLI commands. Inputs: a design brief, an existing page or component, or a screenshot/URL to study; output is HTML/CSS artifacts with locked design tokens, verified at 320/375/414/768 px. Carried verbatim from nutlope/hallmark at the pinned commit; only the skill directory (SKILL.md plus references) is carried, not the site/docs/demo.",
+      "delivery": "hub",
+      "version": "1.1.0",
+      "revision": "13ac0ec7e148655948100b6396439e481361d690",
+      "entryPath": "entries/skills/hub.hallmark/entry.json",
+      "entrySha256": "bf3a97bd33b83556afcdec2626802bc82cd033fa509ce389b1d247cf33391e9e"
+    },
+    {
       "id": "hub.human-writing",
       "name": "Human Writing",
       "summary": "Write prose that reads as human: style control for fiction, forum posts and factual writing, with a check_prose.py revision pass. Carried verbatim from KKKKhazix/human-writing at the pinned commit; the carried file set only excludes VERSION, another runtime's agent config, and a generated distribution file.",
@@ -40,6 +50,16 @@
       "revision": "d29c1b23eeb5a068eadb60685f0d041fa018730d",
       "entryPath": "entries/skills/hub.officecli-data-dashboard/entry.json",
       "entrySha256": "8d861a40624866b787462164013e0a5083cbfa0e53db25e9085c4b1a178e2d47"
+    },
+    {
+      "id": "hub.research-design-system",
+      "name": "Research Design System",
+      "summary": "Design-reference selector for research outputs: a pinned, hash-verified index of 84 design-system analyses (DESIGN.md files) from VoltAgent/awesome-design-md, categorized as reference material - not skills, not brand themes, not brand assets. The user picks one material; the workflow fetches only that file at the pinned revision, verifies its sha256, caches it for offline use, distills the prose into a reviewable token candidate, and binds it to an output revision only after confirmation. Original OpenAR workflow; the analyses stay upstream and read-only.",
+      "delivery": "hub",
+      "version": "1.0.0",
+      "revision": "b105f383542105b92cfcce7aa9235788c415a619",
+      "entryPath": "entries/skills/hub.research-design-system/entry.json",
+      "entrySha256": "89de3e1985b197ef3416d8e8a6d8dc2fde4773ef46b4aff2b10b3a3d61fea9a7"
     },
     {
       "id": "hub.web-design-guidelines",
