@@ -20,6 +20,26 @@
       "revision": "4fda173f3fef7fb808f3eba991eeb2528ea4b189",
       "entryPath": "entries/skills/openra.human-writing/entry.json",
       "entrySha256": "74a822c6f565ea1ff0d6f23dddfc539e2b2743f77a48e0e0a9bf3676f5501447"
+    },
+    {
+      "id": "openra.officecli-academic-paper",
+      "name": "OfficeCLI Academic Paper",
+      "summary": "Academic-style .docx output: journal/conference/thesis chapters with APA, Chicago, IEEE or MLA citation style, numbered equations, cross-references, footnotes and bibliography. OpenRA-adapted carry of the iOfficeAI/AionCore skill: the install section is replaced by a prerequisite check (officecli must already be installed via OpenRA's approved CLI path; the skill only verifies officecli --version) and an Apache-2.0 §4(b) modification notice is added; everything else is upstream text.",
+      "delivery": "hub",
+      "version": "2.0.0",
+      "revision": "b61e4893f43bdee01c64e36475f18878b0cfa0ca",
+      "entryPath": "entries/skills/openra.officecli-academic-paper/entry.json",
+      "entrySha256": "733fca0424798c594314074062e71390f15634061efe2b88ea1ebe87c3f2107e"
+    },
+    {
+      "id": "openra.officecli-data-dashboard",
+      "name": "OfficeCLI Data Dashboard",
+      "summary": "Multi-element Excel dashboards from CSV or tabular input: Dashboard sheet on open, formula-driven KPI cards, charts, sparklines and conditional formatting. OpenRA-adapted carry of the iOfficeAI/AionCore skill: the install section is replaced by a prerequisite check (officecli must already be installed via OpenRA's approved CLI path; the skill only verifies officecli --version) and an Apache-2.0 §4(b) modification notice is added; everything else is upstream text.",
+      "delivery": "hub",
+      "version": "2.0.0",
+      "revision": "b61e4893f43bdee01c64e36475f18878b0cfa0ca",
+      "entryPath": "entries/skills/openra.officecli-data-dashboard/entry.json",
+      "entrySha256": "6cb4f5c7f49dc481dc902e130565e25fca4a284627ddf96abd28ff26dc17744a"
     }
   ]
 }

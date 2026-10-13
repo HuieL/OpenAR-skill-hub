@@ -3,6 +3,8 @@ name: officecli-data-dashboard
 description: "Use this skill to build a multi-element Excel dashboard — Dashboard sheet on open, multiple formula-driven KPI cards, multiple charts, sparklines, and conditional formatting — from CSV or tabular input. Trigger on: 'dashboard', 'KPI dashboard', 'analytics dashboard', 'executive dashboard', 'metrics dashboard', 'CSV to dashboard', 'data visualization'. Output is a single .xlsx. Scene-layer on officecli-xlsx: inherits every xlsx hard rule. DO NOT invoke for: a single budget tracker / one-sheet CSV-with-formatting (use xlsx), a 3-statement / DCF / LBO financial model (use financial-model), a weekly report with ≤ 1 chart and < 10 rows (use xlsx)."
 ---
 
+> **Modification notice (Apache-2.0 §4(b)).** This file is carried from iOfficeAI/AionCore at commit `4a707fc3` (Apache-2.0) with one change: the upstream install section (curl|bash / irm|iex) is replaced by the prerequisite check above — `officecli` must already be installed via OpenRA's approved CLI path; this skill only verifies `officecli --version`.
+
 > **⚠️ Platform note — read before running any command.** The shell snippets in this skill are written for **macOS / Linux** (bash/zsh). Always check which OS you are on first. On **Windows** do **not** run them verbatim — the underlying tool/CLI commands are usually cross-platform, but the surrounding shell syntax is not. Translate it to PowerShell before running:
 >
 > | bash (macOS / Linux) | PowerShell (Windows) |
@@ -25,12 +27,7 @@ A dashboard is not "a spreadsheet with charts". It is a composition: **one Dashb
 
 ## Setup
 
-If `officecli` is missing:
-
-- **macOS / Linux**: `curl -fsSL https://d.officecli.ai/install.sh | bash`
-- **Windows (PowerShell)**: `irm https://d.officecli.ai/install.ps1 | iex`
-
-Verify with `officecli --version` (open a new terminal if PATH hasn't picked up). If install fails, download a binary from https://github.com/iOfficeAI/OfficeCLI/releases.
+`officecli` must already be installed through OpenRA's approved CLI path (pinned version and checksum, user approval). This skill never runs install commands: check `officecli --version` first; if the CLI is missing, stop and report the prerequisite instead of installing anything.
 
 ## ⚠️ Help-First Rule
 
