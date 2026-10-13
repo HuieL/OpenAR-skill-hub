@@ -3,9 +3,9 @@
   "id": "hub.writing-guidelines",
   "kind": "skill",
   "name": "Writing Guidelines",
-  "summary": "Review docs and prose for the Vercel writing handbook's rules on voice, structure, lists, code and typography, in the terse file:line format. OpenRA-adapted carry of the vercel-labs skill: the rules are vendored from vercel-labs/writing-guidelines at a pinned commit instead of fetched from its mutable main branch at review time; the recorded differences are in PROVENANCE.md inside the skill.",
+  "summary": "Review docs and prose for the Vercel writing handbook's rules on voice, structure, lists, code and typography, in the terse file:line format. OpenAR-adapted carry of the vercel-labs skill: the rules are vendored from vercel-labs/writing-guidelines at a pinned commit instead of fetched from its mutable main branch at review time; the recorded differences are in PROVENANCE.md inside the skill.",
   "summaryI18n": {
-    "zh-CN": "按 Vercel 写作手册审查文档与行文：语气、结构、列表、代码与排版规则，以 file:line 简报输出。vercel-labs 技能的 OpenRA 适配携带：规则自 vercel-labs/writing-guidelines 钉住 commit 本地携带，替代审阅时从可变 main 分支拉取；差异记录在技能内 PROVENANCE.md。"
+    "zh-CN": "按 Vercel 写作手册审查文档与行文：语气、结构、列表、代码与排版规则，以 file:line 简报输出。vercel-labs 技能的 OpenAR 适配携带：规则自 vercel-labs/writing-guidelines 钉住 commit 本地携带，替代审阅时从可变 main 分支拉取；差异记录在技能内 PROVENANCE.md。"
   },
   "authors": [
     {
@@ -21,7 +21,7 @@
   "source": {
     "repo": "HuieL/OpenAR-skill-hub",
     "path": "entries/skills/hub.writing-guidelines/skill",
-    "revision": "33fee16c2e9acbf0534a4d9275da4a7da551d081"
+    "revision": "d29c1b23eeb5a068eadb60685f0d041fa018730d"
   },
   "upstream": {
     "repo": "vercel-labs/writing-guidelines",
@@ -48,7 +48,7 @@
     },
     {
       "path": "PROVENANCE.md",
-      "sha256": "5f732da20dcb2aea2c0a5925b37e36f8c7361a90e22a18de1ac24725fe07a852",
+      "sha256": "ab5fc25e45a51b2cfbace68e3ec531772822dd57df6a81e886d79566e0fcbca7",
       "bytes": 756,
       "executable": false
     },
@@ -67,5 +67,5 @@
   ],
   "totalBytes": 17172,
   "requires": [],
-  "permissionsNote": "allowed-tools declarations inside SKILL.md are upstream claims, not host approvals; OpenRA enforces its own permission gates."
+  "permissionsNote": "allowed-tools declarations inside SKILL.md are upstream claims, not host approvals; OpenAR enforces its own permission gates."
 }

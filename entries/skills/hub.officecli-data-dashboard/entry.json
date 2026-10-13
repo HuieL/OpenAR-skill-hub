@@ -3,9 +3,9 @@
   "id": "hub.officecli-data-dashboard",
   "kind": "skill",
   "name": "OfficeCLI Data Dashboard",
-  "summary": "Multi-element Excel dashboards from CSV or tabular input: Dashboard sheet on open, formula-driven KPI cards, charts, sparklines and conditional formatting. OpenRA-adapted carry of the iOfficeAI/AionCore skill: the install section is replaced by a prerequisite check (officecli must already be installed via OpenRA's approved CLI path; the skill only verifies officecli --version) and an Apache-2.0 §4(b) modification notice is added; everything else is upstream text.",
+  "summary": "Multi-element Excel dashboards from CSV or tabular input: Dashboard sheet on open, formula-driven KPI cards, charts, sparklines and conditional formatting. OpenAR-adapted carry of the iOfficeAI/AionCore skill: the install section is replaced by a prerequisite check (officecli must already be installed via OpenAR's approved CLI path; the skill only verifies officecli --version) and an Apache-2.0 §4(b) modification notice is added; everything else is upstream text.",
   "summaryI18n": {
-    "zh-CN": "从 CSV 或表格输入生成多元素 Excel 仪表盘：打开即见 Dashboard 工作表、公式驱动的 KPI 卡片、图表、迷你图与条件格式。OpenRA 对 iOfficeAI/AionCore 技能的适配版：安装段替换为前置条件检查（officecli 须已经由 OpenRA 批准的 CLI 路径安装，技能只验证 officecli --version），并加 Apache-2.0 §4(b) 修改注记，其余为上游原文。"
+    "zh-CN": "从 CSV 或表格输入生成多元素 Excel 仪表盘：打开即见 Dashboard 工作表、公式驱动的 KPI 卡片、图表、迷你图与条件格式。OpenAR 对 iOfficeAI/AionCore 技能的适配版：安装段替换为前置条件检查（officecli 须已经由 OpenAR 批准的 CLI 路径安装，技能只验证 officecli --version），并加 Apache-2.0 §4(b) 修改注记，其余为上游原文。"
   },
   "authors": [
     {
@@ -23,7 +23,7 @@
   "source": {
     "repo": "HuieL/OpenAR-skill-hub",
     "path": "entries/skills/hub.officecli-data-dashboard/skill",
-    "revision": "be9d47aa9034c7d0eee1eba1689fb13217377cbc"
+    "revision": "d29c1b23eeb5a068eadb60685f0d041fa018730d"
   },
   "version": "2.0.0",
   "license": "Apache-2.0",
@@ -44,14 +44,14 @@
     },
     {
       "path": "SKILL.md",
-      "sha256": "0ea749b35cd8134d1497b9985973d149afad6aec0f7f15e63b9df645c8ef38c5",
+      "sha256": "75882d9a202b11c2a21b6323dc791c783f394a0cafd570cf7fd03977045b92ac",
       "bytes": 31487,
       "executable": false
     }
   ],
   "totalBytes": 42426,
   "requires": [],
-  "permissionsNote": "allowed-tools declarations inside SKILL.md are upstream claims, not host approvals; OpenRA enforces its own permission gates.",
+  "permissionsNote": "allowed-tools declarations inside SKILL.md are upstream claims, not host approvals; OpenAR enforces its own permission gates.",
   "upstream": {
     "repo": "iOfficeAI/AionCore",
     "revision": "4a707fc3d3cd1f06a86004745e2c1bbf08b16068",

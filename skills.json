@@ -4,12 +4,12 @@
     {
       "id": "hub.diagram-design",
       "name": "Diagram Design",
-      "summary": "Branded presentation diagrams (architecture, flowchart, sequence, ER, timeline, Sankey and 40+ more types) as HTML/SVG/PNG, with draw.io, Mermaid and Excalidraw import. OpenRA-adapted carry of the upstream skill; the recorded differences are in PROVENANCE.md inside the skill.",
+      "summary": "Branded presentation diagrams (architecture, flowchart, sequence, ER, timeline, Sankey and 40+ more types) as HTML/SVG/PNG, with draw.io, Mermaid and Excalidraw import. OpenAR-adapted carry of the upstream skill; the recorded differences are in PROVENANCE.md inside the skill.",
       "delivery": "hub",
       "version": "2.6",
-      "revision": "be9d47aa9034c7d0eee1eba1689fb13217377cbc",
+      "revision": "d29c1b23eeb5a068eadb60685f0d041fa018730d",
       "entryPath": "entries/skills/hub.diagram-design/entry.json",
-      "entrySha256": "26f872b0ca306d53894050fb3c80c40993f0e344731df5b040c9f74f5e92744d"
+      "entrySha256": "113b8e4f0d4c28cf34b723de4177173e81dc7508a1745dcbee658913bb7da602"
     },
     {
       "id": "hub.human-writing",
@@ -19,47 +19,47 @@
       "version": "1.1.0",
       "revision": "4fda173f3fef7fb808f3eba991eeb2528ea4b189",
       "entryPath": "entries/skills/hub.human-writing/entry.json",
-      "entrySha256": "9d93d8679a4f6054ba928f6c0bad14549df0fa2ab0f752027d99c02a6d6e7ee0"
+      "entrySha256": "de50effa799a3d984882448a0bc281f3571b14bdb71de72aad4a6907c73aaa79"
     },
     {
       "id": "hub.officecli-academic-paper",
       "name": "OfficeCLI Academic Paper",
-      "summary": "Academic-style .docx output: journal/conference/thesis chapters with APA, Chicago, IEEE or MLA citation style, numbered equations, cross-references, footnotes and bibliography. OpenRA-adapted carry of the iOfficeAI/AionCore skill: the install section is replaced by a prerequisite check (officecli must already be installed via OpenRA's approved CLI path; the skill only verifies officecli --version) and an Apache-2.0 §4(b) modification notice is added; everything else is upstream text.",
+      "summary": "Academic-style .docx output: journal/conference/thesis chapters with APA, Chicago, IEEE or MLA citation style, numbered equations, cross-references, footnotes and bibliography. OpenAR-adapted carry of the iOfficeAI/AionCore skill: the install section is replaced by a prerequisite check (officecli must already be installed via OpenAR's approved CLI path; the skill only verifies officecli --version) and an Apache-2.0 §4(b) modification notice is added; everything else is upstream text.",
       "delivery": "hub",
       "version": "2.0.0",
-      "revision": "be9d47aa9034c7d0eee1eba1689fb13217377cbc",
+      "revision": "d29c1b23eeb5a068eadb60685f0d041fa018730d",
       "entryPath": "entries/skills/hub.officecli-academic-paper/entry.json",
-      "entrySha256": "9fcc27427910e20a280842de0ca47f2a106e70c69e761b032fbe08e98a32208e"
+      "entrySha256": "2377988c9d61cfbca6c326660c86837f8f3ac18125abefbae0302ed954337110"
     },
     {
       "id": "hub.officecli-data-dashboard",
       "name": "OfficeCLI Data Dashboard",
-      "summary": "Multi-element Excel dashboards from CSV or tabular input: Dashboard sheet on open, formula-driven KPI cards, charts, sparklines and conditional formatting. OpenRA-adapted carry of the iOfficeAI/AionCore skill: the install section is replaced by a prerequisite check (officecli must already be installed via OpenRA's approved CLI path; the skill only verifies officecli --version) and an Apache-2.0 §4(b) modification notice is added; everything else is upstream text.",
+      "summary": "Multi-element Excel dashboards from CSV or tabular input: Dashboard sheet on open, formula-driven KPI cards, charts, sparklines and conditional formatting. OpenAR-adapted carry of the iOfficeAI/AionCore skill: the install section is replaced by a prerequisite check (officecli must already be installed via OpenAR's approved CLI path; the skill only verifies officecli --version) and an Apache-2.0 §4(b) modification notice is added; everything else is upstream text.",
       "delivery": "hub",
       "version": "2.0.0",
-      "revision": "be9d47aa9034c7d0eee1eba1689fb13217377cbc",
+      "revision": "d29c1b23eeb5a068eadb60685f0d041fa018730d",
       "entryPath": "entries/skills/hub.officecli-data-dashboard/entry.json",
-      "entrySha256": "073968d47c6180390b20fae83104eea5a85a25a6a7053475345afd1217c5f10d"
+      "entrySha256": "8d861a40624866b787462164013e0a5083cbfa0e53db25e9085c4b1a178e2d47"
     },
     {
       "id": "hub.web-design-guidelines",
       "name": "Web Design Guidelines",
-      "summary": "Review UI code for Web Interface Guidelines compliance: accessibility, performance and UX rules in the terse file:line format. OpenRA-adapted carry of the vercel-labs skill: the rules are vendored from vercel-labs/web-interface-guidelines at a pinned commit instead of fetched from its mutable main branch at review time; the recorded differences are in PROVENANCE.md inside the skill.",
+      "summary": "Review UI code for Web Interface Guidelines compliance: accessibility, performance and UX rules in the terse file:line format. OpenAR-adapted carry of the vercel-labs skill: the rules are vendored from vercel-labs/web-interface-guidelines at a pinned commit instead of fetched from its mutable main branch at review time; the recorded differences are in PROVENANCE.md inside the skill.",
       "delivery": "hub",
       "version": "1.0.0",
-      "revision": "33fee16c2e9acbf0534a4d9275da4a7da551d081",
+      "revision": "d29c1b23eeb5a068eadb60685f0d041fa018730d",
       "entryPath": "entries/skills/hub.web-design-guidelines/entry.json",
-      "entrySha256": "c94a46680b8de1ff1f7b62290d1bd08ccd24e697cf460c3705213a0e69bed2e4"
+      "entrySha256": "44d8c260fe9706a9de4a7262eb525c989dde89b5961bd23698d44b513c72ffc3"
     },
     {
       "id": "hub.writing-guidelines",
       "name": "Writing Guidelines",
-      "summary": "Review docs and prose for the Vercel writing handbook's rules on voice, structure, lists, code and typography, in the terse file:line format. OpenRA-adapted carry of the vercel-labs skill: the rules are vendored from vercel-labs/writing-guidelines at a pinned commit instead of fetched from its mutable main branch at review time; the recorded differences are in PROVENANCE.md inside the skill.",
+      "summary": "Review docs and prose for the Vercel writing handbook's rules on voice, structure, lists, code and typography, in the terse file:line format. OpenAR-adapted carry of the vercel-labs skill: the rules are vendored from vercel-labs/writing-guidelines at a pinned commit instead of fetched from its mutable main branch at review time; the recorded differences are in PROVENANCE.md inside the skill.",
       "delivery": "hub",
       "version": "1.0.0",
-      "revision": "33fee16c2e9acbf0534a4d9275da4a7da551d081",
+      "revision": "d29c1b23eeb5a068eadb60685f0d041fa018730d",
       "entryPath": "entries/skills/hub.writing-guidelines/entry.json",
-      "entrySha256": "a8f30cd8269278814a29e7c23540e9200a8aeb7d82b1a0c3f6998474603beb67"
+      "entrySha256": "2476313fc0d5c91a0431ba093a5f291d6d5f93f897563b092da2db2a233538f8"
     }
   ]
 }

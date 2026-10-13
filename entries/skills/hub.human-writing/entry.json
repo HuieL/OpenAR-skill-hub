@@ -84,5 +84,5 @@
   ],
   "totalBytes": 89924,
   "requires": [],
-  "permissionsNote": "allowed-tools declarations inside SKILL.md are upstream claims, not host approvals; OpenRA enforces its own permission gates."
+  "permissionsNote": "allowed-tools declarations inside SKILL.md are upstream claims, not host approvals; OpenAR enforces its own permission gates."
 }

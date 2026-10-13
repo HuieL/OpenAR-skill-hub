@@ -68,7 +68,7 @@
           }
         }
       },
-      "description": "Original creators of the skill, distinct from the OpenRA adapter and the registry submitter. Verified against the source repo's commits, license, or README during review."
+      "description": "Original creators of the skill, distinct from the OpenAR adapter and the registry submitter. Verified against the source repo's commits, license, or README during review."
     },
     "maintainers": {
       "type": "array",
@@ -83,7 +83,7 @@
     "adapters": {
       "type": "array",
       "items": { "type": "string", "pattern": "^[A-Za-z0-9-]{1,39}$" },
-      "description": "GitHub logins of the people who adapted the skill for OpenRA. Adapting is not authorship."
+      "description": "GitHub logins of the people who adapted the skill for OpenAR. Adapting is not authorship."
     },
     "registrySubmitter": {
       "type": "string",
@@ -173,7 +173,7 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "minHost": { "type": "string", "description": "Minimum OpenRA version." },
+        "minHost": { "type": "string", "description": "Minimum OpenAR version." },
         "harnesses": {
           "type": "array",
           "items": { "type": "string" },
@@ -183,7 +183,7 @@
     },
     "delivery": {
       "enum": ["hub"],
-      "description": "hub: installable at the pinned revision. Built-in OpenRA skills are never listed on this hub."
+      "description": "hub: installable at the pinned revision. Built-in OpenAR skills are never listed on this hub."
     },
     "files": {
       "type": "array",

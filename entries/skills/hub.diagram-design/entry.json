@@ -3,9 +3,9 @@
   "id": "hub.diagram-design",
   "kind": "skill",
   "name": "Diagram Design",
-  "summary": "Branded presentation diagrams (architecture, flowchart, sequence, ER, timeline, Sankey and 40+ more types) as HTML/SVG/PNG, with draw.io, Mermaid and Excalidraw import. OpenRA-adapted carry of the upstream skill; the recorded differences are in PROVENANCE.md inside the skill.",
+  "summary": "Branded presentation diagrams (architecture, flowchart, sequence, ER, timeline, Sankey and 40+ more types) as HTML/SVG/PNG, with draw.io, Mermaid and Excalidraw import. OpenAR-adapted carry of the upstream skill; the recorded differences are in PROVENANCE.md inside the skill.",
   "summaryI18n": {
-    "zh-CN": "品牌化演示图表（架构图、流程图、时序图、ER、时间线、桑基图等 40 余类），输出 HTML/SVG/PNG，支持 draw.io、Mermaid、Excalidraw 导入。OpenRA 适配版，相对上游的改写记录见技能内 PROVENANCE.md。"
+    "zh-CN": "品牌化演示图表（架构图、流程图、时序图、ER、时间线、桑基图等 40 余类），输出 HTML/SVG/PNG，支持 draw.io、Mermaid、Excalidraw 导入。OpenAR 适配版，相对上游的改写记录见技能内 PROVENANCE.md。"
   },
   "authors": [
     {
@@ -23,7 +23,7 @@
   "source": {
     "repo": "HuieL/OpenAR-skill-hub",
     "path": "entries/skills/hub.diagram-design/skill",
-    "revision": "be9d47aa9034c7d0eee1eba1689fb13217377cbc"
+    "revision": "d29c1b23eeb5a068eadb60685f0d041fa018730d"
   },
   "version": "2.6",
   "license": "MIT",
@@ -44,13 +44,13 @@
     },
     {
       "path": "PROVENANCE.md",
-      "sha256": "28125cdf52e0f37fdffe0ed43436970b2ad3294569bd75efe926db15b4fdf1d1",
+      "sha256": "9f7ec33ef38557fdcffa9457c2458d026eab37a2eb30b03c1c3b9e0e62a56af5",
       "bytes": 3247,
       "executable": false
     },
     {
       "path": "SKILL.md",
-      "sha256": "e2891a7c27af01a42eb6506daaf16cd84e10dab9d66b60c9e7c628b828e49340",
+      "sha256": "0b92541b11ca0dc90f1cd54cf260cf346a7cea6065e0369635b6e0beb21bd2c2",
       "bytes": 30748,
       "executable": false
     },
@@ -513,7 +513,7 @@
   ],
   "totalBytes": 1111538,
   "requires": [],
-  "permissionsNote": "allowed-tools declarations inside SKILL.md are upstream claims, not host approvals; OpenRA enforces its own permission gates.",
+  "permissionsNote": "allowed-tools declarations inside SKILL.md are upstream claims, not host approvals; OpenAR enforces its own permission gates.",
   "upstream": {
     "repo": "cathrynlavery/diagram-design",
     "revision": "7a2e22170ee838e859d8142ba825d83f8b6375e6",

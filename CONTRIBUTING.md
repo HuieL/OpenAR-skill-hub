@@ -1,6 +1,6 @@
 # Contributing to the OpenAR Skill Hub
 
-This repository is a static catalog. OpenRA reads `skills.json` at a pinned
+This repository is a static catalog. OpenAR reads `skills.json` at a pinned
 commit SHA and verifies each entry's sha256 before use. There is no server, no
 account, and no install script to run here.
 
@@ -30,9 +30,9 @@ with a matching hash. Symlinks are rejected everywhere.
 
 ## Attribution
 
-Original author, OpenRA adapter, and registry submitter are three different
+Original author, OpenAR adapter, and registry submitter are three different
 roles and are recorded separately: `authors` (the original creators, with
-names and optional GitHub logins), `adapters` (who adapted it for OpenRA),
+names and optional GitHub logins), `adapters` (who adapted it for OpenAR),
 and `registrySubmitter` (who filed the entry). Submitting a manifest does
 not make you an author; authorship is checked against the source repository's
 commits, license, or README during review, and corrections go through a PR.

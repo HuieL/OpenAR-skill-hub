@@ -3,9 +3,9 @@
   "id": "hub.web-design-guidelines",
   "kind": "skill",
   "name": "Web Design Guidelines",
-  "summary": "Review UI code for Web Interface Guidelines compliance: accessibility, performance and UX rules in the terse file:line format. OpenRA-adapted carry of the vercel-labs skill: the rules are vendored from vercel-labs/web-interface-guidelines at a pinned commit instead of fetched from its mutable main branch at review time; the recorded differences are in PROVENANCE.md inside the skill.",
+  "summary": "Review UI code for Web Interface Guidelines compliance: accessibility, performance and UX rules in the terse file:line format. OpenAR-adapted carry of the vercel-labs skill: the rules are vendored from vercel-labs/web-interface-guidelines at a pinned commit instead of fetched from its mutable main branch at review time; the recorded differences are in PROVENANCE.md inside the skill.",
   "summaryI18n": {
-    "zh-CN": "按 Web Interface Guidelines 审查 UI 代码：无障碍、性能与体验规则，以 file:line 简报输出。vercel-labs 技能的 OpenRA 适配携带：规则自 vercel-labs/web-interface-guidelines 钉住 commit 本地携带，替代审阅时从可变 main 分支拉取；差异记录在技能内 PROVENANCE.md。"
+    "zh-CN": "按 Web Interface Guidelines 审查 UI 代码：无障碍、性能与体验规则，以 file:line 简报输出。vercel-labs 技能的 OpenAR 适配携带：规则自 vercel-labs/web-interface-guidelines 钉住 commit 本地携带，替代审阅时从可变 main 分支拉取；差异记录在技能内 PROVENANCE.md。"
   },
   "authors": [
     {
@@ -21,7 +21,7 @@
   "source": {
     "repo": "HuieL/OpenAR-skill-hub",
     "path": "entries/skills/hub.web-design-guidelines/skill",
-    "revision": "33fee16c2e9acbf0534a4d9275da4a7da551d081"
+    "revision": "d29c1b23eeb5a068eadb60685f0d041fa018730d"
   },
   "upstream": {
     "repo": "vercel-labs/web-interface-guidelines",
@@ -48,7 +48,7 @@
     },
     {
       "path": "PROVENANCE.md",
-      "sha256": "e24311ec65aa5d12d98cec243398d5cdefcee231c8a94681fde388e1f6581852",
+      "sha256": "5b215346e4e04c09d3746f315991e00bd26a0da977edaf9db9660d31995de130",
       "bytes": 765,
       "executable": false
     },
@@ -67,5 +67,5 @@
   ],
   "totalBytes": 11000,
   "requires": [],
-  "permissionsNote": "allowed-tools declarations inside SKILL.md are upstream claims, not host approvals; OpenRA enforces its own permission gates."
+  "permissionsNote": "allowed-tools declarations inside SKILL.md are upstream claims, not host approvals; OpenAR enforces its own permission gates."
 }

@@ -3,9 +3,9 @@
   "id": "hub.officecli-academic-paper",
   "kind": "skill",
   "name": "OfficeCLI Academic Paper",
-  "summary": "Academic-style .docx output: journal/conference/thesis chapters with APA, Chicago, IEEE or MLA citation style, numbered equations, cross-references, footnotes and bibliography. OpenRA-adapted carry of the iOfficeAI/AionCore skill: the install section is replaced by a prerequisite check (officecli must already be installed via OpenRA's approved CLI path; the skill only verifies officecli --version) and an Apache-2.0 §4(b) modification notice is added; everything else is upstream text.",
+  "summary": "Academic-style .docx output: journal/conference/thesis chapters with APA, Chicago, IEEE or MLA citation style, numbered equations, cross-references, footnotes and bibliography. OpenAR-adapted carry of the iOfficeAI/AionCore skill: the install section is replaced by a prerequisite check (officecli must already be installed via OpenAR's approved CLI path; the skill only verifies officecli --version) and an Apache-2.0 §4(b) modification notice is added; everything else is upstream text.",
   "summaryI18n": {
-    "zh-CN": "学术风格 .docx 输出：期刊/会议/论文章节，支持 APA、Chicago、IEEE、MLA 引用格式、编号公式、交叉引用、脚注与参考文献。OpenRA 对 iOfficeAI/AionCore 技能的适配版：安装段替换为前置条件检查（officecli 须已经由 OpenRA 批准的 CLI 路径安装，技能只验证 officecli --version），并加 Apache-2.0 §4(b) 修改注记，其余为上游原文。"
+    "zh-CN": "学术风格 .docx 输出：期刊/会议/论文章节，支持 APA、Chicago、IEEE、MLA 引用格式、编号公式、交叉引用、脚注与参考文献。OpenAR 对 iOfficeAI/AionCore 技能的适配版：安装段替换为前置条件检查（officecli 须已经由 OpenAR 批准的 CLI 路径安装，技能只验证 officecli --version），并加 Apache-2.0 §4(b) 修改注记，其余为上游原文。"
   },
   "authors": [
     {
@@ -23,7 +23,7 @@
   "source": {
     "repo": "HuieL/OpenAR-skill-hub",
     "path": "entries/skills/hub.officecli-academic-paper/skill",
-    "revision": "be9d47aa9034c7d0eee1eba1689fb13217377cbc"
+    "revision": "d29c1b23eeb5a068eadb60685f0d041fa018730d"
   },
   "version": "2.0.0",
   "license": "Apache-2.0",
@@ -44,14 +44,14 @@
     },
     {
       "path": "SKILL.md",
-      "sha256": "960a5b111c05e23c126865bd8790752d171ac2cbcc9e25c214bf9812dcb43034",
+      "sha256": "ebc8895ad84b67df0e72b87d549180d4bd1ba4358be8aa49ee2f74103dea4bca",
       "bytes": 47250,
       "executable": false
     }
   ],
   "totalBytes": 58189,
   "requires": [],
-  "permissionsNote": "allowed-tools declarations inside SKILL.md are upstream claims, not host approvals; OpenRA enforces its own permission gates.",
+  "permissionsNote": "allowed-tools declarations inside SKILL.md are upstream claims, not host approvals; OpenAR enforces its own permission gates.",
   "upstream": {
     "repo": "iOfficeAI/AionCore",
     "revision": "4a707fc3d3cd1f06a86004745e2c1bbf08b16068",
