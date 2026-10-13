@@ -31,7 +31,7 @@
   },
   "version": "1.0.0",
   "license": "MIT",
-  "licenseFile": "LICENSE",
+  "licenseFile": "skill/LICENSE",
   "review": {
     "status": "unreviewed",
     "reviewedRevision": null,
