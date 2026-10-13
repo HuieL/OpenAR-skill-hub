@@ -24,7 +24,7 @@
   "source": {
     "repo": "HuieL/OpenAR-skill-hub",
     "path": "entries/skills/hub.research-design-system/skill",
-    "revision": "b105f383542105b92cfcce7aa9235788c415a619"
+    "revision": "d400c6a00d3b113ed90ec323a43b83fd496b77b0"
   },
   "upstream": {
     "repo": "VoltAgent/awesome-design-md",
@@ -32,7 +32,7 @@
     "license": "MIT",
     "path": "design-md"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "licenseFile": "skill/LICENSE",
   "review": {
@@ -51,8 +51,8 @@
     },
     {
       "path": "PROVENANCE.md",
-      "sha256": "1bd8a8b7b83aeed5d1387ea988257792a2286ac5aaf19d5ad1a43b2ac280a45c",
-      "bytes": 867,
+      "sha256": "beace4773db6b6d9019a44604d9e5ec5d1307923820e798c85a5e438c9141cd6",
+      "bytes": 963,
       "executable": false
     },
     {
@@ -62,13 +62,19 @@
       "executable": false
     },
     {
+      "path": "THIRD_PARTY_LICENSES.md",
+      "sha256": "3750e36852d96a6db3f81f2cb20866a07b95ec4e8b65554864c28c1d133fa55b",
+      "bytes": 2045,
+      "executable": false
+    },
+    {
       "path": "references/design-md-index.md",
       "sha256": "b57d64f6ae814d67c936938c096d21bc834d882d8f45e1699833cd9d0da3393c",
       "bytes": 24412,
       "executable": false
     }
   ],
-  "totalBytes": 30142,
+  "totalBytes": 32283,
   "requires": [],
   "permissionsNote": "The workflow fetches exactly one upstream DESIGN.md, only after the user picks it, from the pinned revision recorded in the index; OpenAR enforces its own permission gates on any network access."
 }

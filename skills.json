@@ -56,10 +56,10 @@
       "name": "Research Design System",
       "summary": "Design-reference selector for research outputs: a pinned, hash-verified index of 84 design-system analyses (DESIGN.md files) from VoltAgent/awesome-design-md, categorized as reference material - not skills, not brand themes, not brand assets. The user picks one material; the workflow fetches only that file at the pinned revision, verifies its sha256, caches it for offline use, distills the prose into a reviewable token candidate, and binds it to an output revision only after confirmation. Original OpenAR workflow; the analyses stay upstream and read-only.",
       "delivery": "hub",
-      "version": "1.0.0",
-      "revision": "b105f383542105b92cfcce7aa9235788c415a619",
+      "version": "1.0.1",
+      "revision": "d400c6a00d3b113ed90ec323a43b83fd496b77b0",
       "entryPath": "entries/skills/hub.research-design-system/entry.json",
-      "entrySha256": "89de3e1985b197ef3416d8e8a6d8dc2fde4773ef46b4aff2b10b3a3d61fea9a7"
+      "entrySha256": "38a74988b874b15cfe02349ea887925b9089d67080ebedfc0a66f9a56fe8676e"
     },
     {
       "id": "hub.web-design-guidelines",
