@@ -16,4 +16,5 @@ user picks it, and verifies it against the recorded hash.
 
 Upstream's per-brand `README.md` files (which point at the project's own
 website) are not referenced. No logos, photographs or font files are
-carried.
+carried. The upstream MIT license is reproduced in
+[`THIRD_PARTY_LICENSES.md`](THIRD_PARTY_LICENSES.md).
