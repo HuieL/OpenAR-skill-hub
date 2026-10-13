@@ -140,7 +140,7 @@
           "description": "SPDX id of the upstream license."
         }
       },
-      "description": "Structured provenance of an adaptation. Required when adapters is non-empty or source.repo is this hub (hosted adaptation); entries whose source already points at the upstream do not need it. Summaries are display text; provenance lives here, not in the prose."
+      "description": "Structured provenance of an adaptation. Required when adapters is non-empty; original maintainer-authored content hosted on this hub, and entries whose source already points at the upstream, do not need it. Summaries are display text; provenance lives here, not in the prose."
     },
     "version": {
       "type": "string",

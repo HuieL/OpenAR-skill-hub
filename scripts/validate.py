@@ -118,13 +118,11 @@ def check_source(entry: dict, entry_id: str) -> None:
 
 
 def check_upstream(entry: dict, entry_id: str) -> None:
-    source = entry.get("source")
-    hosted_on_hub = isinstance(source, dict) and source.get("repo") == "HuieL/OpenAR-skill-hub"
-    adapted = bool(entry.get("adapters")) or hosted_on_hub
+    adapted = bool(entry.get("adapters"))
     upstream = entry.get("upstream")
     if upstream is None:
         if adapted:
-            fail(entry_id, "adapted entries (adapters set, or content hosted on this hub) must record upstream provenance")
+            fail(entry_id, "adapted entries (adapters set) must record upstream provenance")
         return
     if not isinstance(upstream, dict) or set(upstream) - {"repo", "revision", "path", "license"}:
         fail(entry_id, "upstream may only have repo, revision, path, license")

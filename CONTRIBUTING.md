@@ -37,11 +37,12 @@ and `registrySubmitter` (who filed the entry). Submitting a manifest does
 not make you an author; authorship is checked against the source repository's
 commits, license, or README during review, and corrections go through a PR.
 
-An adapted entry (non-empty `adapters`, or content hosted on this hub) also
-records `upstream`: the original `repo`, the exact 40-hex `revision` the
-adaptation started from, and the upstream `license` (plus `path` when the
-skill is not at the repo root). Summaries are display text and get edited or
-translated; provenance lives in the structured field, not in the prose.
+An adapted entry (non-empty `adapters`) also records `upstream`: the original
+`repo`, the exact 40-hex `revision` the adaptation started from, and the
+upstream `license` (plus `path` when the skill is not at the repo root).
+Original maintainer-authored content hosted on this hub needs no `upstream`.
+Summaries are display text and get edited or translated; provenance lives in
+the structured field, not in the prose.
 
 ## What review means
 
