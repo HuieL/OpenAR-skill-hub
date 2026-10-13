@@ -36,8 +36,8 @@ everything not listed here is carried verbatim:
    `scripts/vendor/` and upstream `skills/diagram-design/` paths describe the
    upstream tree; the Devicon and one-off-icon entries cover source assets
    not carried here.
-5. **"OpenRA host notes" section added** at the top of the `SKILL.md` body
-   (OpenRA deployment rulings: project-local `.diagram-design/profile.md`
+5. **"OpenAR host notes" section added** at the top of the `SKILL.md` body
+   (OpenAR deployment rulings: project-local `.diagram-design/profile.md`
    profile storage instead of `~/.diagram-design`, no reads of home-directory
    skill folders, network-permission and ask-first rules for website
    onboarding, and a note that the dropped `example-*.html` demos must not be

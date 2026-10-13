@@ -3,9 +3,9 @@ name: diagram-design
 description: "Branded presentation diagrams \u2014 architecture, flowchart, sequence, ER, timeline, quadrant, Sankey, org chart, treemap and 30+ more types \u2014 as self-contained HTML/SVG/PNG for posters, slides and talk materials, with drawio, Mermaid and Excalidraw import. Third-party skill (MIT). Bar/line/scatter/heatmap here are for illustrative and concept data; run-result plots belong to ora-figures."
 ---
 
-# OpenRA host notes
+# OpenAR host notes
 
-OpenRA deployment overrides; everything below this section is upstream text.
+OpenAR deployment overrides; everything below this section is upstream text.
 
 - The brand/style profile lives in the project at `.diagram-design/profile.md` (visible, user-editable). Never use or create `~/.diagram-design`; upstream passages that mention it are superseded here. Never edit files inside this skill directory \u2014 it is materialized fresh every turn.
 - Onboarding must not read `~/.claude/skills` or any other home-directory skill folder.

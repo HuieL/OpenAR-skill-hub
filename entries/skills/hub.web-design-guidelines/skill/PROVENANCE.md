@@ -1,6 +1,6 @@
 # Provenance
 
-This skill is an OpenRA-adapted carry of two MIT-licensed Vercel Labs
+This skill is an OpenAR-adapted carry of two MIT-licensed Vercel Labs
 sources:
 
 - The skill shell (frontmatter and workflow) comes from
