@@ -17,13 +17,14 @@
 - **main 只放发布内容**：README、LICENSE、`skills.json`、`entries/`、`schemas/`、`scripts/`（校验/生成）、`.github/workflows/`。不放 TODO、回执、证据、验收记录、个人笔记（这些放 OpenRA 主仓 `docs/acceptance/`）。
 - **安全**：不提交任何 token/凭据；CI 校验 job 无写权限、无 secrets，不执行 PR 中的脚本/安装命令；第三方内容逐条核许可，不整库复制上游。
 
-## 1. 当前事实（2026-10-12）
+## 1. 当前事实（2026-10-13）
 
-- 本仓库为空（无任何分支）。GitHub 默认分支在 `main` 建立后由用户设为 `main`。
-- OpenRA 内置 skill（随 App 发布）：17 个 ora-* 核心 + `diagram-design`（cathrynlavery/diagram-design@7a2e2217，**MIT**，已 vendored）。
-- OpenRA curated（随 App 内置）：`officecli-academic-paper`、`officecli-data-dashboard`（iOfficeAI/AionCore@4a707fc）、`human-writing`（KKKKhazix/human-writing@4fda173f，MIT）。
-- H 已准备 `ora-craft-suite` skill（OpenRA 分支 `agent-h/craft-suite-skill`，等本仓 main 建好后转为条目）。
-- C 的 registry 客户端（HUB-01）尚未实现；它将按 commit SHA 固定读取本仓 `skills.json` 并逐条校验 sha256。
+- **SX-M0 已过**：骨架已由 Review 合入成为 `main`（`scripts/validate` 本地与 CI 均过）。
+- **SX-M1 大半已过（10-13）**：`main` 现有 5 条 human-writing / diagram-design / officecli×2（`2ce664a`，10-13 合）/ craft-suite（`agent-x/seed-craft-suite@8fdc3e1` 待审）。
+- **内置 skill 不上 hub**（用户 10-12 裁定）：17 个 ora-* 核心与 bundled `delivery` 已撤销（main revert `463c1fa`）；`seed-ora-core-1..6` 已拒删。内置集随主仓发布，hub 不登记、不泄露。
+- **upstream 溯源字段**（`eb8b6ab`）：`upstream`{repo,revision,license,path?}，仅 `adapters` 非空的适配条目必需；原创托管内容不需。
+- officecli 两条为改写版：curl|bash / irm|iex 安装段替换为 approved-path 前置检查，附 Apache-2.0 §4(b) 修改注记；craft-suite 不设 upstream（用户 10-13 裁决），summary 引 ArtCraft 工具族 github.com/storytold。
+- OpenRA 侧 HUB-01 registry 客户端（X）已 ACCEPT→train-15；HUB-04 进行中。
 
 ## 2. 里程碑
 
@@ -35,7 +36,7 @@
 
 ## 3. 任务
 
-### SX-00 骨架（NOW）
+### SX-00 骨架（✅ 已合入 main，10-12）
 - [ ] 目录：
   ```
   README.md
@@ -56,12 +57,12 @@
 - [ ] README：Hub 是什么、如何被 OpenRA 读取（固定 revision + sha256）、`delivery` 含义、如何贡献、许可说明。
 - 交付：分支 `agent-x/skeleton` → Review 合入成为 `main`。
 
-### SX-01 首批条目（NEXT，SX-00 合入后）
-- [ ] `diagram-design`：上游 `cathrynlavery/diagram-design@7a2e2217`，MIT；`files[]` 与 OpenRA 发布版内置副本逐文件 sha256 一致。
-- [ ] `human-writing`（MIT，上游 SHA 见 OpenRA curated 数据）、`officecli-academic-paper` / `officecli-data-dashboard`（核对上游许可；安装段落是 OpenRA 的"固定发布版安装"改写形式，条目需说明是改写版并给出原文来源）。
-- [ ] `ora-craft-suite`：从 H 的交接 接收（H 提供内容，X 建条目）；displayName 已统一为 "Craft Suite"。
-- [ ] 17 个 ora-* 核心：`delivery: bundled`，只登记 id/name/summary/当前 OpenRA 发布 revision，不提供安装文件（随 App 更新）。
-- [ ] 每条：许可文件、上游 revision、全部文件哈希；没有确认存在的 URL/版本不得上架。
+### SX-01 首批条目（✅ 基本完成，10-13）
+- [x] `diagram-design`：上游 `cathrynlavery/diagram-design@7a2e2217`，MIT；`files[]` 与 OpenRA 发布版内置副本逐文件 sha256 一致。
+- [x] `human-writing`（MIT，上游 SHA 见 OpenRA curated 数据）、`officecli-academic-paper` / `officecli-data-dashboard`（核对上游许可；安装段落是 OpenRA 的"固定发布版安装"改写形式，条目需说明是改写版并给出原文来源）。
+- [x] `ora-craft-suite`：从 H 的交接 接收（H 提供内容，X 建条目）；displayName 已统一为 "Craft Suite"。
+- [x] ~~17 个 ora-* 核心~~：用户 10-12 裁定不上 hub，已撤销（revert `463c1fa`）。`delivery: bundled`，只登记 id/name/summary/当前 OpenRA 发布 revision，不提供安装文件（随 App 更新）。
+- [x] 每条：许可文件、上游 revision、全部文件哈希；没有确认存在的 URL/版本不得上架。
 - 交付：每 1–3 个条目一个分支 `agent-x/seed-<name>`。
 
 ### SX-02 可贡献与生命周期（LATER）
