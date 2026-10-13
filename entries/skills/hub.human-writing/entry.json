@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "openra.human-writing",
+  "id": "hub.human-writing",
   "kind": "skill",
   "name": "Human Writing",
   "summary": "Write prose that reads as human: style control for fiction, forum posts and factual writing, with a check_prose.py revision pass. Carried verbatim from KKKKhazix/human-writing at the pinned commit; the carried file set only excludes VERSION, another runtime's agent config, and a generated distribution file.",

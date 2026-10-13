@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "openra.diagram-design",
+  "id": "hub.diagram-design",
   "kind": "skill",
   "name": "Diagram Design",
   "summary": "Branded presentation diagrams (architecture, flowchart, sequence, ER, timeline, Sankey and 40+ more types) as HTML/SVG/PNG, with draw.io, Mermaid and Excalidraw import. OpenRA-adapted carry of the upstream skill; the recorded differences are in PROVENANCE.md inside the skill.",
@@ -22,8 +22,8 @@
   ],
   "source": {
     "repo": "HuieL/OpenAR-skill-hub",
-    "path": "entries/skills/openra.diagram-design/skill",
-    "revision": "7a469f8a7fd9498fa5963310a694eb4a40e40235"
+    "path": "entries/skills/hub.diagram-design/skill",
+    "revision": "be9d47aa9034c7d0eee1eba1689fb13217377cbc"
   },
   "version": "2.6",
   "license": "MIT",

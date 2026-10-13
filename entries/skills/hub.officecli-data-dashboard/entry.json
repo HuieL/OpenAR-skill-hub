@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "openra.officecli-data-dashboard",
+  "id": "hub.officecli-data-dashboard",
   "kind": "skill",
   "name": "OfficeCLI Data Dashboard",
   "summary": "Multi-element Excel dashboards from CSV or tabular input: Dashboard sheet on open, formula-driven KPI cards, charts, sparklines and conditional formatting. OpenRA-adapted carry of the iOfficeAI/AionCore skill: the install section is replaced by a prerequisite check (officecli must already be installed via OpenRA's approved CLI path; the skill only verifies officecli --version) and an Apache-2.0 §4(b) modification notice is added; everything else is upstream text.",
@@ -22,8 +22,8 @@
   ],
   "source": {
     "repo": "HuieL/OpenAR-skill-hub",
-    "path": "entries/skills/openra.officecli-data-dashboard/skill",
-    "revision": "b61e4893f43bdee01c64e36475f18878b0cfa0ca"
+    "path": "entries/skills/hub.officecli-data-dashboard/skill",
+    "revision": "be9d47aa9034c7d0eee1eba1689fb13217377cbc"
   },
   "version": "2.0.0",
   "license": "Apache-2.0",
