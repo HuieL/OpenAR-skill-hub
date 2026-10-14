@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "collections": [
+    {
+      "id": "scientific-writing",
+      "title": "Scientific Writing",
+      "description": "Skills for producing academic-style documents and human-sounding prose: journal/conference/thesis .docx output, style-controlled writing, and writing guidelines.",
+      "curators": ["HuieL"],
+      "entries": [
+        "skill:hub.officecli-academic-paper",
+        "skill:hub.human-writing",
+        "skill:hub.writing-guidelines"
+      ]
+    },
+    {
+      "id": "web-and-design",
+      "title": "Web & Design",
+      "description": "Skills for building and reviewing web output: branded diagrams, anti-slop page design, UI guideline review, and a pinned design-reference selector.",
+      "curators": ["HuieL"],
+      "entries": [
+        "skill:hub.diagram-design",
+        "skill:hub.hallmark",
+        "skill:hub.web-design-guidelines",
+        "skill:hub.research-design-system"
+      ]
+    }
+  ]
+}

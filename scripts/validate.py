@@ -302,9 +302,116 @@ def validate_index() -> None:
         errors.append("skills.json has duplicate ids")
 
 
+def load_community(name):
+    path = ROOT / "community" / name
+    if not path.is_file():
+        return None
+    try:
+        return json.loads(path.read_text())
+    except json.JSONDecodeError as error:
+        errors.append(f"community/{name}: not valid JSON: {error}")
+        return None
+
+
+def check_community_ref(ref, known_skill_ids, where):
+    if not isinstance(ref, str) or ref.count(":") != 1:
+        fail(where, f"reference {ref!r} must be kind:id")
+        return
+    kind, entry_id = ref.split(":")
+    if kind not in ("skill", "extension"):
+        fail(where, f"reference {ref!r} has unknown kind {kind!r}")
+    elif kind == "skill" and entry_id not in known_skill_ids:
+        fail(where, f"reference {ref!r} matches no skill entry")
+
+
+def validate_community(skill_ids):
+    if not (ROOT / "community").is_dir():
+        return
+    featured = load_community("featured.json")
+    if featured is not None:
+        if featured.get("schemaVersion") != 1 or not isinstance(featured.get("featured"), list):
+            errors.append("community/featured.json: schemaVersion 1 and a featured array are required")
+        else:
+            seen = set()
+            for item in featured["featured"]:
+                if not isinstance(item, dict) or set(item) != {"id", "reason", "featuredBy", "date"}:
+                    errors.append("community/featured.json: each item needs exactly id, reason, featuredBy, date")
+                    continue
+                check_community_ref(item["id"], skill_ids, "community/featured.json")
+                if item["id"] in seen:
+                    errors.append(f"community/featured.json: duplicate id {item['id']!r}")
+                seen.add(item["id"])
+                if not isinstance(item["reason"], str) or not 1 <= len(item["reason"]) <= 500:
+                    errors.append("community/featured.json: reason must be 1-500 chars")
+                if not isinstance(item["featuredBy"], str) or not HANDLE.match(item["featuredBy"]):
+                    errors.append("community/featured.json: featuredBy must be a GitHub login")
+                if not isinstance(item["date"], str) or not re.match(r"^\d{4}-\d{2}-\d{2}$", item["date"]):
+                    errors.append("community/featured.json: date must be YYYY-MM-DD")
+    collections = load_community("collections.json")
+    if collections is not None:
+        if collections.get("schemaVersion") != 1 or not isinstance(collections.get("collections"), list):
+            errors.append("community/collections.json: schemaVersion 1 and a collections array are required")
+        else:
+            seen = set()
+            for item in collections["collections"]:
+                if not isinstance(item, dict) or set(item) != {"id", "title", "description", "curators", "entries"}:
+                    errors.append("community/collections.json: each item needs exactly id, title, description, curators, entries")
+                    continue
+                if not isinstance(item["id"], str) or not re.match(r"^[a-z0-9][a-z0-9-]{0,63}$", item["id"]):
+                    errors.append(f"community/collections.json: bad collection id {item['id']!r}")
+                if item["id"] in seen:
+                    errors.append(f"community/collections.json: duplicate collection id {item['id']!r}")
+                seen.add(item["id"])
+                curators = item["curators"]
+                if not isinstance(curators, list) or not curators or any(
+                    not isinstance(c, str) or not HANDLE.match(c) for c in curators
+                ):
+                    errors.append(f"community/collections.json: {item['id']!r} curators must be a non-empty list of GitHub logins")
+                entries = item["entries"]
+                if not isinstance(entries, list) or not entries or len(set(entries)) != len(entries):
+                    errors.append(f"community/collections.json: {item['id']!r} entries must be a non-empty, duplicate-free list")
+                    continue
+                for ref in entries:
+                    check_community_ref(ref, skill_ids, "community/collections.json")
+    creators = load_community("creators.json")
+    if creators is not None:
+        if creators.get("schemaVersion") != 1 or not isinstance(creators.get("creators"), list):
+            errors.append("community/creators.json: schemaVersion 1 and a creators array are required")
+        else:
+            roles = {"author", "maintainer", "contributor", "adapter", "submitter"}
+            for creator in creators["creators"]:
+                if not isinstance(creator, dict) or set(creator) != {"github", "name", "credits"}:
+                    errors.append("community/creators.json: each creator needs exactly github, name, credits")
+                    continue
+                if creator["github"] is not None and (not isinstance(creator["github"], str) or not HANDLE.match(creator["github"])):
+                    errors.append(f"community/creators.json: bad github login {creator['github']!r}")
+                if creator["name"] is not None and (not isinstance(creator["name"], str) or not creator["name"]):
+                    errors.append("community/creators.json: name must be a non-empty string or null")
+                if not creator["github"] and not creator["name"]:
+                    errors.append("community/creators.json: a creator needs a github login or a name")
+                if not isinstance(creator["credits"], list) or not creator["credits"]:
+                    errors.append("community/creators.json: credits must be a non-empty list")
+                    continue
+                for credit in creator["credits"]:
+                    if not isinstance(credit, dict) or set(credit) != {"entry", "roles"}:
+                        errors.append("community/creators.json: each credit needs exactly entry, roles")
+                        continue
+                    check_community_ref(credit["entry"], skill_ids, "community/creators.json")
+                    if not isinstance(credit["roles"], list) or not credit["roles"] or not set(credit["roles"]) <= roles:
+                        errors.append(f"community/creators.json: bad roles {credit['roles']!r}")
+    discovery = load_community("discovery.json")
+    if discovery is not None:
+        if discovery.get("schemaVersion") != 1:
+            errors.append("community/discovery.json: schemaVersion must be 1")
+        trending = discovery.get("trending")
+        if not isinstance(trending, dict) or not trending.get("metric") or not trending.get("window"):
+            errors.append("community/discovery.json: trending needs metric and window")
+
+
 def main() -> None:
-    validate_entries()
+    by_id = validate_entries()
     validate_index()
+    validate_community(set(by_id))
     if errors:
         for error in errors:
             print(f"ERROR {error}", file=sys.stderr)
