@@ -17,14 +17,15 @@
 - **main 只放发布内容**：README、LICENSE、`skills.json`、`entries/`、`schemas/`、`scripts/`（校验/生成）、`.github/workflows/`。不放 TODO、回执、证据、验收记录、个人笔记（这些放 OpenRA 主仓 `docs/acceptance/`）。
 - **安全**：不提交任何 token/凭据；CI 校验 job 无写权限、无 secrets，不执行 PR 中的脚本/安装命令；第三方内容逐条核许可，不整库复制上游。
 
-## 1. 当前事实（2026-10-13）
+## 1. 当前事实（2026-10-14）
 
-- **SX-M0 已过**：骨架已由 Review 合入成为 `main`（`scripts/validate` 本地与 CI 均过）。
-- **SX-M1 大半已过（10-13）**：`main` 现有 5 条 human-writing / diagram-design / officecli×2（`2ce664a`，10-13 合）/ craft-suite（`agent-x/seed-craft-suite@8fdc3e1` 待审）。
-- **内置 skill 不上 hub**（用户 10-12 裁定）：17 个 ora-* 核心与 bundled `delivery` 已撤销（main revert `463c1fa`）；`seed-ora-core-1..6` 已拒删。内置集随主仓发布，hub 不登记、不泄露。
-- **upstream 溯源字段**（`eb8b6ab`）：`upstream`{repo,revision,license,path?}，仅 `adapters` 非空的适配条目必需；原创托管内容不需。
-- officecli 两条为改写版：curl|bash / irm|iex 安装段替换为 approved-path 前置检查，附 Apache-2.0 §4(b) 修改注记；craft-suite 不设 upstream（用户 10-13 裁决），summary 引 ArtCraft 工具族 github.com/storytold。
-- OpenRA 侧 HUB-01 registry 客户端（X）已 ACCEPT→train-15；HUB-04 进行中。
+- **main = 9 条，全部 `hub.*`**：diagram-design、hallmark、human-writing、officecli-academic-paper、officecli-data-dashboard、research-design-system、scientific-figure-making、web-design-guidelines、writing-guidelines（skills.json 钉 `2a5c93a`）。宿主客户端在该 commit 逐条解析、校验 entry sha256 与索引行一致：9/9 通过（Linux，10-14）。
+- **内置 skill 不上 hub**（用户 10-12）；Craft Suite 为内置，已关闭其条目分支、历史不进 main。
+- **HUB-11 社区数据已合**（`014a5f4`）：featured/collections/creators；discovery workflow 只读、产物为 artifact，不写 main。
+- **officecli ×2 与宿主编译版锁步**（`cbbc1d1`），同版本同字节。
+- **许可待裁决**：`hub.scientific-figure-making` 上游为 CC BY-NC 4.0，摘要/permissionsNote 已如实披露；在裁决前保持 `review.status: unreviewed`，不改其他条目、不冻结其他工作。
+- **生命周期（宿主侧，公共行为）**：目录发现 → 人工批准 → 固定 revision 安装 → 会话按需加载 → 更新提示（只提示、显示差异，不自动安装或执行新版）→ 回滚。目录刷新只更新缓存，不等于启用新版。直接从 GitHub 来源选择性安装（vercel-labs/skills 源语法）与 hub 条目共用同一生命周期，标注 unreviewed / license unknown，且不进入本目录。
+- **私人技能不公开**：宿主上从用户会话学到的私人 skill 不会自动出现在本仓；提交到本仓是单独的人工动作，走本仓的审查与发布门禁。
 
 ## 2. 里程碑
 
