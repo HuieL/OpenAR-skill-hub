@@ -62,6 +62,16 @@
       "entrySha256": "38a74988b874b15cfe02349ea887925b9089d67080ebedfc0a66f9a56fe8676e"
     },
     {
+      "id": "hub.scientific-figure-making",
+      "name": "Scientific Figure Making",
+      "summary": "Publication-ready matplotlib figures for academic papers, slides, and reports in the figures4papers house style: grouped bars, trend lines, scatter, heatmaps, and multi-panel layouts, with print/vector export conventions (PDF/SVG/high-DPI) and parity with the figures4papers demo projects. Loads references progressively instead of up front. Use when finalizing or creating publication figures in matplotlib; not for interactive dashboards, web viz (Plotly/Altair/Bokeh), exploratory-only plots, dominant 3D or geographic mapping, or Illustrator/Figma-first infographics. Carried verbatim from ChenLiu-1996/figures4papers at the pinned commit; only the skill directory (SKILL.md plus references) is carried, not the figure_* demo projects. Licensed CC BY-NC 4.0: non-commercial use only, attribution required.",
+      "delivery": "hub",
+      "version": "16c00e69bf7427a30df9646e220df4072cca3600",
+      "revision": "16c00e69bf7427a30df9646e220df4072cca3600",
+      "entryPath": "entries/skills/hub.scientific-figure-making/entry.json",
+      "entrySha256": "e6541bce71b59ac2ca5a93e0d4f68dcc654970ed84763a379a371924767c99ad"
+    },
+    {
       "id": "hub.web-design-guidelines",
       "name": "Web Design Guidelines",
       "summary": "Review UI code for Web Interface Guidelines compliance: accessibility, performance and UX rules in the terse file:line format. OpenAR-adapted carry of the vercel-labs skill: the rules are vendored from vercel-labs/web-interface-guidelines at a pinned commit instead of fetched from its mutable main branch at review time; the recorded differences are in PROVENANCE.md inside the skill.",

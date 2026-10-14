@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "id": "hub.scientific-figure-making",
+  "kind": "skill",
+  "name": "Scientific Figure Making",
+  "summary": "Publication-ready matplotlib figures for academic papers, slides, and reports in the figures4papers house style: grouped bars, trend lines, scatter, heatmaps, and multi-panel layouts, with print/vector export conventions (PDF/SVG/high-DPI) and parity with the figures4papers demo projects. Loads references progressively instead of up front. Use when finalizing or creating publication figures in matplotlib; not for interactive dashboards, web viz (Plotly/Altair/Bokeh), exploratory-only plots, dominant 3D or geographic mapping, or Illustrator/Figma-first infographics. Carried verbatim from ChenLiu-1996/figures4papers at the pinned commit; only the skill directory (SKILL.md plus references) is carried, not the figure_* demo projects. Licensed CC BY-NC 4.0: non-commercial use only, attribution required.",
+  "summaryI18n": {
+    "zh-CN": "面向学术论文、幻灯片与报告的出版级 matplotlib 图表技能，采用 figures4papers 的固定风格：分组柱状图、趋势线、散点图、热力图与多面板布局，附带打印/矢量导出规范（PDF/SVG/高 DPI），并与 figures4papers 示例项目保持一致。参考文件按需渐进加载，而非一次性全部载入。在用 matplotlib 制作或定稿出版图表时使用；不适用于交互式仪表盘、网页可视化（Plotly/Altair/Bokeh）、纯探索性绘图、以 3D 或地理制图为主的工作流，或 Illustrator/Figma 优先的信息图。自 ChenLiu-1996/figures4papers 钉住 commit 逐字携带，仅携带技能目录（SKILL.md 与 references），不含 figure_* 示例项目。许可证为 CC BY-NC 4.0：仅限非商业使用，需署名。"
+  },
+  "authors": [
+    {
+      "name": "Chen Liu",
+      "github": "ChenLiu-1996"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "figures",
+    "data"
+  ],
+  "source": {
+    "repo": "ChenLiu-1996/figures4papers",
+    "path": "scientific-figure-making",
+    "revision": "16c00e69bf7427a30df9646e220df4072cca3600"
+  },
+  "version": "16c00e69bf7427a30df9646e220df4072cca3600",
+  "license": "CC-BY-NC-4.0",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "952300b4d0bd8fbd0c55aaa732a47a0abb8e9707bc80965c8e70221ef13f0292",
+      "bytes": 2242,
+      "executable": false
+    },
+    {
+      "path": "references/api.md",
+      "sha256": "12892f4940c153c8b2e75abe8eed8f96476989b0a75d65f0dc3d08118bf58269",
+      "bytes": 5476,
+      "executable": false
+    },
+    {
+      "path": "references/common-patterns.md",
+      "sha256": "1456736819f17c5a8bef0daaa58107355dd3212e1594afae5fb49279af2d6d67",
+      "bytes": 3075,
+      "executable": false
+    },
+    {
+      "path": "references/demos.md",
+      "sha256": "23ce4b9f626af9ace648b047cbc3100ebc511b83127b8cebe793cab3a2f93fa3",
+      "bytes": 2528,
+      "executable": false
+    },
+    {
+      "path": "references/design-theory.md",
+      "sha256": "d34fa995a481588a33aab301591a9a2ae54dae8df34c74e0a13311582ef48d99",
+      "bytes": 6738,
+      "executable": false
+    },
+    {
+      "path": "references/tutorials.md",
+      "sha256": "e5a9b9fa78a73a981f046aa29728dd844268282109159fd934f9c9716b3592c1",
+      "bytes": 6411,
+      "executable": false
+    }
+  ],
+  "totalBytes": 26470,
+  "requires": [],
+  "permissionsNote": "The upstream SKILL.md declares no allowed-tools; any tool use is the host's decision. The license is CC BY-NC 4.0 (non-commercial): redistribution and reuse of this skill's content must stay non-commercial and carry attribution, per the LICENSE carried in this entry."
+}
