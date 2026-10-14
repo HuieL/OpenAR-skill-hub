@@ -120,7 +120,16 @@ def main() -> None:
     path = COMMUNITY / "creators.json"
     if args.check:
         current = path.read_text() if path.exists() else ""
-        if current != rendered:
+        try:
+            committed = json.loads(current) if current else {}
+        except json.JSONDecodeError:
+            committed = {}
+        # The provenance pins (skillHub/extensionHub) name the commit the
+        # file was generated at; a committed snapshot can never pin its own
+        # containing commit, so only the projection itself is compared.
+        comparable = {"schemaVersion": projection["schemaVersion"],
+                      "creators": projection["creators"]}
+        if {k: committed.get(k) for k in comparable} != comparable:
             sys.exit("community/creators.json is stale; run scripts/build-community.py and commit it")
         print(f"creators.json is current ({len(projection['creators'])} creators)")
         return

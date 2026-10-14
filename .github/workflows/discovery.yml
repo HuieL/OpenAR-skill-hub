@@ -1,8 +1,10 @@
 name: discovery
 
 # Regenerates community/discovery.json (New / Recently Updated / Trending
-# from public GitHub signals) and commits the snapshot. Any fetch failure
-# exits nonzero without writing, so the previous snapshot is kept.
+# from public GitHub signals) and uploads it as a workflow artifact. The
+# workflow never writes to the repository: hub main changes only through
+# the Review merge (review verdict 2026-10-14). Any fetch failure exits
+# nonzero without writing, so a failed run simply produces no artifact.
 #
 # Triggers: manual dispatch only while the org-wide Actions budget pause
 # (2026-10-04) is in force. Restore conditions: when the pause lifts,
@@ -16,7 +18,7 @@ on:
   #   - cron: "23 4 * * 1"
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: discovery
@@ -39,14 +41,9 @@ jobs:
           python3 scripts/validate.py
           python3 scripts/build-index.py --check
           python3 scripts/build-community.py --check
-      - name: Commit the snapshot if it changed
-        run: |
-          git config user.name "openar-skill-hub-bot"
-          git config user.email "actions@users.noreply.github.com"
-          git add community/discovery.json
-          if git diff --cached --quiet; then
-            echo "discovery.json unchanged; nothing to commit"
-            exit 0
-          fi
-          git commit -m "Regenerate community/discovery.json [skip ci]"
-          git push
+      # Pinned to the upload-artifact v4.4.3 commit; bump deliberately.
+      - uses: actions/upload-artifact@b4b15b8c7c6ac21ea08fcf65892d2ee8f75cf882
+        with:
+          name: discovery-json
+          path: community/discovery.json
+          retention-days: 7
