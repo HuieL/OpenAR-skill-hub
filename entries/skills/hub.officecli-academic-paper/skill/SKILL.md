@@ -3,8 +3,6 @@ name: officecli-academic-paper
 description: "Use this skill to build academic-style .docx output: journal / conference / thesis chapters carrying formal citation style (APA, Chicago, IEEE, MLA), numbered equations, figure & table cross-references, footnotes/endnotes, bibliography, or multi-column journal layout. Trigger on: 'research paper', 'journal paper', 'conference paper', 'manuscript', 'thesis', 'APA', 'MLA', 'Chicago', 'IEEE two-column', 'bibliography', 'hanging indent', 'citation style', 'abstract + keywords', 'equation numbering', 'cross-reference', paper with footnotes/endnotes. Output is a single .docx."
 ---
 
-> **Modification notice (Apache-2.0 §4(b)).** This file is carried from iOfficeAI/AionCore at commit `4a707fc3` (Apache-2.0) with one change: the upstream install section (curl|bash / irm|iex) is replaced by the prerequisite check above — `officecli` must already be installed via OpenAR's approved CLI path; this skill only verifies `officecli --version`.
-
 > **⚠️ Platform note — read before running any command.** The shell snippets in this skill are written for **macOS / Linux** (bash/zsh). Always check which OS you are on first. On **Windows** do **not** run them verbatim — the underlying tool/CLI commands are usually cross-platform, but the surrounding shell syntax is not. Translate it to PowerShell before running:
 >
 > | bash (macOS / Linux) | PowerShell (Windows) |
@@ -29,7 +27,12 @@ When the docx base rules cover it, the text here says `→ see docx v2 §X`. Rea
 
 ## Setup
 
-`officecli` must already be installed through OpenAR's approved CLI path (pinned version and checksum, user approval). This skill never runs install commands: check `officecli --version` first; if the CLI is missing, stop and report the prerequisite instead of installing anything.
+If `officecli` is missing:
+
+- **macOS / Linux**: `ora changes add --kind cli_adapter --request "install the pinned officecli CLI" && ora changes stage-pinned-adapter <id> --name officecli`
+- **Windows (PowerShell)**: `ora changes add --kind cli_adapter --request "install the pinned officecli CLI"; ora changes stage-pinned-adapter <id> --name officecli`
+
+The pinned install never touches PATH: resolve the binary with `ora changes list-adapters` and run it as `ora changes run-cli-adapter officecli -- <args>` (verify with `--version`). Staging the pinned release is a human-approved host action — propose it for the user; never download a binary from GitHub releases or anywhere else.
 
 ## ⚠️ Help-First Rule
 
@@ -518,3 +521,7 @@ Academic-specific:
 ## Help pointer
 
 When in doubt: `officecli help docx`, `officecli help docx <element>`, `officecli help docx <element> --json`. Help is the authoritative schema; this skill is the decision guide for academic deltas on top of docx v2.
+
+## Provenance (Apache-2.0 §4(b))
+
+This skill is modified from `https://github.com/iOfficeAI/AionCore` at commit `4a707fc3d3cd1f06a86004745e2c1bbf08b16068`, file `crates/aionui-app/assets/builtin-skills/officecli-academic-paper/SKILL.md`: the upstream install commands and the manual-releases fallback are replaced with the pinned, checksum-verified host install path, and this notice is added. Everything else is carried verbatim from upstream; the original is preserved in the catalog's `source.files`.

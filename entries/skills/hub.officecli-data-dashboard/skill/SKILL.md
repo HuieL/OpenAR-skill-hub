@@ -3,8 +3,6 @@ name: officecli-data-dashboard
 description: "Use this skill to build a multi-element Excel dashboard — Dashboard sheet on open, multiple formula-driven KPI cards, multiple charts, sparklines, and conditional formatting — from CSV or tabular input. Trigger on: 'dashboard', 'KPI dashboard', 'analytics dashboard', 'executive dashboard', 'metrics dashboard', 'CSV to dashboard', 'data visualization'. Output is a single .xlsx. Scene-layer on officecli-xlsx: inherits every xlsx hard rule. DO NOT invoke for: a single budget tracker / one-sheet CSV-with-formatting (use xlsx), a 3-statement / DCF / LBO financial model (use financial-model), a weekly report with ≤ 1 chart and < 10 rows (use xlsx)."
 ---
 
-> **Modification notice (Apache-2.0 §4(b)).** This file is carried from iOfficeAI/AionCore at commit `4a707fc3` (Apache-2.0) with one change: the upstream install section (curl|bash / irm|iex) is replaced by the prerequisite check above — `officecli` must already be installed via OpenAR's approved CLI path; this skill only verifies `officecli --version`.
-
 > **⚠️ Platform note — read before running any command.** The shell snippets in this skill are written for **macOS / Linux** (bash/zsh). Always check which OS you are on first. On **Windows** do **not** run them verbatim — the underlying tool/CLI commands are usually cross-platform, but the surrounding shell syntax is not. Translate it to PowerShell before running:
 >
 > | bash (macOS / Linux) | PowerShell (Windows) |
@@ -27,7 +25,12 @@ A dashboard is not "a spreadsheet with charts". It is a composition: **one Dashb
 
 ## Setup
 
-`officecli` must already be installed through OpenAR's approved CLI path (pinned version and checksum, user approval). This skill never runs install commands: check `officecli --version` first; if the CLI is missing, stop and report the prerequisite instead of installing anything.
+If `officecli` is missing:
+
+- **macOS / Linux**: `ora changes add --kind cli_adapter --request "install the pinned officecli CLI" && ora changes stage-pinned-adapter <id> --name officecli`
+- **Windows (PowerShell)**: `ora changes add --kind cli_adapter --request "install the pinned officecli CLI"; ora changes stage-pinned-adapter <id> --name officecli`
+
+The pinned install never touches PATH: resolve the binary with `ora changes list-adapters` and run it as `ora changes run-cli-adapter officecli -- <args>` (verify with `--version`). Staging the pinned release is a human-approved host action — propose it for the user; never download a binary from GitHub releases or anywhere else.
 
 ## ⚠️ Help-First Rule
 
@@ -426,3 +429,7 @@ Scatter charts do not accept `series1.xValues` (UNSUPPORTED) — feed the x-axis
 ### Inherited (pointer only)
 
 Cross-sheet `!` trap, batch + resident for formulas, `labelRotation` on axis-by-role, `chartType=pareto`, `validate` while resident, data bar without explicit `min`/`max`, chart `anchor` / series immutability after create → see officecli-xlsx §Known Issues.
+
+## Provenance (Apache-2.0 §4(b))
+
+This skill is modified from `https://github.com/iOfficeAI/AionCore` at commit `4a707fc3d3cd1f06a86004745e2c1bbf08b16068`, file `crates/aionui-app/assets/builtin-skills/officecli-data-dashboard/SKILL.md`: the upstream install commands and the manual-releases fallback are replaced with the pinned, checksum-verified host install path, and this notice is added. Everything else is carried verbatim from upstream; the original is preserved in the catalog's `source.files`.
