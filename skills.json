@@ -34,22 +34,22 @@
     {
       "id": "hub.officecli-academic-paper",
       "name": "OfficeCLI Academic Paper",
-      "summary": "Academic-style .docx output: journal/conference/thesis chapters with APA, Chicago, IEEE or MLA citation style, numbered equations, cross-references, footnotes and bibliography. OpenAR-adapted carry of the iOfficeAI/AionCore skill: the install section is replaced by a prerequisite check (officecli must already be installed via OpenAR's approved CLI path; the skill only verifies officecli --version) and an Apache-2.0 §4(b) modification notice is added; everything else is upstream text.",
+      "summary": "Academic-style .docx output: journal/conference/thesis chapters with APA, Chicago, IEEE or MLA citation style, numbered equations, cross-references, footnotes and bibliography. OpenAR-adapted carry of the iOfficeAI/AionCore skill, published in lockstep with the compiled curated body at the same version (same version, same bytes): the upstream install commands and the manual-releases fallback are replaced with the pinned, checksum-verified host install path (an ora cli-adapter changeset the user approves and stages), the verify sentence points at list-adapters/run-cli-adapter, and an Apache-2.0 4(b) provenance notice is appended; everything else is upstream text.",
       "delivery": "hub",
       "version": "2.0.0",
-      "revision": "d29c1b23eeb5a068eadb60685f0d041fa018730d",
+      "revision": "a2af8f7604d6d79786940c9fb5aff916cf1e04a5",
       "entryPath": "entries/skills/hub.officecli-academic-paper/entry.json",
-      "entrySha256": "2377988c9d61cfbca6c326660c86837f8f3ac18125abefbae0302ed954337110"
+      "entrySha256": "edb7f6d6fbb078be50525954ff7c0a08b055ef880d460f5e1c4bad53c71ba65e"
     },
     {
       "id": "hub.officecli-data-dashboard",
       "name": "OfficeCLI Data Dashboard",
-      "summary": "Multi-element Excel dashboards from CSV or tabular input: Dashboard sheet on open, formula-driven KPI cards, charts, sparklines and conditional formatting. OpenAR-adapted carry of the iOfficeAI/AionCore skill: the install section is replaced by a prerequisite check (officecli must already be installed via OpenAR's approved CLI path; the skill only verifies officecli --version) and an Apache-2.0 §4(b) modification notice is added; everything else is upstream text.",
+      "summary": "Multi-element Excel dashboards from CSV or tabular input: Dashboard sheet on open, formula-driven KPI cards, charts, sparklines and conditional formatting. OpenAR-adapted carry of the iOfficeAI/AionCore skill, published in lockstep with the compiled curated body at the same version (same version, same bytes): the upstream install commands and the manual-releases fallback are replaced with the pinned, checksum-verified host install path (an ora cli-adapter changeset the user approves and stages), the verify sentence points at list-adapters/run-cli-adapter, and an Apache-2.0 4(b) provenance notice is appended; everything else is upstream text.",
       "delivery": "hub",
       "version": "2.0.0",
-      "revision": "d29c1b23eeb5a068eadb60685f0d041fa018730d",
+      "revision": "a2af8f7604d6d79786940c9fb5aff916cf1e04a5",
       "entryPath": "entries/skills/hub.officecli-data-dashboard/entry.json",
-      "entrySha256": "8d861a40624866b787462164013e0a5083cbfa0e53db25e9085c4b1a178e2d47"
+      "entrySha256": "0274ea7cdb14f425a4c99548d435241dfeb5e432914fb3a63d725b1ac1ddedb6"
     },
     {
       "id": "hub.research-design-system",

@@ -51,6 +51,18 @@ which revision that covered. `unreviewed` is not an accusation and `reviewed`
 is not a guarantee; neither grants anything on a user's machine. Declarations
 inside a `SKILL.md` (such as `allowed-tools`) are claims, not approvals.
 
+## Curated publications (HUB-09 lockstep)
+
+A curated skill ships twice: as the reviewed compiled body inside the
+OpenAR CLI and as its `hub.<name>` publication here. Same version, same
+bytes: a publication at version `v` must be byte-identical to the
+compiled curated body at `v`. Version bumps are lockstep — the curated
+data and the hub entry move in the same change. The entry packages the
+curated spec's pinned upstream (repo, exact commit, path prefix,
+license) as its `source` (verbatim carry) or `upstream` (vendored
+adaptation). `ora hub audit-curated` reports drift; a divergent body at
+the same version is re-published, never silently resolved.
+
 ## Updates and removal
 
 A new upstream revision is a new `source.revision` plus a new `files` manifest;

@@ -3,9 +3,9 @@
   "id": "hub.officecli-academic-paper",
   "kind": "skill",
   "name": "OfficeCLI Academic Paper",
-  "summary": "Academic-style .docx output: journal/conference/thesis chapters with APA, Chicago, IEEE or MLA citation style, numbered equations, cross-references, footnotes and bibliography. OpenAR-adapted carry of the iOfficeAI/AionCore skill: the install section is replaced by a prerequisite check (officecli must already be installed via OpenAR's approved CLI path; the skill only verifies officecli --version) and an Apache-2.0 §4(b) modification notice is added; everything else is upstream text.",
+  "summary": "Academic-style .docx output: journal/conference/thesis chapters with APA, Chicago, IEEE or MLA citation style, numbered equations, cross-references, footnotes and bibliography. OpenAR-adapted carry of the iOfficeAI/AionCore skill, published in lockstep with the compiled curated body at the same version (same version, same bytes): the upstream install commands and the manual-releases fallback are replaced with the pinned, checksum-verified host install path (an ora cli-adapter changeset the user approves and stages), the verify sentence points at list-adapters/run-cli-adapter, and an Apache-2.0 4(b) provenance notice is appended; everything else is upstream text.",
   "summaryI18n": {
-    "zh-CN": "学术风格 .docx 输出：期刊/会议/论文章节，支持 APA、Chicago、IEEE、MLA 引用格式、编号公式、交叉引用、脚注与参考文献。OpenAR 对 iOfficeAI/AionCore 技能的适配版：安装段替换为前置条件检查（officecli 须已经由 OpenAR 批准的 CLI 路径安装，技能只验证 officecli --version），并加 Apache-2.0 §4(b) 修改注记，其余为上游原文。"
+    "zh-CN": "学术风格 .docx 输出：期刊/会议/学位论文章节，APA/Chicago/IEEE/MLA 引用样式、编号公式、交叉引用、脚注与参考文献。 iOfficeAI/AionCore 技能的 OpenAR 适配携带，与同版本编译 curated 正文锁步发布（同版本=同字节）：上游安装命令与 GitHub releases 手动回退替换为钉版校验的宿主安装路径（经用户批准并 stage 的 ora cli-adapter 变更集），验证句改为 list-adapters/run-cli-adapter 指引，并追加 Apache-2.0 4(b) 修改声明；其余为上游原文。"
   },
   "authors": [
     {
@@ -23,7 +23,7 @@
   "source": {
     "repo": "HuieL/OpenAR-skill-hub",
     "path": "entries/skills/hub.officecli-academic-paper/skill",
-    "revision": "d29c1b23eeb5a068eadb60685f0d041fa018730d"
+    "revision": "a2af8f7604d6d79786940c9fb5aff916cf1e04a5"
   },
   "version": "2.0.0",
   "license": "Apache-2.0",
@@ -44,12 +44,12 @@
     },
     {
       "path": "SKILL.md",
-      "sha256": "ebc8895ad84b67df0e72b87d549180d4bd1ba4358be8aa49ee2f74103dea4bca",
-      "bytes": 47250,
+      "sha256": "821d14cf250793d328b203850e2557ee78a7abe3ebf4df47c622929d47129ba2",
+      "bytes": 47802,
       "executable": false
     }
   ],
-  "totalBytes": 58189,
+  "totalBytes": 58741,
   "requires": [],
   "permissionsNote": "allowed-tools declarations inside SKILL.md are upstream claims, not host approvals; OpenAR enforces its own permission gates.",
   "upstream": {
