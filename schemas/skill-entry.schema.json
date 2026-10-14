@@ -25,8 +25,9 @@
     "schemaVersion": { "const": 1 },
     "id": {
       "type": "string",
-      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$",
-      "description": "Namespaced identity, e.g. openra.diagram-design. Separate from the display name; globally unique; never reused."
+      "pattern": "^[a-z0-9]([a-z0-9-]*[a-z0-9])?(\\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)+$",
+      "maxLength": 128,
+      "description": "Namespaced identity, e.g. hub.diagram-design or acme.paper-tools. Lowercase segments of [a-z0-9-] (never ending with a dash), at least two; equal to the directory name; globally unique; never reused. openra.* and ora.* are reserved for the app's built-in skills and never listed here."
     },
     "kind": { "const": "skill" },
     "name": {

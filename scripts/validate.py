@@ -24,7 +24,11 @@ ENTRY_FIELDS = {
 }
 HEX40 = re.compile(r"^[0-9a-f]{40}$")
 HEX64 = re.compile(r"^[0-9a-f]{64}$")
-ID = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$")
+# Mirrors the CLI wire contract (namespaced_id): at least two dot-separated
+# segments, each starting [a-z0-9], only [a-z0-9-], never ending with '-'.
+SEGMENT = r"[a-z0-9]([a-z0-9-]*[a-z0-9])?"
+ID = re.compile(rf"^{SEGMENT}(\.{SEGMENT})+$")
+RESERVED_NAMESPACES = {"openra", "ora"}
 REPO = re.compile(r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")
 HANDLE = re.compile(r"^[A-Za-z0-9-]{1,39}$")
 
@@ -260,8 +264,11 @@ def validate_entries() -> dict[str, pathlib.Path]:
             fail(entry_dir.name, "entry.json must be an object")
             continue
         entry_id = entry.get("id", entry_dir.name)
-        if not isinstance(entry_id, str) or not ID.match(entry_id):
-            fail(entry_dir.name, f"id {entry_id!r} does not match {ID.pattern}")
+        if not isinstance(entry_id, str) or not ID.match(entry_id) or len(entry_id) > 128:
+            fail(entry_dir.name, f"id {entry_id!r} does not match {ID.pattern} (max 128 chars)")
+            continue
+        if entry_id.split(".")[0] in RESERVED_NAMESPACES:
+            fail(entry_dir.name, "id namespace is reserved for built-ins; hub entries use `hub.*` or a publisher namespace")
             continue
         if entry_dir.name != entry_id:
             fail(entry_id, f"directory name {entry_dir.name!r} must equal id")
