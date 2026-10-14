@@ -1,8 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T13:14:34Z",
-  "skillHub": "d44586e85ae7c9f34c45797ed824a57a7ff72be6",
+  "generatedAt": "2026-10-14T03:48:56Z",
+  "skillHub": "486e4f43b4ff411c0d6ae11f9e609370fc764dd2",
   "new": [
+    {
+      "id": "skill:hub.scientific-figure-making",
+      "firstRecorded": "2026-10-14T11:40:21+08:00"
+    },
     {
       "id": "skill:hub.research-design-system",
       "firstRecorded": "2026-10-13T20:52:10+08:00"
@@ -38,6 +42,18 @@
   ],
   "updated": [
     {
+      "id": "skill:hub.scientific-figure-making",
+      "lastRecorded": "2026-10-14T11:40:21+08:00"
+    },
+    {
+      "id": "skill:hub.officecli-academic-paper",
+      "lastRecorded": "2026-10-14T10:55:28+08:00"
+    },
+    {
+      "id": "skill:hub.officecli-data-dashboard",
+      "lastRecorded": "2026-10-14T10:55:28+08:00"
+    },
+    {
       "id": "skill:hub.research-design-system",
       "lastRecorded": "2026-10-13T20:58:31+08:00"
     },
@@ -51,14 +67,6 @@
     },
     {
       "id": "skill:hub.human-writing",
-      "lastRecorded": "2026-10-13T18:29:13+08:00"
-    },
-    {
-      "id": "skill:hub.officecli-academic-paper",
-      "lastRecorded": "2026-10-13T18:29:13+08:00"
-    },
-    {
-      "id": "skill:hub.officecli-data-dashboard",
       "lastRecorded": "2026-10-13T18:29:13+08:00"
     },
     {
@@ -77,8 +85,8 @@
     "repos": [
       {
         "repo": "VoltAgent/awesome-design-md",
-        "stars": 120822,
-        "forks": 13452,
+        "stars": 121081,
+        "forks": 13476,
         "pushedAt": "2026-10-12T13:17:12Z",
         "entries": [
           "skill:hub.research-design-system"
@@ -86,25 +94,34 @@
       },
       {
         "repo": "cathrynlavery/diagram-design",
-        "stars": 53492,
-        "forks": 3389,
-        "pushedAt": "2026-10-13T04:30:17Z",
+        "stars": 54400,
+        "forks": 3443,
+        "pushedAt": "2026-10-13T21:48:36Z",
         "entries": [
           "skill:hub.diagram-design"
         ]
       },
       {
         "repo": "nutlope/hallmark",
-        "stars": 29989,
-        "forks": 1534,
+        "stars": 30022,
+        "forks": 1539,
         "pushedAt": "2026-08-06T16:19:18Z",
         "entries": [
           "skill:hub.hallmark"
         ]
       },
       {
+        "repo": "ChenLiu-1996/figures4papers",
+        "stars": 8525,
+        "forks": 593,
+        "pushedAt": "2026-10-12T16:02:10Z",
+        "entries": [
+          "skill:hub.scientific-figure-making"
+        ]
+      },
+      {
         "repo": "KKKKhazix/human-writing",
-        "stars": 4053,
+        "stars": 4058,
         "forks": 309,
         "pushedAt": "2026-08-11T15:07:45Z",
         "entries": [
@@ -113,7 +130,7 @@
       },
       {
         "repo": "vercel-labs/web-interface-guidelines",
-        "stars": 970,
+        "stars": 974,
         "forks": 66,
         "pushedAt": "2026-10-05T20:49:17Z",
         "entries": [
@@ -122,8 +139,8 @@
       },
       {
         "repo": "iOfficeAI/AionCore",
-        "stars": 118,
-        "forks": 188,
+        "stars": 119,
+        "forks": 187,
         "pushedAt": "2026-10-13T06:02:57Z",
         "entries": [
           "skill:hub.officecli-academic-paper",
@@ -143,7 +160,7 @@
         "repo": "HuieL/OpenAR-skill-hub",
         "stars": 0,
         "forks": 0,
-        "pushedAt": "2026-10-13T12:59:28Z",
+        "pushedAt": "2026-10-14T03:28:09Z",
         "entries": [
           "skill:hub.diagram-design",
           "skill:hub.officecli-academic-paper",
