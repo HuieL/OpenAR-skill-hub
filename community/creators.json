@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "skillHub": "d44586e85ae7c9f34c45797ed824a57a7ff72be6",
+  "extensionHub": null,
+  "creators": [
+    {
+      "github": "HuieL",
+      "name": null,
+      "credits": [
+        {
+          "entry": "skill:hub.diagram-design",
+          "roles": [
+            "adapter",
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:hub.hallmark",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:hub.human-writing",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:hub.officecli-academic-paper",
+          "roles": [
+            "adapter",
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:hub.officecli-data-dashboard",
+          "roles": [
+            "adapter",
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:hub.research-design-system",
+          "roles": [
+            "adapter",
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:hub.web-design-guidelines",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:hub.writing-guidelines",
+          "roles": [
+            "submitter"
+          ]
+        }
+      ]
+    },
+    {
+      "github": "KKKKhazix",
+      "name": "Khazix",
+      "credits": [
+        {
+          "entry": "skill:hub.human-writing",
+          "roles": [
+            "author"
+          ]
+        }
+      ]
+    },
+    {
+      "github": "Luffixos",
+      "name": "Youssef",
+      "credits": [
+        {
+          "entry": "skill:hub.hallmark",
+          "roles": [
+            "author"
+          ]
+        }
+      ]
+    },
+    {
+      "github": "VoltAgent",
+      "name": "VoltAgent",
+      "credits": [
+        {
+          "entry": "skill:hub.research-design-system",
+          "roles": [
+            "author"
+          ]
+        }
+      ]
+    },
+    {
+      "github": "cathrynlavery",
+      "name": "Cathryn Lavery",
+      "credits": [
+        {
+          "entry": "skill:hub.diagram-design",
+          "roles": [
+            "author"
+          ]
+        }
+      ]
+    },
+    {
+      "github": "iOfficeAI",
+      "name": "iOfficeAI",
+      "credits": [
+        {
+          "entry": "skill:hub.officecli-academic-paper",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:hub.officecli-data-dashboard",
+          "roles": [
+            "author"
+          ]
+        }
+      ]
+    },
+    {
+      "github": null,
+      "name": "Ameer Muavia",
+      "credits": [
+        {
+          "entry": "skill:hub.hallmark",
+          "roles": [
+            "author"
+          ]
+        }
+      ]
+    },
+    {
+      "github": "nutlope",
+      "name": "Hassan El Mghari",
+      "credits": [
+        {
+          "entry": "skill:hub.hallmark",
+          "roles": [
+            "author"
+          ]
+        }
+      ]
+    },
+    {
+      "github": "vercel-labs",
+      "name": "Vercel Labs",
+      "credits": [
+        {
+          "entry": "skill:hub.web-design-guidelines",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:hub.writing-guidelines",
+          "roles": [
+            "author"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "featured": [
+    {
+      "id": "skill:hub.diagram-design",
+      "reason": "The most complete adapted carry on the hub: 40+ diagram types with draw.io, Mermaid and Excalidraw import, and the full install-approve-apply loop was exercised end to end in the HUB-M1 acceptance run.",
+      "featuredBy": "HuieL",
+      "date": "2026-10-13"
+    },
+    {
+      "id": "skill:hub.hallmark",
+      "reason": "A real, opinionated anti-AI-slop design skill with audit, redesign and study behaviors, carried verbatim from the upstream skill directory at a pinned commit.",
+      "featuredBy": "HuieL",
+      "date": "2026-10-13"
+    }
+  ]
+}
