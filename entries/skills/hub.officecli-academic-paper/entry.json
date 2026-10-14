@@ -23,11 +23,11 @@
   "source": {
     "repo": "HuieL/OpenAR-skill-hub",
     "path": "entries/skills/hub.officecli-academic-paper/skill",
-    "revision": "a2af8f7604d6d79786940c9fb5aff916cf1e04a5"
+    "revision": "3f140f237c1109cbb96ca736e48827f14f0ba1c0"
   },
   "version": "2.0.0",
   "license": "Apache-2.0",
-  "licenseFile": "skill/LICENSE",
+  "licenseFile": "LICENSE",
   "review": {
     "status": "unreviewed",
     "reviewedRevision": null,
@@ -37,19 +37,13 @@
   "delivery": "hub",
   "files": [
     {
-      "path": "LICENSE",
-      "sha256": "a515d5a76da6c082f0d3d33a597bf82e32ecdac8841ed1783ac081ebd6d62ebf",
-      "bytes": 10939,
-      "executable": false
-    },
-    {
       "path": "SKILL.md",
       "sha256": "821d14cf250793d328b203850e2557ee78a7abe3ebf4df47c622929d47129ba2",
       "bytes": 47802,
       "executable": false
     }
   ],
-  "totalBytes": 58741,
+  "totalBytes": 47802,
   "requires": [],
   "permissionsNote": "allowed-tools declarations inside SKILL.md are upstream claims, not host approvals; OpenAR enforces its own permission gates.",
   "upstream": {

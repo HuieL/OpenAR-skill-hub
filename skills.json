@@ -37,9 +37,9 @@
       "summary": "Academic-style .docx output: journal/conference/thesis chapters with APA, Chicago, IEEE or MLA citation style, numbered equations, cross-references, footnotes and bibliography. OpenAR-adapted carry of the iOfficeAI/AionCore skill, published in lockstep with the compiled curated body at the same version (same version, same bytes): the upstream install commands and the manual-releases fallback are replaced with the pinned, checksum-verified host install path (an ora cli-adapter changeset the user approves and stages), the verify sentence points at list-adapters/run-cli-adapter, and an Apache-2.0 4(b) provenance notice is appended; everything else is upstream text.",
       "delivery": "hub",
       "version": "2.0.0",
-      "revision": "a2af8f7604d6d79786940c9fb5aff916cf1e04a5",
+      "revision": "3f140f237c1109cbb96ca736e48827f14f0ba1c0",
       "entryPath": "entries/skills/hub.officecli-academic-paper/entry.json",
-      "entrySha256": "edb7f6d6fbb078be50525954ff7c0a08b055ef880d460f5e1c4bad53c71ba65e"
+      "entrySha256": "1588373c4db828b3c414d605ad246166cae43ff95b74c7ae1c4aa9e8d83bbb6e"
     },
     {
       "id": "hub.officecli-data-dashboard",
@@ -47,9 +47,9 @@
       "summary": "Multi-element Excel dashboards from CSV or tabular input: Dashboard sheet on open, formula-driven KPI cards, charts, sparklines and conditional formatting. OpenAR-adapted carry of the iOfficeAI/AionCore skill, published in lockstep with the compiled curated body at the same version (same version, same bytes): the upstream install commands and the manual-releases fallback are replaced with the pinned, checksum-verified host install path (an ora cli-adapter changeset the user approves and stages), the verify sentence points at list-adapters/run-cli-adapter, and an Apache-2.0 4(b) provenance notice is appended; everything else is upstream text.",
       "delivery": "hub",
       "version": "2.0.0",
-      "revision": "a2af8f7604d6d79786940c9fb5aff916cf1e04a5",
+      "revision": "3f140f237c1109cbb96ca736e48827f14f0ba1c0",
       "entryPath": "entries/skills/hub.officecli-data-dashboard/entry.json",
-      "entrySha256": "0274ea7cdb14f425a4c99548d435241dfeb5e432914fb3a63d725b1ac1ddedb6"
+      "entrySha256": "29533a3c5716d128de9d58313c5c9d17cb622c2f5ef1902f5146f1c1c5cf0275"
     },
     {
       "id": "hub.research-design-system",
