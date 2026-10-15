@@ -34,6 +34,9 @@
 - SX-02 现状：CONTRIBUTING 已含托管方式、更新与下架（`review.status` 原地改、不删历史）；**宿主侧提示**已写：OpenRA `agent-x/hub-skill-entry@879324d7` 的 `review_flag` 让 `ora changes hub-updates` 把原地标记 deprecated/high-risk 报成“registry 已标记、已装版本照常可用”，不再误报为“同版本内容被改”（触及 C 的 `hub_update.rs`，待 C 共审）。
 - 宿主侧新增（OpenRA，待 Review）：`ora hub uninstall`（HUB-08，卸载与停用/单步回滚分开）、`GET /api/hub/skills/entry/{id}`（Y 详情页取 credit/categories，`designReference` 标设计资料选择器，U15-02 无需新增 kind 字段）。
 
+- 10-15 晚：PR 模板已合 main `abe18ea`（SX-M3 一项闭）。`agent-x/trusted-validator@ccd69ed`（待合）：CI 用 **base 分支的** validate/build-index/build-community 以 `--root` 校验 PR 树，PR 代码不执行；改 scripts/schemas/.github 的 PR 被标注需人工审；首个 PR 自举一次。负例：PR 自带“永远通过”的 validate.py + 坏条目 → 可信校验 exit 1。Y 仓同样问题，owner patch 在 OpenRA `docs/acceptance/hub/x-extension-hub-trusted-validator-owner.patch`。
+- OpenRA 侧全部 X 工作已合成一条 `agent-x/skill-hub-r3`（Review r3b ACCEPT，待 A+C 会签）。
+
 ## 2. 里程碑
 
 | 里程碑 | 内容 | 通过条件 |
