@@ -27,6 +27,13 @@
 - **生命周期（宿主侧，公共行为）**：目录发现 → 人工批准 → 固定 revision 安装 → 会话按需加载 → 更新提示（只提示、显示差异，不自动安装或执行新版）→ 回滚。目录刷新只更新缓存，不等于启用新版。直接从 GitHub 来源选择性安装（vercel-labs/skills 源语法）与 hub 条目共用同一生命周期，标注 unreviewed / license unknown，且不进入本目录。
 - **私人技能不公开**：宿主上从用户会话学到的私人 skill 不会自动出现在本仓；提交到本仓是单独的人工动作，走本仓的审查与发布门禁。
 
+## 1b. 当前事实（2026-10-15 增补）
+
+- main = `8bab217`：加入 `examples/standard-skill/`（HUB-09 标准样例 + 贡献步骤）；索引仍 9 条。
+- `agent-x/pr-template@abe18ea`（待合）：PR 模板一页清单（钉 commit、完整清单、实际许可、作者可核对 vs registrySubmitter、requires/permissionsNote、重建索引、无私有内容、标记只改 `review.status` 并写理由）——SX-M3 PR 模板项。
+- SX-02 现状：CONTRIBUTING 已含托管方式、更新与下架（`review.status` 原地改、不删历史）；**宿主侧提示**已写：OpenRA `agent-x/hub-skill-entry@879324d7` 的 `review_flag` 让 `ora changes hub-updates` 把原地标记 deprecated/high-risk 报成“registry 已标记、已装版本照常可用”，不再误报为“同版本内容被改”（触及 C 的 `hub_update.rs`，待 C 共审）。
+- 宿主侧新增（OpenRA，待 Review）：`ora hub uninstall`（HUB-08，卸载与停用/单步回滚分开）、`GET /api/hub/skills/entry/{id}`（Y 详情页取 credit/categories，`designReference` 标设计资料选择器，U15-02 无需新增 kind 字段）。
+
 ## 2. 里程碑
 
 | 里程碑 | 内容 | 通过条件 |
