@@ -21,8 +21,11 @@ account, and no install script to run here.
      actually carries.
 3. Run `python3 scripts/build-index.py` and commit the regenerated
    `skills.json` together with your entry.
-4. Open a PR. CI runs `scripts/validate.py` (read-only, no secrets, no
-   install step; it never executes anything from your entry).
+4. Open a PR. CI runs the **base branch's** `scripts/validate.py` and
+   `build-index.py --check` against your tree (read-only, no secrets, no
+   install step; nothing from your PR is executed). A PR that changes
+   `scripts/`, `schemas/` or `.github/` is flagged: those files are reviewed
+   by a maintainer, and take effect for later PRs only after merge.
 
 Maintainer-owned small skills may host their content directly under
 `entries/skills/<id>/skill/`; every hosted file must then be listed in `files`

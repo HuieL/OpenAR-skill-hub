@@ -10,7 +10,18 @@ import json
 import pathlib
 import sys
 
-ROOT = pathlib.Path(__file__).resolve().parent.parent
+def _root() -> pathlib.Path:
+    """The registry tree to read: `--root <dir>` (CI runs the base branch's
+    trusted scripts against a pull request's tree), else this checkout."""
+    if "--root" in sys.argv:
+        index = sys.argv.index("--root")
+        if index + 1 >= len(sys.argv):
+            sys.exit("--root needs a directory")
+        return pathlib.Path(sys.argv[index + 1]).resolve()
+    return pathlib.Path(__file__).resolve().parent.parent
+
+
+ROOT = _root()
 ENTRIES = ROOT / "entries" / "skills"
 
 
