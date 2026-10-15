@@ -32,7 +32,8 @@ account, and no install script to run here.
      commit SHA. `main`/`latest`/mutable tags are never accepted as a pin;
    - `files` — the complete manifest of the skill's files at that revision,
      each with sha256 and size (cap: 2 MiB per entry);
-   - `license` — SPDX id.
+   - `license` — SPDX id; the entry must state the license its content
+     actually carries.
 3. Optional — the listing (icon and search tags): `add-entry.py` writes
    `entries/skills/<id>/listing.json` for you, picking an icon from
    `icons.json` that matches your categories, tags and description
@@ -48,9 +49,11 @@ account, and no install script to run here.
    nothing fits); leave it out and the build picks one. `tags` are up to 12
    lowercase words, searched in OpenAR beside your categories. Never put these
    fields in `entry.json`.
-4. Open a PR. CI runs `scripts/validate.py` and `scripts/build-index.py --check`
-   (read-only, no secrets, no install step; it never executes anything from
-   your entry).
+4. Open a PR. CI runs the **base branch's** `scripts/validate.py` and
+   `build-index.py --check` against your tree (read-only, no secrets, no
+   install step; nothing from your PR is executed). A PR that changes
+   `scripts/`, `schemas/` or `.github/` is flagged: those files are reviewed
+   by a maintainer, and take effect for later PRs only after merge.
 
 No git? Open the **Add a skill** issue with the link; a maintainer runs step 2.
 Built-in OpenAR skills (`ora-*`, `diagram-design`) are never listed here.

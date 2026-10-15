@@ -21,7 +21,18 @@ import pathlib
 import subprocess
 import sys
 
-ROOT = pathlib.Path(__file__).resolve().parent.parent
+def _root() -> pathlib.Path:
+    """The registry tree to read: `--root <dir>` (CI runs the base branch's
+    trusted scripts against a pull request's tree), else this checkout."""
+    if "--root" in sys.argv:
+        index = sys.argv.index("--root")
+        if index + 1 >= len(sys.argv):
+            sys.exit("--root needs a directory")
+        return pathlib.Path(sys.argv[index + 1]).resolve()
+    return pathlib.Path(__file__).resolve().parent.parent
+
+
+ROOT = _root()
 COMMUNITY = ROOT / "community"
 
 ROLE_FIELDS = (
@@ -111,6 +122,8 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--extensions", type=pathlib.Path, default=None,
                         help="optional checkout of OpenAR-extension-hub")
+    parser.add_argument("--root", type=pathlib.Path, default=None,
+                        help="registry tree to read (resolved at import; see _root)")
     parser.add_argument("--check", action="store_true",
                         help="verify the committed creators.json is current")
     args = parser.parse_args()

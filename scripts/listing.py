@@ -19,7 +19,18 @@ import pathlib
 import re
 import sys
 
-ROOT = pathlib.Path(__file__).resolve().parent.parent
+def _root() -> pathlib.Path:
+    """icons.json is data: under `--root <dir>` (CI runs the base branch's
+    scripts against a pull request's tree) it is read from that tree, so a PR
+    may add the icon it uses; check_icons validates its shape."""
+    if "--root" in sys.argv:
+        index = sys.argv.index("--root")
+        if index + 1 < len(sys.argv):
+            return pathlib.Path(sys.argv[index + 1]).resolve()
+    return pathlib.Path(__file__).resolve().parent.parent
+
+
+ROOT = _root()
 ICONS_PATH = ROOT / "icons.json"
 TAG = re.compile(r"^[a-z0-9][a-z0-9-]{0,31}$")
 MAX_TAGS = 12
