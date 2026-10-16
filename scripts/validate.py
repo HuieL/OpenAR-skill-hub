@@ -29,6 +29,12 @@ HEX64 = re.compile(r"^[0-9a-f]{64}$")
 SEGMENT = r"[a-z0-9]([a-z0-9-]*[a-z0-9])?"
 ID = re.compile(rf"^{SEGMENT}(\.{SEGMENT})+$")
 RESERVED_NAMESPACES = {"openra", "ora"}
+# Skills that ship inside OpenAR itself (built in to every session). The host
+# refuses to install a user skill under these names, so a hub entry for one
+# could never install; built-in skills are not listed here (user ruling
+# 2026-10-12). `ora-*` names are reserved the same way.
+BUILTIN_SKILL_NAMES = {"diagram-design"}
+SKILL_NAME_LINE = re.compile(r"^name:\s*['\"]?([^'\"\s]+)", re.MULTILINE)
 REPO = re.compile(r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")
 HANDLE = re.compile(r"^[A-Za-z0-9-]{1,39}$")
 
@@ -240,6 +246,18 @@ def check_files(entry: dict, entry_id: str, entry_dir: pathlib.Path) -> None:
                 fail(entry_id, f"files lists {rel!r} but it is not under skill/")
 
 
+def check_not_builtin(entry_id: str, entry_dir: pathlib.Path) -> None:
+    names = {entry_id.split(".")[-1]}
+    hosted = entry_dir / "skill" / "SKILL.md"
+    if hosted.is_file():
+        found = SKILL_NAME_LINE.search(hosted.read_text(errors="replace").split("\n---", 1)[0])
+        if found:
+            names.add(found.group(1))
+    for name in sorted(names):
+        if name in BUILTIN_SKILL_NAMES or name.startswith("ora-"):
+            fail(entry_id, f"`{name}` is a built-in OpenAR skill name; built-in skills are not listed on this hub")
+
+
 def validate_entries() -> dict[str, pathlib.Path]:
     by_id: dict[str, pathlib.Path] = {}
     if not ENTRIES.is_dir():
@@ -284,6 +302,7 @@ def validate_entries() -> dict[str, pathlib.Path]:
         check_review(entry, entry_id)
         check_compat(entry, entry_id)
         check_files(entry, entry_id, entry_dir)
+        check_not_builtin(entry_id, entry_dir)
     return by_id
 
 

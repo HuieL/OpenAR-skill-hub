@@ -2,16 +2,6 @@
   "schemaVersion": 1,
   "entries": [
     {
-      "id": "hub.diagram-design",
-      "name": "Diagram Design",
-      "summary": "Branded presentation diagrams (architecture, flowchart, sequence, ER, timeline, Sankey and 40+ more types) as HTML/SVG/PNG, with draw.io, Mermaid and Excalidraw import. OpenAR-adapted carry of the upstream skill; the recorded differences are in PROVENANCE.md inside the skill.",
-      "delivery": "hub",
-      "version": "2.6",
-      "revision": "d29c1b23eeb5a068eadb60685f0d041fa018730d",
-      "entryPath": "entries/skills/hub.diagram-design/entry.json",
-      "entrySha256": "113b8e4f0d4c28cf34b723de4177173e81dc7508a1745dcbee658913bb7da602"
-    },
-    {
       "id": "hub.hallmark",
       "name": "Hallmark",
       "summary": "Anti-AI-slop design skill for greenfield pages: a default design flow plus three in-skill verbs the model performs when the user asks - audit (read the target, score it against the anti-pattern list, report only, never edit), redesign (re-visualize inside the existing implementation boundaries, preserving routes, copy intent and information architecture), and study (extract the design DNA from a screenshot or a URL the user supplies). These verbs are skill behaviors, not installed CLI commands. Inputs: a design brief, an existing page or component, or a screenshot/URL to study; output is HTML/CSS artifacts with locked design tokens, verified at 320/375/414/768 px. Carried verbatim from nutlope/hallmark at the pinned commit; only the skill directory (SKILL.md plus references) is carried, not the site/docs/demo.",

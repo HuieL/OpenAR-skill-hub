@@ -11,7 +11,7 @@ account, and no install script to run here.
    repositories.
 2. Create `entries/skills/<id>/entry.json` following
    `schemas/skill-entry.schema.json`. The required facts:
-   - `id` — namespaced identity (e.g. `openra.diagram-design`), equal to the
+   - `id` — namespaced identity (e.g. `yourname.my-skill`), equal to the
      directory name, globally unique, never reused;
    - `source` — `owner/name`, the skill's subdirectory, and an exact 40-hex
      commit SHA. `main`/`latest`/mutable tags are never accepted as a pin;

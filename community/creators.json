@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "skillHub": "88b49490db962cac85223137698f22edac851f98",
+  "skillHub": "abe18ea4766419b8825245160a0af63571ecf482",
   "extensionHub": null,
   "creators": [
     {
@@ -19,13 +19,6 @@
       "github": "HuieL",
       "name": null,
       "credits": [
-        {
-          "entry": "skill:hub.diagram-design",
-          "roles": [
-            "adapter",
-            "submitter"
-          ]
-        },
         {
           "entry": "skill:hub.hallmark",
           "roles": [
@@ -109,18 +102,6 @@
       "credits": [
         {
           "entry": "skill:hub.research-design-system",
-          "roles": [
-            "author"
-          ]
-        }
-      ]
-    },
-    {
-      "github": "cathrynlavery",
-      "name": "Cathryn Lavery",
-      "credits": [
-        {
-          "entry": "skill:hub.diagram-design",
           "roles": [
             "author"
           ]
