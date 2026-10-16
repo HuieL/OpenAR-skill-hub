@@ -9,7 +9,14 @@
       "version": "1.1.0",
       "revision": "13ac0ec7e148655948100b6396439e481361d690",
       "entryPath": "entries/skills/hub.hallmark/entry.json",
-      "entrySha256": "bf3a97bd33b83556afcdec2626802bc82cd033fa509ce389b1d247cf33391e9e"
+      "entrySha256": "bf3a97bd33b83556afcdec2626802bc82cd033fa509ce389b1d247cf33391e9e",
+      "icon": "design",
+      "tags": [
+        "design",
+        "web",
+        "frontend",
+        "anti-slop"
+      ]
     },
     {
       "id": "hub.human-writing",
@@ -19,7 +26,13 @@
       "version": "1.1.0",
       "revision": "4fda173f3fef7fb808f3eba991eeb2528ea4b189",
       "entryPath": "entries/skills/hub.human-writing/entry.json",
-      "entrySha256": "de50effa799a3d984882448a0bc281f3571b14bdb71de72aad4a6907c73aaa79"
+      "entrySha256": "de50effa799a3d984882448a0bc281f3571b14bdb71de72aad4a6907c73aaa79",
+      "icon": "writing",
+      "tags": [
+        "writing",
+        "prose",
+        "editing"
+      ]
     },
     {
       "id": "hub.officecli-academic-paper",
@@ -29,7 +42,15 @@
       "version": "2.0.0",
       "revision": "3f140f237c1109cbb96ca736e48827f14f0ba1c0",
       "entryPath": "entries/skills/hub.officecli-academic-paper/entry.json",
-      "entrySha256": "1588373c4db828b3c414d605ad246166cae43ff95b74c7ae1c4aa9e8d83bbb6e"
+      "entrySha256": "1588373c4db828b3c414d605ad246166cae43ff95b74c7ae1c4aa9e8d83bbb6e",
+      "icon": "paper",
+      "tags": [
+        "paper",
+        "academic",
+        "docx",
+        "citations",
+        "writing"
+      ]
     },
     {
       "id": "hub.officecli-data-dashboard",
@@ -39,7 +60,14 @@
       "version": "2.0.0",
       "revision": "3f140f237c1109cbb96ca736e48827f14f0ba1c0",
       "entryPath": "entries/skills/hub.officecli-data-dashboard/entry.json",
-      "entrySha256": "29533a3c5716d128de9d58313c5c9d17cb622c2f5ef1902f5146f1c1c5cf0275"
+      "entrySha256": "29533a3c5716d128de9d58313c5c9d17cb622c2f5ef1902f5146f1c1c5cf0275",
+      "icon": "spreadsheet",
+      "tags": [
+        "data",
+        "excel",
+        "dashboard",
+        "charts"
+      ]
     },
     {
       "id": "hub.research-design-system",
@@ -49,7 +77,13 @@
       "version": "1.0.1",
       "revision": "d400c6a00d3b113ed90ec323a43b83fd496b77b0",
       "entryPath": "entries/skills/hub.research-design-system/entry.json",
-      "entrySha256": "38a74988b874b15cfe02349ea887925b9089d67080ebedfc0a66f9a56fe8676e"
+      "entrySha256": "38a74988b874b15cfe02349ea887925b9089d67080ebedfc0a66f9a56fe8676e",
+      "icon": "reference",
+      "tags": [
+        "design",
+        "reference",
+        "design-system"
+      ]
     },
     {
       "id": "hub.web-design-guidelines",
@@ -59,7 +93,15 @@
       "version": "1.0.0",
       "revision": "d29c1b23eeb5a068eadb60685f0d041fa018730d",
       "entryPath": "entries/skills/hub.web-design-guidelines/entry.json",
-      "entrySha256": "44d8c260fe9706a9de4a7262eb525c989dde89b5961bd23698d44b513c72ffc3"
+      "entrySha256": "44d8c260fe9706a9de4a7262eb525c989dde89b5961bd23698d44b513c72ffc3",
+      "icon": "web",
+      "tags": [
+        "web",
+        "review",
+        "accessibility",
+        "ui",
+        "design"
+      ]
     },
     {
       "id": "hub.writing-guidelines",
@@ -69,7 +111,14 @@
       "version": "1.0.0",
       "revision": "d29c1b23eeb5a068eadb60685f0d041fa018730d",
       "entryPath": "entries/skills/hub.writing-guidelines/entry.json",
-      "entrySha256": "2476313fc0d5c91a0431ba093a5f291d6d5f93f897563b092da2db2a233538f8"
+      "entrySha256": "2476313fc0d5c91a0431ba093a5f291d6d5f93f897563b092da2db2a233538f8",
+      "icon": "review",
+      "tags": [
+        "writing",
+        "review",
+        "docs",
+        "style"
+      ]
     }
   ]
 }

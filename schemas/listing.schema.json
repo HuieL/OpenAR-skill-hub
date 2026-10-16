@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/HuieL/OpenAR-skill-hub/schemas/listing.schema.json",
+  "title": "Skill Hub listing metadata (entries/skills/<id>/listing.json)",
+  "description": "Optional. The icon and search tags shown for an entry. Kept out of entry.json (which clients parse strictly); build-index.py copies the resolved icon and tags into skills.json.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "icon": { "type": "string", "description": "An icon id from icons.json. Omit it to let scripts/listing.py pick one from the entry's categories, tags, name and summary." },
+    "tags": { "type": "array", "maxItems": 12, "items": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]{0,31}$" }, "description": "Search tags; the entry's categories are added automatically." }
+  }
+}

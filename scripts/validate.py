@@ -40,6 +40,9 @@ HANDLE = re.compile(r"^[A-Za-z0-9-]{1,39}$")
 
 errors: list[str] = []
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import listing as listing_mod  # noqa: E402
+
 
 def fail(entry_id: str, message: str) -> None:
     errors.append(f"{entry_id}: {message}")
@@ -321,6 +324,8 @@ def validate_entries() -> dict[str, pathlib.Path]:
         check_compat(entry, entry_id)
         check_files(entry, entry_id, entry_dir)
         check_not_builtin(entry_id, entry_dir)
+        for problem in listing_mod.check_listing(entry_dir, ICONS):
+            fail(entry_id, problem)
     return by_id
 
 
@@ -452,7 +457,12 @@ def validate_community(skill_ids):
             errors.append("community/discovery.json: trending needs metric and window")
 
 
+ICONS = listing_mod.load_icons()
+
+
 def main() -> None:
+    for problem in listing_mod.check_icons(ICONS):
+        errors.append(f"icons.json: {problem}")
     by_id = validate_entries()
     check_hosted_names_unique(by_id)
     validate_index()

@@ -33,7 +33,22 @@ account, and no install script to run here.
    - `files` — the complete manifest of the skill's files at that revision,
      each with sha256 and size (cap: 2 MiB per entry);
    - `license` — SPDX id.
-3. Open a PR. CI runs `scripts/validate.py` and `scripts/build-index.py --check`
+3. Optional — the listing (icon and search tags): `add-entry.py` writes
+   `entries/skills/<id>/listing.json` for you, picking an icon from
+   `icons.json` that matches your categories, tags and description
+   (`--icon <id>` / `--tag <word>` to choose). Writing the entry by hand? Add
+   the same file yourself:
+
+   ```json
+   { "icon": "chart", "tags": ["plots", "matplotlib"] }
+   ```
+
+   `icon` must be an id in `icons.json` (each one is a [lucide](https://lucide.dev)
+   icon tied to categories and keywords; add a new one there in the same PR if
+   nothing fits); leave it out and the build picks one. `tags` are up to 12
+   lowercase words, searched in OpenAR beside your categories. Never put these
+   fields in `entry.json`.
+4. Open a PR. CI runs `scripts/validate.py` and `scripts/build-index.py --check`
    (read-only, no secrets, no install step; it never executes anything from
    your entry).
 

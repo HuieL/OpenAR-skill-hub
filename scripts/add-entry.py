@@ -156,6 +156,8 @@ def main() -> None:
     ap.add_argument("--submitter", help="your GitHub login (if you are not the author)")
     ap.add_argument("--skill", help="skill name when the source carries several")
     ap.add_argument("--category", action="append", default=[])
+    ap.add_argument("--tag", action="append", default=[], help="search tag (repeatable)")
+    ap.add_argument("--icon", help="icon id from icons.json; picked automatically when omitted")
     ap.add_argument("--version", help="upstream version; defaults to the pinned commit")
     ap.add_argument("--force", action="store_true", help="replace an existing entry with this id")
     args = ap.parse_args()
@@ -214,9 +216,21 @@ def main() -> None:
         if license_file:
             shutil.copyfile(checkout_dir / license_file, entry_dir / "LICENSE")
         (entry_dir / "entry.json").write_text(json.dumps(entry, indent=2, ensure_ascii=False) + "\n")
+        # Listing: the icon (picked from categories/tags/name when not given)
+        # and the search tags — in listing.json, never in entry.json.
+        sys.path.insert(0, str(ROOT / "scripts"))
+        import listing as listing_mod
+        icons = listing_mod.load_icons()
+        if args.icon and args.icon not in icons["icons"]:
+            die(f"--icon {args.icon!r} is not in icons.json")
+        draft = {"tags": [t.lower() for t in args.tag]} if args.tag else {}
+        if args.icon:
+            draft["icon"] = args.icon
+        listing = {"icon": listing_mod.pick_icon(entry, draft, icons), **({"tags": draft["tags"]} if args.tag else {})}
+        (entry_dir / "listing.json").write_text(json.dumps(listing, indent=2) + "\n")
 
     print(f"wrote entries/skills/{args.id}/entry.json — {repo}/{path} at {revision[:12]}, "
-          f"{len(files)} files, {entry['totalBytes']} bytes"
+          f"{len(files)} files, {entry['totalBytes']} bytes, icon {listing.get('icon')}"
           + ("" if license_file else " (no LICENSE file at the repository root: check the license)"),
           flush=True)
     for script in ("build-index.py", "build-community.py", "validate.py"):
