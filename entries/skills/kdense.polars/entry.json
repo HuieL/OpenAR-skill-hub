@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "id": "kdense.polars",
+  "kind": "skill",
+  "name": "Polars",
+  "summary": "High-performance DataFrame library for Python ETL, analytics, and pandas migration. It supports expression-based data manipulation with lazy query optimization, parallel execution, streaming out-of-core processing, Arrow interoperability, and optional GPU execution.",
+  "authors": [
+    {
+      "name": "K-Dense Inc.",
+      "github": "K-Dense-AI"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "data"
+  ],
+  "source": {
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/polars",
+    "revision": "a1043ef544e3a100c28e70a736b6cf32554d0677"
+  },
+  "version": "2.72.0",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "05d64a001190b516bc922bac616483c3109a6d29c3e9950e3e2d6c31b9415e79",
+      "bytes": 13139,
+      "executable": false
+    },
+    {
+      "path": "references/best_practices.md",
+      "sha256": "8f4a2f994c3d6cac42a7236d0b040d904b872221f781f856b4529fd9e0bb08a5",
+      "bytes": 15601,
+      "executable": false
+    },
+    {
+      "path": "references/core_concepts.md",
+      "sha256": "9447e5587c705a02325978cb8a3095e97c6299678648256056552c5597ecc4af",
+      "bytes": 9335,
+      "executable": false
+    },
+    {
+      "path": "references/io_guide.md",
+      "sha256": "a22663ec99e190f2e571ab085afd01fa2332ff41c0d90a6e5c77835be953bbce",
+      "bytes": 15893,
+      "executable": false
+    },
+    {
+      "path": "references/operations.md",
+      "sha256": "782ed44ed4a2a3091aa6635fec4ec7c94288ecc1844d31afc9e46e43ccb5f5d9",
+      "bytes": 14025,
+      "executable": false
+    },
+    {
+      "path": "references/pandas_migration.md",
+      "sha256": "8decb1e39305c134a58f1d2db2162cb45a1d9f13f76d633e446c1879730bd3fb",
+      "bytes": 13823,
+      "executable": false
+    },
+    {
+      "path": "references/review.md",
+      "sha256": "3a54bb353f4af078ca4d7ba3ae5ad3845d1dc0699b89a3fc443dfb3617627df9",
+      "bytes": 5244,
+      "executable": false
+    },
+    {
+      "path": "references/transformations.md",
+      "sha256": "dcbaadcece9335b120a0deaa6950abd1068c30d2d24960b3bf26ba424638f529",
+      "bytes": 14431,
+      "executable": false
+    }
+  ],
+  "totalBytes": 101491,
+  "requires": [],
+  "permissionsNote": "allowed-tools or similar declarations inside SKILL.md are claims by the skill's author, not host approvals; OpenAR enforces its own permission gates."
+}

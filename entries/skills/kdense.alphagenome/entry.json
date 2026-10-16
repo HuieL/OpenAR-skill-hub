@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "id": "kdense.alphagenome",
+  "kind": "skill",
+  "name": "Alphagenome",
+  "summary": "Looks up precomputed AlphaGenome Atlas effects for any GRCh38 single-nucleotide variant (AVI score with Phred and 18 SHAP feature attributions, plus raw and quantile scores for RNA-seq, DNase, ATAC, ChIP-TF, ChIP-histone, CAGE, PRO-cap, splicing, polyadenylation and contact-map tracks), scores variants or scans windows on demand with the AlphaGenome model for human and mouse (variant scoring, in silico mutagenesis, REF-versus-ALT track prediction), and builds Atlas website deep links. Use when the user mentions AlphaGenome, AlphaGenome Atlas, AVI or AlphaGenome Variant Impact, DeepMind variant effect prediction, or wants to prioritise or mechanistically interpret non-coding, regulatory, splicing, enhancer, promoter, or chromatin-accessibility effects of SNVs from a VCF, credible set, or region. Research use only; not a clinical tool.",
+  "authors": [
+    {
+      "name": "K-Dense Inc.",
+      "github": "K-Dense-AI"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "biology",
+    "databases"
+  ],
+  "source": {
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/alphagenome",
+    "revision": "a1043ef544e3a100c28e70a736b6cf32554d0677"
+  },
+  "version": "2.72.0",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "b133d2a9ff99652b439e0a6f00f93bad49f388be207f7e0241837e001a964947",
+      "bytes": 17428,
+      "executable": false
+    },
+    {
+      "path": "references/atlas.md",
+      "sha256": "f5758ec1925d6706f3df4548bfd1fc70c0892181c020f45212c336cba255d269",
+      "bytes": 17194,
+      "executable": false
+    },
+    {
+      "path": "references/interpretation.md",
+      "sha256": "3a4f86b6746f1a8239d7c175e4b40f382e95f4ec1b167ed59f4b43ca6e39ac0d",
+      "bytes": 8608,
+      "executable": false
+    },
+    {
+      "path": "references/model-api.md",
+      "sha256": "081add87e6da4045adb6526d9bc92cbadc817588a7502edea5532d7a4d5d2dfc",
+      "bytes": 14327,
+      "executable": false
+    },
+    {
+      "path": "scripts/_common.py",
+      "sha256": "46fc7074233e36c4cb341294480ce2481ced5f6cd06677847522499b3cd2e7f1",
+      "bytes": 19864,
+      "executable": false
+    },
+    {
+      "path": "scripts/atlas_link.py",
+      "sha256": "2545ad4816fb996900bbf47268c085571a1e3091af45c32ddbf6ed428fe3b89c",
+      "bytes": 7493,
+      "executable": false
+    },
+    {
+      "path": "scripts/atlas_query.py",
+      "sha256": "7c19884f9dd7b7115916d56d036d152efded82432f57fcea3941e34a17bf6015",
+      "bytes": 24048,
+      "executable": false
+    },
+    {
+      "path": "scripts/score_variants.py",
+      "sha256": "aa2e199f7982180c672bea81db1d72ddc68c7b8c06ce3bdf4b13f63ed56ec5b7",
+      "bytes": 11425,
+      "executable": false
+    }
+  ],
+  "totalBytes": 120387,
+  "requires": [],
+  "permissionsNote": "allowed-tools or similar declarations inside SKILL.md are claims by the skill's author, not host approvals; OpenAR enforces its own permission gates."
+}

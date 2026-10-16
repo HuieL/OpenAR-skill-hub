@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "id": "kdense.simpy",
+  "kind": "skill",
+  "name": "Simpy",
+  "summary": "Builds, inspects, tests, and analyzes bounded process-based discrete-event simulations with SimPy. Use for event scheduling, resource queues, interrupts, monitoring, independent replications, warm-up, and reproducible output analysis.",
+  "authors": [
+    {
+      "name": "K-Dense Inc.",
+      "github": "K-Dense-AI"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "engineering"
+  ],
+  "source": {
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/simpy",
+    "revision": "a1043ef544e3a100c28e70a736b6cf32554d0677"
+  },
+  "version": "2.72.0",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "027244a3587e70c3e2f1aed4bfb5d737cb24fdc6b2ad276302ed81c02e38a7fc",
+      "bytes": 14395,
+      "executable": false
+    },
+    {
+      "path": "references/cli-guide.md",
+      "sha256": "b4a755812b5d3e588ef21ef1f0c38b9aed487a9d0ff959a69735753fc7d394b7",
+      "bytes": 9534,
+      "executable": false
+    },
+    {
+      "path": "references/events.md",
+      "sha256": "aa9995f0f5e374f2df19f12e73bde5abdeb5ed17a2a993cf61aa823151c67c02",
+      "bytes": 7710,
+      "executable": false
+    },
+    {
+      "path": "references/monitoring.md",
+      "sha256": "44c8448e977311715f8ddd293cfb76df722c72b388892df6ad616261820ad983",
+      "bytes": 8960,
+      "executable": false
+    },
+    {
+      "path": "references/process-interaction.md",
+      "sha256": "e50aa436664d48de65e7b51d1cf4f5b6dbf8d02559094c0c52fb18c782b772d7",
+      "bytes": 7719,
+      "executable": false
+    },
+    {
+      "path": "references/real-time.md",
+      "sha256": "700aaba4f10e7dad87da05166daf127a905aff2c16a12ac5917536c789e53dd1",
+      "bytes": 5551,
+      "executable": false
+    },
+    {
+      "path": "references/resources.md",
+      "sha256": "5763a4756a2a50a70a2650a5406777cd4afc481db21ed6911293903adc262502",
+      "bytes": 8817,
+      "executable": false
+    },
+    {
+      "path": "references/simulation-methodology.md",
+      "sha256": "e25164d41106c13bed7845d8167e38acbded4d2073b58dee5613d95bd50fb9cf",
+      "bytes": 11962,
+      "executable": false
+    },
+    {
+      "path": "references/sources.md",
+      "sha256": "a8b1a39038477a382588c02cf4763d276bc4032c84cb9d34952bac8e7f9d0a4e",
+      "bytes": 13046,
+      "executable": false
+    },
+    {
+      "path": "scripts/_common.py",
+      "sha256": "ccf17251d29de7b8d53029fc277218874f291fd6976c47486d1cb2113a735b60",
+      "bytes": 15389,
+      "executable": false
+    },
+    {
+      "path": "scripts/basic_simulation_template.py",
+      "sha256": "010adb7db53981afd78e57b6df37b45a5ad6386ed4c0cede13d350177cb89712",
+      "bytes": 14482,
+      "executable": false
+    },
+    {
+      "path": "scripts/bounded_queue_scenario.py",
+      "sha256": "8d8de80d5c241c8c677754810ce293d667498e618493a75418b35247e5613f0f",
+      "bytes": 3609,
+      "executable": false
+    },
+    {
+      "path": "scripts/event_trace_summary.py",
+      "sha256": "79de6801a69365ac8b0b4832c47e21f87b2aee875a42467b82bfaec3a7569e4b",
+      "bytes": 11178,
+      "executable": false
+    },
+    {
+      "path": "scripts/replication_runner.py",
+      "sha256": "4160eb858779df62171d4dbbf459bb003666e1995791b401b253dce47b9c56da",
+      "bytes": 6411,
+      "executable": false
+    },
+    {
+      "path": "scripts/resource_monitor.py",
+      "sha256": "04ce449920627cf343d423ca5d86b990a4e5b5a80e2b10f9403d4e3d5c42f904",
+      "bytes": 16673,
+      "executable": false
+    },
+    {
+      "path": "scripts/validate_simulation_config.py",
+      "sha256": "2482b5a7d8f389ed892d0e4edfcce13cbd4144e64490513194791f8d1f0e555e",
+      "bytes": 3679,
+      "executable": false
+    }
+  ],
+  "totalBytes": 159115,
+  "requires": [],
+  "permissionsNote": "allowed-tools or similar declarations inside SKILL.md are claims by the skill's author, not host approvals; OpenAR enforces its own permission gates."
+}

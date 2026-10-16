@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "id": "kdense.cirq",
+  "kind": "skill",
+  "name": "Cirq",
+  "summary": "Google quantum computing framework. Use when targeting Google Quantum AI hardware, designing noise-aware circuits, or running quantum characterization experiments. Best for Google hardware, noise modeling, and low-level circuit design. For IBM hardware use qiskit; for quantum ML with autodiff use pennylane; for physics simulations use qutip.",
+  "authors": [
+    {
+      "name": "K-Dense Inc.",
+      "github": "K-Dense-AI"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "physics"
+  ],
+  "source": {
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/cirq",
+    "revision": "a1043ef544e3a100c28e70a736b6cf32554d0677"
+  },
+  "version": "2.72.0",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "6ab4c57fd133d21013ac0a8cfdbb2235dcc461d6fc82445693ea475c3d5d6bc1",
+      "bytes": 13874,
+      "executable": false
+    },
+    {
+      "path": "references/building.md",
+      "sha256": "74171648fe77d9e917f0ce8883575439b0a8bcd4f35e59996e4dd176c1c521e4",
+      "bytes": 7231,
+      "executable": false
+    },
+    {
+      "path": "references/experiments.md",
+      "sha256": "c5f90d9de156ea93c32eff191b1bb526bf282c7ec6cc53e723bc722778b0e538",
+      "bytes": 10275,
+      "executable": false
+    },
+    {
+      "path": "references/hardware.md",
+      "sha256": "34a05865707bedaa1b63e14b052f190d1a1d57ea588db2d0698487bec7bc66b1",
+      "bytes": 12974,
+      "executable": false
+    },
+    {
+      "path": "references/noise.md",
+      "sha256": "3ac62117f56980e3741d76c204dd44893b1ae5c524de0b593486a827d166a4d2",
+      "bytes": 10583,
+      "executable": false
+    },
+    {
+      "path": "references/review.md",
+      "sha256": "a8822f8f8afd52d1b4b661c5b66f38f1f1fcd74b49812b1890424165286b46d7",
+      "bytes": 5979,
+      "executable": false
+    },
+    {
+      "path": "references/simulation.md",
+      "sha256": "70a3ab8f6fc192f2f883e26a27d9248b60a04eae30a852527aebe9040eed7ef8",
+      "bytes": 7504,
+      "executable": false
+    },
+    {
+      "path": "references/transformation.md",
+      "sha256": "6255d29e6f7c8d62f3e9027004b94e9eb490b1c9cc44f06e8c0a7f4f54b5605f",
+      "bytes": 6239,
+      "executable": false
+    }
+  ],
+  "totalBytes": 74659,
+  "requires": [],
+  "permissionsNote": "allowed-tools or similar declarations inside SKILL.md are claims by the skill's author, not host approvals; OpenAR enforces its own permission gates."
+}

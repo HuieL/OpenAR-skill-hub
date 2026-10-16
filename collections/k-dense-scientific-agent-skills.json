@@ -1,0 +1,596 @@
+{
+  "about": "K-Dense AI's scientific-agent-skills, listed as upstream entries pinned to one commit. Re-import with: python3 scripts/import-collection.py collections/k-dense-scientific-agent-skills.json",
+  "repo": "K-Dense-AI/scientific-agent-skills",
+  "revision": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+  "skillsPath": "skills",
+  "idPrefix": "kdense",
+  "version": "2.72.0",
+  "license": "MIT",
+  "author": {
+    "name": "K-Dense Inc.",
+    "github": "K-Dense-AI"
+  },
+  "submitter": "HuieL",
+  "tags": [
+    "science",
+    "k-dense"
+  ],
+  "exclude": {
+    "autoskill": "flagged CRITICAL by the upstream security scan (docs/security-report.md at the pinned commit)",
+    "citation-management": "flagged CRITICAL by the upstream security scan (docs/security-report.md at the pinned commit)",
+    "deepspot-m": "skill license PolyForm-Noncommercial-1.0.0 (non-commercial)",
+    "esm": "flagged HIGH by the upstream security scan (docs/security-report.md at the pinned commit)",
+    "geomaster": "flagged HIGH by the upstream security scan (docs/security-report.md at the pinned commit)",
+    "glycoengineering": "skill license declared Unknown",
+    "hugging-science": "flagged HIGH by the upstream security scan (docs/security-report.md at the pinned commit)",
+    "infographics": "flagged CRITICAL by the upstream security scan (docs/security-report.md at the pinned commit)",
+    "latex-posters": "flagged CRITICAL by the upstream security scan (docs/security-report.md at the pinned commit)",
+    "literature-review": "flagged CRITICAL by the upstream security scan (docs/security-report.md at the pinned commit)",
+    "modal": "flagged HIGH by the upstream security scan (docs/security-report.md at the pinned commit)",
+    "open-notebook": "flagged CRITICAL by the upstream security scan (docs/security-report.md at the pinned commit)",
+    "phylogenetics": "skill license declared Unknown",
+    "primekg": "skill license declared Unknown",
+    "pytorch-lightning": "flagged HIGH by the upstream security scan (docs/security-report.md at the pinned commit)",
+    "research-lookup": "flagged CRITICAL by the upstream security scan (docs/security-report.md at the pinned commit)",
+    "rowan": "skill license Proprietary",
+    "scientific-schematics": "flagged CRITICAL by the upstream security scan (docs/security-report.md at the pinned commit)",
+    "scientific-slides": "flagged CRITICAL by the upstream security scan (docs/security-report.md at the pinned commit)",
+    "torch-geometric": "flagged HIGH by the upstream security scan (docs/security-report.md at the pinned commit)",
+    "torchdrug": "flagged HIGH by the upstream security scan (docs/security-report.md at the pinned commit)",
+    "transformers": "flagged HIGH by the upstream security scan (docs/security-report.md at the pinned commit)",
+    "waypoint-bio": "flagged HIGH by the upstream security scan (docs/security-report.md at the pinned commit)",
+    "what-if-oracle": "skill license CC BY-NC-SA 4.0 (non-commercial)"
+  },
+  "sections": {
+    "Bioinformatics & Genomics": [
+      "biology",
+      "genomics"
+    ],
+    "Cheminformatics & Drug Discovery": [
+      "chemistry",
+      "drug-discovery"
+    ],
+    "Proteomics & Mass Spectrometry": [
+      "biology",
+      "proteomics"
+    ],
+    "Clinical Research & Evidence Workflows": [
+      "medicine",
+      "clinical"
+    ],
+    "Preclinical Research & Animal Welfare": [
+      "medicine",
+      "preclinical"
+    ],
+    "Microscopy, Medical Imaging & Digital Pathology": [
+      "imaging",
+      "microscopy"
+    ],
+    "Neuroscience & Electrophysiology": [
+      "neuroscience",
+      "electrophysiology"
+    ],
+    "Machine Learning & AI": [
+      "machine-learning",
+      "ai"
+    ],
+    "Materials Science, Chemistry & Physics": [
+      "physics",
+      "materials"
+    ],
+    "Engineering & Simulation": [
+      "engineering",
+      "simulation"
+    ],
+    "Chemical Oceanography": [
+      "chemistry",
+      "oceanography"
+    ],
+    "Data Analysis & Visualization": [
+      "data",
+      "visualization"
+    ],
+    "Laboratory Automation": [
+      "lab-automation",
+      "lab"
+    ],
+    "Multi-omics & Systems Biology": [
+      "biology",
+      "systems-biology"
+    ],
+    "Protein Engineering & Design": [
+      "biology",
+      "protein-design"
+    ],
+    "Scientific Communication": [
+      "writing",
+      "science-communication"
+    ],
+    "Scientific Databases & Data Access": [
+      "databases",
+      "data"
+    ],
+    "Infrastructure & Platforms": [
+      "infrastructure",
+      "cloud"
+    ],
+    "Research Methodology & Planning": [
+      "research",
+      "methodology"
+    ],
+    "Regulatory & Standards": [
+      "regulatory",
+      "standards"
+    ]
+  },
+  "skills": {
+    "13c-metabolic-flux": [
+      "Multi-omics & Systems Biology"
+    ],
+    "adaptyv": [
+      "Protein Engineering & Design"
+    ],
+    "aeon": [
+      "Machine Learning & AI"
+    ],
+    "alphagenome": [
+      "Bioinformatics & Genomics",
+      "Scientific Databases & Data Access"
+    ],
+    "analytical-method-validation": [
+      "Regulatory & Standards"
+    ],
+    "anndata": [
+      "Bioinformatics & Genomics"
+    ],
+    "arbor": [
+      "Research Methodology & Planning"
+    ],
+    "arboreto": [
+      "Bioinformatics & Genomics"
+    ],
+    "astropy": [
+      "Materials Science, Chemistry & Physics"
+    ],
+    "benchling-integration": [
+      "Laboratory Automation"
+    ],
+    "bgpt-paper-search": [
+      "Scientific Communication"
+    ],
+    "bids": [
+      "Neuroscience & Electrophysiology"
+    ],
+    "biopython": [
+      "Bioinformatics & Genomics"
+    ],
+    "bioservices": [
+      "Bioinformatics & Genomics"
+    ],
+    "bulk-rnaseq": [
+      "Bioinformatics & Genomics"
+    ],
+    "cantera": [
+      "Engineering & Simulation"
+    ],
+    "cellprofiler": [
+      "Microscopy, Medical Imaging & Digital Pathology"
+    ],
+    "cellxgene-census": [
+      "Bioinformatics & Genomics"
+    ],
+    "cirq": [
+      "Materials Science, Chemistry & Physics"
+    ],
+    "clinical-decision-support": [
+      "Clinical Research & Evidence Workflows"
+    ],
+    "clinical-reports": [
+      "Clinical Research & Evidence Workflows"
+    ],
+    "cobrapy": [
+      "Materials Science, Chemistry & Physics"
+    ],
+    "consciousness-council": [
+      "Research Methodology & Planning"
+    ],
+    "dask": [
+      "Data Analysis & Visualization"
+    ],
+    "database-lookup": [
+      "Scientific Databases & Data Access"
+    ],
+    "datalad": [
+      "Infrastructure & Platforms"
+    ],
+    "datamol": [
+      "Cheminformatics & Drug Discovery"
+    ],
+    "deepchem": [
+      "Cheminformatics & Drug Discovery"
+    ],
+    "deeptools": [
+      "Bioinformatics & Genomics"
+    ],
+    "depmap": [
+      "Clinical Research & Evidence Workflows",
+      "Scientific Databases & Data Access"
+    ],
+    "dhdna-profiler": [
+      "Research Methodology & Planning"
+    ],
+    "diffdock": [
+      "Cheminformatics & Drug Discovery"
+    ],
+    "dnanexus-integration": [
+      "Infrastructure & Platforms"
+    ],
+    "etetoolkit": [
+      "Bioinformatics & Genomics"
+    ],
+    "exa-search": [
+      "Scientific Communication"
+    ],
+    "experimental-design": [
+      "Data Analysis & Visualization"
+    ],
+    "exploratory-data-analysis": [
+      "Data Analysis & Visualization"
+    ],
+    "fictiv": [
+      "Engineering & Simulation"
+    ],
+    "flowio": [
+      "Bioinformatics & Genomics"
+    ],
+    "flowkit": [
+      "Bioinformatics & Genomics"
+    ],
+    "fluidsim": [
+      "Engineering & Simulation"
+    ],
+    "folklore-variant-evidence": [
+      "Scientific Databases & Data Access"
+    ],
+    "generate-image": [
+      "Scientific Communication"
+    ],
+    "geniml": [
+      "Bioinformatics & Genomics"
+    ],
+    "genomic-coordinates": [
+      "Bioinformatics & Genomics"
+    ],
+    "genomic-intelligence": [
+      "Bioinformatics & Genomics",
+      "Scientific Databases & Data Access"
+    ],
+    "geopandas": [
+      "Data Analysis & Visualization"
+    ],
+    "get-available-resources": [
+      "Infrastructure & Platforms"
+    ],
+    "gget": [
+      "Bioinformatics & Genomics"
+    ],
+    "ginkgo-cloud-lab": [
+      "Laboratory Automation"
+    ],
+    "gtars": [
+      "Bioinformatics & Genomics"
+    ],
+    "histolab": [
+      "Microscopy, Medical Imaging & Digital Pathology"
+    ],
+    "hypogenic": [
+      "Research Methodology & Planning"
+    ],
+    "hypothesis-generation": [
+      "Research Methodology & Planning"
+    ],
+    "imaging-data-commons": [
+      "Clinical Research & Evidence Workflows",
+      "Scientific Databases & Data Access"
+    ],
+    "iso-standards-readiness": [
+      "Regulatory & Standards"
+    ],
+    "lab-hardware-cad": [
+      "Engineering & Simulation"
+    ],
+    "labarchive-integration": [
+      "Laboratory Automation"
+    ],
+    "lamindb": [
+      "Multi-omics & Systems Biology"
+    ],
+    "latchbio-integration": [
+      "Infrastructure & Platforms"
+    ],
+    "liteparse": [
+      "Data Analysis & Visualization",
+      "Scientific Communication"
+    ],
+    "mageck": [
+      "Bioinformatics & Genomics"
+    ],
+    "marine-carbonate-chemistry": [
+      "Chemical Oceanography"
+    ],
+    "markdown-mermaid-writing": [
+      "Data Analysis & Visualization",
+      "Scientific Communication"
+    ],
+    "market-research-reports": [
+      "Scientific Communication"
+    ],
+    "markitdown": [
+      "Data Analysis & Visualization",
+      "Scientific Communication"
+    ],
+    "matchms": [
+      "Proteomics & Mass Spectrometry"
+    ],
+    "matlab": [
+      "Engineering & Simulation"
+    ],
+    "matplotlib": [
+      "Data Analysis & Visualization"
+    ],
+    "medchem": [
+      "Cheminformatics & Drug Discovery"
+    ],
+    "molecular-dynamics": [
+      "Materials Science, Chemistry & Physics"
+    ],
+    "molfeat": [
+      "Cheminformatics & Drug Discovery"
+    ],
+    "ncats-arax": [
+      "Scientific Databases & Data Access"
+    ],
+    "networkx": [
+      "Data Analysis & Visualization"
+    ],
+    "neurokit2": [
+      "Neuroscience & Electrophysiology"
+    ],
+    "neuropixels-analysis": [
+      "Neuroscience & Electrophysiology"
+    ],
+    "nextflow": [
+      "Infrastructure & Platforms"
+    ],
+    "nmrglue": [
+      "Cheminformatics & Drug Discovery"
+    ],
+    "nwb-conversion": [
+      "Neuroscience & Electrophysiology"
+    ],
+    "omero-integration": [
+      "Microscopy, Medical Imaging & Digital Pathology"
+    ],
+    "onekgpd": [
+      "Bioinformatics & Genomics",
+      "Scientific Databases & Data Access"
+    ],
+    "ontology-term-resolution": [
+      "Scientific Databases & Data Access"
+    ],
+    "openpiv": [
+      "Engineering & Simulation"
+    ],
+    "opentrons-integration": [
+      "Laboratory Automation"
+    ],
+    "optimize-for-gpu": [
+      "Infrastructure & Platforms"
+    ],
+    "pacsomatic": [
+      "Infrastructure & Platforms"
+    ],
+    "paper-lookup": [
+      "Scientific Communication",
+      "Research Methodology & Planning"
+    ],
+    "paperclip": [
+      "Scientific Communication"
+    ],
+    "paperzilla": [
+      "Scientific Communication"
+    ],
+    "parallel-web": [
+      "Scientific Communication"
+    ],
+    "pathml": [
+      "Microscopy, Medical Imaging & Digital Pathology"
+    ],
+    "pathogen-variant-surveillance": [
+      "Scientific Databases & Data Access"
+    ],
+    "pathway-enrichment": [
+      "Bioinformatics & Genomics"
+    ],
+    "peer-review": [
+      "Scientific Communication"
+    ],
+    "pennylane": [
+      "Materials Science, Chemistry & Physics"
+    ],
+    "pi-agent": [
+      "Infrastructure & Platforms"
+    ],
+    "pkpd-modeling": [
+      "Clinical Research & Evidence Workflows"
+    ],
+    "polars": [
+      "Data Analysis & Visualization"
+    ],
+    "polars-bio": [
+      "Bioinformatics & Genomics"
+    ],
+    "pptx-posters": [
+      "Scientific Communication"
+    ],
+    "primer-design": [
+      "Bioinformatics & Genomics"
+    ],
+    "protocolsio-integration": [
+      "Laboratory Automation"
+    ],
+    "pufferlib": [
+      "Machine Learning & AI"
+    ],
+    "pybamm": [
+      "Engineering & Simulation"
+    ],
+    "pycalphad": [
+      "Materials Science, Chemistry & Physics"
+    ],
+    "pydeseq2": [
+      "Bioinformatics & Genomics"
+    ],
+    "pydicom": [
+      "Microscopy, Medical Imaging & Digital Pathology"
+    ],
+    "pyhealth": [
+      "Clinical Research & Evidence Workflows"
+    ],
+    "pylabrobot": [
+      "Laboratory Automation"
+    ],
+    "pymatgen": [
+      "Materials Science, Chemistry & Physics"
+    ],
+    "pymc": [
+      "Machine Learning & AI"
+    ],
+    "pymoo": [
+      "Machine Learning & AI"
+    ],
+    "pyopenms": [
+      "Proteomics & Mass Spectrometry"
+    ],
+    "pysam": [
+      "Bioinformatics & Genomics"
+    ],
+    "pytdc": [
+      "Cheminformatics & Drug Discovery"
+    ],
+    "pyzotero": [
+      "Scientific Communication"
+    ],
+    "qiime2-amplicon": [
+      "Bioinformatics & Genomics"
+    ],
+    "qiskit": [
+      "Materials Science, Chemistry & Physics"
+    ],
+    "qutip": [
+      "Materials Science, Chemistry & Physics"
+    ],
+    "rdkit": [
+      "Cheminformatics & Drug Discovery"
+    ],
+    "relion": [
+      "Protein Engineering & Design"
+    ],
+    "relsa-severity-assessment": [
+      "Preclinical Research & Animal Welfare"
+    ],
+    "research-grants": [
+      "Research Methodology & Planning"
+    ],
+    "scanpy": [
+      "Bioinformatics & Genomics"
+    ],
+    "scholar-evaluation": [
+      "Research Methodology & Planning"
+    ],
+    "scientific-brainstorming": [
+      "Research Methodology & Planning"
+    ],
+    "scientific-critical-thinking": [
+      "Research Methodology & Planning"
+    ],
+    "scientific-visualization": [
+      "Data Analysis & Visualization"
+    ],
+    "scientific-writing": [
+      "Scientific Communication"
+    ],
+    "scikit-bio": [
+      "Bioinformatics & Genomics"
+    ],
+    "scikit-learn": [
+      "Machine Learning & AI"
+    ],
+    "scikit-survival": [
+      "Machine Learning & AI"
+    ],
+    "scvelo": [
+      "Bioinformatics & Genomics"
+    ],
+    "scvi-tools": [
+      "Bioinformatics & Genomics"
+    ],
+    "seaborn": [
+      "Data Analysis & Visualization"
+    ],
+    "shap": [
+      "Machine Learning & AI"
+    ],
+    "simpy": [
+      "Engineering & Simulation"
+    ],
+    "stable-baselines3": [
+      "Machine Learning & AI"
+    ],
+    "statistical-analysis": [
+      "Data Analysis & Visualization"
+    ],
+    "statistical-power": [
+      "Data Analysis & Visualization"
+    ],
+    "statsmodels": [
+      "Machine Learning & AI"
+    ],
+    "sympy": [
+      "Engineering & Simulation"
+    ],
+    "tamarind": [
+      "Protein Engineering & Design"
+    ],
+    "tellurium": [
+      "Multi-omics & Systems Biology"
+    ],
+    "tiledbvcf": [
+      "Bioinformatics & Genomics"
+    ],
+    "timesfm-forecasting": [
+      "Data Analysis & Visualization"
+    ],
+    "treatment-plans": [
+      "Clinical Research & Evidence Workflows"
+    ],
+    "umap-learn": [
+      "Machine Learning & AI"
+    ],
+    "uncertainty-and-units": [
+      "Research Methodology & Planning"
+    ],
+    "usfiscaldata": [
+      "Scientific Databases & Data Access"
+    ],
+    "vaex": [
+      "Data Analysis & Visualization"
+    ],
+    "venue-templates": [
+      "Scientific Communication"
+    ],
+    "zarr-python": [
+      "Data Analysis & Visualization"
+    ]
+  }
+}

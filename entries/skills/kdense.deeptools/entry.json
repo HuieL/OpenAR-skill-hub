@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "id": "kdense.deeptools",
+  "kind": "skill",
+  "name": "Deeptools",
+  "summary": "NGS analysis toolkit. BAM to bigWig conversion, QC (correlation, PCA, fingerprints), heatmaps/profiles (TSS, peaks), for ChIP-seq, RNA-seq, ATAC-seq visualization.",
+  "authors": [
+    {
+      "name": "K-Dense Inc.",
+      "github": "K-Dense-AI"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "biology"
+  ],
+  "source": {
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/deeptools",
+    "revision": "a1043ef544e3a100c28e70a736b6cf32554d0677"
+  },
+  "version": "2.72.0",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "f09f32bad2d0c54f4a422cb7bcca7703466e653544b2b6e77a7492e6f29ccf8b",
+      "bytes": 18302,
+      "executable": false
+    },
+    {
+      "path": "assets/quick_reference.md",
+      "sha256": "0b03f9e870899668599fc5a0c5f1bed5296dff91f99d8c56007083fa5f5a07c3",
+      "bytes": 2163,
+      "executable": false
+    },
+    {
+      "path": "references/core_workflows.md",
+      "sha256": "4e68af06e4f8aeabff35c054167dc1b0b23978823d81fd7b289d53c6453caa2e",
+      "bytes": 4732,
+      "executable": false
+    },
+    {
+      "path": "references/effective_genome_sizes.md",
+      "sha256": "a31066809448d5b7d331a2c2ee7d03154bfb2de681fd5862090c55084837164e",
+      "bytes": 3609,
+      "executable": false
+    },
+    {
+      "path": "references/normalization_methods.md",
+      "sha256": "35803ccab1b5bbe87fb105e409c75bb62f55972525b9bd7ec8affed884ea8cde",
+      "bytes": 7832,
+      "executable": false
+    },
+    {
+      "path": "references/review.md",
+      "sha256": "97b7d596f0425502a18b884d4c52311b5c62813cb223607a00208895eb4e0183",
+      "bytes": 6415,
+      "executable": false
+    },
+    {
+      "path": "references/tools_reference.md",
+      "sha256": "10252f10461afddf8c8d3cf74655a6ae749aa382545cae51ddb2e1ee80a7cbde",
+      "bytes": 24602,
+      "executable": false
+    },
+    {
+      "path": "references/workflows.md",
+      "sha256": "503f2e6332a3a01af8c96321d1de3dc584b75d55437ea0fa60c0e72c5eae4939",
+      "bytes": 12061,
+      "executable": false
+    },
+    {
+      "path": "scripts/validate_files.py",
+      "sha256": "2b1349d8565b08ee72fc938d3506991aeb7c181ffb4e7ded7d6177e765610d77",
+      "bytes": 10003,
+      "executable": false
+    },
+    {
+      "path": "scripts/workflow_generator.py",
+      "sha256": "9a6dc2a493c5cb5af5ed5ddc97628972ef0096b461395138c9ff1e6d1ec6313c",
+      "bytes": 18162,
+      "executable": false
+    }
+  ],
+  "totalBytes": 107881,
+  "requires": [],
+  "permissionsNote": "allowed-tools or similar declarations inside SKILL.md are claims by the skill's author, not host approvals; OpenAR enforces its own permission gates."
+}

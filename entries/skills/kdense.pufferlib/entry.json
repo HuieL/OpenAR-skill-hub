@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "id": "kdense.pufferlib",
+  "kind": "skill",
+  "name": "Pufferlib",
+  "summary": "Version-aware guidance for PufferLib reinforcement-learning environments, vectorization, policies, PuffeRL training, evaluation, and safe checkpoint review. Covers the native 5.0 build and environment API, published 3.0.0 Gymnasium/PettingZoo adaptation, and a pinned historical 4.0 profile.",
+  "authors": [
+    {
+      "name": "K-Dense Inc.",
+      "github": "K-Dense-AI"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "machine-learning"
+  ],
+  "source": {
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/pufferlib",
+    "revision": "a1043ef544e3a100c28e70a736b6cf32554d0677"
+  },
+  "version": "2.72.0",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "031975c6abaabd8237c18b6472886f4a718c509da70fc6ebca06455f8a002fa7",
+      "bytes": 15640,
+      "executable": false
+    },
+    {
+      "path": "references/environments.md",
+      "sha256": "0defeddfae85e5517d3f25d03fc43be22455cc5c13379efea7c2f5769d58667e",
+      "bytes": 10933,
+      "executable": false
+    },
+    {
+      "path": "references/integration.md",
+      "sha256": "1baf88eafdb12b8d43dde7dfdc9690bf9a28ff6483f5303695a2307166620d02",
+      "bytes": 9592,
+      "executable": false
+    },
+    {
+      "path": "references/native-5.md",
+      "sha256": "48222d65c5814bda828f274122b60896b49ba515f171277b8b208076560376d8",
+      "bytes": 8307,
+      "executable": false
+    },
+    {
+      "path": "references/policies.md",
+      "sha256": "88a2a468b647656d23306ee2cc885643d210b041b920078e84e4ef237ea3d68b",
+      "bytes": 7415,
+      "executable": false
+    },
+    {
+      "path": "references/training.md",
+      "sha256": "b59e378ff3e592d553336dcff61bb9b7b988dc59407287f53e1336bd33db91f2",
+      "bytes": 13332,
+      "executable": false
+    },
+    {
+      "path": "references/vectorization.md",
+      "sha256": "8e10c7b1ef60cd52fdb7f00b7672fb477451c962602e09948e5a456adf1f2c38",
+      "bytes": 8899,
+      "executable": false
+    },
+    {
+      "path": "scripts/__init__.py",
+      "sha256": "5e2a587bf7e4f8fb11154872238594d6ba21805716d7f3b974675ebe54e52bfb",
+      "bytes": 62,
+      "executable": false
+    },
+    {
+      "path": "scripts/_common.py",
+      "sha256": "8f3f610237c6035f4fcb379ec16198f9e2a93c7770ba93e9d222530e5512f85f",
+      "bytes": 6668,
+      "executable": false
+    },
+    {
+      "path": "scripts/benchmark_vectorization.py",
+      "sha256": "4601b83d9493dd4fd1c21b84afb2bd17fcedb0674d2bf526e62e770a59b16d6b",
+      "bytes": 8332,
+      "executable": false
+    },
+    {
+      "path": "scripts/env_contract_validator.py",
+      "sha256": "2308a4f0076f6e5cba7a1a8328fa8764ba2f21828c252d0bd0bb0689321abade",
+      "bytes": 6892,
+      "executable": false
+    },
+    {
+      "path": "scripts/env_template.py",
+      "sha256": "058f479e510d8f02d8bbba517c96d7a9f8fe6dfc5e32f01f333b22651204df70",
+      "bytes": 7251,
+      "executable": false
+    },
+    {
+      "path": "scripts/inspect_checkpoint.py",
+      "sha256": "df2ae60bcff0f885b8dbdb03998ed6bfbf6105bd5bb2e2d56cb19bb125ab1c59",
+      "bytes": 7032,
+      "executable": false
+    },
+    {
+      "path": "scripts/repro_plan.py",
+      "sha256": "d89d5c448db6ee48e728b74c76f5326f0e156fa163a936061913b464e7bf470c",
+      "bytes": 6038,
+      "executable": false
+    },
+    {
+      "path": "scripts/train_template.py",
+      "sha256": "cdb2c3d31836aba7497c85f0e5864b3fbb935ec99db5a7096106fdf7c56b20bf",
+      "bytes": 10623,
+      "executable": false
+    },
+    {
+      "path": "scripts/validate_plan.py",
+      "sha256": "6ede920afb89b4ce3d29c6a8f9fda503049e58a9ae7f1fc9d11a964bec9231d3",
+      "bytes": 18879,
+      "executable": false
+    }
+  ],
+  "totalBytes": 145895,
+  "requires": [],
+  "permissionsNote": "allowed-tools or similar declarations inside SKILL.md are claims by the skill's author, not host approvals; OpenAR enforces its own permission gates."
+}

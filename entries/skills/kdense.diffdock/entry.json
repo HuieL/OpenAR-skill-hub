@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "id": "kdense.diffdock",
+  "kind": "skill",
+  "name": "Diffdock",
+  "summary": "Predicts protein-small-molecule binding poses with DiffDock and DiffDock-L from PDB or sequence plus SMILES/SDF/MOL2. Covers batch docking, pose triage, confidence interpretation, and validation. Use for molecular docking and virtual-screening pose generation, not binding-affinity prediction.",
+  "authors": [
+    {
+      "name": "K-Dense Inc.",
+      "github": "K-Dense-AI"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "chemistry"
+  ],
+  "source": {
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/diffdock",
+    "revision": "a1043ef544e3a100c28e70a736b6cf32554d0677"
+  },
+  "version": "2.72.0",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "5fafc5d9f53fa35a47c498f1cf3bad20fbee7404f248226e76e62bb327749912",
+      "bytes": 11830,
+      "executable": false
+    },
+    {
+      "path": "assets/batch_template.csv",
+      "sha256": "fa759ceb9e93d6be7c972bb0150987230e1bab1cc7ca215c7f3411b9b9f5aa15",
+      "bytes": 410,
+      "executable": false
+    },
+    {
+      "path": "assets/custom_inference_config.yaml",
+      "sha256": "2fc8591df8808d025468483f00743c66dc8bad341b70a02b092e2e93df57e67d",
+      "bytes": 1147,
+      "executable": false
+    },
+    {
+      "path": "references/confidence_and_limitations.md",
+      "sha256": "766668ff5c653e42f44de6d8409cc12a68e9dc5f1bb7bfc4e47a02902a2a4d58",
+      "bytes": 4884,
+      "executable": false
+    },
+    {
+      "path": "references/parameters_reference.md",
+      "sha256": "c7e5cc0c71f89f5620de973f967095eb76119d4716400d776bf4e11d155e4906",
+      "bytes": 5371,
+      "executable": false
+    },
+    {
+      "path": "references/workflows_examples.md",
+      "sha256": "dcc1444c0090fcca35b4563897a505b506ac93e2168c311e1ce226e5e041b322",
+      "bytes": 4963,
+      "executable": false
+    },
+    {
+      "path": "scripts/analyze_results.py",
+      "sha256": "c19179691697c87fae5dee610dbf83b0c7cee93ac2a3340274786af0c67ecfe5",
+      "bytes": 12403,
+      "executable": true
+    },
+    {
+      "path": "scripts/prepare_batch_csv.py",
+      "sha256": "237c8b851c0967905c9af14c8abc0190ea929924f827d53afc0a44170890a5f7",
+      "bytes": 10886,
+      "executable": true
+    },
+    {
+      "path": "scripts/setup_check.py",
+      "sha256": "f3b8207c947516020fce95dd109f987cd901aa623b71a9a22cc83c802ab0becc",
+      "bytes": 8940,
+      "executable": true
+    }
+  ],
+  "totalBytes": 60834,
+  "requires": [],
+  "permissionsNote": "allowed-tools or similar declarations inside SKILL.md are claims by the skill's author, not host approvals; OpenAR enforces its own permission gates."
+}

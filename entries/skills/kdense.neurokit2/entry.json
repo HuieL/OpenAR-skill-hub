@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "id": "kdense.neurokit2",
+  "kind": "skill",
+  "name": "Neurokit2",
+  "summary": "Builds and audits reproducible NeuroKit2 research workflows for physiological time-series preprocessing, event/interval analysis, multimodal alignment, variability, and complexity. Use when code imports neurokit2 or needs its current APIs, schemas, and method-aware validation—not for diagnosis or device validation.",
+  "authors": [
+    {
+      "name": "K-Dense Inc.",
+      "github": "K-Dense-AI"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "neuroscience"
+  ],
+  "source": {
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/neurokit2",
+    "revision": "a1043ef544e3a100c28e70a736b6cf32554d0677"
+  },
+  "version": "2.72.0",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "6f73a726bdea37723aa68bf7aaf896eb10322e875cbf3bc5ee96707643f1be35",
+      "bytes": 15528,
+      "executable": false
+    },
+    {
+      "path": "references/bio_module.md",
+      "sha256": "d08660461674159fd9c2652e5158001eb2202d4e9018bd9554b4cec2c389c78d",
+      "bytes": 8204,
+      "executable": false
+    },
+    {
+      "path": "references/complexity.md",
+      "sha256": "5fc180100a5f4d6fce6320a0b4da7c88e6ac675a52e292d843e1f607e732fcb3",
+      "bytes": 7451,
+      "executable": false
+    },
+    {
+      "path": "references/ecg_cardiac.md",
+      "sha256": "e5bb14cc5d6ecbc1f44f461558def5982d76989b56251b361047d3b9c2f8e101",
+      "bytes": 7161,
+      "executable": false
+    },
+    {
+      "path": "references/eda.md",
+      "sha256": "2487d5d2fef922acec4a7481bda564afef5504a01c3d80f15659b44488ef3c48",
+      "bytes": 8034,
+      "executable": false
+    },
+    {
+      "path": "references/eeg.md",
+      "sha256": "f083054ff6c8563725a196f9ec61983e7b502db3b825f9956feadef64d59371d",
+      "bytes": 7309,
+      "executable": false
+    },
+    {
+      "path": "references/emg.md",
+      "sha256": "76a45f6a51b2e428b8aed940c7643f28a61645a53025b69b5113f1c175a399d2",
+      "bytes": 6929,
+      "executable": false
+    },
+    {
+      "path": "references/eog.md",
+      "sha256": "24cd6c79dd72db01952bf518a1c6a24253ab2b769496e7fe1d8e81577011e790",
+      "bytes": 5294,
+      "executable": false
+    },
+    {
+      "path": "references/epochs_events.md",
+      "sha256": "f8eabe85a73898a43f12d8530ae9d7b3568cbc2190dc2da834c2438fb4092da4",
+      "bytes": 7486,
+      "executable": false
+    },
+    {
+      "path": "references/hrv.md",
+      "sha256": "d1656759eb74b0924db8608be8bb06a5abc32c69a96d5277eba06526a5c61d6a",
+      "bytes": 9263,
+      "executable": false
+    },
+    {
+      "path": "references/ppg.md",
+      "sha256": "d3b0382ac39f46f661c57358e838647ce9b2ce37429c1e4c814b481986c61a31",
+      "bytes": 7302,
+      "executable": false
+    },
+    {
+      "path": "references/rsp.md",
+      "sha256": "5d7b0ee8e3e19af05f7fd7bc5e44ae2782ffec3985010a97e613eeabfbfa8b24",
+      "bytes": 6897,
+      "executable": false
+    },
+    {
+      "path": "references/signal_processing.md",
+      "sha256": "743c0a22f00f180bbe62836db801787c31ce984105a36a22bce65118d315f565",
+      "bytes": 7099,
+      "executable": false
+    },
+    {
+      "path": "scripts/_common.py",
+      "sha256": "db17455cf31addb8ab52761cdfd65406a9fbb83e8677a3802ace2138a1cb6a8c",
+      "bytes": 18958,
+      "executable": false
+    },
+    {
+      "path": "scripts/ecg_hrv_pipeline.py",
+      "sha256": "3a1775acc9521c10f1fa14724df7c104bb6a1ee0c4b77aa74996bc2a74846524",
+      "bytes": 11842,
+      "executable": false
+    },
+    {
+      "path": "scripts/eda_pipeline.py",
+      "sha256": "97f1eda0aaa279596ccf61e2a483bc8796f83580b95b07ccfb23a0f88cfada7d",
+      "bytes": 10576,
+      "executable": false
+    },
+    {
+      "path": "scripts/generate_synthetic.py",
+      "sha256": "4b3dc08f50696cd13aab93bcf371c50b59d6f1332f8549f9dd13ee690ba47026",
+      "bytes": 7584,
+      "executable": false
+    },
+    {
+      "path": "scripts/inspect_signal.py",
+      "sha256": "5cd0e5a28d4073f9d9e83a64c2bbabd9244990dfccd8d48b23a51dc9cca7d10c",
+      "bytes": 13519,
+      "executable": false
+    },
+    {
+      "path": "scripts/plan_epochs.py",
+      "sha256": "4fd6e9338d7a8b6110eb96dc9692115f956983183e69497881292e1776edae91",
+      "bytes": 10626,
+      "executable": false
+    },
+    {
+      "path": "scripts/validate_multimodal.py",
+      "sha256": "b3edd572846da05b99561423146957595db43f83b06c112317b83806f30e9d6d",
+      "bytes": 14283,
+      "executable": false
+    }
+  ],
+  "totalBytes": 191345,
+  "requires": [],
+  "permissionsNote": "allowed-tools or similar declarations inside SKILL.md are claims by the skill's author, not host approvals; OpenAR enforces its own permission gates."
+}

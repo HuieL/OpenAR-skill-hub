@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "id": "kdense.exploratory-data-analysis",
+  "kind": "skill",
+  "name": "Exploratory Data Analysis",
+  "summary": "Performs bounded, local exploratory analysis of explicitly supported scientific files. Supports redacted CSV/TSV/JSON profiles; optional NumPy, HDF5, FASTA/FASTQ, and basic image metadata inspection; missingness/leakage audits; outlier and transformation sensitivity; and rigorous EDA report scaffolds. Other domain formats are reference-only and unknown formats fail closed.",
+  "authors": [
+    {
+      "name": "K-Dense Inc.",
+      "github": "K-Dense-AI"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "data"
+  ],
+  "source": {
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/exploratory-data-analysis",
+    "revision": "a1043ef544e3a100c28e70a736b6cf32554d0677"
+  },
+  "version": "2.72.0",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "955c4cefa49106dd03b55cbd62603bab2d2fb678e627dd452ba62040c7128484",
+      "bytes": 14722,
+      "executable": false
+    },
+    {
+      "path": "assets/report_template.md",
+      "sha256": "c6cd0644dbefeb64c77e84935509f52a92d45256daf2cd4be84012e99e4d7d44",
+      "bytes": 7873,
+      "executable": false
+    },
+    {
+      "path": "references/bioinformatics_genomics_formats.md",
+      "sha256": "b3594673cbe22e29fd5bc2681c1b53d4f8b02b48ff17fc9ffaf5a09d1d885be3",
+      "bytes": 8977,
+      "executable": false
+    },
+    {
+      "path": "references/chemistry_molecular_formats.md",
+      "sha256": "3ff937541ebf0396d4c2304016cebc42d405110300df7379f59c40953fc8ed41",
+      "bytes": 8732,
+      "executable": false
+    },
+    {
+      "path": "references/general_scientific_formats.md",
+      "sha256": "42bcf3389bbd78e426dd41139208517f3f78bdc17e068a1eb3a984d2f2487320",
+      "bytes": 12276,
+      "executable": false
+    },
+    {
+      "path": "references/microscopy_imaging_formats.md",
+      "sha256": "c96bb7291ded320a106800c1132191683aa3028f2240c5fcf954079f1a26c382",
+      "bytes": 9305,
+      "executable": false
+    },
+    {
+      "path": "references/proteomics_metabolomics_formats.md",
+      "sha256": "66d9493fe14c717f5e8e60500e8fa7bfe1f619084e23b643a767f0952a35efd7",
+      "bytes": 9821,
+      "executable": false
+    },
+    {
+      "path": "references/spectroscopy_analytical_formats.md",
+      "sha256": "102a68c212ef5447815c889cf06668f3cb5bd8644f018354d6e98d1a15101a0f",
+      "bytes": 9555,
+      "executable": false
+    },
+    {
+      "path": "scripts/__init__.py",
+      "sha256": "87539288ce5d4caf24fc9fca14e5d70c41730c9d4285106ac4db0c4b5cefd60c",
+      "bytes": 69,
+      "executable": false
+    },
+    {
+      "path": "scripts/_capabilities.py",
+      "sha256": "93fd42bcc6940db0a6cad364dab42a52f0867e782f7e93c9b27c4185249edc06",
+      "bytes": 20714,
+      "executable": false
+    },
+    {
+      "path": "scripts/_common.py",
+      "sha256": "f363af255cc78ea63864e0da9f679f57a9e71efd36b6813332f3d2c419b30d51",
+      "bytes": 14293,
+      "executable": false
+    },
+    {
+      "path": "scripts/_structured.py",
+      "sha256": "8cb23c8552339acc926f4dc84e1ec032c79152515098e1fd97f2326b84b4ead9",
+      "bytes": 14683,
+      "executable": false
+    },
+    {
+      "path": "scripts/_tabular.py",
+      "sha256": "5d1db825890dd035c30e51ac1c11aee56e1e1dca6ffd238ee87ae7d51d8df2f0",
+      "bytes": 32782,
+      "executable": false
+    },
+    {
+      "path": "scripts/capability_manifest.py",
+      "sha256": "1e52e1db668ebce919751a75b53ad959c36749e4b1695f59d8ac2d6c8eda4abf",
+      "bytes": 5433,
+      "executable": false
+    },
+    {
+      "path": "scripts/distribution_sensitivity.py",
+      "sha256": "ca6e9f3dd59cfb382b1ff0874e709933c136ec942085a0437d4000bbf7f1f3c8",
+      "bytes": 3304,
+      "executable": false
+    },
+    {
+      "path": "scripts/eda_analyzer.py",
+      "sha256": "6532b28ad3f28dd9f58acecb54361c8271d2755584a54ecb0be34da74d1e5d20",
+      "bytes": 10547,
+      "executable": false
+    },
+    {
+      "path": "scripts/image_inspector.py",
+      "sha256": "79c21b35d01376929ff0edf26a3bb25923b9e75458c586e0f5721cec356fe639",
+      "bytes": 7931,
+      "executable": false
+    },
+    {
+      "path": "scripts/missingness_leakage_audit.py",
+      "sha256": "28458714e80ee31db636c0265ba21e1623ba27816d31e236fdc9b873a5b78ffc",
+      "bytes": 3904,
+      "executable": false
+    },
+    {
+      "path": "scripts/report_scaffold.py",
+      "sha256": "4d745592384bfceb0ec7384eecfc5e8ba49ebfa4ec55be75a99ce7c7e102f60b",
+      "bytes": 4247,
+      "executable": false
+    },
+    {
+      "path": "scripts/sequence_inspector.py",
+      "sha256": "11ca2fa3a0d660192631b9b562f362b0fd120c9e54639bfb049c600c6920be28",
+      "bytes": 8621,
+      "executable": false
+    },
+    {
+      "path": "scripts/tabular_profile.py",
+      "sha256": "78cd139292c18e31d17de882762948db7b51fdc3278546f994270a287d0149db",
+      "bytes": 3077,
+      "executable": false
+    }
+  ],
+  "totalBytes": 210866,
+  "requires": [],
+  "permissionsNote": "allowed-tools or similar declarations inside SKILL.md are claims by the skill's author, not host approvals; OpenAR enforces its own permission gates."
+}

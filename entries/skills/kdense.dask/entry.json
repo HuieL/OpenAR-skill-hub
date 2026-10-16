@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "id": "kdense.dask",
+  "kind": "skill",
+  "name": "Dask",
+  "summary": "Scales pandas, NumPy, and custom Python research workflows beyond memory or across clusters with Dask. Covers DataFrames, Arrays, Bags, Futures, chunking, schedulers, and distributed diagnostics. Use for partitioned file processing, scientific array computation, or parallel tasks whose memory and dependency structure require Dask.",
+  "authors": [
+    {
+      "name": "K-Dense Inc.",
+      "github": "K-Dense-AI"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "data"
+  ],
+  "source": {
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/dask",
+    "revision": "a1043ef544e3a100c28e70a736b6cf32554d0677"
+  },
+  "version": "2.72.0",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "3b563a98f4cb42858bb1cc49832a3fa1ff9483d929af57ebe629473538e5a041",
+      "bytes": 17483,
+      "executable": false
+    },
+    {
+      "path": "references/arrays.md",
+      "sha256": "9505d826de392bd9ac35a00bb082e275156cd746a251fac36bdb987a11a6fcda",
+      "bytes": 13837,
+      "executable": false
+    },
+    {
+      "path": "references/bags.md",
+      "sha256": "4668a74485ae2087eb1d6b4bc732641d1e8ee666fba5661243e6a68767d4c17f",
+      "bytes": 11697,
+      "executable": false
+    },
+    {
+      "path": "references/best-practices.md",
+      "sha256": "0d475a1d3ceb341c2bf87b8022fa08e0e3e59fbc516ad00a0c63288ddde597af",
+      "bytes": 8097,
+      "executable": false
+    },
+    {
+      "path": "references/dataframes.md",
+      "sha256": "fce72d6db5d694c88110781079b2cabed613422f60523a9c4eae19b2d44797d2",
+      "bytes": 10501,
+      "executable": false
+    },
+    {
+      "path": "references/futures.md",
+      "sha256": "6f31c828d7794da2db877fe1f5efe6c8fda11197f1328f66693792bf06368e12",
+      "bytes": 13415,
+      "executable": false
+    },
+    {
+      "path": "references/review.md",
+      "sha256": "599658e990675a39e6f3c0eff7198ecc8565e17a0894f1882850f088597d01ed",
+      "bytes": 8655,
+      "executable": false
+    },
+    {
+      "path": "references/schedulers.md",
+      "sha256": "ad95a4a2700a74ef8b0cb331f9f622c5dea86987805de8b3316eeba31e839740",
+      "bytes": 13200,
+      "executable": false
+    }
+  ],
+  "totalBytes": 96885,
+  "requires": [],
+  "permissionsNote": "allowed-tools or similar declarations inside SKILL.md are claims by the skill's author, not host approvals; OpenAR enforces its own permission gates."
+}

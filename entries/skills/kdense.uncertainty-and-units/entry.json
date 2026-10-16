@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "id": "kdense.uncertainty-and-units",
+  "kind": "skill",
+  "name": "Uncertainty And Units",
+  "summary": "Tracks physical units and propagates measurement uncertainty in scientific calculations using pint and uncertainties. Use for unit conversion and dimensional checking, GUM uncertainty budgets, Type A and Type B evaluation, coverage factors and expanded uncertainty, Monte Carlo propagation, significant-figure and plus-minus reporting, error propagation through curve fits, CODATA constants, auditing Python code for stripped units or broken uncertainty propagation, and order-of-magnitude plausibility checks using dimensionless groups (Reynolds, Peclet, Damkohler, Knudsen, Biot, Womersley), characteristic scales such as diffusion time or Debye length, and observed magnitude ranges. Trigger on \"is this number physically reasonable\", \"sanity check these units\", \"what regime is this flow in\", or a result that looks off by orders of magnitude.",
+  "authors": [
+    {
+      "name": "K-Dense Inc.",
+      "github": "K-Dense-AI"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "research"
+  ],
+  "source": {
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/uncertainty-and-units",
+    "revision": "a1043ef544e3a100c28e70a736b6cf32554d0677"
+  },
+  "version": "2.72.0",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "caaafa079a4eaac6012717bcf705dec0417b5434f5dbd1af934a3a36ad375722",
+      "bytes": 21731,
+      "executable": false
+    },
+    {
+      "path": "references/domain-conversions.md",
+      "sha256": "7ab73bbd69acbd23fac74ae9f3ad570a6f1501c1a5fd22998cfcd01c725441ca",
+      "bytes": 10142,
+      "executable": false
+    },
+    {
+      "path": "references/gum-methodology.md",
+      "sha256": "def9b0ac9ff3d2912922d121062559b22ff3ec36aed94e183eef3338b4e0430f",
+      "bytes": 11916,
+      "executable": false
+    },
+    {
+      "path": "references/pint-recipes.md",
+      "sha256": "9fbc1bc7b12267777a0359bf252e52415e6e1683cd8c4c3a6582ddca6cd51baa",
+      "bytes": 9129,
+      "executable": false
+    },
+    {
+      "path": "references/plausibility-scales.md",
+      "sha256": "b9ef8acbc0ff6948ec7dca027cd31b7d73d2157b18bcf0c8e92d60c0029e8131",
+      "bytes": 11834,
+      "executable": false
+    },
+    {
+      "path": "references/reporting-rules.md",
+      "sha256": "8d302b26e0792b866d3249955250e9132c09337639abb8cf36ac3f5cdaf4648e",
+      "bytes": 7152,
+      "executable": false
+    },
+    {
+      "path": "references/review.md",
+      "sha256": "59c605f037739927495f0323246168abf9cd2bae5511b1566bb13e775bf00868",
+      "bytes": 6939,
+      "executable": false
+    },
+    {
+      "path": "references/uncertainties-recipes.md",
+      "sha256": "2125796d070c4b13ed007e6d8f498c69698a1ce4917ece4cdda32a887dd7c214",
+      "bytes": 8098,
+      "executable": false
+    },
+    {
+      "path": "scripts/_common.py",
+      "sha256": "9d6b9ecabf92759a5d9f017ae3174673f827328b76cde238d07089f2d99c9323",
+      "bytes": 23029,
+      "executable": false
+    },
+    {
+      "path": "scripts/audit_units.py",
+      "sha256": "2b891065c8b801f4a16b8dca2b73a6348c3ecf3fc88569936ded5e7f86a1e429",
+      "bytes": 21229,
+      "executable": false
+    },
+    {
+      "path": "scripts/check_plausibility.py",
+      "sha256": "f4c1bff54a483d08f794f205454ed03fa263008b26cee772bd04d417cc86384f",
+      "bytes": 36733,
+      "executable": false
+    },
+    {
+      "path": "scripts/convert_units.py",
+      "sha256": "89a9a0aa40a8158d2a739270115778fc1415f1a3cb207a6f17be14278872473a",
+      "bytes": 11963,
+      "executable": false
+    },
+    {
+      "path": "scripts/format_result.py",
+      "sha256": "a839041c3f31a67cffda00e895bfed612cbc5748e83c41da83c17ff8f7b17302",
+      "bytes": 12001,
+      "executable": false
+    },
+    {
+      "path": "scripts/propagate_uncertainty.py",
+      "sha256": "6c555f3fc7095ac340d11e8dd69f29f483f309b91af4b3489cd4c5ea468ceb86",
+      "bytes": 28632,
+      "executable": false
+    },
+    {
+      "path": "scripts/uncertainty_budget.py",
+      "sha256": "162699fd5336fca43489757a1c63e81c89deb46aefb51ceb99a24682fde14b44",
+      "bytes": 14044,
+      "executable": false
+    }
+  ],
+  "totalBytes": 234572,
+  "requires": [],
+  "permissionsNote": "allowed-tools or similar declarations inside SKILL.md are claims by the skill's author, not host approvals; OpenAR enforces its own permission gates."
+}

@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "id": "kdense.scikit-learn",
+  "kind": "skill",
+  "name": "Scikit Learn",
+  "summary": "Supports machine learning in Python with scikit-learn. Applies when working with supervised learning (classification, regression), unsupervised learning (clustering, dimensionality reduction), model evaluation, hyperparameter tuning, preprocessing, or building ML pipelines. Provides comprehensive reference documentation for algorithms, preprocessing techniques, pipelines, and best practices.",
+  "authors": [
+    {
+      "name": "K-Dense Inc.",
+      "github": "K-Dense-AI"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "machine-learning"
+  ],
+  "source": {
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/scikit-learn",
+    "revision": "a1043ef544e3a100c28e70a736b6cf32554d0677"
+  },
+  "version": "2.72.0",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "a1765797d072ab40094522abe68fb04505d0881f66b7dfceeb8582422dbe488d",
+      "bytes": 13255,
+      "executable": false
+    },
+    {
+      "path": "references/common_workflows.md",
+      "sha256": "dfe19c80358acb5f418a21cea4de3b7e83733481441f3c76d0a2ead4420261de",
+      "bytes": 3723,
+      "executable": false
+    },
+    {
+      "path": "references/core_capabilities.md",
+      "sha256": "c869d9c207fcfc345207d397021a289f3820492ddf0fcd0b3a56a336bd0e1453",
+      "bytes": 5113,
+      "executable": false
+    },
+    {
+      "path": "references/model_evaluation.md",
+      "sha256": "e6f581c0ce2abffaac2f0bafc1a7bfbe86ec18f8969c6e9b91cc732a12a5fea5",
+      "bytes": 19482,
+      "executable": false
+    },
+    {
+      "path": "references/pipelines_and_composition.md",
+      "sha256": "a1810cd67dc9141d962fa1972e11b06be6bd437213e10a563e5ec4256fb274a9",
+      "bytes": 15892,
+      "executable": false
+    },
+    {
+      "path": "references/preprocessing.md",
+      "sha256": "098506f0ca83e57d0c7cccd166164d025552ad7310b79d1010f5ff34e1cc4818",
+      "bytes": 18359,
+      "executable": false
+    },
+    {
+      "path": "references/quick_reference.md",
+      "sha256": "5401b75fdaa10bf393b024f3c559631011c7be233d2313da37a3f27d7389659a",
+      "bytes": 12448,
+      "executable": false
+    },
+    {
+      "path": "references/supervised_learning.md",
+      "sha256": "d4e5911d175c3a349dd42e33c984b05cdafce230f264b6774996d0eeef36608a",
+      "bytes": 12101,
+      "executable": false
+    },
+    {
+      "path": "references/unsupervised_learning.md",
+      "sha256": "cb476ef499fe35ee2c0416fdc31abad42384ac0110f6d3932901e99b039ae1b1",
+      "bytes": 16752,
+      "executable": false
+    },
+    {
+      "path": "scripts/classification_pipeline.py",
+      "sha256": "46abbb2b11095147cc31314405910b211c313d142f2480599f8508d47e5809f3",
+      "bytes": 10293,
+      "executable": false
+    },
+    {
+      "path": "scripts/clustering_analysis.py",
+      "sha256": "5d1f962a70e049907a39a75cd7a130000a5d3e3de5a4fa4889d07f007c052a17",
+      "bytes": 11681,
+      "executable": false
+    }
+  ],
+  "totalBytes": 139099,
+  "requires": [],
+  "permissionsNote": "allowed-tools or similar declarations inside SKILL.md are claims by the skill's author, not host approvals; OpenAR enforces its own permission gates."
+}

@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "kdense.qiime2-amplicon",
+  "kind": "skill",
+  "name": "Qiime2 Amplicon",
+  "summary": "Processes paired-end 16S amplicon reads into QIIME 2 ASVs and taxonomy with retained artifact provenance. Checks paired FASTQ manifests, primer orientation diagnostics, predicted post-trimming overlap, sample IDs, runtime versions and read retention, and guides selection of compatible taxonomic classifiers.",
+  "authors": [
+    {
+      "name": "K-Dense Inc.",
+      "github": "K-Dense-AI"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "biology"
+  ],
+  "source": {
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/qiime2-amplicon",
+    "revision": "a1043ef544e3a100c28e70a736b6cf32554d0677"
+  },
+  "version": "2.72.0",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "605ae0581620f654ca9e12122a2bdb1d62a813841c5fea61b0eacb2031377cf7",
+      "bytes": 8648,
+      "executable": false
+    },
+    {
+      "path": "references/runtime-and-interpretation.md",
+      "sha256": "d364d7f4ae66d3481168f71ce677e188c6135db349d498744ebf387223cd9741",
+      "bytes": 13632,
+      "executable": false
+    },
+    {
+      "path": "scripts/amplicon_workflow.py",
+      "sha256": "4f781d70594f8624af3ad71e3cdedc0f5cbcd285ed630a3277cae2fe8a94827a",
+      "bytes": 15621,
+      "executable": false
+    }
+  ],
+  "totalBytes": 37901,
+  "requires": [],
+  "permissionsNote": "allowed-tools or similar declarations inside SKILL.md are claims by the skill's author, not host approvals; OpenAR enforces its own permission gates."
+}

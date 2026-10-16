@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "kdense.arbor",
+  "kind": "skill",
+  "name": "Arbor",
+  "summary": "Applies Arbor Hypothesis Tree Refinement to research artifacts with repeatable evaluators, including model training, agent harnesses, data synthesis and benchmark optimization. Uses persistent hypotheses, isolated experiments, evidence propagation and held-out candidate comparison for multi-experiment research runs. Includes a standard-library state manager and guidance for the RUC-NLPIR Arbor CLI.",
+  "authors": [
+    {
+      "name": "K-Dense Inc.",
+      "github": "K-Dense-AI"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "research"
+  ],
+  "source": {
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/arbor",
+    "revision": "a1043ef544e3a100c28e70a736b6cf32554d0677"
+  },
+  "version": "2.72.0",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "aae219831d92984eb6584831f77509cb8650a3986e8c42474aaa4d118ce080a6",
+      "bytes": 17075,
+      "executable": false
+    },
+    {
+      "path": "references/arbor-upstream.md",
+      "sha256": "dd9d477f57b0d64d6d7f722af53c2083cb0b30f8032162400203135b0bd701c8",
+      "bytes": 5860,
+      "executable": false
+    },
+    {
+      "path": "references/executor-brief.md",
+      "sha256": "eb84693b720cf6755cdf588975b41f225c472ddbad0be4428e823be590c5dc4f",
+      "bytes": 3224,
+      "executable": false
+    },
+    {
+      "path": "references/htr-methodology.md",
+      "sha256": "9cc02ce21b7ae3ef3ae49fd1f3542a608c0700e1b2dcaa01ea6ed443f10d3f92",
+      "bytes": 11061,
+      "executable": false
+    },
+    {
+      "path": "references/report-template.md",
+      "sha256": "9075875e03c82dba2c6a7357476c8f096312e896975c09755f1259fddd2c711a",
+      "bytes": 1816,
+      "executable": false
+    },
+    {
+      "path": "scripts/tree.py",
+      "sha256": "100045de01ba20c5fa60785701444a000f57499b6dbe2715cabef6d76d6b8c1d",
+      "bytes": 24457,
+      "executable": false
+    }
+  ],
+  "totalBytes": 63493,
+  "requires": [],
+  "permissionsNote": "allowed-tools or similar declarations inside SKILL.md are claims by the skill's author, not host approvals; OpenAR enforces its own permission gates."
+}

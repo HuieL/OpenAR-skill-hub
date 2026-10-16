@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "kdense.nwb-conversion",
+  "kind": "skill",
+  "name": "Nwb Conversion",
+  "summary": "Converts neuroscience acquisition data to Neurodata Without Borders files with NeuroConv and PyNWB, preserves metadata and timebases, checks evidence-based clock alignment, and produces schema validation, NWB Inspector findings and round-trip checks. Use for NWB conversion and synchronization of planar single-channel two-photon TIFF imaging plus timestamped behavioral position CSV; this skill does not perform spike sorting or claim tested support for arbitrary acquisition formats.",
+  "authors": [
+    {
+      "name": "K-Dense Inc.",
+      "github": "K-Dense-AI"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "neuroscience"
+  ],
+  "source": {
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/nwb-conversion",
+    "revision": "a1043ef544e3a100c28e70a736b6cf32554d0677"
+  },
+  "version": "2.72.0",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "e2381f17db5e2b20354186a8a3c85b466afcf534cc1ae6181e87654ba5ed5fc6",
+      "bytes": 7581,
+      "executable": false
+    },
+    {
+      "path": "assets/session-template.json",
+      "sha256": "efe7d85508eec5fe49fba5bfc5c0c6785ffe1fe2588e7b55bb2838016992c9d9",
+      "bytes": 1340,
+      "executable": false
+    },
+    {
+      "path": "references/input-contract.md",
+      "sha256": "9677db406ecfd6bff0c77db55bc7db41648fab87dd58f55e25ccddc5d3eb4074",
+      "bytes": 4842,
+      "executable": false
+    },
+    {
+      "path": "references/upstream-review.md",
+      "sha256": "41bd3978155c6558069d56c42d706dddd81a3f6097121ca2291fc3997b28f47c",
+      "bytes": 4023,
+      "executable": false
+    },
+    {
+      "path": "scripts/convert_session.py",
+      "sha256": "8de66511b2adb49bd02e1a9a2a6c1953626a09452275b306bbf2bf8bf24453e7",
+      "bytes": 16098,
+      "executable": false
+    }
+  ],
+  "totalBytes": 33884,
+  "requires": [],
+  "permissionsNote": "allowed-tools or similar declarations inside SKILL.md are claims by the skill's author, not host approvals; OpenAR enforces its own permission gates."
+}

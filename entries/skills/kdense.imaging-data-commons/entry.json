@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "id": "kdense.imaging-data-commons",
+  "kind": "skill",
+  "name": "Imaging Data Commons",
+  "summary": "Queries and downloads public cancer imaging data from NCI Imaging Data Commons. Supports IDC collection discovery, DICOM access, radiology (CT, MR, PET) and pathology AI datasets, metadata SQL, visualization, licensing, and citations. Uses public metadata and download routes without authentication; optional BigQuery and Google Healthcare routes require Google credentials.",
+  "authors": [
+    {
+      "name": "K-Dense Inc.",
+      "github": "K-Dense-AI"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "medicine",
+    "databases"
+  ],
+  "source": {
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/imaging-data-commons",
+    "revision": "a1043ef544e3a100c28e70a736b6cf32554d0677"
+  },
+  "version": "2.72.0",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "8dd250a80dc6959fcebc9cbae8049b25a83be31647c597f17a9e674c4f2e3685",
+      "bytes": 31452,
+      "executable": false
+    },
+    {
+      "path": "references/bigquery_guide.md",
+      "sha256": "4c3edbdbab3adcc75e7415699ea0ee0ff0430224c0623975d0a94ff1e14024b3",
+      "bytes": 36297,
+      "executable": false
+    },
+    {
+      "path": "references/cli_guide.md",
+      "sha256": "8f5ddfa8112674a745427c07d51fb622d29907406cf6ee560d5b447e701e3653",
+      "bytes": 9536,
+      "executable": false
+    },
+    {
+      "path": "references/clinical_data_guide.md",
+      "sha256": "461b4d9eabe7e8661717853ae68b7638fefa4a1aa5bf9d7d08b88e18201a35e0",
+      "bytes": 12409,
+      "executable": false
+    },
+    {
+      "path": "references/cloud_storage_guide.md",
+      "sha256": "823632061e993f09fb2a354be52143d688aad8e30f469d9f5e9a866b2a4a7ad2",
+      "bytes": 14585,
+      "executable": false
+    },
+    {
+      "path": "references/dicomweb_guide.md",
+      "sha256": "153dd626fafca6477a9d78c24c431b4aec4c8bbc5143c0fce802bcc281b12b10",
+      "bytes": 16504,
+      "executable": false
+    },
+    {
+      "path": "references/digital_pathology_guide.md",
+      "sha256": "8e4479fe6adca9487f08b180ffd619ffcf89255dd15dadfecd05ba69c33cc19b",
+      "bytes": 15665,
+      "executable": false
+    },
+    {
+      "path": "references/index_tables_guide.md",
+      "sha256": "96f5584feec8e4eb281c4b6683124c1a09b7fa4edb9e80561f2b6a3d0dd95243",
+      "bytes": 12382,
+      "executable": false
+    },
+    {
+      "path": "references/licensing_and_citation.md",
+      "sha256": "fb3c03ded7186b85a1bc5316f5926db7fe9fcd850c822f707ff86dc65d474fe8",
+      "bytes": 10267,
+      "executable": false
+    },
+    {
+      "path": "references/mcp_guide.md",
+      "sha256": "073986e7c37bbc8f5ba8799371db52a0b8224f5f9c02a58080649a960afc8314",
+      "bytes": 9634,
+      "executable": false
+    },
+    {
+      "path": "references/parquet_access_guide.md",
+      "sha256": "e696dc3cc8563309b167a2525c414bb62b0f90b7e370fc8bac8d31e285fd6b8d",
+      "bytes": 10027,
+      "executable": false
+    },
+    {
+      "path": "references/rest_api_guide.md",
+      "sha256": "bb504309ba04bc884ff5c7efd030e7c4304663d98504c3e491b21695c9a25f25",
+      "bytes": 34128,
+      "executable": false
+    },
+    {
+      "path": "references/sql_patterns.md",
+      "sha256": "badd93398f8372f0bda26039f7c8cf419bf27e7abc2ea6e4ff7ee6f2151540b5",
+      "bytes": 17297,
+      "executable": false
+    },
+    {
+      "path": "references/use_cases.md",
+      "sha256": "57099725731469ef458f06658f1426555a9a70e933f1e73965169764e517e60d",
+      "bytes": 8724,
+      "executable": false
+    },
+    {
+      "path": "scripts/check_version.py",
+      "sha256": "3bf30b9b9d70508f5b41029e8b4fb71b5b1539f8350e587e8318e0939ea3c1a7",
+      "bytes": 5680,
+      "executable": false
+    }
+  ],
+  "totalBytes": 244587,
+  "requires": [],
+  "permissionsNote": "allowed-tools or similar declarations inside SKILL.md are claims by the skill's author, not host approvals; OpenAR enforces its own permission gates."
+}

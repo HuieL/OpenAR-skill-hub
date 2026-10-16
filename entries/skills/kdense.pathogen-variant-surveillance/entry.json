@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "id": "kdense.pathogen-variant-surveillance",
+  "kind": "skill",
+  "name": "Pathogen Variant Surveillance",
+  "summary": "Queries public GenSpectrum LAPIS data for pathogen genomic surveillance, current lineage nomenclature, weekly sequence proportions, reporting delays, and descriptive mutation frequencies. Use for variant surveillance, Pango lineage validation, dominant submitted lineages, Nextclade assignment provenance, SARS-CoV-2, influenza/H5N1 clades, RSV, mpox, measles, dengue, or LAPIS queries. Distinguishes sequence prevalence from infection prevalence, clades from genotypes, missing calls from reference matches, and sampling changes from biological growth advantage.",
+  "authors": [
+    {
+      "name": "K-Dense Inc.",
+      "github": "K-Dense-AI"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "databases"
+  ],
+  "source": {
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/pathogen-variant-surveillance",
+    "revision": "a1043ef544e3a100c28e70a736b6cf32554d0677"
+  },
+  "version": "2.72.0",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "95510f890a47ab2e2275832fe60e725eca34e5318dcde88b0940d9362b3ab590",
+      "bytes": 10817,
+      "executable": false
+    },
+    {
+      "path": "references/lapis-api.md",
+      "sha256": "35eecae787f25da0566b7931f321b615aa3972f2d595ab467397e1f9d021126f",
+      "bytes": 10992,
+      "executable": false
+    },
+    {
+      "path": "references/lineage-nomenclature.md",
+      "sha256": "a58932658c6e24db355219e8a44e54d9bb6c6f32a9ec6cef58d3f979cf6dadef",
+      "bytes": 5753,
+      "executable": false
+    },
+    {
+      "path": "references/surveillance-caveats.md",
+      "sha256": "f80fdd2f5535be667a2e243174c0ba8cbffeb7e90e3740c475522996c555429f",
+      "bytes": 6259,
+      "executable": false
+    },
+    {
+      "path": "scripts/lapis_client.py",
+      "sha256": "d666a82327f6ed1b04ffc7aee2f53037d8204fa8052ac47e901368c2c9dd3687",
+      "bytes": 30484,
+      "executable": false
+    },
+    {
+      "path": "scripts/lineage_prevalence.py",
+      "sha256": "8f73bc4d104d33ef7c294cdbdc3bfad7f776ed885df99d1323d734c090e65132",
+      "bytes": 15201,
+      "executable": false
+    },
+    {
+      "path": "scripts/mutation_profile.py",
+      "sha256": "49b5ac946dd0b2d640eb510603ec198abe09e4390be91741a16d2ea0686f47dc",
+      "bytes": 10616,
+      "executable": false
+    },
+    {
+      "path": "scripts/reporting_lag.py",
+      "sha256": "990407143d9acdb8093a2fbbf513b64e28767da04622b55fed250b3350d95239",
+      "bytes": 8232,
+      "executable": false
+    },
+    {
+      "path": "scripts/resolve_lineage.py",
+      "sha256": "c9a51087e405f09db849e70f9383773a1d53c6ced692d68cebdc90907c320bf4",
+      "bytes": 7599,
+      "executable": false
+    }
+  ],
+  "totalBytes": 105953,
+  "requires": [],
+  "permissionsNote": "allowed-tools or similar declarations inside SKILL.md are claims by the skill's author, not host approvals; OpenAR enforces its own permission gates."
+}

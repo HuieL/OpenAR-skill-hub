@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "kdense.statistical-power",
+  "kind": "skill",
+  "name": "Statistical Power",
+  "summary": "Calculates sample sizes and statistical power for study planning. Applies when someone asks \"how many subjects/samples/replicates do I need\", wants an a priori power analysis, a minimum detectable effect (MDE), a power curve, or needs to justify a sample size for a grant, IRB protocol, or pre-registration. Covers closed-form power for t-tests, ANOVA, proportions, correlations, chi-square, and regression, plus simulation-based (Monte Carlo) power for complex designs — logistic/Poisson regression, mixed models, cluster-randomized trials, survival, and interactions. Also handles requests that only mention an effect size, alpha, or \"80% power\" without saying \"power analysis\" explicitly. For laying out the study (randomization, blocking, factorial/DOE, crossover, sequential designs) use experimental-design; for analyzing data already collected and reporting it use statistical-analysis.",
+  "authors": [
+    {
+      "name": "K-Dense Inc.",
+      "github": "K-Dense-AI"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "data"
+  ],
+  "source": {
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/statistical-power",
+    "revision": "a1043ef544e3a100c28e70a736b6cf32554d0677"
+  },
+  "version": "2.72.0",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "a969660eafdc3504ac36e49bd7ded00e18b00fe5cef5699940d5d8281e24dd3d",
+      "bytes": 17834,
+      "executable": false
+    },
+    {
+      "path": "references/closed_form_recipes.md",
+      "sha256": "c303aa5b5103077304254f48309169609a3b0537748c68e0df4abd33cb9d4384",
+      "bytes": 11159,
+      "executable": false
+    },
+    {
+      "path": "references/effect_sizes.md",
+      "sha256": "b2e3c9578dce59222797ea55e9bc2c3883764adfdfdc0eed3793fb4d71fbf0a7",
+      "bytes": 6110,
+      "executable": false
+    },
+    {
+      "path": "references/simulation_based_power.md",
+      "sha256": "963fd56791e6db1bffb94efda7c9bef9c3195e3dec3e2a9918d17f3536ec150f",
+      "bytes": 10163,
+      "executable": false
+    },
+    {
+      "path": "scripts/power.py",
+      "sha256": "9124b7c657ccbfe8b41c777bd9e17ae076641939e4ae93b4ba17f2de18284b7d",
+      "bytes": 19966,
+      "executable": false
+    },
+    {
+      "path": "scripts/simulate_power.py",
+      "sha256": "bfbe75908ca071528b7b02aa1ed53949a7291f928f30634abe29b3ce23c564f4",
+      "bytes": 13193,
+      "executable": false
+    }
+  ],
+  "totalBytes": 78425,
+  "requires": [],
+  "permissionsNote": "allowed-tools or similar declarations inside SKILL.md are claims by the skill's author, not host approvals; OpenAR enforces its own permission gates."
+}

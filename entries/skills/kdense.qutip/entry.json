@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "id": "kdense.qutip",
+  "kind": "skill",
+  "name": "Qutip",
+  "summary": "Simulate and audit closed and open quantum-system models with QuTiP 5, including deterministic, trajectory, steady-state, spectral, and phase-space workflows. Use for local quantum-dynamics work where physical assumptions, dimensions, and numerical convergence must be explicit.",
+  "authors": [
+    {
+      "name": "K-Dense Inc.",
+      "github": "K-Dense-AI"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "physics"
+  ],
+  "source": {
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/qutip",
+    "revision": "a1043ef544e3a100c28e70a736b6cf32554d0677"
+  },
+  "version": "2.72.0",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "6b93a95eb586147b2f1639f7e669dece3182ab4ddd70b1200291073cfd533902",
+      "bytes": 14760,
+      "executable": false
+    },
+    {
+      "path": "references/advanced.md",
+      "sha256": "6bae64070a4fd32fede375195cb683e0bce83742bad1cc3f897c1af0a7f01aff",
+      "bytes": 15766,
+      "executable": false
+    },
+    {
+      "path": "references/analysis.md",
+      "sha256": "201b508d50710335baa003eb68dadf7f3fe4df33917f09eb1548ed72be1f08a5",
+      "bytes": 10738,
+      "executable": false
+    },
+    {
+      "path": "references/core_concepts.md",
+      "sha256": "3bc5c10f7b45faed6b00c048d623b4b1f6e35e9bd9dc99d3613c4cba0ee8005b",
+      "bytes": 8483,
+      "executable": false
+    },
+    {
+      "path": "references/time_evolution.md",
+      "sha256": "c0fa5ea2761199d717263f35da99594c2d957efacfa188123d0c58296d43ab6e",
+      "bytes": 13786,
+      "executable": false
+    },
+    {
+      "path": "references/visualization.md",
+      "sha256": "67d2574601532432d9b408c02ff68960e2ccce113a1d444efe6a31058e524216",
+      "bytes": 8997,
+      "executable": false
+    },
+    {
+      "path": "scripts/_common.py",
+      "sha256": "b640dffc8b93b85a4c2517c20d6c56e978d2aac51d7b51f4b32dc6e3453cf15f",
+      "bytes": 12072,
+      "executable": false
+    },
+    {
+      "path": "scripts/convergence_sweep.py",
+      "sha256": "d341087e7d208b77e4b1ae180edf50401f0d11b1612a3e3598d5c51231cc8364",
+      "bytes": 12418,
+      "executable": false
+    },
+    {
+      "path": "scripts/qobj_model_validator.py",
+      "sha256": "a3bb7107d245a6d62a1801b32113a2c9049f5d18a6f0412857d7fed1c67af150",
+      "bytes": 10979,
+      "executable": false
+    },
+    {
+      "path": "scripts/result_audit.py",
+      "sha256": "bba4e5758def41038a5ceb7ff8e8847504412b4396d7ceed2a96551b647759cd",
+      "bytes": 12463,
+      "executable": false
+    },
+    {
+      "path": "scripts/solver_config_planner.py",
+      "sha256": "cb13608330d321c904e1d0945d5a7fb655ab5c26aa7cb54979dd9f3b108db81f",
+      "bytes": 11165,
+      "executable": false
+    },
+    {
+      "path": "scripts/steady_state_spectrum_planner.py",
+      "sha256": "9fbc4016d1e636a49133d5a8ab585e70aef791a5390ef1e8e644ea9d9cd57cac",
+      "bytes": 7981,
+      "executable": false
+    },
+    {
+      "path": "scripts/two_level_simulation.py",
+      "sha256": "3e6419783c29146b95f5efbc60960f14c1d98dc63ab81b8f44ce34a0ece99f03",
+      "bytes": 13224,
+      "executable": false
+    }
+  ],
+  "totalBytes": 152832,
+  "requires": [],
+  "permissionsNote": "allowed-tools or similar declarations inside SKILL.md are claims by the skill's author, not host approvals; OpenAR enforces its own permission gates."
+}

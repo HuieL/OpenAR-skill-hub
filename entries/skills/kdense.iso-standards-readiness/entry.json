@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "id": "kdense.iso-standards-readiness",
+  "kind": "skill",
+  "name": "Iso Standards Readiness",
+  "summary": "Prepares and structurally reviews readiness evidence for ISO management-system and laboratory-competence standards - ISO 13485 medical device QMS, ISO 14971 device risk management, ISO/IEC 17025 testing and calibration laboratories, and ISO 15189 medical laboratories. Use when organizing declared scope, controlled documents, risk-management files, scope of accreditation, traceability, CAPA, external-provider controls, or bounded local evidence manifests, and when separating ISO certification from laboratory accreditation, FDA QMSR inspection, CLIA certification, MDSAP, and EU MDR/IVDR evidence boundaries. Not for legal applicability, compliance, certification, or accreditation decisions; contains no clause text.",
+  "authors": [
+    {
+      "name": "K-Dense Inc.",
+      "github": "K-Dense-AI"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "regulatory"
+  ],
+  "source": {
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/iso-standards-readiness",
+    "revision": "a1043ef544e3a100c28e70a736b6cf32554d0677"
+  },
+  "version": "2.72.0",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "0ffd95e86924a698fcd0c806e51f24e2fc500847697d8ff99b255af817e15259",
+      "bytes": 18299,
+      "executable": false
+    },
+    {
+      "path": "assets/templates/capa-record-template.json",
+      "sha256": "4cbcd94068ff1bf8bf55c00ae32de2730a4c35be0c3f40110ff184a1d8286845",
+      "bytes": 2979,
+      "executable": false
+    },
+    {
+      "path": "assets/templates/document-register-template.json",
+      "sha256": "c279fc952f4a8e0887800c8202d0b1f2760736cbc9716ee2ed205e973cc3113c",
+      "bytes": 2122,
+      "executable": false
+    },
+    {
+      "path": "assets/templates/evidence-manifest-template.json",
+      "sha256": "6ce142f0b789a0e0b1b52c1c8cf65d250a717ac3adfb2b7104e024bfcbd1d884",
+      "bytes": 2018,
+      "executable": false
+    },
+    {
+      "path": "assets/templates/laboratory-scope-intake-template.json",
+      "sha256": "42e9e54efe82ba9b48cc0950dbde9596ee9165328be81b272a634111623a58db",
+      "bytes": 3422,
+      "executable": false
+    },
+    {
+      "path": "assets/templates/medical-laboratory-scope-intake-template.json",
+      "sha256": "d9d9ce38bf60c7c6bb6fc851f20be1d4157481ed2a35bae9395a2555ab499c6e",
+      "bytes": 3536,
+      "executable": false
+    },
+    {
+      "path": "assets/templates/procedures/CAPA-procedure-template.md",
+      "sha256": "ef153c0e2aebbd56bf287e95e95df180d7659009051a4a078bb4254a0e2c548a",
+      "bytes": 6517,
+      "executable": false
+    },
+    {
+      "path": "assets/templates/procedures/document-control-procedure-template.md",
+      "sha256": "ddc713c443b8ae220195e1171b9200e9264762cffe822f3cdb7aed80b6fc2a9c",
+      "bytes": 6934,
+      "executable": false
+    },
+    {
+      "path": "assets/templates/qmsr-transition-template.json",
+      "sha256": "d8cfc008469fbf85a8d8333cef3ae2cd437ab5ab379b2dc86df67fcc069700d6",
+      "bytes": 9651,
+      "executable": false
+    },
+    {
+      "path": "assets/templates/quality-manual-template.md",
+      "sha256": "4f5d08269ade8c68532a296be9ec41a830471965ad21abcb3884c1a2ab9c958a",
+      "bytes": 9372,
+      "executable": false
+    },
+    {
+      "path": "assets/templates/scope-intake-template.json",
+      "sha256": "7e23d8edc6efbcbe106b61227805296d4dee0c5204592016ff3d33a8cf82246f",
+      "bytes": 2975,
+      "executable": false
+    },
+    {
+      "path": "assets/templates/supplier-controls-template.json",
+      "sha256": "384cad6425390a25cd2f346d097da5721d396d57fd08422523812ad4763ba6cf",
+      "bytes": 4323,
+      "executable": false
+    },
+    {
+      "path": "assets/templates/traceability-matrix-template.json",
+      "sha256": "75a03fd3fdf94b4398f46880b69ee2a47606faa225ff611d1321631231f1acf0",
+      "bytes": 4439,
+      "executable": false
+    },
+    {
+      "path": "references/assurance-lanes.md",
+      "sha256": "281662f87c99c0aff8e7b8e56c426bde9c2724e843db5b84a7744b5e2981b055",
+      "bytes": 7285,
+      "executable": false
+    },
+    {
+      "path": "references/evidence-architecture.md",
+      "sha256": "3302ded4dd0cfc04b2839fc4db29a7b3c048c38913ad32f363c309ac62916032",
+      "bytes": 13659,
+      "executable": false
+    },
+    {
+      "path": "references/gap-analysis-checklist.md",
+      "sha256": "3443211a87e2176faa36155d9ccb12cb2fbb9e6a97f3175ee2674aafc895ab03",
+      "bytes": 19472,
+      "executable": false
+    },
+    {
+      "path": "references/iso-13485.md",
+      "sha256": "bf1e654ed22798b9573e70966d5482507adaf2b02a0a30721a0e7a1e189a48bc",
+      "bytes": 12257,
+      "executable": false
+    },
+    {
+      "path": "references/iso-14971.md",
+      "sha256": "db62d342a6c2fcfdbf90981ed02a7f1f642ffff46be3db552801eee4c0392cf9",
+      "bytes": 9516,
+      "executable": false
+    },
+    {
+      "path": "references/iso-15189.md",
+      "sha256": "39bffb320a0a26ab5beb2bbcecf322d10ad608680523410b4614a90b0274aa79",
+      "bytes": 12450,
+      "executable": false
+    },
+    {
+      "path": "references/iso-17025.md",
+      "sha256": "38eceda5955ad668a6b688470f3529110cc548824fed8116903ed03f6f7a3025",
+      "bytes": 12286,
+      "executable": false
+    },
+    {
+      "path": "references/quality-manual-guide.md",
+      "sha256": "f60ffd4e0e31e824389a0b4978d9f009cf2027e8783961e8512759f07ad3ebd4",
+      "bytes": 11587,
+      "executable": false
+    },
+    {
+      "path": "references/source-ledger.md",
+      "sha256": "91cab78e7e9bb18feb0d8c2b646f9f813aa3a1cc6527339edb944844f89ec559",
+      "bytes": 21190,
+      "executable": false
+    },
+    {
+      "path": "scripts/_catalog.py",
+      "sha256": "b02f2c87be93d583e51ed8cfc3d5d64b2dfe1bb2a69fa62cf089b5cd787143fe",
+      "bytes": 7735,
+      "executable": false
+    },
+    {
+      "path": "scripts/_common.py",
+      "sha256": "fde546c636e3904cf8aae41a98d9187e5bbe5157aa9056eb3c5a9e2c07ecd6ca",
+      "bytes": 16800,
+      "executable": false
+    },
+    {
+      "path": "scripts/audit_document_records.py",
+      "sha256": "7db553daa1014f851f10a5a2cc6341d65deaa1336b92b7a8ca5b20850f2b857d",
+      "bytes": 5518,
+      "executable": false
+    },
+    {
+      "path": "scripts/check_capa.py",
+      "sha256": "c4a61329328505d73a46dcafd0bafd93096c6736b18aa49e4804df47fbef2cb4",
+      "bytes": 8909,
+      "executable": false
+    },
+    {
+      "path": "scripts/check_qmsr_transition.py",
+      "sha256": "8b13e6cda62150c9fa17cf193da4a6786f0f1ecd903d13b87048397c2574b055",
+      "bytes": 5660,
+      "executable": false
+    },
+    {
+      "path": "scripts/check_supplier_controls.py",
+      "sha256": "6fda41de53eb8d900d3365dfc47948f7e6fff6bbff966bfbaa97421857c023b3",
+      "bytes": 5746,
+      "executable": false
+    },
+    {
+      "path": "scripts/check_traceability.py",
+      "sha256": "2749bed44d1953de01669fe0af197d3442e5c30071813ae443bd3ee2a25e06c6",
+      "bytes": 5646,
+      "executable": false
+    },
+    {
+      "path": "scripts/gap_analyzer.py",
+      "sha256": "cc1b3be8766b922abde38c7d5db2b96482794e0c2a75bc8a7421da57c632aa58",
+      "bytes": 5626,
+      "executable": false
+    },
+    {
+      "path": "scripts/validate_evidence_manifest.py",
+      "sha256": "af4a56d0fa81a93d7f3c46f33ade20ea7715b88a0b7a106312459c9975e85994",
+      "bytes": 8446,
+      "executable": false
+    },
+    {
+      "path": "scripts/validate_scope_intake.py",
+      "sha256": "d99495ba318126161f4faeb9d873f9ca9a4c49b57680392b1dfb2a14125a56ab",
+      "bytes": 7268,
+      "executable": false
+    }
+  ],
+  "totalBytes": 273643,
+  "requires": [],
+  "permissionsNote": "allowed-tools or similar declarations inside SKILL.md are claims by the skill's author, not host approvals; OpenAR enforces its own permission gates."
+}

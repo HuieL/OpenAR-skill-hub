@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "id": "kdense.paperclip",
+  "kind": "skill",
+  "name": "Paperclip",
+  "summary": "Searches and reads biomedical papers, FDA/PMDA/EMA documents, clinical trials, and protein records with the GXL Paperclip CLI and Python SDK. Supports source-scoped search, full-text grep, metadata SQL, map/reduce extraction, figure analysis, optional repositories and claim verification, and line-pinned citations. Use when a task names GXL paperclip, asks to install or authenticate it, or requests literature retrieval and evidence extraction through Paperclip.",
+  "authors": [
+    {
+      "name": "K-Dense Inc.",
+      "github": "K-Dense-AI"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "writing"
+  ],
+  "source": {
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/paperclip",
+    "revision": "a1043ef544e3a100c28e70a736b6cf32554d0677"
+  },
+  "version": "2.72.0",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "4f6fc05346aefdf5685b11d6d34fbe5b9782fc5156d69702c00dd8c71bf63473",
+      "bytes": 12966,
+      "executable": false
+    },
+    {
+      "path": "references/cli-reference.md",
+      "sha256": "a1cbbce454df57aea224185d7e5e1402bd4864f4c1d38438199e18044d73963b",
+      "bytes": 9567,
+      "executable": false
+    },
+    {
+      "path": "references/installation.md",
+      "sha256": "b0ce9c46d95402030183a159dced52cce289cc49c2205d36b0bbc9e3d6244d9e",
+      "bytes": 7490,
+      "executable": false
+    },
+    {
+      "path": "references/map-reduce.md",
+      "sha256": "f2ca2e32e802273d6fbb19f803842e81a4cfe6cff26f34d3f79e991a258f7c31",
+      "bytes": 7119,
+      "executable": false
+    },
+    {
+      "path": "references/python-sdk.md",
+      "sha256": "5a87d7468e96ec5acb15efa8b15aa84bcb66c1207e5cb8a7c6d5cebda9dab258",
+      "bytes": 15945,
+      "executable": false
+    },
+    {
+      "path": "references/repos-and-workspace.md",
+      "sha256": "b668989880b3e06a020c5d2103756f7e4d6a18a21b060305ab3930f43d33c2d9",
+      "bytes": 8793,
+      "executable": false
+    },
+    {
+      "path": "references/search-and-retrieval.md",
+      "sha256": "2ae8353cb8050246cc4401b8c3095ae2457caa5c0393e3fb0a113d9367de509f",
+      "bytes": 9345,
+      "executable": false
+    }
+  ],
+  "totalBytes": 71225,
+  "requires": [],
+  "permissionsNote": "allowed-tools or similar declarations inside SKILL.md are claims by the skill's author, not host approvals; OpenAR enforces its own permission gates."
+}

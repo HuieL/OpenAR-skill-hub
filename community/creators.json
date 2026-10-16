@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "skillHub": "b9fe9bf742223c48eed39de44b5abdb1e407b1ca",
+  "skillHub": "9bbc20a8ea3ce20fa780a7ecb4c9274b94a7112b",
   "extensionHub": null,
   "creators": [
     {
@@ -50,6 +50,1848 @@
           "entry": "skill:hub.writing-guidelines",
           "roles": [
             "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.13c-metabolic-flux",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.adaptyv",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.aeon",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.alphagenome",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.analytical-method-validation",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.anndata",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.arbor",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.arboreto",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.astropy",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.benchling-integration",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.bgpt-paper-search",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.bids",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.biopython",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.bioservices",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.bulk-rnaseq",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.cantera",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.cellprofiler",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.cellxgene-census",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.cirq",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.clinical-decision-support",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.clinical-reports",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.cobrapy",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.consciousness-council",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.dask",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.database-lookup",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.datalad",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.datamol",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.deepchem",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.deeptools",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.depmap",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.dhdna-profiler",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.diffdock",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.dnanexus-integration",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.etetoolkit",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.exa-search",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.experimental-design",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.exploratory-data-analysis",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.fictiv",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.flowio",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.flowkit",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.fluidsim",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.folklore-variant-evidence",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.generate-image",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.geniml",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.genomic-coordinates",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.genomic-intelligence",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.geopandas",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.get-available-resources",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.gget",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.ginkgo-cloud-lab",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.gtars",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.histolab",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.hypogenic",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.hypothesis-generation",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.imaging-data-commons",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.iso-standards-readiness",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.lab-hardware-cad",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.labarchive-integration",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.lamindb",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.latchbio-integration",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.liteparse",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.mageck",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.marine-carbonate-chemistry",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.markdown-mermaid-writing",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.market-research-reports",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.markitdown",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.matchms",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.matlab",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.matplotlib",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.medchem",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.molecular-dynamics",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.molfeat",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.ncats-arax",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.networkx",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.neurokit2",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.neuropixels-analysis",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.nextflow",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.nmrglue",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.nwb-conversion",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.omero-integration",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.onekgpd",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.ontology-term-resolution",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.openpiv",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.opentrons-integration",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.optimize-for-gpu",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pacsomatic",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.paper-lookup",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.paperclip",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.paperzilla",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.parallel-web",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pathml",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pathogen-variant-surveillance",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pathway-enrichment",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.peer-review",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pennylane",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pi-agent",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pkpd-modeling",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.polars",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.polars-bio",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pptx-posters",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.primer-design",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.protocolsio-integration",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pufferlib",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pybamm",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pycalphad",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pydeseq2",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pydicom",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pyhealth",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pylabrobot",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pymatgen",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pymc",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pymoo",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pyopenms",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pysam",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pytdc",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pyzotero",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.qiime2-amplicon",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.qiskit",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.qutip",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.rdkit",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.relion",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.relsa-severity-assessment",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.research-grants",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.scanpy",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.scholar-evaluation",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.scientific-brainstorming",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.scientific-critical-thinking",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.scientific-visualization",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.scientific-writing",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.scikit-bio",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.scikit-learn",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.scikit-survival",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.scvelo",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.scvi-tools",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.seaborn",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.shap",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.simpy",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.stable-baselines3",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.statistical-analysis",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.statistical-power",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.statsmodels",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.sympy",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.tamarind",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.tellurium",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.tiledbvcf",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.timesfm-forecasting",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.treatment-plans",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.umap-learn",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.uncertainty-and-units",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.usfiscaldata",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.vaex",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.venue-templates",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:kdense.zarr-python",
+          "roles": [
+            "submitter"
+          ]
+        }
+      ]
+    },
+    {
+      "github": "K-Dense-AI",
+      "name": "K-Dense Inc.",
+      "credits": [
+        {
+          "entry": "skill:kdense.13c-metabolic-flux",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.adaptyv",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.aeon",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.alphagenome",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.analytical-method-validation",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.anndata",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.arbor",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.arboreto",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.astropy",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.benchling-integration",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.bgpt-paper-search",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.bids",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.biopython",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.bioservices",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.bulk-rnaseq",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.cantera",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.cellprofiler",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.cellxgene-census",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.cirq",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.clinical-decision-support",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.clinical-reports",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.cobrapy",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.consciousness-council",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.dask",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.database-lookup",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.datalad",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.datamol",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.deepchem",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.deeptools",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.depmap",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.dhdna-profiler",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.diffdock",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.dnanexus-integration",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.etetoolkit",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.exa-search",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.experimental-design",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.exploratory-data-analysis",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.fictiv",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.flowio",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.flowkit",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.fluidsim",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.folklore-variant-evidence",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.generate-image",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.geniml",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.genomic-coordinates",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.genomic-intelligence",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.geopandas",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.get-available-resources",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.gget",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.ginkgo-cloud-lab",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.gtars",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.histolab",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.hypogenic",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.hypothesis-generation",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.imaging-data-commons",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.iso-standards-readiness",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.lab-hardware-cad",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.labarchive-integration",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.lamindb",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.latchbio-integration",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.liteparse",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.mageck",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.marine-carbonate-chemistry",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.markdown-mermaid-writing",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.market-research-reports",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.markitdown",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.matchms",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.matlab",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.matplotlib",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.medchem",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.molecular-dynamics",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.molfeat",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.ncats-arax",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.networkx",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.neurokit2",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.neuropixels-analysis",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.nextflow",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.nmrglue",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.nwb-conversion",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.omero-integration",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.onekgpd",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.ontology-term-resolution",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.openpiv",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.opentrons-integration",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.optimize-for-gpu",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pacsomatic",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.paper-lookup",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.paperclip",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.paperzilla",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.parallel-web",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pathml",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pathogen-variant-surveillance",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pathway-enrichment",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.peer-review",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pennylane",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pi-agent",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pkpd-modeling",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.polars",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.polars-bio",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pptx-posters",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.primer-design",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.protocolsio-integration",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pufferlib",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pybamm",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pycalphad",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pydeseq2",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pydicom",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pyhealth",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pylabrobot",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pymatgen",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pymc",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pymoo",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pyopenms",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pysam",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pytdc",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.pyzotero",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.qiime2-amplicon",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.qiskit",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.qutip",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.rdkit",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.relion",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.relsa-severity-assessment",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.research-grants",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.scanpy",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.scholar-evaluation",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.scientific-brainstorming",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.scientific-critical-thinking",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.scientific-visualization",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.scientific-writing",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.scikit-bio",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.scikit-learn",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.scikit-survival",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.scvelo",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.scvi-tools",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.seaborn",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.shap",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.simpy",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.stable-baselines3",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.statistical-analysis",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.statistical-power",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.statsmodels",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.sympy",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.tamarind",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.tellurium",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.tiledbvcf",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.timesfm-forecasting",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.treatment-plans",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.umap-learn",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.uncertainty-and-units",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.usfiscaldata",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.vaex",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.venue-templates",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:kdense.zarr-python",
+          "roles": [
+            "author"
           ]
         }
       ]

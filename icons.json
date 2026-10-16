@@ -9,7 +9,7 @@
     "design":        { "lucide": "Palette",          "label": "Design",         "categories": ["design", "ui"],                      "keywords": ["design", "ui", "visual", "style", "brand", "theme", "anti-slop"] },
     "web":           { "lucide": "Globe",            "label": "Web",            "categories": ["web", "frontend"],                   "keywords": ["web", "html", "css", "page", "site", "frontend", "accessibility"] },
     "reference":     { "lucide": "Library",          "label": "Reference",      "categories": ["reference", "knowledge"],           "keywords": ["reference", "library", "index", "catalog", "design-md"] },
-    "data":          { "lucide": "Database",         "label": "Data",           "categories": ["data", "analysis"],                  "keywords": ["data", "csv", "table", "dataset", "sql", "analysis"] },
+    "data":          { "lucide": "Database",         "label": "Data",           "categories": ["data", "analysis", "databases"],                  "keywords": ["data", "csv", "table", "dataset", "sql", "analysis"] },
     "spreadsheet":   { "lucide": "FileSpreadsheet",  "label": "Spreadsheet",    "categories": ["spreadsheet", "office"],             "keywords": ["excel", "xlsx", "spreadsheet", "dashboard", "kpi"] },
     "chart":         { "lucide": "ChartColumn",      "label": "Charts",         "categories": ["visualization", "charts"],           "keywords": ["chart", "plot", "graph", "visualization", "matplotlib", "figure"] },
     "research":      { "lucide": "FlaskConical",     "label": "Research",       "categories": ["research", "science"],               "keywords": ["research", "experiment", "hypothesis", "study", "science"] },
@@ -32,6 +32,17 @@
     "agents":        { "lucide": "Bot",              "label": "Agents",         "categories": ["agents", "ai"],                      "keywords": ["agent", "llm", "prompt", "model", "ai"] },
     "tools":         { "lucide": "Wrench",           "label": "Tools",          "categories": ["tools", "utilities"],               "keywords": ["tool", "utility", "helper", "convert"] },
     "search":        { "lucide": "Search",           "label": "Search",         "categories": ["search"],                            "keywords": ["search", "find", "lookup", "query"] },
+    "biology":       { "lucide": "Dna",              "label": "Biology",        "categories": ["biology", "genomics", "proteomics", "systems-biology", "protein-design"], "keywords": ["gene", "genome", "rna", "dna", "protein", "cell", "sequencing", "omics"] },
+    "chemistry":     { "lucide": "FlaskRound",       "label": "Chemistry",      "categories": ["chemistry", "drug-discovery"],       "keywords": ["chemistry", "molecule", "compound", "drug", "ligand", "smiles"] },
+    "medicine":      { "lucide": "Stethoscope",      "label": "Medicine",       "categories": ["medicine", "clinical", "preclinical"], "keywords": ["clinical", "patient", "medical", "trial", "treatment", "health"] },
+    "microscopy":    { "lucide": "Microscope",       "label": "Imaging",        "categories": ["imaging", "microscopy"],             "keywords": ["microscopy", "imaging", "pathology", "dicom", "slide"] },
+    "neuroscience":  { "lucide": "Brain",            "label": "Neuroscience",   "categories": ["neuroscience", "electrophysiology"], "keywords": ["neuro", "brain", "eeg", "spike", "neuron"] },
+    "ml":            { "lucide": "BrainCircuit",     "label": "Machine learning", "categories": ["machine-learning", "ai"],         "keywords": ["model", "training", "neural", "deep learning", "machine learning"] },
+    "physics":       { "lucide": "Atom",             "label": "Physics",        "categories": ["physics", "materials"],             "keywords": ["physics", "quantum", "materials", "crystal", "astronomy"] },
+    "engineering":   { "lucide": "Cog",              "label": "Engineering",    "categories": ["engineering", "simulation"],        "keywords": ["simulation", "engineering", "solver", "fluid", "finite"] },
+    "lab":           { "lucide": "TestTubes",        "label": "Lab",            "categories": ["lab-automation", "lab"],            "keywords": ["lab", "protocol", "robot", "eln", "assay"] },
+    "infrastructure": { "lucide": "Server",          "label": "Infrastructure", "categories": ["infrastructure", "cloud"],          "keywords": ["cloud", "cluster", "compute", "platform", "gpu"] },
+    "regulatory":    { "lucide": "Scale",            "label": "Regulatory",     "categories": ["regulatory", "standards"],          "keywords": ["regulatory", "iso", "compliance", "standard", "gxp"] },
     "puzzle":        { "lucide": "Puzzle",           "label": "General",        "categories": ["general"],                           "keywords": [] }
   }
 }

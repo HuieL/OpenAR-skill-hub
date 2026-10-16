@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "kdense.cellxgene-census",
+  "kind": "skill",
+  "name": "Cellxgene Census",
+  "summary": "Queries the CZ CELLxGENE Census programmatically for versioned public single-cell and spatial transcriptomics data. Use when you need population-scale cell metadata, gene expression slices, Census summary counts, source H5AD URIs/downloads, embeddings, spatial Census data, or reference atlas comparisons across organisms, tissues, diseases, assays, and cell types. For analyzing your own local single-cell data use scanpy, anndata, or scvi-tools.",
+  "authors": [
+    {
+      "name": "K-Dense Inc.",
+      "github": "K-Dense-AI"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "biology"
+  ],
+  "source": {
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/cellxgene-census",
+    "revision": "a1043ef544e3a100c28e70a736b6cf32554d0677"
+  },
+  "version": "2.72.0",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "123b66d6701c7c0587d0a615a2394caee52e62745b3fd31176381ea64aaa794a",
+      "bytes": 13648,
+      "executable": false
+    },
+    {
+      "path": "references/api_access.md",
+      "sha256": "231a947443ea6bd1f3b827951a4db2603a2dc203908f59bfeb24ca55a8f913a9",
+      "bytes": 5917,
+      "executable": false
+    },
+    {
+      "path": "references/census_schema.md",
+      "sha256": "4ddd1a51d473f2402cef91cda2c94cd148837df0e56ce684614d3d0c845b5fb1",
+      "bytes": 9491,
+      "executable": false
+    },
+    {
+      "path": "references/common_patterns.md",
+      "sha256": "0421a761bfccb08419ce14ffffcf3100618aeab84c3a1329cdc7fb136585525f",
+      "bytes": 15522,
+      "executable": false
+    },
+    {
+      "path": "references/core_workflow_patterns.md",
+      "sha256": "28580f45bfeba8c2b1594006956cbd92c7c2c5211fa58fc667bb51bf81b4d455",
+      "bytes": 10990,
+      "executable": false
+    }
+  ],
+  "totalBytes": 55568,
+  "requires": [],
+  "permissionsNote": "allowed-tools or similar declarations inside SKILL.md are claims by the skill's author, not host approvals; OpenAR enforces its own permission gates."
+}

@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "id": "kdense.dnanexus-integration",
+  "kind": "skill",
+  "name": "Dnanexus Integration",
+  "summary": "Builds and operates reproducible genomics workloads on DNAnexus with the dx CLI, dxpy, apps/applets, native workflows, dxCompiler, and Nextflow. Supports DNAnexus data transfers, dxapp.json development, execution monitoring, workflow import, and project automation.",
+  "authors": [
+    {
+      "name": "K-Dense Inc.",
+      "github": "K-Dense-AI"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "infrastructure"
+  ],
+  "source": {
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/dnanexus-integration",
+    "revision": "a1043ef544e3a100c28e70a736b6cf32554d0677"
+  },
+  "version": "2.72.0",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "e8fcca26f5558e04256a2253c002cc8c8c024c06614fbd7d6e0161e53c5aa519",
+      "bytes": 12327,
+      "executable": false
+    },
+    {
+      "path": "references/app-development.md",
+      "sha256": "4bdd1a0bb35278c34478ff159b1dea299ff760e7646b272d2b1a266939a30f99",
+      "bytes": 9839,
+      "executable": false
+    },
+    {
+      "path": "references/authentication.md",
+      "sha256": "cc9453abdac64ad4f2cacde973f06a9fb7e1d880c784b19612b46d30ebd7c76a",
+      "bytes": 8615,
+      "executable": false
+    },
+    {
+      "path": "references/configuration.md",
+      "sha256": "ed7203b818942cf69af96e01d9f9a288a16820d704fed9d3ee4e3dc10f8fdc25",
+      "bytes": 12988,
+      "executable": false
+    },
+    {
+      "path": "references/data-operations.md",
+      "sha256": "cf538de82cc8436a77aae47bf9ed28d3b0ddde3f1d21411e8d8527c36125ab31",
+      "bytes": 13816,
+      "executable": false
+    },
+    {
+      "path": "references/job-execution.md",
+      "sha256": "a2a2693fb2517ae55f513e82202e2b7032792e360cc4328079a16919cf50bc09",
+      "bytes": 12860,
+      "executable": false
+    },
+    {
+      "path": "references/operations-and-troubleshooting.md",
+      "sha256": "20762390c0d73db2adc804f6089681c6f93f3156685a45dba84f896a8096b047",
+      "bytes": 14249,
+      "executable": false
+    },
+    {
+      "path": "references/python-sdk.md",
+      "sha256": "43fd283b519359355c8953603c938653e929982526389889c3cf2570f2b5fc04",
+      "bytes": 13082,
+      "executable": false
+    },
+    {
+      "path": "references/sources.md",
+      "sha256": "6161ccef18c116fba2eab609f5817babaad3662ae52fbdf1f02f4ff610d29600",
+      "bytes": 12693,
+      "executable": false
+    },
+    {
+      "path": "references/workflow-languages.md",
+      "sha256": "fca6c38717ac97e9cbd211f6436c69e04eb720a5629d3fb61786482acb10d287",
+      "bytes": 9438,
+      "executable": false
+    },
+    {
+      "path": "scripts/inspect_dxpy.py",
+      "sha256": "c9955ffa2dcb2a792a6aa8a2c2f64c227cf1925aabf48cd96cda7d8190780e2e",
+      "bytes": 10347,
+      "executable": false
+    },
+    {
+      "path": "scripts/validate_dxapp.py",
+      "sha256": "3cdcd5d0adf2c9c34183625b9697510c2a19e42d4bb873d7a892aab54176423e",
+      "bytes": 27748,
+      "executable": false
+    }
+  ],
+  "totalBytes": 158002,
+  "requires": [],
+  "permissionsNote": "allowed-tools or similar declarations inside SKILL.md are claims by the skill's author, not host approvals; OpenAR enforces its own permission gates."
+}

@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "kdense.ginkgo-cloud-lab",
+  "kind": "skill",
+  "name": "Ginkgo Cloud Lab",
+  "summary": "Guides protocol selection, input preparation, pricing checks, and browser ordering on Ginkgo Bioworks Cloud Lab (cloud.ginkgo.bio). Applies to cell-free, E. coli, and Pichia protein expression; HiBiT, A280, and LabChip readouts; IVT mRNA/circRNA synthesis; thermal shift assays; Echo-MS methods; SPR target onboarding; plate-reader assay onboarding; and fluorescent pixel art.",
+  "authors": [
+    {
+      "name": "K-Dense Inc.",
+      "github": "K-Dense-AI"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "lab-automation"
+  ],
+  "source": {
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/ginkgo-cloud-lab",
+    "revision": "a1043ef544e3a100c28e70a736b6cf32554d0677"
+  },
+  "version": "2.72.0",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "b3675d3ad36070fd598642fd2b58c36d3cfd09a08eef3f52d77629856e2e845b",
+      "bytes": 11256,
+      "executable": false
+    },
+    {
+      "path": "references/cell-free-protein-expression-hibit.md",
+      "sha256": "27e33563c128db9572a60d2de0250afbe50a49111198198c7bcc62b230fc1e8b",
+      "bytes": 2497,
+      "executable": false
+    },
+    {
+      "path": "references/cell-free-protein-expression-optimization.md",
+      "sha256": "359c9b9808d2cd71cd82dcbe374ff119b1bdfc726764b800a2877e96910e93c3",
+      "bytes": 3026,
+      "executable": false
+    },
+    {
+      "path": "references/cell-free-protein-expression-validation.md",
+      "sha256": "86118dd4d1646a401072549c655e3c37041a10d894f85ccde0da88382723657d",
+      "bytes": 2331,
+      "executable": false
+    },
+    {
+      "path": "references/cfps-expression-purification-quantification.md",
+      "sha256": "4dc1614008765cb6f1631ecf7d9152fc89caaa2d2bdd926a44d48dcc54d48f3e",
+      "bytes": 2895,
+      "executable": false
+    },
+    {
+      "path": "references/cfps-strep-purification-thermal-shift.md",
+      "sha256": "b11588597a40786b872f67ea93a6e0068509172c53c99d1ea42247208080cd26",
+      "bytes": 3084,
+      "executable": false
+    },
+    {
+      "path": "references/cfps-strep-tag-purification-a280.md",
+      "sha256": "a9be645bb2f5335d22b2e88b949e3d996a0292e87953f517831464fd3c121326",
+      "bytes": 2458,
+      "executable": false
+    },
+    {
+      "path": "references/echo-ms-cfps-detection.md",
+      "sha256": "135c9d326afb41116264d429ecdc8289322cd273c6a7770776ff1899c84345cf",
+      "bytes": 2245,
+      "executable": false
+    },
+    {
+      "path": "references/echo-ms-method-onboarding.md",
+      "sha256": "d73d5e797dc8a70f45247514f1c6b26f37d7a24839e87ef88f61ff868f3d5a8a",
+      "bytes": 2820,
+      "executable": false
+    },
+    {
+      "path": "references/ecoli-expression-purification-quantification.md",
+      "sha256": "dc5a3b7547860cbd56e47b01bc708bae79a1ad24f7ee07c141a570c1c5db494e",
+      "bytes": 2676,
+      "executable": false
+    },
+    {
+      "path": "references/ecoli-minibinder-expression-histag-a280.md",
+      "sha256": "fc2c95d1cc06bde23649a5b04c83fb33ff7708fb53fd06e4d448a4e1114fdc6b",
+      "bytes": 2777,
+      "executable": false
+    },
+    {
+      "path": "references/ecoli-protein-expression-hibit.md",
+      "sha256": "17826f7f39150869830da647d6d4d3f8677f6f4de439f231389b1567c80fbfe2",
+      "bytes": 2427,
+      "executable": false
+    },
+    {
+      "path": "references/ecoli-protein-expression-histag-a280.md",
+      "sha256": "488070c9a4efd3ac227cbafb6dce84f443f505ef80211882581810af8941ba05",
+      "bytes": 2414,
+      "executable": false
+    },
+    {
+      "path": "references/fluorescent-pixel-art-generation.md",
+      "sha256": "4271120ebc561aae89805ab528d554f78a0131245eff93139f27e0d576148e05",
+      "bytes": 3305,
+      "executable": false
+    },
+    {
+      "path": "references/ivt-rna-synthesis-qpcr.md",
+      "sha256": "8090f8981168de25f489912b842a103d08c88cd14fdbdef9158f9b097cd7c288",
+      "bytes": 2829,
+      "executable": false
+    },
+    {
+      "path": "references/minibinder-strep-tag-a280.md",
+      "sha256": "59c1c3fdd85aa0a991b296749eeee74610d7a2b3544e35382ad0d4c0f1b029b1",
+      "bytes": 2229,
+      "executable": false
+    },
+    {
+      "path": "references/pichia-protein-expression-labchip.md",
+      "sha256": "bf37a1088e996625079da968373c1f4707d77aa9508a88ff4a72aa72b18b05ab",
+      "bytes": 2490,
+      "executable": false
+    },
+    {
+      "path": "references/plate-reader-assay-onboarding.md",
+      "sha256": "34e701fd5c279240e6b00d059579305afa758fc51584112b8133914291806d52",
+      "bytes": 1377,
+      "executable": false
+    },
+    {
+      "path": "references/spr-target-onboarding.md",
+      "sha256": "d14223aaf1e92f10333baec2356c43d02843493206e696999818288fc0e5453c",
+      "bytes": 2883,
+      "executable": false
+    }
+  ],
+  "totalBytes": 58019,
+  "requires": [],
+  "permissionsNote": "allowed-tools or similar declarations inside SKILL.md are claims by the skill's author, not host approvals; OpenAR enforces its own permission gates."
+}

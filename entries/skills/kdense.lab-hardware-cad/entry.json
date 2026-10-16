@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "id": "kdense.lab-hardware-cad",
+  "kind": "skill",
+  "name": "Lab Hardware Cad",
+  "summary": "Designs custom laboratory hardware as parametric build123d models and exports fabrication artifacts as STEP, STL, and DXF files - microfluidic chips and molds, optomechanical mounts and breadboard adapters, cuvette and microplate holders, tube racks, animal-behavior rigs, and 3D-printed instrument fixtures. Use when a research task needs a physical part that must mate with standardized labware, an optical table, a cage system, or a printer, CNC, or laser process.",
+  "authors": [
+    {
+      "name": "K-Dense Inc.",
+      "github": "K-Dense-AI"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "engineering"
+  ],
+  "source": {
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/lab-hardware-cad",
+    "revision": "a1043ef544e3a100c28e70a736b6cf32554d0677"
+  },
+  "version": "2.72.0",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "d3e9c67c3f08bfd7c6bb6c91d6ccc6621a72d2f47248965b4db4e1e296426b18",
+      "bytes": 22830,
+      "executable": false
+    },
+    {
+      "path": "assets/standards.json",
+      "sha256": "273e47fccfb69493fb67f1ae1ad79d6ed8310bf623597b1e504c1d47ba6dad5e",
+      "bytes": 17240,
+      "executable": false
+    },
+    {
+      "path": "references/behavior-rigs.md",
+      "sha256": "e2796e2db6f48ca97f79eece452397dde6c4f89d1f6156a6a34fb434e7ef593e",
+      "bytes": 7769,
+      "executable": false
+    },
+    {
+      "path": "references/build123d-patterns.md",
+      "sha256": "260da9e2e5e088d32246794809241c2966c33882bbf5f1bab8dad16d0299e8d2",
+      "bytes": 18231,
+      "executable": false
+    },
+    {
+      "path": "references/fabrication-limits.md",
+      "sha256": "650fa63102e578c40304ff6d907fd3a1459d264320b0ce6e195a93c803aa69b0",
+      "bytes": 9255,
+      "executable": false
+    },
+    {
+      "path": "references/labware-adapters.md",
+      "sha256": "b4eba2275f51fdad96750b420863151c4b38d34ba387f86b2e4f50757381c26f",
+      "bytes": 10867,
+      "executable": false
+    },
+    {
+      "path": "references/microfluidics.md",
+      "sha256": "09d01a260cb9ff1cba3dfad2dd7dc2fd281c207e43628712a6a598fed2996973",
+      "bytes": 9715,
+      "executable": false
+    },
+    {
+      "path": "references/optomechanics.md",
+      "sha256": "acbfc90e50516facf2d302f53eeaeab7c0d9e5dd9f870bafd85b7211f3033037",
+      "bytes": 7406,
+      "executable": false
+    },
+    {
+      "path": "references/validation.md",
+      "sha256": "2f246a8ed468f4d899618f4cf95452b235280af27bd8f5ceb7ec25e07497a567",
+      "bytes": 6825,
+      "executable": false
+    },
+    {
+      "path": "scripts/_common.py",
+      "sha256": "2d61d29d11908ebf4a05ee403c8fa8ead0c242c952f116065d6be73590ba211f",
+      "bytes": 27809,
+      "executable": false
+    },
+    {
+      "path": "scripts/check.py",
+      "sha256": "e7063701d728fcb4574bc8f0805197c6532ed53dc07552abbad36e860853ebbd",
+      "bytes": 28526,
+      "executable": false
+    },
+    {
+      "path": "scripts/gen.py",
+      "sha256": "145410e14a8e7559c988b70775af4521dde38b905635380f29193f1a6f668481",
+      "bytes": 10733,
+      "executable": false
+    },
+    {
+      "path": "scripts/snapshot.py",
+      "sha256": "4d6887482d83df8f20093238597d5b8053294ab7e22de0cad24c5ae32e898e21",
+      "bytes": 10909,
+      "executable": false
+    }
+  ],
+  "totalBytes": 188115,
+  "requires": [],
+  "permissionsNote": "allowed-tools or similar declarations inside SKILL.md are claims by the skill's author, not host approvals; OpenAR enforces its own permission gates."
+}

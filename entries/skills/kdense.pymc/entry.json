@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "id": "kdense.pymc",
+  "kind": "skill",
+  "name": "Pymc",
+  "summary": "Builds and checks Bayesian models with PyMC, including hierarchical models, NUTS MCMC, variational inference, mutable-data predictions, posterior predictive checks, diagnostics, and PSIS-LOO model comparison. Use for probabilistic modeling and uncertainty inference in PyMC.",
+  "authors": [
+    {
+      "name": "K-Dense Inc.",
+      "github": "K-Dense-AI"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "machine-learning"
+  ],
+  "source": {
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/pymc",
+    "revision": "a1043ef544e3a100c28e70a736b6cf32554d0677"
+  },
+  "version": "2.72.0",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "77d29ba7adf73d822329eab576d15a748811633a60bca88f5e93954793b3ea8a",
+      "bytes": 10736,
+      "executable": false
+    },
+    {
+      "path": "assets/hierarchical_model_template.py",
+      "sha256": "62c482d984830329cf8b6a112e37ef3189a05e243777670a800ca7136067d4fe",
+      "bytes": 5794,
+      "executable": false
+    },
+    {
+      "path": "assets/linear_regression_template.py",
+      "sha256": "0461fe20e6c5b51f811572f4a71ca9c87b2ea04d50f165788da7ab6eaa565794",
+      "bytes": 4740,
+      "executable": false
+    },
+    {
+      "path": "references/distributions.md",
+      "sha256": "8c65dfa852e63b132cd7d9690b59ebddd1480b6965d355939d9c4e0816db3386",
+      "bytes": 14893,
+      "executable": false
+    },
+    {
+      "path": "references/model_patterns.md",
+      "sha256": "7a6e83919e7e0d0985ff0df3e51e8c4c7810f48b80a0956288efaa0cf973783a",
+      "bytes": 4627,
+      "executable": false
+    },
+    {
+      "path": "references/sampling_inference.md",
+      "sha256": "f55cec6f7c3e623a5039ae3893e59e7a1b93e923ad8d961bb5132f285f804212",
+      "bytes": 8044,
+      "executable": false
+    },
+    {
+      "path": "references/standard_workflow.md",
+      "sha256": "acf52b6bd774f9e189cd864c584c56e44b572caaab6b5b1d963aaee042ae7654",
+      "bytes": 4889,
+      "executable": false
+    },
+    {
+      "path": "references/workflows.md",
+      "sha256": "02210930a621675676988ba92fce3f441f1e0e38b4e8721614273b137ab43323",
+      "bytes": 7753,
+      "executable": false
+    },
+    {
+      "path": "scripts/model_comparison.py",
+      "sha256": "6d9f7e7abf53d1499e999d1d6308a2903729c31c30b0da447ce4c83b780841ae",
+      "bytes": 14760,
+      "executable": false
+    },
+    {
+      "path": "scripts/model_diagnostics.py",
+      "sha256": "32fa8260161de387955345f51a0c3698943aa1eb8184d3176f4a1f4fafb6ebf1",
+      "bytes": 9199,
+      "executable": false
+    }
+  ],
+  "totalBytes": 85435,
+  "requires": [],
+  "permissionsNote": "allowed-tools or similar declarations inside SKILL.md are claims by the skill's author, not host approvals; OpenAR enforces its own permission gates."
+}

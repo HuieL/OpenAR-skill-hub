@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "kdense.tellurium",
+  "kind": "skill",
+  "name": "Tellurium",
+  "summary": "Simulates biochemical kinetic models from SBML or Antimony with Tellurium and libRoadRunner, checks model units, compares deterministic parameter perturbations, and exports and replays SBML plus SED-ML COMBINE archives. Use for reaction-network time courses, kinetic parameters, concentration dynamics and reproducible simulation experiments; steady-state constraint-based metabolic flux analysis belongs to cobrapy.",
+  "authors": [
+    {
+      "name": "K-Dense Inc.",
+      "github": "K-Dense-AI"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "biology"
+  ],
+  "source": {
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/tellurium",
+    "revision": "a1043ef544e3a100c28e70a736b6cf32554d0677"
+  },
+  "version": "2.72.0",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "69faa97aa45e7ad46515acd3e6497b044b7b44624ffd28c74fb40d97c74513a7",
+      "bytes": 8100,
+      "executable": false
+    },
+    {
+      "path": "assets/experiment.json",
+      "sha256": "e5e7e30c107a945647bb016a62d00096f9a5f3bc5e2877f95e3638984c08ab53",
+      "bytes": 195,
+      "executable": false
+    },
+    {
+      "path": "assets/first-order.ant",
+      "sha256": "caac37179fc5465990c06ab1666b2b3b4457bd7f3e2011558ee085d7afff7dd6",
+      "bytes": 464,
+      "executable": false
+    },
+    {
+      "path": "references/experiments.md",
+      "sha256": "08e9a95d1f39774dc9928a74ee9f0e6f177fa7f4894dce65d9352646b2ac5ae2",
+      "bytes": 7362,
+      "executable": false
+    },
+    {
+      "path": "scripts/kinetic_experiment.py",
+      "sha256": "4f48b80db653a98520be4bcd99bd0b5087373c3286aa22eaa4658cd846bedd62",
+      "bytes": 12598,
+      "executable": false
+    }
+  ],
+  "totalBytes": 28719,
+  "requires": [],
+  "permissionsNote": "allowed-tools or similar declarations inside SKILL.md are claims by the skill's author, not host approvals; OpenAR enforces its own permission gates."
+}

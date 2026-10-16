@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "id": "kdense.shap",
+  "kind": "skill",
+  "name": "Shap",
+  "summary": "Explain and audit machine-learning predictions with SHAP. Use for selecting SHAP explainers and maskers, computing and validating feature attributions, handling multi-output explanations, and producing local or global SHAP visualizations.",
+  "authors": [
+    {
+      "name": "K-Dense Inc.",
+      "github": "K-Dense-AI"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "machine-learning"
+  ],
+  "source": {
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/shap",
+    "revision": "a1043ef544e3a100c28e70a736b6cf32554d0677"
+  },
+  "version": "2.72.0",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "9c395662e608accd60acb62158f1d25299b12ec0e40f9f94b70a46ec527d52c1",
+      "bytes": 16530,
+      "executable": false
+    },
+    {
+      "path": "references/data-maskers.md",
+      "sha256": "fe586f1d7aac5c799437506c2353dc7c0b4916a09c10ea714b22db49aaa12f12",
+      "bytes": 11909,
+      "executable": false
+    },
+    {
+      "path": "references/explainers.md",
+      "sha256": "d173b54e0ee1d5c5e627609967000926fd6036e8efba282534f68857d9cdefca",
+      "bytes": 17931,
+      "executable": false
+    },
+    {
+      "path": "references/migration.md",
+      "sha256": "81278c5d30634b1e2f16bf7b6b703b2b968bfa01636bd7eecae2201baa76e721",
+      "bytes": 10054,
+      "executable": false
+    },
+    {
+      "path": "references/modalities.md",
+      "sha256": "dd19dc010438ed9dca06bce06d3820d617c2fa5740bf0ac86706081ae2ade518",
+      "bytes": 12580,
+      "executable": false
+    },
+    {
+      "path": "references/plots.md",
+      "sha256": "634067fd6d2c951ac4db35a182109f8313be501b6fcd04e0d99e7957f77d3ec2",
+      "bytes": 12534,
+      "executable": false
+    },
+    {
+      "path": "references/theory.md",
+      "sha256": "103d0f50131649c63d6c0895a723d28f5fc175cb5ef923adec0655adc7a136dd",
+      "bytes": 12964,
+      "executable": false
+    },
+    {
+      "path": "references/troubleshooting.md",
+      "sha256": "92ddecfa7a40e30274b812f14abd0ae2e1ec9ab6f14d1a93e77cb15208e754f8",
+      "bytes": 14593,
+      "executable": false
+    },
+    {
+      "path": "references/workflows.md",
+      "sha256": "d227b27899216451daa89b145c6f9e0f4850efacba687d0db00a06921743132e",
+      "bytes": 19742,
+      "executable": false
+    },
+    {
+      "path": "scripts/tabular_report.py",
+      "sha256": "06161aefd48914406f41ad8b26389853537235c5577a962a29fb4a246013214e",
+      "bytes": 11316,
+      "executable": false
+    }
+  ],
+  "totalBytes": 140153,
+  "requires": [],
+  "permissionsNote": "allowed-tools or similar declarations inside SKILL.md are claims by the skill's author, not host approvals; OpenAR enforces its own permission gates."
+}
