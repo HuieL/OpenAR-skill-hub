@@ -1,5 +1,10 @@
 name: validate
 
+# A pull request is checked by the base branch's validator, not its own
+# (HUB-09: a trusted baseline). The PR tree is data: the trusted scripts
+# read it with --root and nothing from it is executed. Read-only token, no
+# secrets, credentials not persisted in either checkout.
+
 on:
   pull_request:
 
@@ -12,7 +17,35 @@ jobs:
     steps:
       # Pinned to the v4.2.2 commit; bump deliberately.
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
-      - name: Validate entries and index
+        with:
+          path: pr
+          persist-credentials: false
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          path: trusted
+          persist-credentials: false
+      - name: Validate the PR's entries with the base branch's scripts
         run: |
-          python3 scripts/validate.py
-          python3 scripts/build-index.py --check
+          if grep -q -- '--root' trusted/scripts/validate.py; then
+            python3 -I trusted/scripts/validate.py --root pr
+            python3 -I trusted/scripts/build-index.py --check --root pr
+            python3 -I trusted/scripts/build-community.py --check --root pr
+          else
+            # Bootstrap only: the base predates --root (the PR that adds it).
+            echo "::warning::base validator predates --root; running this PR's scripts once"
+            cd pr
+            python3 -I scripts/validate.py
+            python3 -I scripts/build-index.py --check
+          fi
+      - name: Flag changes to the validator, schema or CI
+        run: |
+          changed=""
+          for dir in scripts schemas .github; do
+            if ! diff -rq "trusted/$dir" "pr/$dir" > /dev/null 2>&1; then
+              changed="$changed $dir/"
+            fi
+          done
+          if [ -n "$changed" ]; then
+            echo "::warning::this PR changes$changed — this run used the base versions; a maintainer reviews those files by hand before merge"
+          fi

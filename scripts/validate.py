@@ -10,7 +10,18 @@ import pathlib
 import re
 import sys
 
-ROOT = pathlib.Path(__file__).resolve().parent.parent
+def _root() -> pathlib.Path:
+    """The registry tree to read: `--root <dir>` (CI runs the base branch's
+    trusted scripts against a pull request's tree), else this checkout."""
+    if "--root" in sys.argv:
+        index = sys.argv.index("--root")
+        if index + 1 >= len(sys.argv):
+            sys.exit("--root needs a directory")
+        return pathlib.Path(sys.argv[index + 1]).resolve()
+    return pathlib.Path(__file__).resolve().parent.parent
+
+
+ROOT = _root()
 ENTRIES = ROOT / "entries" / "skills"
 MAX_TOTAL_BYTES = 2 * 1024 * 1024
 I18N_LANGS = {"en", "zh-CN", "ja", "ko", "es"}
