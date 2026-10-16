@@ -45,9 +45,12 @@ def build() -> dict:
                     "revision": entry["source"]["revision"],
                     "entryPath": entry_path.relative_to(ROOT).as_posix(),
                     "entrySha256": hashlib.sha256(raw).hexdigest(),
-                    # Listing metadata (icon + search tags). Index rows are
-                    # read leniently by every client; entry.json is not.
+                    # Listing metadata (icon, search tags and the entry's
+                    # categories, so a store can group without fetching every
+                    # entry). Index rows are read leniently by every client;
+                    # entry.json is not.
                     **listing_mod.listing_for(entry_path.parent, entry, icons),
+                    **({"categories": entry["categories"]} if entry.get("categories") else {}),
                 }
             )
     rows.sort(key=lambda row: row["id"])
