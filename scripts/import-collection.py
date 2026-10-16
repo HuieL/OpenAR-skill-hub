@@ -49,7 +49,22 @@ def main() -> None:
     repo, revision, prefix = cfg["repo"], cfg["revision"], cfg["idPrefix"]
     if not re.fullmatch(r"[0-9a-f]{40}", revision):
         die("revision must be a 40-hex commit")
+    # The prefix becomes the first segment of every id and the pruning glob:
+    # a plain lowercase word, never a reserved namespace or another
+    # collection's / a hand-added entry's prefix.
+    if not re.fullmatch(r"[a-z0-9][a-z0-9-]{1,31}", prefix) or prefix in ("ora", "openra", "hub"):
+        die(f"idPrefix {prefix!r} must be a lowercase word (not ora, openra or hub)")
+    for other in sorted((ROOT / "collections").glob("*.json")):
+        if other.resolve() != pathlib.Path(args.collection).resolve() and json.loads(other.read_text()).get("idPrefix") == prefix:
+            die(f"idPrefix {prefix!r} is already used by {other.name}")
     sections, skills, exclude = cfg["sections"], cfg["skills"], cfg.get("exclude", {})
+    for name in sorted(skills):
+        if not re.fullmatch(r"[a-z0-9][a-z0-9-]{0,63}", name):
+            die(f"skill folder {name!r} cannot be an id segment")
+    # Pruning removes <prefix>.* entries: none of them may come from elsewhere.
+    for existing in sorted((ROOT / "entries" / "skills").glob(f"{prefix}.*/entry.json")):
+        if json.loads(existing.read_text())["source"]["repo"].lower() != repo.lower():
+            die(f"{existing.parent.name} uses the {prefix!r} prefix but is not from {repo}")
     icons = listing_mod.load_icons()
 
     with tempfile.TemporaryDirectory(prefix="hub-collection-") as tmp:
