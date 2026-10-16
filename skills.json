@@ -16,6 +16,9 @@
         "web",
         "frontend",
         "anti-slop"
+      ],
+      "categories": [
+        "design"
       ]
     },
     {
@@ -32,6 +35,9 @@
         "writing",
         "prose",
         "editing"
+      ],
+      "categories": [
+        "writing"
       ]
     },
     {
@@ -50,6 +56,9 @@
         "docx",
         "citations",
         "writing"
+      ],
+      "categories": [
+        "writing"
       ]
     },
     {
@@ -67,6 +76,9 @@
         "excel",
         "dashboard",
         "charts"
+      ],
+      "categories": [
+        "data"
       ]
     },
     {
@@ -83,6 +95,10 @@
         "design",
         "reference",
         "design-system"
+      ],
+      "categories": [
+        "design",
+        "reference"
       ]
     },
     {
@@ -101,6 +117,10 @@
         "accessibility",
         "ui",
         "design"
+      ],
+      "categories": [
+        "design",
+        "review"
       ]
     },
     {
@@ -118,6 +138,10 @@
         "review",
         "docs",
         "style"
+      ],
+      "categories": [
+        "writing",
+        "review"
       ]
     },
     {
@@ -134,6 +158,9 @@
         "systems-biology",
         "science",
         "k-dense",
+        "biology"
+      ],
+      "categories": [
         "biology"
       ]
     },
@@ -152,6 +179,9 @@
         "science",
         "k-dense",
         "biology"
+      ],
+      "categories": [
+        "biology"
       ]
     },
     {
@@ -168,6 +198,9 @@
         "ai",
         "science",
         "k-dense",
+        "machine-learning"
+      ],
+      "categories": [
         "machine-learning"
       ]
     },
@@ -188,6 +221,10 @@
         "k-dense",
         "biology",
         "databases"
+      ],
+      "categories": [
+        "biology",
+        "databases"
       ]
     },
     {
@@ -204,6 +241,9 @@
         "standards",
         "science",
         "k-dense",
+        "regulatory"
+      ],
+      "categories": [
         "regulatory"
       ]
     },
@@ -222,6 +262,9 @@
         "science",
         "k-dense",
         "biology"
+      ],
+      "categories": [
+        "biology"
       ]
     },
     {
@@ -238,6 +281,9 @@
         "methodology",
         "science",
         "k-dense",
+        "research"
+      ],
+      "categories": [
         "research"
       ]
     },
@@ -256,6 +302,9 @@
         "science",
         "k-dense",
         "biology"
+      ],
+      "categories": [
+        "biology"
       ]
     },
     {
@@ -272,6 +321,9 @@
         "materials",
         "science",
         "k-dense",
+        "physics"
+      ],
+      "categories": [
         "physics"
       ]
     },
@@ -290,6 +342,9 @@
         "science",
         "k-dense",
         "lab-automation"
+      ],
+      "categories": [
+        "lab-automation"
       ]
     },
     {
@@ -306,6 +361,9 @@
         "science-communication",
         "science",
         "k-dense",
+        "writing"
+      ],
+      "categories": [
         "writing"
       ]
     },
@@ -324,6 +382,9 @@
         "science",
         "k-dense",
         "neuroscience"
+      ],
+      "categories": [
+        "neuroscience"
       ]
     },
     {
@@ -340,6 +401,9 @@
         "genomics",
         "science",
         "k-dense",
+        "biology"
+      ],
+      "categories": [
         "biology"
       ]
     },
@@ -358,6 +422,9 @@
         "science",
         "k-dense",
         "biology"
+      ],
+      "categories": [
+        "biology"
       ]
     },
     {
@@ -374,6 +441,9 @@
         "genomics",
         "science",
         "k-dense",
+        "biology"
+      ],
+      "categories": [
         "biology"
       ]
     },
@@ -392,6 +462,9 @@
         "science",
         "k-dense",
         "engineering"
+      ],
+      "categories": [
+        "engineering"
       ]
     },
     {
@@ -408,6 +481,9 @@
         "microscopy",
         "science",
         "k-dense",
+        "imaging"
+      ],
+      "categories": [
         "imaging"
       ]
     },
@@ -426,6 +502,9 @@
         "science",
         "k-dense",
         "biology"
+      ],
+      "categories": [
+        "biology"
       ]
     },
     {
@@ -442,6 +521,9 @@
         "materials",
         "science",
         "k-dense",
+        "physics"
+      ],
+      "categories": [
         "physics"
       ]
     },
@@ -460,6 +542,9 @@
         "science",
         "k-dense",
         "medicine"
+      ],
+      "categories": [
+        "medicine"
       ]
     },
     {
@@ -476,6 +561,9 @@
         "clinical",
         "science",
         "k-dense",
+        "medicine"
+      ],
+      "categories": [
         "medicine"
       ]
     },
@@ -494,6 +582,9 @@
         "science",
         "k-dense",
         "physics"
+      ],
+      "categories": [
+        "physics"
       ]
     },
     {
@@ -510,6 +601,9 @@
         "methodology",
         "science",
         "k-dense",
+        "research"
+      ],
+      "categories": [
         "research"
       ]
     },
@@ -528,6 +622,9 @@
         "science",
         "k-dense",
         "data"
+      ],
+      "categories": [
+        "data"
       ]
     },
     {
@@ -544,6 +641,9 @@
         "data",
         "science",
         "k-dense",
+        "databases"
+      ],
+      "categories": [
         "databases"
       ]
     },
@@ -562,6 +662,9 @@
         "science",
         "k-dense",
         "infrastructure"
+      ],
+      "categories": [
+        "infrastructure"
       ]
     },
     {
@@ -578,6 +681,9 @@
         "drug-discovery",
         "science",
         "k-dense",
+        "chemistry"
+      ],
+      "categories": [
         "chemistry"
       ]
     },
@@ -596,6 +702,9 @@
         "science",
         "k-dense",
         "chemistry"
+      ],
+      "categories": [
+        "chemistry"
       ]
     },
     {
@@ -612,6 +721,9 @@
         "genomics",
         "science",
         "k-dense",
+        "biology"
+      ],
+      "categories": [
         "biology"
       ]
     },
@@ -632,6 +744,10 @@
         "k-dense",
         "medicine",
         "databases"
+      ],
+      "categories": [
+        "medicine",
+        "databases"
       ]
     },
     {
@@ -648,6 +764,9 @@
         "methodology",
         "science",
         "k-dense",
+        "research"
+      ],
+      "categories": [
         "research"
       ]
     },
@@ -666,6 +785,9 @@
         "science",
         "k-dense",
         "chemistry"
+      ],
+      "categories": [
+        "chemistry"
       ]
     },
     {
@@ -682,6 +804,9 @@
         "cloud",
         "science",
         "k-dense",
+        "infrastructure"
+      ],
+      "categories": [
         "infrastructure"
       ]
     },
@@ -700,6 +825,9 @@
         "science",
         "k-dense",
         "biology"
+      ],
+      "categories": [
+        "biology"
       ]
     },
     {
@@ -716,6 +844,9 @@
         "science-communication",
         "science",
         "k-dense",
+        "writing"
+      ],
+      "categories": [
         "writing"
       ]
     },
@@ -734,6 +865,9 @@
         "science",
         "k-dense",
         "data"
+      ],
+      "categories": [
+        "data"
       ]
     },
     {
@@ -750,6 +884,9 @@
         "visualization",
         "science",
         "k-dense",
+        "data"
+      ],
+      "categories": [
         "data"
       ]
     },
@@ -768,6 +905,9 @@
         "science",
         "k-dense",
         "engineering"
+      ],
+      "categories": [
+        "engineering"
       ]
     },
     {
@@ -784,6 +924,9 @@
         "genomics",
         "science",
         "k-dense",
+        "biology"
+      ],
+      "categories": [
         "biology"
       ]
     },
@@ -802,6 +945,9 @@
         "science",
         "k-dense",
         "biology"
+      ],
+      "categories": [
+        "biology"
       ]
     },
     {
@@ -818,6 +964,9 @@
         "simulation",
         "science",
         "k-dense",
+        "engineering"
+      ],
+      "categories": [
         "engineering"
       ]
     },
@@ -836,6 +985,9 @@
         "science",
         "k-dense",
         "databases"
+      ],
+      "categories": [
+        "databases"
       ]
     },
     {
@@ -852,6 +1004,9 @@
         "science-communication",
         "science",
         "k-dense",
+        "writing"
+      ],
+      "categories": [
         "writing"
       ]
     },
@@ -870,6 +1025,9 @@
         "science",
         "k-dense",
         "biology"
+      ],
+      "categories": [
+        "biology"
       ]
     },
     {
@@ -886,6 +1044,9 @@
         "genomics",
         "science",
         "k-dense",
+        "biology"
+      ],
+      "categories": [
         "biology"
       ]
     },
@@ -906,6 +1067,10 @@
         "k-dense",
         "biology",
         "databases"
+      ],
+      "categories": [
+        "biology",
+        "databases"
       ]
     },
     {
@@ -922,6 +1087,9 @@
         "visualization",
         "science",
         "k-dense",
+        "data"
+      ],
+      "categories": [
         "data"
       ]
     },
@@ -940,6 +1108,9 @@
         "science",
         "k-dense",
         "infrastructure"
+      ],
+      "categories": [
+        "infrastructure"
       ]
     },
     {
@@ -956,6 +1127,9 @@
         "genomics",
         "science",
         "k-dense",
+        "biology"
+      ],
+      "categories": [
         "biology"
       ]
     },
@@ -974,6 +1148,9 @@
         "science",
         "k-dense",
         "lab-automation"
+      ],
+      "categories": [
+        "lab-automation"
       ]
     },
     {
@@ -990,6 +1167,9 @@
         "genomics",
         "science",
         "k-dense",
+        "biology"
+      ],
+      "categories": [
         "biology"
       ]
     },
@@ -1008,6 +1188,9 @@
         "science",
         "k-dense",
         "imaging"
+      ],
+      "categories": [
+        "imaging"
       ]
     },
     {
@@ -1025,6 +1208,9 @@
         "science",
         "k-dense",
         "research"
+      ],
+      "categories": [
+        "research"
       ]
     },
     {
@@ -1041,6 +1227,9 @@
         "methodology",
         "science",
         "k-dense",
+        "research"
+      ],
+      "categories": [
         "research"
       ]
     },
@@ -1061,6 +1250,10 @@
         "k-dense",
         "medicine",
         "databases"
+      ],
+      "categories": [
+        "medicine",
+        "databases"
       ]
     },
     {
@@ -1077,6 +1270,9 @@
         "standards",
         "science",
         "k-dense",
+        "regulatory"
+      ],
+      "categories": [
         "regulatory"
       ]
     },
@@ -1095,6 +1291,9 @@
         "science",
         "k-dense",
         "engineering"
+      ],
+      "categories": [
+        "engineering"
       ]
     },
     {
@@ -1111,6 +1310,9 @@
         "lab",
         "science",
         "k-dense",
+        "lab-automation"
+      ],
+      "categories": [
         "lab-automation"
       ]
     },
@@ -1129,6 +1331,9 @@
         "science",
         "k-dense",
         "biology"
+      ],
+      "categories": [
+        "biology"
       ]
     },
     {
@@ -1145,6 +1350,9 @@
         "cloud",
         "science",
         "k-dense",
+        "infrastructure"
+      ],
+      "categories": [
         "infrastructure"
       ]
     },
@@ -1165,6 +1373,10 @@
         "k-dense",
         "data",
         "writing"
+      ],
+      "categories": [
+        "data",
+        "writing"
       ]
     },
     {
@@ -1182,6 +1394,9 @@
         "science",
         "k-dense",
         "biology"
+      ],
+      "categories": [
+        "biology"
       ]
     },
     {
@@ -1198,6 +1413,9 @@
         "oceanography",
         "science",
         "k-dense",
+        "chemistry"
+      ],
+      "categories": [
         "chemistry"
       ]
     },
@@ -1218,6 +1436,10 @@
         "k-dense",
         "data",
         "writing"
+      ],
+      "categories": [
+        "data",
+        "writing"
       ]
     },
     {
@@ -1234,6 +1456,9 @@
         "science-communication",
         "science",
         "k-dense",
+        "writing"
+      ],
+      "categories": [
         "writing"
       ]
     },
@@ -1254,6 +1479,10 @@
         "k-dense",
         "data",
         "writing"
+      ],
+      "categories": [
+        "data",
+        "writing"
       ]
     },
     {
@@ -1270,6 +1499,9 @@
         "proteomics",
         "science",
         "k-dense",
+        "biology"
+      ],
+      "categories": [
         "biology"
       ]
     },
@@ -1288,6 +1520,9 @@
         "science",
         "k-dense",
         "engineering"
+      ],
+      "categories": [
+        "engineering"
       ]
     },
     {
@@ -1304,6 +1539,9 @@
         "visualization",
         "science",
         "k-dense",
+        "data"
+      ],
+      "categories": [
         "data"
       ]
     },
@@ -1322,6 +1560,9 @@
         "science",
         "k-dense",
         "chemistry"
+      ],
+      "categories": [
+        "chemistry"
       ]
     },
     {
@@ -1338,6 +1579,9 @@
         "materials",
         "science",
         "k-dense",
+        "physics"
+      ],
+      "categories": [
         "physics"
       ]
     },
@@ -1356,6 +1600,9 @@
         "science",
         "k-dense",
         "chemistry"
+      ],
+      "categories": [
+        "chemistry"
       ]
     },
     {
@@ -1372,6 +1619,9 @@
         "data",
         "science",
         "k-dense",
+        "databases"
+      ],
+      "categories": [
         "databases"
       ]
     },
@@ -1390,6 +1640,9 @@
         "science",
         "k-dense",
         "data"
+      ],
+      "categories": [
+        "data"
       ]
     },
     {
@@ -1406,6 +1659,9 @@
         "electrophysiology",
         "science",
         "k-dense",
+        "neuroscience"
+      ],
+      "categories": [
         "neuroscience"
       ]
     },
@@ -1424,6 +1680,9 @@
         "science",
         "k-dense",
         "neuroscience"
+      ],
+      "categories": [
+        "neuroscience"
       ]
     },
     {
@@ -1440,6 +1699,9 @@
         "cloud",
         "science",
         "k-dense",
+        "infrastructure"
+      ],
+      "categories": [
         "infrastructure"
       ]
     },
@@ -1458,6 +1720,9 @@
         "science",
         "k-dense",
         "chemistry"
+      ],
+      "categories": [
+        "chemistry"
       ]
     },
     {
@@ -1475,6 +1740,9 @@
         "science",
         "k-dense",
         "neuroscience"
+      ],
+      "categories": [
+        "neuroscience"
       ]
     },
     {
@@ -1491,6 +1759,9 @@
         "microscopy",
         "science",
         "k-dense",
+        "imaging"
+      ],
+      "categories": [
         "imaging"
       ]
     },
@@ -1511,6 +1782,10 @@
         "k-dense",
         "biology",
         "databases"
+      ],
+      "categories": [
+        "biology",
+        "databases"
       ]
     },
     {
@@ -1527,6 +1802,9 @@
         "data",
         "science",
         "k-dense",
+        "databases"
+      ],
+      "categories": [
         "databases"
       ]
     },
@@ -1545,6 +1823,9 @@
         "science",
         "k-dense",
         "engineering"
+      ],
+      "categories": [
+        "engineering"
       ]
     },
     {
@@ -1561,6 +1842,9 @@
         "lab",
         "science",
         "k-dense",
+        "lab-automation"
+      ],
+      "categories": [
         "lab-automation"
       ]
     },
@@ -1579,6 +1863,9 @@
         "science",
         "k-dense",
         "infrastructure"
+      ],
+      "categories": [
+        "infrastructure"
       ]
     },
     {
@@ -1595,6 +1882,9 @@
         "cloud",
         "science",
         "k-dense",
+        "infrastructure"
+      ],
+      "categories": [
         "infrastructure"
       ]
     },
@@ -1615,6 +1905,10 @@
         "k-dense",
         "writing",
         "research"
+      ],
+      "categories": [
+        "writing",
+        "research"
       ]
     },
     {
@@ -1631,6 +1925,9 @@
         "science-communication",
         "science",
         "k-dense",
+        "writing"
+      ],
+      "categories": [
         "writing"
       ]
     },
@@ -1649,6 +1946,9 @@
         "science",
         "k-dense",
         "writing"
+      ],
+      "categories": [
+        "writing"
       ]
     },
     {
@@ -1665,6 +1965,9 @@
         "science-communication",
         "science",
         "k-dense",
+        "writing"
+      ],
+      "categories": [
         "writing"
       ]
     },
@@ -1683,6 +1986,9 @@
         "science",
         "k-dense",
         "imaging"
+      ],
+      "categories": [
+        "imaging"
       ]
     },
     {
@@ -1699,6 +2005,9 @@
         "data",
         "science",
         "k-dense",
+        "databases"
+      ],
+      "categories": [
         "databases"
       ]
     },
@@ -1717,6 +2026,9 @@
         "science",
         "k-dense",
         "biology"
+      ],
+      "categories": [
+        "biology"
       ]
     },
     {
@@ -1733,6 +2045,9 @@
         "science-communication",
         "science",
         "k-dense",
+        "writing"
+      ],
+      "categories": [
         "writing"
       ]
     },
@@ -1751,6 +2066,9 @@
         "science",
         "k-dense",
         "physics"
+      ],
+      "categories": [
+        "physics"
       ]
     },
     {
@@ -1767,6 +2085,9 @@
         "cloud",
         "science",
         "k-dense",
+        "infrastructure"
+      ],
+      "categories": [
         "infrastructure"
       ]
     },
@@ -1785,6 +2106,9 @@
         "science",
         "k-dense",
         "medicine"
+      ],
+      "categories": [
+        "medicine"
       ]
     },
     {
@@ -1801,6 +2125,9 @@
         "visualization",
         "science",
         "k-dense",
+        "data"
+      ],
+      "categories": [
         "data"
       ]
     },
@@ -1819,6 +2146,9 @@
         "science",
         "k-dense",
         "biology"
+      ],
+      "categories": [
+        "biology"
       ]
     },
     {
@@ -1835,6 +2165,9 @@
         "science-communication",
         "science",
         "k-dense",
+        "writing"
+      ],
+      "categories": [
         "writing"
       ]
     },
@@ -1853,6 +2186,9 @@
         "science",
         "k-dense",
         "biology"
+      ],
+      "categories": [
+        "biology"
       ]
     },
     {
@@ -1869,6 +2205,9 @@
         "lab",
         "science",
         "k-dense",
+        "lab-automation"
+      ],
+      "categories": [
         "lab-automation"
       ]
     },
@@ -1887,6 +2226,9 @@
         "science",
         "k-dense",
         "machine-learning"
+      ],
+      "categories": [
+        "machine-learning"
       ]
     },
     {
@@ -1903,6 +2245,9 @@
         "simulation",
         "science",
         "k-dense",
+        "engineering"
+      ],
+      "categories": [
         "engineering"
       ]
     },
@@ -1921,6 +2266,9 @@
         "science",
         "k-dense",
         "physics"
+      ],
+      "categories": [
+        "physics"
       ]
     },
     {
@@ -1937,6 +2285,9 @@
         "genomics",
         "science",
         "k-dense",
+        "biology"
+      ],
+      "categories": [
         "biology"
       ]
     },
@@ -1955,6 +2306,9 @@
         "science",
         "k-dense",
         "imaging"
+      ],
+      "categories": [
+        "imaging"
       ]
     },
     {
@@ -1971,6 +2325,9 @@
         "clinical",
         "science",
         "k-dense",
+        "medicine"
+      ],
+      "categories": [
         "medicine"
       ]
     },
@@ -1989,6 +2346,9 @@
         "science",
         "k-dense",
         "lab-automation"
+      ],
+      "categories": [
+        "lab-automation"
       ]
     },
     {
@@ -2005,6 +2365,9 @@
         "materials",
         "science",
         "k-dense",
+        "physics"
+      ],
+      "categories": [
         "physics"
       ]
     },
@@ -2023,6 +2386,9 @@
         "science",
         "k-dense",
         "machine-learning"
+      ],
+      "categories": [
+        "machine-learning"
       ]
     },
     {
@@ -2039,6 +2405,9 @@
         "ai",
         "science",
         "k-dense",
+        "machine-learning"
+      ],
+      "categories": [
         "machine-learning"
       ]
     },
@@ -2057,6 +2426,9 @@
         "science",
         "k-dense",
         "biology"
+      ],
+      "categories": [
+        "biology"
       ]
     },
     {
@@ -2073,6 +2445,9 @@
         "genomics",
         "science",
         "k-dense",
+        "biology"
+      ],
+      "categories": [
         "biology"
       ]
     },
@@ -2091,6 +2466,9 @@
         "science",
         "k-dense",
         "chemistry"
+      ],
+      "categories": [
+        "chemistry"
       ]
     },
     {
@@ -2107,6 +2485,9 @@
         "science-communication",
         "science",
         "k-dense",
+        "writing"
+      ],
+      "categories": [
         "writing"
       ]
     },
@@ -2125,6 +2506,9 @@
         "science",
         "k-dense",
         "biology"
+      ],
+      "categories": [
+        "biology"
       ]
     },
     {
@@ -2141,6 +2525,9 @@
         "materials",
         "science",
         "k-dense",
+        "physics"
+      ],
+      "categories": [
         "physics"
       ]
     },
@@ -2159,6 +2546,9 @@
         "science",
         "k-dense",
         "physics"
+      ],
+      "categories": [
+        "physics"
       ]
     },
     {
@@ -2175,6 +2565,9 @@
         "drug-discovery",
         "science",
         "k-dense",
+        "chemistry"
+      ],
+      "categories": [
         "chemistry"
       ]
     },
@@ -2193,6 +2586,9 @@
         "science",
         "k-dense",
         "biology"
+      ],
+      "categories": [
+        "biology"
       ]
     },
     {
@@ -2209,6 +2605,9 @@
         "preclinical",
         "science",
         "k-dense",
+        "medicine"
+      ],
+      "categories": [
         "medicine"
       ]
     },
@@ -2227,6 +2626,9 @@
         "science",
         "k-dense",
         "research"
+      ],
+      "categories": [
+        "research"
       ]
     },
     {
@@ -2243,6 +2645,9 @@
         "genomics",
         "science",
         "k-dense",
+        "biology"
+      ],
+      "categories": [
         "biology"
       ]
     },
@@ -2261,6 +2666,9 @@
         "science",
         "k-dense",
         "research"
+      ],
+      "categories": [
+        "research"
       ]
     },
     {
@@ -2277,6 +2685,9 @@
         "methodology",
         "science",
         "k-dense",
+        "research"
+      ],
+      "categories": [
         "research"
       ]
     },
@@ -2295,6 +2706,9 @@
         "science",
         "k-dense",
         "research"
+      ],
+      "categories": [
+        "research"
       ]
     },
     {
@@ -2311,6 +2725,9 @@
         "visualization",
         "science",
         "k-dense",
+        "data"
+      ],
+      "categories": [
         "data"
       ]
     },
@@ -2329,6 +2746,9 @@
         "science",
         "k-dense",
         "writing"
+      ],
+      "categories": [
+        "writing"
       ]
     },
     {
@@ -2345,6 +2765,9 @@
         "genomics",
         "science",
         "k-dense",
+        "biology"
+      ],
+      "categories": [
         "biology"
       ]
     },
@@ -2363,6 +2786,9 @@
         "science",
         "k-dense",
         "machine-learning"
+      ],
+      "categories": [
+        "machine-learning"
       ]
     },
     {
@@ -2379,6 +2805,9 @@
         "ai",
         "science",
         "k-dense",
+        "machine-learning"
+      ],
+      "categories": [
         "machine-learning"
       ]
     },
@@ -2397,6 +2826,9 @@
         "science",
         "k-dense",
         "biology"
+      ],
+      "categories": [
+        "biology"
       ]
     },
     {
@@ -2413,6 +2845,9 @@
         "genomics",
         "science",
         "k-dense",
+        "biology"
+      ],
+      "categories": [
         "biology"
       ]
     },
@@ -2431,6 +2866,9 @@
         "science",
         "k-dense",
         "data"
+      ],
+      "categories": [
+        "data"
       ]
     },
     {
@@ -2447,6 +2885,9 @@
         "ai",
         "science",
         "k-dense",
+        "machine-learning"
+      ],
+      "categories": [
         "machine-learning"
       ]
     },
@@ -2465,6 +2906,9 @@
         "science",
         "k-dense",
         "engineering"
+      ],
+      "categories": [
+        "engineering"
       ]
     },
     {
@@ -2481,6 +2925,9 @@
         "ai",
         "science",
         "k-dense",
+        "machine-learning"
+      ],
+      "categories": [
         "machine-learning"
       ]
     },
@@ -2499,6 +2946,9 @@
         "science",
         "k-dense",
         "data"
+      ],
+      "categories": [
+        "data"
       ]
     },
     {
@@ -2515,6 +2965,9 @@
         "visualization",
         "science",
         "k-dense",
+        "data"
+      ],
+      "categories": [
         "data"
       ]
     },
@@ -2533,6 +2986,9 @@
         "science",
         "k-dense",
         "machine-learning"
+      ],
+      "categories": [
+        "machine-learning"
       ]
     },
     {
@@ -2549,6 +3005,9 @@
         "simulation",
         "science",
         "k-dense",
+        "engineering"
+      ],
+      "categories": [
         "engineering"
       ]
     },
@@ -2567,6 +3026,9 @@
         "science",
         "k-dense",
         "biology"
+      ],
+      "categories": [
+        "biology"
       ]
     },
     {
@@ -2583,6 +3045,9 @@
         "systems-biology",
         "science",
         "k-dense",
+        "biology"
+      ],
+      "categories": [
         "biology"
       ]
     },
@@ -2601,6 +3066,9 @@
         "science",
         "k-dense",
         "biology"
+      ],
+      "categories": [
+        "biology"
       ]
     },
     {
@@ -2617,6 +3085,9 @@
         "visualization",
         "science",
         "k-dense",
+        "data"
+      ],
+      "categories": [
         "data"
       ]
     },
@@ -2635,6 +3106,9 @@
         "science",
         "k-dense",
         "medicine"
+      ],
+      "categories": [
+        "medicine"
       ]
     },
     {
@@ -2651,6 +3125,9 @@
         "ai",
         "science",
         "k-dense",
+        "machine-learning"
+      ],
+      "categories": [
         "machine-learning"
       ]
     },
@@ -2669,6 +3146,9 @@
         "science",
         "k-dense",
         "research"
+      ],
+      "categories": [
+        "research"
       ]
     },
     {
@@ -2685,6 +3165,9 @@
         "data",
         "science",
         "k-dense",
+        "databases"
+      ],
+      "categories": [
         "databases"
       ]
     },
@@ -2703,6 +3186,9 @@
         "science",
         "k-dense",
         "data"
+      ],
+      "categories": [
+        "data"
       ]
     },
     {
@@ -2720,6 +3206,9 @@
         "science",
         "k-dense",
         "writing"
+      ],
+      "categories": [
+        "writing"
       ]
     },
     {
@@ -2736,6 +3225,9 @@
         "visualization",
         "science",
         "k-dense",
+        "data"
+      ],
+      "categories": [
         "data"
       ]
     }
