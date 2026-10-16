@@ -17,8 +17,19 @@ an account, or a Hub server — this repository is plain static data on GitHub.
   npx skills add HuieL/OpenAR-skill-hub          # the skills hosted here
   ```
 
+- **As a Claude Code plugin marketplace:**
+
+  ```
+  /plugin marketplace add HuieL/OpenAR-skill-hub
+  /plugin install openar-skill-hub@openar-skill-hub
+  ```
+
+  (or in one step on Claude Code 2.1.275+:
+  `/plugin install openar-skill-hub --marketplace HuieL/OpenAR-skill-hub`)
+
   Every entry's exact pinned command (`ora` and `npx skills`) is in
-  [`INSTALL.md`](INSTALL.md).
+  [`INSTALL.md`](INSTALL.md). These two routes install straight into your
+  agents; in OpenAR every install is staged for your review and approval.
 
 ## Add your skill (three steps)
 

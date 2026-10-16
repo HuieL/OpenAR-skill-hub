@@ -13,6 +13,13 @@ All skills this repository hosts at once:
 npx skills add HuieL/OpenAR-skill-hub
 ```
 
+As a Claude Code plugin marketplace:
+
+```
+/plugin marketplace add HuieL/OpenAR-skill-hub
+/plugin install openar-skill-hub@openar-skill-hub
+```
+
 | Entry | Version | License | Review | OpenAR | npx skills |
 | --- | --- | --- | --- | --- | --- |
 | `hub.hallmark` | 1.1.0 | MIT | unreviewed | `ora hub install hub.hallmark` | `npx skills add https://github.com/nutlope/hallmark/tree/13ac0ec7e148655948100b6396439e481361d690/skills/hallmark` |

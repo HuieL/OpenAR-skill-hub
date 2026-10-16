@@ -111,6 +111,13 @@ def render_install(rows: list[dict]) -> str:
         f"npx skills add {HUB_REPO}",
         "```",
         "",
+        "As a Claude Code plugin marketplace:",
+        "",
+        "```",
+        f"/plugin marketplace add {HUB_REPO}",
+        "/plugin install openar-skill-hub@openar-skill-hub",
+        "```",
+        "",
         "| Entry | Version | License | Review | OpenAR | npx skills |",
         "| --- | --- | --- | --- | --- | --- |",
     ]
