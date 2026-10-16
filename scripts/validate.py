@@ -258,6 +258,24 @@ def check_not_builtin(entry_id: str, entry_dir: pathlib.Path) -> None:
             fail(entry_id, f"`{name}` is a built-in OpenAR skill name; built-in skills are not listed on this hub")
 
 
+def check_hosted_names_unique(by_id: dict[str, pathlib.Path]) -> None:
+    """`npx skills add` installs hosted skills by their SKILL.md name and
+    drops duplicates, so two hosted skills must not share one."""
+    seen: dict[str, str] = {}
+    for entry_id, entry_dir in sorted(by_id.items()):
+        hosted = entry_dir / "skill" / "SKILL.md"
+        if not hosted.is_file():
+            continue
+        found = SKILL_NAME_LINE.search(hosted.read_text(errors="replace").split("\n---", 1)[0])
+        if not found:
+            fail(entry_id, "hosted SKILL.md has no name")
+            continue
+        name = found.group(1)
+        if name in seen:
+            fail(entry_id, f"hosted skill name `{name}` is already used by {seen[name]}")
+        seen[name] = entry_id
+
+
 def validate_entries() -> dict[str, pathlib.Path]:
     by_id: dict[str, pathlib.Path] = {}
     if not ENTRIES.is_dir():
@@ -436,6 +454,7 @@ def validate_community(skill_ids):
 
 def main() -> None:
     by_id = validate_entries()
+    check_hosted_names_unique(by_id)
     validate_index()
     validate_community(set(by_id))
     if errors:

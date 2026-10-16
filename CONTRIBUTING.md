@@ -6,23 +6,39 @@ account, and no install script to run here.
 
 ## Adding an entry
 
-1. Host your skill in your own repository (a `SKILL.md` plus optional
-   `scripts/`, `references/`, `assets/`). This hub does not copy third-party
-   repositories.
-2. Create `entries/skills/<id>/entry.json` following
-   `schemas/skill-entry.schema.json`. The required facts:
+1. Host your skill in your own public GitHub repository (a `SKILL.md` plus
+   optional `scripts/`, `references/`, `assets/`). This hub does not copy
+   third-party repositories. `ora hub init <name>` or `npx skills init <name>`
+   writes a template.
+2. Generate the entry:
+
+   ```bash
+   python3 scripts/add-entry.py <source> --id <you>.<skill> --license <SPDX> \
+     --author "<original author>" [--author-github <login>] [--submitter <you>] \
+     [--skill <name>] [--category <c>]
+   ```
+
+   `<source>` is the GitHub form `npx skills add` takes: `owner/repo`,
+   `owner/repo/path`, `owner/repo@skill`, or `…/tree/<ref>/<path>`. The script
+   pins the exact 40-hex commit, finds the `SKILL.md`, hashes every file,
+   copies the repository's LICENSE into the entry directory, writes
+   `entries/skills/<id>/entry.json`, rebuilds `skills.json`,
+   `.claude-plugin/marketplace.json` and `INSTALL.md`, and runs the validator.
+   Check the generated `name`, `summary` and `categories`, and state the
+   license the content actually carries. The entry facts:
    - `id` — namespaced identity (e.g. `yourname.my-skill`), equal to the
      directory name, globally unique, never reused;
    - `source` — `owner/name`, the skill's subdirectory, and an exact 40-hex
      commit SHA. `main`/`latest`/mutable tags are never accepted as a pin;
    - `files` — the complete manifest of the skill's files at that revision,
      each with sha256 and size (cap: 2 MiB per entry);
-   - `license` — SPDX id; the entry must state the license its content
-     actually carries.
-3. Run `python3 scripts/build-index.py` and commit the regenerated
-   `skills.json` together with your entry.
-4. Open a PR. CI runs `scripts/validate.py` (read-only, no secrets, no
-   install step; it never executes anything from your entry).
+   - `license` — SPDX id.
+3. Open a PR. CI runs `scripts/validate.py` and `scripts/build-index.py --check`
+   (read-only, no secrets, no install step; it never executes anything from
+   your entry).
+
+No git? Open the **Add a skill** issue with the link; a maintainer runs step 2.
+Built-in OpenAR skills (`ora-*`, `diagram-design`) are never listed here.
 
 Maintainer-owned small skills may host their content directly under
 `entries/skills/<id>/skill/`; every hosted file must then be listed in `files`

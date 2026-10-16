@@ -1,0 +1,41 @@
+name: Add a skill
+description: Ask for a skill on GitHub to be listed on the OpenAR Skill Hub. A maintainer generates the entry with scripts/add-entry.py and opens the pull request.
+title: "Add skill: "
+labels: ["add-skill"]
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Where the skill is
+      description: "What `npx skills add` takes: owner/repo, owner/repo@skill, or https://github.com/owner/repo/tree/<ref>/<path>. The folder must contain a SKILL.md."
+      placeholder: you/your-skills@my-skill
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: License (SPDX)
+      description: The license the skill's content actually carries, e.g. MIT, Apache-2.0, CC-BY-4.0.
+    validations:
+      required: true
+  - type: input
+    id: author
+    attributes:
+      label: Original author
+      description: Name, and GitHub login if any. Submitting a skill does not make you its author.
+    validations:
+      required: true
+  - type: input
+    id: category
+    attributes:
+      label: Category (optional)
+      placeholder: writing, design, data, research …
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: The skill contains no secrets, tokens or private data.
+          required: true
+        - label: It is not a built-in OpenAR skill (ora-*, diagram-design).
+          required: true

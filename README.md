@@ -6,14 +6,49 @@ OpenAR reads this repository's `skills.json` at a **pinned commit SHA** and veri
 each catalog entry's sha256 before use. Browsing the catalog never requires a model,
 an account, or a Hub server — this repository is plain static data on GitHub.
 
+## Install a skill
+
+- **In OpenAR:** open the Skill Hub page and click Install on an entry, or run
+  `ora hub install <id>`. Nothing is active until you approve the exact content.
+- **With the [vercel-labs/skills](https://github.com/vercel-labs/skills) CLI**
+  (any agent it supports: Claude Code, Codex, Cursor, …):
+
+  ```bash
+  npx skills add HuieL/OpenAR-skill-hub          # the skills hosted here
+  ```
+
+  Every entry's exact pinned command (`ora` and `npx skills`) is in
+  [`INSTALL.md`](INSTALL.md).
+
+## Add your skill (three steps)
+
+1. Put your skill (a folder with a `SKILL.md`) in a public GitHub repository.
+   `ora hub init my-skill` or `npx skills init my-skill` writes a template.
+2. Generate the entry in a fork of this repository:
+
+   ```bash
+   python3 scripts/add-entry.py <you>/<repo>@my-skill \
+     --id <you>.my-skill --license MIT --author "Your Name" --author-github <you>
+   ```
+
+   It pins the exact commit, hashes every file, writes
+   `entries/skills/<id>/entry.json`, rebuilds the generated files and validates.
+3. Commit and open a pull request. Not using git? Open the
+   [**Add a skill**](../../issues/new?template=add-skill.yml) issue with the link
+   and a maintainer runs step 2 for you.
+
 ## Layout
 
 - `entries/skills/<id>/entry.json` — one directory record per skill (id, kind, source
   repo + exact revision, license, file manifest with sha256, review status, compat)
 - `skills.json` — lightweight index generated from entries by `scripts/build-index`
   (never hand-edited)
+- `.claude-plugin/marketplace.json` — generated; lists the hosted skills so
+  `npx skills add HuieL/OpenAR-skill-hub` (and Claude Code's plugin marketplace)
+  find them
+- `INSTALL.md` — generated; each entry's pinned `ora` and `npx skills` command
 - `schemas/` — the entry schema contract read by the OpenAR registry client
-- `scripts/` — index generation and validation
+- `scripts/` — `add-entry.py` (add a skill), index generation, validation
 - `.github/workflows/` — read-only validation CI
 
 Entries land through pull requests validated by CI and reviewed before they reach
