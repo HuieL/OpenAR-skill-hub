@@ -4,10 +4,6 @@
   "skillHub": "486e4f43b4ff411c0d6ae11f9e609370fc764dd2",
   "new": [
     {
-      "id": "skill:hub.scientific-figure-making",
-      "firstRecorded": "2026-10-14T11:40:21+08:00"
-    },
-    {
       "id": "skill:hub.research-design-system",
       "firstRecorded": "2026-10-13T20:52:10+08:00"
     },
@@ -41,10 +37,6 @@
     }
   ],
   "updated": [
-    {
-      "id": "skill:hub.scientific-figure-making",
-      "lastRecorded": "2026-10-14T11:40:21+08:00"
-    },
     {
       "id": "skill:hub.officecli-academic-paper",
       "lastRecorded": "2026-10-14T10:55:28+08:00"
@@ -108,15 +100,6 @@
         "pushedAt": "2026-08-06T16:19:18Z",
         "entries": [
           "skill:hub.hallmark"
-        ]
-      },
-      {
-        "repo": "ChenLiu-1996/figures4papers",
-        "stars": 8525,
-        "forks": 593,
-        "pushedAt": "2026-10-12T16:02:10Z",
-        "entries": [
-          "skill:hub.scientific-figure-making"
         ]
       },
       {

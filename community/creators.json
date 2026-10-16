@@ -1,20 +1,8 @@
 {
   "schemaVersion": 1,
-  "skillHub": "abe18ea4766419b8825245160a0af63571ecf482",
+  "skillHub": "b9fe9bf742223c48eed39de44b5abdb1e407b1ca",
   "extensionHub": null,
   "creators": [
-    {
-      "github": "ChenLiu-1996",
-      "name": "Chen Liu",
-      "credits": [
-        {
-          "entry": "skill:hub.scientific-figure-making",
-          "roles": [
-            "author"
-          ]
-        }
-      ]
-    },
     {
       "github": "HuieL",
       "name": null,
@@ -49,12 +37,6 @@
           "entry": "skill:hub.research-design-system",
           "roles": [
             "adapter",
-            "submitter"
-          ]
-        },
-        {
-          "entry": "skill:hub.scientific-figure-making",
-          "roles": [
             "submitter"
           ]
         },
