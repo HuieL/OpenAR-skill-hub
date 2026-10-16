@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.networkx",
   "kind": "skill",
-  "name": "Networkx",
+  "name": "NetworkX",
   "summary": "Creates, analyzes, and visualizes complex networks and graphs in Python with NetworkX. Use when working with network/graph data structures, computing graph algorithms (shortest paths, centrality, clustering), detecting communities, generating synthetic networks (random, scale-free, small-world), reading/writing graph file formats, or drawing network topologies. Common applications include social, biological, transportation, and citation networks.",
   "authors": [
     {

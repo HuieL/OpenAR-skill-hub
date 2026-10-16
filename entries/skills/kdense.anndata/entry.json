@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.anndata",
   "kind": "skill",
-  "name": "Anndata",
+  "name": "AnnData",
   "summary": "Handles annotated matrices in single-cell analysis, .h5ad and Zarr files, and integration with the scverse ecosystem. This is the data format skill—for analysis workflows use scanpy; for probabilistic models use scvi-tools; for population-scale queries use cellxgene-census.",
   "authors": [
     {

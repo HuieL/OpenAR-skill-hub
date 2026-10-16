@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.cobrapy",
   "kind": "skill",
-  "name": "Cobrapy",
+  "name": "COBRApy",
   "summary": "Performs constraint-based metabolic modeling with COBRApy, including FBA, pFBA, FVA, gene knockouts, flux sampling, growth media, production envelopes, gap filling, and SBML model validation for systems biology and metabolic engineering.",
   "authors": [
     {

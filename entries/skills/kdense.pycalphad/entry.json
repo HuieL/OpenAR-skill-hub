@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.pycalphad",
   "kind": "skill",
-  "name": "Pycalphad",
+  "name": "pycalphad",
   "summary": "Computes finite-temperature CALPHAD equilibria, phase fractions, and phase compositions from thermodynamic TDB databases using pycalphad. Use for alloy phase stability, equilibrium temperature sweeps, tie lines, lever-rule checks, or reproducible phase-fraction calculations with explicit components and mole-fraction conditions.",
   "authors": [
     {

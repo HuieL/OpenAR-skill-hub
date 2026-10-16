@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.diffdock",
   "kind": "skill",
-  "name": "Diffdock",
+  "name": "DiffDock",
   "summary": "Predicts protein-small-molecule binding poses with DiffDock and DiffDock-L from PDB or sequence plus SMILES/SDF/MOL2. Covers batch docking, pose triage, confidence interpretation, and validation. Use for molecular docking and virtual-screening pose generation, not binding-affinity prediction.",
   "authors": [
     {

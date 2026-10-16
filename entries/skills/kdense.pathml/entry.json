@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.pathml",
   "kind": "skill",
-  "name": "Pathml",
+  "name": "PathML",
   "summary": "Supports local computational pathology research with PathML: slide loading and tiling, preprocessing and QC, h5path storage, multiplex quantification, spatial graphs, and bounded model inference. Use for whole-slide H&E, CODEX, Vectra, Mesmer, HoVer-Net, and HACTNet workflows.",
   "authors": [
     {

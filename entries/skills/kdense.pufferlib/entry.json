@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.pufferlib",
   "kind": "skill",
-  "name": "Pufferlib",
+  "name": "PufferLib",
   "summary": "Version-aware guidance for PufferLib reinforcement-learning environments, vectorization, policies, PuffeRL training, evaluation, and safe checkpoint review. Covers the native 5.0 build and environment API, published 3.0.0 Gymnasium/PettingZoo adaptation, and a pinned historical 4.0 profile.",
   "authors": [
     {

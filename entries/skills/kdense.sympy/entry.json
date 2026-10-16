@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.sympy",
   "kind": "skill",
-  "name": "Sympy",
+  "name": "SymPy",
   "summary": "Performs exact symbolic mathematics with SymPy for algebra, calculus, equation solving, symbolic linear algebra, physics, and lambdify or LaTeX code generation. Use when a task needs symbolic results, explicit assumptions, or exact arithmetic; use NumPy or SciPy for purely numerical workloads.",
   "authors": [
     {

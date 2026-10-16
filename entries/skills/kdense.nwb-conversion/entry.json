@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.nwb-conversion",
   "kind": "skill",
-  "name": "Nwb Conversion",
+  "name": "NWB Conversion",
   "summary": "Converts neuroscience acquisition data to Neurodata Without Borders files with NeuroConv and PyNWB, preserves metadata and timebases, checks evidence-based clock alignment, and produces schema validation, NWB Inspector findings and round-trip checks. Use for NWB conversion and synchronization of planar single-channel two-photon TIFF imaging plus timestamped behavioral position CSV; this skill does not perform spike sorting or claim tested support for arbitrary acquisition formats.",
   "authors": [
     {

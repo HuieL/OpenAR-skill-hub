@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.tiledbvcf",
   "kind": "skill",
-  "name": "Tiledbvcf",
+  "name": "TileDB-VCF",
   "summary": "Stores and retrieves genomic variant calls with TileDB-VCF. Use for indexed single-sample VCF/BCF ingestion, incremental cohorts, region and sample queries, streaming results, allele statistics, QC, and VCF/BCF export locally or through TileDB Cloud.",
   "authors": [
     {

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.pytdc",
   "kind": "skill",
-  "name": "Pytdc",
+  "name": "PyTDC",
   "summary": "Provides Therapeutics Data Commons workflows through PyTDC for registry discovery, dataset access, task-aware splits, evaluator metrics, benchmark groups, and bounded molecular-oracle scoring. Use when working with TDC therapeutic ML datasets or benchmarks.",
   "authors": [
     {

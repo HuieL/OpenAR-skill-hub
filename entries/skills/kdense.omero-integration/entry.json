@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.omero-integration",
   "kind": "skill",
-  "name": "Omero Integration",
+  "name": "OMERO Integration",
   "summary": "Inspects and automates microscopy data workflows against OMERO.server with omero-py, BlitzGateway, OMERO CLI, tables, annotations, ROIs, rendering, and documented OMERO.web APIs. Use this skill for scoped OMERO inventory, metadata export, import/export planning, or reviewed write workflows.",
   "authors": [
     {

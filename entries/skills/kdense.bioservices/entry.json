@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.bioservices",
   "kind": "skill",
-  "name": "Bioservices",
+  "name": "BioServices",
   "summary": "Provides a Python interface to bioinformatics services including UniProt, KEGG, ChEMBL, Reactome, QuickGO, and UniChem. Used for cross-database protein annotation, pathway retrieval, chemical identifier mapping, and integrated biological data workflows with BioServices.",
   "authors": [
     {

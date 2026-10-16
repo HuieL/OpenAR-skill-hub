@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.flowkit",
   "kind": "skill",
-  "name": "Flowkit",
+  "name": "FlowKit",
   "summary": "Analyzes flow cytometry data with FlowKit, including spillover compensation, logicle and biexponential transforms, hierarchical gating, GatingML strategies, and supported FlowJo 10 workspaces. Use for reproducible gate counts, population percentages, gated fluorescence summaries, or reproducing a FlowJo analysis in Python. For FCS metadata inspection or file-format repair alone, use FlowIO.",
   "authors": [
     {

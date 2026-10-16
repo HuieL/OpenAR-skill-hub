@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.dnanexus-integration",
   "kind": "skill",
-  "name": "Dnanexus Integration",
+  "name": "DNAnexus Integration",
   "summary": "Builds and operates reproducible genomics workloads on DNAnexus with the dx CLI, dxpy, apps/applets, native workflows, dxCompiler, and Nextflow. Supports DNAnexus data transfers, dxapp.json development, execution monitoring, workflow import, and project automation.",
   "authors": [
     {

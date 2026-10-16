@@ -5,7 +5,8 @@
 
 The collection file names the repository, the 40-hex commit every entry is
 pinned to, the id prefix, the license and author, the skills to leave out
-(each with its reason), and the categories of each skill. Every skill folder
+(each with its reason), the categories of each skill and optional display
+names (`names`, else the folder name title-cased). Every skill folder
 under `skillsPath` becomes entries/skills/<prefix>.<folder>/ with an
 entry.json (manifest with sha256 pins, made the same way as add-entry.py)
 and a listing.json (tags; the icon is picked by scripts/listing.py). The
@@ -93,7 +94,7 @@ def main() -> None:
                 "schemaVersion": 1,
                 "id": entry_id,
                 "kind": "skill",
-                "name": fm["name"].replace("-", " ").title()[:64],
+                "name": cfg.get("names", {}).get(name, fm["name"].replace("-", " ").title())[:64],
                 "summary": " ".join(fm["description"].split())[:1000],
                 "authors": [{"name": author["name"], **({"github": author["github"]} if author.get("github") else {})}],
                 **({"registrySubmitter": cfg["submitter"]} if cfg.get("submitter") else {}),

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.pennylane",
   "kind": "skill",
-  "name": "Pennylane",
+  "name": "PennyLane",
   "summary": "Builds and differentiates PennyLane quantum circuits, hybrid PyTorch or JAX models, molecular VQE and QAOA workflows. Use for variational quantum algorithms, quantum machine learning, simulator validation, and moving validated circuits to provider plugins. For hardware-specific compilation use qiskit or cirq; for open-system dynamics use qutip.",
   "authors": [
     {

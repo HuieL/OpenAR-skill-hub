@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.pylabrobot",
   "kind": "skill",
-  "name": "Pylabrobot",
+  "name": "PyLabRobot",
   "summary": "Develops and reviews PyLabRobot lab-automation resources, liquid-handling plans, offline simulations, and supported-device integrations. Supports PyLabRobot protocols and API questions; keep physical execution behind an explicit operator safety gate.",
   "authors": [
     {

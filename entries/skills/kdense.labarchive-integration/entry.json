@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.labarchive-integration",
   "kind": "skill",
-  "name": "Labarchive Integration",
+  "name": "LabArchives Integration",
   "summary": "Integrates with the official LabArchives ELN REST-like API and Inventory API v1. Supports regional endpoint selection, signed-request construction, user authorization and UID flows, local LA container validation, and verified LabArchives integration workflows.",
   "authors": [
     {

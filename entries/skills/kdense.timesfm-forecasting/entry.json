@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.timesfm-forecasting",
   "kind": "skill",
-  "name": "Timesfm Forecasting",
+  "name": "TimesFM Forecasting",
   "summary": "Performs zero-shot time-series forecasting with Google's TimesFM, including regular-grid CSV preparation, quantile forecasts, XReg covariates, and held-out evaluation. Uses the Apache-licensed TimesFM 2.5 checkpoint by default and documents the distinct TimesFM 3.0 multivariate API and weight-license requirements.",
   "authors": [
     {

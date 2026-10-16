@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.pyhealth",
   "kind": "skill",
-  "name": "Pyhealth",
+  "name": "PyHealth",
   "summary": "Builds and validates PyHealth clinical machine-learning pipelines for EHR, signals, imaging, and medical codes. Use for PyHealth dataset loading, MIMIC-III/IV, eICU or OMOP prediction tasks, patient-level evaluation, mortality/readmission/length-of-stay modeling, medication recommendation, sleep staging, Trainer checkpoints, and ICD/ATC/NDC/RxNorm mapping.",
   "authors": [
     {

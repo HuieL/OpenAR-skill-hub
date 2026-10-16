@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.protocolsio-integration",
   "kind": "skill",
-  "name": "Protocolsio Integration",
+  "name": "protocols.io Integration",
   "summary": "Reads, validates, and safely exports protocols.io data with current official REST/MCP contracts, or creates non-executing mutation plans. The bundled client makes bounded official-host GET requests only with explicit --execute. Use only for tasks explicitly targeting protocols.io or an exact protocols.io protocol version.",
   "authors": [
     {

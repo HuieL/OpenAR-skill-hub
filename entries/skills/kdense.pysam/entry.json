@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.pysam",
   "kind": "skill",
-  "name": "Pysam",
+  "name": "pysam",
   "summary": "Provides Python/HTSlib workflows for genomic files. Used when reading, querying, filtering, or writing SAM/BAM/CRAM, VCF/BCF, FASTA/FASTQ, or tabix data with pysam, including pileup, coverage, indexing, and CRAM references.",
   "authors": [
     {

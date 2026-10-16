@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.geopandas",
   "kind": "skill",
-  "name": "Geopandas",
+  "name": "GeoPandas",
   "summary": "Guidance and local audit tools for Python workflows that directly use GeoPandas GeoSeries, GeoDataFrame, spatial operations, or vector-data I/O.",
   "authors": [
     {

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.pptx-posters",
   "kind": "skill",
-  "name": "Pptx Posters",
+  "name": "PPTX Posters",
   "summary": "Creates and audits editable scientific posters in macro-free PowerPoint (.pptx) from author-approved local content and assets. Used when the requested deliverable is a PowerPoint research/conference poster and exact physical, printer, accessibility, provenance, and package-security checks are required.",
   "authors": [
     {

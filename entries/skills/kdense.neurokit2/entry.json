@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.neurokit2",
   "kind": "skill",
-  "name": "Neurokit2",
+  "name": "NeuroKit2",
   "summary": "Builds and audits reproducible NeuroKit2 research workflows for physiological time-series preprocessing, event/interval analysis, multimodal alignment, variability, and complexity. Use when code imports neurokit2 or needs its current APIs, schemas, and method-aware validation—not for diagnosis or device validation.",
   "authors": [
     {

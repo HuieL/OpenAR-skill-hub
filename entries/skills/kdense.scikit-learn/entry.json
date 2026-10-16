@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.scikit-learn",
   "kind": "skill",
-  "name": "Scikit Learn",
+  "name": "scikit-learn",
   "summary": "Supports machine learning in Python with scikit-learn. Applies when working with supervised learning (classification, regression), unsupervised learning (clustering, dimensionality reduction), model evaluation, hyperparameter tuning, preprocessing, or building ML pipelines. Provides comprehensive reference documentation for algorithms, preprocessing techniques, pipelines, and best practices.",
   "authors": [
     {

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.liteparse",
   "kind": "skill",
-  "name": "Liteparse",
+  "name": "LiteParse",
   "summary": "Local document and PDF parsing that returns spatial text with bounding boxes. Use for extracting text from PDFs, DOCX, Office files, and images; running OCR on scans; producing layout-preserved JSON for RAG; batch-ingesting folders of papers; or rendering pages to PNG for multimodal agents. Distinguishing capabilities are spatial text boxes, Markdown, page raster output, and local parsing with optional custom HTTP OCR.",
   "authors": [
     {

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.bgpt-paper-search",
   "kind": "skill",
-  "name": "Bgpt Paper Search",
+  "name": "BGPT Paper Search",
   "summary": "Searches BGPT scientific papers by topic or DOI and retrieves claim-level evidence extracted from full text, including experiments, reported statistics, scope, limitations, and provenance. Use for literature reviews, evidence synthesis, and finding experimental details beyond abstracts.",
   "authors": [
     {

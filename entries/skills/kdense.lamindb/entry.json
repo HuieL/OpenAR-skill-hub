@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.lamindb",
   "kind": "skill",
-  "name": "Lamindb",
+  "name": "LaminDB",
   "summary": "Manages biological datasets and models with LaminDB, including artifact registration, lineage tracking, schema validation, Bionty ontology annotation, query/search, collections, branches, storage, and workflow integrations. Use for reproducible biological data curation or a LaminDB lakehouse.",
   "authors": [
     {

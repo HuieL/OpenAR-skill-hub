@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.shap",
   "kind": "skill",
-  "name": "Shap",
+  "name": "SHAP",
   "summary": "Explain and audit machine-learning predictions with SHAP. Use for selecting SHAP explainers and maskers, computing and validating feature attributions, handling multi-output explanations, and producing local or global SHAP visualizations.",
   "authors": [
     {

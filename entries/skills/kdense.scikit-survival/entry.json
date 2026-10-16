@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.scikit-survival",
   "kind": "skill",
-  "name": "Scikit Survival",
+  "name": "scikit-survival",
   "summary": "Builds, evaluates, and audits right-censored or competing-risk survival workflows with scikit-survival, including leakage-safe preprocessing, model selection, probability prediction, and censoring-aware metrics.",
   "authors": [
     {

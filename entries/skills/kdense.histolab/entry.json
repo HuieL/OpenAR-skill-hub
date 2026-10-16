@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.histolab",
   "kind": "skill",
-  "name": "Histolab",
+  "name": "histolab",
   "summary": "Extracts and preprocesses whole-slide histology image tiles with Histolab. Use for WSI inspection, tissue masks, random/grid/score-based tile extraction, H&E stain normalization, and tile dataset preparation. For multiplexed imaging or deep learning inference pipelines, use pathml.",
   "authors": [
     {

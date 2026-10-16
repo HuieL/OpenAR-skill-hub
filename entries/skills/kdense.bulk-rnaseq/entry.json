@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.bulk-rnaseq",
   "kind": "skill",
-  "name": "Bulk Rnaseq",
+  "name": "Bulk RNA-seq",
   "summary": "Prepares bulk RNA-seq FASTQ, Salmon, STAR or featureCounts output for gene-level differential expression. Covers nf-core/rnaseq and standalone quantification, biological replication, strandedness, reference provenance, validated count assembly and a PyDESeq2 handoff. Use for FASTQ-to-counts analysis, nf-core/rnaseq configuration, STAR/Salmon quantification, or building a counts matrix for DESeq2. For single-cell data use scanpy; for statistical fitting alone use pydeseq2.",
   "authors": [
     {

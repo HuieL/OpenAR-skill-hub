@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.scvi-tools",
   "kind": "skill",
-  "name": "Scvi Tools",
+  "name": "scvi-tools",
   "summary": "Fits probabilistic models for single-cell omics, including scVI batch integration, scANVI annotation, totalVI CITE-seq, MultiVI RNA/ATAC integration, and posterior differential expression. Use for generative modeling, reference mapping, multimodal analysis, or model-based uncertainty; use scanpy for standard preprocessing and exploratory analysis.",
   "authors": [
     {

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.etetoolkit",
   "kind": "skill",
-  "name": "Etetoolkit",
+  "name": "ETE Toolkit",
   "summary": "Analyzes, manipulates, compares, annotates, and visualizes phylogenetic or other hierarchical trees with ETE 4. Supports Newick/Nexus tree I/O, topology edits and pattern matching, Robinson-Foulds comparisons, gene-tree evolutionary events and reconciliation, NCBI/GTDB taxonomy, SmartView exploration, and publication rendering. Applies to existing trees after alignment and phylogenetic inference, rather than inferring trees from raw sequences.",
   "authors": [
     {

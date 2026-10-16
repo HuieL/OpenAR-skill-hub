@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.polars-bio",
   "kind": "skill",
-  "name": "Polars Bio",
+  "name": "Polars-Bio",
   "summary": "Performs genomic interval overlap, nearest, merge, coverage, complement and subtraction on Polars DataFrames, and reads or writes BED, VCF, BCF, BAM, CRAM, GFF, GTF, FASTA and FASTQ data. Use for coordinate-aware genomic joins, read-depth analysis, lazy bioinformatics I/O, SQL queries or migration from bioframe.",
   "authors": [
     {

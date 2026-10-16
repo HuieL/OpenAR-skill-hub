@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.zarr-python",
   "kind": "skill",
-  "name": "Zarr Python",
+  "name": "Zarr-Python",
   "summary": "Stores and queries chunked N-D scientific arrays with Zarr-Python 3, including codecs, sharding, S3/GCS storage, and NumPy/Dask/Xarray integration. Use for array layout, bounded I/O, format migration, or scientific metadata preservation.",
   "authors": [
     {

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kdense.pymc",
   "kind": "skill",
-  "name": "Pymc",
+  "name": "PyMC",
   "summary": "Builds and checks Bayesian models with PyMC, including hierarchical models, NUTS MCMC, variational inference, mutable-data predictions, posterior predictive checks, diagnostics, and PSIS-LOO model comparison. Use for probabilistic modeling and uncertainty inference in PyMC.",
   "authors": [
     {
