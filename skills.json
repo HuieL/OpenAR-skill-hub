@@ -2,6 +2,30 @@
   "schemaVersion": 1,
   "entries": [
     {
+      "id": "hub.craft-suite",
+      "name": "Craft Suite",
+      "summary": "Work with OpenAR Craft Suite: edit a project asset with an installed component (photo, vector, deck, light, sound), request an agent proposal, and return the editable source and previews to the same project. It covers keeping original, source and preview revisions apart, resuming an interrupted save without repeating it, and reporting only what was observed. The skill grants nothing: human-only Craft actions stay human-only. Original OpenAR content, needs Craft Suite installed.",
+      "delivery": "hub",
+      "version": "1.0.0",
+      "revision": "d3a7460fe0595e1c24ad53481508b157469641c2",
+      "entryPath": "entries/skills/hub.craft-suite/entry.json",
+      "entrySha256": "17fbd1356f926fc0bdcf0594646b045af97b53ba08c6f2bf9d1a9192463c3949",
+      "icon": "image",
+      "tags": [
+        "craft-suite",
+        "editing",
+        "photo",
+        "vector",
+        "audio",
+        "design",
+        "imaging"
+      ],
+      "categories": [
+        "design",
+        "imaging"
+      ]
+    },
+    {
       "id": "hub.hallmark",
       "name": "Hallmark",
       "summary": "Anti-AI-slop design skill for greenfield pages: a default design flow plus three in-skill verbs the model performs when the user asks - audit (read the target, score it against the anti-pattern list, report only, never edit), redesign (re-visualize inside the existing implementation boundaries, preserving routes, copy intent and information architecture), and study (extract the design DNA from a screenshot or a URL the user supplies). These verbs are skill behaviors, not installed CLI commands. Inputs: a design brief, an existing page or component, or a screenshot/URL to study; output is HTML/CSS artifacts with locked design tokens, verified at 320/375/414/768 px. Carried verbatim from nutlope/hallmark at the pinned commit; only the skill directory (SKILL.md plus references) is carried, not the site/docs/demo.",

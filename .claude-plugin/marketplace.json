@@ -12,6 +12,7 @@
       "source": "./",
       "description": "Every skill hosted in this repository.",
       "skills": [
+        "./entries/skills/hub.craft-suite/skill",
         "./entries/skills/hub.officecli-academic-paper/skill",
         "./entries/skills/hub.officecli-data-dashboard/skill",
         "./entries/skills/hub.research-design-system/skill",

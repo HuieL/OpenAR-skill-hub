@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "hub.craft-suite",
+  "kind": "skill",
+  "name": "Craft Suite",
+  "summary": "Work with OpenAR Craft Suite: edit a project asset with an installed component (photo, vector, deck, light, sound), request an agent proposal, and return the editable source and previews to the same project. It covers keeping original, source and preview revisions apart, resuming an interrupted save without repeating it, and reporting only what was observed. The skill grants nothing: human-only Craft actions stay human-only. Original OpenAR content, needs Craft Suite installed.",
+  "summaryI18n": {
+    "zh-CN": "配合 OpenAR Craft Suite 工作：用已安装的组件（照片、矢量、幻灯片、光照、声音）编辑项目素材，请求 agent 提案，并把可编辑源文件与预览回传到同一项目。内容包括区分原件、源文件与预览的版本，中断的保存如何续接而不重复写入，以及只报告实际观察到的结果。本技能不授予任何权限：仅人工的 Craft 操作仍只能由人执行。OpenAR 原创内容，需要已安装 Craft Suite。"
+  },
+  "authors": [
+    {
+      "name": "OpenAR",
+      "github": "HuieL"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "design",
+    "imaging"
+  ],
+  "source": {
+    "repo": "HuieL/OpenAR-skill-hub",
+    "path": "entries/skills/hub.craft-suite/skill",
+    "revision": "d3a7460fe0595e1c24ad53481508b157469641c2"
+  },
+  "version": "1.0.0",
+  "license": "MIT",
+  "licenseFile": "skill/LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "e33f88e2a47b94d1504159e5131ab3bf879be5b266c12174ce79e91fef61a73b",
+      "bytes": 1082,
+      "executable": false
+    },
+    {
+      "path": "PROVENANCE.md",
+      "sha256": "2dcae76971089314e7aebbfe96db6c4d4bf440f99749682a5648fee7467748a4",
+      "bytes": 496,
+      "executable": false
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "a75736700a8996759c6a55186fd71729621fe5938e6945fdc274041152ffa589",
+      "bytes": 2035,
+      "executable": false
+    },
+    {
+      "path": "references/roundtrip.md",
+      "sha256": "0fcb8e7eba4e4e2eca50ff82bdbdd42056ec4b1b186c6e6332f62b3abc280ff2",
+      "bytes": 3086,
+      "executable": false
+    }
+  ],
+  "totalBytes": 6699,
+  "requires": [],
+  "permissionsNote": "Instructions only, no scripts. Craft actions run through the installed Craft Suite and the host's own gates; the session's live extension-action listing decides what an agent may invoke."
+}

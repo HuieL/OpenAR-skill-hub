@@ -22,6 +22,7 @@ As a Claude Code plugin marketplace:
 
 | Entry | Version | License | Review | OpenAR | npx skills |
 | --- | --- | --- | --- | --- | --- |
+| `hub.craft-suite` | 1.0.0 | MIT | unreviewed | `ora hub install hub.craft-suite` | `npx skills add https://github.com/HuieL/OpenAR-skill-hub/tree/d3a7460fe0595e1c24ad53481508b157469641c2/entries/skills/hub.craft-suite/skill` |
 | `hub.hallmark` | 1.1.0 | MIT | unreviewed | `ora hub install hub.hallmark` | `npx skills add https://github.com/nutlope/hallmark/tree/13ac0ec7e148655948100b6396439e481361d690/skills/hallmark` |
 | `hub.human-writing` | 1.1.0 | MIT | unreviewed | `ora hub install hub.human-writing` | `npx skills add https://github.com/KKKKhazix/human-writing/tree/4fda173f3fef7fb808f3eba991eeb2528ea4b189/human-writing` |
 | `hub.officecli-academic-paper` | 2.0.0 | Apache-2.0 | unreviewed | `ora hub install hub.officecli-academic-paper` | `npx skills add https://github.com/HuieL/OpenAR-skill-hub/tree/3f140f237c1109cbb96ca736e48827f14f0ba1c0/entries/skills/hub.officecli-academic-paper/skill` |
