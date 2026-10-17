@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-17T06:05:42Z",
-  "skillHub": "eb7963965220cd8e68356be87f3e3ac5ef963556",
+  "generatedAt": "2026-10-17T13:28:27Z",
+  "skillHub": "2ffa76100b998e44ac3fd22ee0ceef5d4a271f04",
   "new": [
     {
       "id": "skill:mattpocock.claude-handoff",
@@ -181,10 +181,6 @@
     },
     {
       "id": "skill:nature.response",
-      "firstRecorded": "2026-10-17T13:39:47+08:00"
-    },
-    {
-      "id": "skill:nature.reviewer",
       "firstRecorded": "2026-10-17T13:39:47+08:00"
     },
     {
@@ -847,199 +843,195 @@
   "updated": [
     {
       "id": "skill:mattpocock.claude-handoff",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:mattpocock.code-review",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:mattpocock.codebase-design",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:mattpocock.diagnosing-bugs",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:mattpocock.domain-modeling",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:mattpocock.git-guardrails-claude-code",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:mattpocock.grill-me",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:mattpocock.grill-with-docs",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:mattpocock.grilling",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:mattpocock.handoff",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:mattpocock.implement",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:mattpocock.implement-spec",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:mattpocock.improve-codebase-architecture",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:mattpocock.loop-me",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:mattpocock.matt-prototype",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:mattpocock.research",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:mattpocock.setup-pre-commit",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:mattpocock.tdd",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:mattpocock.teach",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:mattpocock.to-questionnaire",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:mattpocock.to-spec",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:mattpocock.to-tickets",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:mattpocock.triage",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:mattpocock.wayfinder",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:mattpocock.wizard",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:mattpocock.writing-beats",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:mattpocock.writing-for-agents",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:mattpocock.writing-fragments",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:mattpocock.writing-shape",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:nature.academic-search",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:nature.citation",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:nature.data",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:nature.downloader",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:nature.experiment-log",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:nature.figure",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:nature.image2ppt",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:nature.literature-pipeline",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:nature.paper-card",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:nature.paper-to-patent",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:nature.paper2ppt",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:nature.polishing",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:nature.proposal-writer",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:nature.reader",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:nature.ref-verifier",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:nature.response",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
-    },
-    {
-      "id": "skill:nature.reviewer",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:nature.shared",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:nature.statistics",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:nature.writing",
-      "lastRecorded": "2026-10-17T13:39:47+08:00"
+      "lastRecorded": "2026-10-17T06:23:28Z"
     },
     {
       "id": "skill:hub.craft-suite",
@@ -1693,8 +1685,8 @@
     "repos": [
       {
         "repo": "mattpocock/skills",
-        "stars": 294272,
-        "forks": 24667,
+        "stars": 294597,
+        "forks": 24707,
         "pushedAt": "2026-10-13T08:46:40Z",
         "entries": [
           "skill:mattpocock.claude-handoff",
@@ -1730,8 +1722,8 @@
       },
       {
         "repo": "VoltAgent/awesome-design-md",
-        "stars": 121820,
-        "forks": 13550,
+        "stars": 121875,
+        "forks": 13555,
         "pushedAt": "2026-10-14T05:46:48Z",
         "entries": [
           "skill:hub.research-design-system"
@@ -1739,8 +1731,8 @@
       },
       {
         "repo": "K-Dense-AI/scientific-agent-skills",
-        "stars": 51686,
-        "forks": 4577,
+        "stars": 51971,
+        "forks": 4601,
         "pushedAt": "2026-10-15T23:57:39Z",
         "entries": [
           "skill:kdense.13c-metabolic-flux",
@@ -1900,7 +1892,7 @@
       },
       {
         "repo": "Yuan1z0825/nature-skills",
-        "stars": 48796,
+        "stars": 48869,
         "forks": 2535,
         "pushedAt": "2026-10-16T16:10:49Z",
         "entries": [
@@ -1920,7 +1912,6 @@
           "skill:nature.reader",
           "skill:nature.ref-verifier",
           "skill:nature.response",
-          "skill:nature.reviewer",
           "skill:nature.shared",
           "skill:nature.statistics",
           "skill:nature.writing"
@@ -1928,8 +1919,8 @@
       },
       {
         "repo": "nutlope/hallmark",
-        "stars": 30239,
-        "forks": 1545,
+        "stars": 30260,
+        "forks": 1548,
         "pushedAt": "2026-08-06T16:19:18Z",
         "entries": [
           "skill:hub.hallmark"
@@ -1937,7 +1928,7 @@
       },
       {
         "repo": "KKKKhazix/human-writing",
-        "stars": 4101,
+        "stars": 4104,
         "forks": 314,
         "pushedAt": "2026-08-11T15:07:45Z",
         "entries": [
@@ -1946,7 +1937,7 @@
       },
       {
         "repo": "vercel-labs/web-interface-guidelines",
-        "stars": 996,
+        "stars": 997,
         "forks": 69,
         "pushedAt": "2026-10-05T20:49:17Z",
         "entries": [
@@ -1955,8 +1946,8 @@
       },
       {
         "repo": "iOfficeAI/AionCore",
-        "stars": 122,
-        "forks": 191,
+        "stars": 121,
+        "forks": 192,
         "pushedAt": "2026-10-14T17:47:21Z",
         "entries": [
           "skill:hub.officecli-academic-paper",
@@ -1976,7 +1967,7 @@
         "repo": "HuieL/OpenAR-skill-hub",
         "stars": 0,
         "forks": 0,
-        "pushedAt": "2026-10-17T00:43:48Z",
+        "pushedAt": "2026-10-17T06:24:44Z",
         "entries": [
           "skill:hub.craft-suite",
           "skill:hub.officecli-academic-paper",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "skillHub": "01101a534871686ff3fd5a7ae390dd464d062f1b",
+  "skillHub": "2ffa76100b998e44ac3fd22ee0ceef5d4a271f04",
   "extensionHub": null,
   "creators": [
     {
@@ -1250,12 +1250,6 @@
           ]
         },
         {
-          "entry": "skill:nature.reviewer",
-          "roles": [
-            "submitter"
-          ]
-        },
-        {
           "entry": "skill:nature.shared",
           "roles": [
             "submitter"
@@ -2319,12 +2313,6 @@
         },
         {
           "entry": "skill:nature.response",
-          "roles": [
-            "author"
-          ]
-        },
-        {
-          "entry": "skill:nature.reviewer",
           "roles": [
             "author"
           ]
