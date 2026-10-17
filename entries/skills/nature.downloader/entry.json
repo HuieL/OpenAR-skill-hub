@@ -3,7 +3,7 @@
   "id": "nature.downloader",
   "kind": "skill",
   "name": "Nature Downloader",
-  "summary": "Retrieve lawful academic full text through open-access sources, publisher APIs and institution-authorized browser access, with auditable delivery checks.",
+  "summary": "Download papers via open access, publisher APIs (keys required) and your logged-in Chrome; its scripts auto-solve publisher and CNKI CAPTCHAs.",
   "authors": [
     {
       "name": "baihe26",
@@ -12,8 +12,9 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
+    "literature",
     "research",
-    "literature"
+    "automation"
   ],
   "source": {
     "repo": "Yuan1z0825/nature-skills",
@@ -24,7 +25,7 @@
   "license": "MIT",
   "licenseFile": "LICENSE",
   "review": {
-    "status": "unreviewed",
+    "status": "high-risk",
     "reviewedRevision": null,
     "reviewer": null
   },

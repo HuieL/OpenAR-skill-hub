@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "mattpocock.git-guardrails-claude-code",
   "kind": "skill",
-  "name": "Git Guardrails Claude Code",
-  "summary": "Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D, etc.) before they execute. Use when user wants to prevent destructive git operations, add git safety hooks, or block git push/reset in Claude Code.",
+  "name": "Git Guardrails for Claude Code",
+  "summary": "Install a Claude Code PreToolUse hook that blocks destructive Git commands such as push, reset --hard, clean -f and branch -D, for one project or all projects.",
   "authors": [
     {
       "name": "Matt Pocock",
@@ -12,8 +12,9 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "coding",
-    "git"
+    "git",
+    "security",
+    "automation"
   ],
   "source": {
     "repo": "mattpocock/skills",

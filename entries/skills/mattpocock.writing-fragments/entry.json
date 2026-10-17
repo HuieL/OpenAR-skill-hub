@@ -3,7 +3,7 @@
   "id": "mattpocock.writing-fragments",
   "kind": "skill",
   "name": "Writing Fragments",
-  "summary": "Writing, explore: mine raw fragments, no structure yet.",
+  "summary": "Interview you about something you want to write and append every promising sentence, idea or anecdote to one Markdown file of raw fragments, with no structure imposed yet.",
   "authors": [
     {
       "name": "Matt Pocock",

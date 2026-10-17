@@ -3,7 +3,7 @@
   "id": "nature.reviewer",
   "kind": "skill",
   "name": "Nature Reviewer",
-  "summary": "Simulate evidence-grounded peer review of scientific manuscripts, identifying major concerns, minor comments and blocking issues.",
+  "summary": "Simulate Nature-style pre-submission peer review with three mutually blind referee reports and a synthesis of major concerns, minor comments and blocking issues.",
   "authors": [
     {
       "name": "Nature Skills contributors",
@@ -12,8 +12,9 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "research",
-    "review"
+    "review",
+    "paper",
+    "research"
   ],
   "source": {
     "repo": "Yuan1z0825/nature-skills",

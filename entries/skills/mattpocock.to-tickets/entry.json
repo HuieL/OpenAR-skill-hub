@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "mattpocock.to-tickets",
   "kind": "skill",
-  "name": "To Tickets",
-  "summary": "Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges, published to the configured tracker (edges as text in one file per ticket locally, or native blocking links on a real tracker).",
+  "name": "Split into Tickets",
+  "summary": "Break a plan or spec into thin end-to-end tickets with blocking dependencies, review the breakdown with you, then publish them as local Markdown files or GitHub/Linear issues.",
   "authors": [
     {
       "name": "Matt Pocock",
@@ -12,7 +12,7 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "coding"
+    "planning"
   ],
   "source": {
     "repo": "mattpocock/skills",

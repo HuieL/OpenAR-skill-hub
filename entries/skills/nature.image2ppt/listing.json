@@ -1,8 +1,10 @@
 {
-  "icon": "research",
+  "icon": "presentation",
   "tags": [
-    "nature-skills",
-    "research",
-    "slides"
+    "pptx",
+    "ocr",
+    "slide-reconstruction",
+    "scanned-pdf",
+    "nature-skills"
   ]
 }

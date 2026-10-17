@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "nature.paper2ppt",
   "kind": "skill",
-  "name": "Nature Paper2Ppt",
-  "summary": "Build Chinese scientific presentation decks from papers, using an evidence-led story, selected figures, speaker notes and rendered quality checks.",
+  "name": "Nature Paper to PPT",
+  "summary": "Build a Chinese-language .pptx deck with speaker notes from a scientific paper, selecting and cropping key figures and running a layout and wording QA audit.",
   "authors": [
     {
       "name": "Nature Skills contributors",
@@ -12,8 +12,8 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "research",
-    "slides"
+    "presentation",
+    "paper"
   ],
   "source": {
     "repo": "Yuan1z0825/nature-skills",

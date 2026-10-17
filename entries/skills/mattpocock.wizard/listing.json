@@ -1,7 +1,11 @@
 {
-  "icon": "code",
+  "icon": "terminal",
   "tags": [
-    "matt-pocock",
-    "coding"
+    "bash",
+    "env-vars",
+    "secrets",
+    "onboarding",
+    "gh-cli",
+    "matt-pocock"
   ]
 }

@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "nature.paper-to-patent",
   "kind": "skill",
-  "name": "Nature Paper To Patent",
-  "summary": "Convert scientific source material into evidence-grounded Chinese invention patent drafts and technical disclosures, with editable equations and claim-aligned figures.",
+  "name": "Nature Paper to Patent",
+  "summary": "Draft evidence-grounded Chinese invention patent applications and technical disclosures (技术交底书) from papers or code, exporting Chinese DOCX with editable equations and flowcharts.",
   "authors": [
     {
       "name": "Nature Skills contributors",
@@ -12,7 +12,9 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "research"
+    "writing",
+    "research",
+    "docs"
   ],
   "source": {
     "repo": "Yuan1z0825/nature-skills",

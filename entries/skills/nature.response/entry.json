@@ -3,7 +3,7 @@
   "id": "nature.response",
   "kind": "skill",
   "name": "Nature Response",
-  "summary": "Draft and audit reviewer responses, rebuttals and revision cover letters while keeping mutually blind reviewers separate.",
+  "summary": "Draft and audit point-by-point reviewer responses, rebuttals and revision cover letters, keeping blind reviewers separate and checking LaTeX package consistency.",
   "authors": [
     {
       "name": "Nature Skills contributors",
@@ -12,8 +12,9 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "research",
-    "writing"
+    "writing",
+    "paper",
+    "review"
   ],
   "source": {
     "repo": "Yuan1z0825/nature-skills",

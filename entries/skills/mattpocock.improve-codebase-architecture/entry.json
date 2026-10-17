@@ -3,7 +3,7 @@
   "id": "mattpocock.improve-codebase-architecture",
   "kind": "skill",
   "name": "Improve Codebase Architecture",
-  "summary": "Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick.",
+  "summary": "Scan a codebase for shallow, tangled modules and present refactoring candidates as a visual HTML report with before/after diagrams, then interview you on the one you pick.",
   "authors": [
     {
       "name": "Matt Pocock",
@@ -12,7 +12,9 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "coding"
+    "coding",
+    "design",
+    "review"
   ],
   "source": {
     "repo": "mattpocock/skills",

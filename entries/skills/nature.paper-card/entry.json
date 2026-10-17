@@ -3,7 +3,7 @@
   "id": "nature.paper-card",
   "kind": "skill",
   "name": "Nature Paper Card",
-  "summary": "Build a source-grounded deep-reading card for one scientific paper, covering methods, evidence, limitations and testable research ideas.",
+  "summary": "Build a source-grounded 16-section deep-reading card for one scientific paper covering methods, evidence, limitations and testable ideas, with a bundled groundedness audit.",
   "authors": [
     {
       "name": "Nature Skills contributors",
@@ -12,8 +12,8 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "research",
-    "literature"
+    "literature",
+    "research"
   ],
   "source": {
     "repo": "Yuan1z0825/nature-skills",

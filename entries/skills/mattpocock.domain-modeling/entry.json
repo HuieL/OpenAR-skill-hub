@@ -3,7 +3,7 @@
   "id": "mattpocock.domain-modeling",
   "kind": "skill",
   "name": "Domain Modeling",
-  "summary": "Build and sharpen a project's domain model. Use when discussing codebase terminology, writing or editing a CONTEXT.md, or recording or editing an ADR.",
+  "summary": "Sharpen a project's domain language during design talks by challenging vague terms, recording the agreed glossary in CONTEXT.md and key decisions as short ADRs.",
   "authors": [
     {
       "name": "Matt Pocock",
@@ -12,7 +12,8 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "coding"
+    "design",
+    "docs"
   ],
   "source": {
     "repo": "mattpocock/skills",

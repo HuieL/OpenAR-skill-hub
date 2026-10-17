@@ -1,7 +1,10 @@
 {
-  "icon": "code",
+  "icon": "agents",
   "tags": [
-    "matt-pocock",
-    "coding"
+    "handoff",
+    "background-agent",
+    "claude-code",
+    "context",
+    "matt-pocock"
   ]
 }

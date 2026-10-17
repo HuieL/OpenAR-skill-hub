@@ -3,7 +3,7 @@
   "id": "mattpocock.handoff",
   "kind": "skill",
   "name": "Handoff",
-  "summary": "Compact the current conversation into a handoff document for another agent to pick up.",
+  "summary": "Compact the current conversation into a handoff document saved in the OS temp directory, so a fresh agent session can pick up the work with suggested next skills.",
   "authors": [
     {
       "name": "Matt Pocock",
@@ -12,7 +12,8 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "coding"
+    "agents",
+    "docs"
   ],
   "source": {
     "repo": "mattpocock/skills",

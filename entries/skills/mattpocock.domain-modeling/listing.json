@@ -1,7 +1,10 @@
 {
-  "icon": "code",
+  "icon": "design",
   "tags": [
-    "matt-pocock",
-    "coding"
+    "ddd",
+    "glossary",
+    "adr",
+    "context-md",
+    "matt-pocock"
   ]
 }

@@ -1,8 +1,10 @@
 {
-  "icon": "research",
+  "icon": "literature",
   "tags": [
-    "nature-skills",
-    "research",
-    "literature"
+    "open-access",
+    "pdf-download",
+    "cnki",
+    "institutional-access",
+    "nature-skills"
   ]
 }

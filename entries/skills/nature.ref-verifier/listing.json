@@ -1,8 +1,11 @@
 {
-  "icon": "research",
+  "icon": "reference",
   "tags": [
-    "nature-skills",
-    "research",
-    "literature"
+    "bibliography",
+    "doi",
+    "crossref",
+    "zotero",
+    "citation-check",
+    "nature-skills"
   ]
 }

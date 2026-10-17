@@ -1,7 +1,10 @@
 {
-  "icon": "code",
+  "icon": "git",
   "tags": [
-    "matt-pocock",
-    "coding"
+    "husky",
+    "lint-staged",
+    "prettier",
+    "javascript",
+    "matt-pocock"
   ]
 }

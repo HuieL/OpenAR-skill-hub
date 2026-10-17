@@ -1,7 +1,10 @@
 {
   "icon": "code",
   "tags": [
-    "matt-pocock",
-    "coding"
+    "implementation",
+    "spec",
+    "tickets",
+    "tdd",
+    "matt-pocock"
   ]
 }

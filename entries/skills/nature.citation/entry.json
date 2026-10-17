@@ -3,7 +3,7 @@
   "id": "nature.citation",
   "kind": "skill",
   "name": "Nature Citation",
-  "summary": "Find verified Nature, Science and Cell family references for manuscript claims, map citations to text segments and export reference-manager files.",
+  "summary": "Find verified Nature, Science and Cell family references for manuscript claims via Crossref and PubMed, map them to text segments and export RIS, EndNote or Zotero RDF.",
   "authors": [
     {
       "name": "Nature Skills contributors",
@@ -12,8 +12,9 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "research",
-    "literature"
+    "reference",
+    "literature",
+    "writing"
   ],
   "source": {
     "repo": "Yuan1z0825/nature-skills",

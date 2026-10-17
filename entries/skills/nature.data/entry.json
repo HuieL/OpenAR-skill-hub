@@ -3,7 +3,7 @@
   "id": "nature.data",
   "kind": "skill",
   "name": "Nature Data",
-  "summary": "Draft and audit data availability statements, repository plans, dataset citations and FAIR metadata for scientific manuscripts.",
+  "summary": "Draft and audit Data Availability statements, repository and accession plans, dataset citations and FAIR metadata checklists for Nature-family manuscripts.",
   "authors": [
     {
       "name": "Nature Skills contributors",
@@ -12,7 +12,9 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "research"
+    "research",
+    "data",
+    "writing"
   ],
   "source": {
     "repo": "Yuan1z0825/nature-skills",

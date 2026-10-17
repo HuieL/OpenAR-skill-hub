@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "nature.image2ppt",
   "kind": "skill",
-  "name": "Nature Image2Ppt",
-  "summary": "Reconstruct screenshots, scanned PDFs and image-only slide decks as editable PowerPoint objects, with rendered quality checks.",
+  "name": "Nature Image to PPT",
+  "summary": "Rebuild slide images, screenshots and scanned PDFs as editable PowerPoint; by default it may reuse your Codex login token (~/.codex/auth.json) for image generation.",
   "authors": [
     {
       "name": "Image2PPT contributors"
@@ -15,8 +15,8 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "research",
-    "slides"
+    "presentation",
+    "images"
   ],
   "source": {
     "repo": "Yuan1z0825/nature-skills",
@@ -27,7 +27,7 @@
   "license": "MIT",
   "licenseFile": "LICENSE",
   "review": {
-    "status": "unreviewed",
+    "status": "high-risk",
     "reviewedRevision": null,
     "reviewer": null
   },

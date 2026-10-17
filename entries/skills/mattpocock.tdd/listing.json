@@ -1,8 +1,10 @@
 {
-  "icon": "code",
+  "icon": "testing",
   "tags": [
-    "matt-pocock",
-    "coding",
-    "testing"
+    "tdd",
+    "red-green",
+    "mocking",
+    "unit-tests",
+    "matt-pocock"
   ]
 }

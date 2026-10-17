@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "mattpocock.matt-prototype",
   "kind": "skill",
-  "name": "Matt Prototype",
-  "summary": "Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state model or logic feels right, or explore what a UI should look like.",
+  "name": "Prototype",
+  "summary": "Build a throwaway prototype to answer a design question: a single clickable HTML demo for testing logic and state, or several switchable UI variants on one app route.",
   "authors": [
     {
       "name": "Matt Pocock",
@@ -12,7 +12,9 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "coding"
+    "design",
+    "coding",
+    "web"
   ],
   "source": {
     "repo": "HuieL/OpenAR-skill-hub",

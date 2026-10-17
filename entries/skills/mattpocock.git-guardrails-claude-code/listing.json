@@ -1,8 +1,10 @@
 {
   "icon": "git",
   "tags": [
-    "matt-pocock",
-    "coding",
-    "git"
+    "claude-code",
+    "hooks",
+    "guardrails",
+    "safety",
+    "matt-pocock"
   ]
 }

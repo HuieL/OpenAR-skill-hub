@@ -3,7 +3,7 @@
   "id": "mattpocock.grill-me",
   "kind": "skill",
   "name": "Grill Me",
-  "summary": "A relentless interview to sharpen a plan or design.",
+  "summary": "Stress-test a plan or design through a relentless question-by-question interview, with a recommended answer for each question, until every decision is settled.",
   "authors": [
     {
       "name": "Matt Pocock",
@@ -12,7 +12,7 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "coding"
+    "planning"
   ],
   "source": {
     "repo": "mattpocock/skills",

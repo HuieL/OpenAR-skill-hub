@@ -3,7 +3,7 @@
   "id": "mattpocock.research",
   "kind": "skill",
   "name": "Research",
-  "summary": "Investigate a question against high-trust primary sources and capture the findings as a Markdown file in the repo. Use when the user wants a topic researched, docs or API facts gathered, or reading legwork delegated to a background agent.",
+  "summary": "Research a question in a background agent against primary sources such as official docs, specs and source code, and save the cited findings as Markdown in the repo.",
   "authors": [
     {
       "name": "Matt Pocock",
@@ -12,7 +12,8 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "coding"
+    "research",
+    "docs"
   ],
   "source": {
     "repo": "mattpocock/skills",

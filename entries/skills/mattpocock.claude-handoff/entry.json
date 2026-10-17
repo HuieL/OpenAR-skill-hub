@@ -3,7 +3,7 @@
   "id": "mattpocock.claude-handoff",
   "kind": "skill",
   "name": "Claude Handoff",
-  "summary": "Hand the current conversation off to a fresh background agent that picks up the work immediately.",
+  "summary": "Summarize the current conversation and launch a background Claude Code agent seeded with that summary, so a fresh session continues the work right away.",
   "authors": [
     {
       "name": "Matt Pocock",
@@ -12,7 +12,8 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "coding"
+    "agents",
+    "automation"
   ],
   "source": {
     "repo": "mattpocock/skills",

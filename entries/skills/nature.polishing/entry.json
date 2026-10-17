@@ -3,7 +3,7 @@
   "id": "nature.polishing",
   "kind": "skill",
   "name": "Nature Polishing",
-  "summary": "Polish, restructure or translate scientific prose while preserving facts, terminology, citation intent and evidence boundaries.",
+  "summary": "Polish, restructure or translate academic prose, including Chinese drafts, into concise Nature-style English, and fix LaTeX layout issues such as sparse pages and oversized floats.",
   "authors": [
     {
       "name": "Nature Skills contributors",
@@ -12,8 +12,9 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "research",
-    "writing"
+    "writing",
+    "paper",
+    "translation"
   ],
   "source": {
     "repo": "Yuan1z0825/nature-skills",

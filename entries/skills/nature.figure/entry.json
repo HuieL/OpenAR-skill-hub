@@ -3,7 +3,7 @@
   "id": "nature.figure",
   "kind": "skill",
   "name": "Nature Figure",
-  "summary": "Create and audit scientific figures in Python or R, including multi-panel layouts, editable exports, panel alignment and PDF collision checks. Optional galleries remain in the pinned upstream source.",
+  "summary": "Create and audit publication-grade scientific figures in Python or R with multi-panel layout, alignment and PDF collision checks; optional AI schematics via OpenRouter API key.",
   "authors": [
     {
       "name": "Nature Skills contributors",
@@ -12,8 +12,8 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "research",
-    "data"
+    "visualization",
+    "research"
   ],
   "source": {
     "repo": "HuieL/OpenAR-skill-hub",

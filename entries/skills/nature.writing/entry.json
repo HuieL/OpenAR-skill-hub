@@ -3,7 +3,7 @@
   "id": "nature.writing",
   "kind": "skill",
   "name": "Nature Writing",
-  "summary": "Draft and structure scientific manuscript sections and submission materials from author-provided results, figures and notes.",
+  "summary": "Draft or restructure Nature-style manuscript sections and first-submission materials such as cover letters, title pages and highlights from author results, figures or Chinese notes.",
   "authors": [
     {
       "name": "Nature Skills contributors",
@@ -12,8 +12,8 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "research",
-    "writing"
+    "writing",
+    "paper"
   ],
   "source": {
     "repo": "Yuan1z0825/nature-skills",

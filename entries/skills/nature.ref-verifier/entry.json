@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "nature.ref-verifier",
   "kind": "skill",
-  "name": "Nature Ref Verifier",
-  "summary": "Cross-check reference metadata across sources, comparing authors, titles, years, volumes, pages and DOI records; report discrepancies and optional Zotero corrections.",
+  "name": "Nature Reference Verifier",
+  "summary": "Cross-check reference lists against Crossref, IEEE Xplore, CNKI and web search, flag author, title, DOI and page errors in a Chinese report, and optionally fix entries in Zotero.",
   "authors": [
     {
       "name": "Nature Skills contributors",
@@ -12,7 +12,7 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "research",
+    "reference",
     "literature"
   ],
   "source": {

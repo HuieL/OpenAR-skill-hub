@@ -3,7 +3,7 @@
   "id": "nature.statistics",
   "kind": "skill",
   "name": "Nature Statistics",
-  "summary": "Audit and improve manuscript statistical reporting, including sample units, effect sizes, uncertainty, multiple comparisons and figure legends.",
+  "summary": "Audit or draft manuscript statistical reporting, checking sample sizes, replicates, tests, multiple comparisons and figure legends, and return ready-to-paste Statistical analysis text.",
   "authors": [
     {
       "name": "Nature Skills contributors",
@@ -12,8 +12,9 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "research",
-    "data"
+    "paper",
+    "data",
+    "review"
   ],
   "source": {
     "repo": "Yuan1z0825/nature-skills",

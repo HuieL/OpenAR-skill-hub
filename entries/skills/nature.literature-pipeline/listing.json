@@ -1,8 +1,11 @@
 {
   "icon": "literature",
   "tags": [
-    "nature-skills",
-    "research",
-    "literature"
+    "arxiv",
+    "paper-digest",
+    "cron",
+    "feishu",
+    "telegram",
+    "nature-skills"
   ]
 }

@@ -3,7 +3,7 @@
   "id": "mattpocock.grilling",
   "kind": "skill",
   "name": "Grilling",
-  "summary": "Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrases.",
+  "summary": "Interview you in rounds of numbered questions, each with a recommended answer, walking a plan's decision tree until nothing is left assumed; looks up facts itself.",
   "authors": [
     {
       "name": "Matt Pocock",
@@ -12,7 +12,7 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "coding"
+    "planning"
   ],
   "source": {
     "repo": "mattpocock/skills",

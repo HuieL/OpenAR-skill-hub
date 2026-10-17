@@ -1,7 +1,10 @@
 {
-  "icon": "code",
+  "icon": "planning",
   "tags": [
-    "matt-pocock",
-    "coding"
+    "interview",
+    "decision-tree",
+    "requirements",
+    "stress-test",
+    "matt-pocock"
   ]
 }

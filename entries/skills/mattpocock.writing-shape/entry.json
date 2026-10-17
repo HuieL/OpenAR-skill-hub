@@ -3,7 +3,7 @@
   "id": "mattpocock.writing-shape",
   "kind": "skill",
   "name": "Writing Shape",
-  "summary": "Writing, exploit: shape raw material into an article, paragraph by paragraph.",
+  "summary": "Shape a file of raw notes into an article block by block, debating the opening, order and format with you, and appending each agreed paragraph to a separate article file.",
   "authors": [
     {
       "name": "Matt Pocock",

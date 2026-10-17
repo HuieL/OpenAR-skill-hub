@@ -1,7 +1,10 @@
 {
-  "icon": "code",
+  "icon": "planning",
   "tags": [
-    "matt-pocock",
-    "coding"
+    "interview",
+    "adr",
+    "glossary",
+    "design-review",
+    "matt-pocock"
   ]
 }

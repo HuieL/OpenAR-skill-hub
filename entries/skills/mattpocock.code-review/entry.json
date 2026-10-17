@@ -3,7 +3,7 @@
   "id": "mattpocock.code-review",
   "kind": "skill",
   "name": "Code Review",
-  "summary": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
+  "summary": "Review a branch's changes since a chosen commit on two separate axes, repo standards plus common code smells, and fidelity to the originating spec, using parallel sub-agents.",
   "authors": [
     {
       "name": "Matt Pocock",
@@ -12,8 +12,9 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
+    "review",
     "coding",
-    "review"
+    "git"
   ],
   "source": {
     "repo": "mattpocock/skills",

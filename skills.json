@@ -3258,70 +3258,94 @@
     {
       "id": "mattpocock.claude-handoff",
       "name": "Claude Handoff",
-      "summary": "Hand the current conversation off to a fresh background agent that picks up the work immediately.",
+      "summary": "Summarize the current conversation and launch a background Claude Code agent seeded with that summary, so a fresh session continues the work right away.",
       "delivery": "hub",
       "version": "321658273cb1d20b76026717d027d505790106d4",
       "revision": "321658273cb1d20b76026717d027d505790106d4",
       "entryPath": "entries/skills/mattpocock.claude-handoff/entry.json",
-      "entrySha256": "7d224ef7177d93a2534bc5cf77aba9293f40c0486fe43b36c8376e8a8600bcc8",
-      "icon": "code",
+      "entrySha256": "5391666de8e69628602ba28edc4facdfdf83feb2f93470d7a6ab15cef34df51b",
+      "icon": "agents",
       "tags": [
+        "handoff",
+        "background-agent",
+        "claude-code",
+        "context",
         "matt-pocock",
-        "coding"
+        "agents",
+        "automation"
       ],
       "categories": [
-        "coding"
+        "agents",
+        "automation"
       ]
     },
     {
       "id": "mattpocock.code-review",
       "name": "Code Review",
-      "summary": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
+      "summary": "Review a branch's changes since a chosen commit on two separate axes, repo standards plus common code smells, and fidelity to the originating spec, using parallel sub-agents.",
       "delivery": "hub",
       "version": "5c89081d4bbeb3d039a42093653f90bb698d780e",
       "revision": "5c89081d4bbeb3d039a42093653f90bb698d780e",
       "entryPath": "entries/skills/mattpocock.code-review/entry.json",
-      "entrySha256": "d4757621aad3c287e7fa5d3cd22bcd9d4cf75abefffcd03a0c229c1a374d777e",
+      "entrySha256": "513f190abd0dbac97bf37ce15c8d2a29807b7c92202d1ce87430e4459ed6ea37",
       "icon": "review",
       "tags": [
+        "code-smells",
+        "diff",
+        "pull-request",
+        "spec",
         "matt-pocock",
+        "review",
         "coding",
-        "review"
+        "git"
       ],
       "categories": [
+        "review",
         "coding",
-        "review"
+        "git"
       ]
     },
     {
       "id": "mattpocock.codebase-design",
       "name": "Codebase Design",
-      "summary": "Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary.",
+      "summary": "Design deep modules using a shared vocabulary (module, interface, seam, adapter) with guidance on seam placement, testing through interfaces, and comparing alternative designs.",
       "delivery": "hub",
       "version": "321658273cb1d20b76026717d027d505790106d4",
       "revision": "321658273cb1d20b76026717d027d505790106d4",
       "entryPath": "entries/skills/mattpocock.codebase-design/entry.json",
-      "entrySha256": "25fa39e57d95e9aa98b980b54301b7962c6223ee76557e5de4cf5d9a84e9b3cb",
+      "entrySha256": "5fbd34c7914b43298aabe92054308aee56f899b08e72442dad22d576aef42898",
       "icon": "code",
       "tags": [
+        "architecture",
+        "deep-modules",
+        "interfaces",
+        "refactoring",
         "matt-pocock",
-        "coding"
+        "coding",
+        "design",
+        "reference"
       ],
       "categories": [
-        "coding"
+        "coding",
+        "design",
+        "reference"
       ]
     },
     {
       "id": "mattpocock.diagnosing-bugs",
       "name": "Diagnosing Bugs",
-      "summary": "Diagnosis loop for hard bugs and performance regressions. Use when the user says \"diagnose\"/\"debug this\", or reports something broken/throwing/failing/slow.",
+      "summary": "Debug hard bugs and performance regressions by first building a fast, reliable reproduction loop, then ranking hypotheses, instrumenting, and fixing with a regression test.",
       "delivery": "hub",
       "version": "321658273cb1d20b76026717d027d505790106d4",
       "revision": "321658273cb1d20b76026717d027d505790106d4",
       "entryPath": "entries/skills/mattpocock.diagnosing-bugs/entry.json",
-      "entrySha256": "82e962a102f229f4aba5db224a0a919c7dd616efd2bb65a01e4e4ecf81e6c4b0",
+      "entrySha256": "e17414c0a236ba746f6fcb40f9c0d0e0b4976a51a3ae4c98b756ef1dcfe932df",
       "icon": "code",
       "tags": [
+        "debugging",
+        "reproduction",
+        "performance",
+        "regression-test",
         "matt-pocock",
         "coding",
         "testing"
@@ -3334,396 +3358,526 @@
     {
       "id": "mattpocock.domain-modeling",
       "name": "Domain Modeling",
-      "summary": "Build and sharpen a project's domain model. Use when discussing codebase terminology, writing or editing a CONTEXT.md, or recording or editing an ADR.",
+      "summary": "Sharpen a project's domain language during design talks by challenging vague terms, recording the agreed glossary in CONTEXT.md and key decisions as short ADRs.",
       "delivery": "hub",
       "version": "321658273cb1d20b76026717d027d505790106d4",
       "revision": "321658273cb1d20b76026717d027d505790106d4",
       "entryPath": "entries/skills/mattpocock.domain-modeling/entry.json",
-      "entrySha256": "eefde2756d30b2f106d72df34b7147b579ff62417ea7ed8f1b5dee67cd7525bb",
-      "icon": "code",
+      "entrySha256": "52b3da290af30907d15a24c4fc78fca94892c780e56a31f14cbbc7608dea3ac9",
+      "icon": "design",
       "tags": [
+        "ddd",
+        "glossary",
+        "adr",
+        "context-md",
         "matt-pocock",
-        "coding"
+        "design",
+        "docs"
       ],
       "categories": [
-        "coding"
+        "design",
+        "docs"
       ]
     },
     {
       "id": "mattpocock.git-guardrails-claude-code",
-      "name": "Git Guardrails Claude Code",
-      "summary": "Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D, etc.) before they execute. Use when user wants to prevent destructive git operations, add git safety hooks, or block git push/reset in Claude Code.",
+      "name": "Git Guardrails for Claude Code",
+      "summary": "Install a Claude Code PreToolUse hook that blocks destructive Git commands such as push, reset --hard, clean -f and branch -D, for one project or all projects.",
       "delivery": "hub",
       "version": "321658273cb1d20b76026717d027d505790106d4",
       "revision": "321658273cb1d20b76026717d027d505790106d4",
       "entryPath": "entries/skills/mattpocock.git-guardrails-claude-code/entry.json",
-      "entrySha256": "0324114e1f47ac65d7f0abce13ed66d3d875e963443c9bf47faaa98777121a1b",
+      "entrySha256": "f9e23d6cd9ef3f4d502ebc27145a20b71f6b7f5269e327490ab554bfced3615c",
       "icon": "git",
       "tags": [
+        "claude-code",
+        "hooks",
+        "guardrails",
+        "safety",
         "matt-pocock",
-        "coding",
-        "git"
+        "git",
+        "security",
+        "automation"
       ],
       "categories": [
-        "coding",
-        "git"
+        "git",
+        "security",
+        "automation"
       ]
     },
     {
       "id": "mattpocock.grill-me",
       "name": "Grill Me",
-      "summary": "A relentless interview to sharpen a plan or design.",
+      "summary": "Stress-test a plan or design through a relentless question-by-question interview, with a recommended answer for each question, until every decision is settled.",
       "delivery": "hub",
       "version": "fcf0071560d32913c9d4f820e0d7ca467c881619",
       "revision": "fcf0071560d32913c9d4f820e0d7ca467c881619",
       "entryPath": "entries/skills/mattpocock.grill-me/entry.json",
-      "entrySha256": "2f62279d6162b373e6ea5ef6c4befa3eaec9c085c590bb93e7ef2242d9a85540",
-      "icon": "code",
+      "entrySha256": "fdbdc9afb7d29860f6c97ded269864636f681c53f4ac6cada06fdfe767fe310b",
+      "icon": "planning",
       "tags": [
+        "interview",
+        "decision-making",
+        "stress-test",
         "matt-pocock",
-        "coding"
+        "planning"
       ],
       "categories": [
-        "coding"
+        "planning"
       ]
     },
     {
       "id": "mattpocock.grill-with-docs",
-      "name": "Grill With Docs",
-      "summary": "A relentless interview to sharpen a plan or design, which also creates docs (ADR's and glossary) as we go.",
+      "name": "Grill with Docs",
+      "summary": "Stress-test a plan or design through a question-by-question interview while recording agreed terms in a CONTEXT.md glossary and key decisions as ADRs.",
       "delivery": "hub",
       "version": "447ca70872026d5b79d6073a546dac082117fed7",
       "revision": "447ca70872026d5b79d6073a546dac082117fed7",
       "entryPath": "entries/skills/mattpocock.grill-with-docs/entry.json",
-      "entrySha256": "a619285678efd2b4bb0a6ebe2d65fe7c1a5ea0f7d41cd57147f197e98fdc5ff7",
-      "icon": "code",
+      "entrySha256": "80de70c7c694de88cafad6753502248751bed222996d171c2ecec7e93cb66031",
+      "icon": "planning",
       "tags": [
+        "interview",
+        "adr",
+        "glossary",
+        "design-review",
         "matt-pocock",
-        "coding"
+        "planning",
+        "docs"
       ],
       "categories": [
-        "coding"
+        "planning",
+        "docs"
       ]
     },
     {
       "id": "mattpocock.grilling",
       "name": "Grilling",
-      "summary": "Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrases.",
+      "summary": "Interview you in rounds of numbered questions, each with a recommended answer, walking a plan's decision tree until nothing is left assumed; looks up facts itself.",
       "delivery": "hub",
       "version": "85f83d3fde1d3a90d5c9a657f6998c79a6c37308",
       "revision": "85f83d3fde1d3a90d5c9a657f6998c79a6c37308",
       "entryPath": "entries/skills/mattpocock.grilling/entry.json",
-      "entrySha256": "608bd4e3424fb923f9038e257c2524261d11fc7e1bee7895dfd962a491e11fce",
-      "icon": "code",
+      "entrySha256": "6bb467e1a1dabfcfe5cb184dcc62a545a51f71a97e31c6f0253bf81504ca4857",
+      "icon": "planning",
       "tags": [
+        "interview",
+        "decision-tree",
+        "requirements",
+        "stress-test",
         "matt-pocock",
-        "coding"
+        "planning"
       ],
       "categories": [
-        "coding"
+        "planning"
       ]
     },
     {
       "id": "mattpocock.handoff",
       "name": "Handoff",
-      "summary": "Compact the current conversation into a handoff document for another agent to pick up.",
+      "summary": "Compact the current conversation into a handoff document saved in the OS temp directory, so a fresh agent session can pick up the work with suggested next skills.",
       "delivery": "hub",
       "version": "d28dfdc39beadc3142a33359b5cfa4765dcbd0bc",
       "revision": "d28dfdc39beadc3142a33359b5cfa4765dcbd0bc",
       "entryPath": "entries/skills/mattpocock.handoff/entry.json",
-      "entrySha256": "4828033020ab2c5ebcb2e3155056a25a9f92179b7814b3207b65862fe2962fd7",
-      "icon": "code",
+      "entrySha256": "cf2426a4b07637dadae7530173dc7f3b95d8b9edd85abd90dfa108e9d6e4e84c",
+      "icon": "agents",
       "tags": [
+        "handoff",
+        "context",
+        "session",
+        "summary",
         "matt-pocock",
-        "coding"
+        "agents",
+        "docs"
       ],
       "categories": [
-        "coding"
+        "agents",
+        "docs"
       ]
     },
     {
       "id": "mattpocock.implement",
       "name": "Implement",
-      "summary": "Implement a piece of work based on a spec or set of tickets.",
+      "summary": "Implement work described in a spec or tickets, test-first where possible, running type checks and tests along the way, then review the result and commit it.",
       "delivery": "hub",
       "version": "697d4ce9742da558fd1ba6697c8e9775e2e302dd",
       "revision": "697d4ce9742da558fd1ba6697c8e9775e2e302dd",
       "entryPath": "entries/skills/mattpocock.implement/entry.json",
-      "entrySha256": "9e73ce43a75527996a588c4626a93627523bd364b939ecfbccbcb7f576c7fee8",
+      "entrySha256": "4fc8cb5219fe64b6369eaf8ce391fb31464d5b1aa9faa48058f717f1e7c92da3",
       "icon": "code",
       "tags": [
+        "implementation",
+        "spec",
+        "tickets",
+        "tdd",
         "matt-pocock",
-        "coding"
+        "coding",
+        "testing"
       ],
       "categories": [
-        "coding"
+        "coding",
+        "testing"
       ]
     },
     {
       "id": "mattpocock.implement-spec",
       "name": "Implement Spec",
-      "summary": "Implement a specification in code.",
+      "summary": "Implement a whole spec as one pull request by running parallel sub-agents on its tickets in separate Git worktrees, merging their work, reviewing, and marking the PR ready.",
       "delivery": "hub",
       "version": "5b15a47f2d7150f545fbcacbfe381787fc0230dc",
       "revision": "5b15a47f2d7150f545fbcacbfe381787fc0230dc",
       "entryPath": "entries/skills/mattpocock.implement-spec/entry.json",
-      "entrySha256": "f666eddc8e53beae9f2dfb131414104fa22c00fdd7c6d253c8c80b523b19f541",
+      "entrySha256": "ebbe7634bf0bd07edcdc0061be737c688081b22dbda479b6536294049d8cd812",
       "icon": "code",
       "tags": [
+        "pull-request",
+        "worktrees",
+        "parallel",
+        "tickets",
         "matt-pocock",
-        "coding"
+        "coding",
+        "agents",
+        "git"
       ],
       "categories": [
-        "coding"
+        "coding",
+        "agents",
+        "git"
       ]
     },
     {
       "id": "mattpocock.improve-codebase-architecture",
       "name": "Improve Codebase Architecture",
-      "summary": "Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick.",
+      "summary": "Scan a codebase for shallow, tangled modules and present refactoring candidates as a visual HTML report with before/after diagrams, then interview you on the one you pick.",
       "delivery": "hub",
       "version": "321658273cb1d20b76026717d027d505790106d4",
       "revision": "321658273cb1d20b76026717d027d505790106d4",
       "entryPath": "entries/skills/mattpocock.improve-codebase-architecture/entry.json",
-      "entrySha256": "0b9f11ea5e4e0708df002124e5318e8aee716befc0d3c4ba5d678380cc7a1768",
+      "entrySha256": "514eef4bcebe80dcf635bb73dd35b702920772d3bff1155cf389b7d87461981f",
       "icon": "code",
       "tags": [
+        "architecture",
+        "refactoring",
+        "html-report",
+        "mermaid",
         "matt-pocock",
-        "coding"
+        "coding",
+        "design",
+        "review"
       ],
       "categories": [
-        "coding"
+        "coding",
+        "design",
+        "review"
       ]
     },
     {
       "id": "mattpocock.loop-me",
       "name": "Loop Me",
-      "summary": "Grill me about specs for the workflows I want to build, within this workspace.",
+      "summary": "Interview you about recurring routines in your work or life and turn the ones worth delegating into workflow specs saved as Markdown files in the workspace.",
       "delivery": "hub",
       "version": "321658273cb1d20b76026717d027d505790106d4",
       "revision": "321658273cb1d20b76026717d027d505790106d4",
       "entryPath": "entries/skills/mattpocock.loop-me/entry.json",
-      "entrySha256": "085e3cc76fd96fbfdbee272111ee5a5541d33e08fae26eb34b56628e8ddb0fdf",
-      "icon": "code",
+      "entrySha256": "e2dabf0bc131e909c31b63dc55f8adf4c4b098e83d4544c0128dde07a802b394",
+      "icon": "planning",
       "tags": [
+        "workflows",
+        "specs",
+        "delegation",
+        "interview",
         "matt-pocock",
-        "coding"
+        "planning",
+        "automation"
       ],
       "categories": [
-        "coding"
+        "planning",
+        "automation"
       ]
     },
     {
       "id": "mattpocock.matt-prototype",
-      "name": "Matt Prototype",
-      "summary": "Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state model or logic feels right, or explore what a UI should look like.",
+      "name": "Prototype",
+      "summary": "Build a throwaway prototype to answer a design question: a single clickable HTML demo for testing logic and state, or several switchable UI variants on one app route.",
       "delivery": "hub",
       "version": "1.0.0+openar.1",
       "revision": "9c7fbb1bf7daeb92bc131b4d55b6ed5c75dfeecf",
       "entryPath": "entries/skills/mattpocock.matt-prototype/entry.json",
-      "entrySha256": "75e79c66031b8753c1c13eda526ed9bcbda2bae0a7a59c334650fa40161ae178",
-      "icon": "code",
+      "entrySha256": "fd4794d84f434cc2732d18a133b894545796eb251fd3173aeac07cf946607db3",
+      "icon": "design",
       "tags": [
+        "prototyping",
+        "ui-variants",
+        "state-machine",
+        "html",
         "matt-pocock",
-        "coding"
+        "design",
+        "coding",
+        "web"
       ],
       "categories": [
-        "coding"
+        "design",
+        "coding",
+        "web"
       ]
     },
     {
       "id": "mattpocock.research",
       "name": "Research",
-      "summary": "Investigate a question against high-trust primary sources and capture the findings as a Markdown file in the repo. Use when the user wants a topic researched, docs or API facts gathered, or reading legwork delegated to a background agent.",
+      "summary": "Research a question in a background agent against primary sources such as official docs, specs and source code, and save the cited findings as Markdown in the repo.",
       "delivery": "hub",
       "version": "321658273cb1d20b76026717d027d505790106d4",
       "revision": "321658273cb1d20b76026717d027d505790106d4",
       "entryPath": "entries/skills/mattpocock.research/entry.json",
-      "entrySha256": "37312687770c24c04d79003d7fca4892a186ba48de319482c4d343b837281fd0",
-      "icon": "code",
+      "entrySha256": "7a35f290353fbd390308d563648ec6dc8693d25d50ecb1418be58f8b6e71523d",
+      "icon": "research",
       "tags": [
+        "primary-sources",
+        "background-agent",
+        "citations",
+        "documentation",
         "matt-pocock",
-        "coding"
+        "research",
+        "docs"
       ],
       "categories": [
-        "coding"
+        "research",
+        "docs"
       ]
     },
     {
       "id": "mattpocock.setup-pre-commit",
-      "name": "Setup Pre Commit",
-      "summary": "Set up Husky pre-commit hooks with lint-staged (Prettier), type checking, and tests in the current repo. Use when user wants to add pre-commit hooks, set up Husky, configure lint-staged, or add commit-time formatting/typechecking/testing.",
+      "name": "Set Up Pre-commit Hooks",
+      "summary": "Set up Husky pre-commit hooks in a JavaScript repo that run Prettier on staged files via lint-staged, plus type checking and tests, then commit the setup.",
       "delivery": "hub",
       "version": "321658273cb1d20b76026717d027d505790106d4",
       "revision": "321658273cb1d20b76026717d027d505790106d4",
       "entryPath": "entries/skills/mattpocock.setup-pre-commit/entry.json",
-      "entrySha256": "43f435012a84a3297f028afbf2f645f90d93f896ec331d6abd0aa4d254dce28e",
-      "icon": "code",
+      "entrySha256": "1198a0d12c7cf1bb10a8d2293c9ec5fa03e109ff7ccdae38832ad8976838b338",
+      "icon": "git",
       "tags": [
+        "husky",
+        "lint-staged",
+        "prettier",
+        "javascript",
         "matt-pocock",
+        "git",
+        "automation",
         "coding"
       ],
       "categories": [
+        "git",
+        "automation",
         "coding"
       ]
     },
     {
       "id": "mattpocock.tdd",
-      "name": "Tdd",
-      "summary": "Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions \"red-green-refactor\", or wants integration tests.",
+      "name": "TDD",
+      "summary": "Guide test-driven development in red-green cycles, agreeing test seams with you first and writing behavior-focused tests through public interfaces, with mocking advice.",
       "delivery": "hub",
       "version": "321658273cb1d20b76026717d027d505790106d4",
       "revision": "321658273cb1d20b76026717d027d505790106d4",
       "entryPath": "entries/skills/mattpocock.tdd/entry.json",
-      "entrySha256": "0c010ea1e04204c840c3319a083ecbf8e89934c3784632ebc8263d1c7b9321fc",
-      "icon": "code",
+      "entrySha256": "a64bfa6c82d70066eb4f780beebedff9e30ddb96dba902bcc5b0be78f031aad2",
+      "icon": "testing",
       "tags": [
+        "tdd",
+        "red-green",
+        "mocking",
+        "unit-tests",
         "matt-pocock",
-        "coding",
-        "testing"
+        "testing",
+        "coding"
       ],
       "categories": [
-        "coding",
-        "testing"
+        "testing",
+        "coding"
       ]
     },
     {
       "id": "mattpocock.teach",
       "name": "Teach",
-      "summary": "Teach the user a new skill or concept, within this workspace.",
+      "summary": "Teach you a topic over multiple sessions from a local workspace, creating a mission, curated sources, short interactive HTML lessons, reference sheets and learning records.",
       "delivery": "hub",
       "version": "321658273cb1d20b76026717d027d505790106d4",
       "revision": "321658273cb1d20b76026717d027d505790106d4",
       "entryPath": "entries/skills/mattpocock.teach/entry.json",
-      "entrySha256": "3f67935fe8cdf17df2021e39d4dcae39bdcfef45ef75b9a832563974473dd834",
-      "icon": "code",
+      "entrySha256": "cf2451bc34e410e4427b37a64fcc2d3e7f215fcb960308359d557235c9f45945",
+      "icon": "education",
       "tags": [
+        "learning",
+        "lessons",
+        "quizzes",
+        "study-plan",
         "matt-pocock",
-        "coding"
+        "education"
       ],
       "categories": [
-        "coding"
+        "education"
       ]
     },
     {
       "id": "mattpocock.to-questionnaire",
-      "name": "To Questionnaire",
-      "summary": "Turn a decision you can't fully answer into a questionnaire for someone else to fill in.",
+      "name": "Write a Questionnaire",
+      "summary": "Turn a decision you can't make alone into a Markdown questionnaire for a colleague to fill in, after asking only who it is for and what answers you need back.",
       "delivery": "hub",
       "version": "321658273cb1d20b76026717d027d505790106d4",
       "revision": "321658273cb1d20b76026717d027d505790106d4",
       "entryPath": "entries/skills/mattpocock.to-questionnaire/entry.json",
-      "entrySha256": "cf59a88363d95025df11ac4ad43afd6de6e7820b9e929b45541f4c07ce761e6c",
-      "icon": "code",
+      "entrySha256": "ba3555a6533cc30331630722c87b1812063d179f6902e5335748fcb6d1ab3520",
+      "icon": "communication",
       "tags": [
+        "questionnaire",
+        "discovery",
+        "stakeholders",
+        "async",
         "matt-pocock",
-        "coding"
+        "planning",
+        "communication",
+        "writing"
       ],
       "categories": [
-        "coding"
+        "planning",
+        "communication",
+        "writing"
       ]
     },
     {
       "id": "mattpocock.to-spec",
-      "name": "To Spec",
-      "summary": "Turn the current conversation into a spec and publish it to the project issue tracker: no interview, just synthesis of what you've already discussed.",
+      "name": "Write a Spec",
+      "summary": "Turn the current conversation into a product spec with user stories, implementation and testing decisions, and publish it as an issue on your configured tracker, e.g. GitHub.",
       "delivery": "hub",
       "version": "5c89081d4bbeb3d039a42093653f90bb698d780e",
       "revision": "5c89081d4bbeb3d039a42093653f90bb698d780e",
       "entryPath": "entries/skills/mattpocock.to-spec/entry.json",
-      "entrySha256": "6673e2c9aab9137bd72ae3622e3ffe731fc15eccd8894c89534be9f2af73d6ef",
-      "icon": "code",
+      "entrySha256": "c62a55d7893b084a65c0eeb2a1217130e49d8d8ce3b2239d3507c7ae01200776",
+      "icon": "planning",
       "tags": [
+        "spec",
+        "user-stories",
+        "requirements",
+        "github-issues",
         "matt-pocock",
-        "coding"
+        "planning",
+        "docs"
       ],
       "categories": [
-        "coding"
+        "planning",
+        "docs"
       ]
     },
     {
       "id": "mattpocock.to-tickets",
-      "name": "To Tickets",
-      "summary": "Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges, published to the configured tracker (edges as text in one file per ticket locally, or native blocking links on a real tracker).",
+      "name": "Split into Tickets",
+      "summary": "Break a plan or spec into thin end-to-end tickets with blocking dependencies, review the breakdown with you, then publish them as local Markdown files or GitHub/Linear issues.",
       "delivery": "hub",
       "version": "321658273cb1d20b76026717d027d505790106d4",
       "revision": "321658273cb1d20b76026717d027d505790106d4",
       "entryPath": "entries/skills/mattpocock.to-tickets/entry.json",
-      "entrySha256": "cdace6672dabe99c1425052b522131df72bc61233b8edf5724a2362b3bd5810d",
-      "icon": "code",
+      "entrySha256": "4ff3c202ec71a688211e1112cf47494a5d4ccb94688edd30765f493f735269c4",
+      "icon": "planning",
       "tags": [
+        "tickets",
+        "issues",
+        "vertical-slices",
+        "dependencies",
         "matt-pocock",
-        "coding"
+        "planning"
       ],
       "categories": [
-        "coding"
+        "planning"
       ]
     },
     {
       "id": "mattpocock.triage",
       "name": "Triage",
-      "summary": "Move issues and external PRs through a state machine of triage roles, categorise, verify, grill if needed, and write agent-ready briefs.",
+      "summary": "Triage GitHub issues and outside pull requests: label them, verify bug reports, interview you when needed, and post agent-ready briefs, triage notes or wontfix closures.",
       "delivery": "hub",
       "version": "321658273cb1d20b76026717d027d505790106d4",
       "revision": "321658273cb1d20b76026717d027d505790106d4",
       "entryPath": "entries/skills/mattpocock.triage/entry.json",
-      "entrySha256": "8588ff08026eccc20a50148776bded441db1d20d43ce80af9ad4f0a60f07de05",
-      "icon": "code",
+      "entrySha256": "b2365516bb3ad18149800ff21e9233a4e380df64f1837a73616a54121889b2bf",
+      "icon": "planning",
       "tags": [
+        "issues",
+        "labels",
+        "pull-requests",
+        "agent-brief",
         "matt-pocock",
-        "coding"
+        "planning",
+        "review"
       ],
       "categories": [
-        "coding"
+        "planning",
+        "review"
       ]
     },
     {
       "id": "mattpocock.wayfinder",
       "name": "Wayfinder",
-      "summary": "Plan a huge chunk of work (more than one agent session can hold) as a shared map of decision tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear.",
+      "summary": "Plan a project too big for one agent session as a map issue with linked decision tickets on your tracker, then resolve one decision per session until the path is clear.",
       "delivery": "hub",
       "version": "321658273cb1d20b76026717d027d505790106d4",
       "revision": "321658273cb1d20b76026717d027d505790106d4",
       "entryPath": "entries/skills/mattpocock.wayfinder/entry.json",
-      "entrySha256": "d0b44bde6171664ec5c3869af91bfda9dd9b416e9ba896aae59ab7a7d25c6815",
-      "icon": "code",
+      "entrySha256": "9d8e6e832335a3057bf4f5d9f686eb09b5f05162c17464de424a8982ba40bd56",
+      "icon": "planning",
       "tags": [
+        "roadmap",
+        "decision-tickets",
+        "issues",
+        "github-issues",
         "matt-pocock",
-        "coding"
+        "planning",
+        "agents"
       ],
       "categories": [
-        "coding"
+        "planning",
+        "agents"
       ]
     },
     {
       "id": "mattpocock.wizard",
-      "name": "Wizard",
-      "summary": "Generate an interactive bash wizard that walks a human through steps only they can perform. Use when provisioning infrastructure, setting up credentials or CI secrets, walking an unfamiliar third-party dashboard, or running a one-off migration or cutover. Don't invoke this for steps the agent can perform itself.",
+      "name": "Setup Wizard",
+      "summary": "Generate an interactive Bash script that walks a person through manual setup steps, like copying API keys from dashboards, saving them to .env and GitHub Actions secrets.",
       "delivery": "hub",
       "version": "321658273cb1d20b76026717d027d505790106d4",
       "revision": "321658273cb1d20b76026717d027d505790106d4",
       "entryPath": "entries/skills/mattpocock.wizard/entry.json",
-      "entrySha256": "f9f879f6e3ec73aa3cceb966b1a0fdf6941716dec23737c74c55d557a36c9bfd",
-      "icon": "code",
+      "entrySha256": "4d2779ee148d9651dae9d3add42bcd7ecb58946184dcfc6628bcd66defa2a58e",
+      "icon": "terminal",
       "tags": [
+        "bash",
+        "env-vars",
+        "secrets",
+        "onboarding",
+        "gh-cli",
         "matt-pocock",
-        "coding"
+        "automation",
+        "cli"
       ],
       "categories": [
-        "coding"
+        "automation",
+        "cli"
       ]
     },
     {
       "id": "mattpocock.writing-beats",
       "name": "Writing Beats",
-      "summary": "Writing, exploit; assemble raw material into a journey of beats, grounding each term before a beat leans on it.",
+      "summary": "Turn a pile of raw notes into an article one beat at a time, offering you two or three possible next moves and making sure each idea is introduced before it is used.",
       "delivery": "hub",
       "version": "321658273cb1d20b76026717d027d505790106d4",
       "revision": "321658273cb1d20b76026717d027d505790106d4",
       "entryPath": "entries/skills/mattpocock.writing-beats/entry.json",
-      "entrySha256": "29000a712994390b8cecf898aedbb6dc8dbdcb47859b0e5f0105afa1f081f2ad",
+      "entrySha256": "44db35809dcac0922e68782e9a46c9f285342568dd9eb1fc15a34c2aea301c83",
       "icon": "writing",
       "tags": [
+        "article",
+        "drafting",
+        "narrative",
+        "structure",
         "matt-pocock",
         "writing"
       ],
@@ -3733,33 +3887,45 @@
     },
     {
       "id": "mattpocock.writing-for-agents",
-      "name": "Writing For Agents",
-      "summary": "Writing documents for agents. Use when creating or editing skills, or modifying AGENTS.md or CLAUDE.md.",
+      "name": "Writing for Agents",
+      "summary": "Write and edit documents that AI agents read, such as skills, AGENTS.md and CLAUDE.md, with guidance on context cost, progressive disclosure, completion criteria and pruning.",
       "delivery": "hub",
       "version": "321658273cb1d20b76026717d027d505790106d4",
       "revision": "321658273cb1d20b76026717d027d505790106d4",
       "entryPath": "entries/skills/mattpocock.writing-for-agents/entry.json",
-      "entrySha256": "134c987d1580afa4c1da991b66cf8509facdf9127e6e5f68a6e20524ae22fb3c",
+      "entrySha256": "7471ae1337e0b72e941a1db8354bf9e9d8eaeef40b99b7d363c3eaa6d6d53817",
       "icon": "writing",
       "tags": [
+        "skills",
+        "agents-md",
+        "claude-md",
+        "prompt-engineering",
         "matt-pocock",
-        "writing"
+        "writing",
+        "agents",
+        "docs"
       ],
       "categories": [
-        "writing"
+        "writing",
+        "agents",
+        "docs"
       ]
     },
     {
       "id": "mattpocock.writing-fragments",
       "name": "Writing Fragments",
-      "summary": "Writing, explore: mine raw fragments, no structure yet.",
+      "summary": "Interview you about something you want to write and append every promising sentence, idea or anecdote to one Markdown file of raw fragments, with no structure imposed yet.",
       "delivery": "hub",
       "version": "5c89081d4bbeb3d039a42093653f90bb698d780e",
       "revision": "5c89081d4bbeb3d039a42093653f90bb698d780e",
       "entryPath": "entries/skills/mattpocock.writing-fragments/entry.json",
-      "entrySha256": "52867f3ff306732a43487f3f6cd1ff28e93f368888dc89d4c48a6465ed02d5c6",
+      "entrySha256": "12227e303b555b7b31c65f69d200acd5f6d410c45ba026e7b5fce05948e69f7f",
       "icon": "writing",
       "tags": [
+        "brainstorming",
+        "ideation",
+        "notes",
+        "interview",
         "matt-pocock",
         "writing"
       ],
@@ -3770,14 +3936,18 @@
     {
       "id": "mattpocock.writing-shape",
       "name": "Writing Shape",
-      "summary": "Writing, exploit: shape raw material into an article, paragraph by paragraph.",
+      "summary": "Shape a file of raw notes into an article block by block, debating the opening, order and format with you, and appending each agreed paragraph to a separate article file.",
       "delivery": "hub",
       "version": "5c89081d4bbeb3d039a42093653f90bb698d780e",
       "revision": "5c89081d4bbeb3d039a42093653f90bb698d780e",
       "entryPath": "entries/skills/mattpocock.writing-shape/entry.json",
-      "entrySha256": "544cca52445dc4e063723d483ef0f1b6d7f466520a8ed245b76da1257348865c",
+      "entrySha256": "82b6c147647e0bb1a72c8f450f58517769004f30b30d342d914bfec8cb6fa013",
       "icon": "writing",
       "tags": [
+        "article",
+        "editing",
+        "structure",
+        "drafting",
         "matt-pocock",
         "writing"
       ],
@@ -3788,395 +3958,514 @@
     {
       "id": "nature.academic-search",
       "name": "Nature Academic Search",
-      "summary": "Search scientific literature across PubMed, Crossref, arXiv and other sources; verify citations, audit independent citations and export reference-manager files.",
+      "summary": "Search PubMed, Crossref, arXiv, OpenAlex and optional Scopus/ScienceDirect (Elsevier key) to verify citations, audit independent citations and export RIS, BibTeX or NBIB.",
       "delivery": "hub",
       "version": "2.0.0",
       "revision": "6c39b20fe8f6033090d227c616ee3152de70490e",
       "entryPath": "entries/skills/nature.academic-search/entry.json",
-      "entrySha256": "150ae41b802cd2767b67f340224f25880514e554bd789f0287b878abbbd97340",
-      "icon": "literature",
+      "entrySha256": "58f4d81b9691dac70ef624d7117133444b5c23ddfda255bf82ee01ccec039448",
+      "icon": "search",
       "tags": [
+        "pubmed",
+        "crossref",
+        "citation-audit",
+        "bibtex",
+        "mcp",
         "nature-skills",
-        "research",
-        "literature"
+        "literature",
+        "search",
+        "reference"
       ],
       "categories": [
-        "research",
-        "literature"
+        "literature",
+        "search",
+        "reference"
       ]
     },
     {
       "id": "nature.citation",
       "name": "Nature Citation",
-      "summary": "Find verified Nature, Science and Cell family references for manuscript claims, map citations to text segments and export reference-manager files.",
+      "summary": "Find verified Nature, Science and Cell family references for manuscript claims via Crossref and PubMed, map them to text segments and export RIS, EndNote or Zotero RDF.",
       "delivery": "hub",
       "version": "2.1.0",
       "revision": "10cf80f4ba3350f23f8188fffb88b7a3f531a4c0",
       "entryPath": "entries/skills/nature.citation/entry.json",
-      "entrySha256": "3f61e5803e1a9431748cc9fb18ea840902481db2d864b66a760330cca4ce0f98",
-      "icon": "research",
+      "entrySha256": "e9e0366bd9ec65e1d72bfd00c1278e1b07185a038a3feb45b071b41b2178584c",
+      "icon": "reference",
       "tags": [
+        "citations",
+        "crossref",
+        "endnote",
+        "zotero",
+        "ris",
         "nature-skills",
-        "research",
-        "literature"
+        "reference",
+        "literature",
+        "writing"
       ],
       "categories": [
-        "research",
-        "literature"
+        "reference",
+        "literature",
+        "writing"
       ]
     },
     {
       "id": "nature.data",
       "name": "Nature Data",
-      "summary": "Draft and audit data availability statements, repository plans, dataset citations and FAIR metadata for scientific manuscripts.",
+      "summary": "Draft and audit Data Availability statements, repository and accession plans, dataset citations and FAIR metadata checklists for Nature-family manuscripts.",
       "delivery": "hub",
       "version": "2.2.0",
       "revision": "fe7f972c8d5d1c7e08f5ee742dc49fa493614930",
       "entryPath": "entries/skills/nature.data/entry.json",
-      "entrySha256": "06434852e76be62c58dffa42f11d37450100a0229213ac96bd9a8a7bc5aa2cc5",
-      "icon": "research",
+      "entrySha256": "2c720bd49ec348eca3347e4f010873038d344e0f62bbc8fe98359b6fe59bada8",
+      "icon": "data",
       "tags": [
+        "data-availability",
+        "fair-metadata",
+        "repositories",
+        "dataset-citation",
         "nature-skills",
-        "research"
+        "research",
+        "data",
+        "writing"
       ],
       "categories": [
-        "research"
+        "research",
+        "data",
+        "writing"
       ]
     },
     {
       "id": "nature.downloader",
       "name": "Nature Downloader",
-      "summary": "Retrieve lawful academic full text through open-access sources, publisher APIs and institution-authorized browser access, with auditable delivery checks.",
+      "summary": "Download papers via open access, publisher APIs (keys required) and your logged-in Chrome; its scripts auto-solve publisher and CNKI CAPTCHAs.",
       "delivery": "hub",
       "version": "2.1.0",
       "revision": "242daf708ffdaf9710caaf5f3b76debe31917c85",
       "entryPath": "entries/skills/nature.downloader/entry.json",
-      "entrySha256": "4320fc8658a90acb1b19bca07afcd0d564541783d10aa99d8339644350dfc394",
-      "icon": "research",
+      "entrySha256": "e43b80344577f2ec6c37ce689e8f2d3560cc7312a7eccad194b022e8c3d7e247",
+      "icon": "literature",
       "tags": [
+        "open-access",
+        "pdf-download",
+        "cnki",
+        "institutional-access",
         "nature-skills",
+        "literature",
         "research",
-        "literature"
+        "automation"
       ],
       "categories": [
+        "literature",
         "research",
-        "literature"
+        "automation"
       ]
     },
     {
       "id": "nature.experiment-log",
       "name": "Nature Experiment Log",
-      "summary": "Turn experiment text, images and voice notes into structured Markdown logs, with optional Feishu and Obsidian integration.",
+      "summary": "Turn experiment notes, photos and voice recordings into standardized Chinese Markdown logs with YAML frontmatter; optionally read Feishu group chats or write to an Obsidian vault.",
       "delivery": "hub",
       "version": "1.0.2",
       "revision": "2bf67fd76aa2d47da8c804acabf08ccb9089b822",
       "entryPath": "entries/skills/nature.experiment-log/entry.json",
-      "entrySha256": "4307f9ae47569b753ed2ef3baeca135a503fbeec7da9bcefc63bc1b4eb774aa2",
+      "entrySha256": "98f0b9abc1ddd623066c9feb050f92aed53aea6e2bf89e5d3be555718bf3bde3",
       "icon": "research",
       "tags": [
+        "lab-notebook",
+        "experiment-log",
+        "obsidian",
+        "feishu",
+        "markdown",
         "nature-skills",
-        "research"
+        "research",
+        "docs"
       ],
       "categories": [
-        "research"
+        "research",
+        "docs"
       ]
     },
     {
       "id": "nature.figure",
       "name": "Nature Figure",
-      "summary": "Create and audit scientific figures in Python or R, including multi-panel layouts, editable exports, panel alignment and PDF collision checks. Optional galleries remain in the pinned upstream source.",
+      "summary": "Create and audit publication-grade scientific figures in Python or R with multi-panel layout, alignment and PDF collision checks; optional AI schematics via OpenRouter API key.",
       "delivery": "hub",
       "version": "2.8.0+openar.1",
       "revision": "9c7fbb1bf7daeb92bc131b4d55b6ed5c75dfeecf",
       "entryPath": "entries/skills/nature.figure/entry.json",
-      "entrySha256": "fe56f36e304e560913192b57f2e3becc1a2f687fa69af9e5897592799b3bb798",
-      "icon": "data",
+      "entrySha256": "e1912e92c43c2e00fc2c5050968c916041e9467d8af5210787a81890c707c633",
+      "icon": "chart",
       "tags": [
+        "matplotlib",
+        "ggplot2",
+        "scientific-figures",
+        "multi-panel",
         "nature-skills",
-        "research",
-        "data"
+        "visualization",
+        "research"
       ],
       "categories": [
-        "research",
-        "data"
+        "visualization",
+        "research"
       ]
     },
     {
       "id": "nature.image2ppt",
-      "name": "Nature Image2Ppt",
-      "summary": "Reconstruct screenshots, scanned PDFs and image-only slide decks as editable PowerPoint objects, with rendered quality checks.",
+      "name": "Nature Image to PPT",
+      "summary": "Rebuild slide images, screenshots and scanned PDFs as editable PowerPoint; by default it may reuse your Codex login token (~/.codex/auth.json) for image generation.",
       "delivery": "hub",
       "version": "1.1.0",
       "revision": "552af66976bec65021371d7563103f2103450f6e",
       "entryPath": "entries/skills/nature.image2ppt/entry.json",
-      "entrySha256": "1f48e12a53407758505823889e3839b1bf4be8d99805b46f4f3461ce0ad0111b",
-      "icon": "research",
+      "entrySha256": "7883ccdb214c60b9254439e2008c617cb6c0c111b85e4840c2a87283719af6a3",
+      "icon": "presentation",
       "tags": [
+        "pptx",
+        "ocr",
+        "slide-reconstruction",
+        "scanned-pdf",
         "nature-skills",
-        "research",
-        "slides"
+        "presentation",
+        "images"
       ],
       "categories": [
-        "research",
-        "slides"
+        "presentation",
+        "images"
       ]
     },
     {
       "id": "nature.literature-pipeline",
       "name": "Nature Literature Pipeline",
-      "summary": "Discover, score, read and archive scientific literature through a configurable monitoring pipeline, with optional messaging integrations.",
+      "summary": "Search arXiv, OpenAlex, Crossref and Semantic Scholar on a daily schedule, score and summarize top papers, push digests to Feishu or Telegram and archive notes.",
       "delivery": "hub",
       "version": "1.0.1",
       "revision": "242daf708ffdaf9710caaf5f3b76debe31917c85",
       "entryPath": "entries/skills/nature.literature-pipeline/entry.json",
-      "entrySha256": "0f108ea5e6bf0c60de2f103244d3504244295cd584b2495a2d7be8c2899065cb",
+      "entrySha256": "fa0e5eeac8437c831375f41ed8be90dbfb431dfa2e02438517ae8e73fcceaf7a",
       "icon": "literature",
       "tags": [
+        "arxiv",
+        "paper-digest",
+        "cron",
+        "feishu",
+        "telegram",
         "nature-skills",
+        "literature",
         "research",
-        "literature"
+        "automation"
       ],
       "categories": [
+        "literature",
         "research",
-        "literature"
+        "automation"
       ]
     },
     {
       "id": "nature.paper-card",
       "name": "Nature Paper Card",
-      "summary": "Build a source-grounded deep-reading card for one scientific paper, covering methods, evidence, limitations and testable research ideas.",
+      "summary": "Build a source-grounded 16-section deep-reading card for one scientific paper covering methods, evidence, limitations and testable ideas, with a bundled groundedness audit.",
       "delivery": "hub",
       "version": "1.2.0",
       "revision": "242daf708ffdaf9710caaf5f3b76debe31917c85",
       "entryPath": "entries/skills/nature.paper-card/entry.json",
-      "entrySha256": "22f68654354c4edc52620d74dbe1c6f54e09b4996beae5919db05c875229d025",
-      "icon": "research",
+      "entrySha256": "b329b1d4aa271993b27cec4990dffaeb066cbc63de8359304339d95b8a490a67",
+      "icon": "literature",
       "tags": [
+        "paper-reading",
+        "evidence-mapping",
+        "pdf",
+        "research-ideas",
         "nature-skills",
-        "research",
-        "literature"
+        "literature",
+        "research"
       ],
       "categories": [
-        "research",
-        "literature"
+        "literature",
+        "research"
       ]
     },
     {
       "id": "nature.paper-to-patent",
-      "name": "Nature Paper To Patent",
-      "summary": "Convert scientific source material into evidence-grounded Chinese invention patent drafts and technical disclosures, with editable equations and claim-aligned figures.",
+      "name": "Nature Paper to Patent",
+      "summary": "Draft evidence-grounded Chinese invention patent applications and technical disclosures (技术交底书) from papers or code, exporting Chinese DOCX with editable equations and flowcharts.",
       "delivery": "hub",
       "version": "1.0.0",
       "revision": "0e3f1bc074314e21f8309dc356bd05e1c1ca09f9",
       "entryPath": "entries/skills/nature.paper-to-patent/entry.json",
-      "entrySha256": "7f41ce89d259841442cd2f9081138f857d32db3aef0dfd65eaa9e414ea769b66",
-      "icon": "research",
+      "entrySha256": "3566b024278d10bcc5e98bc7608d13efdeab4d242c4b1dd18dc32bc730afd241",
+      "icon": "writing",
       "tags": [
+        "patent",
+        "prior-art",
+        "cnipa",
+        "docx",
+        "chinese",
         "nature-skills",
-        "research"
+        "writing",
+        "research",
+        "docs"
       ],
       "categories": [
-        "research"
+        "writing",
+        "research",
+        "docs"
       ]
     },
     {
       "id": "nature.paper2ppt",
-      "name": "Nature Paper2Ppt",
-      "summary": "Build Chinese scientific presentation decks from papers, using an evidence-led story, selected figures, speaker notes and rendered quality checks.",
+      "name": "Nature Paper to PPT",
+      "summary": "Build a Chinese-language .pptx deck with speaker notes from a scientific paper, selecting and cropping key figures and running a layout and wording QA audit.",
       "delivery": "hub",
       "version": "2.0.0",
       "revision": "242daf708ffdaf9710caaf5f3b76debe31917c85",
       "entryPath": "entries/skills/nature.paper2ppt/entry.json",
-      "entrySha256": "e3672991083e6e3344e69775eb7d62107c37f3d76eb2497218dc680879dbb2ef",
+      "entrySha256": "51ecf151519240293256f6952abd18ae238378f65a4be5b53d8dd91edc0eabaf",
       "icon": "presentation",
       "tags": [
+        "pptx",
+        "journal-club",
+        "slides",
+        "figure-cropping",
+        "chinese",
         "nature-skills",
-        "research",
-        "slides"
+        "presentation",
+        "paper"
       ],
       "categories": [
-        "research",
-        "slides"
+        "presentation",
+        "paper"
       ]
     },
     {
       "id": "nature.polishing",
       "name": "Nature Polishing",
-      "summary": "Polish, restructure or translate scientific prose while preserving facts, terminology, citation intent and evidence boundaries.",
+      "summary": "Polish, restructure or translate academic prose, including Chinese drafts, into concise Nature-style English, and fix LaTeX layout issues such as sparse pages and oversized floats.",
       "delivery": "hub",
       "version": "6.6.0",
       "revision": "28150f30f8b4017991fca8c7b2839f02c6586d2f",
       "entryPath": "entries/skills/nature.polishing/entry.json",
-      "entrySha256": "269aba4ad100a078aee82e2aa46e3f36ae9588547b14210c76cf1dc56e4da9ad",
+      "entrySha256": "f9e9a15a3b8fa97d50cff770aadfd1c0502abdad0a9579692aa2861cebc618b1",
       "icon": "writing",
       "tags": [
+        "academic-english",
+        "proofreading",
+        "latex",
+        "language-editing",
         "nature-skills",
-        "research",
-        "writing"
+        "writing",
+        "paper",
+        "translation"
       ],
       "categories": [
-        "research",
-        "writing"
+        "writing",
+        "paper",
+        "translation"
       ]
     },
     {
       "id": "nature.proposal-writer",
-      "name": "Researchwrite",
-      "summary": "Plan, draft, revise and audit research proposals with evidence-first argument design and layered quality checks; preserves the installed researchwrite invocation.",
+      "name": "Nature Proposal Writer",
+      "summary": "Compose, revise and score Chinese research proposals and opening reports from evidence tables, argument maps and section contracts, with optional formatted .docx export.",
       "delivery": "hub",
       "version": "1.1.1",
       "revision": "2addf56671fac0304a69851cb050727b4f0400a4",
       "entryPath": "entries/skills/nature.proposal-writer/entry.json",
-      "entrySha256": "7ef4e3e304c51a832809df9b2b97caa582ffcaec8b5df6506ef0d217bd8a478a",
-      "icon": "research",
+      "entrySha256": "e1b0f7be65dd304d77f4b542ee477ec631849817f966e6a1593d6e199729bc85",
+      "icon": "writing",
       "tags": [
+        "research-proposal",
+        "opening-report",
+        "docx",
+        "chinese",
         "nature-skills",
+        "writing",
         "research",
-        "writing"
+        "planning"
       ],
       "categories": [
+        "writing",
         "research",
-        "writing"
+        "planning"
       ]
     },
     {
       "id": "nature.reader",
       "name": "Nature Reader",
-      "summary": "Create complete Chinese-English paper readers with source anchors, equations, figures and tables kept near the relevant text.",
+      "summary": "Create full-paper Chinese-English side-by-side Markdown readers from PDF, DOI, arXiv or HTML, with source anchors, rendered equations and figures placed near the relevant text.",
       "delivery": "hub",
       "version": "2.1.0",
       "revision": "adb7b8a5a7d72ed6fe9f71e085785e9972dd8db2",
       "entryPath": "entries/skills/nature.reader/entry.json",
-      "entrySha256": "e054e1aab09c205809b9c69d0621cd07cb10764a4e13d49b5147be2e426f2ffa",
-      "icon": "research",
+      "entrySha256": "c2ee1f2b981ed927600e49b7035ddfe3206a0b7923d4ba478954e80b6053005a",
+      "icon": "translation",
       "tags": [
+        "bilingual",
+        "paper-reading",
+        "chinese",
+        "source-map",
         "nature-skills",
-        "research",
-        "literature"
+        "literature",
+        "translation",
+        "paper"
       ],
       "categories": [
-        "research",
-        "literature"
+        "literature",
+        "translation",
+        "paper"
       ]
     },
     {
       "id": "nature.ref-verifier",
-      "name": "Nature Ref Verifier",
-      "summary": "Cross-check reference metadata across sources, comparing authors, titles, years, volumes, pages and DOI records; report discrepancies and optional Zotero corrections.",
+      "name": "Nature Reference Verifier",
+      "summary": "Cross-check reference lists against Crossref, IEEE Xplore, CNKI and web search, flag author, title, DOI and page errors in a Chinese report, and optionally fix entries in Zotero.",
       "delivery": "hub",
       "version": "1.0.1",
       "revision": "42507354cfe36ac52031cdf69c5b1aa19bc7eaa0",
       "entryPath": "entries/skills/nature.ref-verifier/entry.json",
-      "entrySha256": "89614b29ef1e97626c523a4ab45b7049f9ff6a0d8c29e565e241468e5889d1a9",
-      "icon": "research",
+      "entrySha256": "8547c87c13ac592db8f061151ef22e3c55af8dcd4965e6d34bac5d19ba01af1c",
+      "icon": "reference",
       "tags": [
+        "bibliography",
+        "doi",
+        "crossref",
+        "zotero",
+        "citation-check",
         "nature-skills",
-        "research",
+        "reference",
         "literature"
       ],
       "categories": [
-        "research",
+        "reference",
         "literature"
       ]
     },
     {
       "id": "nature.response",
       "name": "Nature Response",
-      "summary": "Draft and audit reviewer responses, rebuttals and revision cover letters while keeping mutually blind reviewers separate.",
+      "summary": "Draft and audit point-by-point reviewer responses, rebuttals and revision cover letters, keeping blind reviewers separate and checking LaTeX package consistency.",
       "delivery": "hub",
       "version": "1.7.0",
       "revision": "c171989db699bd601d4373912b3fb8db96ecc95b",
       "entryPath": "entries/skills/nature.response/entry.json",
-      "entrySha256": "044aadf84eff82afe77723864e192918d858e3c2baa02c7db55b33a0ceca7ba0",
+      "entrySha256": "2791b4a4290fac7f6a3e9ea9021a11de84588c801cb1fd274783bf18a211de13",
       "icon": "writing",
       "tags": [
+        "peer-review",
+        "rebuttal",
+        "cover-letter",
+        "latex",
         "nature-skills",
-        "research",
-        "writing"
+        "writing",
+        "paper",
+        "review"
       ],
       "categories": [
-        "research",
-        "writing"
+        "writing",
+        "paper",
+        "review"
       ]
     },
     {
       "id": "nature.reviewer",
       "name": "Nature Reviewer",
-      "summary": "Simulate evidence-grounded peer review of scientific manuscripts, identifying major concerns, minor comments and blocking issues.",
+      "summary": "Simulate Nature-style pre-submission peer review with three mutually blind referee reports and a synthesis of major concerns, minor comments and blocking issues.",
       "delivery": "hub",
       "version": "1.4.0",
       "revision": "242daf708ffdaf9710caaf5f3b76debe31917c85",
       "entryPath": "entries/skills/nature.reviewer/entry.json",
-      "entrySha256": "121617cc38b8b0d91a092eaca8772e4c4fafb23a57cfa845daf8a1c6b51b8449",
+      "entrySha256": "27c56319413924de95f700c3bce4d37a8622d2201de0696b4232c60110e1b8ee",
       "icon": "review",
       "tags": [
+        "peer-review",
+        "manuscript",
+        "mock-review",
+        "referee-report",
         "nature-skills",
-        "research",
-        "review"
+        "review",
+        "paper",
+        "research"
       ],
       "categories": [
-        "research",
-        "review"
+        "review",
+        "paper",
+        "research"
       ]
     },
     {
       "id": "nature.shared",
       "name": "Nature Shared",
-      "summary": "Shared core and journal-format references used by the Nature Skills workflows. Install beside dependent Nature skills; this is a support package rather than a standalone workflow.",
+      "summary": "Provide shared writing references and Nature, Nature Communications and Nature Machine Intelligence format rules used by other Nature skills; a support package, not a workflow.",
       "delivery": "hub",
       "version": "1.6.0",
       "revision": "205ed18839181b0fe67323c7e42077a0807d8b03",
       "entryPath": "entries/skills/nature.shared/entry.json",
-      "entrySha256": "ce2ef606653b283a92f98292458088458961201b949b4c310551bee61a757705",
+      "entrySha256": "2480458863d4e2b4fc09b04fd0923a654029fa2ea6d3f07df72336709273e19d",
       "icon": "reference",
       "tags": [
+        "journal-formats",
+        "style-guide",
+        "terminology",
+        "shared-library",
         "nature-skills",
-        "research",
-        "reference"
+        "reference",
+        "writing"
       ],
       "categories": [
-        "research",
-        "reference"
+        "reference",
+        "writing"
       ]
     },
     {
       "id": "nature.statistics",
       "name": "Nature Statistics",
-      "summary": "Audit and improve manuscript statistical reporting, including sample units, effect sizes, uncertainty, multiple comparisons and figure legends.",
+      "summary": "Audit or draft manuscript statistical reporting, checking sample sizes, replicates, tests, multiple comparisons and figure legends, and return ready-to-paste Statistical analysis text.",
       "delivery": "hub",
       "version": "1.3.0",
       "revision": "fe7f972c8d5d1c7e08f5ee742dc49fa493614930",
       "entryPath": "entries/skills/nature.statistics/entry.json",
-      "entrySha256": "871529a0e8735e2a781e03d6f0a50447739cf13c5d3bce8f41e1b8191aad2cd1",
-      "icon": "data",
+      "entrySha256": "68ffa9073ad505280a3c82aa88304a20010b3c0ca75bf2825d31e295123717a9",
+      "icon": "chart",
       "tags": [
+        "statistics",
+        "p-values",
+        "replication",
+        "reproducibility",
+        "figure-legends",
         "nature-skills",
-        "research",
-        "data"
+        "paper",
+        "data",
+        "review"
       ],
       "categories": [
-        "research",
-        "data"
+        "paper",
+        "data",
+        "review"
       ]
     },
     {
       "id": "nature.writing",
       "name": "Nature Writing",
-      "summary": "Draft and structure scientific manuscript sections and submission materials from author-provided results, figures and notes.",
+      "summary": "Draft or restructure Nature-style manuscript sections and first-submission materials such as cover letters, title pages and highlights from author results, figures or Chinese notes.",
       "delivery": "hub",
       "version": "1.5.0",
       "revision": "28150f30f8b4017991fca8c7b2839f02c6586d2f",
       "entryPath": "entries/skills/nature.writing/entry.json",
-      "entrySha256": "6951b9966cb8386a43ed31b3ee6f7f875c2e50294f68b3f44c104c9da1c3f35a",
+      "entrySha256": "f09a1cfc44da28d8ad606efa73a54b1c9bc33df150176a41fd977ea431e44ddd",
       "icon": "writing",
       "tags": [
+        "manuscript",
+        "abstract",
+        "cover-letter",
+        "submission",
+        "latex",
         "nature-skills",
-        "research",
-        "writing"
+        "writing",
+        "paper"
       ],
       "categories": [
-        "research",
-        "writing"
+        "writing",
+        "paper"
       ]
     }
   ]

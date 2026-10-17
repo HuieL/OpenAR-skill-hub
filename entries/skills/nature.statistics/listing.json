@@ -1,8 +1,11 @@
 {
-  "icon": "data",
+  "icon": "chart",
   "tags": [
-    "nature-skills",
-    "research",
-    "data"
+    "statistics",
+    "p-values",
+    "replication",
+    "reproducibility",
+    "figure-legends",
+    "nature-skills"
   ]
 }

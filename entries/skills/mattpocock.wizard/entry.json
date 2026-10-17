@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "mattpocock.wizard",
   "kind": "skill",
-  "name": "Wizard",
-  "summary": "Generate an interactive bash wizard that walks a human through steps only they can perform. Use when provisioning infrastructure, setting up credentials or CI secrets, walking an unfamiliar third-party dashboard, or running a one-off migration or cutover. Don't invoke this for steps the agent can perform itself.",
+  "name": "Setup Wizard",
+  "summary": "Generate an interactive Bash script that walks a person through manual setup steps, like copying API keys from dashboards, saving them to .env and GitHub Actions secrets.",
   "authors": [
     {
       "name": "Matt Pocock",
@@ -12,7 +12,8 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "coding"
+    "automation",
+    "cli"
   ],
   "source": {
     "repo": "mattpocock/skills",

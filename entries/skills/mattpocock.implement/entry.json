@@ -3,7 +3,7 @@
   "id": "mattpocock.implement",
   "kind": "skill",
   "name": "Implement",
-  "summary": "Implement a piece of work based on a spec or set of tickets.",
+  "summary": "Implement work described in a spec or tickets, test-first where possible, running type checks and tests along the way, then review the result and commit it.",
   "authors": [
     {
       "name": "Matt Pocock",
@@ -12,7 +12,8 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "coding"
+    "coding",
+    "testing"
   ],
   "source": {
     "repo": "mattpocock/skills",

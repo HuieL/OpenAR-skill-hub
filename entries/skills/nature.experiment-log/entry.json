@@ -3,7 +3,7 @@
   "id": "nature.experiment-log",
   "kind": "skill",
   "name": "Nature Experiment Log",
-  "summary": "Turn experiment text, images and voice notes into structured Markdown logs, with optional Feishu and Obsidian integration.",
+  "summary": "Turn experiment notes, photos and voice recordings into standardized Chinese Markdown logs with YAML frontmatter; optionally read Feishu group chats or write to an Obsidian vault.",
   "authors": [
     {
       "name": "Nature Skills contributors",
@@ -12,7 +12,8 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "research"
+    "research",
+    "docs"
   ],
   "source": {
     "repo": "Yuan1z0825/nature-skills",

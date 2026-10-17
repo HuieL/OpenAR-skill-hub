@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "nature.proposal-writer",
   "kind": "skill",
-  "name": "Researchwrite",
-  "summary": "Plan, draft, revise and audit research proposals with evidence-first argument design and layered quality checks; preserves the installed researchwrite invocation.",
+  "name": "Nature Proposal Writer",
+  "summary": "Compose, revise and score Chinese research proposals and opening reports from evidence tables, argument maps and section contracts, with optional formatted .docx export.",
   "authors": [
     {
       "name": "Nature Skills contributors",
@@ -12,8 +12,9 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
+    "writing",
     "research",
-    "writing"
+    "planning"
   ],
   "source": {
     "repo": "Yuan1z0825/nature-skills",

@@ -3,7 +3,7 @@
   "id": "mattpocock.triage",
   "kind": "skill",
   "name": "Triage",
-  "summary": "Move issues and external PRs through a state machine of triage roles, categorise, verify, grill if needed, and write agent-ready briefs.",
+  "summary": "Triage GitHub issues and outside pull requests: label them, verify bug reports, interview you when needed, and post agent-ready briefs, triage notes or wontfix closures.",
   "authors": [
     {
       "name": "Matt Pocock",
@@ -12,7 +12,8 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "coding"
+    "planning",
+    "review"
   ],
   "source": {
     "repo": "mattpocock/skills",
@@ -56,6 +57,9 @@
     }
   ],
   "totalBytes": 19301,
-  "requires": [],
+  "requires": [
+    "mattpocock.domain-modeling",
+    "mattpocock.grilling"
+  ],
   "permissionsNote": "Tool declarations are author claims, not host approvals. External services, credentials and tools are not installed or enabled by this entry."
 }

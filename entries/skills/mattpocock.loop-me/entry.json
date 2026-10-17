@@ -3,7 +3,7 @@
   "id": "mattpocock.loop-me",
   "kind": "skill",
   "name": "Loop Me",
-  "summary": "Grill me about specs for the workflows I want to build, within this workspace.",
+  "summary": "Interview you about recurring routines in your work or life and turn the ones worth delegating into workflow specs saved as Markdown files in the workspace.",
   "authors": [
     {
       "name": "Matt Pocock",
@@ -12,7 +12,8 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "coding"
+    "planning",
+    "automation"
   ],
   "source": {
     "repo": "mattpocock/skills",
@@ -44,6 +45,8 @@
     }
   ],
   "totalBytes": 2662,
-  "requires": [],
+  "requires": [
+    "mattpocock.grilling"
+  ],
   "permissionsNote": "Tool declarations are author claims, not host approvals. External services, credentials and tools are not installed or enabled by this entry."
 }

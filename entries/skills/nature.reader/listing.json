@@ -1,8 +1,10 @@
 {
-  "icon": "research",
+  "icon": "translation",
   "tags": [
-    "nature-skills",
-    "research",
-    "literature"
+    "bilingual",
+    "paper-reading",
+    "chinese",
+    "source-map",
+    "nature-skills"
   ]
 }

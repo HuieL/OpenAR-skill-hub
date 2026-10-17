@@ -3,7 +3,7 @@
   "id": "mattpocock.diagnosing-bugs",
   "kind": "skill",
   "name": "Diagnosing Bugs",
-  "summary": "Diagnosis loop for hard bugs and performance regressions. Use when the user says \"diagnose\"/\"debug this\", or reports something broken/throwing/failing/slow.",
+  "summary": "Debug hard bugs and performance regressions by first building a fast, reliable reproduction loop, then ranking hypotheses, instrumenting, and fixing with a regression test.",
   "authors": [
     {
       "name": "Matt Pocock",

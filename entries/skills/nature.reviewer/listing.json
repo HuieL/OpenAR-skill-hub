@@ -1,8 +1,10 @@
 {
   "icon": "review",
   "tags": [
-    "nature-skills",
-    "research",
-    "review"
+    "peer-review",
+    "manuscript",
+    "mock-review",
+    "referee-report",
+    "nature-skills"
   ]
 }

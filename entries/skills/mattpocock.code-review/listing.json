@@ -1,8 +1,10 @@
 {
   "icon": "review",
   "tags": [
-    "matt-pocock",
-    "coding",
-    "review"
+    "code-smells",
+    "diff",
+    "pull-request",
+    "spec",
+    "matt-pocock"
   ]
 }

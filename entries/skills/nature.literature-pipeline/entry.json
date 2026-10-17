@@ -3,7 +3,7 @@
   "id": "nature.literature-pipeline",
   "kind": "skill",
   "name": "Nature Literature Pipeline",
-  "summary": "Discover, score, read and archive scientific literature through a configurable monitoring pipeline, with optional messaging integrations.",
+  "summary": "Search arXiv, OpenAlex, Crossref and Semantic Scholar on a daily schedule, score and summarize top papers, push digests to Feishu or Telegram and archive notes.",
   "authors": [
     {
       "name": "Nature Skills contributors",
@@ -12,8 +12,9 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
+    "literature",
     "research",
-    "literature"
+    "automation"
   ],
   "source": {
     "repo": "Yuan1z0825/nature-skills",

@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "mattpocock.writing-for-agents",
   "kind": "skill",
-  "name": "Writing For Agents",
-  "summary": "Writing documents for agents. Use when creating or editing skills, or modifying AGENTS.md or CLAUDE.md.",
+  "name": "Writing for Agents",
+  "summary": "Write and edit documents that AI agents read, such as skills, AGENTS.md and CLAUDE.md, with guidance on context cost, progressive disclosure, completion criteria and pruning.",
   "authors": [
     {
       "name": "Matt Pocock",
@@ -12,7 +12,9 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "writing"
+    "writing",
+    "agents",
+    "docs"
   ],
   "source": {
     "repo": "mattpocock/skills",

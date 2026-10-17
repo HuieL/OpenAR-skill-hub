@@ -3,7 +3,7 @@
   "id": "nature.academic-search",
   "kind": "skill",
   "name": "Nature Academic Search",
-  "summary": "Search scientific literature across PubMed, Crossref, arXiv and other sources; verify citations, audit independent citations and export reference-manager files.",
+  "summary": "Search PubMed, Crossref, arXiv, OpenAlex and optional Scopus/ScienceDirect (Elsevier key) to verify citations, audit independent citations and export RIS, BibTeX or NBIB.",
   "authors": [
     {
       "name": "Nature Skills contributors",
@@ -12,8 +12,9 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "research",
-    "literature"
+    "literature",
+    "search",
+    "reference"
   ],
   "source": {
     "repo": "Yuan1z0825/nature-skills",

@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "mattpocock.to-questionnaire",
   "kind": "skill",
-  "name": "To Questionnaire",
-  "summary": "Turn a decision you can't fully answer into a questionnaire for someone else to fill in.",
+  "name": "Write a Questionnaire",
+  "summary": "Turn a decision you can't make alone into a Markdown questionnaire for a colleague to fill in, after asking only who it is for and what answers you need back.",
   "authors": [
     {
       "name": "Matt Pocock",
@@ -12,7 +12,9 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "coding"
+    "planning",
+    "communication",
+    "writing"
   ],
   "source": {
     "repo": "mattpocock/skills",

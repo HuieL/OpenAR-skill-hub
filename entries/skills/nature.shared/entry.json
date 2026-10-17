@@ -3,7 +3,7 @@
   "id": "nature.shared",
   "kind": "skill",
   "name": "Nature Shared",
-  "summary": "Shared core and journal-format references used by the Nature Skills workflows. Install beside dependent Nature skills; this is a support package rather than a standalone workflow.",
+  "summary": "Provide shared writing references and Nature, Nature Communications and Nature Machine Intelligence format rules used by other Nature skills; a support package, not a workflow.",
   "authors": [
     {
       "name": "Nature Skills contributors",
@@ -12,8 +12,8 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "research",
-    "reference"
+    "reference",
+    "writing"
   ],
   "source": {
     "repo": "Yuan1z0825/nature-skills",

@@ -1,8 +1,10 @@
 {
   "icon": "code",
   "tags": [
-    "matt-pocock",
-    "coding",
-    "testing"
+    "debugging",
+    "reproduction",
+    "performance",
+    "regression-test",
+    "matt-pocock"
   ]
 }

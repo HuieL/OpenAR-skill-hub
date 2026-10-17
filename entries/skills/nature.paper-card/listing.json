@@ -1,8 +1,10 @@
 {
-  "icon": "research",
+  "icon": "literature",
   "tags": [
-    "nature-skills",
-    "research",
-    "literature"
+    "paper-reading",
+    "evidence-mapping",
+    "pdf",
+    "research-ideas",
+    "nature-skills"
   ]
 }

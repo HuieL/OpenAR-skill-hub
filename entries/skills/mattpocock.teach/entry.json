@@ -3,7 +3,7 @@
   "id": "mattpocock.teach",
   "kind": "skill",
   "name": "Teach",
-  "summary": "Teach the user a new skill or concept, within this workspace.",
+  "summary": "Teach you a topic over multiple sessions from a local workspace, creating a mission, curated sources, short interactive HTML lessons, reference sheets and learning records.",
   "authors": [
     {
       "name": "Matt Pocock",
@@ -12,7 +12,7 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "coding"
+    "education"
   ],
   "source": {
     "repo": "mattpocock/skills",

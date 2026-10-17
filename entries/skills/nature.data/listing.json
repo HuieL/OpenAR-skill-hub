@@ -1,7 +1,10 @@
 {
-  "icon": "research",
+  "icon": "data",
   "tags": [
-    "nature-skills",
-    "research"
+    "data-availability",
+    "fair-metadata",
+    "repositories",
+    "dataset-citation",
+    "nature-skills"
   ]
 }

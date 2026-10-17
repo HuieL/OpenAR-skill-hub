@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "mattpocock.grill-with-docs",
   "kind": "skill",
-  "name": "Grill With Docs",
-  "summary": "A relentless interview to sharpen a plan or design, which also creates docs (ADR's and glossary) as we go.",
+  "name": "Grill with Docs",
+  "summary": "Stress-test a plan or design through a question-by-question interview while recording agreed terms in a CONTEXT.md glossary and key decisions as ADRs.",
   "authors": [
     {
       "name": "Matt Pocock",
@@ -12,7 +12,8 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "coding"
+    "planning",
+    "docs"
   ],
   "source": {
     "repo": "mattpocock/skills",

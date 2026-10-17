@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "mattpocock.setup-pre-commit",
   "kind": "skill",
-  "name": "Setup Pre Commit",
-  "summary": "Set up Husky pre-commit hooks with lint-staged (Prettier), type checking, and tests in the current repo. Use when user wants to add pre-commit hooks, set up Husky, configure lint-staged, or add commit-time formatting/typechecking/testing.",
+  "name": "Set Up Pre-commit Hooks",
+  "summary": "Set up Husky pre-commit hooks in a JavaScript repo that run Prettier on staged files via lint-staged, plus type checking and tests, then commit the setup.",
   "authors": [
     {
       "name": "Matt Pocock",
@@ -12,6 +12,8 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
+    "git",
+    "automation",
     "coding"
   ],
   "source": {

@@ -1,7 +1,10 @@
 {
-  "icon": "code",
+  "icon": "planning",
   "tags": [
-    "matt-pocock",
-    "coding"
+    "tickets",
+    "issues",
+    "vertical-slices",
+    "dependencies",
+    "matt-pocock"
   ]
 }

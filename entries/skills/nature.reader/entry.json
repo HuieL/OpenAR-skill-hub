@@ -3,7 +3,7 @@
   "id": "nature.reader",
   "kind": "skill",
   "name": "Nature Reader",
-  "summary": "Create complete Chinese-English paper readers with source anchors, equations, figures and tables kept near the relevant text.",
+  "summary": "Create full-paper Chinese-English side-by-side Markdown readers from PDF, DOI, arXiv or HTML, with source anchors, rendered equations and figures placed near the relevant text.",
   "authors": [
     {
       "name": "Nature Skills contributors",
@@ -12,8 +12,9 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "research",
-    "literature"
+    "literature",
+    "translation",
+    "paper"
   ],
   "source": {
     "repo": "Yuan1z0825/nature-skills",

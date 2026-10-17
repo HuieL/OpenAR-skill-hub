@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "mattpocock.tdd",
   "kind": "skill",
-  "name": "Tdd",
-  "summary": "Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions \"red-green-refactor\", or wants integration tests.",
+  "name": "TDD",
+  "summary": "Guide test-driven development in red-green cycles, agreeing test seams with you first and writing behavior-focused tests through public interfaces, with mocking advice.",
   "authors": [
     {
       "name": "Matt Pocock",
@@ -12,8 +12,8 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "coding",
-    "testing"
+    "testing",
+    "coding"
   ],
   "source": {
     "repo": "mattpocock/skills",
@@ -58,6 +58,7 @@
   ],
   "totalBytes": 7331,
   "requires": [
+    "mattpocock.code-review",
     "mattpocock.codebase-design"
   ],
   "permissionsNote": "Tool declarations are author claims, not host approvals. External services, credentials and tools are not installed or enabled by this entry."

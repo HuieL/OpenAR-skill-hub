@@ -1,7 +1,10 @@
 {
-  "icon": "code",
+  "icon": "planning",
   "tags": [
-    "matt-pocock",
-    "coding"
+    "roadmap",
+    "decision-tickets",
+    "issues",
+    "github-issues",
+    "matt-pocock"
   ]
 }

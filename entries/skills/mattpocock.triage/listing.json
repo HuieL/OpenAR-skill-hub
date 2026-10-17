@@ -1,7 +1,10 @@
 {
-  "icon": "code",
+  "icon": "planning",
   "tags": [
-    "matt-pocock",
-    "coding"
+    "issues",
+    "labels",
+    "pull-requests",
+    "agent-brief",
+    "matt-pocock"
   ]
 }

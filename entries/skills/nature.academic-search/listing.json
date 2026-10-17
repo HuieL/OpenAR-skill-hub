@@ -1,8 +1,11 @@
 {
-  "icon": "literature",
+  "icon": "search",
   "tags": [
-    "nature-skills",
-    "research",
-    "literature"
+    "pubmed",
+    "crossref",
+    "citation-audit",
+    "bibtex",
+    "mcp",
+    "nature-skills"
   ]
 }

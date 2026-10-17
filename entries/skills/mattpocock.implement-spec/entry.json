@@ -3,7 +3,7 @@
   "id": "mattpocock.implement-spec",
   "kind": "skill",
   "name": "Implement Spec",
-  "summary": "Implement a specification in code.",
+  "summary": "Implement a whole spec as one pull request by running parallel sub-agents on its tickets in separate Git worktrees, merging their work, reviewing, and marking the PR ready.",
   "authors": [
     {
       "name": "Matt Pocock",
@@ -12,7 +12,9 @@
   ],
   "registrySubmitter": "HuieL",
   "categories": [
-    "coding"
+    "coding",
+    "agents",
+    "git"
   ],
   "source": {
     "repo": "mattpocock/skills",
@@ -44,6 +46,8 @@
     }
   ],
   "totalBytes": 2186,
-  "requires": [],
+  "requires": [
+    "mattpocock.code-review"
+  ],
   "permissionsNote": "Tool declarations are author claims, not host approvals. External services, credentials and tools are not installed or enabled by this entry."
 }
