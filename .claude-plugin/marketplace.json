@@ -246,14 +246,13 @@
         "repo": "Yuan1z0825/nature-skills",
         "sha": "242daf708ffdaf9710caaf5f3b76debe31917c85"
       },
-      "description": "5 skills from Yuan1z0825/nature-skills, pinned at 242daf708ffd as listed on the OpenAR Skill Hub.",
+      "description": "4 skills from Yuan1z0825/nature-skills, pinned at 242daf708ffd as listed on the OpenAR Skill Hub.",
       "strict": false,
       "skills": [
         "./skills/nature-downloader",
         "./skills/nature-literature-pipeline",
         "./skills/nature-paper-card",
-        "./skills/nature-paper2ppt",
-        "./skills/nature-reviewer"
+        "./skills/nature-paper2ppt"
       ]
     },
     {

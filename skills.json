@@ -4367,32 +4367,6 @@
       ]
     },
     {
-      "id": "nature.reviewer",
-      "name": "Nature Reviewer",
-      "summary": "Simulate Nature-style pre-submission peer review with three mutually blind referee reports and a synthesis of major concerns, minor comments and blocking issues.",
-      "delivery": "hub",
-      "version": "1.4.0",
-      "revision": "242daf708ffdaf9710caaf5f3b76debe31917c85",
-      "entryPath": "entries/skills/nature.reviewer/entry.json",
-      "entrySha256": "27c56319413924de95f700c3bce4d37a8622d2201de0696b4232c60110e1b8ee",
-      "icon": "review",
-      "tags": [
-        "peer-review",
-        "manuscript",
-        "mock-review",
-        "referee-report",
-        "nature-skills",
-        "review",
-        "paper",
-        "research"
-      ],
-      "categories": [
-        "review",
-        "paper",
-        "research"
-      ]
-    },
-    {
       "id": "nature.shared",
       "name": "Nature Shared",
       "summary": "Provide shared writing references and Nature, Nature Communications and Nature Machine Intelligence format rules used by other Nature skills; a support package, not a workflow.",
