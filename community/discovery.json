@@ -1,8 +1,820 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-14T03:48:56Z",
-  "skillHub": "486e4f43b4ff411c0d6ae11f9e609370fc764dd2",
+  "generatedAt": "2026-10-17T06:05:42Z",
+  "skillHub": "eb7963965220cd8e68356be87f3e3ac5ef963556",
   "new": [
+    {
+      "id": "skill:mattpocock.claude-handoff",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.code-review",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.codebase-design",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.diagnosing-bugs",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.domain-modeling",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.git-guardrails-claude-code",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.grill-me",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.grill-with-docs",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.grilling",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.handoff",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.implement",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.implement-spec",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.improve-codebase-architecture",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.loop-me",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.matt-prototype",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.research",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.setup-pre-commit",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.tdd",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.teach",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.to-questionnaire",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.to-spec",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.to-tickets",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.triage",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.wayfinder",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.wizard",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.writing-beats",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.writing-for-agents",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.writing-fragments",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.writing-shape",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.academic-search",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.citation",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.data",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.downloader",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.experiment-log",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.figure",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.image2ppt",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.literature-pipeline",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.paper-card",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.paper-to-patent",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.paper2ppt",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.polishing",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.proposal-writer",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.reader",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.ref-verifier",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.response",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.reviewer",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.shared",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.statistics",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.writing",
+      "firstRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:hub.craft-suite",
+      "firstRecorded": "2026-10-16T18:38:28Z"
+    },
+    {
+      "id": "skill:kdense.13c-metabolic-flux",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.adaptyv",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.aeon",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.alphagenome",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.analytical-method-validation",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.anndata",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.arbor",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.arboreto",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.astropy",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.benchling-integration",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.bgpt-paper-search",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.bids",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.biopython",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.bioservices",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.bulk-rnaseq",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.cantera",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.cellprofiler",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.cellxgene-census",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.cirq",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.clinical-decision-support",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.clinical-reports",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.cobrapy",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.consciousness-council",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.dask",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.database-lookup",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.datalad",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.datamol",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.deepchem",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.deeptools",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.depmap",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.dhdna-profiler",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.diffdock",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.dnanexus-integration",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.etetoolkit",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.exa-search",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.experimental-design",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.exploratory-data-analysis",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.fictiv",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.flowio",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.flowkit",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.fluidsim",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.folklore-variant-evidence",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.generate-image",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.geniml",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.genomic-coordinates",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.genomic-intelligence",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.geopandas",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.get-available-resources",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.gget",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.ginkgo-cloud-lab",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.gtars",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.histolab",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.hypogenic",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.hypothesis-generation",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.imaging-data-commons",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.iso-standards-readiness",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.lab-hardware-cad",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.labarchive-integration",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.lamindb",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.latchbio-integration",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.liteparse",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.mageck",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.marine-carbonate-chemistry",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.markdown-mermaid-writing",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.market-research-reports",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.markitdown",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.matchms",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.matlab",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.matplotlib",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.medchem",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.molecular-dynamics",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.molfeat",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.ncats-arax",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.networkx",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.neurokit2",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.neuropixels-analysis",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.nextflow",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.nmrglue",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.nwb-conversion",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.omero-integration",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.onekgpd",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.ontology-term-resolution",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.openpiv",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.opentrons-integration",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.optimize-for-gpu",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.pacsomatic",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.paper-lookup",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.paperclip",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.paperzilla",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.parallel-web",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.pathml",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.pathogen-variant-surveillance",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.pathway-enrichment",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.peer-review",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.pennylane",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.pi-agent",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.pkpd-modeling",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.polars",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.polars-bio",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.pptx-posters",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.primer-design",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.protocolsio-integration",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.pufferlib",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.pybamm",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.pycalphad",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.pydeseq2",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.pydicom",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.pyhealth",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.pylabrobot",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.pymatgen",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.pymc",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.pymoo",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.pyopenms",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.pysam",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.pytdc",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.pyzotero",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.qiime2-amplicon",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.qiskit",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.qutip",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.rdkit",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.relion",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.relsa-severity-assessment",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.research-grants",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.scanpy",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.scholar-evaluation",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.scientific-brainstorming",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.scientific-critical-thinking",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.scientific-visualization",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.scientific-writing",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.scikit-bio",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.scikit-learn",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.scikit-survival",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.scvelo",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.scvi-tools",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.seaborn",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.shap",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.simpy",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.stable-baselines3",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.statistical-analysis",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.statistical-power",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.statsmodels",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.sympy",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.tamarind",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.tellurium",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.tiledbvcf",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.timesfm-forecasting",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.treatment-plans",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.umap-learn",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.uncertainty-and-units",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.usfiscaldata",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.vaex",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.venue-templates",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.zarr-python",
+      "firstRecorded": "2026-10-16T11:39:51Z"
+    },
     {
       "id": "skill:hub.research-design-system",
       "firstRecorded": "2026-10-13T20:52:10+08:00"
@@ -20,10 +832,6 @@
       "firstRecorded": "2026-10-13T17:45:33+08:00"
     },
     {
-      "id": "skill:hub.diagram-design",
-      "firstRecorded": "2026-10-13T17:41:09+08:00"
-    },
-    {
       "id": "skill:hub.human-writing",
       "firstRecorded": "2026-10-13T17:41:09+08:00"
     },
@@ -37,6 +845,818 @@
     }
   ],
   "updated": [
+    {
+      "id": "skill:mattpocock.claude-handoff",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.code-review",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.codebase-design",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.diagnosing-bugs",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.domain-modeling",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.git-guardrails-claude-code",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.grill-me",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.grill-with-docs",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.grilling",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.handoff",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.implement",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.implement-spec",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.improve-codebase-architecture",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.loop-me",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.matt-prototype",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.research",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.setup-pre-commit",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.tdd",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.teach",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.to-questionnaire",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.to-spec",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.to-tickets",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.triage",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.wayfinder",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.wizard",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.writing-beats",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.writing-for-agents",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.writing-fragments",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:mattpocock.writing-shape",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.academic-search",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.citation",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.data",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.downloader",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.experiment-log",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.figure",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.image2ppt",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.literature-pipeline",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.paper-card",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.paper-to-patent",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.paper2ppt",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.polishing",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.proposal-writer",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.reader",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.ref-verifier",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.response",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.reviewer",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.shared",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.statistics",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:nature.writing",
+      "lastRecorded": "2026-10-17T13:39:47+08:00"
+    },
+    {
+      "id": "skill:hub.craft-suite",
+      "lastRecorded": "2026-10-16T18:38:28Z"
+    },
+    {
+      "id": "skill:kdense.alphagenome",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.anndata",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.bgpt-paper-search",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.bids",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.bioservices",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.bulk-rnaseq",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.cellprofiler",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.cellxgene-census",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.cobrapy",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.datalad",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.deepchem",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.deeptools",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.depmap",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.dhdna-profiler",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.diffdock",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.dnanexus-integration",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.etetoolkit",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.flowio",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.flowkit",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.fluidsim",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.geopandas",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.gget",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.histolab",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.hypogenic",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.iso-standards-readiness",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.lab-hardware-cad",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.labarchive-integration",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.lamindb",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.latchbio-integration",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.liteparse",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.mageck",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.markitdown",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.matlab",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.medchem",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.ncats-arax",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.networkx",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.neurokit2",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.nmrglue",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.nwb-conversion",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.omero-integration",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.onekgpd",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.openpiv",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.optimize-for-gpu",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.pacsomatic",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.pathml",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.pennylane",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.pkpd-modeling",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.polars-bio",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.pptx-posters",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.protocolsio-integration",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.pufferlib",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.pybamm",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.pycalphad",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.pydeseq2",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.pydicom",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.pyhealth",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.pylabrobot",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.pymc",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.pymoo",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.pyopenms",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.pysam",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.pytdc",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.qiime2-amplicon",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.qutip",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.rdkit",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.relion",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.relsa-severity-assessment",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.scikit-bio",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.scikit-learn",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.scikit-survival",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.scvelo",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.scvi-tools",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.shap",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.simpy",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.sympy",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.tiledbvcf",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.timesfm-forecasting",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.umap-learn",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.uncertainty-and-units",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.usfiscaldata",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.zarr-python",
+      "lastRecorded": "2026-10-16T12:05:07Z"
+    },
+    {
+      "id": "skill:kdense.13c-metabolic-flux",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.adaptyv",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.aeon",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.analytical-method-validation",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.arbor",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.arboreto",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.astropy",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.benchling-integration",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.biopython",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.cantera",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.cirq",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.clinical-decision-support",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.clinical-reports",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.consciousness-council",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.dask",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.database-lookup",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.datamol",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.exa-search",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.experimental-design",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.exploratory-data-analysis",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.fictiv",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.folklore-variant-evidence",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.generate-image",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.geniml",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.genomic-coordinates",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.genomic-intelligence",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.get-available-resources",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.ginkgo-cloud-lab",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.gtars",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.hypothesis-generation",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.imaging-data-commons",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.marine-carbonate-chemistry",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.markdown-mermaid-writing",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.market-research-reports",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.matchms",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.matplotlib",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.molecular-dynamics",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.molfeat",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.neuropixels-analysis",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.nextflow",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.ontology-term-resolution",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.opentrons-integration",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.paper-lookup",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.paperclip",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.paperzilla",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.parallel-web",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.pathogen-variant-surveillance",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.pathway-enrichment",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.peer-review",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.pi-agent",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.polars",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.primer-design",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.pymatgen",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.pyzotero",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.qiskit",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.research-grants",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.scanpy",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.scholar-evaluation",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.scientific-brainstorming",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.scientific-critical-thinking",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.scientific-visualization",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.scientific-writing",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.seaborn",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.stable-baselines3",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.statistical-analysis",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.statistical-power",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.statsmodels",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.tamarind",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.tellurium",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.treatment-plans",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.vaex",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
+    {
+      "id": "skill:kdense.venue-templates",
+      "lastRecorded": "2026-10-16T11:39:51Z"
+    },
     {
       "id": "skill:hub.officecli-academic-paper",
       "lastRecorded": "2026-10-14T10:55:28+08:00"
@@ -52,10 +1672,6 @@
     {
       "id": "skill:hub.hallmark",
       "lastRecorded": "2026-10-13T20:51:01+08:00"
-    },
-    {
-      "id": "skill:hub.diagram-design",
-      "lastRecorded": "2026-10-13T18:29:13+08:00"
     },
     {
       "id": "skill:hub.human-writing",
@@ -76,27 +1692,244 @@
     "note": "GitHub stars are not OpenAR install counts and not a quality rating.",
     "repos": [
       {
+        "repo": "mattpocock/skills",
+        "stars": 294272,
+        "forks": 24667,
+        "pushedAt": "2026-10-13T08:46:40Z",
+        "entries": [
+          "skill:mattpocock.claude-handoff",
+          "skill:mattpocock.code-review",
+          "skill:mattpocock.codebase-design",
+          "skill:mattpocock.diagnosing-bugs",
+          "skill:mattpocock.domain-modeling",
+          "skill:mattpocock.git-guardrails-claude-code",
+          "skill:mattpocock.grill-me",
+          "skill:mattpocock.grill-with-docs",
+          "skill:mattpocock.grilling",
+          "skill:mattpocock.handoff",
+          "skill:mattpocock.implement",
+          "skill:mattpocock.implement-spec",
+          "skill:mattpocock.improve-codebase-architecture",
+          "skill:mattpocock.loop-me",
+          "skill:mattpocock.matt-prototype",
+          "skill:mattpocock.research",
+          "skill:mattpocock.setup-pre-commit",
+          "skill:mattpocock.tdd",
+          "skill:mattpocock.teach",
+          "skill:mattpocock.to-questionnaire",
+          "skill:mattpocock.to-spec",
+          "skill:mattpocock.to-tickets",
+          "skill:mattpocock.triage",
+          "skill:mattpocock.wayfinder",
+          "skill:mattpocock.wizard",
+          "skill:mattpocock.writing-beats",
+          "skill:mattpocock.writing-for-agents",
+          "skill:mattpocock.writing-fragments",
+          "skill:mattpocock.writing-shape"
+        ]
+      },
+      {
         "repo": "VoltAgent/awesome-design-md",
-        "stars": 121081,
-        "forks": 13476,
-        "pushedAt": "2026-10-12T13:17:12Z",
+        "stars": 121820,
+        "forks": 13550,
+        "pushedAt": "2026-10-14T05:46:48Z",
         "entries": [
           "skill:hub.research-design-system"
         ]
       },
       {
-        "repo": "cathrynlavery/diagram-design",
-        "stars": 54400,
-        "forks": 3443,
-        "pushedAt": "2026-10-13T21:48:36Z",
+        "repo": "K-Dense-AI/scientific-agent-skills",
+        "stars": 51686,
+        "forks": 4577,
+        "pushedAt": "2026-10-15T23:57:39Z",
         "entries": [
-          "skill:hub.diagram-design"
+          "skill:kdense.13c-metabolic-flux",
+          "skill:kdense.adaptyv",
+          "skill:kdense.aeon",
+          "skill:kdense.alphagenome",
+          "skill:kdense.analytical-method-validation",
+          "skill:kdense.anndata",
+          "skill:kdense.arbor",
+          "skill:kdense.arboreto",
+          "skill:kdense.astropy",
+          "skill:kdense.benchling-integration",
+          "skill:kdense.bgpt-paper-search",
+          "skill:kdense.bids",
+          "skill:kdense.biopython",
+          "skill:kdense.bioservices",
+          "skill:kdense.bulk-rnaseq",
+          "skill:kdense.cantera",
+          "skill:kdense.cellprofiler",
+          "skill:kdense.cellxgene-census",
+          "skill:kdense.cirq",
+          "skill:kdense.clinical-decision-support",
+          "skill:kdense.clinical-reports",
+          "skill:kdense.cobrapy",
+          "skill:kdense.consciousness-council",
+          "skill:kdense.dask",
+          "skill:kdense.database-lookup",
+          "skill:kdense.datalad",
+          "skill:kdense.datamol",
+          "skill:kdense.deepchem",
+          "skill:kdense.deeptools",
+          "skill:kdense.depmap",
+          "skill:kdense.dhdna-profiler",
+          "skill:kdense.diffdock",
+          "skill:kdense.dnanexus-integration",
+          "skill:kdense.etetoolkit",
+          "skill:kdense.exa-search",
+          "skill:kdense.experimental-design",
+          "skill:kdense.exploratory-data-analysis",
+          "skill:kdense.fictiv",
+          "skill:kdense.flowio",
+          "skill:kdense.flowkit",
+          "skill:kdense.fluidsim",
+          "skill:kdense.folklore-variant-evidence",
+          "skill:kdense.generate-image",
+          "skill:kdense.geniml",
+          "skill:kdense.genomic-coordinates",
+          "skill:kdense.genomic-intelligence",
+          "skill:kdense.geopandas",
+          "skill:kdense.get-available-resources",
+          "skill:kdense.gget",
+          "skill:kdense.ginkgo-cloud-lab",
+          "skill:kdense.gtars",
+          "skill:kdense.histolab",
+          "skill:kdense.hypogenic",
+          "skill:kdense.hypothesis-generation",
+          "skill:kdense.imaging-data-commons",
+          "skill:kdense.iso-standards-readiness",
+          "skill:kdense.lab-hardware-cad",
+          "skill:kdense.labarchive-integration",
+          "skill:kdense.lamindb",
+          "skill:kdense.latchbio-integration",
+          "skill:kdense.liteparse",
+          "skill:kdense.mageck",
+          "skill:kdense.marine-carbonate-chemistry",
+          "skill:kdense.markdown-mermaid-writing",
+          "skill:kdense.market-research-reports",
+          "skill:kdense.markitdown",
+          "skill:kdense.matchms",
+          "skill:kdense.matlab",
+          "skill:kdense.matplotlib",
+          "skill:kdense.medchem",
+          "skill:kdense.molecular-dynamics",
+          "skill:kdense.molfeat",
+          "skill:kdense.ncats-arax",
+          "skill:kdense.networkx",
+          "skill:kdense.neurokit2",
+          "skill:kdense.neuropixels-analysis",
+          "skill:kdense.nextflow",
+          "skill:kdense.nmrglue",
+          "skill:kdense.nwb-conversion",
+          "skill:kdense.omero-integration",
+          "skill:kdense.onekgpd",
+          "skill:kdense.ontology-term-resolution",
+          "skill:kdense.openpiv",
+          "skill:kdense.opentrons-integration",
+          "skill:kdense.optimize-for-gpu",
+          "skill:kdense.pacsomatic",
+          "skill:kdense.paper-lookup",
+          "skill:kdense.paperclip",
+          "skill:kdense.paperzilla",
+          "skill:kdense.parallel-web",
+          "skill:kdense.pathml",
+          "skill:kdense.pathogen-variant-surveillance",
+          "skill:kdense.pathway-enrichment",
+          "skill:kdense.peer-review",
+          "skill:kdense.pennylane",
+          "skill:kdense.pi-agent",
+          "skill:kdense.pkpd-modeling",
+          "skill:kdense.polars",
+          "skill:kdense.polars-bio",
+          "skill:kdense.pptx-posters",
+          "skill:kdense.primer-design",
+          "skill:kdense.protocolsio-integration",
+          "skill:kdense.pufferlib",
+          "skill:kdense.pybamm",
+          "skill:kdense.pycalphad",
+          "skill:kdense.pydeseq2",
+          "skill:kdense.pydicom",
+          "skill:kdense.pyhealth",
+          "skill:kdense.pylabrobot",
+          "skill:kdense.pymatgen",
+          "skill:kdense.pymc",
+          "skill:kdense.pymoo",
+          "skill:kdense.pyopenms",
+          "skill:kdense.pysam",
+          "skill:kdense.pytdc",
+          "skill:kdense.pyzotero",
+          "skill:kdense.qiime2-amplicon",
+          "skill:kdense.qiskit",
+          "skill:kdense.qutip",
+          "skill:kdense.rdkit",
+          "skill:kdense.relion",
+          "skill:kdense.relsa-severity-assessment",
+          "skill:kdense.research-grants",
+          "skill:kdense.scanpy",
+          "skill:kdense.scholar-evaluation",
+          "skill:kdense.scientific-brainstorming",
+          "skill:kdense.scientific-critical-thinking",
+          "skill:kdense.scientific-visualization",
+          "skill:kdense.scientific-writing",
+          "skill:kdense.scikit-bio",
+          "skill:kdense.scikit-learn",
+          "skill:kdense.scikit-survival",
+          "skill:kdense.scvelo",
+          "skill:kdense.scvi-tools",
+          "skill:kdense.seaborn",
+          "skill:kdense.shap",
+          "skill:kdense.simpy",
+          "skill:kdense.stable-baselines3",
+          "skill:kdense.statistical-analysis",
+          "skill:kdense.statistical-power",
+          "skill:kdense.statsmodels",
+          "skill:kdense.sympy",
+          "skill:kdense.tamarind",
+          "skill:kdense.tellurium",
+          "skill:kdense.tiledbvcf",
+          "skill:kdense.timesfm-forecasting",
+          "skill:kdense.treatment-plans",
+          "skill:kdense.umap-learn",
+          "skill:kdense.uncertainty-and-units",
+          "skill:kdense.usfiscaldata",
+          "skill:kdense.vaex",
+          "skill:kdense.venue-templates",
+          "skill:kdense.zarr-python"
+        ]
+      },
+      {
+        "repo": "Yuan1z0825/nature-skills",
+        "stars": 48796,
+        "forks": 2535,
+        "pushedAt": "2026-10-16T16:10:49Z",
+        "entries": [
+          "skill:nature.academic-search",
+          "skill:nature.citation",
+          "skill:nature.data",
+          "skill:nature.downloader",
+          "skill:nature.experiment-log",
+          "skill:nature.figure",
+          "skill:nature.image2ppt",
+          "skill:nature.literature-pipeline",
+          "skill:nature.paper-card",
+          "skill:nature.paper-to-patent",
+          "skill:nature.paper2ppt",
+          "skill:nature.polishing",
+          "skill:nature.proposal-writer",
+          "skill:nature.reader",
+          "skill:nature.ref-verifier",
+          "skill:nature.response",
+          "skill:nature.reviewer",
+          "skill:nature.shared",
+          "skill:nature.statistics",
+          "skill:nature.writing"
         ]
       },
       {
         "repo": "nutlope/hallmark",
-        "stars": 30022,
-        "forks": 1539,
+        "stars": 30239,
+        "forks": 1545,
         "pushedAt": "2026-08-06T16:19:18Z",
         "entries": [
           "skill:hub.hallmark"
@@ -104,8 +1937,8 @@
       },
       {
         "repo": "KKKKhazix/human-writing",
-        "stars": 4058,
-        "forks": 309,
+        "stars": 4101,
+        "forks": 314,
         "pushedAt": "2026-08-11T15:07:45Z",
         "entries": [
           "skill:hub.human-writing"
@@ -113,8 +1946,8 @@
       },
       {
         "repo": "vercel-labs/web-interface-guidelines",
-        "stars": 974,
-        "forks": 66,
+        "stars": 996,
+        "forks": 69,
         "pushedAt": "2026-10-05T20:49:17Z",
         "entries": [
           "skill:hub.web-design-guidelines"
@@ -122,9 +1955,9 @@
       },
       {
         "repo": "iOfficeAI/AionCore",
-        "stars": 119,
-        "forks": 187,
-        "pushedAt": "2026-10-13T06:02:57Z",
+        "stars": 122,
+        "forks": 191,
+        "pushedAt": "2026-10-14T17:47:21Z",
         "entries": [
           "skill:hub.officecli-academic-paper",
           "skill:hub.officecli-data-dashboard"
@@ -143,14 +1976,16 @@
         "repo": "HuieL/OpenAR-skill-hub",
         "stars": 0,
         "forks": 0,
-        "pushedAt": "2026-10-14T03:28:09Z",
+        "pushedAt": "2026-10-17T00:43:48Z",
         "entries": [
-          "skill:hub.diagram-design",
+          "skill:hub.craft-suite",
           "skill:hub.officecli-academic-paper",
           "skill:hub.officecli-data-dashboard",
           "skill:hub.research-design-system",
           "skill:hub.web-design-guidelines",
-          "skill:hub.writing-guidelines"
+          "skill:hub.writing-guidelines",
+          "skill:mattpocock.matt-prototype",
+          "skill:nature.figure"
         ]
       }
     ]
