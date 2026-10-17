@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "id": "nature.proposal-writer",
+  "kind": "skill",
+  "name": "Researchwrite",
+  "summary": "Plan, draft, revise and audit research proposals with evidence-first argument design and layered quality checks; preserves the installed researchwrite invocation.",
+  "authors": [
+    {
+      "name": "Nature Skills contributors",
+      "github": "Yuan1z0825"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "research",
+    "writing"
+  ],
+  "source": {
+    "repo": "Yuan1z0825/nature-skills",
+    "path": "skills/nature-proposal-writer",
+    "revision": "2addf56671fac0304a69851cb050727b4f0400a4"
+  },
+  "version": "1.1.1",
+  "license": "Apache-2.0",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "845f8296f9f434625ca0d3459c738a62f8cf29392a9829d834b3a9889347cca8",
+      "bytes": 2666,
+      "executable": false
+    },
+    {
+      "path": "README_EN.md",
+      "sha256": "6857e3b5ff761a73e7a3aa64d7720e10fa4f5c3743d3a665fac3416c8a227f5c",
+      "bytes": 3019,
+      "executable": false
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "aed7568f8e9fc99e7dad2d2257d2beadd47570b875071cadb29406f2c84a9c2c",
+      "bytes": 7075,
+      "executable": true
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "3474b4f703558c0515fc772457dd77bce84139b00095363d424931b26e3e2ca1",
+      "bytes": 254,
+      "executable": false
+    },
+    {
+      "path": "manifest.yaml",
+      "sha256": "d15a161d029ea253742987f5bb84bbdd954fd682f5adf5d82d07c074a56e01b4",
+      "bytes": 4568,
+      "executable": false
+    },
+    {
+      "path": "references/chinese-review-writing-style.md",
+      "sha256": "b0f26cbbf83d9b25e50286383d23e0fd08098a543cd386c6b45b996dc198469f",
+      "bytes": 4363,
+      "executable": false
+    },
+    {
+      "path": "references/compose-mode.md",
+      "sha256": "bf257017dce77740728001bbb30b459720efe03bb50c8bad518c41911b8cbf0c",
+      "bytes": 11364,
+      "executable": false
+    },
+    {
+      "path": "references/evaluation-rubric.md",
+      "sha256": "a95a195933cac761fb313f02ec385a79ad0a7f2e81b4ee26be7d776b27cd2b8a",
+      "bytes": 6514,
+      "executable": false
+    },
+    {
+      "path": "references/export-archive.md",
+      "sha256": "09837f1420b7906eff905d0cf3881e436fce30836a4deda23c29e0586ce308d4",
+      "bytes": 1763,
+      "executable": false
+    },
+    {
+      "path": "references/foundation-files.md",
+      "sha256": "7062a9799966a1364d0d92d6d26623f3a931ab38111b9acf83f90afedd16306e",
+      "bytes": 1129,
+      "executable": false
+    },
+    {
+      "path": "references/gpt-handoff-revision-brief.md",
+      "sha256": "1b74672637f61107d897be2390704d7fe27762d14b85801f74d417b402e68f93",
+      "bytes": 1401,
+      "executable": false
+    },
+    {
+      "path": "references/hybrid-mode.md",
+      "sha256": "4bfc6faf91a99baab10bcafeb6db94fd795466494039f24fc184de343c26587f",
+      "bytes": 560,
+      "executable": false
+    },
+    {
+      "path": "references/partial-proposal-scope.md",
+      "sha256": "4441982118be2769bae1173a57cfd3ea97302774af787ebbba159b7f2a542419",
+      "bytes": 1594,
+      "executable": false
+    },
+    {
+      "path": "references/professor-dispatch.md",
+      "sha256": "35472c935c78b69267278bfc969c082b044c3fab11cc0d76e8604b463f4e7c98",
+      "bytes": 5782,
+      "executable": false
+    },
+    {
+      "path": "references/project-structure.md",
+      "sha256": "556309065b29b01e50b930f462eca05c69a9535c14e3c9313d24028135694922",
+      "bytes": 870,
+      "executable": false
+    },
+    {
+      "path": "references/ref-renumbering-cascade.md",
+      "sha256": "335a03e348c904ff473fb6861ec8e8252985d04273038ff8dbb151e910f0b914",
+      "bytes": 1747,
+      "executable": false
+    },
+    {
+      "path": "references/research-anti-slop.md",
+      "sha256": "4f295577ddba57202a19cc87617d08487418ff55cba5c2a69540e01c0afc7f9d",
+      "bytes": 1096,
+      "executable": false
+    },
+    {
+      "path": "references/review-critique-methodology.md",
+      "sha256": "0048a279c4148fdcd57cb45d0b06c962223743b78e1f71e9dff1f62547afdb3a",
+      "bytes": 8286,
+      "executable": false
+    },
+    {
+      "path": "references/review-paper-framework.md",
+      "sha256": "03b3695aa8c9f4426ca4a4f5a8ec64066e18be68bb788c41a65a71c7dac0d66c",
+      "bytes": 8119,
+      "executable": false
+    },
+    {
+      "path": "references/revise-mode.md",
+      "sha256": "72fd439b4e6a7822c5e5aad449561cf7c2693504359c2a6f243e186e1a65a5d8",
+      "bytes": 8873,
+      "executable": false
+    },
+    {
+      "path": "references/stopping-rules.md",
+      "sha256": "1866f4691006721a889226b5d8076bcca5602299c249368ac9155ea38e574773",
+      "bytes": 497,
+      "executable": false
+    },
+    {
+      "path": "references/validation-checklist.md",
+      "sha256": "3fbbcd93c2c34b989c7d7dbe8d8f251093fac817efa1c27088da8f91b6828967",
+      "bytes": 1765,
+      "executable": false
+    },
+    {
+      "path": "references/within-approved-proposal.md",
+      "sha256": "4a1e8c6c797bf2a49b92fdb611328e0a117097b67bc7f938417c5088cd986a08",
+      "bytes": 4878,
+      "executable": false
+    },
+    {
+      "path": "references/worked-example-quaternary-proposal.md",
+      "sha256": "08b2ab7983361bf523b31edf3b1fd3450012cf4d5d7bb7e69c21e712a92ee281",
+      "bytes": 3596,
+      "executable": false
+    },
+    {
+      "path": "references/降承诺提案模式.md",
+      "sha256": "42d56906a1103ab1013daef3bb90706a4a59a24ea1d6545832924d2e94be35b8",
+      "bytes": 2302,
+      "executable": false
+    },
+    {
+      "path": "scripts/build_proposal_docx.py",
+      "sha256": "9e9eddcefc806854706fd1ba47f21429f68615158c352a542288be258fbe4a09",
+      "bytes": 6836,
+      "executable": true
+    },
+    {
+      "path": "templates/00_scope.md",
+      "sha256": "12c4e533ac4b1313ac8b733f886c2a974d91aed336c98a412831b5e03073100c",
+      "bytes": 339,
+      "executable": true
+    },
+    {
+      "path": "templates/01_research_canon.md",
+      "sha256": "10fc7478bcf95471a498c0c093f565c3da38e82ba7a9ac475d8020800b3f05c6",
+      "bytes": 192,
+      "executable": true
+    },
+    {
+      "path": "templates/02_evidence_table.md",
+      "sha256": "7a94d7c5d9c993240f96d314b33b745f70e6d2e992ee11371a5f7b9cd6fa4217",
+      "bytes": 200,
+      "executable": true
+    },
+    {
+      "path": "templates/03_argument_map.md",
+      "sha256": "45d8705a58eb3c9cdb797481c9833f3bca3397039979fce185ac517d82f46496",
+      "bytes": 389,
+      "executable": true
+    },
+    {
+      "path": "templates/04_section_contracts.md",
+      "sha256": "93b791b8ed5b9404814b71100de3c646408c3cc14056591175d69ee17f29eef4",
+      "bytes": 140,
+      "executable": true
+    },
+    {
+      "path": "templates/05_style_guide.md",
+      "sha256": "1c1ece86768ad67339c74e088f46878fd894435795526d74f3d7b86351ab4e40",
+      "bytes": 226,
+      "executable": true
+    },
+    {
+      "path": "templates/qa_report.md",
+      "sha256": "f7dff657ae940698c4424fbb44cd15b1917dd5e68c5ae632e65f0a73eaed3049",
+      "bytes": 344,
+      "executable": true
+    },
+    {
+      "path": "templates/revision_brief.md",
+      "sha256": "e98f8174c8064010610396571a539aacb8e6f138a277735b6224e63f7576f50f",
+      "bytes": 190,
+      "executable": true
+    }
+  ],
+  "totalBytes": 102937,
+  "requires": [],
+  "permissionsNote": "Tool declarations are author claims, not host approvals. External services, credentials and tools are not installed or enabled by this entry."
+}

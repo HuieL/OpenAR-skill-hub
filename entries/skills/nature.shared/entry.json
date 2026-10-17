@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "nature.shared",
+  "kind": "skill",
+  "name": "Nature Shared",
+  "summary": "Shared core and journal-format references used by the Nature Skills workflows. Install beside dependent Nature skills; this is a support package rather than a standalone workflow.",
+  "authors": [
+    {
+      "name": "Nature Skills contributors",
+      "github": "Yuan1z0825"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "research",
+    "reference"
+  ],
+  "source": {
+    "repo": "Yuan1z0825/nature-skills",
+    "path": "skills/nature-shared",
+    "revision": "205ed18839181b0fe67323c7e42077a0807d8b03"
+  },
+  "version": "1.6.0",
+  "license": "Apache-2.0",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "2e42d487b9aa4985933dfb230ac57c88e8dfeba97644bb30d2c222de9a65e61e",
+      "bytes": 3351,
+      "executable": false
+    },
+    {
+      "path": "README_EN.md",
+      "sha256": "1d2fd257264aa512f52dfc131d9adfd67c7dcf2b6f1e3c059c693360b027b245",
+      "bytes": 3441,
+      "executable": false
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "3d914e73f023cab4f247d82f906a948307de8a867fd6c33df999badf67c5d5f2",
+      "bytes": 2130,
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "4bbf2e58b350269cf231f73ca12af1d097b9d64637023b037e238083151fbd67",
+      "bytes": 271,
+      "executable": false
+    },
+    {
+      "path": "core/consistency-sweep.md",
+      "sha256": "42b4f5337af441709951ecd9e60c7adc644b0a02a349fc41f64247d669adfe82",
+      "bytes": 7783,
+      "executable": false
+    },
+    {
+      "path": "core/discussion-argument-language.md",
+      "sha256": "a3b0ddcadc47efc029e923ae8133ba0bd99e6a6eb27fdbc791d0e1096d98c169",
+      "bytes": 9457,
+      "executable": false
+    },
+    {
+      "path": "core/ethics.md",
+      "sha256": "065db5761d72c295eb1ed5c231deb0b0bcbb0f1065d530f994c044398bd75056",
+      "bytes": 3424,
+      "executable": false
+    },
+    {
+      "path": "core/main-text-discipline.md",
+      "sha256": "d43190c4d617096c1088bb5452cec5b0ae13f5d4947c2b21c28315181f051b8e",
+      "bytes": 9168,
+      "executable": false
+    },
+    {
+      "path": "core/nature-abstract.md",
+      "sha256": "92c0f1e78df5a9b4dc7ad276ed625e371d211124a47a9eed0a4de82c9c1526cb",
+      "bytes": 7951,
+      "executable": false
+    },
+    {
+      "path": "core/nature-introduction.md",
+      "sha256": "813fb8acb9b5c76e9c8f1d8c1616fefa82a1ec949d4aba98935b0485fb4cd4f7",
+      "bytes": 7680,
+      "executable": false
+    },
+    {
+      "path": "core/nature-results-discussion.md",
+      "sha256": "16f1ce1ed6d2aad7853eabf304cdbd661530931747bce4cf3f10b3dfb655adc1",
+      "bytes": 10288,
+      "executable": false
+    },
+    {
+      "path": "core/paper-type-taxonomy.md",
+      "sha256": "84878907fd0416f628c8e3969e583569b9930f0129e6553167112435d93a3ad1",
+      "bytes": 2435,
+      "executable": false
+    },
+    {
+      "path": "core/reader-workflow.md",
+      "sha256": "acf54e59da3cd29d9179748895c7b5ed0da2d948704e97bee83771698ecbe10d",
+      "bytes": 977,
+      "executable": false
+    },
+    {
+      "path": "core/research-compliance.md",
+      "sha256": "0ac172d2af0c2089acd7280712a89b23a5f232d4e436e9ae78dd501ff30cd855",
+      "bytes": 7717,
+      "executable": false
+    },
+    {
+      "path": "core/terminology-ledger.md",
+      "sha256": "c8ff387fc55439dbec9835d624fb1c1e544cca06ae8d007f8e4f726f68080784",
+      "bytes": 2768,
+      "executable": false
+    },
+    {
+      "path": "journal-formats/nat-comms.md",
+      "sha256": "5a9eef685502e35d2289478d0b3815d5dbfbb6b2ed7d758accedfc7fd930e975",
+      "bytes": 7045,
+      "executable": false
+    },
+    {
+      "path": "journal-formats/nature-machine-intelligence.md",
+      "sha256": "d62a418fbd67841e745f553b98a267b5a01c9445457a07a0121095ce76fad0af",
+      "bytes": 18975,
+      "executable": false
+    },
+    {
+      "path": "journal-formats/nature.md",
+      "sha256": "2c4d007f69b64a2e083f9511748c3726b349a4dce4bfccbdac3bf97d1c1afc10",
+      "bytes": 13555,
+      "executable": false
+    },
+    {
+      "path": "manifest.yaml",
+      "sha256": "f45acd0684bba87b9ea1ece65752c4e26c2c4ce168d9611b7d616e595f1c34b8",
+      "bytes": 4460,
+      "executable": false
+    },
+    {
+      "path": "scripts/check_consistency.py",
+      "sha256": "670ccc43aad4639fe3525d8dce7443d85f462f99958b560a539cc5b6b0b072a6",
+      "bytes": 8924,
+      "executable": false
+    },
+    {
+      "path": "tests/test_check_consistency.py",
+      "sha256": "c70abcc137513cf947e44e0c35f99dd4438fbe4477faf89a6aa671ffa8fac1de",
+      "bytes": 2283,
+      "executable": false
+    }
+  ],
+  "totalBytes": 134083,
+  "requires": [],
+  "permissionsNote": "Tool declarations are author claims, not host approvals. External services, credentials and tools are not installed or enabled by this entry."
+}

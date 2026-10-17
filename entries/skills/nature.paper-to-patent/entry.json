@@ -1,0 +1,421 @@
+{
+  "schemaVersion": 1,
+  "id": "nature.paper-to-patent",
+  "kind": "skill",
+  "name": "Nature Paper To Patent",
+  "summary": "Convert scientific source material into evidence-grounded Chinese invention patent drafts and technical disclosures, with editable equations and claim-aligned figures.",
+  "authors": [
+    {
+      "name": "Nature Skills contributors",
+      "github": "Yuan1z0825"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "research"
+  ],
+  "source": {
+    "repo": "Yuan1z0825/nature-skills",
+    "path": "skills/nature-paper-to-patent",
+    "revision": "0e3f1bc074314e21f8309dc356bd05e1c1ca09f9"
+  },
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "876de21f43cdc107eade856dc0d8a30ef9da977a72f249312715ba3f9a099592",
+      "bytes": 2996,
+      "executable": false
+    },
+    {
+      "path": "README_EN.md",
+      "sha256": "0655ac539fa0dea5b8bfa09cad2db6a0ac0fdc6dbbfbcd7e81321e46076aa7d4",
+      "bytes": 3411,
+      "executable": false
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "1a57ae613bb545debba02ce4d9d36a53974e717cdafb1a5feb2cbd341bcf36b0",
+      "bytes": 4993,
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "9e06a6ad232af51d469c9d2e42cf13569a5c8334f913043e75ab2c37a4817192",
+      "bytes": 248,
+      "executable": false
+    },
+    {
+      "path": "evals/evals.json",
+      "sha256": "7f57328a0734ad0dd7fb0fa3c75eab55f5353b11bd0ab084e4b0cd67ea75cc19",
+      "bytes": 1579,
+      "executable": false
+    },
+    {
+      "path": "manifest.yaml",
+      "sha256": "820d91b7bdd2ffc2172f7957ddaa6652ca4cd07ad599760c6cbcec07320bb63c",
+      "bytes": 3170,
+      "executable": false
+    },
+    {
+      "path": "references/cn-patent-drafting-guide.md",
+      "sha256": "9b79ad9190433c3ce0d3a8281845765459a72add9a8f749f22cc92ca6f84a937",
+      "bytes": 8141,
+      "executable": false
+    },
+    {
+      "path": "references/corpus-derived-patterns.md",
+      "sha256": "d33d3d56e4b78fffd939d5a85b0f8046bcdefc521c9bb07b5ac96fed6bea73a0",
+      "bytes": 3546,
+      "executable": false
+    },
+    {
+      "path": "references/corpus-pair-audit.md",
+      "sha256": "12893e8f4601fc3e716c677762a087304f003a8c25a4273e8aa9806ab1cae3ab",
+      "bytes": 3005,
+      "executable": false
+    },
+    {
+      "path": "references/disclosure/correction_handler.md",
+      "sha256": "89bccf03df712ebc0fc9a42230048bbb6cd07aa90d362ffe71ed1a00ea5aae57",
+      "bytes": 2875,
+      "executable": false
+    },
+    {
+      "path": "references/disclosure/disclosure_builder.md",
+      "sha256": "9b477c883e491ce6bc8eb24664ae71a3bd210de1c01367d2d5ac4bd72e2adccf",
+      "bytes": 12434,
+      "executable": false
+    },
+    {
+      "path": "references/disclosure/disclosure_preview.md",
+      "sha256": "669b5ffb59cecb1bfa8a80e7d550dfefb18954166de26ebc0b812cc359fb854e",
+      "bytes": 917,
+      "executable": false
+    },
+    {
+      "path": "references/disclosure/disclosure_self_check.md",
+      "sha256": "71fa234871a50b6127f6fc459074ed904d4ed58ac3ab94bd8a0001bf9d2c996c",
+      "bytes": 6068,
+      "executable": false
+    },
+    {
+      "path": "references/disclosure/intake.md",
+      "sha256": "e9d54f4fc5467383788e899dfc38aa89e287370e436c815758b2223ecce8a819",
+      "bytes": 943,
+      "executable": false
+    },
+    {
+      "path": "references/disclosure/iteration_context.md",
+      "sha256": "9e740073e9fcc6ca303ad90d707b025b9826e4124ca657a206a576956dd7fecb",
+      "bytes": 4366,
+      "executable": false
+    },
+    {
+      "path": "references/disclosure/merger.md",
+      "sha256": "a0b778c2e2cca80d42facd91bc0caa0b224d2d9fdab8c83a59b50c602d0bc810",
+      "bytes": 3437,
+      "executable": false
+    },
+    {
+      "path": "references/disclosure/patent-disclosure-skill-MIT-LICENSE.txt",
+      "sha256": "d9329ae3b2de58aebaa015d8d1570513d48f1702318e6423896a4620845ab798",
+      "bytes": 1070,
+      "executable": false
+    },
+    {
+      "path": "references/disclosure/patent_points_analyzer.md",
+      "sha256": "14da46b85319010912990d2c5c0f6060b2affa25c323dca56842977f6ff18429",
+      "bytes": 951,
+      "executable": false
+    },
+    {
+      "path": "references/disclosure/prior_art_search.md",
+      "sha256": "6c09ac58b79fbd1967d3a0d17e65024f8c9ba220a3c30d28ba8c0fa53ebf507e",
+      "bytes": 10638,
+      "executable": false
+    },
+    {
+      "path": "references/disclosure/project_scan.md",
+      "sha256": "ea97a347e290821ebcfa5754a40044298ef0c5cff131ec09f7b129a0d5271278",
+      "bytes": 3657,
+      "executable": false
+    },
+    {
+      "path": "references/disclosure/template_reference.md",
+      "sha256": "25c94c82991ebac2f511c4bd2da0eb864e9398f1686dfe2181f36287d011ef76",
+      "bytes": 9470,
+      "executable": false
+    },
+    {
+      "path": "references/disclosure/tooling.md",
+      "sha256": "73a53d63112c385a9a9f9f0f7723e7ae52e538b85b38f111236907d6a2d25316",
+      "bytes": 16630,
+      "executable": false
+    },
+    {
+      "path": "references/draft-schema.md",
+      "sha256": "e86d953a21e989d57ea34bae9f9554b8187f66f90ff82cc9aba2515cffda9be2",
+      "bytes": 9237,
+      "executable": false
+    },
+    {
+      "path": "references/patent-figure-guide.md",
+      "sha256": "b35a6929b55523de5f3792bbde9b45d7baf4f5af46158ee0a4142fb12555deb6",
+      "bytes": 2935,
+      "executable": false
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "57cd4deb5e8f5e9cb4b3c2501271b9510e39ffa34f3f5b9163d0d388a2b3011b",
+      "bytes": 121,
+      "executable": false
+    },
+    {
+      "path": "scripts/audit_claims.py",
+      "sha256": "ab1b2eed503f93203b6ac7f4a7ee68751a19c48d8db481a98b6aec60a08816bd",
+      "bytes": 5732,
+      "executable": false
+    },
+    {
+      "path": "scripts/build_patent_package.py",
+      "sha256": "bc8c07e2ce09acb1202badf87396535a79285404916ff2664151f1222922777c",
+      "bytes": 6624,
+      "executable": false
+    },
+    {
+      "path": "scripts/disclosure/cnipa_epub_crawler.py",
+      "sha256": "6245e31f39bec071a34103ced1f27e59f173b104528f05ad56dd2e491bcd37cc",
+      "bytes": 10790,
+      "executable": false
+    },
+    {
+      "path": "scripts/disclosure/cnipa_epub_parse.py",
+      "sha256": "c2ed6175d61e71d57dee63e77f4ee78961065d003945c939b2557f61d7804a18",
+      "bytes": 8826,
+      "executable": false
+    },
+    {
+      "path": "scripts/disclosure/cnipa_epub_search.py",
+      "sha256": "58d2f22a06cd825ab64a22fb109592326514f7c2667815b14ea82697e27d99fa",
+      "bytes": 5889,
+      "executable": false
+    },
+    {
+      "path": "scripts/disclosure/docx_to_md.py",
+      "sha256": "f08b89add198e6806264041d691888d56508a622f2a9331b8bc9b51c03b2e90d",
+      "bytes": 3835,
+      "executable": false
+    },
+    {
+      "path": "scripts/disclosure/iteration_dialog_log.py",
+      "sha256": "590a8d3452f364f5134e0e7ae65492d9b1fec287a5fb8c5253efd04d0d4b7ee2",
+      "bytes": 3245,
+      "executable": false
+    },
+    {
+      "path": "scripts/disclosure/math_render.py",
+      "sha256": "cb58715e15b772590c501e10c33114b0b589eeec2248c0f1a9a52007e4f2c124",
+      "bytes": 12938,
+      "executable": false
+    },
+    {
+      "path": "scripts/disclosure/md_to_docx.py",
+      "sha256": "2206410f7ef81e149fec1bb21ead18863c879a13e94a5f1a92c9d6db5971c19a",
+      "bytes": 32805,
+      "executable": false
+    },
+    {
+      "path": "scripts/disclosure/mermaid_render.py",
+      "sha256": "7a32e65fe7f834184822462cc0b4b55b6496375cda71ab5720e6b37159337269",
+      "bytes": 15595,
+      "executable": false
+    },
+    {
+      "path": "scripts/disclosure/package-lock.json",
+      "sha256": "05e9d0c3f68a69e34a4ff0c8ddb99f41046c2cc72d013967da444b9cc24c1be1",
+      "bytes": 86430,
+      "executable": false
+    },
+    {
+      "path": "scripts/disclosure/package.json",
+      "sha256": "01842705490b028d332b983445f419eb2bb60339ef6ed8255ca97101733163a5",
+      "bytes": 279,
+      "executable": false
+    },
+    {
+      "path": "scripts/disclosure/pptx_to_md.py",
+      "sha256": "9aa95e5b143aee49cc00d1f127a5472ff5b464e185af92992545d3708b1d2f1f",
+      "bytes": 5040,
+      "executable": false
+    },
+    {
+      "path": "scripts/disclosure/requirements-cnipa.txt",
+      "sha256": "298313b8e851399518d64afdcb09b276496dbef1a3c53174d0b554d2ec475011",
+      "bytes": 172,
+      "executable": false
+    },
+    {
+      "path": "scripts/extract_pdf_text.py",
+      "sha256": "31496a1fce117cb4cbb7bc30290e7e537309a9c70354e73f68f9a463586379e1",
+      "bytes": 2362,
+      "executable": false
+    },
+    {
+      "path": "scripts/init_patent_project.py",
+      "sha256": "903f83b95529a8043543bc5193eb21267133a6bbc7a219589d8face10c60f58b",
+      "bytes": 3179,
+      "executable": false
+    },
+    {
+      "path": "scripts/math_to_omml.py",
+      "sha256": "0ceb792fb976529f603557d704c02fe2707fda930e09d433fff451c0261fe36a",
+      "bytes": 4873,
+      "executable": false
+    },
+    {
+      "path": "scripts/render_flowchart_svg.py",
+      "sha256": "ca4a365aba9b31f10a498bdf050747bfc365a99476552dd5b607b6576cbc98a8",
+      "bytes": 14626,
+      "executable": false
+    },
+    {
+      "path": "scripts/render_patent_docx.py",
+      "sha256": "d2ca47ef0cd077511ee9d1c038cd88f64cde63a334044c94f2cca9d77c0e0f4b",
+      "bytes": 10589,
+      "executable": false
+    },
+    {
+      "path": "scripts/validate_patent_draft.py",
+      "sha256": "a21459e3b1cc427427866336b67984cc526ac8f33795c6a6d63a5e497e27f7b3",
+      "bytes": 14391,
+      "executable": false
+    },
+    {
+      "path": "static/core/output-contract.md",
+      "sha256": "5e94a9dd4cf1446db23140a865d9cd814b50f5c74fcf147efdffa099b92bf139",
+      "bytes": 2007,
+      "executable": false
+    },
+    {
+      "path": "static/core/principles.md",
+      "sha256": "d2af37192ece5093c401deabe970b68524d7779ccf7dee0f265f2b3be373093c",
+      "bytes": 1016,
+      "executable": false
+    },
+    {
+      "path": "static/core/workflow.md",
+      "sha256": "1d6daa76607825a08a07354e162d1b81a958ab763522e60c4b3831f5ef72db90",
+      "bytes": 3920,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/invention/algorithm-software.md",
+      "sha256": "d4f3410eaa608a8543bb29a0201e7daf4b9962258720822d6a6c533ed3ecb9ae",
+      "bytes": 366,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/invention/apparatus-system.md",
+      "sha256": "62eb95ee21cdf1366b26ed5db40426edab03e90a318aae2bf5f562f4a0fcb378",
+      "bytes": 288,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/invention/mixed.md",
+      "sha256": "1465c24f43dfde93d1425a4cd958695f339d606e959c7087ebae572d48e18622",
+      "bytes": 255,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/invention/process-material.md",
+      "sha256": "418bc2d5fade2092079d8b1afc82f9519e2713a26f29beb40add3e4dd75e3c1a",
+      "bytes": 278,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/source/mixed-project.md",
+      "sha256": "c531009c1369a3d0e6d76e93e9aa5fadb7b4e1fa3133d1837043ffdd1e534b11",
+      "bytes": 369,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/source/pasted-text.md",
+      "sha256": "ecbaddd6cd889eb754e0d7342ba77a3cc702de641d8b20a706f9615d6d13104d",
+      "bytes": 316,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/source/pdf-text.md",
+      "sha256": "4573f244b4543080a5e0bea96fce9d2ee7fe1a8b44416aa28062a9e81f75a7c9",
+      "bytes": 290,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/source/scanned-pdf.md",
+      "sha256": "29c76c3aa9241f015d617d91196f7020e088647f1a2b641c7eefc536d1becae0",
+      "bytes": 272,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/task/claim-set.md",
+      "sha256": "fbe24704f13dbd89704a9406c0c3c966455f0a93387250daa952608c83c7513e",
+      "bytes": 249,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/task/disclosure-analysis.md",
+      "sha256": "628eb02506a2e0372805a9af9fcea60b7c8e8889dac6079c141d1d76d934d65f",
+      "bytes": 236,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/task/disclosure-iteration.md",
+      "sha256": "3c6e72f4f8232f99f656dd3591f71782aab3fbb89b7ecd04ee0ccd83e61cf6bb",
+      "bytes": 1005,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/task/full-draft.md",
+      "sha256": "a4b25a3f26bcfa8a8fc23cc1ce843eaf161ba2fcbddedba468bc03855b15f3bd",
+      "bytes": 247,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/task/paper-patent-audit.md",
+      "sha256": "4a3f4da6be185bc3dcc154e2b34dfe4685fef463ac3ff6a2cada18610d2f991b",
+      "bytes": 280,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/task/technical-disclosure.md",
+      "sha256": "e5306c2fed651a282b70103e657311c4ee29d2f7b716dc1cc9496d02b62ea1ee",
+      "bytes": 1587,
+      "executable": false
+    },
+    {
+      "path": "tests/test_mermaid_render.py",
+      "sha256": "87d767f979f1b91da780e94e5830788ae4dc5e265c20d50033ddf24299789f29",
+      "bytes": 2356,
+      "executable": false
+    },
+    {
+      "path": "tests/test_validation.py",
+      "sha256": "d65effde0cdb9813357f2c174019e55514036649f4dd4b9382b95a9bb4feffc5",
+      "bytes": 6104,
+      "executable": false
+    }
+  ],
+  "totalBytes": 386499,
+  "requires": [],
+  "permissionsNote": "Tool declarations are author claims, not host approvals. External services, credentials and tools are not installed or enabled by this entry."
+}

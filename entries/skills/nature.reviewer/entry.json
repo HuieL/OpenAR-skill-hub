@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "id": "nature.reviewer",
+  "kind": "skill",
+  "name": "Nature Reviewer",
+  "summary": "Simulate evidence-grounded peer review of scientific manuscripts, identifying major concerns, minor comments and blocking issues.",
+  "authors": [
+    {
+      "name": "Nature Skills contributors",
+      "github": "Yuan1z0825"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "research",
+    "review"
+  ],
+  "source": {
+    "repo": "Yuan1z0825/nature-skills",
+    "path": "skills/nature-reviewer",
+    "revision": "242daf708ffdaf9710caaf5f3b76debe31917c85"
+  },
+  "version": "1.4.0",
+  "license": "Apache-2.0",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "dd70f012a952362c61e48e499cc77d4ff8c1493477883aaa607f5bab166b7f36",
+      "bytes": 3114,
+      "executable": false
+    },
+    {
+      "path": "README_EN.md",
+      "sha256": "76637bc10d9ff1c96f9fb1d8f00d4416c12a92ad513c5ff3e782f0780f538c50",
+      "bytes": 3543,
+      "executable": false
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "88aab215096a1883b56a36e087fa8c2f64b39087461f1e69dbfcf5700ae80c19",
+      "bytes": 11745,
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "d178c25094dc93f82c79546915c8fcace9aaeabfa7d47acb304d48b9eda60ea6",
+      "bytes": 253,
+      "executable": false
+    },
+    {
+      "path": "manifest.yaml",
+      "sha256": "10a8f17c2d3d06a4dfcd2c2e344a56662b0afeafada4ec7dfbadc2c3f2fde536",
+      "bytes": 2526,
+      "executable": false
+    },
+    {
+      "path": "references/domain-specific-review-gates.md",
+      "sha256": "394caa5c36b64bf32ba4059fd9bae926e280c4cf2d915705459d858a946c67a4",
+      "bytes": 10432,
+      "executable": false
+    },
+    {
+      "path": "references/editorial criteria and processes.md",
+      "sha256": "93b46198ecc5c68e6b5fb31bc9c3f77a4d869cef631dfbd6ab361766bc919cdc",
+      "bytes": 4391,
+      "executable": false
+    },
+    {
+      "path": "references/qa-checklist.md",
+      "sha256": "9d2c2be74ded791f299ddf469ba7afcd5aeb408692be0b48b1175ab3657849dd",
+      "bytes": 6509,
+      "executable": false
+    },
+    {
+      "path": "references/report-structure.md",
+      "sha256": "3cb1107fe1e7adb49dbadfd00e57576f5804082e182a6a6b27c48017b7a2c65f",
+      "bytes": 5718,
+      "executable": false
+    },
+    {
+      "path": "references/review-axes.md",
+      "sha256": "88eb4fec5afe162238dd380bedcba052e6f5fce2b9a67afd94b3fd483efc941f",
+      "bytes": 3439,
+      "executable": false
+    },
+    {
+      "path": "references/reviewer-workflow.md",
+      "sha256": "d0f1b49c1af93019fcd992b7d88d81a110308191fc414c1dacaaa557fc95ae0e",
+      "bytes": 6478,
+      "executable": false
+    },
+    {
+      "path": "references/role-boundaries.md",
+      "sha256": "1b5d09b4b8f9a1ef24bf3fdd49d7c0f2c4ea3db3834656193192341e2bf02b80",
+      "bytes": 3421,
+      "executable": false
+    },
+    {
+      "path": "references/source-basis.md",
+      "sha256": "ff9626c18ac49b69ddf37db41a67bca0f4e671f3109952a5358650706bd55c48",
+      "bytes": 5473,
+      "executable": false
+    },
+    {
+      "path": "references/technical-concern-taxonomy.md",
+      "sha256": "3a4259499f3820f9a643d08eec24f3e27eefe80736d46793fa2db603fe3f8566",
+      "bytes": 6421,
+      "executable": false
+    },
+    {
+      "path": "tests/punctuation-style.md",
+      "sha256": "65999daf645691fd294a9f5ade3857285951af2c7d0be75bf602eff6549f9b70",
+      "bytes": 1812,
+      "executable": false
+    },
+    {
+      "path": "tests/reviewer-independence.md",
+      "sha256": "54019a6a23914d000aeaa07e9964bdf64d6647a13702c4cddd998043a2526f3e",
+      "bytes": 2738,
+      "executable": false
+    },
+    {
+      "path": "tests/severity-tiering.md",
+      "sha256": "dd330c66eebcb599dd5f23bf0f8dd2cfef209d288219c3a5c677937b0fdeee16",
+      "bytes": 2738,
+      "executable": false
+    },
+    {
+      "path": "tests/test_reviewer_instruction_contracts.py",
+      "sha256": "4274a15562efa3c61141cf9a92a80a6ec5b7780fdc108a7deb3781db2be5b389",
+      "bytes": 1229,
+      "executable": false
+    },
+    {
+      "path": "tests/traceable-review.md",
+      "sha256": "b3a7380d3f466511f3c6946e875272676d9e5dbf139f10de159fc4a84d34e025",
+      "bytes": 1746,
+      "executable": false
+    }
+  ],
+  "totalBytes": 83726,
+  "requires": [
+    "nature.shared"
+  ],
+  "permissionsNote": "Tool declarations are author claims, not host approvals. External services, credentials and tools are not installed or enabled by this entry."
+}

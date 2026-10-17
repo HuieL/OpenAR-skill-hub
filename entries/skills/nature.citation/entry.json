@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "id": "nature.citation",
+  "kind": "skill",
+  "name": "Nature Citation",
+  "summary": "Find verified Nature, Science and Cell family references for manuscript claims, map citations to text segments and export reference-manager files.",
+  "authors": [
+    {
+      "name": "Nature Skills contributors",
+      "github": "Yuan1z0825"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "research",
+    "literature"
+  ],
+  "source": {
+    "repo": "Yuan1z0825/nature-skills",
+    "path": "skills/nature-citation",
+    "revision": "10cf80f4ba3350f23f8188fffb88b7a3f531a4c0"
+  },
+  "version": "2.1.0",
+  "license": "Apache-2.0",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "f000e9cf8549450e8a0c42c911d36ee431c2b5130b327c8397b3d3e09c4c7950",
+      "bytes": 2121,
+      "executable": false
+    },
+    {
+      "path": "README_EN.md",
+      "sha256": "e642dc44e2d034339bea42e1ccc1c90622b7fc46811055677b0eff1072c78815",
+      "bytes": 2266,
+      "executable": false
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "ada5720816a45e85d3b8c96eedf04255b814cf8bbc6f177d1f12639a2409ed85",
+      "bytes": 4880,
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "2cfa5df50708b51bf6ad576cc415ef3cb97181bdc226058a6325bb11afd8def1",
+      "bytes": 230,
+      "executable": false
+    },
+    {
+      "path": "evals/evals.json",
+      "sha256": "0bc4a6ffe5186ead61502df34190d57bee27b0b6094f70eefdcb507f519c8b15",
+      "bytes": 1854,
+      "executable": false
+    },
+    {
+      "path": "manifest.yaml",
+      "sha256": "043f35c8f810c15552ae1ccde2f2f9ac7b2db7d876479379fe51495f3ceebb79",
+      "bytes": 1648,
+      "executable": false
+    },
+    {
+      "path": "references/journal-scope.md",
+      "sha256": "5c591ab2580bfc42e0cb44445149be994aafe7a99162eb025ac533998b36eec9",
+      "bytes": 2152,
+      "executable": false
+    },
+    {
+      "path": "references/ris-endnote.md",
+      "sha256": "00523e5231a5fbfd21bdd2b2b79de7f74900ae989a7406897a3c395c4830dee9",
+      "bytes": 3800,
+      "executable": false
+    },
+    {
+      "path": "references/script-usage.md",
+      "sha256": "776824574803af6680c9185717f9d6e63b0ed3d8cc82ce05d3739ff311e3242d",
+      "bytes": 4311,
+      "executable": false
+    },
+    {
+      "path": "references/search-strategy.md",
+      "sha256": "6d71658fa005b07895a8120c218dffe851314c45fcc5980caa9c79a79b58ba7d",
+      "bytes": 2952,
+      "executable": false
+    },
+    {
+      "path": "scripts/nature_citation.py",
+      "sha256": "2319f58caf74c441f5463fa5b4ddbc00fb084ff9eec5aa3164cc14cc9b8533e2",
+      "bytes": 85548,
+      "executable": false
+    },
+    {
+      "path": "static/core/chinese-mode.md",
+      "sha256": "bd96a0bb93e42209def50af56d09a8deff0618847e8f9ddce96196421f5ca9c6",
+      "bytes": 767,
+      "executable": false
+    },
+    {
+      "path": "static/core/principles.md",
+      "sha256": "f47358cc1389b7da9b3783aefbd8361ea448c24144728595417b5f595a8f86db",
+      "bytes": 3079,
+      "executable": false
+    },
+    {
+      "path": "static/core/workflow.md",
+      "sha256": "b95b4127df7ec5303ea0d3a17e0f53ed01a65fe4e9cd5273a9c4252b7ac3718b",
+      "bytes": 6350,
+      "executable": false
+    },
+    {
+      "path": "tests/test_author_exports.py",
+      "sha256": "06396bc0f23ae31e2fb2963d5e7218285a415422048d02287e2640fa994b4127",
+      "bytes": 7351,
+      "executable": false
+    }
+  ],
+  "totalBytes": 129309,
+  "requires": [],
+  "permissionsNote": "Tool declarations are author claims, not host approvals. External services, credentials and tools are not installed or enabled by this entry."
+}

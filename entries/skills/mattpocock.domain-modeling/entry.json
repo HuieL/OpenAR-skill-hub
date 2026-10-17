@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "mattpocock.domain-modeling",
+  "kind": "skill",
+  "name": "Domain Modeling",
+  "summary": "Build and sharpen a project's domain model. Use when discussing codebase terminology, writing or editing a CONTEXT.md, or recording or editing an ADR.",
+  "authors": [
+    {
+      "name": "Matt Pocock",
+      "github": "mattpocock"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "coding"
+  ],
+  "source": {
+    "repo": "mattpocock/skills",
+    "path": "skills/engineering/domain-modeling",
+    "revision": "321658273cb1d20b76026717d027d505790106d4"
+  },
+  "version": "321658273cb1d20b76026717d027d505790106d4",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "ADR-FORMAT.md",
+      "sha256": "944c92aa790e8fbdc9199640b170979abb8a34ba8d0fe18c2a01a63bce140ca0",
+      "bytes": 2733,
+      "executable": false
+    },
+    {
+      "path": "CONTEXT-FORMAT.md",
+      "sha256": "17ab16ce783e4d2801ee52fd9acdf550cbf44de65ae76797a93943bbedf22a13",
+      "bytes": 2290,
+      "executable": false
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "327a2b50620e2fd70abc6893cd6965e76b20f8d0adb0dc2c8d5eb3845efb643e",
+      "bytes": 3331,
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "f6bf2aa996c6e6f53fdd0708e18a0d16a56aed8322cca59fedbe3c0d2c75f06b",
+      "bytes": 101,
+      "executable": false
+    }
+  ],
+  "totalBytes": 8455,
+  "requires": [],
+  "permissionsNote": "Tool declarations are author claims, not host approvals. External services, credentials and tools are not installed or enabled by this entry."
+}

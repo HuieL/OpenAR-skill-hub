@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "mattpocock.to-spec",
+  "kind": "skill",
+  "name": "To Spec",
+  "summary": "Turn the current conversation into a spec and publish it to the project issue tracker: no interview, just synthesis of what you've already discussed.",
+  "authors": [
+    {
+      "name": "Matt Pocock",
+      "github": "mattpocock"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "coding"
+  ],
+  "source": {
+    "repo": "mattpocock/skills",
+    "path": "skills/engineering/to-spec",
+    "revision": "5c89081d4bbeb3d039a42093653f90bb698d780e"
+  },
+  "version": "5c89081d4bbeb3d039a42093653f90bb698d780e",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "43ad9cf318e5e7d3d1fa360253a37021796dc87a0c2e595ad262661a10f85088",
+      "bytes": 3043,
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "1c5b4d1e3d8e52287ef19cc2742fdbbfae1914ac75d33af3e4c8174f08cc55bb",
+      "bytes": 135,
+      "executable": false
+    }
+  ],
+  "totalBytes": 3178,
+  "requires": [],
+  "permissionsNote": "Tool declarations are author claims, not host approvals. External services, credentials and tools are not installed or enabled by this entry."
+}

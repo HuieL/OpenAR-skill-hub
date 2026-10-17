@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "mattpocock.improve-codebase-architecture",
+  "kind": "skill",
+  "name": "Improve Codebase Architecture",
+  "summary": "Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick.",
+  "authors": [
+    {
+      "name": "Matt Pocock",
+      "github": "mattpocock"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "coding"
+  ],
+  "source": {
+    "repo": "mattpocock/skills",
+    "path": "skills/engineering/improve-codebase-architecture",
+    "revision": "321658273cb1d20b76026717d027d505790106d4"
+  },
+  "version": "321658273cb1d20b76026717d027d505790106d4",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "HTML-REPORT.md",
+      "sha256": "581e8bb5a521e46bbda8ca7e19b15948bed882187108092ebb90c62513b77528",
+      "bytes": 6641,
+      "executable": false
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "d1ac25511a936ff4250a48dbcefda363837d6bb9321b3cba73df99fa37270a75",
+      "bytes": 5993,
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "c8cb20f68ebf0edb4e497bc11ae5fcaa196004e661cd189015b04f4109ced7f1",
+      "bytes": 166,
+      "executable": false
+    }
+  ],
+  "totalBytes": 12800,
+  "requires": [
+    "mattpocock.codebase-design",
+    "mattpocock.domain-modeling",
+    "mattpocock.grilling"
+  ],
+  "permissionsNote": "Tool declarations are author claims, not host approvals. External services, credentials and tools are not installed or enabled by this entry."
+}

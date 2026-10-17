@@ -17,7 +17,9 @@
         "./entries/skills/hub.officecli-data-dashboard/skill",
         "./entries/skills/hub.research-design-system/skill",
         "./entries/skills/hub.web-design-guidelines/skill",
-        "./entries/skills/hub.writing-guidelines/skill"
+        "./entries/skills/hub.writing-guidelines/skill",
+        "./entries/skills/mattpocock.matt-prototype/skill",
+        "./entries/skills/nature.figure/skill"
       ]
     },
     {
@@ -196,6 +198,305 @@
       "strict": false,
       "skills": [
         "./human-writing"
+      ]
+    },
+    {
+      "name": "nature-skills",
+      "source": {
+        "source": "github",
+        "repo": "Yuan1z0825/nature-skills",
+        "sha": "0e3f1bc074314e21f8309dc356bd05e1c1ca09f9"
+      },
+      "description": "1 skill from Yuan1z0825/nature-skills, pinned at 0e3f1bc07431 as listed on the OpenAR Skill Hub.",
+      "strict": false,
+      "skills": [
+        "./skills/nature-paper-to-patent"
+      ]
+    },
+    {
+      "name": "yuan1z0825-nature-skills",
+      "source": {
+        "source": "github",
+        "repo": "Yuan1z0825/nature-skills",
+        "sha": "10cf80f4ba3350f23f8188fffb88b7a3f531a4c0"
+      },
+      "description": "1 skill from Yuan1z0825/nature-skills, pinned at 10cf80f4ba33 as listed on the OpenAR Skill Hub.",
+      "strict": false,
+      "skills": [
+        "./skills/nature-citation"
+      ]
+    },
+    {
+      "name": "yuan1z0825-nature-skills",
+      "source": {
+        "source": "github",
+        "repo": "Yuan1z0825/nature-skills",
+        "sha": "205ed18839181b0fe67323c7e42077a0807d8b03"
+      },
+      "description": "1 skill from Yuan1z0825/nature-skills, pinned at 205ed1883918 as listed on the OpenAR Skill Hub.",
+      "strict": false,
+      "skills": [
+        "./skills/nature-shared"
+      ]
+    },
+    {
+      "name": "yuan1z0825-nature-skills",
+      "source": {
+        "source": "github",
+        "repo": "Yuan1z0825/nature-skills",
+        "sha": "242daf708ffdaf9710caaf5f3b76debe31917c85"
+      },
+      "description": "5 skills from Yuan1z0825/nature-skills, pinned at 242daf708ffd as listed on the OpenAR Skill Hub.",
+      "strict": false,
+      "skills": [
+        "./skills/nature-downloader",
+        "./skills/nature-literature-pipeline",
+        "./skills/nature-paper-card",
+        "./skills/nature-paper2ppt",
+        "./skills/nature-reviewer"
+      ]
+    },
+    {
+      "name": "yuan1z0825-nature-skills",
+      "source": {
+        "source": "github",
+        "repo": "Yuan1z0825/nature-skills",
+        "sha": "28150f30f8b4017991fca8c7b2839f02c6586d2f"
+      },
+      "description": "2 skills from Yuan1z0825/nature-skills, pinned at 28150f30f8b4 as listed on the OpenAR Skill Hub.",
+      "strict": false,
+      "skills": [
+        "./skills/nature-polishing",
+        "./skills/nature-writing"
+      ]
+    },
+    {
+      "name": "yuan1z0825-nature-skills",
+      "source": {
+        "source": "github",
+        "repo": "Yuan1z0825/nature-skills",
+        "sha": "2addf56671fac0304a69851cb050727b4f0400a4"
+      },
+      "description": "1 skill from Yuan1z0825/nature-skills, pinned at 2addf56671fa as listed on the OpenAR Skill Hub.",
+      "strict": false,
+      "skills": [
+        "./skills/nature-proposal-writer"
+      ]
+    },
+    {
+      "name": "yuan1z0825-nature-skills",
+      "source": {
+        "source": "github",
+        "repo": "Yuan1z0825/nature-skills",
+        "sha": "2bf67fd76aa2d47da8c804acabf08ccb9089b822"
+      },
+      "description": "1 skill from Yuan1z0825/nature-skills, pinned at 2bf67fd76aa2 as listed on the OpenAR Skill Hub.",
+      "strict": false,
+      "skills": [
+        "./skills/nature-experiment-log"
+      ]
+    },
+    {
+      "name": "yuan1z0825-nature-skills",
+      "source": {
+        "source": "github",
+        "repo": "Yuan1z0825/nature-skills",
+        "sha": "42507354cfe36ac52031cdf69c5b1aa19bc7eaa0"
+      },
+      "description": "1 skill from Yuan1z0825/nature-skills, pinned at 42507354cfe3 as listed on the OpenAR Skill Hub.",
+      "strict": false,
+      "skills": [
+        "./skills/nature-ref-verifier"
+      ]
+    },
+    {
+      "name": "yuan1z0825-nature-skills",
+      "source": {
+        "source": "github",
+        "repo": "Yuan1z0825/nature-skills",
+        "sha": "552af66976bec65021371d7563103f2103450f6e"
+      },
+      "description": "1 skill from Yuan1z0825/nature-skills, pinned at 552af66976be as listed on the OpenAR Skill Hub.",
+      "strict": false,
+      "skills": [
+        "./skills/nature-image2ppt"
+      ]
+    },
+    {
+      "name": "yuan1z0825-nature-skills",
+      "source": {
+        "source": "github",
+        "repo": "Yuan1z0825/nature-skills",
+        "sha": "6c39b20fe8f6033090d227c616ee3152de70490e"
+      },
+      "description": "1 skill from Yuan1z0825/nature-skills, pinned at 6c39b20fe8f6 as listed on the OpenAR Skill Hub.",
+      "strict": false,
+      "skills": [
+        "./skills/nature-academic-search"
+      ]
+    },
+    {
+      "name": "yuan1z0825-nature-skills",
+      "source": {
+        "source": "github",
+        "repo": "Yuan1z0825/nature-skills",
+        "sha": "adb7b8a5a7d72ed6fe9f71e085785e9972dd8db2"
+      },
+      "description": "1 skill from Yuan1z0825/nature-skills, pinned at adb7b8a5a7d7 as listed on the OpenAR Skill Hub.",
+      "strict": false,
+      "skills": [
+        "./skills/nature-reader"
+      ]
+    },
+    {
+      "name": "yuan1z0825-nature-skills",
+      "source": {
+        "source": "github",
+        "repo": "Yuan1z0825/nature-skills",
+        "sha": "c171989db699bd601d4373912b3fb8db96ecc95b"
+      },
+      "description": "1 skill from Yuan1z0825/nature-skills, pinned at c171989db699 as listed on the OpenAR Skill Hub.",
+      "strict": false,
+      "skills": [
+        "./skills/nature-response"
+      ]
+    },
+    {
+      "name": "yuan1z0825-nature-skills",
+      "source": {
+        "source": "github",
+        "repo": "Yuan1z0825/nature-skills",
+        "sha": "fe7f972c8d5d1c7e08f5ee742dc49fa493614930"
+      },
+      "description": "2 skills from Yuan1z0825/nature-skills, pinned at fe7f972c8d5d as listed on the OpenAR Skill Hub.",
+      "strict": false,
+      "skills": [
+        "./skills/nature-data",
+        "./skills/nature-statistics"
+      ]
+    },
+    {
+      "name": "skills",
+      "source": {
+        "source": "github",
+        "repo": "mattpocock/skills",
+        "sha": "321658273cb1d20b76026717d027d505790106d4"
+      },
+      "description": "18 skills from mattpocock/skills, pinned at 321658273cb1 as listed on the OpenAR Skill Hub.",
+      "strict": false,
+      "skills": [
+        "./skills/engineering/codebase-design",
+        "./skills/engineering/diagnosing-bugs",
+        "./skills/engineering/domain-modeling",
+        "./skills/engineering/improve-codebase-architecture",
+        "./skills/engineering/research",
+        "./skills/engineering/tdd",
+        "./skills/engineering/to-tickets",
+        "./skills/engineering/triage",
+        "./skills/engineering/wayfinder",
+        "./skills/engineering/wizard",
+        "./skills/in-progress/claude-handoff",
+        "./skills/in-progress/loop-me",
+        "./skills/in-progress/writing-beats",
+        "./skills/misc/git-guardrails-claude-code",
+        "./skills/misc/setup-pre-commit",
+        "./skills/productivity/teach",
+        "./skills/productivity/to-questionnaire",
+        "./skills/productivity/writing-for-agents"
+      ]
+    },
+    {
+      "name": "mattpocock-skills",
+      "source": {
+        "source": "github",
+        "repo": "mattpocock/skills",
+        "sha": "447ca70872026d5b79d6073a546dac082117fed7"
+      },
+      "description": "1 skill from mattpocock/skills, pinned at 447ca7087202 as listed on the OpenAR Skill Hub.",
+      "strict": false,
+      "skills": [
+        "./skills/engineering/grill-with-docs"
+      ]
+    },
+    {
+      "name": "mattpocock-skills",
+      "source": {
+        "source": "github",
+        "repo": "mattpocock/skills",
+        "sha": "5b15a47f2d7150f545fbcacbfe381787fc0230dc"
+      },
+      "description": "1 skill from mattpocock/skills, pinned at 5b15a47f2d71 as listed on the OpenAR Skill Hub.",
+      "strict": false,
+      "skills": [
+        "./skills/in-progress/implement-spec"
+      ]
+    },
+    {
+      "name": "mattpocock-skills",
+      "source": {
+        "source": "github",
+        "repo": "mattpocock/skills",
+        "sha": "5c89081d4bbeb3d039a42093653f90bb698d780e"
+      },
+      "description": "4 skills from mattpocock/skills, pinned at 5c89081d4bbe as listed on the OpenAR Skill Hub.",
+      "strict": false,
+      "skills": [
+        "./skills/engineering/code-review",
+        "./skills/engineering/to-spec",
+        "./skills/in-progress/writing-fragments",
+        "./skills/in-progress/writing-shape"
+      ]
+    },
+    {
+      "name": "mattpocock-skills",
+      "source": {
+        "source": "github",
+        "repo": "mattpocock/skills",
+        "sha": "697d4ce9742da558fd1ba6697c8e9775e2e302dd"
+      },
+      "description": "1 skill from mattpocock/skills, pinned at 697d4ce9742d as listed on the OpenAR Skill Hub.",
+      "strict": false,
+      "skills": [
+        "./skills/engineering/implement"
+      ]
+    },
+    {
+      "name": "mattpocock-skills",
+      "source": {
+        "source": "github",
+        "repo": "mattpocock/skills",
+        "sha": "85f83d3fde1d3a90d5c9a657f6998c79a6c37308"
+      },
+      "description": "1 skill from mattpocock/skills, pinned at 85f83d3fde1d as listed on the OpenAR Skill Hub.",
+      "strict": false,
+      "skills": [
+        "./skills/productivity/grilling"
+      ]
+    },
+    {
+      "name": "mattpocock-skills",
+      "source": {
+        "source": "github",
+        "repo": "mattpocock/skills",
+        "sha": "d28dfdc39beadc3142a33359b5cfa4765dcbd0bc"
+      },
+      "description": "1 skill from mattpocock/skills, pinned at d28dfdc39bea as listed on the OpenAR Skill Hub.",
+      "strict": false,
+      "skills": [
+        "./skills/productivity/handoff"
+      ]
+    },
+    {
+      "name": "mattpocock-skills",
+      "source": {
+        "source": "github",
+        "repo": "mattpocock/skills",
+        "sha": "fcf0071560d32913c9d4f820e0d7ca467c881619"
+      },
+      "description": "1 skill from mattpocock/skills, pinned at fcf0071560d3 as listed on the OpenAR Skill Hub.",
+      "strict": false,
+      "skills": [
+        "./skills/productivity/grill-me"
       ]
     },
     {

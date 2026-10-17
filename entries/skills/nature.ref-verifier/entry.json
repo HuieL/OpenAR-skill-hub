@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "id": "nature.ref-verifier",
+  "kind": "skill",
+  "name": "Nature Ref Verifier",
+  "summary": "Cross-check reference metadata across sources, comparing authors, titles, years, volumes, pages and DOI records; report discrepancies and optional Zotero corrections.",
+  "authors": [
+    {
+      "name": "Nature Skills contributors",
+      "github": "Yuan1z0825"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "research",
+    "literature"
+  ],
+  "source": {
+    "repo": "Yuan1z0825/nature-skills",
+    "path": "skills/nature-ref-verifier",
+    "revision": "42507354cfe36ac52031cdf69c5b1aa19bc7eaa0"
+  },
+  "version": "1.0.1",
+  "license": "Apache-2.0",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "57d07eebb059a5117c20b9626a4361f3648b0b6f031fb9c76ea018aca4a0ca5d",
+      "bytes": 1930,
+      "executable": false
+    },
+    {
+      "path": "README_EN.md",
+      "sha256": "986aafcee95af57fee26434707bcd70138c7b831fca9d79de81f1ea86ad4ed80",
+      "bytes": 2089,
+      "executable": false
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "6a975074d7a1c62c00dd9e8c7367cd2af0ef9d573d6d6ce5ea12f70d9320a516",
+      "bytes": 9756,
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "8ff76548af85a85dc397d6a519a35d5f4a275a2b0c9f696cb1f7d084cf86d5b6",
+      "bytes": 258,
+      "executable": false
+    },
+    {
+      "path": "manifest.yaml",
+      "sha256": "fc496c04d7e1b7ffe7ad3e1ed513841234b8206ef2bf4e965643fd6e8a766d18",
+      "bytes": 793,
+      "executable": false
+    },
+    {
+      "path": "references/common-patterns.md",
+      "sha256": "0f8bba9f8d4e159c7a8dd8a7c971f8faa9ce03c25ce0248015be67eaf1fdf243",
+      "bytes": 3623,
+      "executable": false
+    }
+  ],
+  "totalBytes": 18449,
+  "requires": [],
+  "permissionsNote": "Tool declarations are author claims, not host approvals. External services, credentials and tools are not installed or enabled by this entry."
+}

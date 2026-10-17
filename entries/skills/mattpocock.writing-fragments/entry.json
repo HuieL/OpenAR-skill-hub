@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "mattpocock.writing-fragments",
+  "kind": "skill",
+  "name": "Writing Fragments",
+  "summary": "Writing, explore: mine raw fragments, no structure yet.",
+  "authors": [
+    {
+      "name": "Matt Pocock",
+      "github": "mattpocock"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "writing"
+  ],
+  "source": {
+    "repo": "mattpocock/skills",
+    "path": "skills/in-progress/writing-fragments",
+    "revision": "5c89081d4bbeb3d039a42093653f90bb698d780e"
+  },
+  "version": "5c89081d4bbeb3d039a42093653f90bb698d780e",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "298b0edd23df229183630de592ed8aa4289233560f2040691f6eb77caeaad4ea",
+      "bytes": 3558,
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "81167f25ee8ea1bb4b4958f12b6702ea972ad31b05e03ec91e39fa4bae0c2641",
+      "bytes": 140,
+      "executable": false
+    }
+  ],
+  "totalBytes": 3698,
+  "requires": [],
+  "permissionsNote": "Tool declarations are author claims, not host approvals. External services, credentials and tools are not installed or enabled by this entry."
+}

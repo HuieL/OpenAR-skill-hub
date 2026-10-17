@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "id": "nature.data",
+  "kind": "skill",
+  "name": "Nature Data",
+  "summary": "Draft and audit data availability statements, repository plans, dataset citations and FAIR metadata for scientific manuscripts.",
+  "authors": [
+    {
+      "name": "Nature Skills contributors",
+      "github": "Yuan1z0825"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "research"
+  ],
+  "source": {
+    "repo": "Yuan1z0825/nature-skills",
+    "path": "skills/nature-data",
+    "revision": "fe7f972c8d5d1c7e08f5ee742dc49fa493614930"
+  },
+  "version": "2.2.0",
+  "license": "Apache-2.0",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "1aab4ad7731dbcca50a66c285664387e55995c2c571139ec6ede6d103d04bdfc",
+      "bytes": 2273,
+      "executable": false
+    },
+    {
+      "path": "README_EN.md",
+      "sha256": "f536d49d982ff201748421b45d7130bc7253b57a0afafd47ae9befbed4b895d8",
+      "bytes": 2506,
+      "executable": false
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "f452776cf4b7620d753a1bb49b2b999bdb807de83fd03fbf1f3a32be70b459ed",
+      "bytes": 5243,
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "a371700ff5d166b4e591366bfaf687cb986282cc84d2f6b9434c5d93a500728f",
+      "bytes": 236,
+      "executable": false
+    },
+    {
+      "path": "manifest.yaml",
+      "sha256": "b3f77ad7003fafbe7741ec9538f38f381b92b9651b295c5b6297b23d5f77fe11",
+      "bytes": 2295,
+      "executable": false
+    },
+    {
+      "path": "references/chinese-author-alignment.md",
+      "sha256": "31e315ea091192643103ab2d7e130f58e192c51caf52632279ab5991f4812383",
+      "bytes": 5010,
+      "executable": false
+    },
+    {
+      "path": "references/fair-metadata-checklist.md",
+      "sha256": "396170bc77a8783bbe205e37f90d2d845d0653afc3252944c1b9e5cb10d250de",
+      "bytes": 4649,
+      "executable": false
+    },
+    {
+      "path": "references/nature-article-requirements.md",
+      "sha256": "3b38e4842e56b866f9f0ead03714507995326f3e7f8024fcead2bd69ebcc1e54",
+      "bytes": 5103,
+      "executable": false
+    },
+    {
+      "path": "references/policy-principles.md",
+      "sha256": "26f02aef58435f406b44d6fd96f3067eb0f4d6af4188c4e3765913920e4f7641",
+      "bytes": 5875,
+      "executable": false
+    },
+    {
+      "path": "references/repository-and-identifiers.md",
+      "sha256": "da3ce50339c03194811170477da88edececafba5571b4b82866d04492dfbc697",
+      "bytes": 4390,
+      "executable": false
+    },
+    {
+      "path": "references/source-basis.md",
+      "sha256": "46f726a79e7a28fca6e342e59e2d87753aaab827de500647d3335f866fe76af8",
+      "bytes": 5391,
+      "executable": false
+    },
+    {
+      "path": "references/statement-patterns.md",
+      "sha256": "e10d26c2ba04af1c38727cb1d0adccfb050c44d3bbc35e37f31ec371a4077539",
+      "bytes": 8088,
+      "executable": false
+    },
+    {
+      "path": "static/core/chinese-mode.md",
+      "sha256": "9d3cda4ad60a3e40b78b2ba9850bcde8ef3715992e363329983e13f3a88e2899",
+      "bytes": 1193,
+      "executable": false
+    },
+    {
+      "path": "static/core/stance.md",
+      "sha256": "fe0829bd6d7d21d284bc0b75c523ec8b9f4e28477ee07302cab471a363952237",
+      "bytes": 1910,
+      "executable": false
+    },
+    {
+      "path": "static/core/workflow.md",
+      "sha256": "4bc02d07982b8648d2bf016177fd0c1f2a63c6fadcda247c1e8f73047b6ee358",
+      "bytes": 1564,
+      "executable": false
+    }
+  ],
+  "totalBytes": 55726,
+  "requires": [
+    "nature.shared"
+  ],
+  "permissionsNote": "Tool declarations are author claims, not host approvals. External services, credentials and tools are not installed or enabled by this entry."
+}

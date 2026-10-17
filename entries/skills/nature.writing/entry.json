@@ -1,0 +1,496 @@
+{
+  "schemaVersion": 1,
+  "id": "nature.writing",
+  "kind": "skill",
+  "name": "Nature Writing",
+  "summary": "Draft and structure scientific manuscript sections and submission materials from author-provided results, figures and notes.",
+  "authors": [
+    {
+      "name": "Nature Skills contributors",
+      "github": "Yuan1z0825"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "research",
+    "writing"
+  ],
+  "source": {
+    "repo": "Yuan1z0825/nature-skills",
+    "path": "skills/nature-writing",
+    "revision": "28150f30f8b4017991fca8c7b2839f02c6586d2f"
+  },
+  "version": "1.5.0",
+  "license": "Apache-2.0",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "8e2b300189ba2fb33e849ac2c9299a903ffb4da3b2629e55736904925671e813",
+      "bytes": 4381,
+      "executable": false
+    },
+    {
+      "path": "README_EN.md",
+      "sha256": "f491a275177ef2560c1a17b24085d568ec05cecb9766824e3f4c5813a96ad44d",
+      "bytes": 4988,
+      "executable": false
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "cd9a7094963017e462f226b43c9677a9ffc600a62968cadb1f4cd277e6313c30",
+      "bytes": 9628,
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "35275439e4108cea510a750d1368b017fe1b3e88cc8f341475f1478e3090f79c",
+      "bytes": 253,
+      "executable": false
+    },
+    {
+      "path": "manifest.yaml",
+      "sha256": "91004af376547a51b033e7e7aeab9fd81eb1fa727995afb9e8823a844e32925a",
+      "bytes": 8678,
+      "executable": false
+    },
+    {
+      "path": "references/abstract.md",
+      "sha256": "b639c44ada14a644a2823f16c9e7efa513525f8c9666357e8ccb33a136c7ed1e",
+      "bytes": 4067,
+      "executable": false
+    },
+    {
+      "path": "references/article-architecture.md",
+      "sha256": "fc57ff3e8152ddd1d4eb72eb1f062c4a048a13cedac135b21ea32baee0c34ba9",
+      "bytes": 3434,
+      "executable": false
+    },
+    {
+      "path": "references/chinese-author-workflow.md",
+      "sha256": "42fc1cb975d94d1ecdb8901fb6f6e727ca321379b0faa3745d4814c0b1268bf1",
+      "bytes": 1821,
+      "executable": false
+    },
+    {
+      "path": "references/conclusion.md",
+      "sha256": "64de66f24ceb42ff5cefb4498a8bd16f595661bbaa604d9cde6e743b39dab9c6",
+      "bytes": 1244,
+      "executable": false
+    },
+    {
+      "path": "references/examples/abstract-examples.md",
+      "sha256": "8228ce8ec4a35b8339bcb439c4292bb2d678e5be17af2ef1d7631d03ebf40010",
+      "bytes": 875,
+      "executable": false
+    },
+    {
+      "path": "references/examples/abstract/template-a.md",
+      "sha256": "c4cec6346be6d76350bfacea36c1abad5bce669e810f7facc2c884b664a8d83e",
+      "bytes": 950,
+      "executable": false
+    },
+    {
+      "path": "references/examples/abstract/template-b.md",
+      "sha256": "dc41e8d5206fca72dd41b2cd188ec447b7735b54c164b6da1785bd88c2e0b78d",
+      "bytes": 3265,
+      "executable": false
+    },
+    {
+      "path": "references/examples/abstract/template-c.md",
+      "sha256": "4f6269a1b1ad47055eb4287cdd0410ea1d1d1198dbf02d74671f50d3fa0d1447",
+      "bytes": 1750,
+      "executable": false
+    },
+    {
+      "path": "references/examples/index.md",
+      "sha256": "8652823627fd0f56a5e2be3eff192dcc5925f482380d7b45321cd9cfc6ba4b03",
+      "bytes": 2402,
+      "executable": false
+    },
+    {
+      "path": "references/examples/introduction-examples.md",
+      "sha256": "0fb5b62e4353f71e586f8873881d2a60a86ad756e02bd0e7ef626dcafa0e5d71",
+      "bytes": 1544,
+      "executable": false
+    },
+    {
+      "path": "references/examples/introduction/novel-task-challenge-decomposition.md",
+      "sha256": "5613ddd24911efde77aaf35a7ff883a9ef886b99b9863782aeec426282cd286c",
+      "bytes": 1550,
+      "executable": false
+    },
+    {
+      "path": "references/examples/introduction/pipeline-not-recommended-abstract-only.md",
+      "sha256": "33ab449b0eadc7cc968c0ff4cddcc4538811d2abc2a0497ebca15c629da80cd2",
+      "bytes": 2976,
+      "executable": false
+    },
+    {
+      "path": "references/examples/introduction/pipeline-version-1-one-contribution-multi-advantages.md",
+      "sha256": "a39b95c76a19f7fd214048dd2e8861d825495662b9144529326abc4ab94c7f23",
+      "bytes": 2039,
+      "executable": false
+    },
+    {
+      "path": "references/examples/introduction/pipeline-version-2-two-contributions.md",
+      "sha256": "fc6d13cfdd6e69b9bf7238e86f400e7d120d35c053718a56ae9faf442f0e86f1",
+      "bytes": 2049,
+      "executable": false
+    },
+    {
+      "path": "references/examples/introduction/pipeline-version-3-new-module-on-existing-pipeline.md",
+      "sha256": "71fe9465e12602517ca47a693572bd7db0c08b7cd046ae1c55ec88ba679e1d49",
+      "bytes": 1514,
+      "executable": false
+    },
+    {
+      "path": "references/examples/introduction/pipeline-version-4-observation-driven.md",
+      "sha256": "f5e59e8c578cd3996870c3863ac1f2ce503fe74ec76c909a66a9cb9100020e70",
+      "bytes": 1441,
+      "executable": false
+    },
+    {
+      "path": "references/examples/introduction/technical-challenge-version-1-existing-task.md",
+      "sha256": "470195180f159d7f240409c0685a927fea21c82ed7d7c766a03b76ed3765e276",
+      "bytes": 2690,
+      "executable": false
+    },
+    {
+      "path": "references/examples/introduction/technical-challenge-version-2-existing-task-insight-backed-by-traditional.md",
+      "sha256": "b90e9edf376f9dc2cac1fcbe9174b8878a090763dac08302a301c8b743301b1f",
+      "bytes": 3848,
+      "executable": false
+    },
+    {
+      "path": "references/examples/introduction/technical-challenge-version-3-novel-task.md",
+      "sha256": "3b3b58cc0cffe2e1ae1e192b2344223924f9dfb880eeae3c955e09cd923269ef",
+      "bytes": 1629,
+      "executable": false
+    },
+    {
+      "path": "references/examples/introduction/version-1-task-then-application.md",
+      "sha256": "d9296f2f23e8589e068a06fd063d2b9291b30b630ffeac19f0cf0290fde52284",
+      "bytes": 727,
+      "executable": false
+    },
+    {
+      "path": "references/examples/introduction/version-2-application-first.md",
+      "sha256": "3f57603bd5fd56bc185a3d78f12edc43bd202e2593b01d1bda943f3745af7ea5",
+      "bytes": 405,
+      "executable": false
+    },
+    {
+      "path": "references/examples/introduction/version-3-general-to-specific-setting.md",
+      "sha256": "0afbf79dd9c47e65ec0d9debf08c701838b5398327a0864b8f8a0421ea786a2a",
+      "bytes": 847,
+      "executable": false
+    },
+    {
+      "path": "references/examples/introduction/version-4-open-with-challenge.md",
+      "sha256": "974379058c3d5448bbb95ad989b68564ede2dc7e262f4b9bb82820058ad098b1",
+      "bytes": 1753,
+      "executable": false
+    },
+    {
+      "path": "references/examples/method-examples.md",
+      "sha256": "8a8499c32096fbdf9baac6d00d71df750fba2909d29a0bc37e559ebd02d10210",
+      "bytes": 1028,
+      "executable": false
+    },
+    {
+      "path": "references/examples/method/example-of-the-three-elements.md",
+      "sha256": "a08a1201e6b4a9629262e16827b8d95e62eeee97f6117a1d97659a37200a4dea",
+      "bytes": 7440,
+      "executable": false
+    },
+    {
+      "path": "references/examples/method/method-writing-common-issues-note.md",
+      "sha256": "265ca143a785401c29d754d022e761aca41cce7f17db316a3a12cf2e35b5bfa9",
+      "bytes": 355,
+      "executable": false
+    },
+    {
+      "path": "references/examples/method/module-design-instant-ngp.md",
+      "sha256": "a7c72221545e83d05b3becc4209b9fec71188a9a758434aa1ae3c4bc673e1dad",
+      "bytes": 4557,
+      "executable": false
+    },
+    {
+      "path": "references/examples/method/module-motivation-patterns.md",
+      "sha256": "0d1476b9e31662ecd135eec0ec70bc959f91235622e874e2a1e12a5234d195ce",
+      "bytes": 410,
+      "executable": false
+    },
+    {
+      "path": "references/examples/method/module-triad-neural-body.md",
+      "sha256": "eabc41af8b001bcab30bc8373bb44b798ab0a21d32045d01d6b672d49c1ed76f",
+      "bytes": 763,
+      "executable": false
+    },
+    {
+      "path": "references/examples/method/neural-body-annotated-figure-text.md",
+      "sha256": "f671d284186011497291fcec22dadd1dabe835f60fb97dc607cfa0246d08b6be",
+      "bytes": 2845,
+      "executable": false
+    },
+    {
+      "path": "references/examples/method/overview-template.md",
+      "sha256": "3328ea5b1100e8068bfd94455486a5934d55a888bf0095df727eef9ec7eadf93",
+      "bytes": 2054,
+      "executable": false
+    },
+    {
+      "path": "references/examples/method/pre-writing-questions.md",
+      "sha256": "b6466d5d6fbe8785a45a0b67134c9c08a0d8b3e14f2e17db2f2fe3a2053b3c69",
+      "bytes": 479,
+      "executable": false
+    },
+    {
+      "path": "references/examples/method/section-skeleton.md",
+      "sha256": "e437a48be1e608bed3200844e1033b8b9da900aa1e4512dccb80f778e6fe0590",
+      "bytes": 110,
+      "executable": false
+    },
+    {
+      "path": "references/experiments.md",
+      "sha256": "ba4f469b4e65f5ee042d0d5891ff5182512fde60b66f014a7b035993ae1d4548",
+      "bytes": 4860,
+      "executable": false
+    },
+    {
+      "path": "references/introduction.md",
+      "sha256": "761213024d82264d1aec986066993492e6bdde95e84ef1e414b7afb341465353",
+      "bytes": 15709,
+      "executable": false
+    },
+    {
+      "path": "references/method.md",
+      "sha256": "d67bcb9a8a3702897ac39ff3ad19042019f4da73f98717034b42f7247c53b35d",
+      "bytes": 7102,
+      "executable": false
+    },
+    {
+      "path": "references/nat-comms-2025-corpus.md",
+      "sha256": "220398897991a1bbbfbda7c0a39390afdfac3706324e3c5b7c2c2a93f9195161",
+      "bytes": 7457,
+      "executable": false
+    },
+    {
+      "path": "references/nature-summary-paragraph.md",
+      "sha256": "df3711242be9720e17c9a6631e10dd5aa4e5315626bacb4b95ed21de38c2da20",
+      "bytes": 10587,
+      "executable": false
+    },
+    {
+      "path": "references/paper-review.md",
+      "sha256": "7a46e0805a7048e66f9f2f91cbc13134eff1864bf0152d699c987df078051f20",
+      "bytes": 5428,
+      "executable": false
+    },
+    {
+      "path": "references/paragraph-flow.md",
+      "sha256": "7fe339e94763c97902d846fffb1116c64e140d3a3d6949fa65c88b2eebf014ec",
+      "bytes": 1695,
+      "executable": false
+    },
+    {
+      "path": "references/related-work.md",
+      "sha256": "2b37fce3ae4ea604492689215e835d45f85cc39ed74e6f6132b2723bbe506e0d",
+      "bytes": 1283,
+      "executable": false
+    },
+    {
+      "path": "references/submission-package.md",
+      "sha256": "9a0e6195e368fb922a321403c399e0f581b64be11a3ce350538aabec248fb940",
+      "bytes": 8066,
+      "executable": false
+    },
+    {
+      "path": "static/core/output-format.md",
+      "sha256": "46d34afa2eed2162051ac265eb14a7ce04de8aa022348cd7ad96045fafdc3b68",
+      "bytes": 1828,
+      "executable": false
+    },
+    {
+      "path": "static/core/stance.md",
+      "sha256": "d3167ff9f1f61c1f39d3460b25571d3459721aed41776c9b30e5b02fc6acde30",
+      "bytes": 2279,
+      "executable": false
+    },
+    {
+      "path": "static/core/workflow.md",
+      "sha256": "0e98f785f5dfd063399f8b4ead6389a522a12b70431c555fe1c1a570bd2c4d77",
+      "bytes": 6718,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/journal/generic.md",
+      "sha256": "a479f37851c3034e988eb293f17fd1e07f2650ed55600d9c6e046b9b0f6d39fe",
+      "bytes": 1159,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/journal/nat-comms.md",
+      "sha256": "9150210f9dd1521ac78a830be51cc4a6397a84888cf0d8237ca495fe0223cd27",
+      "bytes": 2954,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/journal/nat-mach-intell.md",
+      "sha256": "af514347009f38c61351ea37be275cd1087a22cf3698e7aa80f656957d2768f5",
+      "bytes": 6033,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/journal/nature-family.md",
+      "sha256": "1e124883a1d21552e005747283b2f4a16a6b2da6cc925b7eace6e4655320e10f",
+      "bytes": 1182,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/journal/nature.md",
+      "sha256": "4333c75dad3094bcd785060887986859152e53c1bed98d1b6d08e70ecf27de7f",
+      "bytes": 2794,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/language/en.md",
+      "sha256": "6de5e67bf7c90361237f998c10f98d6d2c61e9c067ce3c686cab6a3cdf919caf",
+      "bytes": 1026,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/language/zh-to-en.md",
+      "sha256": "a60506956df0a5b1e006fe17aec2bc843b1a0463662f5675cb9dc6db112a96c8",
+      "bytes": 1616,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/paper_type/algorithmic.md",
+      "sha256": "a6e548d38dfbb60bbc9beac713da4b51c625adcce55cdc688d4578a530b2c35b",
+      "bytes": 1237,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/paper_type/hypothesis.md",
+      "sha256": "c2ef6457304001a14fba41c615e62d47a852a9b0137ae13def6117669143da23",
+      "bytes": 1043,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/paper_type/methods.md",
+      "sha256": "eebf6bdd16e3114abf8b03b524af22c9183444d7e30e8c4ecc5fc37b32a636f0",
+      "bytes": 1241,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/paper_type/research.md",
+      "sha256": "29a20cfce7525107867faf5ff8b6215d4b86fc8587b1dc92993154c18b2f33e1",
+      "bytes": 1288,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/paper_type/review.md",
+      "sha256": "f26f847b44761faf44aee024bc05d079490ead7bd5ffa975b277add7795f2b21",
+      "bytes": 1209,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/section/abstract.md",
+      "sha256": "0f60dc39a2e0f9cccf043cef55ad9ce9d629f9397a8ffc58436dd0dd6dae8fc5",
+      "bytes": 1746,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/section/conclusion.md",
+      "sha256": "5287996cba0ef8f41a540abc4e50aae8e830a056a5de7188f6bc2b701ac78bd6",
+      "bytes": 929,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/section/discussion.md",
+      "sha256": "345fe173d7f6138170d259028c5f015f9708ecfce45ced8645bf5d068bb00e22",
+      "bytes": 1796,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/section/experiments.md",
+      "sha256": "299182cbc369969f203237058bccf4abd439ca5459290fe075fe3a3be4ed1f5d",
+      "bytes": 3080,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/section/intro.md",
+      "sha256": "d8ca45bb0c12df3c4805460a9f1023b769ce05d99771a87652756229f4102450",
+      "bytes": 2647,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/section/method.md",
+      "sha256": "47bbc70c2f61df13a5402ad404df13670400d58979a5d24750f1c64ae4478c70",
+      "bytes": 1365,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/section/related-work.md",
+      "sha256": "96f42b73af918123173c30467698e78d42ed00dc043171265cdd2bc6e5fb3bd6",
+      "bytes": 1178,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/section/title.md",
+      "sha256": "667fafc45b0a38c439998d6d8ed18fb98ffea1b196fc9343bc3a4629fcdc110a",
+      "bytes": 999,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/task/manuscript.md",
+      "sha256": "c798ea7e70241be9d00b62a762650b0984e3ea1abc228c5f469499551ae6bf94",
+      "bytes": 288,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/task/submission-package.md",
+      "sha256": "69410d283d738e82a35f2d8da1bcfb48385e924b68c1deef84cb2a5be8dceb9d",
+      "bytes": 2593,
+      "executable": false
+    },
+    {
+      "path": "templates/submission/declarations-and-reviewers.tex",
+      "sha256": "7fe9d93bcde4ba7f20dcf5a9194728e3cd156d99b0fe8567279bd9c399f2eba9",
+      "bytes": 2650,
+      "executable": false
+    },
+    {
+      "path": "templates/submission/highlights-and-summary.tex",
+      "sha256": "d1ea1f6ccf6d91f6e1727a9e9d2befff1f6c90ef43030d1bbaf9fe583ff6dfb5",
+      "bytes": 1149,
+      "executable": false
+    },
+    {
+      "path": "templates/submission/initial-cover-letter.tex",
+      "sha256": "4b040e28937d6dd467c7575bb3b043b7ce5a69f881635f8af544e5a031a024be",
+      "bytes": 1589,
+      "executable": false
+    },
+    {
+      "path": "templates/submission/title-page.tex",
+      "sha256": "e25038ba6b300a2a567e6c8e45a1babf310f64eae14f902f89a6c9b881ecb6e4",
+      "bytes": 1959,
+      "executable": false
+    }
+  ],
+  "totalBytes": 212551,
+  "requires": [
+    "nature.shared"
+  ],
+  "permissionsNote": "Tool declarations are author claims, not host approvals. External services, credentials and tools are not installed or enabled by this entry."
+}

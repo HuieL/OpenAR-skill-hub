@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "id": "nature.literature-pipeline",
+  "kind": "skill",
+  "name": "Nature Literature Pipeline",
+  "summary": "Discover, score, read and archive scientific literature through a configurable monitoring pipeline, with optional messaging integrations.",
+  "authors": [
+    {
+      "name": "Nature Skills contributors",
+      "github": "Yuan1z0825"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "research",
+    "literature"
+  ],
+  "source": {
+    "repo": "Yuan1z0825/nature-skills",
+    "path": "skills/nature-literature-pipeline",
+    "revision": "242daf708ffdaf9710caaf5f3b76debe31917c85"
+  },
+  "version": "1.0.1",
+  "license": "Apache-2.0",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "9cbbbb2bfd0826644f4522a12d8c7811eccc8544e27be6971ec324d1830647ae",
+      "bytes": 2111,
+      "executable": false
+    },
+    {
+      "path": "README_EN.md",
+      "sha256": "3a46b433ac1d154de349860be3d2fe02b32a65bdb54b962b19a54c87fb4ab035",
+      "bytes": 2340,
+      "executable": false
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "1dcaa692457ec9c2be409cb7777f834a2db833788b2e9b680baf0e961126b01a",
+      "bytes": 4770,
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "1ecc9c84931f25def9928750c9f589893b5146dd3861c5011f00bebf63f0fa6e",
+      "bytes": 273,
+      "executable": false
+    },
+    {
+      "path": "manifest.yaml",
+      "sha256": "06655e1e5ff0a395f99758845926d540778a01d5682995a7032fdda340c87e20",
+      "bytes": 1691,
+      "executable": false
+    },
+    {
+      "path": "references/cron-setup.md",
+      "sha256": "6acb454249eff0d19c0be1d1792751fc81995c11dbbf39cc6691f37c3c5e2fa6",
+      "bytes": 2820,
+      "executable": true
+    },
+    {
+      "path": "references/gap-analysis.md",
+      "sha256": "5e39ae6b90405d2d9e2bae9e09bb6d62f71c3caafb5081dda9dd6dc29d370de4",
+      "bytes": 2442,
+      "executable": true
+    },
+    {
+      "path": "references/note-template.md",
+      "sha256": "95982f47c890df46083cbb5e30d86833f98a9df455fb895a1596eaff786634b8",
+      "bytes": 4793,
+      "executable": true
+    },
+    {
+      "path": "references/push-format.md",
+      "sha256": "cb228dea4e3bbe8e05445af090cd224cd2e2a9d39fc456280813d5b15d8b2b17",
+      "bytes": 3525,
+      "executable": true
+    },
+    {
+      "path": "references/review-compilation-workflow.md",
+      "sha256": "c567da2e3e36ad897d7e50abb3a6c6529956fc5fc740eba3e37e022347875c6f",
+      "bytes": 4602,
+      "executable": true
+    },
+    {
+      "path": "references/scoring-system.md",
+      "sha256": "24721d52ede186d03e9d9574077f65bfe949d9f768c71f0e0fbc54808107d9fa",
+      "bytes": 2503,
+      "executable": false
+    },
+    {
+      "path": "templates/literature-push-template.md",
+      "sha256": "5c60e06c56e16898158d8443b2a3a4445fdd404187941ba970987bea857c0dd8",
+      "bytes": 5009,
+      "executable": true
+    }
+  ],
+  "totalBytes": 36879,
+  "requires": [],
+  "permissionsNote": "Tool declarations are author claims, not host approvals. External services, credentials and tools are not installed or enabled by this entry."
+}

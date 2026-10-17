@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "skillHub": "d3a7460fe0595e1c24ad53481508b157469641c2",
+  "skillHub": "9c7fbb1bf7daeb92bc131b4d55b6ed5c75dfeecf",
   "extensionHub": null,
   "creators": [
     {
@@ -976,6 +976,302 @@
           "roles": [
             "submitter"
           ]
+        },
+        {
+          "entry": "skill:mattpocock.claude-handoff",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.code-review",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.codebase-design",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.diagnosing-bugs",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.domain-modeling",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.git-guardrails-claude-code",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.grill-me",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.grill-with-docs",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.grilling",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.handoff",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.implement",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.implement-spec",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.improve-codebase-architecture",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.loop-me",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.matt-prototype",
+          "roles": [
+            "adapter",
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.research",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.setup-pre-commit",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.tdd",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.teach",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.to-questionnaire",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.to-spec",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.to-tickets",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.triage",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.wayfinder",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.wizard",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.writing-beats",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.writing-for-agents",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.writing-fragments",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.writing-shape",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:nature.academic-search",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:nature.citation",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:nature.data",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:nature.downloader",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:nature.experiment-log",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:nature.figure",
+          "roles": [
+            "adapter",
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:nature.image2ppt",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:nature.literature-pipeline",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:nature.paper-card",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:nature.paper-to-patent",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:nature.paper2ppt",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:nature.polishing",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:nature.proposal-writer",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:nature.reader",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:nature.ref-verifier",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:nature.response",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:nature.reviewer",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:nature.shared",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:nature.statistics",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:nature.writing",
+          "roles": [
+            "submitter"
+          ]
         }
       ]
     },
@@ -1940,6 +2236,132 @@
       ]
     },
     {
+      "github": "Yuan1z0825",
+      "name": "Nature Skills contributors",
+      "credits": [
+        {
+          "entry": "skill:nature.academic-search",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:nature.citation",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:nature.data",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:nature.experiment-log",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:nature.figure",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:nature.literature-pipeline",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:nature.paper-card",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:nature.paper-to-patent",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:nature.paper2ppt",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:nature.polishing",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:nature.proposal-writer",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:nature.reader",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:nature.ref-verifier",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:nature.response",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:nature.reviewer",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:nature.shared",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:nature.statistics",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:nature.writing",
+          "roles": [
+            "author"
+          ]
+        }
+      ]
+    },
+    {
+      "github": "baihe26",
+      "name": "baihe26",
+      "credits": [
+        {
+          "entry": "skill:nature.downloader",
+          "roles": [
+            "author"
+          ]
+        }
+      ]
+    },
+    {
       "github": "iOfficeAI",
       "name": "iOfficeAI",
       "credits": [
@@ -1958,11 +2380,215 @@
       ]
     },
     {
+      "github": "mattpocock",
+      "name": "Matt Pocock",
+      "credits": [
+        {
+          "entry": "skill:mattpocock.claude-handoff",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.code-review",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.codebase-design",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.diagnosing-bugs",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.domain-modeling",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.git-guardrails-claude-code",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.grill-me",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.grill-with-docs",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.grilling",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.handoff",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.implement",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.implement-spec",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.improve-codebase-architecture",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.loop-me",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.matt-prototype",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.research",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.setup-pre-commit",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.tdd",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.teach",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.to-questionnaire",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.to-spec",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.to-tickets",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.triage",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.wayfinder",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.wizard",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.writing-beats",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.writing-for-agents",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.writing-fragments",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:mattpocock.writing-shape",
+          "roles": [
+            "author"
+          ]
+        }
+      ]
+    },
+    {
       "github": null,
       "name": "Ameer Muavia",
       "credits": [
         {
           "entry": "skill:hub.hallmark",
+          "roles": [
+            "author"
+          ]
+        }
+      ]
+    },
+    {
+      "github": null,
+      "name": "Image2PPT contributors",
+      "credits": [
+        {
+          "entry": "skill:nature.image2ppt",
+          "roles": [
+            "author"
+          ]
+        }
+      ]
+    },
+    {
+      "github": "ningzimu",
+      "name": "ningzimu",
+      "credits": [
+        {
+          "entry": "skill:nature.image2ppt",
           "roles": [
             "author"
           ]

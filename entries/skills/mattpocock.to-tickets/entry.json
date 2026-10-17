@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "mattpocock.to-tickets",
+  "kind": "skill",
+  "name": "To Tickets",
+  "summary": "Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges, published to the configured tracker (edges as text in one file per ticket locally, or native blocking links on a real tracker).",
+  "authors": [
+    {
+      "name": "Matt Pocock",
+      "github": "mattpocock"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "coding"
+  ],
+  "source": {
+    "repo": "mattpocock/skills",
+    "path": "skills/engineering/to-tickets",
+    "revision": "321658273cb1d20b76026717d027d505790106d4"
+  },
+  "version": "321658273cb1d20b76026717d027d505790106d4",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "5c9fba69845c2519b9b35b9af42ae5142c21f8ca15ac2123dc2722002c8058ae",
+      "bytes": 5671,
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "21bc6215fffcd7614e9f772bb1760e87cc5fc7dcc707e7d282bc9414267a6090",
+      "bytes": 146,
+      "executable": false
+    }
+  ],
+  "totalBytes": 5817,
+  "requires": [],
+  "permissionsNote": "Tool declarations are author claims, not host approvals. External services, credentials and tools are not installed or enabled by this entry."
+}

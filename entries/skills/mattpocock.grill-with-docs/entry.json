@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "mattpocock.grill-with-docs",
+  "kind": "skill",
+  "name": "Grill With Docs",
+  "summary": "A relentless interview to sharpen a plan or design, which also creates docs (ADR's and glossary) as we go.",
+  "authors": [
+    {
+      "name": "Matt Pocock",
+      "github": "mattpocock"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "coding"
+  ],
+  "source": {
+    "repo": "mattpocock/skills",
+    "path": "skills/engineering/grill-with-docs",
+    "revision": "447ca70872026d5b79d6073a546dac082117fed7"
+  },
+  "version": "447ca70872026d5b79d6073a546dac082117fed7",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "7de372c13488f1ee96cc11cd8907b56b6809cc93eef776eeddd37de6b6cbe3fe",
+      "bytes": 247,
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "94cd0ab161fb468a836349f5ed482ba58ce8e709a05c57ce533d739dbd35cca9",
+      "bytes": 145,
+      "executable": false
+    }
+  ],
+  "totalBytes": 392,
+  "requires": [
+    "mattpocock.grilling",
+    "mattpocock.domain-modeling"
+  ],
+  "permissionsNote": "Tool declarations are author claims, not host approvals. External services, credentials and tools are not installed or enabled by this entry."
+}

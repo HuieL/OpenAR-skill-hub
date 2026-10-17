@@ -1,0 +1,434 @@
+{
+  "schemaVersion": 1,
+  "id": "nature.downloader",
+  "kind": "skill",
+  "name": "Nature Downloader",
+  "summary": "Retrieve lawful academic full text through open-access sources, publisher APIs and institution-authorized browser access, with auditable delivery checks.",
+  "authors": [
+    {
+      "name": "baihe26",
+      "github": "baihe26"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "research",
+    "literature"
+  ],
+  "source": {
+    "repo": "Yuan1z0825/nature-skills",
+    "path": "skills/nature-downloader",
+    "revision": "242daf708ffdaf9710caaf5f3b76debe31917c85"
+  },
+  "version": "2.1.0",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "24f8dc4ba3de42fc66380d69e121bf5b7f4120e278e3edf1d1c2dceac27ea7f7",
+      "bytes": 139,
+      "executable": false
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "04823683d436de0a7d460f52d23e41b054b198c1fed7dfbf85ab04ac0d3c608d",
+      "bytes": 132,
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "ebb3defbe421c016c1d5f2ae18c53954a44236b51e81f12fa7aaff57905d3f66",
+      "bytes": 1065,
+      "executable": false
+    },
+    {
+      "path": "README.md",
+      "sha256": "87710a05f68900e984b5ee8a118c42f7c52881c53fab4be2943b324f1753bfaa",
+      "bytes": 7311,
+      "executable": false
+    },
+    {
+      "path": "README_EN.md",
+      "sha256": "6ca0031edde696f47c880844301dd5816425e1463221483acfcea8e88792386e",
+      "bytes": 7040,
+      "executable": false
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "0351f9069e77a4b027893592d295f3c511301bc7d2ec7d299ab49ee2c106be54",
+      "bytes": 24299,
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "e6da8aa089c23e6b085308ec9ba4b6395a9807ea7ae522c8e3788566ea1d5ec7",
+      "bytes": 260,
+      "executable": false
+    },
+    {
+      "path": "assets/banner.jpg",
+      "sha256": "6e70957019ace57165d040f7d6402a13191946b1542510f8a6e213f104701aa1",
+      "bytes": 84684,
+      "executable": false
+    },
+    {
+      "path": "data/publishers.json",
+      "sha256": "f9e284b72d3ab73bab397bce16a681a894ecffdcde9d935801ab60b4bb901808",
+      "bytes": 885,
+      "executable": false
+    },
+    {
+      "path": "data/school.schema.json",
+      "sha256": "b28a8b9bf232b4a54100259f8f13185381f43d9b7ff7e27f40a61cad4e829f9c",
+      "bytes": 3334,
+      "executable": false
+    },
+    {
+      "path": "data/schools.yaml",
+      "sha256": "6381822158fccac78046d5194b6dd7331b8e6b5ef441b3cf39b4b2eb424a45ce",
+      "bytes": 271,
+      "executable": false
+    },
+    {
+      "path": "docs/nature-downloader-reference-research-2026-07-15.md",
+      "sha256": "b3e3582944baf7fd7f90f8f77f55bccf9d764d0b042fe14ec8c52d04954c13c6",
+      "bytes": 21863,
+      "executable": false
+    },
+    {
+      "path": "docs/superpowers/plans/2026-06-21-nature-downloader-merge.md",
+      "sha256": "1c36e011e34bf571b4bbad95f625b750932fcf9d04f6884c49cebd6397c97a5d",
+      "bytes": 2964,
+      "executable": false
+    },
+    {
+      "path": "examples/carsi-retry-template.tsv",
+      "sha256": "cd63bd7d89a64f1cee6e5ab7d31fbb2efdd73457ac57f9582e74be085954ff86",
+      "bytes": 406,
+      "executable": false
+    },
+    {
+      "path": "examples/manifest-template.tsv",
+      "sha256": "d4ea53b6e1cae6663394e70f10ffea36e21a0c37bec9915a4a898be96bf67a68",
+      "bytes": 494,
+      "executable": false
+    },
+    {
+      "path": "examples/publisher-verification-template.tsv",
+      "sha256": "f89a72ac1bc9f6ec50e7386bf276c7589f84cec8ba7d9069b18091ac9f78c6ee",
+      "bytes": 425,
+      "executable": false
+    },
+    {
+      "path": "manifest.yaml",
+      "sha256": "4992797107cce2d9adf71fa720553b2a21aebd2fa120bf8eee30f03391ac4340",
+      "bytes": 1719,
+      "executable": false
+    },
+    {
+      "path": "references/delivery-verification-and-failures.md",
+      "sha256": "891e4ed785b9b851e7e903172d24228c521d523b2f93bc314ff395232b06cb82",
+      "bytes": 7529,
+      "executable": false
+    },
+    {
+      "path": "references/institutional-browser-workflow.md",
+      "sha256": "2a80628a921745f0257b576c6b3e885c3d3f92aad6c09a58642ef455c69c2fce",
+      "bytes": 12486,
+      "executable": false
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "e4108e7f482a649c66ca1489535d43ccbf57befaf9594354e27ff951a209d018",
+      "bytes": 64,
+      "executable": false
+    },
+    {
+      "path": "scripts/batch_download.mjs",
+      "sha256": "79fc20151d4099024e0cd8d65df0749802e5786bc4b88684177e81a1f80e2463",
+      "bytes": 36282,
+      "executable": false
+    },
+    {
+      "path": "scripts/browser_pdf_downloader.mjs",
+      "sha256": "a42ba0172cce81e16a726e6722090ca1e62f260c7d63624d99d10cf0c2a1f973",
+      "bytes": 5499,
+      "executable": false
+    },
+    {
+      "path": "scripts/cdp_open_url.mjs",
+      "sha256": "1f2dc57660189f880da69aec738126f7be402e310558a6b5c1054763716bc6cc",
+      "bytes": 1773,
+      "executable": false
+    },
+    {
+      "path": "scripts/configure_credentials.py",
+      "sha256": "3d0a6d51ee6d497f82e60960657fd4ad91843b63e04aa042a7c3a7d1b135834d",
+      "bytes": 6843,
+      "executable": false
+    },
+    {
+      "path": "scripts/configure_school.py",
+      "sha256": "ca13c9e7c82104eeaaae5f784058c091a34ff3b70abddcae7ce65249c0404f80",
+      "bytes": 4500,
+      "executable": false
+    },
+    {
+      "path": "scripts/extract_pdf_text.py",
+      "sha256": "1c1fc1df37012a1fac938ec8c8ccef29977b29609162b44af2d1eed0be0163dc",
+      "bytes": 2889,
+      "executable": false
+    },
+    {
+      "path": "scripts/lib/anti-bot.mjs",
+      "sha256": "1937a629552ec48b7ebf5632f5e8c29628c2ea1ea3bd5cfcf46bf38de5327f68",
+      "bytes": 34116,
+      "executable": false
+    },
+    {
+      "path": "scripts/lib/cdp-utils.mjs",
+      "sha256": "beb2af505002a16b3a42cd3ed75a708210078b239666d83b836eccb470540264",
+      "bytes": 5277,
+      "executable": false
+    },
+    {
+      "path": "scripts/lib/cnki.mjs",
+      "sha256": "12c103b64389f3cab6708d629bcf8cabb9a8851036902c9886354bb605f2ed0d",
+      "bytes": 15060,
+      "executable": false
+    },
+    {
+      "path": "scripts/lib/credentials.mjs",
+      "sha256": "a31d5750fca9447a4abda3c2b7f5bf0b86dcc5ab8fa8b5ea74683df70066f01e",
+      "bytes": 2510,
+      "executable": false
+    },
+    {
+      "path": "scripts/lib/direct-download.mjs",
+      "sha256": "ca33af5b6f43e98f797af737cb578ad0075afd13cf77fef709f9348399893d7c",
+      "bytes": 1470,
+      "executable": false
+    },
+    {
+      "path": "scripts/lib/manifest.mjs",
+      "sha256": "5ed7640a3e609050f93aafcf9e9ca92e04738c760589e618105bc47524837951",
+      "bytes": 1265,
+      "executable": false
+    },
+    {
+      "path": "scripts/lib/metadata.mjs",
+      "sha256": "d385b2870e83c382d09aa56324ff4988dac9155889087a0cfff12f6780097e23",
+      "bytes": 2148,
+      "executable": false
+    },
+    {
+      "path": "scripts/lib/open-access-provider.mjs",
+      "sha256": "7dd3a862a2d09be0304c4cfa95608b862cbac0c33a59213a875884b4ed8080e4",
+      "bytes": 4506,
+      "executable": false
+    },
+    {
+      "path": "scripts/lib/open-access.mjs",
+      "sha256": "99d65bb084d81f521165d710eb5d3aec69610b8ee9e841ad3155cbe0765f2215",
+      "bytes": 4925,
+      "executable": false
+    },
+    {
+      "path": "scripts/lib/pdf-utils.mjs",
+      "sha256": "832b62c37d6b22578538240457f1ca9ee5640e105b415931ddaa094d5d22a778",
+      "bytes": 7203,
+      "executable": false
+    },
+    {
+      "path": "scripts/lib/provider-registry.mjs",
+      "sha256": "7b09283d2ed20793bcf0f397ce3eb4704fdaf61eac636f7aa346e883e3d6b37d",
+      "bytes": 365,
+      "executable": false
+    },
+    {
+      "path": "scripts/lib/provider-utils.mjs",
+      "sha256": "7f1f71d177e21fb897a7f4f4830e1680b04acf7b7127f4484c25b10d631de3ce",
+      "bytes": 1909,
+      "executable": false
+    },
+    {
+      "path": "scripts/lib/publisher-providers.mjs",
+      "sha256": "58665c2eb2a53bd7d07a5033e2847a8751dadfcc76f99c948ba8e6ea6d1f1325",
+      "bytes": 4536,
+      "executable": false
+    },
+    {
+      "path": "scripts/lib/routing.mjs",
+      "sha256": "505ad7543794c071520edd2303bcb00f29222549292a7928a13316de9de96f1d",
+      "bytes": 2504,
+      "executable": false
+    },
+    {
+      "path": "scripts/lib/school-config.mjs",
+      "sha256": "1699b89aadee841a0f7545e884798d52434ee504a1733b9b90b0463ccff44167",
+      "bytes": 1016,
+      "executable": false
+    },
+    {
+      "path": "scripts/lib/settings.mjs",
+      "sha256": "ae7b6162b3f1283daee0b9b2373349cd59eb52ac146dc56acd21280293724c5b",
+      "bytes": 501,
+      "executable": false
+    },
+    {
+      "path": "scripts/lib/status-codes.mjs",
+      "sha256": "6610d16851494804d5af16444f035558abce399a1db6f969c648b72ad7510563",
+      "bytes": 7057,
+      "executable": false
+    },
+    {
+      "path": "scripts/lib/wos-supporting-information.mjs",
+      "sha256": "adb38e2da830325951f4ac9a67701f20dac175dd624f2b62b84491343bfefc32",
+      "bytes": 9156,
+      "executable": false
+    },
+    {
+      "path": "scripts/retry_elsevier_api.mjs",
+      "sha256": "2c3c5942ed90cc29d5a32b09c64eb44d06f5d9bb5fa4792162e6e5a109a42240",
+      "bytes": 801,
+      "executable": false
+    },
+    {
+      "path": "src/config.py",
+      "sha256": "b2dc400c1f41bc8c92856ca05234e5095ead08263b440b34010ccb99bbe62bed",
+      "bytes": 5334,
+      "executable": false
+    },
+    {
+      "path": "src/health_check.py",
+      "sha256": "1cfcd11aeb6ea7f3957981831d564765db05bc2423af0df9181d8cdbfa8d8196",
+      "bytes": 4383,
+      "executable": false
+    },
+    {
+      "path": "src/schools_loader.py",
+      "sha256": "c3b22f9a4c5b50636c4b36236edd6e9e872b09ed8b69b5f1845dd340e2887e7d",
+      "bytes": 3703,
+      "executable": false
+    },
+    {
+      "path": "src/validators.py",
+      "sha256": "94d743337fb584ac38286960c06415bae05919e011c914041fe9423b9e8f6544",
+      "bytes": 6180,
+      "executable": false
+    },
+    {
+      "path": "src/wizard.py",
+      "sha256": "33242f23de0985d8e02dcff6b7e4e82d9194933ed3f1859579510e58abb4424a",
+      "bytes": 23905,
+      "executable": false
+    },
+    {
+      "path": "tests/python/test_config_credentials.py",
+      "sha256": "2b4f1b5360dc7edefd7cf61bb340ba13df46e261d5c825325a75fa46d92cefe5",
+      "bytes": 1285,
+      "executable": false
+    },
+    {
+      "path": "tests/python/test_config_wizard.py",
+      "sha256": "c70b9abe5f7d4660f737cf21dc8e064030035146446eecfd29857e3415d5a0fa",
+      "bytes": 7390,
+      "executable": false
+    },
+    {
+      "path": "tests/unit/batch-cli.test.mjs",
+      "sha256": "82c2371f172e6f994e232d756e7d7160bf3cf515bea6eb0cfa8bae53a478d1dc",
+      "bytes": 3216,
+      "executable": false
+    },
+    {
+      "path": "tests/unit/cnki.test.mjs",
+      "sha256": "399d1b909db35bcf711e97c5de92134f1111573dab220464fa5247b9f64e078a",
+      "bytes": 2656,
+      "executable": false
+    },
+    {
+      "path": "tests/unit/credentials.test.mjs",
+      "sha256": "3dcc917b77ab060b5425b59a44b26fa5eb0243d14028dd4fff4afe686a6eb9bc",
+      "bytes": 1179,
+      "executable": false
+    },
+    {
+      "path": "tests/unit/generic-package.test.mjs",
+      "sha256": "2067e4c678fd6318a8a8f3807779e32aa10ce0fc78d214ab3f59ca0ee11208c3",
+      "bytes": 1799,
+      "executable": false
+    },
+    {
+      "path": "tests/unit/manifest.test.mjs",
+      "sha256": "d20ab4f29484c127236ffa6b4f3ed923b401b4dda0735ee1326aba44896ed5ed",
+      "bytes": 1027,
+      "executable": false
+    },
+    {
+      "path": "tests/unit/metadata.test.mjs",
+      "sha256": "b3876b966bb7a37d82814430550d583bbe16c25adbae55b59aa63ec1bd1dfe71",
+      "bytes": 1032,
+      "executable": false
+    },
+    {
+      "path": "tests/unit/open-access-provider.test.mjs",
+      "sha256": "ef8218b43cff09d29f99c7240bd87f2cbd0148e5ab32fe696ba5b51ac08b244c",
+      "bytes": 3345,
+      "executable": false
+    },
+    {
+      "path": "tests/unit/open-access.test.mjs",
+      "sha256": "73437b0642e0a93b831d2fed9a8ba6da8f0d5edb36a8fa291f5c8f6c3a8fd58c",
+      "bytes": 2833,
+      "executable": false
+    },
+    {
+      "path": "tests/unit/provider-utils.test.mjs",
+      "sha256": "f7e3d6746e8e358e927b59619ee0e132b90d40199c08e0de63559800de053350",
+      "bytes": 1426,
+      "executable": false
+    },
+    {
+      "path": "tests/unit/publisher-providers.test.mjs",
+      "sha256": "4aac03e1837f641534540e70d7b17f861a7c431673f1945054ca6eef734846ee",
+      "bytes": 4993,
+      "executable": false
+    },
+    {
+      "path": "tests/unit/routing.test.mjs",
+      "sha256": "a2c71b7427a8b95c26a5b880fd7e526aa3be917a288fb4ced347494d36f7ddf5",
+      "bytes": 3995,
+      "executable": false
+    },
+    {
+      "path": "tests/unit/school-config.test.mjs",
+      "sha256": "a9a2ae6410d2cc7e790cf29f62cd5bb446cea86a9a567d0f0d7b4fc1a132a48e",
+      "bytes": 1229,
+      "executable": false
+    },
+    {
+      "path": "tests/unit/status-codes.test.mjs",
+      "sha256": "0c7b7426177c611ef1afdf48c38564404f8d33ee4fc8201f5d97d28466819898",
+      "bytes": 8246,
+      "executable": false
+    },
+    {
+      "path": "tests/unit/wos-supporting-information.test.mjs",
+      "sha256": "bfc52975a05608ebebec1767790065b216b985f79f3da54fc10148b95ed748b9",
+      "bytes": 9374,
+      "executable": false
+    }
+  ],
+  "totalBytes": 440011,
+  "requires": [],
+  "permissionsNote": "Tool declarations are author claims, not host approvals. External services, credentials and tools are not installed or enabled by this entry."
+}

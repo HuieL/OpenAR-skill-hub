@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 1,
+  "id": "nature.response",
+  "kind": "skill",
+  "name": "Nature Response",
+  "summary": "Draft and audit reviewer responses, rebuttals and revision cover letters while keeping mutually blind reviewers separate.",
+  "authors": [
+    {
+      "name": "Nature Skills contributors",
+      "github": "Yuan1z0825"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "research",
+    "writing"
+  ],
+  "source": {
+    "repo": "Yuan1z0825/nature-skills",
+    "path": "skills/nature-response",
+    "revision": "c171989db699bd601d4373912b3fb8db96ecc95b"
+  },
+  "version": "1.7.0",
+  "license": "Apache-2.0",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "f1b5fe23c7fd1a82f18c49891d4118e4264b5f18e68eaf1ef06d49cc1a5b2bc9",
+      "bytes": 3843,
+      "executable": false
+    },
+    {
+      "path": "README_EN.md",
+      "sha256": "b80a51abf055e37363c41bfdebe83e27826ac5176216a9980e01ad884f7de237",
+      "bytes": 4272,
+      "executable": false
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "909a819e1cb761a40cec67d77154f4e7d863073574f8a49f355280514529edd0",
+      "bytes": 7056,
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "6d142f897f51d032339d442526cab3c48e6144d1c294600a683b49e9ae719566",
+      "bytes": 248,
+      "executable": false
+    },
+    {
+      "path": "examples/conflicting-reviewers.md",
+      "sha256": "7cd0b29e9be0f2a83aa47df8d2564a1406e6d2bfdbfb68d2e2165d5828446760",
+      "bytes": 1882,
+      "executable": false
+    },
+    {
+      "path": "examples/major-revision-with-missing-evidence.md",
+      "sha256": "9ea416be44164f72fc76c82b11ee243e6228fc890ee4224571cc13123be972e8",
+      "bytes": 1502,
+      "executable": false
+    },
+    {
+      "path": "examples/minor-revision.md",
+      "sha256": "2cfa0f5a20e3ac1fafdaa76c078803a98b079e5c49723f9e4fe4606bb9cbb8b2",
+      "bytes": 1848,
+      "executable": false
+    },
+    {
+      "path": "manifest.yaml",
+      "sha256": "5787ec76d3730356a76bb95ddda90cd51895aeadccb001a274f4f66b9bd3916e",
+      "bytes": 4188,
+      "executable": false
+    },
+    {
+      "path": "references/action-mapping.md",
+      "sha256": "bcecebe64ae1e5a417c22c5881cb69f9ff0904c6eef3d3da6d7fdc6d85b79d59",
+      "bytes": 8166,
+      "executable": false
+    },
+    {
+      "path": "references/chinese-author-alignment.md",
+      "sha256": "de210995ed9ff3969cdfff2298f7c81e672fc5d2b7f97e394df2ce32b36ec7ce",
+      "bytes": 3341,
+      "executable": false
+    },
+    {
+      "path": "references/comment-taxonomy.md",
+      "sha256": "70b701edd2a31d0e471c8ff6809173b8d8218671a91d2bc6cb9d8d28a6d82e84",
+      "bytes": 4168,
+      "executable": false
+    },
+    {
+      "path": "references/difficult-cases.md",
+      "sha256": "49595ab1330a237787423988d81e96d54881c46b2f4d7c65429b03a03fad1adb",
+      "bytes": 5817,
+      "executable": false
+    },
+    {
+      "path": "references/intake-and-routing.md",
+      "sha256": "8d47ba0edc6fb13d490163f1f00276719ada722c371e6b71e13d59e28fa89570",
+      "bytes": 9237,
+      "executable": false
+    },
+    {
+      "path": "references/latex-templates.md",
+      "sha256": "85d9df3c4101bc6e94e37c233c48f31f5b4541c61259d86ff6b333e48034a1c2",
+      "bytes": 3172,
+      "executable": false
+    },
+    {
+      "path": "references/package-consistency-audit.md",
+      "sha256": "4154e4ba8e26551cfb4da2db6037801da62adc7645db3a36ce7052012a361627",
+      "bytes": 10721,
+      "executable": false
+    },
+    {
+      "path": "references/qa-checklist.md",
+      "sha256": "f75f08943882705c4402b4c431c7846bd30b3252858af90e79a44098c81baa3b",
+      "bytes": 7400,
+      "executable": false
+    },
+    {
+      "path": "references/response-structure.md",
+      "sha256": "dec0b08e703258d0af4529555d3ff21eaafc785c10ca5fcb29046bc2e196daf0",
+      "bytes": 8770,
+      "executable": false
+    },
+    {
+      "path": "references/source-basis.md",
+      "sha256": "0f7164b74ba4af40f79fef74f5436519076518160f00edaf4fa86e7eb16aeb56",
+      "bytes": 3432,
+      "executable": false
+    },
+    {
+      "path": "references/tone-and-stance.md",
+      "sha256": "90220cdd7f139b0fa1497039e6bb329311aab015387f27869655d72e373831f0",
+      "bytes": 4760,
+      "executable": false
+    },
+    {
+      "path": "scripts/check_package_consistency.py",
+      "sha256": "efb5fbbf31156cc96ca4ac0f023e94a6940ee0996dd700cdd17807d21939cd06",
+      "bytes": 10149,
+      "executable": false
+    },
+    {
+      "path": "static/core/stance.md",
+      "sha256": "13e88e6a10a411cabc34a3340549606353bcf2ba6e0c6eb5966511b296782cce",
+      "bytes": 5867,
+      "executable": false
+    },
+    {
+      "path": "static/core/workflow.md",
+      "sha256": "6d511abc80d03ffd5b43c7c5c9c3f0c1325b7227928c360d1b22b31c0c7ae7ac",
+      "bytes": 9155,
+      "executable": false
+    },
+    {
+      "path": "templates/cover-letter.tex",
+      "sha256": "6d3bb1dd4f207d929bb93416da7a61c83ac2dc36e64030b255d175c563d9fdc9",
+      "bytes": 1429,
+      "executable": false
+    },
+    {
+      "path": "templates/response-to-reviewers.tex",
+      "sha256": "a6cfab13080177f2c4dc4865428ae5facebefef15856254a1455d3df4e2553f9",
+      "bytes": 2066,
+      "executable": false
+    },
+    {
+      "path": "templates/revised-manuscript-redline.tex",
+      "sha256": "1df90868420eb385144a9e286f0b5d210b98b8197b8ece2276ea0e348696cf5c",
+      "bytes": 1343,
+      "executable": false
+    },
+    {
+      "path": "tests/conflicting-reviewers.md",
+      "sha256": "5e800475051d54f5b3a6ba86d6592aa3b48bddb1ad64c4122a1729b5af987af4",
+      "bytes": 2534,
+      "executable": false
+    },
+    {
+      "path": "tests/defensive-draft-audit.md",
+      "sha256": "91c742d081f33b8b9352ef4d55ffac72d11f424874a8e4fd29702970a9d22ec2",
+      "bytes": 2243,
+      "executable": false
+    },
+    {
+      "path": "tests/evaluation-summary.md",
+      "sha256": "746bdc4531f9f1f67b12ba56b2bea239ada9ce4999f912c15f7a4427c57834af",
+      "bytes": 2876,
+      "executable": false
+    },
+    {
+      "path": "tests/impossible-experiment.md",
+      "sha256": "8509bc53c6c6c0039fdee37cf9a7b66bce7e03ede80728a7b50b9121ec5ec56e",
+      "bytes": 1673,
+      "executable": false
+    },
+    {
+      "path": "tests/major-revision-missing-evidence.md",
+      "sha256": "674fbaba184b16c2dd50978414afcfb9a827cfeb8de75d97bd35656f4dbea151",
+      "bytes": 1818,
+      "executable": false
+    },
+    {
+      "path": "tests/minor-revision.md",
+      "sha256": "b4ae5dcaeda4cb262e65d0d6e05c78fa5e7803659a3402b0d94850550227b6b7",
+      "bytes": 1396,
+      "executable": false
+    },
+    {
+      "path": "tests/reviewer-visibility.md",
+      "sha256": "cd192d210643ce8f226ea69b754d3c2647918fba994c121ca65d5bd5c555297e",
+      "bytes": 1934,
+      "executable": false
+    },
+    {
+      "path": "tests/rubric.md",
+      "sha256": "00a4b9f4d316674078dbd8d1874838466766a2a41c7ead75a1121602a64549c3",
+      "bytes": 5720,
+      "executable": false
+    },
+    {
+      "path": "tests/task-status-tracking.md",
+      "sha256": "8613930663e1fc96694505260fe4779695c8249fc3a52a271d0be13072e7e2e9",
+      "bytes": 1263,
+      "executable": false
+    },
+    {
+      "path": "tests/test_package_consistency.py",
+      "sha256": "cabae96f0f087c2282984a83d295dc4671b614713ba7bc2eb1cd86d1ae7f5712",
+      "bytes": 6181,
+      "executable": false
+    },
+    {
+      "path": "tests/test_response_instruction_contracts.py",
+      "sha256": "b5ff4e2582c4ea12b7ea87e50b2af9fe8b15254d4d429734079ba33f83f5694c",
+      "bytes": 1424,
+      "executable": false
+    },
+    {
+      "path": "tests/unclear-decision-type.md",
+      "sha256": "0112a300d4c89c31869cca031f665293bd3315e25379a632f4356852f34de47e",
+      "bytes": 1393,
+      "executable": false
+    }
+  ],
+  "totalBytes": 154287,
+  "requires": [
+    "nature.shared"
+  ],
+  "permissionsNote": "Tool declarations are author claims, not host approvals. External services, credentials and tools are not installed or enabled by this entry."
+}

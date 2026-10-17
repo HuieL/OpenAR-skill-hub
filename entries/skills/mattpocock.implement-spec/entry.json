@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "mattpocock.implement-spec",
+  "kind": "skill",
+  "name": "Implement Spec",
+  "summary": "Implement a specification in code.",
+  "authors": [
+    {
+      "name": "Matt Pocock",
+      "github": "mattpocock"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "coding"
+  ],
+  "source": {
+    "repo": "mattpocock/skills",
+    "path": "skills/in-progress/implement-spec",
+    "revision": "5b15a47f2d7150f545fbcacbfe381787fc0230dc"
+  },
+  "version": "5b15a47f2d7150f545fbcacbfe381787fc0230dc",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "f703b5f41df9c2202e19540d203e0d5fc32613572a838a070136cc22e712b129",
+      "bytes": 2043,
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "d457ae78ff282b8798380b0c2e393c9798bc2bf5ee7dfe9ca31607714c6cd7d3",
+      "bytes": 143,
+      "executable": false
+    }
+  ],
+  "totalBytes": 2186,
+  "requires": [],
+  "permissionsNote": "Tool declarations are author claims, not host approvals. External services, credentials and tools are not installed or enabled by this entry."
+}

@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": "nature.statistics",
+  "kind": "skill",
+  "name": "Nature Statistics",
+  "summary": "Audit and improve manuscript statistical reporting, including sample units, effect sizes, uncertainty, multiple comparisons and figure legends.",
+  "authors": [
+    {
+      "name": "Nature Skills contributors",
+      "github": "Yuan1z0825"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "research",
+    "data"
+  ],
+  "source": {
+    "repo": "Yuan1z0825/nature-skills",
+    "path": "skills/nature-statistics",
+    "revision": "fe7f972c8d5d1c7e08f5ee742dc49fa493614930"
+  },
+  "version": "1.3.0",
+  "license": "Apache-2.0",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "a8e426736033388a010c5b30a0955fc5fc66a896b07948066292b3b07654b145",
+      "bytes": 2453,
+      "executable": false
+    },
+    {
+      "path": "README_EN.md",
+      "sha256": "8698c7a38c7857731dc18245ce896d3ba2e65303610fc06ed7e901c0fa57c6d1",
+      "bytes": 2889,
+      "executable": false
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "d2373a2eaff22c741d50e8b7f4886ec103d9393cae6087d07c97ee30f3e01ef8",
+      "bytes": 8728,
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "08d655ae9ec4624a2bfe0f4b5ad2072cb9d3f900fb030e2a420f873ec74b9aac",
+      "bytes": 254,
+      "executable": false
+    },
+    {
+      "path": "manifest.yaml",
+      "sha256": "f6e31015befcb92627d4c75545a200a2b81f52d144e4103f428142b9945bd40a",
+      "bytes": 2117,
+      "executable": false
+    },
+    {
+      "path": "references/common-failure-modes.md",
+      "sha256": "e4db4cbcc5c2c64bbe40e54a0686986e1c540c0e7530fd3ed2902da92968876b",
+      "bytes": 4206,
+      "executable": false
+    },
+    {
+      "path": "references/figure-statistics.md",
+      "sha256": "3956df164b07b60b44097c8e1c5cbbd3eb8e932eb68cce73a4576fe8e63bc632",
+      "bytes": 2905,
+      "executable": false
+    },
+    {
+      "path": "references/nature-article-requirements.md",
+      "sha256": "8befbc3176339347a1520ada81e49da61dac703d89d4c37c1d5c52d613e77fa9",
+      "bytes": 3420,
+      "executable": false
+    },
+    {
+      "path": "references/reviewer-checklist.md",
+      "sha256": "9cb9c4326fed726ed96ffd53168029db3d4774e7192556488a0eebbde98705da",
+      "bytes": 3591,
+      "executable": false
+    },
+    {
+      "path": "references/source-basis.md",
+      "sha256": "fe3ae278436085ac77b813fb23f8c8f8ab0ac14d6b00c5365adb83d73f19fe71",
+      "bytes": 3638,
+      "executable": false
+    },
+    {
+      "path": "references/statistical-reporting.md",
+      "sha256": "4b014328e17cfb06369b6a14fd9eee0d47408d6484c8b9e520fcbe481cb87f3a",
+      "bytes": 4037,
+      "executable": false
+    }
+  ],
+  "totalBytes": 38238,
+  "requires": [
+    "nature.shared"
+  ],
+  "permissionsNote": "Tool declarations are author claims, not host approvals. External services, credentials and tools are not installed or enabled by this entry."
+}

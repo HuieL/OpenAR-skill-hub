@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "mattpocock.git-guardrails-claude-code",
+  "kind": "skill",
+  "name": "Git Guardrails Claude Code",
+  "summary": "Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D, etc.) before they execute. Use when user wants to prevent destructive git operations, add git safety hooks, or block git push/reset in Claude Code.",
+  "authors": [
+    {
+      "name": "Matt Pocock",
+      "github": "mattpocock"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "coding",
+    "git"
+  ],
+  "source": {
+    "repo": "mattpocock/skills",
+    "path": "skills/misc/git-guardrails-claude-code",
+    "revision": "321658273cb1d20b76026717d027d505790106d4"
+  },
+  "version": "321658273cb1d20b76026717d027d505790106d4",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "69b291d655626a01602b998a1836fcb93c058ede68dfafddfd71e87f17074764",
+      "bytes": 2313,
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "d53cd783fc0ac208dec9a4c267989284384785aab6422dccdaed42f9e40243ec",
+      "bytes": 112,
+      "executable": false
+    },
+    {
+      "path": "scripts/block-dangerous-git.sh",
+      "sha256": "234922b83c0a1737ee7300806c21ac0f389b07aaeb65c2d71ccedafbc5e1ea4b",
+      "bytes": 507,
+      "executable": true
+    }
+  ],
+  "totalBytes": 2932,
+  "requires": [],
+  "permissionsNote": "Tool declarations are author claims, not host approvals. External services, credentials and tools are not installed or enabled by this entry."
+}

@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "mattpocock.implement",
+  "kind": "skill",
+  "name": "Implement",
+  "summary": "Implement a piece of work based on a spec or set of tickets.",
+  "authors": [
+    {
+      "name": "Matt Pocock",
+      "github": "mattpocock"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "coding"
+  ],
+  "source": {
+    "repo": "mattpocock/skills",
+    "path": "skills/engineering/implement",
+    "revision": "697d4ce9742da558fd1ba6697c8e9775e2e302dd"
+  },
+  "version": "697d4ce9742da558fd1ba6697c8e9775e2e302dd",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "6d3fd9e83b8f36e5213854779db49b256a457a7ebb4a503e53fa7dcff696adc3",
+      "bytes": 433,
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "8970a8596ade0c28ab427f41a4ea242d6bdf6186c59ebf55e1238dbecaab79dc",
+      "bytes": 139,
+      "executable": false
+    }
+  ],
+  "totalBytes": 572,
+  "requires": [
+    "mattpocock.code-review",
+    "mattpocock.tdd"
+  ],
+  "permissionsNote": "Tool declarations are author claims, not host approvals. External services, credentials and tools are not installed or enabled by this entry."
+}

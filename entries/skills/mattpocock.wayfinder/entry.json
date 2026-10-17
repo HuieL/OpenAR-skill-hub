@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "mattpocock.wayfinder",
+  "kind": "skill",
+  "name": "Wayfinder",
+  "summary": "Plan a huge chunk of work (more than one agent session can hold) as a shared map of decision tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear.",
+  "authors": [
+    {
+      "name": "Matt Pocock",
+      "github": "mattpocock"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "coding"
+  ],
+  "source": {
+    "repo": "mattpocock/skills",
+    "path": "skills/engineering/wayfinder",
+    "revision": "321658273cb1d20b76026717d027d505790106d4"
+  },
+  "version": "321658273cb1d20b76026717d027d505790106d4",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "fee6e1d0c50f0e736b4ef8a599060c959afae904c9a97d82c97f049fcc3aa0f1",
+      "bytes": 11908,
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "88bc81a11a6d52ac67aeaa76b8b619e387020d47c5133a4dd4927fd15c4ad073",
+      "bytes": 144,
+      "executable": false
+    }
+  ],
+  "totalBytes": 12052,
+  "requires": [
+    "mattpocock.research"
+  ],
+  "permissionsNote": "Tool declarations are author claims, not host approvals. External services, credentials and tools are not installed or enabled by this entry."
+}

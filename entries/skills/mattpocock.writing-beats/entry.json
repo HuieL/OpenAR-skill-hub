@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "mattpocock.writing-beats",
+  "kind": "skill",
+  "name": "Writing Beats",
+  "summary": "Writing, exploit; assemble raw material into a journey of beats, grounding each term before a beat leans on it.",
+  "authors": [
+    {
+      "name": "Matt Pocock",
+      "github": "mattpocock"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "writing"
+  ],
+  "source": {
+    "repo": "mattpocock/skills",
+    "path": "skills/in-progress/writing-beats",
+    "revision": "321658273cb1d20b76026717d027d505790106d4"
+  },
+  "version": "321658273cb1d20b76026717d027d505790106d4",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "a96abafa2372eede8267d770138b322d6125da8adaa7ccf0a5e08e4ee13ee71e",
+      "bytes": 4855,
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "ddaef01da61d8e3c5f482c4403033c20cf5823f08a1dbf1d4c871670831d01e2",
+      "bytes": 142,
+      "executable": false
+    }
+  ],
+  "totalBytes": 4997,
+  "requires": [],
+  "permissionsNote": "Tool declarations are author claims, not host approvals. External services, credentials and tools are not installed or enabled by this entry."
+}

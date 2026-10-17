@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "id": "nature.polishing",
+  "kind": "skill",
+  "name": "Nature Polishing",
+  "summary": "Polish, restructure or translate scientific prose while preserving facts, terminology, citation intent and evidence boundaries.",
+  "authors": [
+    {
+      "name": "Nature Skills contributors",
+      "github": "Yuan1z0825"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "research",
+    "writing"
+  ],
+  "source": {
+    "repo": "Yuan1z0825/nature-skills",
+    "path": "skills/nature-polishing",
+    "revision": "28150f30f8b4017991fca8c7b2839f02c6586d2f"
+  },
+  "version": "6.6.0",
+  "license": "Apache-2.0",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "0e3069ce6693d5324470f7d198561196a4af9014192ffa559dcadc236a8fe903",
+      "bytes": 3677,
+      "executable": false
+    },
+    {
+      "path": "README_EN.md",
+      "sha256": "8a6f8d07417b31a0efd5b0b7bd17be9bcb70f1c9f0e3da32664511f7d6db4ee6",
+      "bytes": 4282,
+      "executable": false
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "c8ff9503a8d3e1457a8ac23f1d18baefc94ee05a70c4677f046cc33be9c62110",
+      "bytes": 7588,
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "5cbdbff93809f5cf0487fdde2f0ff5a037afd300847a802f4f622f3586af18d3",
+      "bytes": 263,
+      "executable": false
+    },
+    {
+      "path": "manifest.yaml",
+      "sha256": "df56341a95695c3720399496328106b21e42f1eb579f71f583472d32e191f57c",
+      "bytes": 6643,
+      "executable": false
+    },
+    {
+      "path": "references/latex-layout.md",
+      "sha256": "9cdb4a2f69e1314a5a401bd1e90d880287940211a48b07e4eb0c62c3c9dd28a9",
+      "bytes": 10636,
+      "executable": false
+    },
+    {
+      "path": "references/nat-comms-2025-diction.md",
+      "sha256": "eda03a75aa51e735d0343346543f6043544bc626c8520ce137783b4c81625598",
+      "bytes": 4009,
+      "executable": false
+    },
+    {
+      "path": "references/phrasebank-playbook.md",
+      "sha256": "759e97c35051bc754f50a763c9cc8004b2fad8af72d8cf71970842ef5eea4ab7",
+      "bytes": 4156,
+      "executable": false
+    },
+    {
+      "path": "references/published-article-patterns.md",
+      "sha256": "61aed79c2180e688079b175e81c751149f0dac6d3876300776ed2e6eb15e02c8",
+      "bytes": 4719,
+      "executable": false
+    },
+    {
+      "path": "references/section-moves.md",
+      "sha256": "462b51c5ade4b64044c426db68b5b38e9367d311f7dc499d2736ef55901ae162",
+      "bytes": 6000,
+      "executable": false
+    },
+    {
+      "path": "references/style-guardrails.md",
+      "sha256": "f909c7adfc46b96c1b8a80fb8da86bee5786d2eda13062ba4dc3dbeb38bbc509",
+      "bytes": 2669,
+      "executable": false
+    },
+    {
+      "path": "references/writing-strategy.md",
+      "sha256": "61aed23835260560e43e54438c9cd2d4dd3dd69921d9ad2bada0494b4777d10d",
+      "bytes": 4856,
+      "executable": false
+    },
+    {
+      "path": "static/core/failure-modes.md",
+      "sha256": "d7e8906fa67dc63bccb7585f207b5bf6978a4684ecc0bc8b2a45309830bbb414",
+      "bytes": 1337,
+      "executable": false
+    },
+    {
+      "path": "static/core/output-format.md",
+      "sha256": "23b067fe52a9b3a5c5323a920df8ae2a234cd26d799116107ed3af2a5e043576",
+      "bytes": 840,
+      "executable": false
+    },
+    {
+      "path": "static/core/stance.md",
+      "sha256": "5aaa30bec7c2582e6267be107b9aa4d8085257e963a79fedeb951bc1ce19a66b",
+      "bytes": 1672,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/journal/generic.md",
+      "sha256": "0d680fd62604db88d97099b3772956abd2a1c3640ee4055afe436c78dbd360a5",
+      "bytes": 1022,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/journal/nat-comms.md",
+      "sha256": "39cfe7f278b14e1b0c27506c73fb269d3dc994176f7abfeabe48ddd88bd95f7d",
+      "bytes": 2457,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/journal/nat-mach-intell.md",
+      "sha256": "e66bbdf9ca61a74cbd28a412f8678f0e688646f2134d36a74f4f6b7daf170883",
+      "bytes": 4711,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/journal/nature.md",
+      "sha256": "f7961aeaff118a518806e839470e78dc378defc180278a870f3b5cea95908b21",
+      "bytes": 1185,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/language/en.md",
+      "sha256": "296620f652317599c1bd66e572993087f7abad57b6e8133904f994462db128e4",
+      "bytes": 1214,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/language/zh-to-en.md",
+      "sha256": "ec618943ea631e168cc5d2dd7d9ddb98cb75347c524122ceddf2ff0b36cf35f1",
+      "bytes": 1241,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/paper_type/algorithmic.md",
+      "sha256": "fa915d8eb8e1e84ee991d5cedc8027978eb5e4a8246f9e8649e2267016f1ea35",
+      "bytes": 953,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/paper_type/hypothesis.md",
+      "sha256": "2927fdefd79958ac8280a0a1d870d066136bfdfe277372f2389928c3ba8f332c",
+      "bytes": 765,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/paper_type/methods.md",
+      "sha256": "3b00b801a733694772c78db1f8d2df19f12ab49b7cd395183d1b1075a0a4ea2e",
+      "bytes": 806,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/paper_type/research.md",
+      "sha256": "e0738b1fd90e3bdc91caee732fc4c61ec97fed1eedd70723504e63cda0a40d6f",
+      "bytes": 785,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/paper_type/review.md",
+      "sha256": "639c478596ba59434f94a7436021ae0ef208c4118a491be1a7779960f984acc6",
+      "bytes": 994,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/section/abstract.md",
+      "sha256": "2cc338819da779895ea5ea38815683682bb981736b16b77c08e52d4c45752504",
+      "bytes": 1139,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/section/conclusion.md",
+      "sha256": "d8676e4871b7b58fd8f72ffec22bc83a7fce7df0220b86e41a38a2989d68da34",
+      "bytes": 512,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/section/discussion.md",
+      "sha256": "9c536591a6f4b8cc2cff07f5297498cc307f5f049fd2d6a27a4b477bcc3a3d9b",
+      "bytes": 1714,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/section/intro.md",
+      "sha256": "6e09524cb4e1d7ec6659fc78ecf0e15b4117435d4b4239194f532e0a916307cb",
+      "bytes": 1292,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/section/methods.md",
+      "sha256": "5bc11e0a67f855ef26fc53d7857f380f1592723ad0e2fa5b565bf5b6072dbca3",
+      "bytes": 815,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/section/results.md",
+      "sha256": "3ddb6b36f22935f0afae2d45b754328c3117d5cd6a1805d595b93c35c101c3b0",
+      "bytes": 2808,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/section/title.md",
+      "sha256": "699e514c4e88ce05d7577d358b76d31dfe337a25e2a8169e99d778c7e7636911",
+      "bytes": 645,
+      "executable": false
+    }
+  ],
+  "totalBytes": 88405,
+  "requires": [
+    "nature.shared"
+  ],
+  "permissionsNote": "Tool declarations are author claims, not host approvals. External services, credentials and tools are not installed or enabled by this entry."
+}

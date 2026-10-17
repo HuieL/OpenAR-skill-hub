@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "id": "nature.paper2ppt",
+  "kind": "skill",
+  "name": "Nature Paper2Ppt",
+  "summary": "Build Chinese scientific presentation decks from papers, using an evidence-led story, selected figures, speaker notes and rendered quality checks.",
+  "authors": [
+    {
+      "name": "Nature Skills contributors",
+      "github": "Yuan1z0825"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "research",
+    "slides"
+  ],
+  "source": {
+    "repo": "Yuan1z0825/nature-skills",
+    "path": "skills/nature-paper2ppt",
+    "revision": "242daf708ffdaf9710caaf5f3b76debe31917c85"
+  },
+  "version": "2.0.0",
+  "license": "Apache-2.0",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "495072ca7c8fa262d0863072a42f546acdfc560a2565304e0de8bc0589b6f969",
+      "bytes": 1851,
+      "executable": false
+    },
+    {
+      "path": "README_EN.md",
+      "sha256": "d4d93ae95a9c644da4106899c3db7872809c06e6b4f129ccfd7ad1777b3d4528",
+      "bytes": 2139,
+      "executable": false
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "945136f112001f3584360956a3dc8c98575bc426b7252e2fd0ccc4abc30e77a8",
+      "bytes": 5431,
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "611c00819a6b0e60d1fff37020787b671c65d5b7a176d072b3784b4c9e254371",
+      "bytes": 254,
+      "executable": false
+    },
+    {
+      "path": "manifest.yaml",
+      "sha256": "4ce5380b647ac994523d353722aad5a12f4272f2b07535c9b2cad4266f9a9596",
+      "bytes": 2860,
+      "executable": false
+    },
+    {
+      "path": "references/design-and-layout.md",
+      "sha256": "88fff91892d4b50b3c35ddff4c49e26cc6332b203613bf70e62d8f627b214b69",
+      "bytes": 14768,
+      "executable": false
+    },
+    {
+      "path": "references/figure-assets.md",
+      "sha256": "c7555cff1fba65cb319381611691289426ef0c76a0d59e43c505e949f270eb72",
+      "bytes": 4693,
+      "executable": false
+    },
+    {
+      "path": "references/self-review.md",
+      "sha256": "29889803beea2a71b607c8d129c812377594d41157ff99d1deadcea110ec714e",
+      "bytes": 6919,
+      "executable": false
+    },
+    {
+      "path": "scripts/audit_pptx_quality.py",
+      "sha256": "019601dd790975e1cfac7fde5d97519dc6a3316f39033e1853d3ae42e0fff513",
+      "bytes": 13114,
+      "executable": true
+    },
+    {
+      "path": "static/core/output-and-quality.md",
+      "sha256": "c47f65c4eba502ed8f13d846e8c41967b358a1c00c34ff6b8d914963e219ff87",
+      "bytes": 5020,
+      "executable": false
+    },
+    {
+      "path": "static/core/principles.md",
+      "sha256": "db5e1f9dbafbe7db4e0aa3cf824237b2b0927519fe8ca17d99aeebd918fdfce8",
+      "bytes": 3005,
+      "executable": false
+    },
+    {
+      "path": "static/core/toolchain.md",
+      "sha256": "11770fe6bb7fee8e63129d06c7bf6c67cb86464c818d4018e6df7a0ee9b96306",
+      "bytes": 2601,
+      "executable": false
+    },
+    {
+      "path": "static/core/workflow.md",
+      "sha256": "dc45acf8610a1ab23dfad12c32eac25c5887768322034e671d8e0169c1344bb5",
+      "bytes": 6350,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/paper_type/clinical.md",
+      "sha256": "ff9bb3f7d5f3171b7ae9681ba5414f76c7374d9518642abefe72722444a6e90d",
+      "bytes": 1210,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/paper_type/discovery.md",
+      "sha256": "f6fc8d6f48602c4d6ff362a93da8b38828bd16ec40167f2fabcd85aac3e62a53",
+      "bytes": 1300,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/paper_type/materials.md",
+      "sha256": "97549f8a11af1bbcc8b5cfa5cf11a649121c3c43b947a9620f993212bb504fa3",
+      "bytes": 1221,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/paper_type/methods.md",
+      "sha256": "33dcdea40998c33d06cea7a58d5a64e9cd00850111eb01a13c629979d119e025",
+      "bytes": 1275,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/paper_type/resource.md",
+      "sha256": "e2af211b516a86c5823085cac9e872df0c52964b5139c202d92ffb011fa76493",
+      "bytes": 1162,
+      "executable": false
+    },
+    {
+      "path": "static/fragments/paper_type/review.md",
+      "sha256": "55e34ef7858d73f753c5ea8aa72a627dbeccb9327b81de63691d8dbb6eb144c0",
+      "bytes": 1035,
+      "executable": false
+    }
+  ],
+  "totalBytes": 76208,
+  "requires": [
+    "nature.shared"
+  ],
+  "permissionsNote": "Tool declarations are author claims, not host approvals. External services, credentials and tools are not installed or enabled by this entry."
+}

@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 1,
+  "id": "nature.academic-search",
+  "kind": "skill",
+  "name": "Nature Academic Search",
+  "summary": "Search scientific literature across PubMed, Crossref, arXiv and other sources; verify citations, audit independent citations and export reference-manager files.",
+  "authors": [
+    {
+      "name": "Nature Skills contributors",
+      "github": "Yuan1z0825"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "research",
+    "literature"
+  ],
+  "source": {
+    "repo": "Yuan1z0825/nature-skills",
+    "path": "skills/nature-academic-search",
+    "revision": "6c39b20fe8f6033090d227c616ee3152de70490e"
+  },
+  "version": "2.0.0",
+  "license": "Apache-2.0",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "4274cb9307a7410a3698d2c81c95c2798f91ea3f62d8542db199034104712c3e",
+      "bytes": 2435,
+      "executable": false
+    },
+    {
+      "path": "README_EN.md",
+      "sha256": "e39f0aa8968c457722e562520586eedc33cbbbdd3b6e89998fb4a9361a17be09",
+      "bytes": 2762,
+      "executable": false
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "65f44bb5d31f8b2d26687dcdcbc22d3def3ab2b5a26c810cd5e18a6a98d5e681",
+      "bytes": 4985,
+      "executable": true
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "9dd24dfbf203a69a4cc98bd16c9e92f0ccf2b678d73c0549a725922ae6abda01",
+      "bytes": 265,
+      "executable": false
+    },
+    {
+      "path": "config/mcp-snippet.json",
+      "sha256": "384af7ec8d64e9c90a2853bc49e30cdca51bfc595fe0a0d2a2c2c607f4fb9ef7",
+      "bytes": 502,
+      "executable": false
+    },
+    {
+      "path": "config/settings-snippet.json",
+      "sha256": "9c1eaadd248ee983a6ae15b44bef8f77236b358e9155b0066607bf8e6fcc543f",
+      "bytes": 59,
+      "executable": false
+    },
+    {
+      "path": "config/triggers-academic-search.toml",
+      "sha256": "5a7756c8b34df67ffcd12c9a01fdbcf1762c011d4ecbcf3f8c7abe361dd6ea24",
+      "bytes": 978,
+      "executable": false
+    },
+    {
+      "path": "install.sh",
+      "sha256": "a886a69b2e774aea1953971b6aca44b8dd43b3abdb4687b48241adc42beb3956",
+      "bytes": 4442,
+      "executable": true
+    },
+    {
+      "path": "manifest.yaml",
+      "sha256": "06ed4654398fed269f8ef95b99b867e4718f7a90889f8427484610750b41ff20",
+      "bytes": 3154,
+      "executable": false
+    },
+    {
+      "path": "mcp-server/README.md",
+      "sha256": "a4d037bcebbe5d2ac4dbeef2e56796c294bab871df0e9980505cdb5d078892d7",
+      "bytes": 1959,
+      "executable": false
+    },
+    {
+      "path": "mcp-server/academic_search_server.py",
+      "sha256": "1210f735b6768186e197682da70e14fd7f2b2cdd52a6430cf800be8afd969277",
+      "bytes": 21282,
+      "executable": false
+    },
+    {
+      "path": "mcp-server/config.toml",
+      "sha256": "a5cbbbcd2cc2dacb1b56df7366288e61ca8c655141bc57374bb600d389105fef",
+      "bytes": 249,
+      "executable": false
+    },
+    {
+      "path": "mcp-server/requirements.txt",
+      "sha256": "08e9f7722a01bb550189b99ab755988c01e9a958e94248e5a6437126082028cc",
+      "bytes": 109,
+      "executable": false
+    },
+    {
+      "path": "mcp-server/sources/__init__.py",
+      "sha256": "bb42e9a992cd1de6f0634bddc80fab53506c59912a43d2b15548f677a3f15cbf",
+      "bytes": 352,
+      "executable": false
+    },
+    {
+      "path": "mcp-server/sources/arxiv.py",
+      "sha256": "2513a435681558decb02d93d76497f41847d7c7ec2c6b80b3cb95839b7f8d096",
+      "bytes": 11342,
+      "executable": false
+    },
+    {
+      "path": "mcp-server/sources/crossref.py",
+      "sha256": "7ff6b652398b4a663d1d458f01617ef786493973cbe65d4bbb94a26be9b2e2c2",
+      "bytes": 7005,
+      "executable": false
+    },
+    {
+      "path": "mcp-server/sources/elsevier_common.py",
+      "sha256": "bff68da81ee203c336b21a3b83441be4a4f9468c6d29f95e130b6e79ed7611e0",
+      "bytes": 2498,
+      "executable": false
+    },
+    {
+      "path": "mcp-server/sources/pubmed.py",
+      "sha256": "14761f5eafee459f28538cfcb2fca4d08523c5fc58fb2fb9816e5ffbc7af9f91",
+      "bytes": 13292,
+      "executable": false
+    },
+    {
+      "path": "mcp-server/sources/sciencedirect.py",
+      "sha256": "05c43cf0e1c2e6581ce18dd686d69cead7dba91411d9aa5d9fd2e1c0d860453d",
+      "bytes": 7057,
+      "executable": false
+    },
+    {
+      "path": "mcp-server/sources/scopus.py",
+      "sha256": "13e52156f96d399ef9ddc11b41d1677069ff1e0ff58a9a6484ff5ff9d2068113",
+      "bytes": 19320,
+      "executable": false
+    },
+    {
+      "path": "mcp-server/tests/__init__.py",
+      "sha256": "be5036e0c0559ed641e0cb52698f7ff6f289a1269dfd902f55195b8094066447",
+      "bytes": 40,
+      "executable": false
+    },
+    {
+      "path": "mcp-server/tests/test_elsevier_live.py",
+      "sha256": "9fb3d48e01e5d107193c29175f7541f4e5d8973210259edb7407adc881dc7d4b",
+      "bytes": 2639,
+      "executable": false
+    },
+    {
+      "path": "mcp-server/tests/test_mcp_tools.py",
+      "sha256": "e5d3cfd6733c6368f5359f16fc5821d1aec3b714e7803d1fed4eb7edab6c3b07",
+      "bytes": 2699,
+      "executable": false
+    },
+    {
+      "path": "mcp-server/tests/test_sources.py",
+      "sha256": "b1f959c4f044f0385919add32065e013bbc032236e0e862c44ec189d8555602e",
+      "bytes": 31209,
+      "executable": false
+    },
+    {
+      "path": "mcp-server/utils/__init__.py",
+      "sha256": "3fe4a38f8922efc550cc39dcfd16a0771d9ea9ab376ee1e0ac3e1d675b586b6f",
+      "bytes": 359,
+      "executable": false
+    },
+    {
+      "path": "mcp-server/utils/config.py",
+      "sha256": "da1e92409aba06f0a8a3829e042ca4f23685bf9e37d52d861460a4904ec147f2",
+      "bytes": 1398,
+      "executable": false
+    },
+    {
+      "path": "mcp-server/utils/errors.py",
+      "sha256": "8e0825f0439d39121642144544fb58fd4c27ed46163bb6a6688592897b8d6206",
+      "bytes": 620,
+      "executable": false
+    },
+    {
+      "path": "mcp-server/utils/logging.py",
+      "sha256": "bd34f60b64f54fc53cd6d8f1244a099623736fbc7790af3d3aebbffb6be12ba4",
+      "bytes": 1166,
+      "executable": false
+    },
+    {
+      "path": "references/citation-parser.md",
+      "sha256": "e5b71f3ee82dcda320d98ac0d85bdea60df6f570bf41183254b8c3d8a8756107",
+      "bytes": 2715,
+      "executable": false
+    },
+    {
+      "path": "references/dedup-engine.md",
+      "sha256": "4f0164c9fd8f542bf5e2d179ac6b5ecf3ae147eff2d787ac2ff68990bab79721",
+      "bytes": 1947,
+      "executable": false
+    },
+    {
+      "path": "references/pubmed-28344011.bib",
+      "sha256": "476340d7ac4bb4bc850bfb82e3c6fbe33e479f0089663321da0e091987a98ac1",
+      "bytes": 3410,
+      "executable": true
+    },
+    {
+      "path": "references/pubmed-28344011.nbib",
+      "sha256": "1705f5869235a3486dfc259db66611617045d814dd0c8f2751ec7a9f879a65c4",
+      "bytes": 12205,
+      "executable": true
+    },
+    {
+      "path": "references/pubmed-28344011.ris",
+      "sha256": "62e55bea966681ef054a96d642ab135501056483b5994023967c3f033f41e2d8",
+      "bytes": 3513,
+      "executable": true
+    },
+    {
+      "path": "references/ris-bibtex-format.md",
+      "sha256": "153b2ed521e5893d9add6e6dc41db2ab6e1064c7e0b4bbb8e9a906614874754e",
+      "bytes": 4629,
+      "executable": true
+    },
+    {
+      "path": "references/search-strategy.md",
+      "sha256": "29677b5b9f396a9452e47e4514d58d5139480d630c3b735d599bcbcb2eec7595",
+      "bytes": 2067,
+      "executable": true
+    },
+    {
+      "path": "references/source-tiers.md",
+      "sha256": "c10b0fe4c2c35c3d73d1a59b2d9557d0568a83607cfe2e1644d8d0d72106af83",
+      "bytes": 2744,
+      "executable": false
+    },
+    {
+      "path": "references/workflows/wf1-multi-source-search.md",
+      "sha256": "5fdc6998651430d9d7871800b221e3e324ee237303149d7083784f44461aaccb",
+      "bytes": 1913,
+      "executable": false
+    },
+    {
+      "path": "references/workflows/wf2-citation-verification.md",
+      "sha256": "dd8431a81bb0a731f7e4e9c99ba27332e10cdf9477398897f0f5d29848190962",
+      "bytes": 1650,
+      "executable": false
+    },
+    {
+      "path": "references/workflows/wf3-mesh-strategy.md",
+      "sha256": "ff84443dd7040fda5daa3236ea6da4ac6f3bcea5121a051fbe7c82c0a749de04",
+      "bytes": 538,
+      "executable": false
+    },
+    {
+      "path": "references/workflows/wf4-citation-file-mgmt.md",
+      "sha256": "d56a3c5e1bb7750872185f9e0e96b8c0c6818d0c2d21bd4d6e43ff671806abe7",
+      "bytes": 1436,
+      "executable": false
+    },
+    {
+      "path": "references/workflows/wf5-reference-mgmt.md",
+      "sha256": "f2b347a9fe215ea36524fc6fa691624438644fa326e3bea6e8992aad4461ca21",
+      "bytes": 1333,
+      "executable": false
+    },
+    {
+      "path": "references/workflows/wf6-strict-other-citation-impact-audit.md",
+      "sha256": "07bff6f53d832f3e25d644e2df6fcd4494e43732386a50b37ed4d50b38ff693e",
+      "bytes": 11315,
+      "executable": false
+    },
+    {
+      "path": "scripts/academic_search.py",
+      "sha256": "f8306f68ff0a0f0bfdef082189298a0de4f52529a47b0086684298fb2355556b",
+      "bytes": 20940,
+      "executable": false
+    },
+    {
+      "path": "scripts/converters.py",
+      "sha256": "fccc9691df43302d786ec88bcbb88208164b3ac73f88583b032a5c2ba7fde48a",
+      "bytes": 18506,
+      "executable": false
+    },
+    {
+      "path": "scripts/format-converter.py",
+      "sha256": "62299022711010abc22b6a1d5c69efa3c16a1fa08e2580a62567e5abd0531db9",
+      "bytes": 19051,
+      "executable": false
+    },
+    {
+      "path": "scripts/preflight.py",
+      "sha256": "2f33d843666c49c58a64ea0156667f54d25ba443407990b496a40af525e7681e",
+      "bytes": 3780,
+      "executable": false
+    },
+    {
+      "path": "static/core/routing-and-ops.md",
+      "sha256": "fe81e748aced573e59494b6554355eaa1d048a85ad6efa094bac86005f9bb4f7",
+      "bytes": 4990,
+      "executable": false
+    },
+    {
+      "path": "static/core/tools.md",
+      "sha256": "a279e282a66786ac6b3548058c2f49ebb2562ce753ac4cd88c94f12989abfcf9",
+      "bytes": 3041,
+      "executable": false
+    }
+  ],
+  "totalBytes": 265900,
+  "requires": [],
+  "permissionsNote": "Tool declarations are author claims, not host approvals. External services, credentials and tools are not installed or enabled by this entry."
+}

@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "id": "nature.experiment-log",
+  "kind": "skill",
+  "name": "Nature Experiment Log",
+  "summary": "Turn experiment text, images and voice notes into structured Markdown logs, with optional Feishu and Obsidian integration.",
+  "authors": [
+    {
+      "name": "Nature Skills contributors",
+      "github": "Yuan1z0825"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "research"
+  ],
+  "source": {
+    "repo": "Yuan1z0825/nature-skills",
+    "path": "skills/nature-experiment-log",
+    "revision": "2bf67fd76aa2d47da8c804acabf08ccb9089b822"
+  },
+  "version": "1.0.2",
+  "license": "Apache-2.0",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "fd487dc7336b8b02445a48bd5d030304f00a06f4bce56bbee2a29483da1d0e9d",
+      "bytes": 2212,
+      "executable": false
+    },
+    {
+      "path": "README_EN.md",
+      "sha256": "b7aa47e7152ddec685637aeafcb1ddad1f220595ca2f27b819d841edbd79756e",
+      "bytes": 2345,
+      "executable": false
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "1f7fffcbc950d4f60fcb5ad9f2aabe82246ebbd83bf29621a0e90c9ff4ec4b8b",
+      "bytes": 6416,
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "e156e1f41d7e3948a26b31511e31f1c3df1f6a58c91b53559bad8e4c6ebfe310",
+      "bytes": 238,
+      "executable": false
+    },
+    {
+      "path": "manifest.yaml",
+      "sha256": "8ea5cb5c335960015edcdbbdec56cd9f33cde472ef3b48157b03c390fc99450d",
+      "bytes": 1501,
+      "executable": false
+    },
+    {
+      "path": "references/example-electrochemical.md",
+      "sha256": "c8773a58c47ba105c085ea49cdb9f0c2f8ed5bd3c4940ca8a2e091bbf7123ef0",
+      "bytes": 1874,
+      "executable": false
+    },
+    {
+      "path": "references/example-log.md",
+      "sha256": "a8e40fd3af1c1b90de477fec9e16a2a97944022376eb99d9d788091cef4c0b2d",
+      "bytes": 2038,
+      "executable": false
+    },
+    {
+      "path": "references/example-thermal-stability.md",
+      "sha256": "af6b0749206380e4c024b674e2c3bb1612adb2c553098ce24db05ee1f4795c85",
+      "bytes": 1769,
+      "executable": false
+    },
+    {
+      "path": "templates/anomaly-log.md",
+      "sha256": "db2748355c7dda56388a48ab6961a3a97398f7aa17c6d8cef14841e3719cbfda",
+      "bytes": 577,
+      "executable": false
+    },
+    {
+      "path": "templates/equipment-tracking.md",
+      "sha256": "c727943ee46f538d1949c7afc57fcb1716fe7877a26b3cec636006975416fcbd",
+      "bytes": 870,
+      "executable": false
+    },
+    {
+      "path": "templates/experiment-index.md",
+      "sha256": "0da44d318c84810aaf36343d92333d61735d2813a7392cfb0800d3014753552d",
+      "bytes": 653,
+      "executable": false
+    }
+  ],
+  "totalBytes": 20493,
+  "requires": [],
+  "permissionsNote": "Tool declarations are author claims, not host approvals. External services, credentials and tools are not installed or enabled by this entry."
+}
