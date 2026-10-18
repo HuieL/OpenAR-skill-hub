@@ -4036,32 +4036,6 @@
       ]
     },
     {
-      "id": "nature.downloader",
-      "name": "Nature Downloader",
-      "summary": "Download papers via open access, publisher APIs (keys required) and your logged-in Chrome; its scripts auto-solve publisher and CNKI CAPTCHAs.",
-      "delivery": "hub",
-      "version": "2.1.0",
-      "revision": "242daf708ffdaf9710caaf5f3b76debe31917c85",
-      "entryPath": "entries/skills/nature.downloader/entry.json",
-      "entrySha256": "e43b80344577f2ec6c37ce689e8f2d3560cc7312a7eccad194b022e8c3d7e247",
-      "icon": "literature",
-      "tags": [
-        "open-access",
-        "pdf-download",
-        "cnki",
-        "institutional-access",
-        "nature-skills",
-        "literature",
-        "research",
-        "automation"
-      ],
-      "categories": [
-        "literature",
-        "research",
-        "automation"
-      ]
-    },
-    {
       "id": "nature.experiment-log",
       "name": "Nature Experiment Log",
       "summary": "Turn experiment notes, photos and voice recordings into standardized Chinese Markdown logs with YAML frontmatter; optionally read Feishu group chats or write to an Obsidian vault.",
@@ -4108,30 +4082,6 @@
       "categories": [
         "visualization",
         "research"
-      ]
-    },
-    {
-      "id": "nature.image2ppt",
-      "name": "Nature Image to PPT",
-      "summary": "Rebuild slide images, screenshots and scanned PDFs as editable PowerPoint; by default it may reuse your Codex login token (~/.codex/auth.json) for image generation.",
-      "delivery": "hub",
-      "version": "1.1.0",
-      "revision": "552af66976bec65021371d7563103f2103450f6e",
-      "entryPath": "entries/skills/nature.image2ppt/entry.json",
-      "entrySha256": "7883ccdb214c60b9254439e2008c617cb6c0c111b85e4840c2a87283719af6a3",
-      "icon": "presentation",
-      "tags": [
-        "pptx",
-        "ocr",
-        "slide-reconstruction",
-        "scanned-pdf",
-        "nature-skills",
-        "presentation",
-        "images"
-      ],
-      "categories": [
-        "presentation",
-        "images"
       ]
     },
     {
