@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "skillHub": "2ffa76100b998e44ac3fd22ee0ceef5d4a271f04",
+  "skillHub": "b84d5bb79a63370d7d06ce6ff437d0e53ced9d00",
   "extensionHub": null,
   "creators": [
     {
@@ -1171,12 +1171,6 @@
           ]
         },
         {
-          "entry": "skill:nature.downloader",
-          "roles": [
-            "submitter"
-          ]
-        },
-        {
           "entry": "skill:nature.experiment-log",
           "roles": [
             "submitter"
@@ -1186,12 +1180,6 @@
           "entry": "skill:nature.figure",
           "roles": [
             "adapter",
-            "submitter"
-          ]
-        },
-        {
-          "entry": "skill:nature.image2ppt",
-          "roles": [
             "submitter"
           ]
         },
@@ -2338,18 +2326,6 @@
       ]
     },
     {
-      "github": "baihe26",
-      "name": "baihe26",
-      "credits": [
-        {
-          "entry": "skill:nature.downloader",
-          "roles": [
-            "author"
-          ]
-        }
-      ]
-    },
-    {
       "github": "iOfficeAI",
       "name": "iOfficeAI",
       "credits": [
@@ -2553,30 +2529,6 @@
       "credits": [
         {
           "entry": "skill:hub.hallmark",
-          "roles": [
-            "author"
-          ]
-        }
-      ]
-    },
-    {
-      "github": null,
-      "name": "Image2PPT contributors",
-      "credits": [
-        {
-          "entry": "skill:nature.image2ppt",
-          "roles": [
-            "author"
-          ]
-        }
-      ]
-    },
-    {
-      "github": "ningzimu",
-      "name": "ningzimu",
-      "credits": [
-        {
-          "entry": "skill:nature.image2ppt",
           "roles": [
             "author"
           ]
