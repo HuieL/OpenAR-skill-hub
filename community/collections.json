@@ -22,6 +22,17 @@
         "skill:hub.web-design-guidelines",
         "skill:hub.research-design-system"
       ]
+    },
+    {
+      "id": "research-connectors",
+      "title": "Research Connectors",
+      "description": "Extensions that connect a research session to outside sources: model and dataset hubs, up-to-date library documentation, and offline benchmark statistics. Connections register only; nothing runs until you use it.",
+      "curators": ["HuieL"],
+      "entries": [
+        "extension:huggingface.hub-mcp",
+        "extension:upstash.context7",
+        "extension:hub.mcp-stats"
+      ]
     }
   ]
 }

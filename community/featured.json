@@ -6,6 +6,18 @@
       "reason": "A real, opinionated anti-AI-slop design skill with audit, redesign and study behaviors, carried verbatim from the upstream skill directory at a pinned commit.",
       "featuredBy": "HuieL",
       "date": "2026-10-13"
+    },
+    {
+      "id": "extension:huggingface.hub-mcp",
+      "reason": "Search and inspect models, datasets, Spaces and papers from inside a research session through Hugging Face's own hosted MCP service; anonymous, nothing installed, and its observed tools are re-probed for drift.",
+      "featuredBy": "HuieL",
+      "date": "2026-10-19"
+    },
+    {
+      "id": "extension:upstash.context7",
+      "reason": "Current library documentation and code examples on demand, so agents stop guessing at APIs; a hosted connection pinned to an upstream release tag and re-observed whenever the service changes.",
+      "featuredBy": "HuieL",
+      "date": "2026-10-19"
     }
   ]
 }
