@@ -23,7 +23,9 @@
       "categories": [
         "design",
         "imaging"
-      ]
+      ],
+      "author": "OpenAR",
+      "repo": "HuieL/OpenAR-skill-hub"
     },
     {
       "id": "hub.hallmark",
@@ -43,7 +45,9 @@
       ],
       "categories": [
         "design"
-      ]
+      ],
+      "author": "Youssef",
+      "repo": "nutlope/hallmark"
     },
     {
       "id": "hub.human-writing",
@@ -62,7 +66,9 @@
       ],
       "categories": [
         "writing"
-      ]
+      ],
+      "author": "Khazix",
+      "repo": "KKKKhazix/human-writing"
     },
     {
       "id": "hub.officecli-academic-paper",
@@ -83,7 +89,9 @@
       ],
       "categories": [
         "writing"
-      ]
+      ],
+      "author": "iOfficeAI",
+      "repo": "HuieL/OpenAR-skill-hub"
     },
     {
       "id": "hub.officecli-data-dashboard",
@@ -103,7 +111,9 @@
       ],
       "categories": [
         "data"
-      ]
+      ],
+      "author": "iOfficeAI",
+      "repo": "HuieL/OpenAR-skill-hub"
     },
     {
       "id": "hub.research-design-system",
@@ -123,7 +133,9 @@
       "categories": [
         "design",
         "reference"
-      ]
+      ],
+      "author": "VoltAgent",
+      "repo": "HuieL/OpenAR-skill-hub"
     },
     {
       "id": "hub.web-design-guidelines",
@@ -145,7 +157,9 @@
       "categories": [
         "design",
         "review"
-      ]
+      ],
+      "author": "Vercel Labs",
+      "repo": "HuieL/OpenAR-skill-hub"
     },
     {
       "id": "hub.writing-guidelines",
@@ -166,7 +180,9 @@
       "categories": [
         "writing",
         "review"
-      ]
+      ],
+      "author": "Vercel Labs",
+      "repo": "HuieL/OpenAR-skill-hub"
     },
     {
       "id": "kdense.13c-metabolic-flux",
@@ -186,7 +202,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.adaptyv",
@@ -206,7 +224,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.aeon",
@@ -226,7 +246,9 @@
       ],
       "categories": [
         "machine-learning"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.alphagenome",
@@ -249,7 +271,9 @@
       "categories": [
         "biology",
         "databases"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.analytical-method-validation",
@@ -269,7 +293,9 @@
       ],
       "categories": [
         "regulatory"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.anndata",
@@ -289,7 +315,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.arbor",
@@ -309,7 +337,9 @@
       ],
       "categories": [
         "research"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.arboreto",
@@ -329,7 +359,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.astropy",
@@ -349,7 +381,9 @@
       ],
       "categories": [
         "physics"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.benchling-integration",
@@ -369,7 +403,9 @@
       ],
       "categories": [
         "lab-automation"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.bgpt-paper-search",
@@ -389,7 +425,9 @@
       ],
       "categories": [
         "writing"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.bids",
@@ -409,7 +447,9 @@
       ],
       "categories": [
         "neuroscience"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.biopython",
@@ -429,7 +469,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.bioservices",
@@ -449,7 +491,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.bulk-rnaseq",
@@ -469,7 +513,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.cantera",
@@ -489,7 +535,9 @@
       ],
       "categories": [
         "engineering"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.cellprofiler",
@@ -509,7 +557,9 @@
       ],
       "categories": [
         "imaging"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.cellxgene-census",
@@ -529,7 +579,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.cirq",
@@ -549,7 +601,9 @@
       ],
       "categories": [
         "physics"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.clinical-decision-support",
@@ -569,7 +623,9 @@
       ],
       "categories": [
         "medicine"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.clinical-reports",
@@ -589,7 +645,9 @@
       ],
       "categories": [
         "medicine"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.cobrapy",
@@ -609,7 +667,9 @@
       ],
       "categories": [
         "physics"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.consciousness-council",
@@ -629,7 +689,9 @@
       ],
       "categories": [
         "research"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.dask",
@@ -649,7 +711,9 @@
       ],
       "categories": [
         "data"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.database-lookup",
@@ -669,7 +733,9 @@
       ],
       "categories": [
         "databases"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.datalad",
@@ -689,7 +755,9 @@
       ],
       "categories": [
         "infrastructure"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.datamol",
@@ -709,7 +777,9 @@
       ],
       "categories": [
         "chemistry"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.deepchem",
@@ -729,7 +799,9 @@
       ],
       "categories": [
         "chemistry"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.deeptools",
@@ -749,7 +821,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.depmap",
@@ -772,7 +846,9 @@
       "categories": [
         "medicine",
         "databases"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.dhdna-profiler",
@@ -792,7 +868,9 @@
       ],
       "categories": [
         "research"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.diffdock",
@@ -812,7 +890,9 @@
       ],
       "categories": [
         "chemistry"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.dnanexus-integration",
@@ -832,7 +912,9 @@
       ],
       "categories": [
         "infrastructure"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.etetoolkit",
@@ -852,7 +934,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.exa-search",
@@ -872,7 +956,9 @@
       ],
       "categories": [
         "writing"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.experimental-design",
@@ -892,7 +978,9 @@
       ],
       "categories": [
         "data"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.exploratory-data-analysis",
@@ -912,7 +1000,9 @@
       ],
       "categories": [
         "data"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.fictiv",
@@ -932,7 +1022,9 @@
       ],
       "categories": [
         "engineering"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.flowio",
@@ -952,7 +1044,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.flowkit",
@@ -972,7 +1066,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.fluidsim",
@@ -992,7 +1088,9 @@
       ],
       "categories": [
         "engineering"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.folklore-variant-evidence",
@@ -1012,7 +1110,9 @@
       ],
       "categories": [
         "databases"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.generate-image",
@@ -1032,7 +1132,9 @@
       ],
       "categories": [
         "writing"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.geniml",
@@ -1052,7 +1154,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.genomic-coordinates",
@@ -1072,7 +1176,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.genomic-intelligence",
@@ -1095,7 +1201,9 @@
       "categories": [
         "biology",
         "databases"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.geopandas",
@@ -1115,7 +1223,9 @@
       ],
       "categories": [
         "data"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.get-available-resources",
@@ -1135,7 +1245,9 @@
       ],
       "categories": [
         "infrastructure"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.gget",
@@ -1155,7 +1267,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.ginkgo-cloud-lab",
@@ -1175,7 +1289,9 @@
       ],
       "categories": [
         "lab-automation"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.gtars",
@@ -1195,7 +1311,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.histolab",
@@ -1215,7 +1333,9 @@
       ],
       "categories": [
         "imaging"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.hypogenic",
@@ -1235,7 +1355,9 @@
       ],
       "categories": [
         "research"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.hypothesis-generation",
@@ -1255,7 +1377,9 @@
       ],
       "categories": [
         "research"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.imaging-data-commons",
@@ -1278,7 +1402,9 @@
       "categories": [
         "medicine",
         "databases"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.iso-standards-readiness",
@@ -1298,7 +1424,9 @@
       ],
       "categories": [
         "regulatory"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.lab-hardware-cad",
@@ -1318,7 +1446,9 @@
       ],
       "categories": [
         "engineering"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.labarchive-integration",
@@ -1338,7 +1468,9 @@
       ],
       "categories": [
         "lab-automation"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.lamindb",
@@ -1358,7 +1490,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.latchbio-integration",
@@ -1378,7 +1512,9 @@
       ],
       "categories": [
         "infrastructure"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.liteparse",
@@ -1401,7 +1537,9 @@
       "categories": [
         "data",
         "writing"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.mageck",
@@ -1421,7 +1559,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.marine-carbonate-chemistry",
@@ -1441,7 +1581,9 @@
       ],
       "categories": [
         "chemistry"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.markdown-mermaid-writing",
@@ -1464,7 +1606,9 @@
       "categories": [
         "data",
         "writing"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.market-research-reports",
@@ -1484,7 +1628,9 @@
       ],
       "categories": [
         "writing"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.markitdown",
@@ -1507,7 +1653,9 @@
       "categories": [
         "data",
         "writing"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.matchms",
@@ -1527,7 +1675,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.matlab",
@@ -1547,7 +1697,9 @@
       ],
       "categories": [
         "engineering"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.matplotlib",
@@ -1567,7 +1719,9 @@
       ],
       "categories": [
         "data"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.medchem",
@@ -1587,7 +1741,9 @@
       ],
       "categories": [
         "chemistry"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.molecular-dynamics",
@@ -1607,7 +1763,9 @@
       ],
       "categories": [
         "physics"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.molfeat",
@@ -1627,7 +1785,9 @@
       ],
       "categories": [
         "chemistry"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.ncats-arax",
@@ -1647,7 +1807,9 @@
       ],
       "categories": [
         "databases"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.networkx",
@@ -1667,7 +1829,9 @@
       ],
       "categories": [
         "data"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.neurokit2",
@@ -1687,7 +1851,9 @@
       ],
       "categories": [
         "neuroscience"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.neuropixels-analysis",
@@ -1707,7 +1873,9 @@
       ],
       "categories": [
         "neuroscience"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.nextflow",
@@ -1727,7 +1895,9 @@
       ],
       "categories": [
         "infrastructure"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.nmrglue",
@@ -1747,7 +1917,9 @@
       ],
       "categories": [
         "chemistry"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.nwb-conversion",
@@ -1767,7 +1939,9 @@
       ],
       "categories": [
         "neuroscience"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.omero-integration",
@@ -1787,7 +1961,9 @@
       ],
       "categories": [
         "imaging"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.onekgpd",
@@ -1810,7 +1986,9 @@
       "categories": [
         "biology",
         "databases"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.ontology-term-resolution",
@@ -1830,7 +2008,9 @@
       ],
       "categories": [
         "databases"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.openpiv",
@@ -1850,7 +2030,9 @@
       ],
       "categories": [
         "engineering"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.opentrons-integration",
@@ -1870,7 +2052,9 @@
       ],
       "categories": [
         "lab-automation"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.optimize-for-gpu",
@@ -1890,7 +2074,9 @@
       ],
       "categories": [
         "infrastructure"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.pacsomatic",
@@ -1910,7 +2096,9 @@
       ],
       "categories": [
         "infrastructure"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.paper-lookup",
@@ -1933,7 +2121,9 @@
       "categories": [
         "writing",
         "research"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.paperclip",
@@ -1953,7 +2143,9 @@
       ],
       "categories": [
         "writing"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.paperzilla",
@@ -1973,7 +2165,9 @@
       ],
       "categories": [
         "writing"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.parallel-web",
@@ -1993,7 +2187,9 @@
       ],
       "categories": [
         "writing"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.pathml",
@@ -2013,7 +2209,9 @@
       ],
       "categories": [
         "imaging"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.pathogen-variant-surveillance",
@@ -2033,7 +2231,9 @@
       ],
       "categories": [
         "databases"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.pathway-enrichment",
@@ -2053,7 +2253,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.peer-review",
@@ -2073,7 +2275,9 @@
       ],
       "categories": [
         "writing"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.pennylane",
@@ -2093,7 +2297,9 @@
       ],
       "categories": [
         "physics"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.pi-agent",
@@ -2113,7 +2319,9 @@
       ],
       "categories": [
         "infrastructure"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.pkpd-modeling",
@@ -2133,7 +2341,9 @@
       ],
       "categories": [
         "medicine"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.polars",
@@ -2153,7 +2363,9 @@
       ],
       "categories": [
         "data"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.polars-bio",
@@ -2173,7 +2385,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.pptx-posters",
@@ -2193,7 +2407,9 @@
       ],
       "categories": [
         "writing"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.primer-design",
@@ -2213,7 +2429,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.protocolsio-integration",
@@ -2233,7 +2451,9 @@
       ],
       "categories": [
         "lab-automation"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.pufferlib",
@@ -2253,7 +2473,9 @@
       ],
       "categories": [
         "machine-learning"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.pybamm",
@@ -2273,7 +2495,9 @@
       ],
       "categories": [
         "engineering"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.pycalphad",
@@ -2293,7 +2517,9 @@
       ],
       "categories": [
         "physics"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.pydeseq2",
@@ -2313,7 +2539,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.pydicom",
@@ -2333,7 +2561,9 @@
       ],
       "categories": [
         "imaging"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.pyhealth",
@@ -2353,7 +2583,9 @@
       ],
       "categories": [
         "medicine"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.pylabrobot",
@@ -2373,7 +2605,9 @@
       ],
       "categories": [
         "lab-automation"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.pymatgen",
@@ -2393,7 +2627,9 @@
       ],
       "categories": [
         "physics"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.pymc",
@@ -2413,7 +2649,9 @@
       ],
       "categories": [
         "machine-learning"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.pymoo",
@@ -2433,7 +2671,9 @@
       ],
       "categories": [
         "machine-learning"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.pyopenms",
@@ -2453,7 +2693,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.pysam",
@@ -2473,7 +2715,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.pytdc",
@@ -2493,7 +2737,9 @@
       ],
       "categories": [
         "chemistry"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.pyzotero",
@@ -2513,7 +2759,9 @@
       ],
       "categories": [
         "writing"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.qiime2-amplicon",
@@ -2533,7 +2781,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.qiskit",
@@ -2553,7 +2803,9 @@
       ],
       "categories": [
         "physics"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.qutip",
@@ -2573,7 +2825,9 @@
       ],
       "categories": [
         "physics"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.rdkit",
@@ -2593,7 +2847,9 @@
       ],
       "categories": [
         "chemistry"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.relion",
@@ -2613,7 +2869,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.relsa-severity-assessment",
@@ -2633,7 +2891,9 @@
       ],
       "categories": [
         "medicine"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.research-grants",
@@ -2653,7 +2913,9 @@
       ],
       "categories": [
         "research"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.scanpy",
@@ -2673,7 +2935,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.scholar-evaluation",
@@ -2693,7 +2957,9 @@
       ],
       "categories": [
         "research"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.scientific-brainstorming",
@@ -2713,7 +2979,9 @@
       ],
       "categories": [
         "research"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.scientific-critical-thinking",
@@ -2733,7 +3001,9 @@
       ],
       "categories": [
         "research"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.scientific-visualization",
@@ -2753,7 +3023,9 @@
       ],
       "categories": [
         "data"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.scientific-writing",
@@ -2773,7 +3045,9 @@
       ],
       "categories": [
         "writing"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.scikit-bio",
@@ -2793,7 +3067,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.scikit-learn",
@@ -2813,7 +3089,9 @@
       ],
       "categories": [
         "machine-learning"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.scikit-survival",
@@ -2833,7 +3111,9 @@
       ],
       "categories": [
         "machine-learning"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.scvelo",
@@ -2853,7 +3133,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.scvi-tools",
@@ -2873,7 +3155,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.seaborn",
@@ -2893,7 +3177,9 @@
       ],
       "categories": [
         "data"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.shap",
@@ -2913,7 +3199,9 @@
       ],
       "categories": [
         "machine-learning"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.simpy",
@@ -2933,7 +3221,9 @@
       ],
       "categories": [
         "engineering"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.stable-baselines3",
@@ -2953,7 +3243,9 @@
       ],
       "categories": [
         "machine-learning"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.statistical-analysis",
@@ -2973,7 +3265,9 @@
       ],
       "categories": [
         "data"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.statistical-power",
@@ -2993,7 +3287,9 @@
       ],
       "categories": [
         "data"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.statsmodels",
@@ -3013,7 +3309,9 @@
       ],
       "categories": [
         "machine-learning"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.sympy",
@@ -3033,7 +3331,9 @@
       ],
       "categories": [
         "engineering"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.tamarind",
@@ -3053,7 +3353,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.tellurium",
@@ -3073,7 +3375,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.tiledbvcf",
@@ -3093,7 +3397,9 @@
       ],
       "categories": [
         "biology"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.timesfm-forecasting",
@@ -3113,7 +3419,9 @@
       ],
       "categories": [
         "data"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.treatment-plans",
@@ -3133,7 +3441,9 @@
       ],
       "categories": [
         "medicine"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.umap-learn",
@@ -3153,7 +3463,9 @@
       ],
       "categories": [
         "machine-learning"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.uncertainty-and-units",
@@ -3173,7 +3485,9 @@
       ],
       "categories": [
         "research"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.usfiscaldata",
@@ -3193,7 +3507,9 @@
       ],
       "categories": [
         "databases"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.vaex",
@@ -3213,7 +3529,9 @@
       ],
       "categories": [
         "data"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.venue-templates",
@@ -3233,7 +3551,9 @@
       ],
       "categories": [
         "writing"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "kdense.zarr-python",
@@ -3253,7 +3573,9 @@
       ],
       "categories": [
         "data"
-      ]
+      ],
+      "author": "K-Dense Inc.",
+      "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
       "id": "mattpocock.claude-handoff",
@@ -3277,7 +3599,9 @@
       "categories": [
         "agents",
         "automation"
-      ]
+      ],
+      "author": "Matt Pocock",
+      "repo": "mattpocock/skills"
     },
     {
       "id": "mattpocock.code-review",
@@ -3303,7 +3627,9 @@
         "review",
         "coding",
         "git"
-      ]
+      ],
+      "author": "Matt Pocock",
+      "repo": "mattpocock/skills"
     },
     {
       "id": "mattpocock.codebase-design",
@@ -3329,7 +3655,9 @@
         "coding",
         "design",
         "reference"
-      ]
+      ],
+      "author": "Matt Pocock",
+      "repo": "mattpocock/skills"
     },
     {
       "id": "mattpocock.diagnosing-bugs",
@@ -3353,7 +3681,9 @@
       "categories": [
         "coding",
         "testing"
-      ]
+      ],
+      "author": "Matt Pocock",
+      "repo": "mattpocock/skills"
     },
     {
       "id": "mattpocock.domain-modeling",
@@ -3377,7 +3707,9 @@
       "categories": [
         "design",
         "docs"
-      ]
+      ],
+      "author": "Matt Pocock",
+      "repo": "mattpocock/skills"
     },
     {
       "id": "mattpocock.git-guardrails-claude-code",
@@ -3403,7 +3735,9 @@
         "git",
         "security",
         "automation"
-      ]
+      ],
+      "author": "Matt Pocock",
+      "repo": "mattpocock/skills"
     },
     {
       "id": "mattpocock.grill-me",
@@ -3424,7 +3758,9 @@
       ],
       "categories": [
         "planning"
-      ]
+      ],
+      "author": "Matt Pocock",
+      "repo": "mattpocock/skills"
     },
     {
       "id": "mattpocock.grill-with-docs",
@@ -3448,7 +3784,9 @@
       "categories": [
         "planning",
         "docs"
-      ]
+      ],
+      "author": "Matt Pocock",
+      "repo": "mattpocock/skills"
     },
     {
       "id": "mattpocock.grilling",
@@ -3470,7 +3808,9 @@
       ],
       "categories": [
         "planning"
-      ]
+      ],
+      "author": "Matt Pocock",
+      "repo": "mattpocock/skills"
     },
     {
       "id": "mattpocock.handoff",
@@ -3494,7 +3834,9 @@
       "categories": [
         "agents",
         "docs"
-      ]
+      ],
+      "author": "Matt Pocock",
+      "repo": "mattpocock/skills"
     },
     {
       "id": "mattpocock.implement",
@@ -3518,7 +3860,9 @@
       "categories": [
         "coding",
         "testing"
-      ]
+      ],
+      "author": "Matt Pocock",
+      "repo": "mattpocock/skills"
     },
     {
       "id": "mattpocock.implement-spec",
@@ -3544,7 +3888,9 @@
         "coding",
         "agents",
         "git"
-      ]
+      ],
+      "author": "Matt Pocock",
+      "repo": "mattpocock/skills"
     },
     {
       "id": "mattpocock.improve-codebase-architecture",
@@ -3570,7 +3916,9 @@
         "coding",
         "design",
         "review"
-      ]
+      ],
+      "author": "Matt Pocock",
+      "repo": "mattpocock/skills"
     },
     {
       "id": "mattpocock.loop-me",
@@ -3594,7 +3942,9 @@
       "categories": [
         "planning",
         "automation"
-      ]
+      ],
+      "author": "Matt Pocock",
+      "repo": "mattpocock/skills"
     },
     {
       "id": "mattpocock.matt-prototype",
@@ -3620,7 +3970,9 @@
         "design",
         "coding",
         "web"
-      ]
+      ],
+      "author": "Matt Pocock",
+      "repo": "HuieL/OpenAR-skill-hub"
     },
     {
       "id": "mattpocock.research",
@@ -3644,7 +3996,9 @@
       "categories": [
         "research",
         "docs"
-      ]
+      ],
+      "author": "Matt Pocock",
+      "repo": "mattpocock/skills"
     },
     {
       "id": "mattpocock.setup-pre-commit",
@@ -3670,7 +4024,9 @@
         "git",
         "automation",
         "coding"
-      ]
+      ],
+      "author": "Matt Pocock",
+      "repo": "mattpocock/skills"
     },
     {
       "id": "mattpocock.tdd",
@@ -3694,7 +4050,9 @@
       "categories": [
         "testing",
         "coding"
-      ]
+      ],
+      "author": "Matt Pocock",
+      "repo": "mattpocock/skills"
     },
     {
       "id": "mattpocock.teach",
@@ -3716,7 +4074,9 @@
       ],
       "categories": [
         "education"
-      ]
+      ],
+      "author": "Matt Pocock",
+      "repo": "mattpocock/skills"
     },
     {
       "id": "mattpocock.to-questionnaire",
@@ -3742,7 +4102,9 @@
         "planning",
         "communication",
         "writing"
-      ]
+      ],
+      "author": "Matt Pocock",
+      "repo": "mattpocock/skills"
     },
     {
       "id": "mattpocock.to-spec",
@@ -3766,7 +4128,9 @@
       "categories": [
         "planning",
         "docs"
-      ]
+      ],
+      "author": "Matt Pocock",
+      "repo": "mattpocock/skills"
     },
     {
       "id": "mattpocock.to-tickets",
@@ -3788,7 +4152,9 @@
       ],
       "categories": [
         "planning"
-      ]
+      ],
+      "author": "Matt Pocock",
+      "repo": "mattpocock/skills"
     },
     {
       "id": "mattpocock.triage",
@@ -3812,7 +4178,9 @@
       "categories": [
         "planning",
         "review"
-      ]
+      ],
+      "author": "Matt Pocock",
+      "repo": "mattpocock/skills"
     },
     {
       "id": "mattpocock.wayfinder",
@@ -3836,7 +4204,9 @@
       "categories": [
         "planning",
         "agents"
-      ]
+      ],
+      "author": "Matt Pocock",
+      "repo": "mattpocock/skills"
     },
     {
       "id": "mattpocock.wizard",
@@ -3861,7 +4231,9 @@
       "categories": [
         "automation",
         "cli"
-      ]
+      ],
+      "author": "Matt Pocock",
+      "repo": "mattpocock/skills"
     },
     {
       "id": "mattpocock.writing-beats",
@@ -3883,7 +4255,9 @@
       ],
       "categories": [
         "writing"
-      ]
+      ],
+      "author": "Matt Pocock",
+      "repo": "mattpocock/skills"
     },
     {
       "id": "mattpocock.writing-for-agents",
@@ -3909,7 +4283,9 @@
         "writing",
         "agents",
         "docs"
-      ]
+      ],
+      "author": "Matt Pocock",
+      "repo": "mattpocock/skills"
     },
     {
       "id": "mattpocock.writing-fragments",
@@ -3931,7 +4307,9 @@
       ],
       "categories": [
         "writing"
-      ]
+      ],
+      "author": "Matt Pocock",
+      "repo": "mattpocock/skills"
     },
     {
       "id": "mattpocock.writing-shape",
@@ -3953,7 +4331,9 @@
       ],
       "categories": [
         "writing"
-      ]
+      ],
+      "author": "Matt Pocock",
+      "repo": "mattpocock/skills"
     },
     {
       "id": "nature.academic-search",
@@ -3980,7 +4360,9 @@
         "literature",
         "search",
         "reference"
-      ]
+      ],
+      "author": "Nature Skills contributors",
+      "repo": "Yuan1z0825/nature-skills"
     },
     {
       "id": "nature.citation",
@@ -4007,7 +4389,9 @@
         "reference",
         "literature",
         "writing"
-      ]
+      ],
+      "author": "Nature Skills contributors",
+      "repo": "Yuan1z0825/nature-skills"
     },
     {
       "id": "nature.data",
@@ -4033,7 +4417,9 @@
         "research",
         "data",
         "writing"
-      ]
+      ],
+      "author": "Nature Skills contributors",
+      "repo": "Yuan1z0825/nature-skills"
     },
     {
       "id": "nature.experiment-log",
@@ -4058,7 +4444,9 @@
       "categories": [
         "research",
         "docs"
-      ]
+      ],
+      "author": "Nature Skills contributors",
+      "repo": "Yuan1z0825/nature-skills"
     },
     {
       "id": "nature.figure",
@@ -4082,7 +4470,9 @@
       "categories": [
         "visualization",
         "research"
-      ]
+      ],
+      "author": "Nature Skills contributors",
+      "repo": "HuieL/OpenAR-skill-hub"
     },
     {
       "id": "nature.literature-pipeline",
@@ -4109,7 +4499,9 @@
         "literature",
         "research",
         "automation"
-      ]
+      ],
+      "author": "Nature Skills contributors",
+      "repo": "Yuan1z0825/nature-skills"
     },
     {
       "id": "nature.paper-card",
@@ -4133,7 +4525,9 @@
       "categories": [
         "literature",
         "research"
-      ]
+      ],
+      "author": "Nature Skills contributors",
+      "repo": "Yuan1z0825/nature-skills"
     },
     {
       "id": "nature.paper-to-patent",
@@ -4160,7 +4554,9 @@
         "writing",
         "research",
         "docs"
-      ]
+      ],
+      "author": "Nature Skills contributors",
+      "repo": "Yuan1z0825/nature-skills"
     },
     {
       "id": "nature.paper2ppt",
@@ -4185,7 +4581,9 @@
       "categories": [
         "presentation",
         "paper"
-      ]
+      ],
+      "author": "Nature Skills contributors",
+      "repo": "Yuan1z0825/nature-skills"
     },
     {
       "id": "nature.polishing",
@@ -4211,7 +4609,9 @@
         "writing",
         "paper",
         "translation"
-      ]
+      ],
+      "author": "Nature Skills contributors",
+      "repo": "Yuan1z0825/nature-skills"
     },
     {
       "id": "nature.proposal-writer",
@@ -4237,7 +4637,9 @@
         "writing",
         "research",
         "planning"
-      ]
+      ],
+      "author": "Nature Skills contributors",
+      "repo": "Yuan1z0825/nature-skills"
     },
     {
       "id": "nature.reader",
@@ -4263,7 +4665,9 @@
         "literature",
         "translation",
         "paper"
-      ]
+      ],
+      "author": "Nature Skills contributors",
+      "repo": "Yuan1z0825/nature-skills"
     },
     {
       "id": "nature.ref-verifier",
@@ -4288,7 +4692,9 @@
       "categories": [
         "reference",
         "literature"
-      ]
+      ],
+      "author": "Nature Skills contributors",
+      "repo": "Yuan1z0825/nature-skills"
     },
     {
       "id": "nature.response",
@@ -4314,7 +4720,9 @@
         "writing",
         "paper",
         "review"
-      ]
+      ],
+      "author": "Nature Skills contributors",
+      "repo": "Yuan1z0825/nature-skills"
     },
     {
       "id": "nature.shared",
@@ -4338,7 +4746,9 @@
       "categories": [
         "reference",
         "writing"
-      ]
+      ],
+      "author": "Nature Skills contributors",
+      "repo": "Yuan1z0825/nature-skills"
     },
     {
       "id": "nature.statistics",
@@ -4365,7 +4775,9 @@
         "paper",
         "data",
         "review"
-      ]
+      ],
+      "author": "Nature Skills contributors",
+      "repo": "Yuan1z0825/nature-skills"
     },
     {
       "id": "nature.writing",
@@ -4390,7 +4802,9 @@
       "categories": [
         "writing",
         "paper"
-      ]
+      ],
+      "author": "Nature Skills contributors",
+      "repo": "Yuan1z0825/nature-skills"
     }
   ]
 }

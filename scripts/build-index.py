@@ -40,6 +40,18 @@ ROOT = _root()
 ENTRIES = ROOT / "entries" / "skills"
 
 
+def card_facts(entry: dict) -> dict:
+    facts = {}
+    authors = entry.get("authors") or []
+    name = authors[0].get("name") if authors and isinstance(authors[0], dict) else None
+    if isinstance(name, str) and name.strip() and len(name) <= 64:
+        facts["author"] = name.strip()
+    repo = (entry.get("source") or {}).get("repo")
+    if isinstance(repo, str) and repo.count("/") == 1 and len(repo) <= 200:
+        facts["repo"] = repo
+    return facts
+
+
 def build() -> dict:
     rows = []
     icons = listing_mod.load_icons()
@@ -63,6 +75,10 @@ def build() -> dict:
                     # entry.json is not.
                     **listing_mod.listing_for(entry_path.parent, entry, icons),
                     **({"categories": entry["categories"]} if entry.get("categories") else {}),
+                    # What a catalog card shows ("by <author>", the source
+                    # repo), so a store lists the hub from the index alone
+                    # instead of reading every entry.json.
+                    **card_facts(entry),
                 }
             )
     rows.sort(key=lambda row: row["id"])
