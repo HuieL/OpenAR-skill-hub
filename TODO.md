@@ -37,6 +37,13 @@
 - 10-15 晚：PR 模板已合 main `abe18ea`（SX-M3 一项闭）。`agent-x/trusted-validator@ccd69ed`（待合）：CI 用 **base 分支的** validate/build-index/build-community 以 `--root` 校验 PR 树，PR 代码不执行；改 scripts/schemas/.github 的 PR 被标注需人工审；首个 PR 自举一次。负例：PR 自带“永远通过”的 validate.py + 坏条目 → 可信校验 exit 1。Y 仓同样问题，owner patch 在 OpenRA `docs/acceptance/hub/x-extension-hub-trusted-validator-owner.patch`。
 - OpenRA 侧全部 X 工作已合成一条 `agent-x/skill-hub-r3`（Review r3b ACCEPT，待 A+C 会签）。
 
+## 1c. 当前事实（2026-10-19）
+
+- main = `7b8d6c9`，**207 条**。下架（用户指示，删条目与 LICENSE、重生成全部索引）：`nature.reviewer`（疑似转载 Nature 网页，版权，`b84d5bb`）；`nature.downloader`（在用户已登录 Chrome 中自动破解 Turnstile/滑块验证码）与 `nature.image2ppt`（默认读取 ~/.codex/auth.json 并调用未公开接口），`agent-x/remove-high-risk@0760ca5` 已合。
+- 可信校验已合（`66ee19c`，trusted-validator-r2）：PR 由 base 分支脚本 `--root` 校验，PR 代码不执行。旧分支 `agent-x/trusted-validator`、`agent-x/add-entry-check`（scratch，非 main）已过时，待 Review 删除。
+- 宿主侧（OpenRA）：社区数据全新安装自动同步一次；Skill Hub 刷新拉最新目录；Home 有 skills.sh 排行榜（只读、6 h 缓存、上榜≠审核，安装走 install-from）；询问 agent 的会话绑定 skill、放隐藏内置项目（`agent-x/skill-hub-chat-home`，待合）；Hub 查询键入 workspace scope（`agent-x/hub-query-scope`，待合）。
+- 仍待：PSL 验收走查（人工腿，脚本 `docs/acceptance/hub/x-psl-e2e.sh` 在 OpenRA）；`hub.scientific-figure-making`（CC BY-NC 4.0）许可裁决仍待用户。
+
 ## 2. 里程碑
 
 | 里程碑 | 内容 | 通过条件 |
