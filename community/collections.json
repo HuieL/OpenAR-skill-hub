@@ -34,6 +34,23 @@
         "extension:hub.mcp-stats",
         "extension:idosal.git-mcp"
       ]
+    },
+    {
+      "id": "lean-formal-proofs",
+      "title": "Lean 4 & Mathlib",
+      "description": "The Lean FRO's official skills for formal proofs in Lean 4: step-by-step proving, toolchain setup, minimal examples and bisection for bug reports, and the lean4 and Mathlib contribution and review conventions.",
+      "curators": ["HuieL"],
+      "entries": [
+        "skill:leanprover.lean-proof",
+        "skill:leanprover.lean-setup",
+        "skill:leanprover.mathlib-build",
+        "skill:leanprover.lean-mwe",
+        "skill:leanprover.lean-bisect",
+        "skill:leanprover.nightly-testing",
+        "skill:leanprover.lean-pr",
+        "skill:leanprover.mathlib-pr",
+        "skill:leanprover.mathlib-review"
+      ]
     }
   ]
 }

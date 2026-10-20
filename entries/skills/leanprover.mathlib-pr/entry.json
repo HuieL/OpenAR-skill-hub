@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "leanprover.mathlib-pr",
+  "kind": "skill",
+  "name": "Mathlib PR",
+  "summary": "PR conventions for leanprover-community/mathlib4. Use when creating pull requests, writing commit messages, or managing labels for Mathlib contributions.",
+  "authors": [
+    {
+      "name": "Lean FRO, LLC",
+      "github": "leanprover"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "git"
+  ],
+  "source": {
+    "repo": "leanprover/skills",
+    "path": "skills/mathlib-pr",
+    "revision": "7d3da0282e7b724b07620e45cf212f2e05e19334"
+  },
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "f9903aa045f9b9beaf3d8572babc323426391cb48aa51bbd9741218c12d738da",
+      "bytes": 2309,
+      "executable": false
+    }
+  ],
+  "totalBytes": 2309,
+  "requires": [],
+  "permissionsNote": "allowed-tools or similar declarations inside SKILL.md are claims by the skill's author, not host approvals; OpenAR enforces its own permission gates."
+}

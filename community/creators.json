@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "skillHub": "b84d5bb79a63370d7d06ce6ff437d0e53ced9d00",
+  "skillHub": "adeb7780caebd59c95f3a4b774874f1894a9df88",
   "extensionHub": null,
   "creators": [
     {
@@ -973,6 +973,60 @@
         },
         {
           "entry": "skill:kdense.zarr-python",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:leanprover.lean-bisect",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:leanprover.lean-mwe",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:leanprover.lean-pr",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:leanprover.lean-proof",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:leanprover.lean-setup",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:leanprover.mathlib-build",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:leanprover.mathlib-pr",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:leanprover.mathlib-review",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:leanprover.nightly-testing",
           "roles": [
             "submitter"
           ]
@@ -2337,6 +2391,66 @@
         },
         {
           "entry": "skill:hub.officecli-data-dashboard",
+          "roles": [
+            "author"
+          ]
+        }
+      ]
+    },
+    {
+      "github": "leanprover",
+      "name": "Lean FRO, LLC",
+      "credits": [
+        {
+          "entry": "skill:leanprover.lean-bisect",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:leanprover.lean-mwe",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:leanprover.lean-pr",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:leanprover.lean-proof",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:leanprover.lean-setup",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:leanprover.mathlib-build",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:leanprover.mathlib-pr",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:leanprover.mathlib-review",
+          "roles": [
+            "author"
+          ]
+        },
+        {
+          "entry": "skill:leanprover.nightly-testing",
           "roles": [
             "author"
           ]

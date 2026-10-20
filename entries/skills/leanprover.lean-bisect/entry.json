@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "leanprover.lean-bisect",
+  "kind": "skill",
+  "name": "Lean Bisect",
+  "summary": "Bisect Lean toolchain versions to find where behavior changes. Use when trying to identify which Lean 4 commit caused a regression or behavior change.",
+  "authors": [
+    {
+      "name": "Lean FRO, LLC",
+      "github": "leanprover"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "coding"
+  ],
+  "source": {
+    "repo": "leanprover/skills",
+    "path": "skills/lean-bisect",
+    "revision": "7d3da0282e7b724b07620e45cf212f2e05e19334"
+  },
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "c1a997f1c709b835b8cfeae16b5c5c8aa262030a32be1e78eac81abee448e7d1",
+      "bytes": 2127,
+      "executable": false
+    }
+  ],
+  "totalBytes": 2127,
+  "requires": [],
+  "permissionsNote": "allowed-tools or similar declarations inside SKILL.md are claims by the skill's author, not host approvals; OpenAR enforces its own permission gates."
+}

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "leanprover.lean-mwe",
+  "kind": "skill",
+  "name": "Lean MWE",
+  "summary": "Create minimal working examples (MWEs) from Lean errors for bug reports. Use when minimizing a Lean error, creating an MWE, or preparing a bug report for lean4 or mathlib4.",
+  "authors": [
+    {
+      "name": "Lean FRO, LLC",
+      "github": "leanprover"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "coding"
+  ],
+  "source": {
+    "repo": "leanprover/skills",
+    "path": "skills/lean-mwe",
+    "revision": "7d3da0282e7b724b07620e45cf212f2e05e19334"
+  },
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "fac0a3b05adcba700d1c80fd79feab81305c468fbb42bf35d20cb4e6fa9b62f6",
+      "bytes": 2242,
+      "executable": false
+    }
+  ],
+  "totalBytes": 2242,
+  "requires": [],
+  "permissionsNote": "allowed-tools or similar declarations inside SKILL.md are claims by the skill's author, not host approvals; OpenAR enforces its own permission gates."
+}

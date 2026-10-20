@@ -1,0 +1,80 @@
+{
+  "about": "The Lean FRO's official Agent Skills for Lean 4 and Mathlib, listed as upstream entries pinned to one commit. Re-import with: python3 scripts/import-collection.py collections/leanprover-skills.json",
+  "repo": "leanprover/skills",
+  "revision": "7d3da0282e7b724b07620e45cf212f2e05e19334",
+  "skillsPath": "skills",
+  "idPrefix": "leanprover",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Lean FRO, LLC",
+    "github": "leanprover"
+  },
+  "submitter": "HuieL",
+  "tags": [
+    "lean",
+    "lean4",
+    "mathlib",
+    "theorem-proving",
+    "formal-verification"
+  ],
+  "exclude": {},
+  "sections": {
+    "Proofs": [
+      "math",
+      "proofs"
+    ],
+    "Toolchain & debugging": [
+      "coding",
+      "toolchain"
+    ],
+    "Contributing": [
+      "git",
+      "pull-requests"
+    ],
+    "Code review": [
+      "review",
+      "code-review"
+    ]
+  },
+  "skills": {
+    "lean-proof": [
+      "Proofs"
+    ],
+    "lean-setup": [
+      "Toolchain & debugging"
+    ],
+    "lean-bisect": [
+      "Toolchain & debugging"
+    ],
+    "lean-mwe": [
+      "Toolchain & debugging"
+    ],
+    "mathlib-build": [
+      "Toolchain & debugging"
+    ],
+    "nightly-testing": [
+      "Toolchain & debugging"
+    ],
+    "lean-pr": [
+      "Contributing"
+    ],
+    "mathlib-pr": [
+      "Contributing"
+    ],
+    "mathlib-review": [
+      "Code review"
+    ]
+  },
+  "names": {
+    "lean-proof": "Lean Proof",
+    "lean-setup": "Lean 4 Setup",
+    "lean-bisect": "Lean Bisect",
+    "lean-mwe": "Lean MWE",
+    "mathlib-build": "Mathlib Build",
+    "nightly-testing": "Lean Nightly Testing",
+    "lean-pr": "Lean PR",
+    "mathlib-pr": "Mathlib PR",
+    "mathlib-review": "Mathlib Review"
+  }
+}

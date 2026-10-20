@@ -3578,6 +3578,231 @@
       "repo": "K-Dense-AI/scientific-agent-skills"
     },
     {
+      "id": "leanprover.lean-bisect",
+      "name": "Lean Bisect",
+      "summary": "Bisect Lean toolchain versions to find where behavior changes. Use when trying to identify which Lean 4 commit caused a regression or behavior change.",
+      "delivery": "hub",
+      "version": "0.1.0",
+      "revision": "7d3da0282e7b724b07620e45cf212f2e05e19334",
+      "entryPath": "entries/skills/leanprover.lean-bisect/entry.json",
+      "entrySha256": "604836fc0e3138dbc3a1f899255671a13e6d8785fe6f407bab40af045be5ce84",
+      "icon": "code",
+      "tags": [
+        "toolchain",
+        "lean",
+        "lean4",
+        "mathlib",
+        "theorem-proving",
+        "formal-verification",
+        "coding"
+      ],
+      "categories": [
+        "coding"
+      ],
+      "author": "Lean FRO, LLC",
+      "repo": "leanprover/skills"
+    },
+    {
+      "id": "leanprover.lean-mwe",
+      "name": "Lean MWE",
+      "summary": "Create minimal working examples (MWEs) from Lean errors for bug reports. Use when minimizing a Lean error, creating an MWE, or preparing a bug report for lean4 or mathlib4.",
+      "delivery": "hub",
+      "version": "0.1.0",
+      "revision": "7d3da0282e7b724b07620e45cf212f2e05e19334",
+      "entryPath": "entries/skills/leanprover.lean-mwe/entry.json",
+      "entrySha256": "4b46856d28652e4ca88d8683f0a7e183a764dbd17b16152838f5498a89bb6af0",
+      "icon": "code",
+      "tags": [
+        "toolchain",
+        "lean",
+        "lean4",
+        "mathlib",
+        "theorem-proving",
+        "formal-verification",
+        "coding"
+      ],
+      "categories": [
+        "coding"
+      ],
+      "author": "Lean FRO, LLC",
+      "repo": "leanprover/skills"
+    },
+    {
+      "id": "leanprover.lean-pr",
+      "name": "Lean PR",
+      "summary": "PR conventions for the leanprover/lean4 repository. Use when creating pull requests, writing commit messages, or following project conventions for Lean contributions.",
+      "delivery": "hub",
+      "version": "0.1.0",
+      "revision": "7d3da0282e7b724b07620e45cf212f2e05e19334",
+      "entryPath": "entries/skills/leanprover.lean-pr/entry.json",
+      "entrySha256": "f40d38cd5d1cfbbb43a6d42696839ff8ccfd5dc5594841635fb7eded1c6304ba",
+      "icon": "git",
+      "tags": [
+        "pull-requests",
+        "lean",
+        "lean4",
+        "mathlib",
+        "theorem-proving",
+        "formal-verification",
+        "git"
+      ],
+      "categories": [
+        "git"
+      ],
+      "author": "Lean FRO, LLC",
+      "repo": "leanprover/skills"
+    },
+    {
+      "id": "leanprover.lean-proof",
+      "name": "Lean Proof",
+      "summary": "Use when asked to prove something in Lean. Covers one-step-at-a-time proving, error priority, working on the hardest case first, proof cleanup, and handling dependent type rewriting issues.",
+      "delivery": "hub",
+      "version": "0.1.0",
+      "revision": "7d3da0282e7b724b07620e45cf212f2e05e19334",
+      "entryPath": "entries/skills/leanprover.lean-proof/entry.json",
+      "entrySha256": "7a8bf5c6f34aaee1f9a5881bd4e7973728ef139f2d24de166f18b8d1e8c4223e",
+      "icon": "math",
+      "tags": [
+        "proofs",
+        "lean",
+        "lean4",
+        "mathlib",
+        "theorem-proving",
+        "formal-verification",
+        "math"
+      ],
+      "categories": [
+        "math"
+      ],
+      "author": "Lean FRO, LLC",
+      "repo": "leanprover/skills"
+    },
+    {
+      "id": "leanprover.lean-setup",
+      "name": "Lean 4 Setup",
+      "summary": "Set up a lean4 repository clone with proper elan toolchains.",
+      "delivery": "hub",
+      "version": "0.1.0",
+      "revision": "7d3da0282e7b724b07620e45cf212f2e05e19334",
+      "entryPath": "entries/skills/leanprover.lean-setup/entry.json",
+      "entrySha256": "cd598c7a4ac09048a3d3e2c2e6bff744d8a41c4ec910a256c554469fbb3c80be",
+      "icon": "code",
+      "tags": [
+        "toolchain",
+        "lean",
+        "lean4",
+        "mathlib",
+        "theorem-proving",
+        "formal-verification",
+        "coding"
+      ],
+      "categories": [
+        "coding"
+      ],
+      "author": "Lean FRO, LLC",
+      "repo": "leanprover/skills"
+    },
+    {
+      "id": "leanprover.mathlib-build",
+      "name": "Mathlib Build",
+      "summary": "Building Mathlib",
+      "delivery": "hub",
+      "version": "0.1.0",
+      "revision": "7d3da0282e7b724b07620e45cf212f2e05e19334",
+      "entryPath": "entries/skills/leanprover.mathlib-build/entry.json",
+      "entrySha256": "c34225b249e452f383a6812756acba8fe909a8fdfa42c1c9d98bc9bc6157cf72",
+      "icon": "code",
+      "tags": [
+        "toolchain",
+        "lean",
+        "lean4",
+        "mathlib",
+        "theorem-proving",
+        "formal-verification",
+        "coding"
+      ],
+      "categories": [
+        "coding"
+      ],
+      "author": "Lean FRO, LLC",
+      "repo": "leanprover/skills"
+    },
+    {
+      "id": "leanprover.mathlib-pr",
+      "name": "Mathlib PR",
+      "summary": "PR conventions for leanprover-community/mathlib4. Use when creating pull requests, writing commit messages, or managing labels for Mathlib contributions.",
+      "delivery": "hub",
+      "version": "0.1.0",
+      "revision": "7d3da0282e7b724b07620e45cf212f2e05e19334",
+      "entryPath": "entries/skills/leanprover.mathlib-pr/entry.json",
+      "entrySha256": "59b96126c7e0618cc695bf2f6a21741764450b0c07950ffb56afa591aa937554",
+      "icon": "git",
+      "tags": [
+        "pull-requests",
+        "lean",
+        "lean4",
+        "mathlib",
+        "theorem-proving",
+        "formal-verification",
+        "git"
+      ],
+      "categories": [
+        "git"
+      ],
+      "author": "Lean FRO, LLC",
+      "repo": "leanprover/skills"
+    },
+    {
+      "id": "leanprover.mathlib-review",
+      "name": "Mathlib Review",
+      "summary": "Review guidelines for Mathlib PRs. Use when reviewing pull requests, checking code quality, or assessing whether a PR is ready to merge.",
+      "delivery": "hub",
+      "version": "0.1.0",
+      "revision": "7d3da0282e7b724b07620e45cf212f2e05e19334",
+      "entryPath": "entries/skills/leanprover.mathlib-review/entry.json",
+      "entrySha256": "b6d25ebe0508580eeffebcb5a3f9e6ca394245512ff4ccda905f8afc85157947",
+      "icon": "review",
+      "tags": [
+        "code-review",
+        "lean",
+        "lean4",
+        "mathlib",
+        "theorem-proving",
+        "formal-verification",
+        "review"
+      ],
+      "categories": [
+        "review"
+      ],
+      "author": "Lean FRO, LLC",
+      "repo": "leanprover/skills"
+    },
+    {
+      "id": "leanprover.nightly-testing",
+      "name": "Lean Nightly Testing",
+      "summary": "Understanding the Lean/Mathlib nightly testing infrastructure. Use when working on toolchain bumps, adaptation PRs, or investigating nightly CI failures.",
+      "delivery": "hub",
+      "version": "0.1.0",
+      "revision": "7d3da0282e7b724b07620e45cf212f2e05e19334",
+      "entryPath": "entries/skills/leanprover.nightly-testing/entry.json",
+      "entrySha256": "c375bd5a56d9865c8ed8240c2eedd91e1451ce8d5a3fa2375de2b3c0cf3cf8a9",
+      "icon": "code",
+      "tags": [
+        "toolchain",
+        "lean",
+        "lean4",
+        "mathlib",
+        "theorem-proving",
+        "formal-verification",
+        "coding"
+      ],
+      "categories": [
+        "coding"
+      ],
+      "author": "Lean FRO, LLC",
+      "repo": "leanprover/skills"
+    },
+    {
       "id": "mattpocock.claude-handoff",
       "name": "Claude Handoff",
       "summary": "Summarize the current conversation and launch a background Claude Code agent seeded with that summary, so a fresh session continues the work right away.",

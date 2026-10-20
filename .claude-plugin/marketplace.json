@@ -364,6 +364,27 @@
       "name": "skills",
       "source": {
         "source": "github",
+        "repo": "leanprover/skills",
+        "sha": "7d3da0282e7b724b07620e45cf212f2e05e19334"
+      },
+      "description": "9 skills from leanprover/skills, pinned at 7d3da0282e7b as listed on the OpenAR Skill Hub.",
+      "strict": false,
+      "skills": [
+        "./skills/lean-bisect",
+        "./skills/lean-mwe",
+        "./skills/lean-pr",
+        "./skills/lean-proof",
+        "./skills/lean-setup",
+        "./skills/mathlib-build",
+        "./skills/mathlib-pr",
+        "./skills/mathlib-review",
+        "./skills/nightly-testing"
+      ]
+    },
+    {
+      "name": "mattpocock-skills",
+      "source": {
+        "source": "github",
         "repo": "mattpocock/skills",
         "sha": "321658273cb1d20b76026717d027d505790106d4"
       },
