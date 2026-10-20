@@ -1,8 +1,44 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-18T14:38:47Z",
-  "skillHub": "b84d5bb79a63370d7d06ce6ff437d0e53ced9d00",
+  "generatedAt": "2026-10-20T06:32:52Z",
+  "skillHub": "0d68c93c1a9eee9d11bd705a99a449a006e13a75",
   "new": [
+    {
+      "id": "skill:leanprover.lean-bisect",
+      "firstRecorded": "2026-10-20T06:32:36Z"
+    },
+    {
+      "id": "skill:leanprover.lean-mwe",
+      "firstRecorded": "2026-10-20T06:32:36Z"
+    },
+    {
+      "id": "skill:leanprover.lean-pr",
+      "firstRecorded": "2026-10-20T06:32:36Z"
+    },
+    {
+      "id": "skill:leanprover.lean-proof",
+      "firstRecorded": "2026-10-20T06:32:36Z"
+    },
+    {
+      "id": "skill:leanprover.lean-setup",
+      "firstRecorded": "2026-10-20T06:32:36Z"
+    },
+    {
+      "id": "skill:leanprover.mathlib-build",
+      "firstRecorded": "2026-10-20T06:32:36Z"
+    },
+    {
+      "id": "skill:leanprover.mathlib-pr",
+      "firstRecorded": "2026-10-20T06:32:36Z"
+    },
+    {
+      "id": "skill:leanprover.mathlib-review",
+      "firstRecorded": "2026-10-20T06:32:36Z"
+    },
+    {
+      "id": "skill:leanprover.nightly-testing",
+      "firstRecorded": "2026-10-20T06:32:36Z"
+    },
     {
       "id": "skill:mattpocock.claude-handoff",
       "firstRecorded": "2026-10-17T13:39:47+08:00"
@@ -833,6 +869,42 @@
     }
   ],
   "updated": [
+    {
+      "id": "skill:leanprover.lean-bisect",
+      "lastRecorded": "2026-10-20T06:32:36Z"
+    },
+    {
+      "id": "skill:leanprover.lean-mwe",
+      "lastRecorded": "2026-10-20T06:32:36Z"
+    },
+    {
+      "id": "skill:leanprover.lean-pr",
+      "lastRecorded": "2026-10-20T06:32:36Z"
+    },
+    {
+      "id": "skill:leanprover.lean-proof",
+      "lastRecorded": "2026-10-20T06:32:36Z"
+    },
+    {
+      "id": "skill:leanprover.lean-setup",
+      "lastRecorded": "2026-10-20T06:32:36Z"
+    },
+    {
+      "id": "skill:leanprover.mathlib-build",
+      "lastRecorded": "2026-10-20T06:32:36Z"
+    },
+    {
+      "id": "skill:leanprover.mathlib-pr",
+      "lastRecorded": "2026-10-20T06:32:36Z"
+    },
+    {
+      "id": "skill:leanprover.mathlib-review",
+      "lastRecorded": "2026-10-20T06:32:36Z"
+    },
+    {
+      "id": "skill:leanprover.nightly-testing",
+      "lastRecorded": "2026-10-20T06:32:36Z"
+    },
     {
       "id": "skill:mattpocock.claude-handoff",
       "lastRecorded": "2026-10-17T06:23:28Z"
@@ -1669,9 +1741,9 @@
     "repos": [
       {
         "repo": "mattpocock/skills",
-        "stars": 295798,
-        "forks": 24822,
-        "pushedAt": "2026-10-13T08:46:40Z",
+        "stars": 297788,
+        "forks": 25011,
+        "pushedAt": "2026-10-19T15:52:15Z",
         "entries": [
           "skill:mattpocock.claude-handoff",
           "skill:mattpocock.code-review",
@@ -1706,8 +1778,8 @@
       },
       {
         "repo": "VoltAgent/awesome-design-md",
-        "stars": 122018,
-        "forks": 13568,
+        "stars": 122380,
+        "forks": 13595,
         "pushedAt": "2026-10-14T05:46:48Z",
         "entries": [
           "skill:hub.research-design-system"
@@ -1715,9 +1787,9 @@
       },
       {
         "repo": "K-Dense-AI/scientific-agent-skills",
-        "stars": 52591,
-        "forks": 4657,
-        "pushedAt": "2026-10-15T23:57:39Z",
+        "stars": 53039,
+        "forks": 4692,
+        "pushedAt": "2026-10-19T09:33:57Z",
         "entries": [
           "skill:kdense.13c-metabolic-flux",
           "skill:kdense.adaptyv",
@@ -1876,9 +1948,9 @@
       },
       {
         "repo": "Yuan1z0825/nature-skills",
-        "stars": 49054,
-        "forks": 2551,
-        "pushedAt": "2026-10-16T16:10:49Z",
+        "stars": 49459,
+        "forks": 2570,
+        "pushedAt": "2026-10-20T05:43:25Z",
         "entries": [
           "skill:nature.academic-search",
           "skill:nature.citation",
@@ -1901,8 +1973,8 @@
       },
       {
         "repo": "nutlope/hallmark",
-        "stars": 30308,
-        "forks": 1552,
+        "stars": 30412,
+        "forks": 1568,
         "pushedAt": "2026-08-06T16:19:18Z",
         "entries": [
           "skill:hub.hallmark"
@@ -1910,8 +1982,8 @@
       },
       {
         "repo": "KKKKhazix/human-writing",
-        "stars": 4121,
-        "forks": 313,
+        "stars": 4138,
+        "forks": 314,
         "pushedAt": "2026-08-11T15:07:45Z",
         "entries": [
           "skill:hub.human-writing"
@@ -1919,8 +1991,8 @@
       },
       {
         "repo": "vercel-labs/web-interface-guidelines",
-        "stars": 1005,
-        "forks": 69,
+        "stars": 1011,
+        "forks": 70,
         "pushedAt": "2026-10-05T20:49:17Z",
         "entries": [
           "skill:hub.web-design-guidelines"
@@ -1929,11 +2001,28 @@
       {
         "repo": "iOfficeAI/AionCore",
         "stars": 121,
-        "forks": 192,
+        "forks": 195,
         "pushedAt": "2026-10-14T17:47:21Z",
         "entries": [
           "skill:hub.officecli-academic-paper",
           "skill:hub.officecli-data-dashboard"
+        ]
+      },
+      {
+        "repo": "leanprover/skills",
+        "stars": 74,
+        "forks": 2,
+        "pushedAt": "2026-02-25T05:05:13Z",
+        "entries": [
+          "skill:leanprover.lean-bisect",
+          "skill:leanprover.lean-mwe",
+          "skill:leanprover.lean-pr",
+          "skill:leanprover.lean-proof",
+          "skill:leanprover.lean-setup",
+          "skill:leanprover.mathlib-build",
+          "skill:leanprover.mathlib-pr",
+          "skill:leanprover.mathlib-review",
+          "skill:leanprover.nightly-testing"
         ]
       },
       {
@@ -1949,7 +2038,7 @@
         "repo": "HuieL/OpenAR-skill-hub",
         "stars": 0,
         "forks": 0,
-        "pushedAt": "2026-10-17T13:29:31Z",
+        "pushedAt": "2026-10-19T10:33:09Z",
         "entries": [
           "skill:hub.craft-suite",
           "skill:hub.officecli-academic-paper",
