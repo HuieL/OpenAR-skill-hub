@@ -1,12 +1,19 @@
 {
   "schemaVersion": 1,
-  "skillHub": "f9d0322291b12ae91431df03cce37d6e95057e19",
+  "skillHub": "77404898210a710edbbd89ea223347a90830ee6f",
   "extensionHub": null,
   "creators": [
     {
       "github": "HuieL",
-      "name": "OpenAR",
+      "name": null,
       "credits": [
+        {
+          "entry": "skill:hub.archify",
+          "roles": [
+            "adapter",
+            "submitter"
+          ]
+        },
         {
           "entry": "skill:hub.craft-suite",
           "roles": [
@@ -2661,6 +2668,18 @@
       "credits": [
         {
           "entry": "skill:hub.hallmark",
+          "roles": [
+            "author"
+          ]
+        }
+      ]
+    },
+    {
+      "github": "tt-a1i",
+      "name": "tt-a1i",
+      "credits": [
+        {
+          "entry": "skill:hub.archify",
           "roles": [
             "author"
           ]

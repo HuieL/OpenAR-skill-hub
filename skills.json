@@ -2,6 +2,32 @@
   "schemaVersion": 1,
   "entries": [
     {
+      "id": "hub.archify",
+      "name": "Archify",
+      "summary": "Validated architecture, workflow, sequence, data-flow, lifecycle, ERD, class, tree, timeline and waterfall diagrams as explorable standalone HTML with dark/light themes, motion and SVG/PNG/WebM export; also one-page explainers on request. OpenAR-adapted carry of tt-a1i/archify 3.2: the network update check and the offer to write a global agent rules file are removed, output goes to the artifacts directory, and pre-rendered example pages are left out; everything else is upstream.",
+      "delivery": "hub",
+      "version": "3.2.0",
+      "revision": "77404898210a710edbbd89ea223347a90830ee6f",
+      "entryPath": "entries/skills/hub.archify/entry.json",
+      "entrySha256": "196f5a505ee0403836dd7368139f53d95e03fb0c78762475cb191b017e69d9a3",
+      "icon": "diagram",
+      "tags": [
+        "architecture",
+        "diagrams",
+        "explainer",
+        "mermaid",
+        "erd",
+        "sequence",
+        "visualization"
+      ],
+      "categories": [
+        "diagrams",
+        "visualization"
+      ],
+      "author": "tt-a1i",
+      "repo": "HuieL/OpenAR-skill-hub"
+    },
+    {
       "id": "hub.craft-suite",
       "name": "Craft Suite",
       "summary": "Work with OpenAR Craft Suite: edit a project asset with an installed component (photo, vector, deck, light, sound), request an agent proposal, and return the editable source and previews to the same project. It covers keeping original, source and preview revisions apart, resuming an interrupted save without repeating it, and reporting only what was observed. The skill grants nothing: human-only Craft actions stay human-only. Original OpenAR content, needs Craft Suite installed.",
