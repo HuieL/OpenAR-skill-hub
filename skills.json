@@ -56,12 +56,12 @@
     {
       "id": "hub.hallmark",
       "name": "Hallmark",
-      "summary": "Anti-AI-slop design skill for greenfield pages: a default design flow plus three in-skill verbs the model performs when the user asks - audit (read the target, score it against the anti-pattern list, report only, never edit), redesign (re-visualize inside the existing implementation boundaries, preserving routes, copy intent and information architecture), and study (extract the design DNA from a screenshot or a URL the user supplies). These verbs are skill behaviors, not installed CLI commands. Inputs: a design brief, an existing page or component, or a screenshot/URL to study; output is HTML/CSS artifacts with locked design tokens, verified at 320/375/414/768 px. Carried verbatim from nutlope/hallmark at the pinned commit; only the skill directory (SKILL.md plus references) is carried, not the site/docs/demo.",
+      "summary": "Design skill for websites and new pages that look designed, not generated: a non-waivable floor against model defaults, a dealt theme so consecutive builds do not converge, one idea per screen, a sloplint sweep at 320-1920 px, and audit/redesign verbs when Hallmark is named. OpenAR-adapted carry of nutlope/hallmark 2.0.0: the home-directory installer and the ~/.claude/settings.json edit-time hook are not carried; image generation is opt-in with the user's own Together AI key. Everything else is upstream.",
       "delivery": "hub",
-      "version": "1.1.0",
-      "revision": "13ac0ec7e148655948100b6396439e481361d690",
+      "version": "2.0.0",
+      "revision": "f6206395c87af1e6a14ab425df18ee758b454cbe",
       "entryPath": "entries/skills/hub.hallmark/entry.json",
-      "entrySha256": "bf3a97bd33b83556afcdec2626802bc82cd033fa509ce389b1d247cf33391e9e",
+      "entrySha256": "db162d5e268dea7ae415e03c5ecafffa9f5d7797fa67a138b9582d057b495e93",
       "icon": "design",
       "tags": [
         "design",
@@ -73,7 +73,7 @@
         "design"
       ],
       "author": "Youssef",
-      "repo": "nutlope/hallmark"
+      "repo": "HuieL/OpenAR-skill-hub"
     },
     {
       "id": "hub.human-writing",

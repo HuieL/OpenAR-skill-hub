@@ -3,10 +3,7 @@
   "id": "hub.hallmark",
   "kind": "skill",
   "name": "Hallmark",
-  "summary": "Anti-AI-slop design skill for greenfield pages: a default design flow plus three in-skill verbs the model performs when the user asks - audit (read the target, score it against the anti-pattern list, report only, never edit), redesign (re-visualize inside the existing implementation boundaries, preserving routes, copy intent and information architecture), and study (extract the design DNA from a screenshot or a URL the user supplies). These verbs are skill behaviors, not installed CLI commands. Inputs: a design brief, an existing page or component, or a screenshot/URL to study; output is HTML/CSS artifacts with locked design tokens, verified at 320/375/414/768 px. Carried verbatim from nutlope/hallmark at the pinned commit; only the skill directory (SKILL.md plus references) is carried, not the site/docs/demo.",
-  "summaryI18n": {
-    "zh-CN": "反 AI 味设计技能，用于全新页面：默认设计流 + 三个由模型在会话内执行的动词 —— audit（只读评分、输出问题清单、绝不改文件）、redesign（在既有实现边界内重做视觉层，保留路由/文案意图/信息架构）、study（从用户提供的截图或 URL 提取设计 DNA）。这些动词是技能行为，不是安装的 CLI 命令。输入：设计简报、既有页面或组件、待研究的截图/URL；输出为带锁定设计 token 的 HTML/CSS，并在 320/375/414/768 px 四档验证。自 nutlope/hallmark 钉住 commit 逐字携带，仅携带技能目录（SKILL.md 与 references），不含 site/docs/demo。"
-  },
+  "summary": "Design skill for websites and new pages that look designed, not generated: a non-waivable floor against model defaults, a dealt theme so consecutive builds do not converge, one idea per screen, a sloplint sweep at 320-1920 px, and audit/redesign verbs when Hallmark is named. OpenAR-adapted carry of nutlope/hallmark 2.0.0: the home-directory installer and the ~/.claude/settings.json edit-time hook are not carried; image generation is opt-in with the user's own Together AI key. Everything else is upstream.",
   "authors": [
     {
       "name": "Youssef",
@@ -25,11 +22,11 @@
     "design"
   ],
   "source": {
-    "repo": "nutlope/hallmark",
-    "path": "skills/hallmark",
-    "revision": "13ac0ec7e148655948100b6396439e481361d690"
+    "repo": "HuieL/OpenAR-skill-hub",
+    "path": "entries/skills/hub.hallmark/skill",
+    "revision": "f6206395c87af1e6a14ab425df18ee758b454cbe"
   },
-  "version": "1.1.0",
+  "version": "2.0.0",
   "license": "MIT",
   "licenseFile": "LICENSE",
   "review": {
@@ -41,649 +38,1066 @@
   "delivery": "hub",
   "files": [
     {
+      "path": "LICENSE",
+      "sha256": "06088a8b94598626f27612dea42300154bf7be967c85d9d3eee4490cb056af7d",
+      "bytes": 1078,
+      "executable": false
+    },
+    {
       "path": "SKILL.md",
-      "sha256": "59469635bbbd21acddbc664d95e8d97147f454b2d8f4a0a89c7d2c5afbe67577",
-      "bytes": 67460,
+      "sha256": "547d3692850b7499fbb251c91dbb995e26cbca472b606e0a1e24a7dd5df5728f",
+      "bytes": 18707,
       "executable": false
     },
     {
-      "path": "references/anti-patterns.md",
-      "sha256": "a36eb346ad59cafaa26119ed1e7c0bbb8aca6637209ee110eb630dd1a9307070",
-      "bytes": 25676,
+      "path": "agents/openai.yaml",
+      "sha256": "0bc6fa7d573c926e8d3fe04a5afc8191096e5aa7287598a59b6c7e6321b53298",
+      "bytes": 386,
       "executable": false
     },
     {
-      "path": "references/assets.md",
-      "sha256": "60929b3dc2258b69caf3012d99d174e1ad73da9645263db81a9b271cd6fd7d61",
-      "bytes": 25332,
+      "path": "references/anatomy.md",
+      "sha256": "70f570279d42ac0bef4af809c80b522e550c6dacaaa0a93349a0fff0d5b93500",
+      "bytes": 7037,
       "executable": false
     },
     {
-      "path": "references/color.md",
-      "sha256": "31c470d16ceb17ccce290cbdd00b9e9a88f2094df8eaaefb67c86ec1e1cdb876",
-      "bytes": 4339,
+      "path": "references/brand-truth.md",
+      "sha256": "01c17c45d3b213f80ef28c93548d1b99aa2afad75ed8b236811ba56169c3f068",
+      "bytes": 3685,
       "executable": false
     },
     {
-      "path": "references/component-cookbook.md",
-      "sha256": "4d9ff4eeb675b9d668516ce5d098031d3552453b3671e50da30fb38cb9ab58bb",
-      "bytes": 30980,
+      "path": "references/comp.md",
+      "sha256": "597f16de607e136f93ea5829c9d82663223a1c1c0423d581b55fa0b51c08f37f",
+      "bytes": 7669,
       "executable": false
     },
     {
-      "path": "references/components/c1-outlined-chip.md",
-      "sha256": "bfc3bcef6e23062710845dd8986dbf98574c6c46ffade1db255dbe13a3203262",
-      "bytes": 464,
+      "path": "references/craft.md",
+      "sha256": "1b7b40f81f0fe1c04dce133696182ca1229d16162f8f3203603f24a0f585c41c",
+      "bytes": 19279,
       "executable": false
     },
     {
-      "path": "references/components/c2-inline-form-as-cta.md",
-      "sha256": "1a6e3d564f49a1d3345117bf2f8af5aea46938c6974bf7eb86cf890e5068bc95",
-      "bytes": 672,
+      "path": "references/dark-mode.md",
+      "sha256": "99e86439eed1caa9e898a31baa05e65c856c53918faf6fdcb5d71a8e0f1ef131",
+      "bytes": 3919,
       "executable": false
     },
     {
-      "path": "references/components/c3-typographic-link.md",
-      "sha256": "59362c6d9f683ec15c3e09862f2ea6cd8e2a84574738ece98e479c58607d0d69",
-      "bytes": 280,
-      "executable": false
-    },
-    {
-      "path": "references/components/c4-sticky-bottom-bar.md",
-      "sha256": "67234a8d8722bf0685d00a64ac737748c82af7e0c25271d0c50f418739bd03c6",
-      "bytes": 671,
-      "executable": false
-    },
-    {
-      "path": "references/components/f1-bento-grid.md",
-      "sha256": "d696a5ab7d6258cff0d2d9527fe07651bfbda6a725a4dfd8de00f678e1fb2bbc",
-      "bytes": 782,
-      "executable": false
-    },
-    {
-      "path": "references/components/f2-sticky-scroll-stack.md",
-      "sha256": "0079ce8c01e8d008882411ed807aa367276cc67af9b956c4f06da1714007ae83",
-      "bytes": 899,
-      "executable": false
-    },
-    {
-      "path": "references/components/f3-tabular-spec-sheet.md",
-      "sha256": "16331628cf441c7b570055c8edd60693d0aa793d1bc5eb2bfd145da700d9f072",
-      "bytes": 419,
-      "executable": false
-    },
-    {
-      "path": "references/components/f4-step-sequence.md",
-      "sha256": "d3ca2aa99f7e639b8ccda20f5e263f3a33b03830f8c93d666f469b8e629975e2",
-      "bytes": 448,
-      "executable": false
-    },
-    {
-      "path": "references/components/f5-annotated-screenshot.md",
-      "sha256": "58f9f4811ea60f923b2f44e0f3e9bac95c40929f8b1af4fdeedd1eae424051ec",
-      "bytes": 410,
-      "executable": false
-    },
-    {
-      "path": "references/components/f6-product-card-grid.md",
-      "sha256": "22ebc07b00d71c950be8d1a0fdad2cc0e7340cfbbf2cd62c43804bfcfaaf106a",
-      "bytes": 2729,
-      "executable": false
-    },
-    {
-      "path": "references/components/ft1-mast-headed.md",
-      "sha256": "7f5671b583e9991f9a4671c223d6c15efdee5c1161dc616cbe2b398eb8d1b6db",
-      "bytes": 501,
-      "executable": false
-    },
-    {
-      "path": "references/components/ft2-inline-rule-single-line.md",
-      "sha256": "de13bf7d9bfaddb42a84fc8584646e914f2273abdb34aa98ea9bd2f5d7ff0493",
-      "bytes": 362,
-      "executable": false
-    },
-    {
-      "path": "references/components/ft3-index-style-category-list.md",
-      "sha256": "9f70608d62872be05af910a6168017c872ee1c17b2dbb8329128569231aa3cce",
-      "bytes": 483,
-      "executable": false
-    },
-    {
-      "path": "references/components/ft4-dense-typographic.md",
-      "sha256": "b8d087773614698036e63474a8546024d874bb6da2b575e64fcaacc2fba0ad60",
-      "bytes": 501,
-      "executable": false
-    },
-    {
-      "path": "references/components/ft5-statement.md",
-      "sha256": "71be63a51def6a3b59badcd481e49d4d5c5d9f3d63a3b4a5b9c05482110f4000",
-      "bytes": 1303,
-      "executable": false
-    },
-    {
-      "path": "references/components/ft6-letter-close.md",
-      "sha256": "8119d22fbbfb3efa83d0bdc41acbfc5037f2c80cb7c39659623d5216eb16c03e",
-      "bytes": 1119,
-      "executable": false
-    },
-    {
-      "path": "references/components/ft7-newsletter-first.md",
-      "sha256": "2cd766761a8e18bff7bc473b3303392b806a15e461187ac325138f77a308dd48",
-      "bytes": 1755,
-      "executable": false
-    },
-    {
-      "path": "references/components/ft8-marquee-scroll.md",
-      "sha256": "32b8d38df984b0db385e9ce2251bbf6bb8df279e3933c441b97a0b703961e9f0",
-      "bytes": 1500,
-      "executable": false
-    },
-    {
-      "path": "references/components/h1-marquee.md",
-      "sha256": "8258b25e27232994126701a4f72bf05267fc9c5dfdc14bcf186efaf96a7dbb10",
-      "bytes": 507,
-      "executable": false
-    },
-    {
-      "path": "references/components/h2-split-diptych.md",
-      "sha256": "f6077864f5c58414d7a10648aa8a3162767f2e356d0701d01953181a83cf3364",
-      "bytes": 600,
-      "executable": false
-    },
-    {
-      "path": "references/components/h3-quote-led.md",
-      "sha256": "4b1427750c5041ab9201cd18fcdd3dd7a93622644eff518d9ad300339f9a46b7",
-      "bytes": 420,
-      "executable": false
-    },
-    {
-      "path": "references/components/h4-stat-led.md",
-      "sha256": "9ada00461ea12be83dec2fba58e19fffd2c559925e68eb72ec18e0ec434f6cec",
-      "bytes": 509,
-      "executable": false
-    },
-    {
-      "path": "references/components/h5-letter-hero.md",
-      "sha256": "afcd7bb6b4c888d7e8460e7af5e86dc50149ca253419757bed2834bf66083321",
-      "bytes": 361,
-      "executable": false
-    },
-    {
-      "path": "references/components/h6-photographic-fold.md",
-      "sha256": "59e046afd5648bfe2737966f1203c0212e7311fbf0e1edee448e3f68f45aa0d0",
-      "bytes": 586,
-      "executable": false
-    },
-    {
-      "path": "references/components/h7-demo-video-clipped-by-viewport-edge.md",
-      "sha256": "12b6f32a47a0b2e73547a0ac8b641cc19b1caa05dda4ffde424defb53afaa0de",
-      "bytes": 1613,
-      "executable": false
-    },
-    {
-      "path": "references/components/h8-mockup-split-browser-framed.md",
-      "sha256": "954b0a3aebfe6de8a3be70fedda669099125dd2ebc9c07948fbdb457fd8dc166",
-      "bytes": 1309,
-      "executable": false
-    },
-    {
-      "path": "references/components/h9-custom-illustration-centerpiece.md",
-      "sha256": "1d3d32859e6e451a67bfc38a403bd80115a42b6898a4d8788e4cfadb8c83e8d6",
-      "bytes": 1479,
-      "executable": false
-    },
-    {
-      "path": "references/components/n1-wordmark-2-links.md",
-      "sha256": "8504774127e33f24a09844eb4c678e91b09ed513690fce51f7863d7cf3fdeab1",
-      "bytes": 388,
-      "executable": false
-    },
-    {
-      "path": "references/components/n10-floating-on-scroll-morph.md",
-      "sha256": "056c2107492ab0eb9dafc7ab4c7ff5454222c1ee127fa45615ccc7b8955da36a",
-      "bytes": 1387,
-      "executable": false
-    },
-    {
-      "path": "references/components/n11-mega-menu.md",
-      "sha256": "b715421012d0997d25d5739c209be6129132fc91add677d75a8ad82d8672e1d4",
-      "bytes": 3155,
-      "executable": false
-    },
-    {
-      "path": "references/components/n12-banner-retract.md",
-      "sha256": "2d52ecb8725b1991d4f6b78301cd6f112464f7b17315bdf0febbff67bca50a56",
-      "bytes": 2858,
-      "executable": false
-    },
-    {
-      "path": "references/components/n13-inline-cmdk-pill.md",
-      "sha256": "6375fa0a1bbc92cba9a435159aa46cb084fc030c63e1abf8f073688959d7be75",
-      "bytes": 3314,
-      "executable": false
-    },
-    {
-      "path": "references/components/n1b-saas-three-section.md",
-      "sha256": "c2631c7807e33eea9b02faa9121a0f9e64861467b57b8635ee97f5fa52bb60ae",
-      "bytes": 3047,
-      "executable": false
-    },
-    {
-      "path": "references/components/n2-floating-chip.md",
-      "sha256": "70ea848537c5fe29be30f5e4b7478ecc39f86d0089f207549dc98a873b6c8fc1",
-      "bytes": 617,
-      "executable": false
-    },
-    {
-      "path": "references/components/n3-side-rail.md",
-      "sha256": "20ed8a06a599d73190502a4801a3be2933b8e06874371167196b7d32dae66111",
-      "bytes": 536,
-      "executable": false
-    },
-    {
-      "path": "references/components/n4-hidden-behind-k.md",
-      "sha256": "bccddb3a25a6afd457163b71e09de07ac23bf5d922fdeb9561e25d825bb97dcf",
-      "bytes": 373,
-      "executable": false
-    },
-    {
-      "path": "references/components/n5-floating-pill.md",
-      "sha256": "6dc8ffb9628fd7ee3669208091e11497864cecea69becc6b513ebdc1f3a737a3",
-      "bytes": 1418,
-      "executable": false
-    },
-    {
-      "path": "references/components/n6-newspaper-masthead.md",
-      "sha256": "243a28d1165328c3479a1b75a3ae05dbfe2a6b8c9f867df8e35873b391f8edd5",
-      "bytes": 1619,
-      "executable": false
-    },
-    {
-      "path": "references/components/n7-brutal-slab.md",
-      "sha256": "6c58d29129f7fd89b9fc755143648397749cdd06043ae0c0b51e6f07e7e6dcb5",
-      "bytes": 1380,
-      "executable": false
-    },
-    {
-      "path": "references/components/n8-terminal-command.md",
-      "sha256": "c88d787bd2e5cf8bf6fb2c4121602dc0289760b41235d437468322821ee4334b",
-      "bytes": 1651,
-      "executable": false
-    },
-    {
-      "path": "references/components/n9-edge-aligned-minimal.md",
-      "sha256": "cc20c76a5abe7099ed2bde3480c81f75f02a760a4c0d2ac79de1503dca9f9ee3",
-      "bytes": 868,
-      "executable": false
-    },
-    {
-      "path": "references/components/s1-left-margin-numbered.md",
-      "sha256": "074ed68eafb03ca775b0593d0599fe20c7891356f473f04996f42425e6586585",
-      "bytes": 495,
-      "executable": false
-    },
-    {
-      "path": "references/components/s2-hanging.md",
-      "sha256": "7b6d04cb896051006fe41b041a67ed77d25010edb579c60b03d88f68ae471462",
-      "bytes": 357,
-      "executable": false
-    },
-    {
-      "path": "references/components/s3-sticky-pinned.md",
-      "sha256": "4101cd7a28fe21a9b8094848ac6cc13c89f9e6f9bf801f04ac69b986c76727b4",
-      "bytes": 1179,
-      "executable": false
-    },
-    {
-      "path": "references/components/s4-inline-no-break.md",
-      "sha256": "4b6d36da05383df1b29afe17b96645b816de07373016deb667efca340bb61ac6",
-      "bytes": 438,
-      "executable": false
-    },
-    {
-      "path": "references/components/s5-bottom-anchored.md",
-      "sha256": "55c159e2d8299501f14ac97468404dc8cad35695c2b7eaad2e972d314620eca0",
-      "bytes": 358,
-      "executable": false
-    },
-    {
-      "path": "references/components/t1-pull-quote-with-marginalia.md",
-      "sha256": "c7139796972c5f47d723742cbff02916a1ee0f2496456b86ac05d8839542be38",
-      "bytes": 465,
-      "executable": false
-    },
-    {
-      "path": "references/components/t2-logo-wall-hairline.md",
-      "sha256": "942121342a61bb4650722f7ba1b605347c6178d69ebeb740139b0bfb5c810e7f",
-      "bytes": 733,
-      "executable": false
-    },
-    {
-      "path": "references/components/t3-single-huge-quote.md",
-      "sha256": "7bca56e2cd630da3669f7cf8befd1bd654a5b249cf38b6d9af5a7c62e33b9239",
-      "bytes": 490,
-      "executable": false
-    },
-    {
-      "path": "references/components/t4-numbered-stat-strip.md",
-      "sha256": "a5fb5615902f9c4026f4ae7b0c96b536bb3cbb2fb4259031342d1cd190dab729",
-      "bytes": 470,
-      "executable": false
-    },
-    {
-      "path": "references/contract.md",
-      "sha256": "2923a056b95da63d04100ac56bc8cdff6bc0a717ac3e5da5cef69eb5feb4619c",
-      "bytes": 2027,
-      "executable": false
-    },
-    {
-      "path": "references/copy.md",
-      "sha256": "703cdbf81fbef6f71d90596a32041d2a33a46fb71ba07ccf5ede6b4b1471d347",
-      "bytes": 12261,
-      "executable": false
-    },
-    {
-      "path": "references/custom-craft.md",
-      "sha256": "417ff74cd83e1fea50c41948c53e18365269b880806ef4f31d9e0ebda0f99246",
-      "bytes": 34133,
-      "executable": false
-    },
-    {
-      "path": "references/custom-theme.md",
-      "sha256": "da0fb051689bf9d100e50e67209566623c1fbe72e09b943248c458985c39e780",
-      "bytes": 24059,
+      "path": "references/data-viz.md",
+      "sha256": "1a26f9e8e16ca065d7412d2db57200698459cdbda498e08e8eaf0ea7a82097dc",
+      "bytes": 3398,
       "executable": false
     },
     {
       "path": "references/design-md.md",
-      "sha256": "a9368b64dd9b6e53e8c707830ce28fd8601d3195a81647ea46b6995aa3556b3c",
-      "bytes": 6846,
+      "sha256": "839d4cd8d5b07007854e9c6de95491691725f2968a0922f9b8fcfdbe42e2784c",
+      "bytes": 3061,
+      "executable": false
+    },
+    {
+      "path": "references/direction.md",
+      "sha256": "19e00099e95be52df2ae893881e29a23cd7a5ee5dc8434a87588376818851642",
+      "bytes": 7525,
       "executable": false
     },
     {
       "path": "references/export-formats.md",
-      "sha256": "de0a73d9bec7a31abbd0cbbf1ecd51c2e440f1f3fdc08f476a343959ca6c22f3",
-      "bytes": 14620,
+      "sha256": "3078bcb08e6324904ee156b6871dc0f47aa170e5d4baf09d43a5c48c46ca7c6b",
+      "bytes": 6294,
       "executable": false
     },
     {
-      "path": "references/floating-nav.md",
-      "sha256": "c8c80f6560700bf6ee6baf28b81ec1539e9ff920d885624707de5fe8803c25d1",
-      "bytes": 5266,
+      "path": "references/flow.md",
+      "sha256": "e96ec11c3190b7268b11ec86af16bd38c71dbf6c85c9e2aa4a334e6b0a1ed797",
+      "bytes": 16389,
+      "executable": false
+    },
+    {
+      "path": "references/fonts.md",
+      "sha256": "cb61b732e4ad6a4ca27ee37aab96c0845a148cb797fd10c3c92e6c032dd36229",
+      "bytes": 5329,
+      "executable": false
+    },
+    {
+      "path": "references/gates.md",
+      "sha256": "63ad234a1acab5e081dfe8ecf2331518a43cbf42760dc5c6ababfb24d7b3e50c",
+      "bytes": 39061,
       "executable": false
     },
     {
       "path": "references/genres/atmospheric.md",
-      "sha256": "58d36e9a59c7d9e0ca99edeaaadab885f2635386fa69d52ea9eda3c29977e190",
-      "bytes": 5075,
+      "sha256": "39c2ba5b282fcc934742aeb410d1bb4d6c65f1da1514b0f18a9600aa8f13f289",
+      "bytes": 1664,
       "executable": false
     },
     {
       "path": "references/genres/editorial.md",
-      "sha256": "1e88cd0c94435c6a9edd1c0b93b67db4321fb3481ff0d66ee24869e655847319",
-      "bytes": 4121,
+      "sha256": "1d47311bfd4d3e4c02f88f25e4852d920d168eb838370fee77b917bcc6e3592c",
+      "bytes": 1372,
       "executable": false
     },
     {
       "path": "references/genres/modern-minimal.md",
-      "sha256": "6125db00e38f2baca9369ed4d4aa917d977b85dd5eac6f19dac89707c3c3534b",
-      "bytes": 4836,
+      "sha256": "5f84b3c056be101707c6f2d7ac929e879f5ab7b009ac8426156c11054193cd9b",
+      "bytes": 1551,
       "executable": false
     },
     {
       "path": "references/genres/playful.md",
-      "sha256": "e52c6ff3fe21b5024c83ac1f03285e1d627e3469ff140d6bea728642026c4f95",
-      "bytes": 5218,
+      "sha256": "974e13a9ada8b49e2cfcc05efb8235be60103acef02e390d8f819cd8e2abd3a9",
+      "bytes": 1610,
       "executable": false
     },
     {
-      "path": "references/hero-enrichment.md",
-      "sha256": "63c14cc2c256dd78a69a1c36f4bcb764940aa7f1ba2e6dd40ca36013f8884a83",
-      "bytes": 32151,
-      "executable": false
-    },
-    {
-      "path": "references/imagery-kit.md",
-      "sha256": "39d71df8dd6186b27f174fd8ab8ffd379553be3917cff50810c72365f6d6cb53",
-      "bytes": 8544,
+      "path": "references/imagery.md",
+      "sha256": "b5a4abaa3fd949ac2e2890c9aa37b2953587ed419fdd1b4ff343a4fc04838e7e",
+      "bytes": 14343,
       "executable": false
     },
     {
       "path": "references/interaction-and-states.md",
-      "sha256": "e816eb2d067ba9f6f288a3831549da95624a05f432ed2a50f54136f27dd2d67f",
-      "bytes": 13537,
+      "sha256": "08e232008734fce86b1ec6085db72342e90d2f855351eb84f20ea3799fe0808a",
+      "bytes": 6034,
       "executable": false
     },
     {
-      "path": "references/layout-and-space.md",
-      "sha256": "987f3a45f5dbe81547117a77987bcedf5376608a6412067e04337047e0c7c839",
-      "bytes": 6766,
+      "path": "references/layout.md",
+      "sha256": "2724768fe7249ab3e941923f2c42bc2ff2ff529eeb672cfa30e00c72f627a0e4",
+      "bytes": 16134,
       "executable": false
     },
     {
       "path": "references/macrostructures/01-bento-grid.md",
-      "sha256": "aa268415862188414f8db94715e20ae7d29df3dc7c494083683378705f3f8493",
-      "bytes": 1836,
+      "sha256": "1efd7da3e1857d22da50307af0effa92200198b59c26f0e429b8ffcaa9cd96ae",
+      "bytes": 1554,
       "executable": false
     },
     {
       "path": "references/macrostructures/02-long-document.md",
-      "sha256": "8ca81106396f2bd00eb9ef5d5d1f00c3aab0500394e706d6a2b3221a6c0d910f",
-      "bytes": 1722,
+      "sha256": "4d7524c16b764daef6fd8bc5e6757dcc4d886addf33f324b32f024c64bcbc573",
+      "bytes": 1833,
       "executable": false
     },
     {
       "path": "references/macrostructures/03-marquee-hero.md",
-      "sha256": "2b7c35860086da6232cb3725c059bead9a31a91872d464266ce6e07a5a75f755",
-      "bytes": 1645,
+      "sha256": "cb379a2eb56d8503265ab541ef9711e59bb2d51dadedfe3e47ccb697b3948e79",
+      "bytes": 1649,
       "executable": false
     },
     {
       "path": "references/macrostructures/04-stat-led.md",
-      "sha256": "a6930b4ba6377c8ef5fcb7af6bf4393cd924292cf03871a37636dd4b77de22b7",
-      "bytes": 2120,
+      "sha256": "2a065807340244d188de455fdb21c7ff8906bb95240873d0993f734c85c8f4a1",
+      "bytes": 1923,
       "executable": false
     },
     {
       "path": "references/macrostructures/05-workbench.md",
-      "sha256": "0cbe92772c7b2ffd9b24b9e446b1e1cd9ed22930b39030ef5a6e9cba5512d31f",
-      "bytes": 1690,
+      "sha256": "6bc0ccd0604afef8c749706189cf91b35078bcc52738eb29603840db0db151c6",
+      "bytes": 1671,
       "executable": false
     },
     {
       "path": "references/macrostructures/06-conversational-faq.md",
-      "sha256": "373473bed23d055164edc04b16344fcd3861c1ab39ff73f3c75dc1719663d488",
-      "bytes": 1621,
+      "sha256": "000a182731d543eaa9e2fda2be50fd4032ff25ed83a6befbbb0cd03567dbe15b",
+      "bytes": 1530,
       "executable": false
     },
     {
       "path": "references/macrostructures/07-manifesto.md",
-      "sha256": "dc1327bad300179c1b233d02d20137776dc98c9affcfd3942b9f3f796ca67b93",
-      "bytes": 1711,
+      "sha256": "3ac47d67fa8e0ee8db2fba2fd329c5ffcbf981a0b760e482748935f6e3411c46",
+      "bytes": 1931,
       "executable": false
     },
     {
       "path": "references/macrostructures/08-photographic.md",
-      "sha256": "e5c77bb6ca6d82616c9c63bb6e68ee17c6af7bbca935f9ff29481294d7d1f74c",
-      "bytes": 1491,
+      "sha256": "d07d2508845277b68cb8cacc8f82d8fac84b69063277ec277d19a7f59fe43992",
+      "bytes": 1554,
       "executable": false
     },
     {
       "path": "references/macrostructures/09-quote-led.md",
-      "sha256": "39069a564d9ebd76daf26f46ec7776828dc45fc6a72ae712b3bf7a4fd012f650",
-      "bytes": 1817,
+      "sha256": "1609ddc34d842c730e4d18bacc010b1b43cfa59892043c523b51bdffead0fb56",
+      "bytes": 1666,
       "executable": false
     },
     {
       "path": "references/macrostructures/10-specimen.md",
-      "sha256": "7f23cead7f91c2ee2335eb2c87fb0aa1e7826f4573748d549756523085ed6ad4",
-      "bytes": 1614,
+      "sha256": "18313a17c6512afda417c8c19f4e0bea1549ecd5fc43e87ba89fb4e526b56eea",
+      "bytes": 1527,
       "executable": false
     },
     {
       "path": "references/macrostructures/11-catalogue.md",
-      "sha256": "99ff614600f18cfc80dfa3b9a2158dbea3b3674f76f40b70e721b9255796c265",
-      "bytes": 1186,
+      "sha256": "20708e7e61ed610506971f48d36eec88512423b77855f78cc8c65b75ba90e0ae",
+      "bytes": 1495,
       "executable": false
     },
     {
       "path": "references/macrostructures/12-letter.md",
-      "sha256": "6f3ad86e87223bd9b6b1267e27532811efbb60f50606e7f72c8525d2cc01d709",
-      "bytes": 1253,
+      "sha256": "0d6779b5da3e3a44b573b3665daefe489fbd4857c1124ca4b8ff0fe6fc17a34f",
+      "bytes": 1282,
       "executable": false
     },
     {
       "path": "references/macrostructures/13-index-first.md",
-      "sha256": "25c832844a1b5e6ce17a335ac98e81d98d9e3372f514d83dc26ac299cc077865",
-      "bytes": 1208,
+      "sha256": "ba7b085f91a8c2eb0baf376b88e4307b38250a2d4dd707fb22f2e5faeb32a7e2",
+      "bytes": 1237,
       "executable": false
     },
     {
       "path": "references/macrostructures/14-narrative-workflow.md",
-      "sha256": "e604a1106131fe3a65721066a304922e757a78c997c197227840931079c780fd",
-      "bytes": 1428,
+      "sha256": "4e120a5cb04a54aa172a5d2b5e727c27603ccddf37a2f8c9a15756993a9337fc",
+      "bytes": 2096,
       "executable": false
     },
     {
       "path": "references/macrostructures/15-split-studio.md",
-      "sha256": "400effa4de50d5f2fabd88be37447aa845deb3b67810ed4f2b995df458c852e4",
-      "bytes": 1336,
+      "sha256": "49c758082ce6d4a6e541bb8706412fe4eb92ffd9dd772208b6a21142aa4bf3c6",
+      "bytes": 1426,
       "executable": false
     },
     {
       "path": "references/macrostructures/16-feature-stack.md",
-      "sha256": "a389fae7fe39550352bdf1ce68cdaa3965a434fa1154f67d3c276e550d1d165a",
-      "bytes": 1386,
+      "sha256": "df26d2d4094b3059c0a35db94389524b0ba76f8fe64e89d4e6ba3def7eed1ece",
+      "bytes": 1753,
       "executable": false
     },
     {
       "path": "references/macrostructures/17-type-specimen.md",
-      "sha256": "a1487fde891f73bf34a2ca38a631a2cb5c71d3a7b2ccd940114354e291ea8034",
-      "bytes": 1271,
+      "sha256": "4ff06c001a10f973b9c70b1a0fa21ea1ce54ac0e3727cf8b5ec2e0a1b6bf568d",
+      "bytes": 1211,
       "executable": false
     },
     {
       "path": "references/macrostructures/18-portfolio-grid.md",
-      "sha256": "af5d0f34a7ef7b81d6f4c8c845497ae553d44f418526d7e503346c9243b034e3",
-      "bytes": 1057,
+      "sha256": "d035dee299e329efeea7dd3b4b897b11f0547f03ac4c2f0c62a3fd422d30f618",
+      "bytes": 1177,
       "executable": false
     },
     {
       "path": "references/macrostructures/19-map-diagram.md",
-      "sha256": "5a576f25f4c8d58c14f574e3413560118343df9a9669db80c6c452daf509c3c3",
-      "bytes": 1269,
+      "sha256": "b8c0021c01fb8a970907caefa74a8c462cb573a2666fc4b223082812f9b19399",
+      "bytes": 1497,
       "executable": false
     },
     {
       "path": "references/macrostructures/20-ecosystem-index.md",
-      "sha256": "fe206580a39ffc4b3534f3a7414155aa626fe16b82b608a0b8b415c1510f17ad",
-      "bytes": 1209,
+      "sha256": "27b1909d028f553efbc112ecd5a8c843e191e97a286bf2bd258daad86bfa64c4",
+      "bytes": 1315,
       "executable": false
     },
     {
       "path": "references/macrostructures/21-component-playground.md",
-      "sha256": "ad3cbdbe9181e9472cb7b7fffbbe35021dc9b5b99ea86adc026f34d6b2c2f01f",
-      "bytes": 1171,
+      "sha256": "830b52f62bdb722f3bd954f4f9ce60fc8c6e521ba2cc1f173e6c0fc3b5611413",
+      "bytes": 1315,
       "executable": false
     },
     {
       "path": "references/macrostructures.md",
-      "sha256": "a6f19a17073aca18a6ff7a8fc8c3c5f711865e01c6d97de609771b47fe8394bc",
-      "bytes": 11597,
+      "sha256": "3389dbc0434bd9a6161896a19b4ec6664859d49f1b0329cd0e8fae6f045e1c43",
+      "bytes": 14614,
       "executable": false
     },
     {
       "path": "references/microinteractions.md",
-      "sha256": "613ca56c2c16e40aeb594af21fabd651732d9de63c848aee51113602525f6e64",
-      "bytes": 20017,
+      "sha256": "e7ec31f08e58edcdb8986fc57d276466c1f7b08445756f3a7cf6f46e8b5a8c8e",
+      "bytes": 6484,
       "executable": false
     },
     {
-      "path": "references/motion.md",
-      "sha256": "330d056810315f65819579f8207afe402703a9192bc76a2009558a59b7c84ccf",
-      "bytes": 4340,
+      "path": "references/patterns.md",
+      "sha256": "bb15954cb04083c9a3b796dda5df5c33c9c05dddf2341d7befe2571e715f613b",
+      "bytes": 10928,
       "executable": false
     },
     {
-      "path": "references/preview-examples.md",
-      "sha256": "df61c24c9a67457ef7369ec5f20575095326df72ffe6534c8fa9730581ebf7d9",
-      "bytes": 2834,
+      "path": "references/redesign.md",
+      "sha256": "cd3fc1dd10af22bb0374b41340fbab8f2b3be997ea5b63716da3d44ba0bb0552",
+      "bytes": 12231,
       "executable": false
     },
     {
       "path": "references/responsive.md",
-      "sha256": "2bf18d72af704ca5dd3c220359a4c77c718efa19c40f62d9bff61ac4a90209b0",
-      "bytes": 5918,
+      "sha256": "7ed0cd54fda3351be9e7b5514ebf4a5306a837cf3d893b31e96c7fd490b348ea",
+      "bytes": 3504,
       "executable": false
     },
     {
-      "path": "references/slop-test.md",
-      "sha256": "6eb49fc64ca54929d2c1600e2a6014268f1a7593787c0ed3f6ecb4ac8390ad86",
-      "bytes": 31065,
+      "path": "references/review-finish.md",
+      "sha256": "9d00de59e71ee2516212140b0512d6d2e90a120d4a328eeba9cb12396ff38d64",
+      "bytes": 3865,
       "executable": false
     },
     {
-      "path": "references/structure.md",
-      "sha256": "ca5c0296ae428f8c4c5214407d431bbda5c453f98f2e7abdec03d644271af32b",
-      "bytes": 15714,
+      "path": "references/review-hero.md",
+      "sha256": "e84702982bcad34fc8ef4aaf032a5482356912992ce72d84b12e05cd4a519fb2",
+      "bytes": 2548,
       "executable": false
     },
     {
-      "path": "references/study.md",
-      "sha256": "021fe4d001b38ee87414c1bb69321d2e44b67df8ede76ecec225c41a634aab20",
-      "bytes": 42639,
+      "path": "references/scroll-choreography.md",
+      "sha256": "809c0fc84011412766db10e3e14def2b3ce02f0452d7fb2e60adecfa85991393",
+      "bytes": 6099,
+      "executable": false
+    },
+    {
+      "path": "references/texture.md",
+      "sha256": "b5749c008fef0511188d491aec0c5556b19f6731b13539934ecc1cb584a2e756",
+      "bytes": 6082,
+      "executable": false
+    },
+    {
+      "path": "references/themes/README.md",
+      "sha256": "aece9d5f273ef6a4eb3e59833bc428c17232ad4ade1247637355636087d5264d",
+      "bytes": 7649,
+      "executable": false
+    },
+    {
+      "path": "references/themes/almanac.jpg",
+      "sha256": "a78b5a78a662ebd6a54be31b581bfd7447d391cff549c503025f0f762f4bddb5",
+      "bytes": 99885,
+      "executable": false
+    },
+    {
+      "path": "references/themes/almanac.md",
+      "sha256": "b5c85e7c96cda4f13af81dd42c020c7eae7c4f63b4530b7e9fcef09340d96efc",
+      "bytes": 7491,
+      "executable": false
+    },
+    {
+      "path": "references/themes/arcade.jpg",
+      "sha256": "dad3bbcf4cc25bf8e97e03d034ceed2f2bf0f8a9ea308afe60b559f04bb40f04",
+      "bytes": 101185,
+      "executable": false
+    },
+    {
+      "path": "references/themes/arcade.md",
+      "sha256": "a6e6d644412e9cbe0172fa784bc05a69767c792a642ab860e6da1af33ef861f9",
+      "bytes": 7504,
+      "executable": false
+    },
+    {
+      "path": "references/themes/atelier.jpg",
+      "sha256": "1f7d16373c8ab9d949084599c87777060c24b298fec9fd382fe7cc0066d6ec03",
+      "bytes": 91926,
+      "executable": false
+    },
+    {
+      "path": "references/themes/atelier.md",
+      "sha256": "8cffffd26a857adab803fd0e1c5eb49ade86cd486a8dc3c576728032a84a5ccf",
+      "bytes": 7851,
+      "executable": false
+    },
+    {
+      "path": "references/themes/bloom.jpg",
+      "sha256": "6dcda211f142627c455ec800442038475341cfcbdae83c529753283427066081",
+      "bytes": 82847,
+      "executable": false
+    },
+    {
+      "path": "references/themes/bloom.md",
+      "sha256": "a2130aa950bfcf4333cc8dbc46ae79e0facf576241b235b1e94ae30f977a0ffb",
+      "bytes": 7991,
+      "executable": false
+    },
+    {
+      "path": "references/themes/blueprint.jpg",
+      "sha256": "dec761657594b854635572f498e6d7428068b132e314df782b07d31e7e06d777",
+      "bytes": 101363,
+      "executable": false
+    },
+    {
+      "path": "references/themes/blueprint.md",
+      "sha256": "9de09c493df045f8b3f720638248d21f857b076be264e7ee0262e9877a5040d6",
+      "bytes": 7561,
+      "executable": false
+    },
+    {
+      "path": "references/themes/broadside.jpg",
+      "sha256": "86e56076fb37223a448c354ea1148890167e85036b3189c51296a176c97bc978",
+      "bytes": 131008,
+      "executable": false
+    },
+    {
+      "path": "references/themes/broadside.md",
+      "sha256": "9a4ebceef5ca462a0b7ade98250a07ad33cfa40f97f6e78434e638fa9e626222",
+      "bytes": 7360,
+      "executable": false
+    },
+    {
+      "path": "references/themes/brutal.jpg",
+      "sha256": "cafd8a53eb83fe09efb0250f2006fd517c3218959afc337024bfe775e4bc7bbf",
+      "bytes": 114728,
+      "executable": false
+    },
+    {
+      "path": "references/themes/brutal.md",
+      "sha256": "4e087f62f815635cbf9c1a7f2a58db77c610ae97f31bef70acd777871859aa97",
+      "bytes": 7065,
+      "executable": false
+    },
+    {
+      "path": "references/themes/carnival.jpg",
+      "sha256": "9a0a139afb7f1ca0ac65d55157432c5ed91e23371b7b6116e3e6937b675712a5",
+      "bytes": 132812,
       "executable": false
     },
     {
       "path": "references/themes/carnival.md",
-      "sha256": "119a9c803eac74958e5df6151da8a2575a1cc2d061a619bdb7f32cf972308ee2",
-      "bytes": 19616,
+      "sha256": "fc8e876e5a1c23bda103719b61a7440e203ff91ff050ebded53f732108c43b82",
+      "bytes": 7588,
+      "executable": false
+    },
+    {
+      "path": "references/themes/cobalt.jpg",
+      "sha256": "695cf419c3cc734c8fa9e6d23e0692385990bcd55349bb689300431392d0e3cd",
+      "bytes": 103331,
       "executable": false
     },
     {
       "path": "references/themes/cobalt.md",
-      "sha256": "13be92af729e6b82d1b1e51aa078f7c007e2900c8f0798b2c0fd2c0eeac7019e",
-      "bytes": 11273,
+      "sha256": "d24a5609f0c42e6ff6a1976d5f7f0651ec40eed69db5d6c4680c1385a65f2007",
+      "bytes": 7990,
+      "executable": false
+    },
+    {
+      "path": "references/themes/console.jpg",
+      "sha256": "665f07532303613d55c3832ac7141c2b007cb3a34bb245882bef3ab74e6e1cf1",
+      "bytes": 70036,
+      "executable": false
+    },
+    {
+      "path": "references/themes/console.md",
+      "sha256": "d52eda46d5480ab0123f78ab83ea1187813f4b26ddb02d0f4e61e2b511ae6309",
+      "bytes": 7598,
+      "executable": false
+    },
+    {
+      "path": "references/themes/coral.jpg",
+      "sha256": "dbb7596586c0563122935ab602e627cc621fe6939013619b6a1c552d5f25a03e",
+      "bytes": 81948,
+      "executable": false
+    },
+    {
+      "path": "references/themes/coral.md",
+      "sha256": "f8444921b5e751b3b9be94d448aaee502e509729aa89411ff887087777bb1c28",
+      "bytes": 7966,
+      "executable": false
+    },
+    {
+      "path": "references/themes/darkroom.jpg",
+      "sha256": "d8a7136d01223a7b6d2193d30c0c2e549e2967da65fb69fd33eee55df9f149c1",
+      "bytes": 154305,
+      "executable": false
+    },
+    {
+      "path": "references/themes/darkroom.md",
+      "sha256": "946e2233f310dde0304f970070408a7ff6581e3b442faaa14da80f39e31e9499",
+      "bytes": 7591,
+      "executable": false
+    },
+    {
+      "path": "references/themes/dose.jpg",
+      "sha256": "7bdf523555d21e8c89b04ab77af15a816a3c7bf84055c7c780b77d891cd4c735",
+      "bytes": 79672,
+      "executable": false
+    },
+    {
+      "path": "references/themes/dose.md",
+      "sha256": "780a5e57a813b3008ac6a8c7287affc5516a68e51310d77df890286f6d6369f5",
+      "bytes": 7912,
+      "executable": false
+    },
+    {
+      "path": "references/themes/dusk.jpg",
+      "sha256": "f38be2c20d3d2183dfdb127fc2a9df71e3f16e413b8fda56146567a05e5a9514",
+      "bytes": 93157,
+      "executable": false
+    },
+    {
+      "path": "references/themes/dusk.md",
+      "sha256": "47cf0ede99ba90b88cec14eb2ec80d5fd9e003e9ed3878708275553e2c52d4bf",
+      "bytes": 7955,
+      "executable": false
+    },
+    {
+      "path": "references/themes/editorial.jpg",
+      "sha256": "a5f3ecdbe561cfbe06374706beac154bc47a77b12ac964c742b412eec6a3e0df",
+      "bytes": 111404,
+      "executable": false
+    },
+    {
+      "path": "references/themes/editorial.md",
+      "sha256": "cafd967f2ac736c9927a749de1b8f4216183e3fa3adce95e638d124b2de5876f",
+      "bytes": 7551,
+      "executable": false
+    },
+    {
+      "path": "references/themes/formwork.jpg",
+      "sha256": "dc52b44d0dd300d54d0fad5f18b032e7b29f0288da546fbfa4dd73baa0d4e255",
+      "bytes": 116193,
+      "executable": false
+    },
+    {
+      "path": "references/themes/formwork.md",
+      "sha256": "e2c0f88b2a83eec6ac076be536cd71cfd883bb21a234c268bba0ccd12e773416",
+      "bytes": 7444,
+      "executable": false
+    },
+    {
+      "path": "references/themes/furrow.jpg",
+      "sha256": "2f6decb95504070eaf484c051da77a4ec0713d2b2cc55eabdc7d99ce740acc99",
+      "bytes": 148449,
+      "executable": false
+    },
+    {
+      "path": "references/themes/furrow.md",
+      "sha256": "16f9ffc0fe9588754d25a96a32d6ca25e4b5a918623e90a1ee0dc5006953fc89",
+      "bytes": 7914,
+      "executable": false
+    },
+    {
+      "path": "references/themes/garden.jpg",
+      "sha256": "a0d649ed96f7462dbef00047685151a3ca3e8a72e9672f240b21a82d798a9740",
+      "bytes": 149502,
+      "executable": false
+    },
+    {
+      "path": "references/themes/garden.md",
+      "sha256": "2f2197da95ef795a10eeef1c60f9ae98e62ca110c34260035b9789c1f3486185",
+      "bytes": 7041,
+      "executable": false
+    },
+    {
+      "path": "references/themes/grid.jpg",
+      "sha256": "511ed8d58f8abb1fe86d53166c3966c4046c1000ccc7075d6c312ba3efc67f70",
+      "bytes": 73542,
       "executable": false
     },
     {
       "path": "references/themes/grid.md",
-      "sha256": "e68e8b97f62d613dc94a03afd346b9e12de8ffcc65dc8633c4c223c92875c7da",
-      "bytes": 14564,
+      "sha256": "0f81c1efa45ec32ae3bd24b15eb96144edff8e018eec7a3d6a6a8bb25e42f520",
+      "bytes": 7803,
+      "executable": false
+    },
+    {
+      "path": "references/themes/halftone.jpg",
+      "sha256": "a84cb1876366b5e1070ce1a70b22f263a7a963372587ff92076c0492c7f2d9db",
+      "bytes": 104490,
+      "executable": false
+    },
+    {
+      "path": "references/themes/halftone.md",
+      "sha256": "a19da44930e5c475cf9c285f939d959ab590da17faea21426387332a5d8ca682",
+      "bytes": 7498,
+      "executable": false
+    },
+    {
+      "path": "references/themes/hedgerow.jpg",
+      "sha256": "ac564eb0f3c8553cd5a077b8f5da38a1bb1d2c7a78e4e8ebb8aafe91ee448f95",
+      "bytes": 123319,
+      "executable": false
+    },
+    {
+      "path": "references/themes/hedgerow.md",
+      "sha256": "23371c7894032ccc4f51236539d535d9c47b201b3007a40949db234c19b84ddd",
+      "bytes": 7181,
+      "executable": false
+    },
+    {
+      "path": "references/themes/hum.jpg",
+      "sha256": "22c73e8bdb16fd96165cc4d003a82cf321e1d274f6c3c538015e0d3ae823802e",
+      "bytes": 130495,
       "executable": false
     },
     {
       "path": "references/themes/hum.md",
-      "sha256": "bbdd1e89a32d6b15e99493ba9497816a0915bd4e9bf150b95868db597c20e1d5",
-      "bytes": 32317,
+      "sha256": "180ef874894a544230f4e3a867a7120da3a79d5994d15737e806e0373e4cc5c7",
+      "bytes": 7485,
+      "executable": false
+    },
+    {
+      "path": "references/themes/index.json",
+      "sha256": "718ba3e1813530011e7671e2c1b96bf6387a31f0677c093058b366074eb7a252",
+      "bytes": 48829,
+      "executable": false
+    },
+    {
+      "path": "references/themes/ink.jpg",
+      "sha256": "18802cca6d7428c50a0e9d3051f7aa321f0f4749e14dd941107b30266346c62e",
+      "bytes": 75097,
+      "executable": false
+    },
+    {
+      "path": "references/themes/ink.md",
+      "sha256": "7dd419ccec59a33461c86d894856085edaeddd6139f8eb9eff22f22e45fbdf9f",
+      "bytes": 7347,
+      "executable": false
+    },
+    {
+      "path": "references/themes/kiln.jpg",
+      "sha256": "2ef6da1860464f7d189d6e0e371b97b1e17b4ee107e1e68b7555aafc96685123",
+      "bytes": 91613,
+      "executable": false
+    },
+    {
+      "path": "references/themes/kiln.md",
+      "sha256": "94909cf878a89b88ba96d3a69dfccb64ce32968a3a4544a920a9c927d5a56fd4",
+      "bytes": 7467,
+      "executable": false
+    },
+    {
+      "path": "references/themes/loom.jpg",
+      "sha256": "a71f16f59ec0c9710d5f6cd4f3eec0fbe3536e31b194b1e25dbb924618765f64",
+      "bytes": 132303,
+      "executable": false
+    },
+    {
+      "path": "references/themes/loom.md",
+      "sha256": "835789caae2ef444b1db967411856f79ddcf844c8a988f75a62f3f5d4b53d819",
+      "bytes": 7578,
+      "executable": false
+    },
+    {
+      "path": "references/themes/lumen.jpg",
+      "sha256": "d7f66625e11d7d495c89748c6f43db49b5542040d1c091a109802a7098d1cc84",
+      "bytes": 106712,
       "executable": false
     },
     {
       "path": "references/themes/lumen.md",
-      "sha256": "d5459478d3aa1ea6330c221dfe011b717a70dbb036f597403b3a6b3cf82dd53b",
-      "bytes": 28180,
+      "sha256": "8a202bde1d9eb9b4615b0f0e2279adeb5c95a82dedd003fdba1613c70b715450",
+      "bytes": 7604,
       "executable": false
     },
     {
-      "path": "references/typography.md",
-      "sha256": "94d7b2d2b138bd8687e09dc3dd618eaafff500b0497a6d69cb4c29b764e94b9c",
-      "bytes": 18381,
+      "path": "references/themes/manifesto.jpg",
+      "sha256": "c900e70ac48d01d133acdcbda0310d9c0fd53a0474d7a1b1344291a70b3c89bd",
+      "bytes": 85855,
       "executable": false
     },
     {
-      "path": "references/verbs/audit.md",
-      "sha256": "0a5b484453f1697a8675a7020df9159d0b4ce22f059b873501bfd82c26d6a31a",
-      "bytes": 2803,
+      "path": "references/themes/manifesto.md",
+      "sha256": "326c63f732128ed5cda8ff3187793ffe9bcb56936387367cc932b5a3e216b862",
+      "bytes": 7212,
       "executable": false
     },
     {
-      "path": "references/verbs/redesign.md",
-      "sha256": "c2830f3b7d68e9622f55d376048a5a454c5ef59d309a211e716d1142e86acbdf",
-      "bytes": 13849,
+      "path": "references/themes/midnight.jpg",
+      "sha256": "6f49568b885ba74035faa5a2608c51a079cd7a2eebe7e1967fa0225958b0c82e",
+      "bytes": 86091,
+      "executable": false
+    },
+    {
+      "path": "references/themes/midnight.md",
+      "sha256": "cb29035685b63a56762c291dc4246c6a66c6ec6d8bc4559d6823ee2d2a80e40d",
+      "bytes": 6998,
+      "executable": false
+    },
+    {
+      "path": "references/themes/newsprint.jpg",
+      "sha256": "fdac566be09a8ea6891f79ccb70f1f2c47abe12a3fb476c3874031eece6e0fe6",
+      "bytes": 154148,
+      "executable": false
+    },
+    {
+      "path": "references/themes/newsprint.md",
+      "sha256": "2fd477d10f9dde600993486a7dab5ff5f643c8821833cb3837f176005eafb5e0",
+      "bytes": 7373,
+      "executable": false
+    },
+    {
+      "path": "references/themes/overprint.jpg",
+      "sha256": "415342811cfecc22d267d93afb07c12dfa12d8823a2e2c5852c9a587d9f462de",
+      "bytes": 84649,
+      "executable": false
+    },
+    {
+      "path": "references/themes/overprint.md",
+      "sha256": "79010c27e619fad842da18559658c83cec86172266b00bb5933871b3f7bf852b",
+      "bytes": 7597,
+      "executable": false
+    },
+    {
+      "path": "references/themes/pasteup.jpg",
+      "sha256": "664423a43e4906e63ab9610b8c327af1baddb611a14109b453a7ed04505ba0c2",
+      "bytes": 111056,
+      "executable": false
+    },
+    {
+      "path": "references/themes/pasteup.md",
+      "sha256": "7e8d5013bda81e945f27b401f967f08e41bbc7d10ddc14d1ef7dd91c25f95c3d",
+      "bytes": 7568,
+      "executable": false
+    },
+    {
+      "path": "references/themes/piste.jpg",
+      "sha256": "39c73cb56040dc5ab13b6bb7927d0dfdacfc7802ef1d22d9c1c13f39faf1500b",
+      "bytes": 118882,
+      "executable": false
+    },
+    {
+      "path": "references/themes/piste.md",
+      "sha256": "79c1b4b7297467d9a0d057ad790d475f4b88a41af1867172dfd77b951cda803a",
+      "bytes": 7082,
+      "executable": false
+    },
+    {
+      "path": "references/themes/ribbon.jpg",
+      "sha256": "a5848452f358eb7e8f7fae3b1592fe04b9f1fb09c92551c372def878529512d0",
+      "bytes": 67143,
+      "executable": false
+    },
+    {
+      "path": "references/themes/ribbon.md",
+      "sha256": "0bcc8708d3ceec0cb246fa134a4fcf8e019fa8012af1f87646737cc1c8b324a1",
+      "bytes": 7906,
+      "executable": false
+    },
+    {
+      "path": "references/themes/rim.jpg",
+      "sha256": "bbc6f916316da6f6d03b01dfc798efd0c8f8b94d80155049f0a1a497a3560811",
+      "bytes": 115325,
+      "executable": false
+    },
+    {
+      "path": "references/themes/rim.md",
+      "sha256": "ac134e8ccbda501b660f4cd83ace56059f2b254b187f574a612460c7c796e49f",
+      "bytes": 7018,
+      "executable": false
+    },
+    {
+      "path": "references/themes/riso.jpg",
+      "sha256": "b02f0c68760cab70cf971cacc2669fe32472f1f3eb2998f8c7706c4fafb678ca",
+      "bytes": 113102,
+      "executable": false
+    },
+    {
+      "path": "references/themes/riso.md",
+      "sha256": "333577e736f793c94161994dd8087c583ab53dd5af50a5dc63c3bfc5f4bf28ad",
+      "bytes": 7585,
+      "executable": false
+    },
+    {
+      "path": "references/themes/solstice.jpg",
+      "sha256": "5d6bcf025a79c4b117ccc2ede5cc69f5334bfc65ed8107b1068a9689cfff7abf",
+      "bytes": 100411,
+      "executable": false
+    },
+    {
+      "path": "references/themes/solstice.md",
+      "sha256": "6813e8556faa9e34637ce52a2cefadbf74795e7956503f14cf1c672c3f92c5d1",
+      "bytes": 7346,
+      "executable": false
+    },
+    {
+      "path": "references/themes/specimen.jpg",
+      "sha256": "9735716ddda7bba0f62d1d35743256ad1b718038fbd6924e341bceb3dfa62150",
+      "bytes": 64586,
+      "executable": false
+    },
+    {
+      "path": "references/themes/specimen.md",
+      "sha256": "f9ed583e2adfe885eced94374fed3f697ff932705eee029a9c226d4db39667ed",
+      "bytes": 6880,
+      "executable": false
+    },
+    {
+      "path": "references/themes/spore.jpg",
+      "sha256": "b2493347715fb49d6d30040ae3ea85885571709bd588f2222722a1af317a704a",
+      "bytes": 70176,
+      "executable": false
+    },
+    {
+      "path": "references/themes/spore.md",
+      "sha256": "2b4f30287f6779404104a98bddd2f2876f000abad2533228c9aa105b3c30ca7d",
+      "bytes": 7312,
+      "executable": false
+    },
+    {
+      "path": "references/themes/sport.jpg",
+      "sha256": "51a51694055ef122de7e6be01f5d881fec696d86df5192557aefd90d12bb1b84",
+      "bytes": 109685,
+      "executable": false
+    },
+    {
+      "path": "references/themes/sport.md",
+      "sha256": "5714651df7c46925357d33876e498ac4ecaa3c8b3d50bee5ead3bf7ce54d863a",
+      "bytes": 7425,
+      "executable": false
+    },
+    {
+      "path": "references/themes/squeeze.jpg",
+      "sha256": "570529d5d842ca14a60d9689d3c4997eac31e463c5a9df3d386d39f36091224b",
+      "bytes": 105257,
+      "executable": false
+    },
+    {
+      "path": "references/themes/squeeze.md",
+      "sha256": "d007f2f09a6d8da5cf53a9fe98bc9cb3ead7f013d71569b605e65e7f295b2cb5",
+      "bytes": 7579,
+      "executable": false
+    },
+    {
+      "path": "references/themes/sticker.jpg",
+      "sha256": "ccbf946b230eae35f8ba35b7ceb362bd082b0c6240e1ff3695a07f9e948d6320",
+      "bytes": 90110,
+      "executable": false
+    },
+    {
+      "path": "references/themes/sticker.md",
+      "sha256": "5c266f131f506d7ba2e51e12015141e8d1ac394523ce537504a6b21336f0f953",
+      "bytes": 7554,
+      "executable": false
+    },
+    {
+      "path": "references/themes/studio.jpg",
+      "sha256": "d4b8670539d50ebc17c64ad5f13fbd01dbf6bf47cc3421baf688a496112d6daf",
+      "bytes": 113815,
+      "executable": false
+    },
+    {
+      "path": "references/themes/studio.md",
+      "sha256": "7e0352a5de3485bbc61043c412258490aa7750eab03a5534a422a717f44db194",
+      "bytes": 7629,
+      "executable": false
+    },
+    {
+      "path": "references/themes/terminal.jpg",
+      "sha256": "0843a7120876a7e4f89acbd122fe7f6d4dab72caad99746c5a574eb8f5a8552e",
+      "bytes": 89868,
+      "executable": false
+    },
+    {
+      "path": "references/themes/terminal.md",
+      "sha256": "cb5104b31d31e2ece13cc736a2ee5819d9b80a3272ff5a905e0f772c2865f19e",
+      "bytes": 7564,
+      "executable": false
+    },
+    {
+      "path": "references/themes/terrazzo.jpg",
+      "sha256": "8f22ce7fac3fed6479bac56a0061477491c9055398b5bc7d7d856d66188f357d",
+      "bytes": 146188,
+      "executable": false
+    },
+    {
+      "path": "references/themes/terrazzo.md",
+      "sha256": "9f2a03aa0670fe7caef3789e077eb917483034a38c756b45977ea9f27ee1dc02",
+      "bytes": 7034,
+      "executable": false
+    },
+    {
+      "path": "references/themes/ultraviolet.jpg",
+      "sha256": "66cb4ad24a61fb16f5cf0e97f4d81be67993e3d237d4af0b67e71e4f0e6961db",
+      "bytes": 72491,
+      "executable": false
+    },
+    {
+      "path": "references/themes/ultraviolet.md",
+      "sha256": "b706384370d51ad849faaa87f80c2beeff9d14ca2f253385d20e28ac09bc9569",
+      "bytes": 7359,
+      "executable": false
+    },
+    {
+      "path": "references/themes/vellum.jpg",
+      "sha256": "4b4116033ad5ea3a65e0ec720f43e0e9cd1c7494e4ae95c09610782240b9a48d",
+      "bytes": 175505,
+      "executable": false
+    },
+    {
+      "path": "references/themes/vellum.md",
+      "sha256": "4914d9e6ca704d55b57fe6630ca2edc1ed49dea0fdd0912c97d437939fd3e893",
+      "bytes": 7606,
+      "executable": false
+    },
+    {
+      "path": "references/themes/wayfind.jpg",
+      "sha256": "3fc6e32cd77b7455a10237ba7424048bd2fb94bdc955bdd5395da173d9b3b574",
+      "bytes": 101995,
+      "executable": false
+    },
+    {
+      "path": "references/themes/wayfind.md",
+      "sha256": "7849521b843f82a3956727e0d06a595d6ecec5f501f4c31f577bf4bd1bae9e2c",
+      "bytes": 7351,
+      "executable": false
+    },
+    {
+      "path": "references/themes/werkstatt.jpg",
+      "sha256": "5cd183720988973306ff568fa7f21a7c7cb345621dfa1d288a33d22f785aac20",
+      "bytes": 114968,
+      "executable": false
+    },
+    {
+      "path": "references/themes/werkstatt.md",
+      "sha256": "b3a31e2acb8a15ca46bbb194f23b9555ef19d9c70ceb1cf67d9fde3b55b7e08a",
+      "bytes": 7441,
+      "executable": false
+    },
+    {
+      "path": "scripts/capture.mjs",
+      "sha256": "17c36f7400c2633ac37d87b236894385f6e72c3026ab916deed27b5e17e1cc2a",
+      "bytes": 9287,
+      "executable": false
+    },
+    {
+      "path": "scripts/fixtures/exemplars/atmospheric.html",
+      "sha256": "10a6bc8f44a8ad3e3874dddaf2444888d95efb4b3e72c6d403cd258259202f8d",
+      "bytes": 25070,
+      "executable": false
+    },
+    {
+      "path": "scripts/fixtures/exemplars/editorial.html",
+      "sha256": "51c9177037da9ec810d81ce809df358c48b33c19c88dbda5192c2d1508ee5c50",
+      "bytes": 27259,
+      "executable": false
+    },
+    {
+      "path": "scripts/fixtures/exemplars/modern-minimal.html",
+      "sha256": "48ac41ca0235a29b613a736e989864e845497d348fc2183156e0790785adac6a",
+      "bytes": 42033,
+      "executable": false
+    },
+    {
+      "path": "scripts/fixtures/exemplars/playful.html",
+      "sha256": "810cddd441d619cfceb6815177c60412d7f91a1e30971141830f77f29a1c6615",
+      "bytes": 27784,
+      "executable": false
+    },
+    {
+      "path": "scripts/fixtures/eyebrow-fail/index.html",
+      "sha256": "777a97f5c636bdd32623ab92f53b003a48e21b0ccda33166a0ddcedad41074b8",
+      "bytes": 4008,
+      "executable": false
+    },
+    {
+      "path": "scripts/fixtures/eyebrow-pass/index.html",
+      "sha256": "e79cc0979f3d47295812d1f373f4ea8e95c94f2a18624ae2c064e3fdbc4476f8",
+      "bytes": 4977,
+      "executable": false
+    },
+    {
+      "path": "scripts/fixtures/kept/after.html",
+      "sha256": "3943056c96c322c2bd55fbd19170de48f01815981d0430a094538737dae1a204",
+      "bytes": 1155,
+      "executable": false
+    },
+    {
+      "path": "scripts/fixtures/kept/before.html",
+      "sha256": "6e9ad44ebca1d553b0f6a0096f613e3bd9800dbb222b42c4996a247dee08b72f",
+      "bytes": 1069,
+      "executable": false
+    },
+    {
+      "path": "scripts/fixtures/slopped.html",
+      "sha256": "f324387e624f20e10bea32fd4c29d53865c3b4c261e723dc7965ef48ea39466e",
+      "bytes": 4865,
+      "executable": false
+    },
+    {
+      "path": "scripts/fixtures/tailwind-fail/Feature.vue",
+      "sha256": "a0b1f3810f0b3621459d52921795a6c99f0dba53a9b0445cbf53e8529b801cf2",
+      "bytes": 698,
+      "executable": false
+    },
+    {
+      "path": "scripts/fixtures/tailwind-fail/Hero.tsx",
+      "sha256": "4b0a2d0996d44173178d3f3ad4313836a3464993658798a491e92e4adbe9a576",
+      "bytes": 1290,
+      "executable": false
+    },
+    {
+      "path": "scripts/fixtures/tailwind-fail/index.html",
+      "sha256": "668e6026f6517b456d8b10d07f21e33f32476cbedef86e90bdf6bcc3785c120c",
+      "bytes": 3797,
+      "executable": false
+    },
+    {
+      "path": "scripts/fixtures/tailwind-fail/style.css",
+      "sha256": "520dac1bf1b9ac4c3c4e05506a91a804849413172ec500f9e21a01c94542c5fc",
+      "bytes": 207,
+      "executable": false
+    },
+    {
+      "path": "scripts/fixtures/tailwind-pass/Hero.tsx",
+      "sha256": "c81aed17aaba4936fc51fcbc07b642481c7dad6cbbd87ac8dd56384290b6edf3",
+      "bytes": 1354,
+      "executable": false
+    },
+    {
+      "path": "scripts/fixtures/tailwind-pass/index.html",
+      "sha256": "7d7fb9c531b872458c049fc9bbed93edf8bf506f5f2fbff8d4a66ffc1f7e6cc2",
+      "bytes": 3839,
+      "executable": false
+    },
+    {
+      "path": "scripts/fixtures/tailwind-pass/style.css",
+      "sha256": "b3d42d5cd53476942b34253a2dcad284548302ce551bef56fb1af6f9d4c8ebbb",
+      "bytes": 576,
+      "executable": false
+    },
+    {
+      "path": "scripts/fixtures/waiver/index.html",
+      "sha256": "9ac592d4ea4fef4f33551b678ed9ce03570d8c3c8afaa23717446d41dbc106bc",
+      "bytes": 2870,
+      "executable": false
+    },
+    {
+      "path": "scripts/imagegen.mjs",
+      "sha256": "0e9e2dde64a0b1a7d45085b3d9ec51f49f2927e544400bfa33207fb2c9b579cc",
+      "bytes": 3816,
+      "executable": false
+    },
+    {
+      "path": "scripts/photos.json",
+      "sha256": "1ee6836583e8048400876351c0605bc3f08515fecfe68aca3712b9e75498bc65",
+      "bytes": 452868,
+      "executable": false
+    },
+    {
+      "path": "scripts/picture.mjs",
+      "sha256": "21db01db66d393d58d2dd799e7614a6033d1a56891d9d9d8cae0c42ed42592c1",
+      "bytes": 6423,
+      "executable": false
+    },
+    {
+      "path": "scripts/refcheck.mjs",
+      "sha256": "8b48c542f114e7da5e1ff9434075527f911f31c4c106cc09fd01df599fb5465d",
+      "bytes": 21313,
+      "executable": false
+    },
+    {
+      "path": "scripts/sloplint-render.mjs",
+      "sha256": "3af79afa100a9804f248ade24d5128cea4fde1ef6d1a279f1dd935bfe6dc41cd",
+      "bytes": 99164,
+      "executable": false
+    },
+    {
+      "path": "scripts/sloplint.mjs",
+      "sha256": "f8ada364c68a9db4b3dd5784bd416a7c412125e887aeae87d627e072d3848289",
+      "bytes": 231622,
+      "executable": false
+    },
+    {
+      "path": "scripts/theme.mjs",
+      "sha256": "802b0121b570d908533c35d6feded556fed9937b9200baa4cf16f3d575de6017",
+      "bytes": 58980,
       "executable": false
     }
   ],
-  "totalBytes": 689673,
+  "totalBytes": 6829707,
   "requires": [],
-  "permissionsNote": "allowed-tools declarations inside SKILL.md are upstream claims, not host approvals; OpenAR enforces its own permission gates. The upstream study verb fetches a URL only when the user supplies one; the skill never turns an unfamiliar URL into an automated network study on its own."
+  "permissionsNote": "allowed-tools declarations inside SKILL.md are upstream claims, not host approvals; OpenAR enforces its own permission gates. Network: the study verb fetches only a URL the user supplies; scripts/imagegen.mjs calls api.together.xyz only when TOGETHER_API_KEY is set; capture.mjs and the render sweep use a locally installed Playwright. Nothing writes outside the project.",
+  "adapters": [
+    "HuieL"
+  ],
+  "upstream": {
+    "repo": "nutlope/hallmark",
+    "revision": "7ec868225c6caa040558c321ee0fefa0e73f83a8",
+    "path": "skills/hallmark",
+    "license": "MIT"
+  }
 }

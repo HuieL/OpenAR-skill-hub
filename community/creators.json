@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "skillHub": "77404898210a710edbbd89ea223347a90830ee6f",
+  "skillHub": "f6206395c87af1e6a14ab425df18ee758b454cbe",
   "extensionHub": null,
   "creators": [
     {
@@ -24,6 +24,7 @@
         {
           "entry": "skill:hub.hallmark",
           "roles": [
+            "adapter",
             "submitter"
           ]
         },

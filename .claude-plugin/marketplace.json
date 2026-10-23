@@ -14,6 +14,7 @@
       "skills": [
         "./entries/skills/hub.archify/skill",
         "./entries/skills/hub.craft-suite/skill",
+        "./entries/skills/hub.hallmark/skill",
         "./entries/skills/hub.officecli-academic-paper/skill",
         "./entries/skills/hub.officecli-data-dashboard/skill",
         "./entries/skills/hub.research-design-system/skill",
@@ -504,19 +505,6 @@
       "strict": false,
       "skills": [
         "./skills/productivity/grill-me"
-      ]
-    },
-    {
-      "name": "hallmark",
-      "source": {
-        "source": "github",
-        "repo": "nutlope/hallmark",
-        "sha": "13ac0ec7e148655948100b6396439e481361d690"
-      },
-      "description": "1 skill from nutlope/hallmark, pinned at 13ac0ec7e148 as listed on the OpenAR Skill Hub.",
-      "strict": false,
-      "skills": [
-        "./skills/hallmark"
       ]
     },
     {
