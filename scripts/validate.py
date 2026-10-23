@@ -23,7 +23,8 @@ def _root() -> pathlib.Path:
 
 ROOT = _root()
 ENTRIES = ROOT / "entries" / "skills"
-MAX_TOTAL_BYTES = 2 * 1024 * 1024
+MAX_TOTAL_BYTES = 20 * 1024 * 1024  # = the OpenAR client staging budget (raised from 2 MiB, 10-23)
+MAX_FILES = 500
 I18N_LANGS = {"en", "zh-CN", "ja", "ko", "es"}
 REVIEW_STATUSES = {"unreviewed", "reviewed", "deprecated", "high-risk"}
 DELIVERIES = {"hub"}
@@ -226,6 +227,8 @@ def check_files(entry: dict, entry_id: str, entry_dir: pathlib.Path) -> None:
         fail(entry_id, f"totalBytes {entry['totalBytes']} != sum of files bytes {total}")
     if total > MAX_TOTAL_BYTES:
         fail(entry_id, f"entry exceeds the {MAX_TOTAL_BYTES} byte cap")
+    if len(files) > MAX_FILES:
+        fail(entry_id, f"entry lists {len(files)} files, over the {MAX_FILES}-file cap")
     if "licenseFile" in entry:
         license_file = entry["licenseFile"]
         if not isinstance(license_file, str) or not safe_rel_path(license_file):

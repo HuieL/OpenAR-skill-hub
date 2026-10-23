@@ -188,6 +188,7 @@
     },
     "files": {
       "type": "array",
+      "maxItems": 500,
       "items": {
         "type": "object",
         "additionalProperties": false,
@@ -204,8 +205,8 @@
     "totalBytes": {
       "type": "integer",
       "minimum": 1,
-      "maximum": 2097152,
-      "description": "Sum of files[].bytes. Per-entry cap: 2 MiB."
+      "maximum": 20971520,
+      "description": "Sum of files[].bytes. Per-entry cap: 20 MiB (the OpenAR client's staging budget)."
     },
     "requires": {
       "type": "array",

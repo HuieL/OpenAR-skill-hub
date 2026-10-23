@@ -31,7 +31,7 @@ account, and no install script to run here.
    - `source` — `owner/name`, the skill's subdirectory, and an exact 40-hex
      commit SHA. `main`/`latest`/mutable tags are never accepted as a pin;
    - `files` — the complete manifest of the skill's files at that revision,
-     each with sha256 and size (cap: 2 MiB per entry). Demo media the skill
+     each with sha256 and size (cap: 20 MiB and 500 files per entry). Demo media the skill
      does not need to run (example videos, preview images) may be left out
      with `--exclude '<glob>'` (repeatable, relative to the skill folder;
      `SKILL.md` is always kept); say what was left out in the entry's
