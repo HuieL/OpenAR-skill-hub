@@ -1,8 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-20T06:32:52Z",
-  "skillHub": "0d68c93c1a9eee9d11bd705a99a449a006e13a75",
+  "generatedAt": "2026-10-23T08:46:20Z",
+  "skillHub": "3acd5583e27d53538980448f5a03e2a2b92b7b8c",
   "new": [
+    {
+      "id": "skill:ythx-101.live-panel",
+      "firstRecorded": "2026-10-23T08:46:12Z"
+    },
     {
       "id": "skill:leanprover.lean-bisect",
       "firstRecorded": "2026-10-20T06:32:36Z"
@@ -869,6 +873,10 @@
     }
   ],
   "updated": [
+    {
+      "id": "skill:ythx-101.live-panel",
+      "lastRecorded": "2026-10-23T08:46:12Z"
+    },
     {
       "id": "skill:leanprover.lean-bisect",
       "lastRecorded": "2026-10-20T06:32:36Z"
@@ -1741,9 +1749,9 @@
     "repos": [
       {
         "repo": "mattpocock/skills",
-        "stars": 297788,
-        "forks": 25011,
-        "pushedAt": "2026-10-19T15:52:15Z",
+        "stars": 301251,
+        "forks": 25321,
+        "pushedAt": "2026-10-22T09:35:28Z",
         "entries": [
           "skill:mattpocock.claude-handoff",
           "skill:mattpocock.code-review",
@@ -1778,8 +1786,8 @@
       },
       {
         "repo": "VoltAgent/awesome-design-md",
-        "stars": 122380,
-        "forks": 13595,
+        "stars": 123055,
+        "forks": 13654,
         "pushedAt": "2026-10-14T05:46:48Z",
         "entries": [
           "skill:hub.research-design-system"
@@ -1787,8 +1795,8 @@
       },
       {
         "repo": "K-Dense-AI/scientific-agent-skills",
-        "stars": 53039,
-        "forks": 4692,
+        "stars": 54013,
+        "forks": 4767,
         "pushedAt": "2026-10-19T09:33:57Z",
         "entries": [
           "skill:kdense.13c-metabolic-flux",
@@ -1948,9 +1956,9 @@
       },
       {
         "repo": "Yuan1z0825/nature-skills",
-        "stars": 49459,
-        "forks": 2570,
-        "pushedAt": "2026-10-20T05:43:25Z",
+        "stars": 50221,
+        "forks": 2613,
+        "pushedAt": "2026-10-22T02:40:33Z",
         "entries": [
           "skill:nature.academic-search",
           "skill:nature.citation",
@@ -1973,17 +1981,17 @@
       },
       {
         "repo": "nutlope/hallmark",
-        "stars": 30412,
-        "forks": 1568,
-        "pushedAt": "2026-08-06T16:19:18Z",
+        "stars": 30958,
+        "forks": 1604,
+        "pushedAt": "2026-10-22T17:20:32Z",
         "entries": [
           "skill:hub.hallmark"
         ]
       },
       {
         "repo": "KKKKhazix/human-writing",
-        "stars": 4138,
-        "forks": 314,
+        "stars": 4187,
+        "forks": 318,
         "pushedAt": "2026-08-11T15:07:45Z",
         "entries": [
           "skill:hub.human-writing"
@@ -1991,17 +1999,26 @@
       },
       {
         "repo": "vercel-labs/web-interface-guidelines",
-        "stars": 1011,
-        "forks": 70,
+        "stars": 1032,
+        "forks": 72,
         "pushedAt": "2026-10-05T20:49:17Z",
         "entries": [
           "skill:hub.web-design-guidelines"
         ]
       },
       {
+        "repo": "ythx-101/live-panel-skill",
+        "stars": 800,
+        "forks": 104,
+        "pushedAt": "2026-10-20T15:59:20Z",
+        "entries": [
+          "skill:ythx-101.live-panel"
+        ]
+      },
+      {
         "repo": "iOfficeAI/AionCore",
-        "stars": 121,
-        "forks": 195,
+        "stars": 123,
+        "forks": 199,
         "pushedAt": "2026-10-14T17:47:21Z",
         "entries": [
           "skill:hub.officecli-academic-paper",
@@ -2010,7 +2027,7 @@
       },
       {
         "repo": "leanprover/skills",
-        "stars": 74,
+        "stars": 77,
         "forks": 2,
         "pushedAt": "2026-02-25T05:05:13Z",
         "entries": [
@@ -2038,7 +2055,7 @@
         "repo": "HuieL/OpenAR-skill-hub",
         "stars": 0,
         "forks": 0,
-        "pushedAt": "2026-10-19T10:33:09Z",
+        "pushedAt": "2026-10-20T06:33:00Z",
         "entries": [
           "skill:hub.craft-suite",
           "skill:hub.officecli-academic-paper",
