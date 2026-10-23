@@ -1,12 +1,18 @@
 {
   "schemaVersion": 1,
-  "skillHub": "f6206395c87af1e6a14ab425df18ee758b454cbe",
+  "skillHub": "91bd7cf7fffc050bf13b15f39e14059cf7ed5509",
   "extensionHub": null,
   "creators": [
     {
       "github": "HuieL",
       "name": null,
       "credits": [
+        {
+          "entry": "skill:anthropics.frontend-design",
+          "roles": [
+            "submitter"
+          ]
+        },
         {
           "entry": "skill:hub.archify",
           "roles": [
@@ -1035,6 +1041,12 @@
         },
         {
           "entry": "skill:leanprover.nightly-testing",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:leonxlnx.taste-skill",
           "roles": [
             "submitter"
           ]
@@ -2262,6 +2274,18 @@
       ]
     },
     {
+      "github": "Leonxlnx",
+      "name": "Leonxlnx",
+      "credits": [
+        {
+          "entry": "skill:leonxlnx.taste-skill",
+          "roles": [
+            "author"
+          ]
+        }
+      ]
+    },
+    {
       "github": "Luffixos",
       "name": "Youssef",
       "credits": [
@@ -2387,6 +2411,18 @@
         },
         {
           "entry": "skill:nature.writing",
+          "roles": [
+            "author"
+          ]
+        }
+      ]
+    },
+    {
+      "github": "anthropics",
+      "name": "Anthropic",
+      "credits": [
+        {
+          "entry": "skill:anthropics.frontend-design",
           "roles": [
             "author"
           ]

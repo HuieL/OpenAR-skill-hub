@@ -203,6 +203,19 @@
       ]
     },
     {
+      "name": "taste-skill",
+      "source": {
+        "source": "github",
+        "repo": "Leonxlnx/taste-skill",
+        "sha": "6010f91a9935f1c167dfc500fb1a475681892e6b"
+      },
+      "description": "1 skill from Leonxlnx/taste-skill, pinned at 6010f91a9935 as listed on the OpenAR Skill Hub.",
+      "strict": false,
+      "skills": [
+        "./skills/taste-skill"
+      ]
+    },
+    {
       "name": "nature-skills",
       "source": {
         "source": "github",
@@ -364,6 +377,19 @@
     },
     {
       "name": "skills",
+      "source": {
+        "source": "github",
+        "repo": "anthropics/skills",
+        "sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44"
+      },
+      "description": "1 skill from anthropics/skills, pinned at dbd4588f9e10 as listed on the OpenAR Skill Hub.",
+      "strict": false,
+      "skills": [
+        "./skills/frontend-design"
+      ]
+    },
+    {
+      "name": "leanprover-skills",
       "source": {
         "source": "github",
         "repo": "leanprover/skills",

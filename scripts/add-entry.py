@@ -104,10 +104,20 @@ def frontmatter(skill_md: pathlib.Path) -> dict:
         return {}
     block = text[3:].split("\n---", 1)[0]
     out = {}
-    for line in block.splitlines():
+    lines = block.splitlines()
+    for i, line in enumerate(lines):
         found = re.match(r"^(name|description):\s*(.*)$", line)
         if found:
-            out[found.group(1)] = found.group(2).strip().strip("'\"")
+            value = found.group(2).strip()
+            if value in (">", ">-", ">+", "|", "|-", "|+", ""):
+                # A YAML block scalar: the indented lines that follow.
+                body = []
+                for cont in lines[i + 1:]:
+                    if cont.strip() and not cont.startswith((" ", "\t")):
+                        break
+                    body.append(cont.strip())
+                value = " ".join(t for t in body if t)
+            out[found.group(1)] = value.strip("'\"")
     return out
 
 

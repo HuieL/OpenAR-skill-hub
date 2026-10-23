@@ -2,6 +2,29 @@
   "schemaVersion": 1,
   "entries": [
     {
+      "id": "anthropics.frontend-design",
+      "name": "Frontend Design",
+      "summary": "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't read as templated defaults.",
+      "delivery": "hub",
+      "version": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "revision": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "entryPath": "entries/skills/anthropics.frontend-design/entry.json",
+      "entrySha256": "08a21ef61bc97f3225fb0953d57ac2ac4be784cd6fe1b3d96d5d9433de5a641d",
+      "icon": "design",
+      "tags": [
+        "frontend",
+        "web-design",
+        "ui",
+        "design"
+      ],
+      "categories": [
+        "design",
+        "frontend"
+      ],
+      "author": "Anthropic",
+      "repo": "anthropics/skills"
+    },
+    {
       "id": "hub.archify",
       "name": "Archify",
       "summary": "Validated architecture, workflow, sequence, data-flow, lifecycle, ERD, class, tree, timeline and waterfall diagrams as explorable standalone HTML with dark/light themes, motion and SVG/PNG/WebM export; also one-page explainers on request. OpenAR-adapted carry of tt-a1i/archify 3.2: the network update check and the offer to write a global agent rules file are removed, output goes to the artifacts directory, and pre-rendered example pages are left out; everything else is upstream.",
@@ -3827,6 +3850,29 @@
       ],
       "author": "Lean FRO, LLC",
       "repo": "leanprover/skills"
+    },
+    {
+      "id": "leonxlnx.taste-skill",
+      "name": "Design Taste Frontend",
+      "summary": "tasteskill v2, the anti-slop frontend skill. Art direction for websites, distilled from a study of 247 curated gallery sites (One Page Love, Awwwards Sites of the Day). Deals researched directions (idea, composition, type, palette, photographs, section blueprints) from a library, enforces a strict no-slop house style with a real-browser inspector, and runs a look-and-fix loop on screenshots. Use this whenever you build, design, redesign, restyle, polish or review a landing page, marketing site, portfolio, product page, one-pager, hero or any public-facing web page, in any stack (HTML/CSS, React, Next.js, Vue, Svelte, Astro, Tailwind) — also when the user says a page looks generic, templated, \"AI-made\", sloppy, or asks to make it look designed, premium, award-level or less like every other site. Also for app screens: dashboards, admin and analytics views, settings, inboxes and other screens people work in, with their own run and rules.",
+      "delivery": "hub",
+      "version": "6010f91a9935f1c167dfc500fb1a475681892e6b",
+      "revision": "6010f91a9935f1c167dfc500fb1a475681892e6b",
+      "entryPath": "entries/skills/leonxlnx.taste-skill/entry.json",
+      "entrySha256": "c76664921d04ecab0990a6398d584909f61018f429fc6de460486fc2a88dd171",
+      "icon": "web",
+      "tags": [
+        "frontend",
+        "web-design",
+        "art-direction",
+        "design"
+      ],
+      "categories": [
+        "design",
+        "frontend"
+      ],
+      "author": "Leonxlnx",
+      "repo": "Leonxlnx/taste-skill"
     },
     {
       "id": "mattpocock.claude-handoff",

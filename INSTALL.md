@@ -22,6 +22,7 @@ As a Claude Code plugin marketplace:
 
 | Entry | Version | License | Review | OpenAR | npx skills |
 | --- | --- | --- | --- | --- | --- |
+| `anthropics.frontend-design` | dbd4588f9e10 | Apache-2.0 | unreviewed | `ora hub install anthropics.frontend-design` | `npx skills add https://github.com/anthropics/skills/tree/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design` |
 | `hub.archify` | 3.2.0 | MIT | unreviewed | `ora hub install hub.archify` | `npx skills add https://github.com/HuieL/OpenAR-skill-hub/tree/77404898210a710edbbd89ea223347a90830ee6f/entries/skills/hub.archify/skill` |
 | `hub.craft-suite` | 1.0.0 | MIT | unreviewed | `ora hub install hub.craft-suite` | `npx skills add https://github.com/HuieL/OpenAR-skill-hub/tree/d3a7460fe0595e1c24ad53481508b157469641c2/entries/skills/hub.craft-suite/skill` |
 | `hub.hallmark` | 2.0.0 | MIT | unreviewed | `ora hub install hub.hallmark` | `npx skills add https://github.com/HuieL/OpenAR-skill-hub/tree/f6206395c87af1e6a14ab425df18ee758b454cbe/entries/skills/hub.hallmark/skill` |
@@ -193,6 +194,7 @@ As a Claude Code plugin marketplace:
 | `leanprover.mathlib-pr` | 0.1.0 | Apache-2.0 | unreviewed | `ora hub install leanprover.mathlib-pr` | `npx skills add https://github.com/leanprover/skills/tree/7d3da0282e7b724b07620e45cf212f2e05e19334/skills/mathlib-pr` |
 | `leanprover.mathlib-review` | 0.1.0 | Apache-2.0 | unreviewed | `ora hub install leanprover.mathlib-review` | `npx skills add https://github.com/leanprover/skills/tree/7d3da0282e7b724b07620e45cf212f2e05e19334/skills/mathlib-review` |
 | `leanprover.nightly-testing` | 0.1.0 | Apache-2.0 | unreviewed | `ora hub install leanprover.nightly-testing` | `npx skills add https://github.com/leanprover/skills/tree/7d3da0282e7b724b07620e45cf212f2e05e19334/skills/nightly-testing` |
+| `leonxlnx.taste-skill` | 6010f91a9935 | MIT | unreviewed | `ora hub install leonxlnx.taste-skill` | `npx skills add https://github.com/Leonxlnx/taste-skill/tree/6010f91a9935f1c167dfc500fb1a475681892e6b/skills/taste-skill` |
 | `mattpocock.claude-handoff` | 321658273cb1 | MIT | unreviewed | `ora hub install mattpocock.claude-handoff` | `npx skills add https://github.com/mattpocock/skills/tree/321658273cb1d20b76026717d027d505790106d4/skills/in-progress/claude-handoff` |
 | `mattpocock.code-review` | 5c89081d4bbe | MIT | unreviewed | `ora hub install mattpocock.code-review` | `npx skills add https://github.com/mattpocock/skills/tree/5c89081d4bbeb3d039a42093653f90bb698d780e/skills/engineering/code-review` |
 | `mattpocock.codebase-design` | 321658273cb1 | MIT | unreviewed | `ora hub install mattpocock.codebase-design` | `npx skills add https://github.com/mattpocock/skills/tree/321658273cb1d20b76026717d027d505790106d4/skills/engineering/codebase-design` |
