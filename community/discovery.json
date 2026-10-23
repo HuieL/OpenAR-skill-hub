@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-23T09:29:38Z",
-  "skillHub": "2565dc70f82a2786e444b95b9d4bcd66a05c558a",
+  "generatedAt": "2026-10-23T11:29:10Z",
+  "skillHub": "061129b3c4a860856cb7447e25c23befb5a7cf2b",
   "new": [
     {
       "id": "skill:hub.archify",
@@ -878,6 +878,10 @@
   ],
   "updated": [
     {
+      "id": "skill:hub.hallmark",
+      "lastRecorded": "2026-10-23T11:29:00Z"
+    },
+    {
       "id": "skill:hub.archify",
       "lastRecorded": "2026-10-23T09:24:16Z"
     },
@@ -1734,10 +1738,6 @@
       "lastRecorded": "2026-10-13T20:58:31+08:00"
     },
     {
-      "id": "skill:hub.hallmark",
-      "lastRecorded": "2026-10-13T20:51:01+08:00"
-    },
-    {
       "id": "skill:hub.human-writing",
       "lastRecorded": "2026-10-13T18:29:13+08:00"
     },
@@ -1757,8 +1757,8 @@
     "repos": [
       {
         "repo": "mattpocock/skills",
-        "stars": 301287,
-        "forks": 25321,
+        "stars": 301378,
+        "forks": 25333,
         "pushedAt": "2026-10-22T09:35:28Z",
         "entries": [
           "skill:mattpocock.claude-handoff",
@@ -1794,8 +1794,8 @@
       },
       {
         "repo": "VoltAgent/awesome-design-md",
-        "stars": 123062,
-        "forks": 13655,
+        "stars": 123076,
+        "forks": 13660,
         "pushedAt": "2026-10-14T05:46:48Z",
         "entries": [
           "skill:hub.research-design-system"
@@ -1803,8 +1803,8 @@
       },
       {
         "repo": "tt-a1i/archify",
-        "stars": 88022,
-        "forks": 5930,
+        "stars": 88079,
+        "forks": 5932,
         "pushedAt": "2026-10-23T03:36:31Z",
         "entries": [
           "skill:hub.archify"
@@ -1812,8 +1812,8 @@
       },
       {
         "repo": "K-Dense-AI/scientific-agent-skills",
-        "stars": 54027,
-        "forks": 4767,
+        "stars": 54063,
+        "forks": 4771,
         "pushedAt": "2026-10-19T09:33:57Z",
         "entries": [
           "skill:kdense.13c-metabolic-flux",
@@ -1973,7 +1973,7 @@
       },
       {
         "repo": "Yuan1z0825/nature-skills",
-        "stars": 50225,
+        "stars": 50240,
         "forks": 2614,
         "pushedAt": "2026-10-22T02:40:33Z",
         "entries": [
@@ -1998,8 +1998,8 @@
       },
       {
         "repo": "nutlope/hallmark",
-        "stars": 30976,
-        "forks": 1605,
+        "stars": 31022,
+        "forks": 1608,
         "pushedAt": "2026-10-22T17:20:32Z",
         "entries": [
           "skill:hub.hallmark"
@@ -2007,7 +2007,7 @@
       },
       {
         "repo": "KKKKhazix/human-writing",
-        "stars": 4190,
+        "stars": 4191,
         "forks": 318,
         "pushedAt": "2026-08-11T15:07:45Z",
         "entries": [
@@ -2072,10 +2072,11 @@
         "repo": "HuieL/OpenAR-skill-hub",
         "stars": 0,
         "forks": 0,
-        "pushedAt": "2026-10-23T09:28:29Z",
+        "pushedAt": "2026-10-23T09:30:16Z",
         "entries": [
           "skill:hub.archify",
           "skill:hub.craft-suite",
+          "skill:hub.hallmark",
           "skill:hub.officecli-academic-paper",
           "skill:hub.officecli-data-dashboard",
           "skill:hub.research-design-system",
