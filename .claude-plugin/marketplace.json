@@ -15,6 +15,7 @@
         "./entries/skills/hub.archify/skill",
         "./entries/skills/hub.craft-suite/skill",
         "./entries/skills/hub.hallmark/skill",
+        "./entries/skills/hub.impeccable/skill",
         "./entries/skills/hub.officecli-academic-paper/skill",
         "./entries/skills/hub.officecli-data-dashboard/skill",
         "./entries/skills/hub.research-design-system/skill",

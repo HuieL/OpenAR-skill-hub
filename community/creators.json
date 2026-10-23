@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "skillHub": "91bd7cf7fffc050bf13b15f39e14059cf7ed5509",
+  "skillHub": "86c480fa648a8e53577c296a750b9619ff7207dd",
   "extensionHub": null,
   "creators": [
     {
@@ -37,6 +37,13 @@
         {
           "entry": "skill:hub.human-writing",
           "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:hub.impeccable",
+          "roles": [
+            "adapter",
             "submitter"
           ]
         },
@@ -2705,6 +2712,18 @@
       "credits": [
         {
           "entry": "skill:hub.hallmark",
+          "roles": [
+            "author"
+          ]
+        }
+      ]
+    },
+    {
+      "github": "pbakaus",
+      "name": "Paul Bakaus",
+      "credits": [
+        {
+          "entry": "skill:hub.impeccable",
           "roles": [
             "author"
           ]

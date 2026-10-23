@@ -9,7 +9,7 @@
       "version": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
       "revision": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
       "entryPath": "entries/skills/anthropics.frontend-design/entry.json",
-      "entrySha256": "08a21ef61bc97f3225fb0953d57ac2ac4be784cd6fe1b3d96d5d9433de5a641d",
+      "entrySha256": "a67f8f102a908a5b51deb4352f645fb70292c706a1794bbb4478048e742952ed",
       "icon": "design",
       "tags": [
         "frontend",
@@ -118,6 +118,30 @@
       ],
       "author": "Khazix",
       "repo": "KKKKhazix/human-writing"
+    },
+    {
+      "id": "hub.impeccable",
+      "name": "Impeccable",
+      "summary": "Use when the user wants to design, redesign, shape, critique, audit, polish, simplify, harden, animate, or otherwise improve a frontend interface: websites, landing pages, dashboards, product UI, components, forms, settings, onboarding, empty states, and native iOS or Android screens. Handles UX review, hierarchy, layout, typography, color, motion, UX copy, accessibility, responsive behavior, edge cases, and capturing or documenting design systems (DESIGN.md, tokens). Also for making bland UI bolder, loud UI quieter, or ambitious visual effects. Not for backend-only or non-UI tasks. OpenAR-adapted carry of pbakaus/impeccable: the network update check is off (update through the Hub) and the edit-time hook stays at project scope; everything else is upstream.",
+      "delivery": "hub",
+      "version": "4.7.0",
+      "revision": "86c480fa648a8e53577c296a750b9619ff7207dd",
+      "entryPath": "entries/skills/hub.impeccable/entry.json",
+      "entrySha256": "4f1e8e4911eb396fdbe5c83e19347e610b5bbe5ad652d05e316083ed66660e8a",
+      "icon": "design",
+      "tags": [
+        "frontend",
+        "web-design",
+        "ui",
+        "design-audit",
+        "design"
+      ],
+      "categories": [
+        "design",
+        "frontend"
+      ],
+      "author": "Paul Bakaus",
+      "repo": "HuieL/OpenAR-skill-hub"
     },
     {
       "id": "hub.officecli-academic-paper",
@@ -3859,7 +3883,7 @@
       "version": "6010f91a9935f1c167dfc500fb1a475681892e6b",
       "revision": "6010f91a9935f1c167dfc500fb1a475681892e6b",
       "entryPath": "entries/skills/leonxlnx.taste-skill/entry.json",
-      "entrySha256": "c76664921d04ecab0990a6398d584909f61018f429fc6de460486fc2a88dd171",
+      "entrySha256": "dbf26489e8a34a1f027e205a0640e29825aa622a72694edbe861ecd5ddfa3dd7",
       "icon": "web",
       "tags": [
         "frontend",

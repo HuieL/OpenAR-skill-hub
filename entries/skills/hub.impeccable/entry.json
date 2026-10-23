@@ -1,0 +1,437 @@
+{
+  "schemaVersion": 1,
+  "id": "hub.impeccable",
+  "kind": "skill",
+  "name": "Impeccable",
+  "summary": "Use when the user wants to design, redesign, shape, critique, audit, polish, simplify, harden, animate, or otherwise improve a frontend interface: websites, landing pages, dashboards, product UI, components, forms, settings, onboarding, empty states, and native iOS or Android screens. Handles UX review, hierarchy, layout, typography, color, motion, UX copy, accessibility, responsive behavior, edge cases, and capturing or documenting design systems (DESIGN.md, tokens). Also for making bland UI bolder, loud UI quieter, or ambitious visual effects. Not for backend-only or non-UI tasks. OpenAR-adapted carry of pbakaus/impeccable: the network update check is off (update through the Hub) and the edit-time hook stays at project scope; everything else is upstream.",
+  "authors": [
+    {
+      "name": "Paul Bakaus",
+      "github": "pbakaus"
+    }
+  ],
+  "adapters": [
+    "HuieL"
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "design",
+    "frontend"
+  ],
+  "source": {
+    "repo": "HuieL/OpenAR-skill-hub",
+    "path": "entries/skills/hub.impeccable/skill",
+    "revision": "86c480fa648a8e53577c296a750b9619ff7207dd"
+  },
+  "version": "4.7.0",
+  "license": "Apache-2.0",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "02bb8c3b4e70190e3986c0404ad2fd8d639b4f534252d82379cc1b502b6d1812",
+      "bytes": 10766,
+      "executable": false
+    },
+    {
+      "path": "NOTICE.md",
+      "sha256": "c60a093c2845fd9fb82f9c6f742ece31f379f8190b535309d32d66c45ccffdcb",
+      "bytes": 503,
+      "executable": false
+    },
+    {
+      "path": "OPENAR-CHANGES.md",
+      "sha256": "54a98151157c86bd39215e26ed240cef1e3e5bd9358e199976c9ea3e70f9d08e",
+      "bytes": 835,
+      "executable": false
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "88e9a46a91b6ddd1059f03f578bd0f9bbe6d212d6a395124379b9bb5c97c5cf2",
+      "bytes": 11659,
+      "executable": false
+    },
+    {
+      "path": "agents/impeccable_asset_producer.toml",
+      "sha256": "4dbdb0cfdc2466961da6b22d200f3ec7bf8bb47c27448a2e6e3c03cdbf589831",
+      "bytes": 8429,
+      "executable": false
+    },
+    {
+      "path": "agents/impeccable_documenter.toml",
+      "sha256": "2feb3768125ba6469c92a50d516727e6d42f44579165ddfd33409948e2a3803d",
+      "bytes": 3203,
+      "executable": false
+    },
+    {
+      "path": "agents/impeccable_finish_reviewer.toml",
+      "sha256": "1b80232e22d52b06a7278b9ca1f24f871a181c62cd91f4b18728807e7cf49dbd",
+      "bytes": 15703,
+      "executable": false
+    },
+    {
+      "path": "agents/impeccable_manual_edit_applier.toml",
+      "sha256": "6c9ce3e27ec4520ead001da3aad2a2ebba481c4e5cd22873db8890259ee579fe",
+      "bytes": 7032,
+      "executable": false
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "ce9967ad70f99cf04456f3347c266723c2fbbb600267d10a822b7cd20562c321",
+      "bytes": 236,
+      "executable": false
+    },
+    {
+      "path": "reference/adapt.md",
+      "sha256": "9807cdc112b8bcbdeff9cd2516cda4d07129f1d47f29df4d57645344f34950c1",
+      "bytes": 11313,
+      "executable": false
+    },
+    {
+      "path": "reference/adapt.native.md",
+      "sha256": "2455a2613e1fa29b986521c73cbad9424ccda70ef6cbe505779dbca5e16272a2",
+      "bytes": 3910,
+      "executable": false
+    },
+    {
+      "path": "reference/android.md",
+      "sha256": "058f81f256134841875fd3183e06b37a023de0c877fd2b9eecd97011640791fe",
+      "bytes": 4093,
+      "executable": false
+    },
+    {
+      "path": "reference/animate.md",
+      "sha256": "d658c48ffbe0031e8e3b318996cad6ceafe29e40aa50d5bb25e4bf1d6839dc7c",
+      "bytes": 5236,
+      "executable": false
+    },
+    {
+      "path": "reference/audit.md",
+      "sha256": "4b726d8f13ca1dbb82ca8179cbfefca8c53c13766fef4d7b8870f5d4324da2d6",
+      "bytes": 9250,
+      "executable": false
+    },
+    {
+      "path": "reference/audit.native.md",
+      "sha256": "2898eff507738f9102107809e671df3e69f889dee30073030fe96fb2483d8ea3",
+      "bytes": 8326,
+      "executable": false
+    },
+    {
+      "path": "reference/bolder.md",
+      "sha256": "05b78fb0595e4d5afbf5f17470c84e89cf82f205fea3a6e9b6d8d779b7c4aab1",
+      "bytes": 3566,
+      "executable": false
+    },
+    {
+      "path": "reference/clarify.md",
+      "sha256": "173dd66abe65633910dcb04a51f40d6ff2a793f87088f022a02fc4cad24dd133",
+      "bytes": 4590,
+      "executable": false
+    },
+    {
+      "path": "reference/colorize.md",
+      "sha256": "bc5f71f1129d0f2c310d913d07c8dc609a1d25644121bd78c308f42d52a0b9e9",
+      "bytes": 4537,
+      "executable": false
+    },
+    {
+      "path": "reference/component-review.md",
+      "sha256": "10489e5265e49a4ef2737cd0e674c149ed41e1f703efe922e53ea3c91e833427",
+      "bytes": 8017,
+      "executable": false
+    },
+    {
+      "path": "reference/craft-floor.md",
+      "sha256": "52b523e92b76daff71be2ec8c732c374c670f8d03e1296388738e581479ec1bb",
+      "bytes": 5502,
+      "executable": false
+    },
+    {
+      "path": "reference/craft.md",
+      "sha256": "9205e222bc6565b37fb504ceec93233c2d2a456802b69d16e6b1c44723907c4c",
+      "bytes": 555,
+      "executable": false
+    },
+    {
+      "path": "reference/critique.md",
+      "sha256": "c210c9506877c6c8d88880a337fddd95d4315daf70ed6bc631ee6520481f1a0c",
+      "bytes": 48958,
+      "executable": false
+    },
+    {
+      "path": "reference/degraded/asset-producer.md",
+      "sha256": "877d274f41500c780bad25b2bca7fa95eff1a32a7b95397dd388c72848e86a6c",
+      "bytes": 8581,
+      "executable": false
+    },
+    {
+      "path": "reference/degraded/documenter.md",
+      "sha256": "bcc05ea92faebb5c74037a9d4263a5ce9a56f5ab07c8ab3c59ee704d8cade745",
+      "bytes": 3325,
+      "executable": false
+    },
+    {
+      "path": "reference/degraded/finish-reviewer.md",
+      "sha256": "c33c4cfa7f0ce0bedde80d4fc3b595e747d0e9b43a77f06cacb8e899802f709d",
+      "bytes": 15803,
+      "executable": false
+    },
+    {
+      "path": "reference/degraded/manual-edit-applier.md",
+      "sha256": "5fae7f8a2fc3ddd49ad0a413446dc44daedef5b6b7de5eb935bd2fbfad646d58",
+      "bytes": 7196,
+      "executable": false
+    },
+    {
+      "path": "reference/delight.md",
+      "sha256": "098a891028ce59c212b747d3c70468dd750aff7053a703d1336045ed31e0da7c",
+      "bytes": 3716,
+      "executable": false
+    },
+    {
+      "path": "reference/distill.md",
+      "sha256": "56ca75d680eb8b61ca3a298d18e895cd4a0dcc520c31d7938a4807ff8dcf18ea",
+      "bytes": 5648,
+      "executable": false
+    },
+    {
+      "path": "reference/doctor.md",
+      "sha256": "d8b1e332904bbb0fb8e9c5e700479ecd01cbf5326fe77521289dd17ba3835588",
+      "bytes": 5592,
+      "executable": false
+    },
+    {
+      "path": "reference/document.md",
+      "sha256": "531d2b6c8c9affc7b794de7904905ff9b73962b986968fd1e90273eb26930b6e",
+      "bytes": 27523,
+      "executable": false
+    },
+    {
+      "path": "reference/extract.md",
+      "sha256": "5477ae97189e5c1236cee71a25a5ae50014429a5a2e6da28355c8021a6cdeddd",
+      "bytes": 3406,
+      "executable": false
+    },
+    {
+      "path": "reference/generate.md",
+      "sha256": "11385badfb532196cec249e73bac2b7f58ada033ed8c4b02b9f0d64ddb46f0dc",
+      "bytes": 13221,
+      "executable": false
+    },
+    {
+      "path": "reference/harden.md",
+      "sha256": "4167eb7fc456cdfe09ff0ac2dbcb5e59cee57e590137aab6cc8ec08aafb6d775",
+      "bytes": 10748,
+      "executable": false
+    },
+    {
+      "path": "reference/hooks.md",
+      "sha256": "9ee2355400b77255ff3f00509af318c64a744ef0a4463d59567fcc7590cdc36e",
+      "bytes": 14250,
+      "executable": false
+    },
+    {
+      "path": "reference/init.md",
+      "sha256": "51349b3a32c7f907102dd680d8e2df9da27082caf46ee15c673be7ce14a5363b",
+      "bytes": 11766,
+      "executable": false
+    },
+    {
+      "path": "reference/ios.md",
+      "sha256": "40c87038b5f75147a5952a96237acf312a327bf70c1bcd8e0a5f064625ae9668",
+      "bytes": 3812,
+      "executable": false
+    },
+    {
+      "path": "reference/layout.md",
+      "sha256": "0bc7d7971b3edf2acd0580e847458dc6d84129d90715b452799ace3bed815c7c",
+      "bytes": 5161,
+      "executable": false
+    },
+    {
+      "path": "reference/live-setup.md",
+      "sha256": "2b5b2fbf5f658f34ea1997fb1aeebe01604d05187f75c6a4f1f55a5bc78520a4",
+      "bytes": 8186,
+      "executable": false
+    },
+    {
+      "path": "reference/live.md",
+      "sha256": "7caeecefe54d68bc915a7f2978cba5e88eda69a239cb09dcce78c6d94e93df84",
+      "bytes": 36792,
+      "executable": false
+    },
+    {
+      "path": "reference/mode-operate.md",
+      "sha256": "7a52dd7a94ee75f6ae89542c86a1b6e1d306812b16e0d9dbf12d4acad44d148b",
+      "bytes": 4716,
+      "executable": false
+    },
+    {
+      "path": "reference/mode-persuade.md",
+      "sha256": "21e78c8a77badb3f83290cd4577ed3b24bd4dd3b57136d7da75733d4f3ee9ac0",
+      "bytes": 3638,
+      "executable": false
+    },
+    {
+      "path": "reference/mode-read.md",
+      "sha256": "a569989e6a3d6453b4c45e9474e162a15cc54e11732ac6baa7990a6e7cccc0b5",
+      "bytes": 4396,
+      "executable": false
+    },
+    {
+      "path": "reference/new-work.md",
+      "sha256": "2ecb8674f239b5386faf955a52f9cc58c7a064a27d7c91bfc871b63d6a9c9c15",
+      "bytes": 61922,
+      "executable": false
+    },
+    {
+      "path": "reference/onboard.md",
+      "sha256": "a2b8fd01ea12139b39b3285393f805bb8c326e11b2234dbff4c26c17b4e9c280",
+      "bytes": 7688,
+      "executable": false
+    },
+    {
+      "path": "reference/operate.md",
+      "sha256": "a9d2203acd45ca33a13d5c68b02b23ed512425ac15f0e8438318ed124b43729d",
+      "bytes": 4145,
+      "executable": false
+    },
+    {
+      "path": "reference/optimize.md",
+      "sha256": "89d679ec08e55fe7661d54addc950c2ff77cf574aa97e593ec6da089fd1efedf",
+      "bytes": 7594,
+      "executable": false
+    },
+    {
+      "path": "reference/overdrive.md",
+      "sha256": "0a0d4ae6eea720c6d6e1c073fc77192d7c2100f78a44d9a8d262ddf22270cf4d",
+      "bytes": 9079,
+      "executable": false
+    },
+    {
+      "path": "reference/polish.md",
+      "sha256": "81666fc7f783b4e3514db6554e713dc0479bd9cdedb06e93d15f8b579aae869a",
+      "bytes": 6646,
+      "executable": false
+    },
+    {
+      "path": "reference/quieter.md",
+      "sha256": "9e03b55c6bbdd4acba28cfa9c3b74ba1a4448cdbd35a7200990ab460c6eecaa0",
+      "bytes": 5020,
+      "executable": false
+    },
+    {
+      "path": "reference/region-map.md",
+      "sha256": "778cedc9199b407d3e23fa1041e38d548b00b1101a33517aa2a2eb299f9d0edc",
+      "bytes": 3361,
+      "executable": false
+    },
+    {
+      "path": "reference/routing.md",
+      "sha256": "77ae09542fbc10aa4e8b119d6fd19359908a47c13c30068d6a150bfdb50e3e10",
+      "bytes": 3336,
+      "executable": false
+    },
+    {
+      "path": "reference/shape.md",
+      "sha256": "a55f016c046cb6a27c55bd7f346375aeb506a755c4fbca19a5f92dbd42309c23",
+      "bytes": 3547,
+      "executable": false
+    },
+    {
+      "path": "reference/typeset.md",
+      "sha256": "c26c5b4524f3ccb650ed0680c10c25fd18083f8ebfd00a54c4d983c4747aab70",
+      "bytes": 6263,
+      "executable": false
+    },
+    {
+      "path": "reference/visualize.md",
+      "sha256": "1c81a831f9dd28b908306fa06e2f2944ca4595ff3df6570750c10bf806465f00",
+      "bytes": 13918,
+      "executable": false
+    },
+    {
+      "path": "scripts/VERSION",
+      "sha256": "7470694a0b5af87394b523c1a640e2ad099efbe0e6d9e6d2f7a70703e4d04457",
+      "bytes": 7,
+      "executable": false
+    },
+    {
+      "path": "scripts/command-metadata.json",
+      "sha256": "e8720f3aa41135211cc58cc299a39eeda86c75651f4279cc1ede8db10dcc0584",
+      "bytes": 8392,
+      "executable": false
+    },
+    {
+      "path": "scripts/data/font-index-failures.json",
+      "sha256": "835f19a0a3812f3652dd6979a2ce5597f654fd01f26e1b420b92d5f42b997ce4",
+      "bytes": 2437,
+      "executable": false
+    },
+    {
+      "path": "scripts/data/font-index.json",
+      "sha256": "47edbdfaf27073c47033d1ac7dfee881be49e2dcbda7671d1157300481dde6da",
+      "bytes": 1100013,
+      "executable": false
+    },
+    {
+      "path": "scripts/impeccable",
+      "sha256": "bc5b9b128a681ccaa1d85b8cd67918ec977738ed801509616860ecb7b8a710d8",
+      "bytes": 9190,
+      "executable": true
+    },
+    {
+      "path": "scripts/impeccable.cmd",
+      "sha256": "3e4df591c423a9909af08b7413e3d1eb076f685b0f9e53c3bf86b426d7b10773",
+      "bytes": 9487,
+      "executable": false
+    },
+    {
+      "path": "scripts/live-browser-dom.js",
+      "sha256": "4b379aff87ce0f485008a2b6a0dc711d00a869f5cf0ec2459279d6364fbf0c9e",
+      "bytes": 12283,
+      "executable": false
+    },
+    {
+      "path": "scripts/live-browser-ignores.js",
+      "sha256": "c1cb6877ca99a0c1b38ba0c7d59f32702d3022f6821d8045f7133f7c40b6362f",
+      "bytes": 10346,
+      "executable": false
+    },
+    {
+      "path": "scripts/live-browser-session.js",
+      "sha256": "2b45c12bef4e25d40b673044c9f124d1da6dfa72ef3f0c09ff30fdb419048e5d",
+      "bytes": 5751,
+      "executable": false
+    },
+    {
+      "path": "scripts/live-browser.js",
+      "sha256": "8f26a309ae1af52d2413a39a886908721e78c55b468025054e06e8faffe90cf0",
+      "bytes": 550029,
+      "executable": false
+    },
+    {
+      "path": "scripts/modern-screenshot.umd.js",
+      "sha256": "bb36665889124a0b6e15f16045265737449c3bdcf2712cdb08af3cfa01563e2b",
+      "bytes": 29290,
+      "executable": false
+    }
+  ],
+  "totalBytes": 2243439,
+  "requires": [],
+  "permissionsNote": "Every verb runs a native engine binary: on first use the launcher downloads the pinned release from github.com/pbakaus/impeccable and verifies it against its .sha256 sidecar (cached in ~/.impeccable, or IMPECCABLE_HOME; IMPECCABLE_BIN uses a local build). No update check. The optional design hook is written only to the project's own harness files when the user runs `hooks on`. allowed-tools declarations inside SKILL.md are upstream claims, not host approvals; OpenAR enforces its own permission gates.",
+  "upstream": {
+    "repo": "pbakaus/impeccable",
+    "revision": "5cb95eea9c96479f57afe0732a45470d30183326",
+    "path": ".agents/skills/impeccable",
+    "license": "Apache-2.0"
+  }
+}
