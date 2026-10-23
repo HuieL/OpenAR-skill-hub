@@ -1,8 +1,20 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-23T11:29:10Z",
-  "skillHub": "061129b3c4a860856cb7447e25c23befb5a7cf2b",
+  "generatedAt": "2026-10-23T12:16:34Z",
+  "skillHub": "65d4871f2c0b9ab6990be67d841b4a29935bd359",
   "new": [
+    {
+      "id": "skill:hub.impeccable",
+      "firstRecorded": "2026-10-23T12:16:25Z"
+    },
+    {
+      "id": "skill:anthropics.frontend-design",
+      "firstRecorded": "2026-10-23T12:16:10Z"
+    },
+    {
+      "id": "skill:leonxlnx.taste-skill",
+      "firstRecorded": "2026-10-23T12:16:10Z"
+    },
     {
       "id": "skill:hub.archify",
       "firstRecorded": "2026-10-23T09:24:16Z"
@@ -877,6 +889,18 @@
     }
   ],
   "updated": [
+    {
+      "id": "skill:hub.impeccable",
+      "lastRecorded": "2026-10-23T12:16:25Z"
+    },
+    {
+      "id": "skill:anthropics.frontend-design",
+      "lastRecorded": "2026-10-23T12:16:10Z"
+    },
+    {
+      "id": "skill:leonxlnx.taste-skill",
+      "lastRecorded": "2026-10-23T12:16:10Z"
+    },
     {
       "id": "skill:hub.hallmark",
       "lastRecorded": "2026-10-23T11:29:00Z"
@@ -1757,8 +1781,8 @@
     "repos": [
       {
         "repo": "mattpocock/skills",
-        "stars": 301378,
-        "forks": 25333,
+        "stars": 301414,
+        "forks": 25337,
         "pushedAt": "2026-10-22T09:35:28Z",
         "entries": [
           "skill:mattpocock.claude-handoff",
@@ -1793,26 +1817,53 @@
         ]
       },
       {
+        "repo": "anthropics/skills",
+        "stars": 183178,
+        "forks": 21690,
+        "pushedAt": "2026-10-09T18:45:52Z",
+        "entries": [
+          "skill:anthropics.frontend-design"
+        ]
+      },
+      {
         "repo": "VoltAgent/awesome-design-md",
-        "stars": 123076,
-        "forks": 13660,
+        "stars": 123081,
+        "forks": 13661,
         "pushedAt": "2026-10-14T05:46:48Z",
         "entries": [
           "skill:hub.research-design-system"
         ]
       },
       {
+        "repo": "Leonxlnx/taste-skill",
+        "stars": 101397,
+        "forks": 6847,
+        "pushedAt": "2026-10-20T22:04:30Z",
+        "entries": [
+          "skill:leonxlnx.taste-skill"
+        ]
+      },
+      {
         "repo": "tt-a1i/archify",
-        "stars": 88079,
-        "forks": 5932,
+        "stars": 88099,
+        "forks": 5934,
         "pushedAt": "2026-10-23T03:36:31Z",
         "entries": [
           "skill:hub.archify"
         ]
       },
       {
+        "repo": "pbakaus/impeccable",
+        "stars": 85245,
+        "forks": 5088,
+        "pushedAt": "2026-10-23T11:56:12Z",
+        "entries": [
+          "skill:hub.impeccable"
+        ]
+      },
+      {
         "repo": "K-Dense-AI/scientific-agent-skills",
-        "stars": 54063,
+        "stars": 54077,
         "forks": 4771,
         "pushedAt": "2026-10-19T09:33:57Z",
         "entries": [
@@ -1973,7 +2024,7 @@
       },
       {
         "repo": "Yuan1z0825/nature-skills",
-        "stars": 50240,
+        "stars": 50247,
         "forks": 2614,
         "pushedAt": "2026-10-22T02:40:33Z",
         "entries": [
@@ -1998,8 +2049,8 @@
       },
       {
         "repo": "nutlope/hallmark",
-        "stars": 31022,
-        "forks": 1608,
+        "stars": 31049,
+        "forks": 1609,
         "pushedAt": "2026-10-22T17:20:32Z",
         "entries": [
           "skill:hub.hallmark"
@@ -2035,7 +2086,7 @@
       {
         "repo": "iOfficeAI/AionCore",
         "stars": 123,
-        "forks": 200,
+        "forks": 201,
         "pushedAt": "2026-10-14T17:47:21Z",
         "entries": [
           "skill:hub.officecli-academic-paper",
@@ -2072,11 +2123,12 @@
         "repo": "HuieL/OpenAR-skill-hub",
         "stars": 0,
         "forks": 0,
-        "pushedAt": "2026-10-23T09:30:16Z",
+        "pushedAt": "2026-10-23T11:29:35Z",
         "entries": [
           "skill:hub.archify",
           "skill:hub.craft-suite",
           "skill:hub.hallmark",
+          "skill:hub.impeccable",
           "skill:hub.officecli-academic-paper",
           "skill:hub.officecli-data-dashboard",
           "skill:hub.research-design-system",
