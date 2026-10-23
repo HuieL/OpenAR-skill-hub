@@ -19,6 +19,7 @@ The skill's own files stay in its repository; this hub stores the entry
 """
 
 import argparse
+import fnmatch
 import hashlib
 import json
 import os
@@ -122,11 +123,13 @@ def find_skills(base: pathlib.Path, depth: int = 0) -> list[pathlib.Path]:
     return found
 
 
-def manifest(skill_dir: pathlib.Path) -> list[dict]:
+def manifest(skill_dir: pathlib.Path, exclude: list[str] = ()) -> list[dict]:
     files = []
     for path in sorted(skill_dir.rglob("*")):
         rel = path.relative_to(skill_dir)
         if any(part in SKIP_DIRS for part in rel.parts):
+            continue
+        if rel.as_posix() != "SKILL.md" and any(fnmatch.fnmatchcase(rel.as_posix(), pat) for pat in exclude):
             continue
         if path.is_symlink():
             die(f"{rel} is a symlink; the hub does not carry symlinks")
@@ -160,6 +163,9 @@ def main() -> None:
     ap.add_argument("--icon", help="icon id from icons.json; picked automatically when omitted")
     ap.add_argument("--version", help="upstream version; defaults to the pinned commit")
     ap.add_argument("--force", action="store_true", help="replace an existing entry with this id")
+    ap.add_argument("--exclude", action="append", default=[], metavar="GLOB",
+                    help="leave matching files (path glob relative to the skill, e.g. 'examples/*.mp4') out of "
+                         "the manifest, for demo media that would exceed the size cap; never SKILL.md (repeatable)")
     args = ap.parse_args()
 
     repo, ref, sub, implied = parse_source(args.source)
@@ -186,7 +192,7 @@ def main() -> None:
         fm = frontmatter(skill_dir / "SKILL.md")
         if not fm.get("name") or not fm.get("description"):
             die("SKILL.md frontmatter needs both name and description")
-        files = manifest(skill_dir)
+        files = manifest(skill_dir, args.exclude)
         path = skill_dir.relative_to(checkout_dir).as_posix() or "."
         license_file = next((n for n in LICENSE_NAMES if (checkout_dir / n).is_file()), None)
 

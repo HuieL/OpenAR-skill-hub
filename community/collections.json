@@ -51,6 +51,17 @@
         "skill:leanprover.mathlib-pr",
         "skill:leanprover.mathlib-review"
       ]
+    },
+    {
+      "id": "motion-diagrams",
+      "title": "Motion diagrams",
+      "description": "Richer animated diagrams beside OpenAR's built-in motion figures: always-running terminal-style architecture panels rendered frame by frame to MP4. Exports go through the same poster, GIF/WebP/MP4 and figure manifest as built-in figures.",
+      "curators": [
+        "HuieL"
+      ],
+      "entries": [
+        "skill:ythx-101.live-panel"
+      ]
     }
   ]
 }

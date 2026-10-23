@@ -1,0 +1,356 @@
+{
+  "schemaVersion": 1,
+  "id": "ythx-101.live-panel",
+  "kind": "skill",
+  "name": "Live Panel",
+  "summary": "Build a terminal-style, always-running animated architecture diagram (a \"live panel\") from a JSON config and render it to an mp4. Use when the user wants a system, agent or org architecture diagram that looks like a monitoring dashboard in a terminal window - fixed layout, glowing packets on the wires, scrolling log, counters, bars that flip state - as a screen-recording-style video or a live web page, instead of a static picture or a step-by-step reveal. 中文：当用户要做\"活的\"架构图、agent 树或系统监控面板风格的动画（mp4 视频或循环网页）时使用——终端里一直在跑的监控面板外观，固定布局、线上流动的数据包、滚动日志、翻转的计数器和状态条；不是静态图，也不是分步演示。",
+  "authors": [
+    {
+      "name": "live-panel contributors",
+      "github": "ythx-101"
+    }
+  ],
+  "registrySubmitter": "HuieL",
+  "categories": [
+    "diagrams",
+    "animation"
+  ],
+  "source": {
+    "repo": "ythx-101/live-panel-skill",
+    "path": ".",
+    "revision": "439c9addce7e7ac2b4e384aa847a351926c8f945"
+  },
+  "version": "439c9addce7e7ac2b4e384aa847a351926c8f945",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "review": {
+    "status": "unreviewed",
+    "reviewedRevision": null,
+    "reviewer": null
+  },
+  "compat": {},
+  "delivery": "hub",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "ab2547ae65ebe5f6472d0ab3c8102f4375a2b193b9bf088340328463cddf097d",
+      "bytes": 52,
+      "executable": false
+    },
+    {
+      "path": "CITATION.cff",
+      "sha256": "dea8d509c4389fb4964efb829ff1a7b16ce0366c761a4abb9fa8c01c19a9981a",
+      "bytes": 967,
+      "executable": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "d9a271454ec62391b2b304fba4c45068887fd7ef1a872dca544c6938ef7fef2b",
+      "bytes": 1080,
+      "executable": false
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "ebcc62e84e2a5df17a3343413122d5b11d92424eaedcc604c5fe1d43b417c592",
+      "bytes": 1172,
+      "executable": false
+    },
+    {
+      "path": "README.md",
+      "sha256": "3d713362484da34bf0bf8eed1b61a14f8c999a81c557949d73512036773c3364",
+      "bytes": 26858,
+      "executable": false
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "c19c47a4a983458ade630770eb201499aa4e4e6e0a42397d7284ccc4022abdd6",
+      "bytes": 11091,
+      "executable": false
+    },
+    {
+      "path": "assets/fonts/Excalifont-OFL.txt",
+      "sha256": "5ca7f62335c5dbf01be2930b95c9f55b932a913ba3655b84bb77b43e4a697aef",
+      "bytes": 5195,
+      "executable": false
+    },
+    {
+      "path": "assets/fonts/Excalifont-Regular-Latin.woff2",
+      "sha256": "e4423b318e11432aff2e6e865e300b7ca270f92321a3f56632268fede01c1b48",
+      "bytes": 24956,
+      "executable": false
+    },
+    {
+      "path": "assets/fonts/SmileySans-OFL.txt",
+      "sha256": "9401f4050f1b66c26b6ccdc8b0e14a3c1cc37aac122eda84386f25854a9bec72",
+      "bytes": 4422,
+      "executable": false
+    },
+    {
+      "path": "assets/fonts/SmileySans-Oblique.woff2",
+      "sha256": "731f22973349404b15a88a99ef3b5dd4104c0965c23b7e485c1f11e84fea99e2",
+      "bytes": 1150924,
+      "executable": false
+    },
+    {
+      "path": "assets/fonts/Xiaolai-OFL.txt",
+      "sha256": "0df7e09be4c2c850a48bd8beb9cd64b343aad49cd5d3f6cfb2ad2e3d28a56ca4",
+      "bytes": 4432,
+      "executable": false
+    },
+    {
+      "path": "assets/template.html",
+      "sha256": "a046fdfeda4309ce3feb42dc71560847ef7b96f447e1218488523c1b96d246d0",
+      "bytes": 36737,
+      "executable": false
+    },
+    {
+      "path": "assets/views/LUCIDE-LICENSE.txt",
+      "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+      "bytes": 3208,
+      "executable": false
+    },
+    {
+      "path": "assets/views/ROUGH-LICENSE.txt",
+      "sha256": "dca9a392272606ac748ac0976a2a1133f14eef841c27beaa51a844d53c56a09d",
+      "bytes": 1068,
+      "executable": false
+    },
+    {
+      "path": "assets/views/excalidraw.js",
+      "sha256": "07c03a113c421d57ce84cdd7ef0030366737c190761c5532dda23e163be95a5c",
+      "bytes": 51227,
+      "executable": false
+    },
+    {
+      "path": "assets/views/funnel.js",
+      "sha256": "b0f5f09f1c99e73ebc0b732bb3771caccd75b5591b2c2ba4caa3b61fc172f47d",
+      "bytes": 15899,
+      "executable": false
+    },
+    {
+      "path": "assets/views/loop.js",
+      "sha256": "745eb49d212161cb16026ce733b93d460ed2674da5d241e24505f0e7e6240a34",
+      "bytes": 76084,
+      "executable": false
+    },
+    {
+      "path": "assets/views/ring.js",
+      "sha256": "3deee7ec9dfcfd336d380f9e40e1823e79f146c6827d41429370107893e0df98",
+      "bytes": 15518,
+      "executable": false
+    },
+    {
+      "path": "assets/views/sketchboard.js",
+      "sha256": "081bb4e43c4f3f0a5e0dc1dd73f570c154ac5f673bfc03c52cd79bcd3c36c0df",
+      "bytes": 19194,
+      "executable": false
+    },
+    {
+      "path": "examples/agent-architecture/config.json",
+      "sha256": "ae643887d9768354659583d5b2f03dcedee21a9676f405c64789875dd3a095f4",
+      "bytes": 38019,
+      "executable": false
+    },
+    {
+      "path": "examples/airbnb/config.json",
+      "sha256": "7d07752b3d7999c23c533a3953e75151127a08dbf19d9d1a59e7adc0448da5f6",
+      "bytes": 20808,
+      "executable": false
+    },
+    {
+      "path": "examples/codex-agents/config.json",
+      "sha256": "d9303a45d268d27b853bfbd1a44f82eb7a6e8fbfecc1ae87550b9967c69df765",
+      "bytes": 19549,
+      "executable": false
+    },
+    {
+      "path": "examples/excalidraw-aqua/README.md",
+      "sha256": "d7161c247e383e36f5be49fdb92fd97e665f2adf04a7b813fe8bd6c89be15dde",
+      "bytes": 760,
+      "executable": false
+    },
+    {
+      "path": "examples/excalidraw-aqua/build_config.py",
+      "sha256": "75ec8f99f19107b1c915d51491382b720990570551f2f45d72385a39a37448a1",
+      "bytes": 6763,
+      "executable": false
+    },
+    {
+      "path": "examples/excalidraw-aqua/config-3x4.json",
+      "sha256": "de7f99f9731982a3f37ccaa8e52eede94a63c8b53e0971fe4058625f4725be86",
+      "bytes": 8522,
+      "executable": false
+    },
+    {
+      "path": "examples/excalidraw-aqua/config-4x5.json",
+      "sha256": "c163d894f91b1c52ac792df1d084642560d3edb7bf86fe9d3b6c071ecbd67a55",
+      "bytes": 8519,
+      "executable": false
+    },
+    {
+      "path": "examples/excalidraw-gardener/README.md",
+      "sha256": "06e86dcba4d05604fffcfaf48ed7a12f67ec3b9cf6739d6f87a055118e13ee32",
+      "bytes": 671,
+      "executable": false
+    },
+    {
+      "path": "examples/excalidraw-gardener/build_config.py",
+      "sha256": "9b4e71a5c5ca21907131e2dae1bab54bcc18ef3c359ffc7b9bc78db5cbd5f45b",
+      "bytes": 6578,
+      "executable": false
+    },
+    {
+      "path": "examples/excalidraw-gardener/config-3x4.json",
+      "sha256": "0f1398cc0208979c6e8f65442d09393b79988bf884878f2f1c740b6fe7e34a54",
+      "bytes": 7756,
+      "executable": false
+    },
+    {
+      "path": "examples/excalidraw-gardener/config-4x5.json",
+      "sha256": "a2db2ed92412fc4f4d95ba3976c49b50a865179ee275d4e7cbcb018cc455c32d",
+      "bytes": 7753,
+      "executable": false
+    },
+    {
+      "path": "examples/excalidraw-import/agent-loop.excalidraw",
+      "sha256": "ad8aa279c03e97728bf3302162acf1cac1bfb404d7ffdea984cc04b48cb3915e",
+      "bytes": 6885,
+      "executable": false
+    },
+    {
+      "path": "examples/excalidraw-import/config.json",
+      "sha256": "a37045410615c4056ce301355fdf9fc32470a448300ea29883e6e63fa1177653",
+      "bytes": 4012,
+      "executable": false
+    },
+    {
+      "path": "examples/funnel/config.json",
+      "sha256": "86fb868c702601f87b73658b49f2008e33dbffa4d2543c0eb2df8593a985c783",
+      "bytes": 1237,
+      "executable": false
+    },
+    {
+      "path": "examples/funnel-karpathy/config.json",
+      "sha256": "f470fd1a31a4fdf5e5c91fd7494ef95a7f1c24313609d61d43ac13312f225c1f",
+      "bytes": 1190,
+      "executable": false
+    },
+    {
+      "path": "examples/hybrid-agent/README.md",
+      "sha256": "a6f63c953ddfff1549e92f0481fd496d5398fa45511ca1c744a4ea0d94b64668",
+      "bytes": 729,
+      "executable": false
+    },
+    {
+      "path": "examples/hybrid-agent/config.json",
+      "sha256": "db76c2086cf1c99f068c728236d6b6c0fbdfbd95f996525e43df7750d1e4efca",
+      "bytes": 6335,
+      "executable": false
+    },
+    {
+      "path": "examples/loop-poteto/config.json",
+      "sha256": "e25498d30674488f77dbf00827b327645adc44b2a0ea30916100519eceecec32",
+      "bytes": 6793,
+      "executable": false
+    },
+    {
+      "path": "examples/minimal/config.json",
+      "sha256": "b6e28dbce9e5e0c8ba8cc03f369a72770be3fe16719350cc46f27a12abb759b8",
+      "bytes": 1966,
+      "executable": false
+    },
+    {
+      "path": "examples/ring/config.json",
+      "sha256": "5489fc68268632b8cfd77080b0dd70aaeca9a26eb57356a7e994ebe3874c3cc4",
+      "bytes": 940,
+      "executable": false
+    },
+    {
+      "path": "llms.txt",
+      "sha256": "f621b0fbccaf95aa4dcbb170a29e4c0266e194adc17d849b07be87ba07bc44b2",
+      "bytes": 4879,
+      "executable": false
+    },
+    {
+      "path": "references/config-schema.md",
+      "sha256": "9bf00752d0a3fe05714f3635ad650e4720ba5439e9d71d5d7b9bd32242ae750f",
+      "bytes": 5066,
+      "executable": false
+    },
+    {
+      "path": "references/motion-grammar.md",
+      "sha256": "b4a4dc946690c25d58f615425b765ef5df844f90da18b1c99838a87bf0f7d2ba",
+      "bytes": 6574,
+      "executable": false
+    },
+    {
+      "path": "references/verify-view.md",
+      "sha256": "d35bad90ad37f1dadb81a0af354170613aa1ef4adf85197078724c105458d2cf",
+      "bytes": 3346,
+      "executable": false
+    },
+    {
+      "path": "references/view-rules.md",
+      "sha256": "172fc5df47a2ee88a5cab23de4a1b576d7f5bb9414fc9a002db66873344e2cb2",
+      "bytes": 4410,
+      "executable": false
+    },
+    {
+      "path": "references/views.md",
+      "sha256": "e7b82db8080bfb6495e7b9fb583ae4808447f49d2d9283eb303f76e94cada679",
+      "bytes": 25299,
+      "executable": false
+    },
+    {
+      "path": "scripts/check_frames.py",
+      "sha256": "d6e4eee19c86f4dcb77b79578a79d61ed4fbf2384fbe9718f7d0925c475b5b23",
+      "bytes": 4688,
+      "executable": true
+    },
+    {
+      "path": "scripts/excalidraw_import.py",
+      "sha256": "41d87b39f9ccbc1bc6736bd3209c74a74b7b84e8f005c3c569450481a468ab7c",
+      "bytes": 15079,
+      "executable": false
+    },
+    {
+      "path": "scripts/fetch_fonts.sh",
+      "sha256": "7c6098ae94dc87e76a84267ed386a7935ee1142c8c4c1f8b41947b0970501b54",
+      "bytes": 528,
+      "executable": true
+    },
+    {
+      "path": "scripts/livepanel.py",
+      "sha256": "0ac83094adfecc4d8ef1f86d841d7303a73441c677b6c844d6d248055d3e62ad",
+      "bytes": 10427,
+      "executable": true
+    },
+    {
+      "path": "scripts/render.py",
+      "sha256": "541f4be98df54db61522f017128613be50bbbc15c340f75f3d358ac77dc62737",
+      "bytes": 3894,
+      "executable": true
+    },
+    {
+      "path": "scripts/scaffold.py",
+      "sha256": "4a7dd13087b10577d6b711a59b4d1423305ac5fc687dba83fe5253a520adb2a0",
+      "bytes": 25576,
+      "executable": true
+    },
+    {
+      "path": "scripts/verify_view.py",
+      "sha256": "5e71cb167427f6bd6d4af8235152f963267f9402ddca1d783b02e1d1d3d9cd36",
+      "bytes": 29192,
+      "executable": false
+    },
+    {
+      "path": "tests/test_cycle_replay.py",
+      "sha256": "ba87e82757ce097c3b99f0ffe99931531174924410e5b2842325784f6f232498",
+      "bytes": 3817,
+      "executable": false
+    }
+  ],
+  "totalBytes": 1748644,
+  "requires": [],
+  "permissionsNote": "allowed-tools or similar declarations inside SKILL.md are claims by the skill's author, not host approvals; OpenAR enforces its own permission gates. Rendering needs a local Chrome/Chromium and ffmpeg; scripts/fetch_fonts.sh downloads one font from GitHub when run. In OpenAR, export with the built-in ora-diagram exporter (ora skill diagram/scripts/export_motion.py) to get the same versioned poster, GIF/WebP/MP4 and figure manifest as built-in motion figures. Demo videos under examples/ are left out of this entry to fit the size cap; their configs are included."
+}

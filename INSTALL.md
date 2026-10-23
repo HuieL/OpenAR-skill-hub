@@ -238,3 +238,4 @@ As a Claude Code plugin marketplace:
 | `nature.shared` | 1.6.0 | Apache-2.0 | unreviewed | `ora hub install nature.shared` | `npx skills add https://github.com/Yuan1z0825/nature-skills/tree/205ed18839181b0fe67323c7e42077a0807d8b03/skills/nature-shared` |
 | `nature.statistics` | 1.3.0 | Apache-2.0 | unreviewed | `ora hub install nature.statistics` | `npx skills add https://github.com/Yuan1z0825/nature-skills/tree/fe7f972c8d5d1c7e08f5ee742dc49fa493614930/skills/nature-statistics` |
 | `nature.writing` | 1.5.0 | Apache-2.0 | unreviewed | `ora hub install nature.writing` | `npx skills add https://github.com/Yuan1z0825/nature-skills/tree/28150f30f8b4017991fca8c7b2839f02c6586d2f/skills/nature-writing` |
+| `ythx-101.live-panel` | 439c9addce7e | MIT | unreviewed | `ora hub install ythx-101.live-panel` | `npx skills add https://github.com/ythx-101/live-panel-skill/tree/439c9addce7e7ac2b4e384aa847a351926c8f945/.` |

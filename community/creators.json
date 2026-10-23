@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "skillHub": "adeb7780caebd59c95f3a4b774874f1894a9df88",
+  "skillHub": "f9d0322291b12ae91431df03cce37d6e95057e19",
   "extensionHub": null,
   "creators": [
     {
@@ -1305,6 +1305,12 @@
         },
         {
           "entry": "skill:nature.writing",
+          "roles": [
+            "submitter"
+          ]
+        },
+        {
+          "entry": "skill:ythx-101.live-panel",
           "roles": [
             "submitter"
           ]
@@ -2673,6 +2679,18 @@
         },
         {
           "entry": "skill:hub.writing-guidelines",
+          "roles": [
+            "author"
+          ]
+        }
+      ]
+    },
+    {
+      "github": "ythx-101",
+      "name": "live-panel contributors",
+      "credits": [
+        {
+          "entry": "skill:ythx-101.live-panel",
           "roles": [
             "author"
           ]
